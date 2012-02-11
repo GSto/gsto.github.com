@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://GSto.github.com/atom.xml" rel="self"/>
   <link href="http://GSto.github.com/"/>
-  <updated>2012-02-11T09:38:27-05:00</updated>
+  <updated>2012-02-11T10:02:07-05:00</updated>
   <id>http://GSto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,5 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[blogging with octopress]]></title>
+    <link href="http://GSto.github.com/blog/2012/02/11/blogging-with-octopress/"/>
+    <updated>2012-02-11T10:00:00-05:00</updated>
+    <id>http://GSto.github.com/blog/2012/02/11/blogging-with-octopress</id>
+    <content type="html"><![CDATA[<p>If you&#8217;re reading this, then I&#8217;ve successfully got my octopress blog up and running on Github pages. Why the switch to octopress?</p>
+
+<h2>Writing with Octopress</h2>
+
+<p>I love being able to write in emacs using markdown. It feels simple. It feels easy. It feels right.</p>
+
+<h2>Deploying with Github</h2>
+
+<p>This also allows me to host with github pages for free, and use git for deployment. So many headaches just went away for me when it comes to writing.</p>
+
+<h2>Community Content</h2>
+
+<p>Anyone can submit a pull request to this blog, for guest posts or if anyone catches a spelling error.</p>
+
+<h2>The Right Plugins</h2>
+
+<p>There aren&#8217;t many plugins or themes available for octopress (yet), but it has all the things that are needed to get good content going. That&#8217;s what I love about it, it is all content based. The default theme is a beautiful starting off point, it&#8217;s clear and responsive.</p>
+]]></content>
+  </entry>
   
 </feed>
