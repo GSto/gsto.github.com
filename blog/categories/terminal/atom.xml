@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Terminal | Glenn Stovall]]></title>
+  <link href="http://GSto.github.com/blog/categories/terminal/atom.xml" rel="self"/>
+  <link href="http://GSto.github.com/"/>
+  <updated>2012-02-15T13:47:47-05:00</updated>
+  <id>http://GSto.github.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Terminals for Absolute Beginners]]></title>
+    <link href="http://GSto.github.com/blog/2012/02/15/terminals-for-absolute-beginners/"/>
+    <updated>2012-02-15T09:35:00-05:00</updated>
+    <id>http://GSto.github.com/blog/2012/02/15/terminals-for-absolute-beginners</id>
+    <content type="html"><![CDATA[<h2>Part 1: Directories and Commands</h2>
+
+<p>You've woken up in a strange place. Maybe you've decided you want to be a power user with your mac. Maybe you've finally decided to check out this strangle 'Linux' thing you've heard so much about.  Maybe its your first day in software engineering class and the teacher is telling you you are going to have to work on the school's server to turn in all of your work. Either way, you find yourself eye-to-eye with a terminal (commonly called the <em>command line</em>) and you don't know what to do.</p>
+
+<!-- more -->
+
+
+<h3>Where Are We?</h3>
+
+<p>Let's start by doing what anyone would do when dropped off in a new strange land. Let's figure out where we are and take stock of our surroundings.  Type the following command:</p>
+
+<pre><code>pwd
+</code></pre>
+
+<p>this will tell you the directory you are currently in. It may look something like this:</p>
+
+<pre><code>/home/glenn/
+</code></pre>
+
+<p>Let's make sure we are still who we think we are:</p>
+
+<pre><code>whoami
+</code></pre>
+
+<p>This will tell you your username:</p>
+
+<pre><code>glenn
+</code></pre>
+
+<p>Now, let's see what else is in the directory with us:</p>
+
+<pre><code>ls
+</code></pre>
+
+<p>this gives us a list of all the files and directories in the directory we are currently in. but maybe we want a bit more information about this. let's type the following command:</p>
+
+<pre><code>ls -la
+</code></pre>
+
+<p>and we get something like this:</p>
+
+<pre><code>drwxr-xr-x 70 grp   glenn    4096 2012-02-15 09:35 .
+drwxr-xr-x  3 root  root     4096 2011-03-15 16:55 ..
+drwxr-xr-x  2 grp   glenn    4096 2012-02-07 09:21 Pictures
+drwxr-xr-x  2 grp   glenn    4096 2011-08-23 15:29 Public
+drwxr-xr-x  5 grp   glenn    4096 2011-09-28 13:30 Rails
+drwxr-xr-x  6 grp   glenn    4096 2011-11-08 16:35 Repositories
+drwxr-xr-x 12 grp   glenn    4096 2012-01-15 17:09 Server
+drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Templates
+drwxrwxr-x  2 grp   glenn    4096 2011-08-11 08:46 Ubuntu One
+drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Videos
+</code></pre>
+
+<p>Whoa! there is a lot to take in here. Why did adding <code>-la</code> to the <code>ls</code> command change the output so much, And what is all of this stuff in front of the file names now? Why are there two files named <code>.</code> and <code>..</code>?</p>
+
+<h3>Commands And Options</h3>
+
+<p><code>ls</code> and <code>pwd</code> are both <em>commands</em>. <code>pwd</code> is short for <em><strong>P</strong>rint <strong>W</strong>orking <strong>D</strong>irectory</em> and well, prints your current working directory. <code>ls</code> is shorthand for list and lists the contents of the current working directory. These are the first of many commands we'll  be going over. You can pass options to commands to change how they work. These are almost always formatted in the form of a single hyphen and a single letter, or two hypens and a complete word.  You can combine single letter options with one hyphen, which is what we did when we typed <code>ls -la</code>. You could also write <code>ls -l</code> and <code>ls -a</code> and both would be valid commands. the <code>-l</code> argument tells the <code>ls</code> command to list the files on a single line with additional details. The <code>-a</code> command tells <code>ls</code> to show all files, including hidden ones. All directories contain at least two hidden directories, one called <code>.</code> and one called <code>..</code>, but we'll get to those in a moment.</p>
+
+<p>Many commands have similar options, where the same arguments have similar effects with similar commands. There is one option that works with almost every command on the terminal, and its the most important one you'll ever learn. Are you ready? Got a pen?</p>
+
+<pre><code>--help
+</code></pre>
+
+<p>This will print out an explination of the commands function, and a list of options it can take and what they do. Go try running the following commands and checkout the output:</p>
+
+<pre><code>whoami --help
+ls --help
+</code></pre>
+
+<p>You'll see that <code>whoami</code> is a relatively simple command with very few arguments, where <code>ls</code> has a lot more options availble. I could just replace a lot of text in this and upcoming articles with "just run <code>--help</code>", but I'm not going to. Feel free to explore some of the other commands and options that are available to them, and see what you can do with them.</p>
+
+<h3>Traversing Directories</h3>
+
+<p>Now I bet you are still wondering about that <code>.</code> and <code>..</code> stuff. These are both directories, or rather things that point to directories, that can be found in every single directory inside of linux based system. <code>.</code> Always points to the current directory. <code>..</code> Always points to the parent directory. If your current working directory is <code>/home/glenn/</code>, then <code>..</code> would point to <code>/home/</code>. If you make it all the way to the bottom directory (<code>/</code>), then <code>..</code> will still be there, but will also point to <code>/</code>.</p>
+
+<p>Now let's learn how to change our working directory so that we can start traversing the folders around us. This brings us to our next command and last one of this article:</p>
+
+<pre><code>cd
+</code></pre>
+
+<p><code>cd</code> is short for 'Change Directory'. To use this, we'll look at another thing we can do with commands: pass <strong>arguments</strong> to them.</p>
+
+<h3>Passing Arguments</h3>
+
+<p>Commands take arguments when they need additional information on what they do. You could think of it as a 'target' for the command. Commands can take multiple arguments, but in this case we'll only need one: Telling cd what directory we would like to change our directory too. So, if we want to go into the <code>Pictures</code> directory earlier. try running these two commands:</p>
+
+<pre><code>cd Pictures
+pwd
+</code></pre>
+
+<p>Now, based on the folder structure we looked at earlier, we should get an output similar to this:</p>
+
+<pre><code>/home/glenn/Pictures
+</code></pre>
+
+<p>If we wanted to go back to where we were, we can reference that <code>..</code> directory:</p>
+
+<pre><code>cd ..
+pwd
+</code></pre>
+
+<p>and we are back at</p>
+
+<pre><code>/home/glenn
+</code></pre>
+
+<h3>cd ProTips</h3>
+
+<p>You can chain together directories to move multiple steps at once, like so:</p>
+
+<pre><code>cd Pictures/Vacations/Vegas
+cd ../../../
+</code></pre>
+
+<p>There are also two handy shortcuts available to the <code>cd</code> command:</p>
+
+<pre><code>cd -
+cd ~
+</code></pre>
+
+<p>the first is sort of an 'undo' option. if will take you back to your last working directory. the tilde (<code>~</code>) is short hand for your <em>home directory</em> which every user has.</p>
+]]></content>
+  </entry>
+  
+</feed>
