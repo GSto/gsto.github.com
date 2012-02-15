@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Linux | Glenn Stovall]]></title>
-  <link href="http://GSto.github.com/blog/categories/linux/atom.xml" rel="self"/>
-  <link href="http://GSto.github.com/"/>
-  <updated>2012-02-15T13:47:47-05:00</updated>
-  <id>http://GSto.github.com/</id>
+  <link href="http://gsto.github.com/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://gsto.github.com/"/>
+  <updated>2012-02-15T16:16:07-05:00</updated>
+  <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Terminals for Absolute Beginners]]></title>
-    <link href="http://GSto.github.com/blog/2012/02/15/terminals-for-absolute-beginners/"/>
+    <link href="http://gsto.github.com/blog/2012/02/15/terminals-for-absolute-beginners/"/>
     <updated>2012-02-15T09:35:00-05:00</updated>
-    <id>http://GSto.github.com/blog/2012/02/15/terminals-for-absolute-beginners</id>
+    <id>http://gsto.github.com/blog/2012/02/15/terminals-for-absolute-beginners</id>
     <content type="html"><![CDATA[<h2>Part 1: Directories and Commands</h2>
 
 <p>You've woken up in a strange place. Maybe you've decided you want to be a power user with your mac. Maybe you've finally decided to check out this strangle 'Linux' thing you've heard so much about.  Maybe its your first day in software engineering class and the teacher is telling you you are going to have to work on the school's server to turn in all of your work. Either way, you find yourself eye-to-eye with a terminal (commonly called the <em>command line</em>) and you don't know what to do.</p>
@@ -75,7 +75,7 @@ drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Videos
 
 <h3>Commands And Options</h3>
 
-<p><code>ls</code> and <code>pwd</code> are both <em>commands</em>. <code>pwd</code> is short for <em><strong>P</strong>rint <strong>W</strong>orking <strong>D</strong>irectory</em> and well, prints your current working directory. <code>ls</code> is shorthand for list and lists the contents of the current working directory. These are the first of many commands we'll  be going over. You can pass options to commands to change how they work. These are almost always formatted in the form of a single hyphen and a single letter, or two hypens and a complete word.  You can combine single letter options with one hyphen, which is what we did when we typed <code>ls -la</code>. You could also write <code>ls -l</code> and <code>ls -a</code> and both would be valid commands. the <code>-l</code> argument tells the <code>ls</code> command to list the files on a single line with additional details. The <code>-a</code> command tells <code>ls</code> to show all files, including hidden ones. All directories contain at least two hidden directories, one called <code>.</code> and one called <code>..</code>, but we'll get to those in a moment.</p>
+<p><code>ls</code> and <code>pwd</code> are both <em>commands</em>. <code>pwd</code> is short for <strong>P</strong>rint <strong>W</strong>orking <strong>D</strong>irectory and well, prints your current working directory. <code>ls</code> is shorthand for list and lists the contents of the current working directory. These are the first of many commands we'll  be going over. You can pass options to commands to change how they work. These are almost always formatted in the form of a single hyphen and a single letter, or two hypens and a complete word.  You can combine single letter options with one hyphen, which is what we did when we typed <code>ls -la</code>. You could also write <code>ls -l</code> and <code>ls -a</code> and both would be valid commands. the <code>-l</code> argument tells the <code>ls</code> command to list the files on a single line with additional details. The <code>-a</code> command tells <code>ls</code> to show all files, including hidden ones. All directories contain at least two hidden directories, one called <code>.</code> and one called <code>..</code>, but we'll get to those in a moment.</p>
 
 <p>Many commands have similar options, where the same arguments have similar effects with similar commands. There is one option that works with almost every command on the terminal, and its the most important one you'll ever learn. Are you ready? Got a pen?</p>
 

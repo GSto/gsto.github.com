@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | Glenn Stovall]]></title>
+  <link href="http://gsto.github.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://gsto.github.com/"/>
+  <updated>2012-02-15T16:16:07-05:00</updated>
+  <id>http://gsto.github.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[blogging with octopress]]></title>
+    <link href="http://gsto.github.com/blog/2012/02/11/blogging-with-octopress/"/>
+    <updated>2012-02-11T10:00:00-05:00</updated>
+    <id>http://gsto.github.com/blog/2012/02/11/blogging-with-octopress</id>
+    <content type="html"><![CDATA[<p>If you're reading this, then I've successfully got my octopress blog up and running on Github pages. Why the switch to octopress?</p>
+
+<!-- more -->
+
+
+<h2>Writing with Octopress</h2>
+
+<p>I love being able to write in emacs using markdown. It feels simple. It feels easy. It feels right.</p>
+
+<h2>Deploying with Github</h2>
+
+<p>This also allows me to host with github pages for free, and use git for deployment. So many headaches just went away for me when it comes to writing.</p>
+
+<h2>Version Control based writing.</h2>
+
+<p>I can take the same approach to writing as I can with coding, publishing fast, fixing mistakes as they are found, and changing content as need be. What you are currently reading isn't the first version of the post, and likely not the last.
+I also like the idea of 'open source' writing. If anyone has anything they would like to add or change, feel free to send a pull request to this repo, and I'll take it under consideration.</p>
+
+<h2>The Right Plugins</h2>
+
+<p>There aren't many plugins or themes available for octopress (yet), but it has all the things that are needed to get good content going. That's what I love about it, it is all content based. The default theme is a beautiful starting off point, it's clear and responsive.</p>
+]]></content>
+  </entry>
+  
+</feed>
