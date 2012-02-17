@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2012-02-16T09:41:49-05:00</updated>
+  <updated>2012-02-17T08:14:27-05:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -14,11 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Terminals for Absolute Beginners]]></title>
+    <title type="html"><![CDATA[Terminals for Absolute Beginners: Part 1]]></title>
     <link href="http://gsto.github.com/blog/2012/02/15/terminals-for-absolute-beginners/"/>
     <updated>2012-02-15T09:35:00-05:00</updated>
     <id>http://gsto.github.com/blog/2012/02/15/terminals-for-absolute-beginners</id>
-    <content type="html"><![CDATA[<h2>Part 1: Directories and Commands</h2>
+    <content type="html"><![CDATA[<h2>Directories and Commands</h2>
 
 <p>You&#8217;ve woken up in a strange place. Maybe you&#8217;ve decided you want to be a power user with your mac. Maybe you&#8217;ve finally decided to check out this strangle &#8216;Linux&#8217; thing you&#8217;ve heard so much about.  Maybe its your first day in software engineering class and the teacher is telling you you are going to have to work on the school&#8217;s server to turn in all of your work. Either way, you find yourself eye-to-eye with a terminal (commonly called the <em>command line</em>) and you don&#8217;t know what to do.</p>
 
@@ -144,7 +144,7 @@ cd ~
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[blogging with octopress]]></title>
+    <title type="html"><![CDATA[Blogging With Octopress]]></title>
     <link href="http://gsto.github.com/blog/2012/02/11/blogging-with-octopress/"/>
     <updated>2012-02-11T10:00:00-05:00</updated>
     <id>http://gsto.github.com/blog/2012/02/11/blogging-with-octopress</id>
