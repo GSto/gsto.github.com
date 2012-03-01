@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: PHP | Glenn Stovall]]></title>
+  <link href="http://gsto.github.com/blog/categories/php/atom.xml" rel="self"/>
+  <link href="http://gsto.github.com/"/>
+  <updated>2012-03-01T14:35:57-05:00</updated>
+  <id>http://gsto.github.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Setting Up a Template and Assets in CodeIgniter]]></title>
+    <link href="http://gsto.github.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter/"/>
+    <updated>2012-02-28T09:06:00-05:00</updated>
+    <id>http://gsto.github.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter</id>
+    <content type="html"><![CDATA[<p>In this article, I'd like to walk you though my first few steps when setting up a new CodeIgniter Project:
+ - Setting up a way to render pages in a layout
+ - Setting up a way to easily handle assets (CSS &amp; JavaScript files)</p>
+
+<!-- more -->
+
+
+<h3>Step 1: Creating A Template</h3>
+
+<p>To start, we are going to make two new files, a layout view, and a localized controller. Let's start by creating a <code>layout.php</code> file in <code>views</code>, and add the following:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/views/layout.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!doctype html&gt;<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!--[if lt IE 7]&gt; &lt;html class=&quot;no-js lt-ie9 lt-ie8 lt-ie7&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!--[if IE 7]&gt;    &lt;html class=&quot;no-js lt-ie9 lt-ie8&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!--[if IE 8]&gt;    &lt;html class=&quot;no-js lt-ie9&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!--[if gt IE 8]&gt;&lt;!--&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;</span> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!--&lt;![endif]--&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&#39;UTF-8&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&#39;X-UA-Compatible&#39;</span> <span class="na">content=</span><span class="s">&#39;IE=edge,chrome=1&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;title&gt;</span>Title Goes Here<span class="nt">&lt;/title&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!--[if IE 9]&gt;</span>
+</span><span class='line'><span class="c">  &lt;style type=&quot;text/css&quot;&gt; .gradient { filter: none;} &lt;/style&gt;</span>
+</span><span class='line'><span class="c">&lt;![endif]--&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!--[if lt IE 9]&gt;</span>
+</span><span class='line'><span class="c">&lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;</span>
+</span><span class='line'><span class="c">&lt;![endif]--&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>This is based on the <a href="paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/">HTML5 set up from Paul Irish</a>. We'll use this as the basis for all of our pages. Now, to use this, we are going to create a <code>MY_Controller</code> inside of <code>appliction/core/MY_Controller.php</code>, and create a new function that we'll call <code>render</code></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/core/MY_Controller.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;&amp;lt;?php if ( ! defined(&#39;BASEPATH&#39;)) exit(&#39;No direct script access allowed&#39;);&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;class MY_Controller extends CI_Controller {&lt;br/&gt;</span>
+</span><span class='line'><span class="x">  protected $layout = &#39;layout&#39;;</span>
+</span><span class='line'><span class="x">  protected function render($content) {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;$view_data = array(</span>
+</span><span class='line'><span class="x">    &#39;content&#39; =&amp;gt; $content</span>
+</span><span class='line'><span class="x">  );</span>
+</span><span class='line'><span class="x">$this-&amp;gt;load-&amp;gt;view($this-&amp;gt;layout,$view_data);</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }</span>
+</span><span class='line'><span class="x">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>This will allow us to use the layout file to wrap all of our content. We've also stored the layout file as a protected variable of the MY_Controller, so that we can use different layouts for different controllers if we so choose. Now, let's modify the template file to be able to render the content. Change the body tag so that it looks like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/views/layout.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>  <span class="ni">&amp;lt;</span>?= $content; ?&gt;
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Now, let's set up an example view and an example controller to see how it works.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/views/example/index.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>  <span class="nt">&lt;h1&gt;</span>Hello, World!<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;p&gt;</span> Example page using layouts <span class="nt">&lt;/p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/controllers/example.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php if ( ! defined(&#39;BASEPATH&#39;)) exit(&#39;No direct script access allowed&#39;);&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;class Example extends MY_Controller {&lt;br/&gt;</span>
+</span><span class='line'><span class="x">  public function index() {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;$content = $this-&amp;gt;load-&amp;gt;view(&#39;example/index&#39;,null,true);</span>
+</span><span class='line'><span class="x">$this-&amp;gt;render($content);</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }</span>
+</span><span class='line'><span class="x">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>Step 2: Adding the Asset Helper</h3>
+
+<p>To help us manage our CSS, JavaScript, and image files, we are going to add some tools for asset manage. First, let's include this <a href="http://codeigniter.com/wiki/Asset_Helper">Asset Helper</a> In our project, and update our <code>autoload.php</code> file so that it is automatically included. Now we are going to set up the directory structure for this. Here is how to do it from the base of your CodeIgniter project (assuming you are using the standard naming conventions):</p>
+
+<pre><code>mkdir assets
+mkdir assets/css
+touch assets/css/app.css
+mkdir assets/js
+touch assets/js/app.js
+mkdir assets/images
+</code></pre>
+
+<p>Now, we are going to keep a list of all of the standard CSS and JavaScript files inside of our MY_Controller, and pass them along to the layout:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/core/MY_Controller.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php if ( ! defined(&#39;BASEPATH&#39;)) exit(&#39;No direct script access allowed&#39;);&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;class MY_Controller extends CI_Controller {&lt;br/&gt;</span>
+</span><span class='line'><span class="x">  protected $layout = &#39;layout&#39;;</span>
+</span><span class='line'><span class="x">  protected $stylesheets = array(&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;&#39;app.css&#39;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  );</span>
+</span><span class='line'><span class="x">  protected $javascripts = array(&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;&#39;app.js&#39;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  );&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  protected function render($content) {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;$view_data = array(</span>
+</span><span class='line'><span class="x">    &#39;content&#39; =&amp;gt; $content,</span>
+</span><span class='line'><span class="x">    &#39;stylesheets&#39; =&amp;gt; $this-&amp;gt;get_stylesheets(),</span>
+</span><span class='line'><span class="x">    &#39;javascripts&#39; =&amp;gt; $this-&amp;gt;get_javascripts()</span>
+</span><span class='line'><span class="x">  );</span>
+</span><span class='line'><span class="x">$this-&amp;gt;load-&amp;gt;view($this-&amp;gt;layout,$view_data);</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  protected function get_stylesheets() {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;return $this-&amp;gt;stylesheets;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  protected function get_javascripts() {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;return $this-&amp;gt;javascripts;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }</span>
+</span><span class='line'><span class="x">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>And now we'll update our template using the <code>css_asset()</code> and <code>js_asset()</code> functions from the helper we included earlier:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/views/layout.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;!-- in the &lt;head&gt; .. --&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;&amp;lt;? foreach($stylesheets as $stylesheet): ?&gt;</span>
+</span><span class='line'><span class="x">  &amp;lt;?= css_asset($stylesheet); ?&gt;  &lt;br/&gt;</span>
+</span><span class='line'><span class="x">&amp;lt;? endforeach; ?&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;!-- right before &lt;body&gt; --&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;&amp;lt;? foreach($javascripts as $javascript): ?&gt;</span>
+</span><span class='line'><span class="x">  &amp;lt;?= js_asset($javascript); ?&gt;</span>
+</span><span class='line'><span class="x">&amp;lt;? endforeach; ?&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>If you view the source, you should see that your <code>app.css</code> and <code>app.js</code> files are now included.</p>
+
+<h3>Step 3: Adding Local Assets</h3>
+
+<p>One of the better ideas Rails 3.0 brought to the table was the idea of the 'asset pipeline', which includes being able to define JavaScript and CSS files that are specific to a particular controller. Now let's set up our CodeIgniter project to be able to behave in a similar manner.</p>
+
+<p>This was my motivation for writing the <code>get_stylesheets()</code> and <code>get_javascripts()</code> functions in the <code>MY_Controller</code> class earlier. since we are going to be changing how we get the arrays, we can now do so without touching the <code>render()</code> function since we have abstracted out the interface in which we get our files.</p>
+
+<p>So let's update those two functions, and add two more protected variables to our <code>MY_Controller</code> file:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/core/MY_Controller.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php if ( ! defined(&#39;BASEPATH&#39;)) exit(&#39;No direct script access allowed&#39;);                                              &lt;br/&gt;</span>
+</span><span class='line'><span class="x">class MY_Controller extends CI_Controller {</span>
+</span><span class='line'><span class="x">  protected $layout = &#39;layout&#39;;</span>
+</span><span class='line'><span class="x">  protected $stylesheets = array(&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;&#39;app.css&#39;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  );</span>
+</span><span class='line'><span class="x">  protected $javascripts = array(&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;&#39;app.js&#39;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  );</span>
+</span><span class='line'><span class="x">  protected $local_stylesheets = array();</span>
+</span><span class='line'><span class="x">  protected $local_javascripts = array();&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  //other parts of the class..&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  protected function get_stylesheets() {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;return array_merge($this-&amp;gt;stylesheets,$this-&amp;gt;local_stylesheets);</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  protected function get_javascripts() {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;return array_merge($this-&amp;gt;javascripts,$this-&amp;gt;local_javascripts);</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Now we are able to add additional asset files to the <code>local_stylesheets</code> and <code>local_javascripts</code> variables in classes that extend <code>MY_Controller</code>, allowing us to keep our code seperated and more organized. With this and templates, we now have a good system in place to manage the visual aspects of our web application.</p>
+]]></content>
+  </entry>
+  
+</feed>
