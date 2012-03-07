@@ -4,7 +4,7 @@
   <title><![CDATA[Category: regular expressions | Glenn Stovall]]></title>
   <link href="http://gsto.github.com/blog/categories/regular-expressions/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2012-03-06T14:25:49-05:00</updated>
+  <updated>2012-03-07T09:23:47-05:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -34,9 +34,9 @@
 <p>Most of the words of your regular expression are going to be made of a few different language constructs:</p>
 
 <ul>
-<li><strong>Ranges</strong> : defining a set of characters that can match. Common examples are <code>[A-Z]</code>, which means all capital letters, <code>[0-9]</code> or which means all digits. These can be combined as well. A common on is <code>[A-Za-z0-9-_]</code> which would match all letters, numbers, hyphens, and underscores</li>
-<li><strong>Character Classes</strong> : similar to ranges. <code>\s</code> means 'any white space character', where <code>\S</code> means 'any non-white space character'</li>
-<li><strong>Metacharacters</strong> : characters that have thier own special meaning, the most common being the pipe <code>|</code> character, which means 'or' similar to <code>||</code> in most programming languages. A subset of metacharacters is <em>anchors</em>, where can denote the beginning of a string (<code>^</code>) or the end of a string (<code>$</code>)</li>
+<li><strong>Ranges</strong> : defining a set of characters that can match. Common examples are <code>[A-Z]</code>, which means all capital letters, <code>[0-9]</code> or which means all digits. These can be combined as well. A common on is <code>[A-Za-z0-9-_]</code> which would match all letters, numbers, hyphens, and underscores.</li>
+<li><strong>Character Classes</strong> : similar to ranges. <code>\s</code> means 'any white space character', where <code>\S</code> means 'any non-white space character'.</li>
+<li><strong>Metacharacters</strong> : characters that have thier own special meaning, the most common being the pipe <code>|</code> character, which means 'or' similar to <code>||</code> in most programming languages. A subset of metacharacters is <em>anchors</em>, where can denote the beginning of a string (<code>^</code>) or the end of a string (<code>$</code>).</li>
 <li><strong>Quantifiers</strong> : quantifiers are a kind of 'modifier' to the above patterns. These let you tell the pattern how many of the previous pattern to look for. The common ones are: <code>*</code> for 0 or more, <code>+</code> for 1 or more, and <code>?</code> for 0 or 1. You can also explicity state an amount with something like <code>{5}</code> for 5 characters, or a range, such as <code>{3-6}</code>, which matches anywhere between three and six characters.</li>
 </ul>
 
@@ -69,12 +69,12 @@ They can look like any of the following:
 <p>So, let's look at this step by step:</p>
 
 <ul>
-<li><strong>We have the start of the string</strong> : this is where we start with one of the anchors we mentioned earlier, <code>^</code></li>
-<li><strong>Three Digits</strong> : We discussed the range of digits earlier (<code>[0-9]</code>), but that only matches a single digit. To match exactly 3, we will need a quantifier as well. So this word can be writen as <code>[0-9]{3}</code></li>
-<li><strong>Either a hyphen, forward slash, or neither</strong> : this is going to take another quantifier, but which one? It helps if we rephrase this statement a bit, and think of it as this: "exactly 0 or 1 hyphen or forward slash". Now we can see that we need the <code>?</code> quantifier. We also see that we'll need to use an 'or' for this statement. For statements like this, you can wrap this part of the expression in parenthesis so that its clear whats going on. The answer here is <code>(-|/)?</code></li>
-<li><strong>Two Digits</strong> : similar to above: <code>[0-9]{2}</code></li>
-<li><strong>Either a hyphen, forward slash, or neither</strong> : Here we will repeat the <code>(-|/)?</code> pattern</li>
-<li><strong>Four Digits</strong> : similar to above: <code>[0-9]{4}</code></li>
+<li><strong>We have the start of the string</strong> : this is where we start with one of the anchors we mentioned earlier, <code>^</code>.</li>
+<li><strong>Three Digits</strong> : We discussed the range of digits earlier (<code>[0-9]</code>), but that only matches a single digit. To match exactly 3, we will need a quantifier as well. So this word can be writen as <code>[0-9]{3}</code>.</li>
+<li><strong>Either a hyphen, forward slash, or neither</strong> : this is going to take another quantifier, but which one? It helps if we rephrase this statement a bit, and think of it as this: "exactly 0 or 1 hyphen or forward slash". Now we can see that we need the <code>?</code> quantifier. We also see that we'll need to use an 'or' for this statement. For statements like this, you can wrap this part of the expression in parenthesis so that its clear whats going on. The answer here is <code>(-|/)?</code>.</li>
+<li><strong>Two Digits</strong> : similar to above: <code>[0-9]{2}</code>.</li>
+<li><strong>Either a hyphen, forward slash, or neither</strong> : same as above: <code>(-|/)?</code>.</li>
+<li><strong>Four Digits</strong> : similar to above: <code>[0-9]{4}</code>.</li>
 <li><strong>End of the String</strong> : another anchor, the <code>$</code> one this time.</li>
 </ul>
 

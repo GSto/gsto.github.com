@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2012-03-06T14:25:49-05:00</updated>
+  <updated>2012-03-07T09:23:47-05:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,125 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Terminals for Absolute Beginners: Part 2]]></title>
+    <link href="http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/"/>
+    <updated>2012-03-07T08:14:00-05:00</updated>
+    <id>http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2</id>
+    <content type="html"><![CDATA[<h2>Manipulating Files</h2>
+
+<ul>
+<li>Read Part 1 <a href="blog/2012/02/15/terminals-for-absolute-beginners/">Here</a></li>
+</ul>
+
+
+<p>Now that we have learned the basics of navigating the terminal, lets start looking at how to we affect the file system we&#8217;re working in. In this tutorial, we&#8217;ll cover the following:</p>
+
+<ul>
+<li>creating and deleting directories</li>
+<li>copying and moving files and directories</li>
+<li>creating and deleting files</li>
+</ul>
+
+
+<p> <!-- more --></p>
+
+<p> ###Creating and Deleting Directories</p>
+
+<p> Wherever you left off in the last lesson, let&#8217;s start by going back to home directory, and working from there. Remember that we can do this by running the command <code>cd ~</code>. Now, since we will be manipulating the file system in this tutortial, let&#8217;s create a new directory that we can work in. You can do this by using the <code>mkdir</code> command. mkdir is short for &#8220;make directory&#8221;. just type mkdir and the name of the folder you would like to create. For this example, we&#8217;ll call it &#8216;terminal-tutorial&#8217;</p>
+
+<pre><code>mkdir terminal-tutorial
+ls
+</code></pre>
+
+<p>When you run <code>ls</code>, you&#8217;ll see that a new directory has been created. <code>mkdir</code> defaults to creating the directory inside the directory you are currently located. if you define a path, it will created the directory there. For example, lets make a directory inside of our terminal-tutorial directory, and then navigate there.</p>
+
+<pre><code>mkdir terminal-tutorial/to-delete
+cd terminal-tutorial
+ls
+</code></pre>
+
+<p>You should see just the to-delete directory. If you tried to create a directory in a directory that did not exist, you would get an error. You can create nested directories at once by using the <code>-p</code> option, Like so:</p>
+
+<pre><code>mkdir -p multiple/subdirectory/example
+</code></pre>
+
+<p>creates 3 new directories with those paths. Now lets says you need to get rid of a directory. For this we can use the <code>rmdir</code> command, which is short for &#8216;remove directory&#8217;. Lets get rid of that pesky <code>to-delete</code> folder we made earlier, and the multiple directory example</p>
+
+<pre><code>rmdir to-delete
+rmdir multiple
+rmdir: failed to remove `multiple': Directory not empty
+</code></pre>
+
+<p>You&#8217;ll see that you get the following error message since <code>multiple</code> is not empty. <code>rmdir</code> can only remove empty directories.  Later in this artice we will discuss how can remove entire directories of files</p>
+
+<h3>Creating and Deleting Files</h3>
+
+<p>Now we can start creating and deleting files as well as directories. Let&#8217;s start with the <code>touch</code> command. <code>touch</code> is to files what <code>mkdir</code> is to directories. so let&#8217;s create a file:</p>
+
+<pre><code>touch to-delete
+ls
+</code></pre>
+
+<p>This creates an empty file named <code>to-delete</code>. To actually delete this file, we use the <code>rm</code> command, which is short for remove:</p>
+
+<pre><code>rm to-delete
+</code></pre>
+
+<p>rm can also be used on directories, by using the <code>-r</code> option, which is short for recursive. This will also remove all the contents inside of a directory.  Occasionally you may get a prompt asking if you are sure you want to delete something. You can get rid of this with the <code>-f</code> option. You can use this to get rid of the <code>multiple</code> directory you created earlier</p>
+
+<pre><code>rm -rf multiple
+</code></pre>
+
+<p>If you want to open and edit text files, you will need to get accquainted with a good text editor. <a href="http://www.vim.org/">Vim</a> and <a href="http://www.gnu.org/software/emacs/">Emacs</a> Are the two most popular, but both are very complex and a whole series of tutorials could be written on either one.</p>
+
+<p><strong>WARNING</strong></p>
+
+<p>It is a common joke on the internet to try to get people to run the command <code>rm -rf /</code> in the terminal. <code>/</code> refers to the base directory of your entire filesystem, so <code>rm -rf /</code> basically translates into &#8220;delete my everything forever, and don&#8217;t ask for my permission&#8221;. It is a <em>seriously</em> dangerous command to run, and now you know why.</p>
+
+<h3>Copying And Moving Files and Directories</h3>
+
+<p>Let&#8217;s start by creating a couple more directories for this section:</p>
+
+<pre><code>mkdir cars
+mkdir vechicles
+</code></pre>
+
+<p>You may have decided that you made a mistake, and the <code>cars</code> directory should be inside of the <code>vehicles</code> directory. For situations like these, we have the <code>mv</code> command, which is short for move:</p>
+
+<pre><code>mv cars vechicles/cars
+</code></pre>
+
+<p>The first option of the <code>mv</code> command is the directory you would like to move, the second argument being where you would like it to go. Since the names do not nessicarily have to match, <code>mv</code> also acts as a &#8216;rename&#8217; operation for files and directories. If you want to <em>guarantee</em> the names match (and save you some typing), you can replace the final name of the file/directory with a <code>.</code> character, so these two commands are equivalent:</p>
+
+<pre><code>mv cars vehicles/cars
+mv cars vehicles/.
+</code></pre>
+
+<p>If you wanted to maintain the original <code>cars</code> directory and just put a copy of it in the <code>vehicles</code> directory, then you can do that wih the <code>cp</code> command, which is short for &#8220;copy&#8221;.  Much like <code>rm</code>, <code>cp</code> works with both files and directories, but requires a <code>-r</code> for directories. The structure of the arguments is the same as <code>mv</code> though. So copying <code>cars</code> would have looked like this:</p>
+
+<pre><code>cp -r cars vehicles/.
+</code></pre>
+
+<p>Note that the <code>.</code> syntax to keep the same name still works here as well.</p>
+
+<h3>Protip: Tab Completion</h3>
+
+<p>All of this typing on the command line can get tiresome. One of the best tricks to learn to cut down on the amount of keystrokes it takes to type commands is to learn about and get used to frequently using tab completion. If you type the first few letters of a directory or file name and hit tab, the shell will complete it for you! You must type enough characters for it to be unique. If not, pressing tab twice on most shells will show you all the directories and files that match the start of the name you typed. so for example, if you typed this:</p>
+
+<pre><code>mkdir terminal-tutorial
+cd te   
+</code></pre>
+
+<p>and this pressed the tab button, the terminal should automatically fill out:</p>
+
+<pre><code>cd terminal-tutorial
+</code></pre>
+
+<p>Now we have a good set of tools for working with and manipulating the file system. Next time we&#8217;ll take a look at users, groups, and the permissions system that UNIX is based on.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My Eureka Moment With Regular Expressions]]></title>
@@ -34,9 +153,9 @@
 <p>Most of the words of your regular expression are going to be made of a few different language constructs:</p>
 
 <ul>
-<li><strong>Ranges</strong> : defining a set of characters that can match. Common examples are <code>[A-Z]</code>, which means all capital letters, <code>[0-9]</code> or which means all digits. These can be combined as well. A common on is <code>[A-Za-z0-9-_]</code> which would match all letters, numbers, hyphens, and underscores</li>
-<li><strong>Character Classes</strong> : similar to ranges. <code>\s</code> means &#8216;any white space character&#8217;, where <code>\S</code> means &#8216;any non-white space character&#8217;</li>
-<li><strong>Metacharacters</strong> : characters that have thier own special meaning, the most common being the pipe <code>|</code> character, which means &#8216;or&#8217; similar to <code>||</code> in most programming languages. A subset of metacharacters is <em>anchors</em>, where can denote the beginning of a string (<code>^</code>) or the end of a string (<code>$</code>)</li>
+<li><strong>Ranges</strong> : defining a set of characters that can match. Common examples are <code>[A-Z]</code>, which means all capital letters, <code>[0-9]</code> or which means all digits. These can be combined as well. A common on is <code>[A-Za-z0-9-_]</code> which would match all letters, numbers, hyphens, and underscores.</li>
+<li><strong>Character Classes</strong> : similar to ranges. <code>\s</code> means &#8216;any white space character&#8217;, where <code>\S</code> means &#8216;any non-white space character&#8217;.</li>
+<li><strong>Metacharacters</strong> : characters that have thier own special meaning, the most common being the pipe <code>|</code> character, which means &#8216;or&#8217; similar to <code>||</code> in most programming languages. A subset of metacharacters is <em>anchors</em>, where can denote the beginning of a string (<code>^</code>) or the end of a string (<code>$</code>).</li>
 <li><strong>Quantifiers</strong> : quantifiers are a kind of &#8216;modifier&#8217; to the above patterns. These let you tell the pattern how many of the previous pattern to look for. The common ones are: <code>*</code> for 0 or more, <code>+</code> for 1 or more, and <code>?</code> for 0 or 1. You can also explicity state an amount with something like <code>{5}</code> for 5 characters, or a range, such as <code>{3-6}</code>, which matches anywhere between three and six characters.</li>
 </ul>
 
@@ -69,12 +188,12 @@ They can look like any of the following:
 <p>So, let&#8217;s look at this step by step:</p>
 
 <ul>
-<li><strong>We have the start of the string</strong> : this is where we start with one of the anchors we mentioned earlier, <code>^</code></li>
-<li><strong>Three Digits</strong> : We discussed the range of digits earlier (<code>[0-9]</code>), but that only matches a single digit. To match exactly 3, we will need a quantifier as well. So this word can be writen as <code>[0-9]{3}</code></li>
-<li><strong>Either a hyphen, forward slash, or neither</strong> : this is going to take another quantifier, but which one? It helps if we rephrase this statement a bit, and think of it as this: &#8220;exactly 0 or 1 hyphen or forward slash&#8221;. Now we can see that we need the <code>?</code> quantifier. We also see that we&#8217;ll need to use an &#8216;or&#8217; for this statement. For statements like this, you can wrap this part of the expression in parenthesis so that its clear whats going on. The answer here is <code>(-|/)?</code></li>
-<li><strong>Two Digits</strong> : similar to above: <code>[0-9]{2}</code></li>
-<li><strong>Either a hyphen, forward slash, or neither</strong> : Here we will repeat the <code>(-|/)?</code> pattern</li>
-<li><strong>Four Digits</strong> : similar to above: <code>[0-9]{4}</code></li>
+<li><strong>We have the start of the string</strong> : this is where we start with one of the anchors we mentioned earlier, <code>^</code>.</li>
+<li><strong>Three Digits</strong> : We discussed the range of digits earlier (<code>[0-9]</code>), but that only matches a single digit. To match exactly 3, we will need a quantifier as well. So this word can be writen as <code>[0-9]{3}</code>.</li>
+<li><strong>Either a hyphen, forward slash, or neither</strong> : this is going to take another quantifier, but which one? It helps if we rephrase this statement a bit, and think of it as this: &#8220;exactly 0 or 1 hyphen or forward slash&#8221;. Now we can see that we need the <code>?</code> quantifier. We also see that we&#8217;ll need to use an &#8216;or&#8217; for this statement. For statements like this, you can wrap this part of the expression in parenthesis so that its clear whats going on. The answer here is <code>(-|/)?</code>.</li>
+<li><strong>Two Digits</strong> : similar to above: <code>[0-9]{2}</code>.</li>
+<li><strong>Either a hyphen, forward slash, or neither</strong> : same as above: <code>(-|/)?</code>.</li>
+<li><strong>Four Digits</strong> : similar to above: <code>[0-9]{4}</code>.</li>
 <li><strong>End of the String</strong> : another anchor, the <code>$</code> one this time.</li>
 </ul>
 

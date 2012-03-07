@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Terminals for Absolute Beginners: Part 2 - Glenn Stovall</title>
+  <meta name="author" content="Glenn Stovall">
+
+  
+  <meta name="description" content="Manipulating Files Read Part 1 Here Now that we have learned the basics of navigating the terminal, lets start looking at how to we affect the file &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Glenn Stovall" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2427296-13']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Glenn Stovall</a></h1>
+  
+    <h2>Software Developer, Musician, and All Around Nice Guy</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:gsto.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/portfolio">Portfolio</a></li>
+  <li><a href="/other-writing">Other Writing</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Terminals for Absolute Beginners: Part 2</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-07T08:14:00-05:00" pubdate data-updated="true">Mar 7<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2>Manipulating Files</h2>
+
+<ul>
+<li>Read Part 1 <a href="blog/2012/02/15/terminals-for-absolute-beginners/">Here</a></li>
+</ul>
+
+
+<p>Now that we have learned the basics of navigating the terminal, lets start looking at how to we affect the file system we&#8217;re working in. In this tutorial, we&#8217;ll cover the following:</p>
+
+<ul>
+<li>creating and deleting directories</li>
+<li>copying and moving files and directories</li>
+<li>creating and deleting files</li>
+</ul>
+
+
+<p> <!-- more --></p>
+
+<p> ###Creating and Deleting Directories</p>
+
+<p> Wherever you left off in the last lesson, let&#8217;s start by going back to home directory, and working from there. Remember that we can do this by running the command <code>cd ~</code>. Now, since we will be manipulating the file system in this tutortial, let&#8217;s create a new directory that we can work in. You can do this by using the <code>mkdir</code> command. mkdir is short for &#8220;make directory&#8221;. just type mkdir and the name of the folder you would like to create. For this example, we&#8217;ll call it &#8216;terminal-tutorial&#8217;</p>
+
+<pre><code>mkdir terminal-tutorial
+ls
+</code></pre>
+
+<p>When you run <code>ls</code>, you&#8217;ll see that a new directory has been created. <code>mkdir</code> defaults to creating the directory inside the directory you are currently located. if you define a path, it will created the directory there. For example, lets make a directory inside of our terminal-tutorial directory, and then navigate there.</p>
+
+<pre><code>mkdir terminal-tutorial/to-delete
+cd terminal-tutorial
+ls
+</code></pre>
+
+<p>You should see just the to-delete directory. If you tried to create a directory in a directory that did not exist, you would get an error. You can create nested directories at once by using the <code>-p</code> option, Like so:</p>
+
+<pre><code>mkdir -p multiple/subdirectory/example
+</code></pre>
+
+<p>creates 3 new directories with those paths. Now lets says you need to get rid of a directory. For this we can use the <code>rmdir</code> command, which is short for &#8216;remove directory&#8217;. Lets get rid of that pesky <code>to-delete</code> folder we made earlier, and the multiple directory example</p>
+
+<pre><code>rmdir to-delete
+rmdir multiple
+rmdir: failed to remove `multiple': Directory not empty
+</code></pre>
+
+<p>You&#8217;ll see that you get the following error message since <code>multiple</code> is not empty. <code>rmdir</code> can only remove empty directories.  Later in this artice we will discuss how can remove entire directories of files</p>
+
+<h3>Creating and Deleting Files</h3>
+
+<p>Now we can start creating and deleting files as well as directories. Let&#8217;s start with the <code>touch</code> command. <code>touch</code> is to files what <code>mkdir</code> is to directories. so let&#8217;s create a file:</p>
+
+<pre><code>touch to-delete
+ls
+</code></pre>
+
+<p>This creates an empty file named <code>to-delete</code>. To actually delete this file, we use the <code>rm</code> command, which is short for remove:</p>
+
+<pre><code>rm to-delete
+</code></pre>
+
+<p>rm can also be used on directories, by using the <code>-r</code> option, which is short for recursive. This will also remove all the contents inside of a directory.  Occasionally you may get a prompt asking if you are sure you want to delete something. You can get rid of this with the <code>-f</code> option. You can use this to get rid of the <code>multiple</code> directory you created earlier</p>
+
+<pre><code>rm -rf multiple
+</code></pre>
+
+<p>If you want to open and edit text files, you will need to get accquainted with a good text editor. <a href="http://www.vim.org/">Vim</a> and <a href="http://www.gnu.org/software/emacs/">Emacs</a> Are the two most popular, but both are very complex and a whole series of tutorials could be written on either one.</p>
+
+<p><strong>WARNING</strong></p>
+
+<p>It is a common joke on the internet to try to get people to run the command <code>rm -rf /</code> in the terminal. <code>/</code> refers to the base directory of your entire filesystem, so <code>rm -rf /</code> basically translates into &#8220;delete my everything forever, and don&#8217;t ask for my permission&#8221;. It is a <em>seriously</em> dangerous command to run, and now you know why.</p>
+
+<h3>Copying And Moving Files and Directories</h3>
+
+<p>Let&#8217;s start by creating a couple more directories for this section:</p>
+
+<pre><code>mkdir cars
+mkdir vechicles
+</code></pre>
+
+<p>You may have decided that you made a mistake, and the <code>cars</code> directory should be inside of the <code>vehicles</code> directory. For situations like these, we have the <code>mv</code> command, which is short for move:</p>
+
+<pre><code>mv cars vechicles/cars
+</code></pre>
+
+<p>The first option of the <code>mv</code> command is the directory you would like to move, the second argument being where you would like it to go. Since the names do not nessicarily have to match, <code>mv</code> also acts as a &#8216;rename&#8217; operation for files and directories. If you want to <em>guarantee</em> the names match (and save you some typing), you can replace the final name of the file/directory with a <code>.</code> character, so these two commands are equivalent:</p>
+
+<pre><code>mv cars vehicles/cars
+mv cars vehicles/.
+</code></pre>
+
+<p>If you wanted to maintain the original <code>cars</code> directory and just put a copy of it in the <code>vehicles</code> directory, then you can do that wih the <code>cp</code> command, which is short for &#8220;copy&#8221;.  Much like <code>rm</code>, <code>cp</code> works with both files and directories, but requires a <code>-r</code> for directories. The structure of the arguments is the same as <code>mv</code> though. So copying <code>cars</code> would have looked like this:</p>
+
+<pre><code>cp -r cars vehicles/.
+</code></pre>
+
+<p>Note that the <code>.</code> syntax to keep the same name still works here as well.</p>
+
+<h3>Protip: Tab Completion</h3>
+
+<p>All of this typing on the command line can get tiresome. One of the best tricks to learn to cut down on the amount of keystrokes it takes to type commands is to learn about and get used to frequently using tab completion. If you type the first few letters of a directory or file name and hit tab, the shell will complete it for you! You must type enough characters for it to be unique. If not, pressing tab twice on most shells will show you all the directories and files that match the start of the name you typed. so for example, if you typed this:</p>
+
+<pre><code>mkdir terminal-tutorial
+cd te   
+</code></pre>
+
+<p>and this pressed the tab button, the terminal should automatically fill out:</p>
+
+<pre><code>cd terminal-tutorial
+</code></pre>
+
+<p>Now we have a good set of tools for working with and manipulating the file system. Next time we&#8217;ll take a look at users, groups, and the permissions system that UNIX is based on.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Glenn Stovall</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-07T08:14:00-05:00" pubdate data-updated="true">Mar 7<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/terminal/'>terminal</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/" data-via="" data-counturl="http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/03/06/my-eureka-moment-with-regular-expressions/" title="Previous Post: My Eureka Moment With Regular Expressions">&laquo; My Eureka Moment With Regular Expressions</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/03/07/terminals-for-absolute-beginners-part-2/">Terminals for Absolute Beginners: Part 2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/06/my-eureka-moment-with-regular-expressions/">My Eureka Moment With Regular Expressions</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter/">Setting Up a Template and Assets in CodeIgniter</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/15/terminals-for-absolute-beginners/">Terminals for Absolute Beginners: Part 1</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/11/blogging-with-octopress/">Blogging With Octopress</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>External Articles</h1>
+  <ul>
+    <li class='post'>
+      <a href='http://www.jhousemedia.com/blog-articles/140/Complex-Vs-Complicated-Software.html' target='_new'>Complex vs. Complicated Software</a>
+    </li>
+    <li class='post'>
+      <a href='http://www.jhousemedia.com/blog-articles/139/Javascript2011.html' target='_new'>The Year in JavaScript</a>
+    </li>    
+  </ul>
+</section>
+
+
+
+
+<section class="googleplus googleplus-hidden">
+  <h1>
+    <a href="https://plus.google.com/110938448365354806739?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p class='credit'>
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+  <br />
+  &copy; 2012 - Glenn Stovall
+</p>
+<p class='social-links'>
+  <a href='http://www.facebook.com/glenns' target='_blank'>
+    <img src='/images/Facebook.png' alt='Glenn Stovall on Facebook'>
+  </a>
+  <a href='http://www.twitter.com/gsto' target='_blank'>
+    <img src='/images/Twitter.png' alt='Glenn Stovall on Twitter'>
+  </a>
+  <a href='http://glennstovall.tumblr.com' target='_blank'>
+    <img src='/images/Tumblr.png' alt='Glenn Stovall on Tumblr'>
+  </a>
+  <a href='http://linkedin.com/in/glennstovall' target='_blank'>
+    <img src='/images/LinkedIn.png' alt='Glenn Stovall on LinkedIn'>
+  </a>
+  <a href='http://forrst.com/people/gsto' target='_blank'>
+    <img src='/images/Forrst.png' alt='Glenn Stovall on Forrst'>
+  </a>
+  <a href='http://github.com/gsto' target='_blank'>
+    <img src='/images/Github.png' alt='Glenn Stovall on Github'>
+  </a>
+</p>
+ 
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
