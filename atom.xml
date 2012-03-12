@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2012-03-08T15:32:15-05:00</updated>
+  <updated>2012-03-12T10:29:19-04:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -137,7 +137,8 @@ cd te
     <link href="http://gsto.github.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions/"/>
     <updated>2012-03-06T13:49:00-05:00</updated>
     <id>http://gsto.github.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions</id>
-    <content type="html"><![CDATA[<p>Regular expressions are a tough cookie for most programmers to figure out. They are <em>terrifying</em> to look at with their daunting syntax. There is also nothing quite like regular expressions anywhere in programming. programmers may learn to hack together basic regex expressions, or how to cut and paste some they find online for their needs, but it can be tricky to get a real grasp of the concept. Here I&#8217;d like to explain the line of thinking that finally led to me grokking regex.</p>
+    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/my_eureka_moment.jpg">
+Regular expressions are a tough cookie for most programmers to figure out. They are <em>terrifying</em> to look at with their daunting syntax. There is also nothing quite like regular expressions anywhere in programming. programmers may learn to hack together basic regex expressions, or how to cut and paste some they find online for their needs, but it can be tricky to get a real grasp of the concept. Here I&#8217;d like to explain the line of thinking that finally led to me grokking regex.</p>
 
 <!-- more -->
 
@@ -641,7 +642,8 @@ cd ~
     <link href="http://gsto.github.com/blog/2012/02/11/blogging-with-octopress/"/>
     <updated>2012-02-11T10:00:00-05:00</updated>
     <id>http://gsto.github.com/blog/2012/02/11/blogging-with-octopress</id>
-    <content type="html"><![CDATA[<p>If you&#8217;re reading this, then I&#8217;ve successfully got my octopress blog up and running on Github pages. Why the switch to octopress?</p>
+    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/blog_with_octopress.png" width="260">
+If you&#8217;re reading this, then I&#8217;ve successfully got my octopress blog up and running on Github pages. Why the switch to octopress?</p>
 
 <!-- more -->
 
