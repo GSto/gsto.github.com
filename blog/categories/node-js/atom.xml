@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: node.js | Glenn Stovall]]></title>
+  <link href="http://gsto.github.com/blog/categories/node-js/atom.xml" rel="self"/>
+  <link href="http://gsto.github.com/"/>
+  <updated>2012-05-07T22:23:03-04:00</updated>
+  <id>http://gsto.github.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Rapid Development with Node.js and CoffeeScript]]></title>
+    <link href="http://gsto.github.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/"/>
+    <updated>2012-05-07T21:57:00-04:00</updated>
+    <id>http://gsto.github.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript</id>
+    <content type="html"><![CDATA[<p>Node.js and CoffeeScript have been all the rage in the web development community as of late. In this tutorial, I'll be walking though how to set up your development environment to quickly write &amp; test Node.js apps completly in CoffeeScript, and have your development app update automatically without having to compile CoffeeScript <em>or</em> restart your Node.js server.</p>
+
+<!-- more -->
+
+
+<h3>Step 1: Installing CoffeeScript</h3>
+
+<p>like most other Node.js packages, installing coffeescript is easy:</p>
+
+<pre><code>npm install coffee-script
+</code></pre>
+
+<p>Now that we have CoffeeScript installed, we can write a basic 'hello world' server is CoffeeScript. If you aren't familiar with the CoffeeScript syntax, you can refer to the (CoffeeScript Documentation)[http://coffeescript.org/]. Write the following to a <code>hello.coffee</code> file:</p>
+
+<p>``` coffeescript hello.coffee
+require http = 'http'
+http.createServer (req, res) -></p>
+
+<pre><code>    res.writeHead 200
+    res.end 'Hello, World!'
+</code></pre>
+
+<p>.listen 4000
+```</p>
+
+<h3>Step 2: Compilation</h3>
+
+<p>CoffeeScript files can't be executed directly by node, they have to be compiled to JavaScript first. We can run the following command to compile our <code>hello.coffee</code> file:</p>
+
+<pre><code>coffee --compile hello.coffee
+</code></pre>
+
+<p>This will generate a <code>hello.js</code> file. now we can run <code>node hello.js</code> and see our message at localhost:4000. Here is the resulting compiled JavaScript:</p>
+
+<p>``` javascript hello.js
+(function() {
+  var http;</p>
+
+<p>  http = require('http');</p>
+
+<p>  http.createServer(function(req, res) {</p>
+
+<pre><code>res.writeHead(200);
+return res.end('Another Message!');
+</code></pre>
+
+<p>  }).listen(4000);</p>
+
+<p>}).call(this);</p>
+
+<p>```</p>
+
+<p>The resulting JavaScript is more verbose than what we wrote originally, but it is still very easy to see how the CoffeeScript maps to the resulting code. Unfortunately this constant compilation isn't very rapid, now is it? Let's look at how we can streamline this process.</p>
+
+<h3>Step 3: Automation</h3>
+
+<p>The CoffeeScript compiler has a <code>--watch</code> option, which we can use to tell it to automatically compile any <code>.coffee</code> file whenever there is a change. Run the following command, and set it to a background process:</p>
+
+<pre><code>coffee --compile --watch *.coffee
+</code></pre>
+
+<p>That will take care of the compilation issue. However, you will still have to wait until everything compiles, and then restart your server, right? Wrong! Now we are going to install a second package, called (Nodemon)[http://remysharp.com/2010/10/12/nodejs-rapid-development-nodemon/] which will listen for changes to files, and automatically restart the Node.js server whenver one is detected. Start by installing the package:</p>
+
+<pre><code>npm install nodemon
+</code></pre>
+
+<p>Now, you'll want to create a file named <code>nodemon-ignore</code> in your app's main directory, and add an exception for .coffee files:</p>
+
+<p>```text nodemon-ignore</p>
+
+<h1>creates an exception for .coffee files</h1>
+
+<p>*.coffee
+```</p>
+
+<p>This way, you won't have any conflicts with the CoffeeScript compiler.  When the files compile, it will cause the .js files to change, but the server won't restart before those files are ready. When you are ready to begin, run the following command:</p>
+
+<pre><code>nodemon hello.js
+</code></pre>
+
+<p>Nodemon will listen to changes to all of your non-CoffeeScript files, and automatically restart the server whenever it detects a change. And now you are able to write your node apps in CoffeeScript, and not have to worry about compiling or server restarts, enabling you to write and develop more quickly.</p>
+]]></content>
+  </entry>
+  
+</feed>

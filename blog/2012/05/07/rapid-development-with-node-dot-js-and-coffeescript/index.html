@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Terminals for Absolute Beginners: Part 2 - Glenn Stovall</title>
+  <title>Rapid Development with Node.js and CoffeeScript - Glenn Stovall</title>
   <meta name="author" content="Glenn Stovall">
 
   
-  <meta name="description" content="Manipulating Files Read Part 1 Here Now that we have learned the basics of navigating the terminal, lets start looking at how to we affect the file &hellip;">
+  <meta name="description" content="Node.js and CoffeeScript have been all the rage in the web development community as of late. In this tutorial, I&#8217;ll be walking though how to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2">
+  <link rel="canonical" href="http://gsto.github.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -82,7 +82,7 @@
   
   <header>
     
-      <h1 class="entry-title">Terminals for Absolute Beginners: Part 2</h1>
+      <h1 class="entry-title">Rapid Development With Node.js and CoffeeScript</h1>
     
     
       <p class="meta">
@@ -98,119 +98,103 @@
   
 
 
-<time datetime="2012-03-07T08:14:00-05:00" pubdate data-updated="true">Mar 7<span>th</span>, 2012</time>
+<time datetime="2012-05-07T21:57:00-04:00" pubdate data-updated="true">May 7<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h3>Manipulating Files</h3>
+<div class="entry-content"><p>Node.js and CoffeeScript have been all the rage in the web development community as of late. In this tutorial, I&#8217;ll be walking though how to set up your development environment to quickly write &amp; test Node.js apps completly in CoffeeScript, and have your development app update automatically without having to compile CoffeeScript <em>or</em> restart your Node.js server.</p>
 
-<p><img class="left" src="/images/articles/terminal.jpg" width="260"></p>
-
-<ul>
-<li>Read Part 1 <a href="blog/2012/02/15/terminals-for-absolute-beginners/">Here</a></li>
-</ul>
+<!-- more -->
 
 
-<p>Now that we have learned the basics of navigating the terminal, lets start looking at how to we affect the file system we&#8217;re working in. In this tutorial, we&#8217;ll cover the following: creating and deleting directories, copying and moving files and directories, and creating and deleting files.</p>
+<h3>Step 1: Installing CoffeeScript</h3>
 
-<p> <!-- more --></p>
+<p>like most other Node.js packages, installing coffeescript is easy:</p>
 
-<p> ###Creating and Deleting Directories</p>
-
-<p> Wherever you left off in the last lesson, let&#8217;s start by going back to home directory, and working from there. Remember that we can do this by running the command <code>cd ~</code>. Now, since we will be manipulating the file system in this tutortial, let&#8217;s create a new directory that we can work in. You can do this by using the <code>mkdir</code> command. mkdir is short for &#8220;make directory&#8221;. just type mkdir and the name of the folder you would like to create. For this example, we&#8217;ll call it &#8216;terminal-tutorial&#8217;</p>
-
-<pre><code>mkdir terminal-tutorial
-ls
+<pre><code>npm install coffee-script
 </code></pre>
 
-<p>When you run <code>ls</code>, you&#8217;ll see that a new directory has been created. <code>mkdir</code> defaults to creating the directory inside the directory you are currently located. if you define a path, it will created the directory there. For example, lets make a directory inside of our terminal-tutorial directory, and then navigate there.</p>
+<p>Now that we have CoffeeScript installed, we can write a basic &#8216;hello world&#8217; server is CoffeeScript. If you aren&#8217;t familiar with the CoffeeScript syntax, you can refer to the (CoffeeScript Documentation)[http://coffeescript.org/]. Write the following to a <code>hello.coffee</code> file:</p>
 
-<pre><code>mkdir terminal-tutorial/to-delete
-cd terminal-tutorial
-ls
+<figure class='code'><figcaption><span>hello.coffee</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nx">require</span> <span class="nv">http = </span><span class="s1">&#39;http&#39;</span>
+</span><span class='line'><span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span> <span class="nf">(req, res) -&gt;</span>
+</span><span class='line'>        <span class="nx">res</span><span class="p">.</span><span class="nx">writeHead</span> <span class="mi">200</span>
+</span><span class='line'>        <span class="nx">res</span><span class="p">.</span><span class="nx">end</span> <span class="s1">&#39;Hello, World!&#39;</span>
+</span><span class='line'><span class="p">.</span><span class="nx">listen</span> <span class="mi">4000</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Step 2: Compilation</h3>
+
+<p>CoffeeScript files can&#8217;t be executed directly by node, they have to be compiled to JavaScript first. We can run the following command to compile our <code>hello.coffee</code> file:</p>
+
+<pre><code>coffee --compile hello.coffee
 </code></pre>
 
-<p>You should see just the to-delete directory. If you tried to create a directory in a directory that did not exist, you would get an error. You can create nested directories at once by using the <code>-p</code> option, Like so:</p>
+<p>This will generate a <code>hello.js</code> file. now we can run <code>node hello.js</code> and see our message at localhost:4000. Here is the resulting compiled JavaScript:</p>
 
-<pre><code>mkdir -p multiple/subdirectory/example
+<figure class='code'><figcaption><span>hello.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">http</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">res</span><span class="p">.</span><span class="nx">writeHead</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">&#39;Another Message!&#39;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}).</span><span class="nx">listen</span><span class="p">(</span><span class="mi">4000</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}).</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The resulting JavaScript is more verbose than what we wrote originally, but it is still very easy to see how the CoffeeScript maps to the resulting code. Unfortunately this constant compilation isn&#8217;t very rapid, now is it? Let&#8217;s look at how we can streamline this process.</p>
+
+<h3>Step 3: Automation</h3>
+
+<p>The CoffeeScript compiler has a <code>--watch</code> option, which we can use to tell it to automatically compile any <code>.coffee</code> file whenever there is a change. Run the following command, and set it to a background process:</p>
+
+<pre><code>coffee --compile --watch *.coffee
 </code></pre>
 
-<p>creates 3 new directories with those paths. Now lets says you need to get rid of a directory. For this we can use the <code>rmdir</code> command, which is short for &#8216;remove directory&#8217;. Lets get rid of that pesky <code>to-delete</code> folder we made earlier, and the multiple directory example</p>
+<p>That will take care of the compilation issue. However, you will still have to wait until everything compiles, and then restart your server, right? Wrong! Now we are going to install a second package, called (Nodemon)[http://remysharp.com/2010/10/12/nodejs-rapid-development-nodemon/] which will listen for changes to files, and automatically restart the Node.js server whenver one is detected. Start by installing the package:</p>
 
-<pre><code>rmdir to-delete
-rmdir multiple
-rmdir: failed to remove `multiple': Directory not empty
+<pre><code>npm install nodemon
 </code></pre>
 
-<p>You&#8217;ll see that you get the following error message since <code>multiple</code> is not empty. <code>rmdir</code> can only remove empty directories.  Later in this artice we will discuss how can remove entire directories of files</p>
+<p>Now, you&#8217;ll want to create a file named <code>nodemon-ignore</code> in your app&#8217;s main directory, and add an exception for .coffee files:</p>
 
-<h3>Creating and Deleting Files</h3>
+<figure class='code'><figcaption><span>nodemon-ignore</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>#creates an exception for .coffee files
+</span><span class='line'>*.coffee
+</span></code></pre></td></tr></table></div></figure>
 
-<p>Now we can start creating and deleting files as well as directories. Let&#8217;s start with the <code>touch</code> command. <code>touch</code> is to files what <code>mkdir</code> is to directories. so let&#8217;s create a file:</p>
 
-<pre><code>touch to-delete
-ls
+<p>This way, you won&#8217;t have any conflicts with the CoffeeScript compiler.  When the files compile, it will cause the .js files to change, but the server won&#8217;t restart before those files are ready. When you are ready to begin, run the following command:</p>
+
+<pre><code>nodemon hello.js
 </code></pre>
 
-<p>This creates an empty file named <code>to-delete</code>. To actually delete this file, we use the <code>rm</code> command, which is short for remove:</p>
-
-<pre><code>rm to-delete
-</code></pre>
-
-<p>rm can also be used on directories, by using the <code>-r</code> option, which is short for recursive. This will also remove all the contents inside of a directory.  Occasionally you may get a prompt asking if you are sure you want to delete something. You can get rid of this with the <code>-f</code> option. You can use this to get rid of the <code>multiple</code> directory you created earlier</p>
-
-<pre><code>rm -rf multiple
-</code></pre>
-
-<p>If you want to open and edit text files, you will need to get accquainted with a good text editor. <a href="http://www.vim.org/">Vim</a> and <a href="http://www.gnu.org/software/emacs/">Emacs</a> Are the two most popular, but both are very complex and a whole series of tutorials could be written on either one.</p>
-
-<p><strong>WARNING</strong></p>
-
-<p>It is a common joke on the internet to try to get people to run the command <code>rm -rf /</code> in the terminal. <code>/</code> refers to the base directory of your entire filesystem, so <code>rm -rf /</code> basically translates into &#8220;delete my everything forever, and don&#8217;t ask for my permission&#8221;. It is a <em>seriously</em> dangerous command to run, and now you know why.</p>
-
-<h3>Copying And Moving Files and Directories</h3>
-
-<p>Let&#8217;s start by creating a couple more directories for this section:</p>
-
-<pre><code>mkdir cars
-mkdir vechicles
-</code></pre>
-
-<p>You may have decided that you made a mistake, and the <code>cars</code> directory should be inside of the <code>vehicles</code> directory. For situations like these, we have the <code>mv</code> command, which is short for move:</p>
-
-<pre><code>mv cars vechicles/cars
-</code></pre>
-
-<p>The first option of the <code>mv</code> command is the directory you would like to move, the second argument being where you would like it to go. Since the names do not nessicarily have to match, <code>mv</code> also acts as a &#8216;rename&#8217; operation for files and directories. If you want to <em>guarantee</em> the names match (and save you some typing), you can replace the final name of the file/directory with a <code>.</code> character, so these two commands are equivalent:</p>
-
-<pre><code>mv cars vehicles/cars
-mv cars vehicles/.
-</code></pre>
-
-<p>If you wanted to maintain the original <code>cars</code> directory and just put a copy of it in the <code>vehicles</code> directory, then you can do that wih the <code>cp</code> command, which is short for &#8220;copy&#8221;.  Much like <code>rm</code>, <code>cp</code> works with both files and directories, but requires a <code>-r</code> for directories. The structure of the arguments is the same as <code>mv</code> though. So copying <code>cars</code> would have looked like this:</p>
-
-<pre><code>cp -r cars vehicles/.
-</code></pre>
-
-<p>Note that the <code>.</code> syntax to keep the same name still works here as well.</p>
-
-<h3>Protip: Tab Completion</h3>
-
-<p>All of this typing on the command line can get tiresome. One of the best tricks to learn to cut down on the amount of keystrokes it takes to type commands is to learn about and get used to frequently using tab completion. If you type the first few letters of a directory or file name and hit tab, the shell will complete it for you! You must type enough characters for it to be unique. If not, pressing tab twice on most shells will show you all the directories and files that match the start of the name you typed. so for example, if you typed this:</p>
-
-<pre><code>mkdir terminal-tutorial
-cd te   
-</code></pre>
-
-<p>and this pressed the tab button, the terminal should automatically fill out:</p>
-
-<pre><code>cd terminal-tutorial
-</code></pre>
-
-<p>Now we have a good set of tools for working with and manipulating the file system. Next time we&#8217;ll take a look at users, groups, and the permissions system that UNIX is based on.</p>
+<p>Nodemon will listen to changes to all of your non-CoffeeScript files, and automatically restart the server whenever it detects a change. And now you are able to write your node apps in CoffeeScript, and not have to worry about compiling or server restarts, enabling you to write and develop more quickly.</p>
 </div>
 
 
@@ -233,12 +217,12 @@ cd te
   
 
 
-<time datetime="2012-03-07T08:14:00-05:00" pubdate data-updated="true">Mar 7<span>th</span>, 2012</time>
+<time datetime="2012-05-07T21:57:00-04:00" pubdate data-updated="true">May 7<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/terminal/'>terminal</a>
+    <a class='category' href='/blog/categories/coffeescript/'>coffeescript</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/node-js/'>node.js</a>
   
 </span>
 
@@ -247,7 +231,7 @@ cd te
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/" data-via="GSto" data-counturl="http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gsto.github.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/" data-via="GSto" data-counturl="http://gsto.github.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -260,10 +244,8 @@ cd te
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/03/06/my-eureka-moment-with-regular-expressions/" title="Previous Post: My Eureka Moment With Regular Expressions">&laquo; My Eureka Moment With Regular Expressions</a>
+        <a class="basic-alignment left" href="/blog/2012/03/07/terminals-for-absolute-beginners-part-2/" title="Previous Post: Terminals for Absolute Beginners: Part 2">&laquo; Terminals for Absolute Beginners: Part 2</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/" title="next Post: Rapid Development with Node.js and CoffeeScript">Rapid Development with Node.js and CoffeeScript &raquo;</a>
       
     </p>
   </footer>

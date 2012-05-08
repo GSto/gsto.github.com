@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2012-03-12T10:47:26-04:00</updated>
+  <updated>2012-05-07T22:23:03-04:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,104 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Rapid Development with Node.js and CoffeeScript]]></title>
+    <link href="http://gsto.github.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/"/>
+    <updated>2012-05-07T21:57:00-04:00</updated>
+    <id>http://gsto.github.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript</id>
+    <content type="html"><![CDATA[<p>Node.js and CoffeeScript have been all the rage in the web development community as of late. In this tutorial, I&#8217;ll be walking though how to set up your development environment to quickly write &amp; test Node.js apps completly in CoffeeScript, and have your development app update automatically without having to compile CoffeeScript <em>or</em> restart your Node.js server.</p>
+
+<!-- more -->
+
+
+<h3>Step 1: Installing CoffeeScript</h3>
+
+<p>like most other Node.js packages, installing coffeescript is easy:</p>
+
+<pre><code>npm install coffee-script
+</code></pre>
+
+<p>Now that we have CoffeeScript installed, we can write a basic &#8216;hello world&#8217; server is CoffeeScript. If you aren&#8217;t familiar with the CoffeeScript syntax, you can refer to the (CoffeeScript Documentation)[http://coffeescript.org/]. Write the following to a <code>hello.coffee</code> file:</p>
+
+<figure class='code'><figcaption><span>hello.coffee</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nx">require</span> <span class="nv">http = </span><span class="s1">&#39;http&#39;</span>
+</span><span class='line'><span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span> <span class="nf">(req, res) -&gt;</span>
+</span><span class='line'>        <span class="nx">res</span><span class="p">.</span><span class="nx">writeHead</span> <span class="mi">200</span>
+</span><span class='line'>        <span class="nx">res</span><span class="p">.</span><span class="nx">end</span> <span class="s1">&#39;Hello, World!&#39;</span>
+</span><span class='line'><span class="p">.</span><span class="nx">listen</span> <span class="mi">4000</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Step 2: Compilation</h3>
+
+<p>CoffeeScript files can&#8217;t be executed directly by node, they have to be compiled to JavaScript first. We can run the following command to compile our <code>hello.coffee</code> file:</p>
+
+<pre><code>coffee --compile hello.coffee
+</code></pre>
+
+<p>This will generate a <code>hello.js</code> file. now we can run <code>node hello.js</code> and see our message at localhost:4000. Here is the resulting compiled JavaScript:</p>
+
+<figure class='code'><figcaption><span>hello.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">http</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">res</span><span class="p">.</span><span class="nx">writeHead</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">&#39;Another Message!&#39;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}).</span><span class="nx">listen</span><span class="p">(</span><span class="mi">4000</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}).</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The resulting JavaScript is more verbose than what we wrote originally, but it is still very easy to see how the CoffeeScript maps to the resulting code. Unfortunately this constant compilation isn&#8217;t very rapid, now is it? Let&#8217;s look at how we can streamline this process.</p>
+
+<h3>Step 3: Automation</h3>
+
+<p>The CoffeeScript compiler has a <code>--watch</code> option, which we can use to tell it to automatically compile any <code>.coffee</code> file whenever there is a change. Run the following command, and set it to a background process:</p>
+
+<pre><code>coffee --compile --watch *.coffee
+</code></pre>
+
+<p>That will take care of the compilation issue. However, you will still have to wait until everything compiles, and then restart your server, right? Wrong! Now we are going to install a second package, called (Nodemon)[http://remysharp.com/2010/10/12/nodejs-rapid-development-nodemon/] which will listen for changes to files, and automatically restart the Node.js server whenver one is detected. Start by installing the package:</p>
+
+<pre><code>npm install nodemon
+</code></pre>
+
+<p>Now, you&#8217;ll want to create a file named <code>nodemon-ignore</code> in your app&#8217;s main directory, and add an exception for .coffee files:</p>
+
+<figure class='code'><figcaption><span>nodemon-ignore</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>#creates an exception for .coffee files
+</span><span class='line'>*.coffee
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This way, you won&#8217;t have any conflicts with the CoffeeScript compiler.  When the files compile, it will cause the .js files to change, but the server won&#8217;t restart before those files are ready. When you are ready to begin, run the following command:</p>
+
+<pre><code>nodemon hello.js
+</code></pre>
+
+<p>Nodemon will listen to changes to all of your non-CoffeeScript files, and automatically restart the server whenever it detects a change. And now you are able to write your node apps in CoffeeScript, and not have to worry about compiling or server restarts, enabling you to write and develop more quickly.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Terminals for Absolute Beginners: Part 2]]></title>

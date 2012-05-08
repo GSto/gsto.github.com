@@ -22,11 +22,17 @@
     </url>
     <url>
         <loc>http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/</loc>
-        <lastmod>2012-03-12T10:47:25-04:00</lastmod>
+        <lastmod>2012-03-12T11:32:52-04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://gsto.github.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/
+        </loc>
+        <lastmod>2012-05-07T22:22:48-04:00</lastmod>
     </url>
     <url>
         <loc>http://gsto.github.com/blog/archives/</loc>
-        <lastmod>2012-03-12T10:47:25-04:00</lastmod>
+        <lastmod>2012-05-07T22:22:48-04:00</lastmod>
     </url>
     <url>
         <loc>http://gsto.github.com/other-writing/</loc>
@@ -34,7 +40,7 @@
     </url>
     <url>
         <loc>http://gsto.github.com/</loc>
-        <lastmod>2012-03-12T10:47:25-04:00</lastmod>
+        <lastmod>2012-05-07T22:22:48-04:00</lastmod>
     </url>
     <url>
         <loc>http://gsto.github.com/about/</loc>
