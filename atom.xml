@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2012-05-07T22:23:03-04:00</updated>
+  <updated>2012-05-10T08:44:39-04:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,7 +18,8 @@
     <link href="http://gsto.github.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/"/>
     <updated>2012-05-07T21:57:00-04:00</updated>
     <id>http://gsto.github.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript</id>
-    <content type="html"><![CDATA[<p>Node.js and CoffeeScript have been all the rage in the web development community as of late. In this tutorial, I&#8217;ll be walking though how to set up your development environment to quickly write &amp; test Node.js apps completly in CoffeeScript, and have your development app update automatically without having to compile CoffeeScript <em>or</em> restart your Node.js server.</p>
+    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/coffeescript.jpg">
+Node.js and CoffeeScript have been all the rage in the web development community as of late. In this tutorial, I&#8217;ll be walking though how to set up your development environment to quickly write &amp; test Node.js apps completly in CoffeeScript, and have your development app update automatically without having to compile CoffeeScript <em>or</em> restart your Node.js server.</p>
 
 <!-- more -->
 
