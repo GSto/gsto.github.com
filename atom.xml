@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2012-07-04T15:52:29-04:00</updated>
+  <updated>2012-07-04T16:24:06-04:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -19,7 +19,7 @@
     <updated>2012-07-04T11:43:00-04:00</updated>
     <id>http://gsto.github.com/blog/2012/07/04/how-to-add-a-contact-form-to-octopress</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/wufoo.png">
-While Octopress is a nice blogging platform, using static generated pages can lead to being unable to have some of the features of other blogging platforms. One of the most common missed features is being able to have a contact us page.  In this tutorial I&#8217;ll show you how to add a contact form to octopress by using <a href="http://www.wufoo.com">Wufoo</a></p>
+While Octopress is a nice blogging platform, using static generated pages can lead to being unable to have some of the features of other blogging platforms. One of the most common missed features is being able to have a contact us page.  In this tutorial I&#8217;ll show you how to add a contact form to octopress by using <a href="http://www.wufoo.com">Wufoo</a>.</p>
 
 <!-- more -->
 
