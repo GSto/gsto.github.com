@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2012-10-30T08:56:40-04:00</updated>
+  <updated>2012-11-08T13:13:41-05:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Terminals for Absolute Beginners: Part 3]]></title>
-    <link href="http://gsto.github.com/blog/2012/10/01/terminals-for-absolute-beginners-part-3/"/>
-    <updated>2012-10-01T15:03:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2012/10/01/terminals-for-absolute-beginners-part-3</id>
+    <link href="http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/"/>
+    <updated>2012-10-30T15:03:00-04:00</updated>
+    <id>http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3</id>
     <content type="html"><![CDATA[<h3>File Permissions</h3>
 
 <p><img class="left" src="http://gsto.github.com/images/articles/terminal.jpg" width="260"></p>
