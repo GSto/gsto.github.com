@@ -4,7 +4,7 @@
   <title><![CDATA[Category: PHP | Glenn Stovall]]></title>
   <link href="http://gsto.github.com/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2013-01-08T10:25:29-05:00</updated>
+  <updated>2013-01-08T10:34:07-05:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -47,10 +47,8 @@ Building a command line interface into your application can be a way to add extr
 <span class='line-number'>16</span>
 <span class='line-number'>17</span>
 <span class='line-number'>18</span>
-<span class='line-number'>19</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">&lt;p&gt;class Hello extends CI_Controller</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php</span>
+</span><span class='line'><span class="x">class Hello extends CI_Controller</span>
 </span><span class='line'><span class="x">{</span>
 </span><span class='line'><span class="x">  public function index()</span>
 </span><span class='line'><span class="x">  {&lt;/p&gt;</span>
@@ -98,9 +96,11 @@ Building a command line interface into your application can be a way to add extr
 <span class='line-number'>12</span>
 <span class='line-number'>13</span>
 <span class='line-number'>14</span>
+<span class='line-number'>15</span>
 </pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;/p&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;public function greet($name)</span>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;&amp;lt;?php</span>
+</span><span class='line'><span class="x">public function greet($name)</span>
 </span><span class='line'><span class="x">{</span>
 </span><span class='line'><span class="x">    if(!$this-&amp;gt;input-&amp;gt;is_cli_request()) </span>
 </span><span class='line'><span class="x">    {</span>
@@ -165,10 +165,8 @@ Let's set up our appointment reminder files. First let's start by building the t
 <span class='line-number'>23</span>
 <span class='line-number'>24</span>
 <span class='line-number'>25</span>
-<span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">&lt;p&gt;class Appointment_model extends CI_Model</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php</span>
+</span><span class='line'><span class="x">class Appointment_model extends CI_Model</span>
 </span><span class='line'><span class="x">{</span>
 </span><span class='line'><span class="x">  public function get_days_appointments($day)</span>
 </span><span class='line'><span class="x">  {&lt;/p&gt;</span>
@@ -240,10 +238,8 @@ Let's set up our appointment reminder files. First let's start by building the t
 <span class='line-number'>41</span>
 <span class='line-number'>42</span>
 <span class='line-number'>43</span>
-<span class='line-number'>44</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">&lt;p&gt;class Reminders extends CI_Controller</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php</span>
+</span><span class='line'><span class="x">class Reminders extends CI_Controller</span>
 </span><span class='line'><span class="x">{&lt;/p&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="x">&lt;p&gt;  public function __construct()</span>
@@ -315,7 +311,11 @@ Let's set up our appointment reminder files. First let's start by building the t
 <pre><code>0 13 * * * php [application_path]/index.php cli/reminders
 </code></pre>
 
-<p>And now we can send out appointment reminders once a day.</p>
+<p>And now we can send out appointment reminders once a day. <a href="http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/">This Article</a> Has a lot of good examples for other ways to set up your scheduled tasks.</p>
+
+<p>I also have a small helper file I use in CodeIgniter to make formatting output easier. You can check it out over on Github.</p>
+
+<p><a href="https://github.com/GSto/cli_helper">cli_helper on Github</a></p>
 ]]></content>
   </entry>
   
