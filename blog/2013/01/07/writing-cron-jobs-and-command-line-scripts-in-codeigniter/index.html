@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Writing Cron Jobs and Command Line Scripts in CodeIgniter - Glenn Stovall</title>
+  <meta name="author" content="Glenn Stovall">
+
+  
+  <meta name="description" content="Building a command line interface into your application can be a way to add extra utility to you application. Adding cron jobs (a.k.a. scheduled &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://gsto.github.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Glenn Stovall" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2427296-13']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Glenn Stovall</a></h1>
+  
+    <h2>Software Developer, Musician, and All Around Nice Guy</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:gsto.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/portfolio">Portfolio</a></li>
+  <li><a href="/other-writing">Other Writing</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Writing Cron Jobs and Command Line Scripts in CodeIgniter</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-07T23:58:00-05:00" pubdate data-updated="true">Jan 7<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><img class="left" src="/images/articles/codeigniter.jpg" width="260">
+Building a command line interface into your application can be a way to add extra utility to you application. Adding cron jobs (a.k.a. scheduled tasks) to your CodeIgniter application can provide extra utility. In this article we&#8217;ll show you how to set up both in a CodeIgniter application by writing a simple appointment reminder, which will remind people if they have an appointment scheduled a day in advance.</p>
+
+<!-- more -->
+
+
+<h3>Running Code Via The Command Line</h3>
+
+<p>All CodeIgniter controller methods can be accessed via the command line. Let&#8217;s start with a simple controller:</p>
+
+<figure class='code'><figcaption><span>application/controllers/hello.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">class Hello extends CI_Controller</span>
+</span><span class='line'><span class="x">{</span>
+</span><span class='line'><span class="x">  public function index()</span>
+</span><span class='line'><span class="x">  {</span>
+</span><span class='line'><span class="x">    echo &quot;Hello, World&quot; . PHP_EOL;</span>
+</span><span class='line'><span class="x">  }</span>
+</span><span class='line'><span class="x">  </span>
+</span><span class='line'><span class="x">  public function greet($name)</span>
+</span><span class='line'><span class="x">  {</span>
+</span><span class='line'><span class="x">   echo &quot;Hello, $name&quot; . PHP_EOL;</span>
+</span><span class='line'><span class="x">  }</span>
+</span><span class='line'><span class="x">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>From the root application forlder, to call the index function we can do the following:</p>
+
+<pre><code>php index.php hello
+</code></pre>
+
+<p>By passing the name of the controller to <code>index.php</code> , we are able to invoke the index method of the controller. If we want to invoke other methods, we can pass them as the next aguments. any arguments proceeding those will be passed as arguments to the method we are calling. So, to get the output of &#8220;Hello, Glenn&#8221; from this controller, we would run the following:</p>
+
+<pre><code>php index.php hello greet Glenn
+</code></pre>
+
+<h3>Detecting command line requests</h3>
+
+<p>You may want to write controller methods that behave differently based on wether or not they are accessed via the command line. you can do this by using the <a href="http://ellislab.com/codeigniter/user-guide/libraries/input.html">input library</a>, which has a function called <code>is_cli_request()</code> to detect if a request to a controller is from the command line or not. Here is an example if you want to make a method only accesible via command line:</p>
+
+<figure class='code'><figcaption><span>application/controllers/hello.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">  public function greet($name)</span>
+</span><span class='line'><span class="x">  {</span>
+</span><span class='line'><span class="x">      if(!$this-&gt;input-&gt;is_cli_request()) </span>
+</span><span class='line'><span class="x">      {</span>
+</span><span class='line'><span class="x">          echo &quot;greet my only be accessed from the command line&quot;;</span>
+</span><span class='line'><span class="x">          return;</span>
+</span><span class='line'><span class="x">      }</span>
+</span><span class='line'><span class="x">      echo &quot;Hello, $name&quot; . PHP_EOL;</span>
+</span><span class='line'><span class="x">  }</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Setting up the Appointment Reminder</h3>
+
+<p>Let&#8217;s say we have a system where people can book appointments. We would like to send them a reminder a day in advance that they have an appointment coming up. In this tutorial we will set up a command line script
+Let&#8217;s set up our appointment reminder files. First let&#8217;s start by building the table.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='mysql'><span class='line'><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="nf">appointments</span> <span class="p">(</span>
+</span><span class='line'>  <span class="n">id</span> <span class="kt">int</span> <span class="kp">auto_increment</span> <span class="k">primary</span> <span class="k">key</span><span class="p">,</span>
+</span><span class='line'>  <span class="n">email</span> <span class="kt">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="k">not</span> <span class="no">null</span> <span class="k">default</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="n">start_time</span> <span class="kt">datetime</span>
+</span><span class='line'>  <span class="n">is_reminded</span> <span class="kt">tinyint</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">not</span> <span class="no">null</span> <span class="k">default</span> <span class="mi">0</span>
+</span><span class='line'><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, we&#8217;ll write a model that will perform the two primary data functions we need for this appointment reminder: a way to fetch all appointments on a particular day, and a way to mark them as appointments that have recieved reminders, so that we do not send multiple reminder emails:</p>
+
+<figure class='code'><figcaption><span>application/models/appointment_model.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">  </span>
+</span><span class='line'><span class="x">class Appointment_model extends CI_Model </span>
+</span><span class='line'><span class="x">{</span>
+</span><span class='line'><span class="x">  public function get_days_appointments($day)</span>
+</span><span class='line'><span class="x">  {</span>
+</span><span class='line'><span class="x">    $day_start = date(&#39;Y-m-d 00:00:00&#39;, $day);</span>
+</span><span class='line'><span class="x">  $day_end = date(&#39;Y-m-d 23:59:59&#39;, $day);</span>
+</span><span class='line'><span class="x">  return $this-&gt;db-&gt;select(&#39;*&#39;)</span>
+</span><span class='line'><span class="x">      -&gt;from(&#39;appointments&#39;)</span>
+</span><span class='line'><span class="x">      -&gt;where(&#39;start_time &lt;&#39;, $day_start)</span>
+</span><span class='line'><span class="x">      -&gt;where(&#39;start_time &gt;&#39;, $day_end)</span>
+</span><span class='line'><span class="x">      -&gt;get()-&gt;result();</span>
+</span><span class='line'><span class="x">      </span>
+</span><span class='line'><span class="x">  }</span>
+</span><span class='line'><span class="x">  </span>
+</span><span class='line'><span class="x">  public function mark_reminded($appointment_id)</span>
+</span><span class='line'><span class="x">  {</span>
+</span><span class='line'><span class="x">    return $this-&gt;db-&gt;where(&#39;id&#39;, $appointment_id)-&gt;update(&#39;appointments&#39;, array(&#39;is_reminded&#39; =&gt; 1));</span>
+</span><span class='line'><span class="x">  }</span>
+</span><span class='line'><span class="x">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now that we can handle all the data transactions through the model. Let&#8217;s write a controller so we can access this through the command line. In this example, we will put the logic in the <code>index()</code> function, since that is all this controller does. Personally, I like to put all of my command line scripts inside a folder named &#8216;cli&#8217; inside of the controllers folder.</p>
+
+<figure class='code'><figcaption><span>application/controllers/cli/reminders.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">class Reminders extends CI_Controller </span>
+</span><span class='line'><span class="x">{</span>
+</span><span class='line'><span class="x">  </span>
+</span><span class='line'><span class="x">  public function __construct() </span>
+</span><span class='line'><span class="x">  {</span>
+</span><span class='line'><span class="x">    parent::__construct();</span>
+</span><span class='line'><span class="x">      $this-&gt;load-&gt;library(&#39;input&#39;);</span>
+</span><span class='line'><span class="x">    $this-&gt;load-&gt;library(&#39;email&#39;);</span>
+</span><span class='line'><span class="x">    $this-&gt;load-&gt;model(&#39;Appointment_model&#39;);</span>
+</span><span class='line'><span class="x">  }</span>
+</span><span class='line'><span class="x">  public function index()</span>
+</span><span class='line'><span class="x">  {</span>
+</span><span class='line'><span class="x">    if(!$this-&gt;input-&gt;is_cli_request())</span>
+</span><span class='line'><span class="x">  {</span>
+</span><span class='line'><span class="x">      echo &quot;This script can only be accessed via the command line&quot; . PHP_EOL;</span>
+</span><span class='line'><span class="x">      return;</span>
+</span><span class='line'><span class="x">  }</span>
+</span><span class='line'><span class="x">  $timestamp = strtotime(&quot;+1 days&quot;);</span>
+</span><span class='line'><span class="x">  $appointments = $this-&gt;Appointment_model-&gt;get_days-&gt;appointments($timestamp);</span>
+</span><span class='line'><span class="x">  if(!empty($appointments))</span>
+</span><span class='line'><span class="x">  {</span>
+</span><span class='line'><span class="x">      foreach($appointments as $appointment)</span>
+</span><span class='line'><span class="x">      {</span>
+</span><span class='line'><span class="x">          $this-&gt;email-&gt;set_newline(&quot;\r\n&quot;);</span>
+</span><span class='line'><span class="x">          $this-&gt;email-&gt;to($appointment-&gt;email);</span>
+</span><span class='line'><span class="x">          $this-&gt;email-&gt;from(&quot;youremail@example.com&quot;);</span>
+</span><span class='line'><span class="x">          $this-&gt;email-&gt;subject(&quot;Appointment Reminder&quot;);</span>
+</span><span class='line'><span class="x">          $this-&gt;email-&gt;message(&quot;You have an appointment tomorrow&quot;);</span>
+</span><span class='line'><span class="x">          $this-&gt;email-&gt;send();</span>
+</span><span class='line'><span class="x">          $this-&gt;Appointment_model-&gt;mark_reminded($appointment-&gt;id);</span>
+</span><span class='line'><span class="x">      }</span>
+</span><span class='line'><span class="x">  }</span>
+</span><span class='line'><span class="x">  }</span>
+</span><span class='line'><span class="x">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>whenever this command line script is called, it will set an email to all people who have an appointment the next day. It will also mark there appointments as reminded to insure that we do not send multiple emails to the same person for the same appointment.</p>
+
+<h3>Setting up a Cron Job (Scheduled Task)</h3>
+
+<p>We would like to call this command line script once a day, at 1pm. You can edit the cron jobs your server runs with the following command:</p>
+
+<pre><code>crontab -e
+</code></pre>
+
+<p>each line of the crontab file takes 6 arguments, which are, in order:</p>
+
+<ul>
+<li>minutes (0 to 59)</li>
+<li>hours (0 to 23)</li>
+<li>day of month (1 to 31)</li>
+<li>month (1 to 12)</li>
+<li>day of week (0 - 6)</li>
+<li>command (command to be executed)</li>
+</ul>
+
+
+<p>you can use commas to seperate multiple values <em>(so <code>1,3,5</code> in the day of week field will be every Monday, Wednesday, and Friday)</em> , dashes to represent ranges <em>(so <code>09-17</code> in the hour field means every hour on the hour from 9am to 5pm)</em> and * for wildcards. <em>(so * in the hours fields means every hour on the hour)</em></p>
+
+<p>Since we would like this script to run once a day at 1pm, our new entry into the crontab file would look like this:</p>
+
+<pre><code>0 13 * * * php [application_path]/index.php cli/reminders
+</code></pre>
+
+<p>And now we can send out appointment reminders once a day.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Glenn Stovall</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-07T23:58:00-05:00" pubdate data-updated="true">Jan 7<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/codeigniter/'>CodeIgniter</a>, <a class='category' href='/blog/categories/php/'>PHP</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gsto.github.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/" data-via="GSto" data-counturl="http://gsto.github.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/10/30/terminals-for-absolute-beginners-part-3/" title="Previous Post: Terminals for Absolute Beginners: Part 3">&laquo; Terminals for Absolute Beginners: Part 3</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/">Writing Cron Jobs and Command Line Scripts in CodeIgniter</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/10/30/terminals-for-absolute-beginners-part-3/">Terminals for Absolute Beginners: Part 3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/07/04/how-to-add-a-contact-form-to-octopress/">how to add a contact form to octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/">Rapid Development with Node.js and CoffeeScript</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/07/terminals-for-absolute-beginners-part-2/">Terminals for Absolute Beginners: Part 2</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Other Writing</h1>
+  <ul>
+    <li class='post'>
+      <a href='http://www.jhousemedia.com/blog-articles/148/Service_oriented_architectures_and_the_future_of_the_web.html'>Service Oriented Architectures</a>
+    </li>
+    <li class='post'>
+      <a href='http://www.jhousemedia.com/blog-articles/140/Complex-Vs-Complicated-Software.html' target='_new'>Complex vs. Complicated Software</a>
+    </li>
+    <li class='post'>
+      <a href='http://www.jhousemedia.com/blog-articles/139/Javascript2011.html' target='_new'>The Year in JavaScript</a>
+    </li>    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("GSto", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/GSto" class="twitter-follow-button" data-show-count="true">Follow @GSto</a>
+  
+</section>
+
+
+
+<section class="googleplus googleplus-hidden">
+  <h1>
+    <a href="https://plus.google.com/110938448365354806739?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p class='credit'>
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+  <br />
+  &copy; 2013 - Glenn Stovall
+</p>
+<p class='social-links'>
+  <a href='http://www.facebook.com/glenns' target='_blank'>
+    <img src='/images/Facebook.png' alt='Glenn Stovall on Facebook'>
+  </a>
+  <a href='http://www.twitter.com/gsto' target='_blank'>
+    <img src='/images/Twitter.png' alt='Glenn Stovall on Twitter'>
+  </a>
+  <a href='http://glennstovall.tumblr.com' target='_blank'>
+    <img src='/images/Tumblr.png' alt='Glenn Stovall on Tumblr'>
+  </a>
+  <a href='http://linkedin.com/in/glennstovall' target='_blank'>
+    <img src='/images/LinkedIn.png' alt='Glenn Stovall on LinkedIn'>
+  </a>
+  <a href='http://forrst.com/people/gsto' target='_blank'>
+    <img src='/images/Forrst.png' alt='Glenn Stovall on Forrst'>
+  </a>
+  <a href='http://github.com/gsto' target='_blank'>
+    <img src='/images/Github.png' alt='Glenn Stovall on Github'>
+  </a>
+</p>
+ 
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
