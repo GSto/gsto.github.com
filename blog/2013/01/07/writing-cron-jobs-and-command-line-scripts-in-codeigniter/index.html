@@ -306,7 +306,7 @@ Let&#8217;s set up our appointment reminder files. First let&#8217;s start by bu
 </span><span class='line'>      <span class="k">return</span><span class="p">;</span>
 </span><span class='line'>  <span class="p">}</span>
 </span><span class='line'>  <span class="nv">$timestamp</span> <span class="o">=</span> <span class="nb">strtotime</span><span class="p">(</span><span class="s2">&quot;+1 days&quot;</span><span class="p">);</span>
-</span><span class='line'>  <span class="nv">$appointments</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">Appointment_model</span><span class="o">-&gt;</span><span class="na">get_days</span><span class="o">-&gt;</span><span class="na">appointments</span><span class="p">(</span><span class="nv">$timestamp</span><span class="p">);</span>
+</span><span class='line'>  <span class="nv">$appointments</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">Appointment_model</span><span class="o">-&gt;</span><span class="na">get_days_appointments</span><span class="p">(</span><span class="nv">$timestamp</span><span class="p">);</span>
 </span><span class='line'>  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$appointments</span><span class="p">))</span>
 </span><span class='line'>  <span class="p">{</span>
 </span><span class='line'>      <span class="k">foreach</span><span class="p">(</span><span class="nv">$appointments</span> <span class="k">as</span> <span class="nv">$appointment</span><span class="p">)</span>
