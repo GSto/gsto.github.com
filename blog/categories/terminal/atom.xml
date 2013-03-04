@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Terminal | Glenn Stovall]]></title>
+  <title><![CDATA[Category: terminal | Glenn Stovall]]></title>
   <link href="http://gsto.github.com/blog/categories/terminal/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2013-02-18T15:52:29-05:00</updated>
+  <updated>2013-03-03T21:36:44-05:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -14,52 +14,29 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Terminals for Absolute Beginners: Part 1]]></title>
-    <link href="http://gsto.github.com/blog/2012/02/15/terminals-for-absolute-beginners/"/>
-    <updated>2012-02-15T09:35:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2012/02/15/terminals-for-absolute-beginners</id>
-    <content type="html"><![CDATA[<h3>Directories and Commands</h3>
+    <title type="html"><![CDATA[Terminals for Absolute Beginners: Part 3]]></title>
+    <link href="http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/"/>
+    <updated>2012-10-30T15:03:00-04:00</updated>
+    <id>http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3</id>
+    <content type="html"><![CDATA[<h3>File Permissions</h3>
 
 <p><img class="left" src="/images/articles/terminal.jpg" width="260"></p>
 
-<p>You've woken up in a strange place. Maybe you've decided you want to be a power user with your mac. Maybe you've finally decided to check out this strangle 'Linux' thing you've heard so much about.  Maybe its your first day in software engineering class and the teacher is telling you you are going to have to work on the school's server to turn in all of your work. Either way, you find yourself eye-to-eye with a terminal (commonly called the <em>command line</em>) and you don't know what to do.</p>
+<ul>
+<li>Read Part 1 <a href="/blog/2012/02/15/terminals-for-absolute-beginners/">Directories and Commands</a></li>
+<li>Read Part 2 <a href="/blog/2012/03/07/terminals-for-absolute-beginners-part-2/">Manipulating Files</a></li>
+</ul>
 
-<!-- more -->
 
+<p> In this article, we'll take a look at how file permissions works. We'll cover how users, groups, and file permissions work in a UNIX-based system, and how they can be used to make using the terminal more secure.</p>
 
-<h3>Where Are We?</h3>
+<p> <!-- more --></p>
 
-<p>Let's start by doing what anyone would do when dropped off in a new strange land. Let's figure out where we are and take stock of our surroundings.  Type the following command:</p>
+<h4>Users and Groups</h4>
 
-<pre><code>pwd
-</code></pre>
+<h4>Understanding Permissions</h4>
 
-<p>this will tell you the directory you are currently in. It may look something like this:</p>
-
-<pre><code>/home/glenn/
-</code></pre>
-
-<p>Let's make sure we are still who we think we are:</p>
-
-<pre><code>whoami
-</code></pre>
-
-<p>This will tell you your username:</p>
-
-<pre><code>glenn
-</code></pre>
-
-<p>Now, let's see what else is in the directory with us:</p>
-
-<pre><code>ls
-</code></pre>
-
-<p>this gives us a list of all the files and directories in the directory we are currently in. but maybe we want a bit more information about this. let's type the following command:</p>
-
-<pre><code>ls -la
-</code></pre>
-
-<p>and we get something like this:</p>
+<p> Let's begin by taking a second look at an example from lesson 1, the output on the command line when we ran the command <code>ls -la</code>:</p>
 
 <pre><code>drwxr-xr-x 70 grp   glenn    4096 2012-02-15 09:35 .
 drwxr-xr-x  3 root  root     4096 2011-03-15 16:55 ..
@@ -73,75 +50,173 @@ drwxrwxr-x  2 grp   glenn    4096 2011-08-11 08:46 Ubuntu One
 drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Videos
 </code></pre>
 
-<p>Whoa! there is a lot to take in here. Why did adding <code>-la</code> to the <code>ls</code> command change the output so much, And what is all of this stuff in front of the file names now? Why are there two files named <code>.</code> and <code>..</code>?</p>
+<p>Now, what is of interest to us here is the first column. this is the list of <em>permissions</em> on a file or directory. if the permission is present, the letter is shown. if it is not, then there is a hyphen. so a directory with all permissions (anyone can do anything to it) would look like this:</p>
 
-<h3>Commands And Options</h3>
-
-<p><code>ls</code> and <code>pwd</code> are both <em>commands</em>. <code>pwd</code> is short for <strong>P</strong>rint <strong>W</strong>orking <strong>D</strong>irectory and well, prints your current working directory. <code>ls</code> is shorthand for list and lists the contents of the current working directory. These are the first of many commands we'll  be going over. You can pass options to commands to change how they work. These are almost always formatted in the form of a single hyphen and a single letter, or two hypens and a complete word.  You can combine single letter options with one hyphen, which is what we did when we typed <code>ls -la</code>. You could also write <code>ls -l</code> and <code>ls -a</code> and both would be valid commands. the <code>-l</code> argument tells the <code>ls</code> command to list the files on a single line with additional details. The <code>-a</code> command tells <code>ls</code> to show all files, including hidden ones. All directories contain at least two hidden directories, one called <code>.</code> and one called <code>..</code>, but we'll get to those in a moment.</p>
-
-<p>Many commands have similar options, where the same arguments have similar effects with similar commands. There is one option that works with almost every command on the terminal, and its the most important one you'll ever learn. Are you ready? Got a pen?</p>
-
-<pre><code>--help
+<pre><code>drwxrwxrwx
 </code></pre>
 
-<p>This will print out an explination of the commands function, and a list of options it can take and what they do. Go try running the following commands and checkout the output:</p>
+<p>the first letter is actually not a permission, but a flag telling us what kind of file it is, most commonly <code>d</code> for a directory and <code>-</code> for a regular file. Next you will notice that there is a repeating series of 3 letters: r, w, and x. these are short for <strong>R</strong>ead, <strong>W</strong>rite, and e<strong>X</strong>ecute. The first three letters refer to the permissions of the user that owns the file. The second three letters refer to the permissions of any users in the group that owns the file. The third set of letters repesent the permissions of all other users (these are commonly called <em>world permissions</em> or <em>other permissions</em>). So let's look at a couple of examples and see what they mean:</p>
 
-<pre><code>whoami --help
-ls --help
+<p><code>drwxr-xr-x</code> : The owner may read, write or execute this directory; everyone else may only read or execute it.</p>
+
+<p><code>-rw-r-----</code> : The owner may read or write to the file; people in the group have read-only access; no one else can do anything with it, and no one may execute it.</p>
+
+<p><code>-rwxrwxrwx</code> : Anyone can do anything to this file.</p>
+
+<h4>Octal Permissions</h4>
+
+<p>Permissions can also be represented numerically. These are called <em>Octal Permissions</em>, as they are represented in base 8. In octal permissions, a 1 represents permissions to execute, 2 represents permissions to write, and 4 represent permissions to read. Since all sums of these numbers are unique, we can now represent the rights of any user or group with one digit between 0 and 7:</p>
+
+<pre><code>| Number | Permissions |
+------------------------
+| 0      | ---         |
+| 1      | --x         |
+| 2      | -w-         |
+| 3      | -wx         |
+| 4      | r--         |
+| 5      | r-x         |
+| 6      | rw-         |
+| 7      | rwx         |
+------------------------
 </code></pre>
 
-<p>You'll see that <code>whoami</code> is a relatively simple command with very few arguments, where <code>ls</code> has a lot more options availble. I could just replace a lot of text in this and upcoming articles with "just run <code>--help</code>", but I'm not going to. Feel free to explore some of the other commands and options that are available to them, and see what you can do with them.</p>
+<p>Now, we can use three digits to represent the permissions of a file. In a similar manner to above, the first number represents the user's rights, the second number the groups, and the third represents the world permissions. Our previous examples can be written as such:</p>
 
-<h3>Traversing Directories</h3>
-
-<p>Now I bet you are still wondering about that <code>.</code> and <code>..</code> stuff. These are both directories, or rather things that point to directories, that can be found in every single directory inside of linux based system. <code>.</code> Always points to the current directory. <code>..</code> Always points to the parent directory. If your current working directory is <code>/home/glenn/</code>, then <code>..</code> would point to <code>/home/</code>. If you make it all the way to the bottom directory (<code>/</code>), then <code>..</code> will still be there, but will also point to <code>/</code>.</p>
-
-<p>Now let's learn how to change our working directory so that we can start traversing the folders around us. This brings us to our next command and last one of this article:</p>
-
-<pre><code>cd
+<pre><code>drwxr-xr-x  :   755
+-rw-r-----  :   640
+-rwxrwxrwx  :   777
 </code></pre>
 
-<p><code>cd</code> is short for 'Change Directory'. To use this, we'll look at another thing we can do with commands: pass <strong>arguments</strong> to them.</p>
+<h4>Manipulating Permissions</h4>
 
-<h3>Passing Arguments</h3>
+<p>If we want to change the permissions of a file, there are three commands we can use. The first is called <code>chmod</code> and is used for manipulating the file permissions. The arguments for chmod are an octal number to set the new file permissions, and the name of a file. you can also use the <code>-R</code> flag if you want to recursively change all the permissions of files in a directory. Example:</p>
 
-<p>Commands take arguments when they need additional information on what they do. You could think of it as a 'target' for the command. Commands can take multiple arguments, but in this case we'll only need one: Telling cd what directory we would like to change our directory too. So, if we want to go into the <code>Pictures</code> directory earlier. try running these two commands:</p>
-
-<pre><code>cd Pictures
-pwd
+<pre><code>chmod 777 file_name.txt
 </code></pre>
 
-<p>Now, based on the folder structure we looked at earlier, we should get an output similar to this:</p>
+<p>The second is <code>chown</code> , which is short for "change owner". It is used to change ownership of a file. It takes arguments in a similar fashion to chmod, but instead of an octal number, it takes a username as an argument. Example:</p>
 
-<pre><code>/home/glenn/Pictures
+<pre><code>chown glenn file_name.txt
 </code></pre>
 
-<p>If we wanted to go back to where we were, we can reference that <code>..</code> directory:</p>
+<p>The third is <code>chgrp</code>, which is short for "change group". Again, this command works in a similar fashion to chown, except that this command changes the group ownership of a file instead of the user. Example:</p>
 
-<pre><code>cd ..
-pwd
+<pre><code>chgrp psacln file_name.txt
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Terminals for Absolute Beginners: Part 2]]></title>
+    <link href="http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/"/>
+    <updated>2012-03-07T08:14:00-05:00</updated>
+    <id>http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2</id>
+    <content type="html"><![CDATA[<h3>Manipulating Files</h3>
+
+<p><img class="left" src="/images/articles/terminal.jpg" width="260"></p>
+
+<ul>
+<li>Read Part 1 <a href="blog/2012/02/15/terminals-for-absolute-beginners/">Here</a></li>
+</ul>
+
+
+<p>Now that we have learned the basics of navigating the terminal, lets start looking at how to we affect the file system we're working in. In this tutorial, we'll cover the following: creating and deleting directories, copying and moving files and directories, and creating and deleting files.</p>
+
+<p> <!-- more --></p>
+
+<p> ###Creating and Deleting Directories</p>
+
+<p> Wherever you left off in the last lesson, let's start by going back to home directory, and working from there. Remember that we can do this by running the command <code>cd ~</code>. Now, since we will be manipulating the file system in this tutortial, let's create a new directory that we can work in. You can do this by using the <code>mkdir</code> command. mkdir is short for "make directory". just type mkdir and the name of the folder you would like to create. For this example, we'll call it 'terminal-tutorial'</p>
+
+<pre><code>mkdir terminal-tutorial
+ls
 </code></pre>
 
-<p>and we are back at</p>
+<p>When you run <code>ls</code>, you'll see that a new directory has been created. <code>mkdir</code> defaults to creating the directory inside the directory you are currently located. if you define a path, it will created the directory there. For example, lets make a directory inside of our terminal-tutorial directory, and then navigate there.</p>
 
-<pre><code>/home/glenn
+<pre><code>mkdir terminal-tutorial/to-delete
+cd terminal-tutorial
+ls
 </code></pre>
 
-<h3>cd ProTips</h3>
+<p>You should see just the to-delete directory. If you tried to create a directory in a directory that did not exist, you would get an error. You can create nested directories at once by using the <code>-p</code> option, Like so:</p>
 
-<p>You can chain together directories to move multiple steps at once, like so:</p>
-
-<pre><code>cd Pictures/Vacations/Vegas
-cd ../../../
+<pre><code>mkdir -p multiple/subdirectory/example
 </code></pre>
 
-<p>There are also two handy shortcuts available to the <code>cd</code> command:</p>
+<p>creates 3 new directories with those paths. Now lets says you need to get rid of a directory. For this we can use the <code>rmdir</code> command, which is short for 'remove directory'. Lets get rid of that pesky <code>to-delete</code> folder we made earlier, and the multiple directory example</p>
 
-<pre><code>cd -
-cd ~
+<pre><code>rmdir to-delete
+rmdir multiple
+rmdir: failed to remove `multiple': Directory not empty
 </code></pre>
 
-<p>the first is sort of an 'undo' option. if will take you back to your last working directory. the tilde (<code>~</code>) is short hand for your <em>home directory</em> which every user has.</p>
+<p>You'll see that you get the following error message since <code>multiple</code> is not empty. <code>rmdir</code> can only remove empty directories.  Later in this artice we will discuss how can remove entire directories of files</p>
+
+<h3>Creating and Deleting Files</h3>
+
+<p>Now we can start creating and deleting files as well as directories. Let's start with the <code>touch</code> command. <code>touch</code> is to files what <code>mkdir</code> is to directories. so let's create a file:</p>
+
+<pre><code>touch to-delete
+ls
+</code></pre>
+
+<p>This creates an empty file named <code>to-delete</code>. To actually delete this file, we use the <code>rm</code> command, which is short for remove:</p>
+
+<pre><code>rm to-delete
+</code></pre>
+
+<p>rm can also be used on directories, by using the <code>-r</code> option, which is short for recursive. This will also remove all the contents inside of a directory.  Occasionally you may get a prompt asking if you are sure you want to delete something. You can get rid of this with the <code>-f</code> option. You can use this to get rid of the <code>multiple</code> directory you created earlier</p>
+
+<pre><code>rm -rf multiple
+</code></pre>
+
+<p>If you want to open and edit text files, you will need to get accquainted with a good text editor. <a href="http://www.vim.org/">Vim</a> and <a href="http://www.gnu.org/software/emacs/">Emacs</a> Are the two most popular, but both are very complex and a whole series of tutorials could be written on either one.</p>
+
+<p><strong>WARNING</strong></p>
+
+<p>It is a common joke on the internet to try to get people to run the command <code>rm -rf /</code> in the terminal. <code>/</code> refers to the base directory of your entire filesystem, so <code>rm -rf /</code> basically translates into "delete my everything forever, and don't ask for my permission". It is a <em>seriously</em> dangerous command to run, and now you know why.</p>
+
+<h3>Copying And Moving Files and Directories</h3>
+
+<p>Let's start by creating a couple more directories for this section:</p>
+
+<pre><code>mkdir cars
+mkdir vechicles
+</code></pre>
+
+<p>You may have decided that you made a mistake, and the <code>cars</code> directory should be inside of the <code>vehicles</code> directory. For situations like these, we have the <code>mv</code> command, which is short for move:</p>
+
+<pre><code>mv cars vechicles/cars
+</code></pre>
+
+<p>The first option of the <code>mv</code> command is the directory you would like to move, the second argument being where you would like it to go. Since the names do not nessicarily have to match, <code>mv</code> also acts as a 'rename' operation for files and directories. If you want to <em>guarantee</em> the names match (and save you some typing), you can replace the final name of the file/directory with a <code>.</code> character, so these two commands are equivalent:</p>
+
+<pre><code>mv cars vehicles/cars
+mv cars vehicles/.
+</code></pre>
+
+<p>If you wanted to maintain the original <code>cars</code> directory and just put a copy of it in the <code>vehicles</code> directory, then you can do that wih the <code>cp</code> command, which is short for "copy".  Much like <code>rm</code>, <code>cp</code> works with both files and directories, but requires a <code>-r</code> for directories. The structure of the arguments is the same as <code>mv</code> though. So copying <code>cars</code> would have looked like this:</p>
+
+<pre><code>cp -r cars vehicles/.
+</code></pre>
+
+<p>Note that the <code>.</code> syntax to keep the same name still works here as well.</p>
+
+<h3>Protip: Tab Completion</h3>
+
+<p>All of this typing on the command line can get tiresome. One of the best tricks to learn to cut down on the amount of keystrokes it takes to type commands is to learn about and get used to frequently using tab completion. If you type the first few letters of a directory or file name and hit tab, the shell will complete it for you! You must type enough characters for it to be unique. If not, pressing tab twice on most shells will show you all the directories and files that match the start of the name you typed. so for example, if you typed this:</p>
+
+<pre><code>mkdir terminal-tutorial
+cd te   
+</code></pre>
+
+<p>and this pressed the tab button, the terminal should automatically fill out:</p>
+
+<pre><code>cd terminal-tutorial
+</code></pre>
+
+<p>Now we have a good set of tools for working with and manipulating the file system. Next time we'll take a look at users, groups, and the permissions system that UNIX is based on.</p>
 ]]></content>
   </entry>
   

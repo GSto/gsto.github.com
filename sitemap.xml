@@ -2,78 +2,82 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://gsto.github.com/blog/2012/02/11/blogging-with-octopress/</loc>
-        <lastmod>2012-03-12T10:28:55-04:00</lastmod>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
         <loc>http://gsto.github.com/blog/2012/02/15/terminals-for-absolute-beginners/</loc>
-        <lastmod>2012-03-12T10:45:38-04:00</lastmod>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
         <loc>
             http://gsto.github.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter/
         </loc>
-        <lastmod>2012-03-12T10:41:25-04:00</lastmod>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
         <loc>
             http://gsto.github.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions/
         </loc>
-        <lastmod>2012-03-12T10:22:34-04:00</lastmod>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
         <loc>http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/</loc>
-        <lastmod>2012-03-12T11:32:52-04:00</lastmod>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
         <loc>
             http://gsto.github.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/
         </loc>
-        <lastmod>2012-05-10T08:43:52-04:00</lastmod>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
         <loc>http://gsto.github.com/blog/2012/07/04/how-to-add-a-contact-form-to-octopress/</loc>
-        <lastmod>2012-07-04T16:23:52-04:00</lastmod>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
         <loc>http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/</loc>
-        <lastmod>2012-10-30T08:56:43-04:00</lastmod>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
         <loc>
             http://gsto.github.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/
         </loc>
-        <lastmod>2013-01-09T10:52:19-05:00</lastmod>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
         <loc>http://gsto.github.com/blog/2013/02/18/5-tips-for-more-accurate-estimates/</loc>
-        <lastmod>2013-02-18T15:52:29-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://gsto.github.com/blog/archives/</loc>
-        <lastmod>2013-02-18T15:52:29-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://gsto.github.com/resume/</loc>
-        <lastmod>2012-06-20T15:31:03-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://gsto.github.com/contact/</loc>
-        <lastmod>2012-06-09T18:49:42-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://gsto.github.com/other-writing/</loc>
-        <lastmod>2012-07-05T07:21:23-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://gsto.github.com/</loc>
-        <lastmod>2013-02-18T15:52:29-05:00</lastmod>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
         <loc>http://gsto.github.com/about/</loc>
-        <lastmod>2012-02-14T13:47:53-05:00</lastmod>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://gsto.github.com/blog/archives/</loc>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://gsto.github.com/contact/</loc>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://gsto.github.com/</loc>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://gsto.github.com/other-writing/</loc>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
         <loc>http://gsto.github.com/portfolio/</loc>
-        <lastmod>2012-11-08T13:18:24-05:00</lastmod>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://gsto.github.com/resume/</loc>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://gsto.github.com/robots.txt</loc>
+        <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
 </urlset>
