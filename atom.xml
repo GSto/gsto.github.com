@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2013-03-03T22:27:19-05:00</updated>
+  <updated>2013-03-04T07:05:54-05:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,84 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Terminals for Aboslute Beginners Part 4]]></title>
+    <link href="http://gsto.github.com/blog/2013/03/04/terminals-for-aboslute-beginners-part-4-searching/"/>
+    <updated>2013-03-04T06:51:00-05:00</updated>
+    <id>http://gsto.github.com/blog/2013/03/04/terminals-for-aboslute-beginners-part-4-searching</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/terminal.jpg" width="260"></p>
+
+<h3>Searching</h3>
+
+<p>Searching is one of the most important tools in a developers tool belt. In this tutorial we will go over two commands that will make navigating the file structure of your machine easier, find and grep. One will be used to search for files by name, and the other will be used to search the contents of those files.</p>
+
+<!-- more -->
+
+
+<ul>
+<li>Read Part 1 <a href="http://gsto.github.com/blog/2012/02/15/terminals-for-absolute-beginners/">Directories and Commands</a></li>
+<li>Read Part 2 <a href="http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/">Manipulating Files</a></li>
+<li>Read Part 3 <a href="http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/">File Permissions</a></li>
+</ul>
+
+
+<h4>How to find certain files</h4>
+
+<p>Finding files with a certain name is an easy enough command. It&#8217;s <code>find</code>. The first argument in find is the directory you want to search, and then there are many other flags you can pass afterwards. The most common is <code>-name</code> , followed by the name of a file. for example, let&#8217;s say you need to find a file named <code>lost.dog</code> and you want to search the entire file system. you would type:</p>
+
+<pre><code>find / -name 'lost.dog'
+</code></pre>
+
+<p>You could also use <code>./</code> instead of <code>/</code> if you wanted to limit the search to just your current working directory. These queries (not only in find, but in all of theaw examples and many other linux tools) accept wildcards. if you wanted to search for all files with the <code>.dog</code> extension, you could run the command like so:</p>
+
+<pre><code>find / -name *.dog
+</code></pre>
+
+<p><code>*</code> means &#8216;anything&#8217; when searching. Besides <code>-name</code>, there are many other useful flags you can use:</p>
+
+<ul>
+<li><code>-iname</code> Works the same as -name, but is not case sensitive</li>
+<li><code>-type</code>  Search by type. usually &#8216;f&#8217; for file, or &#8216;d&#8217; for directory</li>
+<li><code>-perm</code> Search by permissions</li>
+<li><code>-size</code> Search by file size.</li>
+</ul>
+
+
+<p>You can combine all of these. Let&#8217;s say for example you want to find all hidden files in the current directory, but exclude hidden directories:</p>
+
+<pre><code>find ./ -type f -name .*
+</code></pre>
+
+<h4>How to search text within files</h4>
+
+<p>This is probably the most common search you will have to use, which can search the contents of files. This tool is called <code>grep</code>. It is an acronym for &#8216;General Regular Expression Parser&#8217;. I could write an entire article on grep. In fact, <a href="http://www.amazon.com/Grep-Pocket-Reference-OReilly/dp/0596153600/ref=sr_1_1?ie=UTF8&amp;qid=1362369051&amp;sr=8-1&amp;keywords=grep">entire books</a> have been written on the subject  but here I will just try to give you a brief overview of what grep can do.</p>
+
+<p> The command <code>grep</code> takes two arguments: the query string we are searching for, and the file pattern we will be searching through. The query string is a <a href="http://gsto.github.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions/">regular expression</a>, and the file pattern is the name of a file or directory, or a string with wildcards and other special characters. In a simple example, let&#8217;s say we have a file named <code>hello.rb</code> and we want to find where the line that says &#8220;puts &#8216;hello, world&#8217; is.</p>
+
+<pre><code>grep "puts 'hello, world'" hello.rb
+</code></pre>
+
+<p>Now, this search won&#8217;t find anything if the line is slightly different. Let&#8217;s say the line may have , Hello, World! instead. There are two things we can do to make this search less strict: pass the <code>-i</code> flag to make the search case insensitive, and not search for the entire string, only a part of it. We may also not be sure if the string is in <code>hello.rb</code> or some other ruby file, so let&#8217;s search all ruby files in our current working directory:</p>
+
+<pre><code>grep -i "hello, world" *.rb
+</code></pre>
+
+<p>This should return more results. In addition to -i, there are several other useful flags with grep:</p>
+
+<ul>
+<li><code>-v</code> Inverted match. this will only return files that don&#8217;t match the query provided.</li>
+<li><code>-r</code> Recursive. If a directory is specified, will also search all subdirectories</li>
+<li><code>-n</code> Print out the line number of where the match was found.</li>
+<li><code>-l</code> Print out the filename of where the match was found.</li>
+</ul>
+
+
+<p>All of these can be useful when trying to find a particular piece of text, for example when you need to find patterns or try to find the root of a bug. grep is much more powerful with a good knowledge of regular expressions, however that is beyond the scope of this article and hardly a beginner topic.</p>
+
+<p>By now you&#8217;ve learned the basics of how unix named systems work, and many of the useful programs that are standard. Next time we will look at how to combine some of these with pipes.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[5 Tips for More Accurate Estimates]]></title>
@@ -318,15 +396,15 @@ Let&#8217;s set up our appointment reminder files. First let&#8217;s start by bu
 
 <p><img class="left" src="http://gsto.github.com/images/articles/terminal.jpg" width="260"></p>
 
+<p> In this article, we&#8217;ll take a look at how file permissions works. We&#8217;ll cover how users, groups, and file permissions work in a UNIX-based system, and how they can be used to make using the terminal more secure.</p>
+
+<p> <!-- more --></p>
+
 <ul>
 <li>Read Part 1 <a href="http://gsto.github.com/blog/2012/02/15/terminals-for-absolute-beginners/">Directories and Commands</a></li>
 <li>Read Part 2 <a href="http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/">Manipulating Files</a></li>
 </ul>
 
-
-<p> In this article, we&#8217;ll take a look at how file permissions works. We&#8217;ll cover how users, groups, and file permissions work in a UNIX-based system, and how they can be used to make using the terminal more secure.</p>
-
-<p> <!-- more --></p>
 
 <h4>Users and Groups</h4>
 
