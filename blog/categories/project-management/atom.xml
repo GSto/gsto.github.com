@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: project management | Glenn Stovall]]></title>
+  <link href="http://gsto.github.com/blog/categories/project-management/atom.xml" rel="self"/>
+  <link href="http://gsto.github.com/"/>
+  <updated>2013-03-15T08:10:34-04:00</updated>
+  <id>http://gsto.github.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How I Use Git]]></title>
+    <link href="http://gsto.github.com/blog/2013/03/15/how-i-use-git/"/>
+    <updated>2013-03-15T09:35:00-04:00</updated>
+    <id>http://gsto.github.com/blog/2013/03/15/how-i-use-git</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/git.png" width="260"></p>
+
+<p><a href="http://git-scm.com/">git</a> is a very powerful and flexible tool.  With this power and flexibility comes a daunting amount of choices to make in how to manage your code with it. Here is the current setup I've used on both personal solo projects and professional jobs with other developers that has worked for me and saved me a lot of headaches.</p>
+
+<!-- more -->
+
+
+<h3>Setting Up</h3>
+
+<h4>Set up the Initial Repository</h4>
+
+<pre><code>git init
+git commit -am 'initial commit'
+git tag -a '0.0'
+</code></pre>
+
+<p>Simple enough, right? I usually do this once I've installed whatever framework I am using for a project and done whatever configurations are nessecary. At this point I'll go ahead and set up the <code>.gitignore</code> file based on whatever kind of project I am working on. You'll notice I also use tags for keeping track of the version number of the project.</p>
+
+<h4>Create a dev branch</h4>
+
+<pre><code>git checkout -b dev
+</code></pre>
+
+<p>Next, I will create the 'dev' branch. I will treat master as the 'production' branch. All code will be tested integrated in the dev branch, and only merged with master when the code is ready to be shipped. If you are following and agile development pattern, this will usually be at the end of each sprint. Otherwise, it could once a predetermined set of features has been completed.</p>
+
+<h4>Set up Bitbucket and Heroku Staging Environment</h4>
+
+<pre><code>git remote add origin [bitbucket repo url]
+git push origin master
+git push origin dev
+git remote add staging [heroku repo url]
+git push staging dev:master
+</code></pre>
+
+<p>I use <a href="http://www.bitbucket.org">Bitbucket</a> for most private projects. <a href="http://www.github.com">Github</a> has a lot of nice features, and could work just as well here but it's hard to compete with the free cost of private repositories over at bitbucket. Regardless of which service you prefer, the important reason for doing this is that now you have a remote backup of your work if anything happens to your computer. Now I have a backup of my code online that it easily manageable, that comes along with a wiki for documentation and simplistic bug tracking. If I am working with other people, we now have a central point of communication as well. I usually set up a <a href="http://www.heroku.com">Heroku</a> project for a staging server as well. This way I have a way of demoing functionality before it is ready to be shipped. If Heokru doesn't work for you (i.e. a PHP project) this can be any server you would like to use to host your code for staging / testing.</p>
+
+<p>At this point, we should have everything we need to get started on a project.</p>
+
+<h3>Developing</h3>
+
+<h4>New Features</h4>
+
+<pre><code>git checkout dev
+git checkout -b feature_branch
+</code></pre>
+
+<p>_Note: <code>git checkout -b feature_branch</code> is shorthand for <code>git branch feature_branch; git checkout feature_branch</code></p>
+
+<p>How you define a feature is completly up to you and your development practicies. It could be a user story, or an issue ticket for example. When possible, I like to keep feature branches small. The reason for feature branches is that this way no feature is dependant on another when merging and deploying code. If you are working on two seperate features, and another developer is working on two more, and you were all on the development branch, you would be unable to push parts of it to staging or master without pushing all of it. In git, branching is cheap, and merging is easy. This is one situation where using a lot of smaller branches can be very advantageous.</p>
+
+<p>If you are using a staging server, you can also use it to demo one particular feature:</p>
+
+<pre><code>git push staging feature_branch:master
+</code></pre>
+
+<h4>Integrating Features</h4>
+
+<pre><code>git checkout dev
+git merge feature_branch 
+git branch -d feature_branch
+</code></pre>
+
+<p>Once the feature is completed and tested, it is ready to be merged back into the dev branch. At this point, you fix any conflicts that arise, and run any tests you have to make sure that the integration was successful.</p>
+
+<h3>Maintaining</h3>
+
+<h4>Regular Bug Fixes</h4>
+
+<p>I treat bug fixes just like a feature branch. Any bug gets its on branch, and once it is fixed, it is merged back into dev. However. sometimes you may have a bug that is an emergency, and it needs to be fixed on production instantly without going through all the code in the dev branch. What then?</p>
+
+<h4>Hotfixes</h4>
+
+<pre><code>git checkout master
+git checkout -b hotfix_branch
+</code></pre>
+
+<p>This is the only time I'll branch off of master besides dev, and this should only be reserved for emergencies.  Once the fix is put it, the hotfix is merged into both the master and dev branches. This way dev will have the fix and not accidently introduce it later, and the live code can be fixed quickly.</p>
+
+<pre><code>git checkout master
+git merge hotfix_branch
+git tag -a '1.0.1'
+git checkout dev
+git merge hotfix_branch 
+git branch -d hotfix_branch
+git push origin dev
+git push origin master
+</code></pre>
+
+<h3>Shipping</h3>
+
+<h4>Releasing and Update</h4>
+
+<pre><code>git remote add production [production_url]
+git checkout master
+git merge dev
+git tag -a '1.1'
+git push production master
+</code></pre>
+
+<p>Once you are satisfied with the state of dev and are ready to push it live, dev gets merged into master. Everytime code is merged into master, it gets tagged with a version number. I prefer to follow the <a href="http://semver.org">semantic versioning guidelines</a> If a production remote is not added, usually one gets added here, and code is pushed there.</p>
+
+<p>This setup allows you to keep you to work effortlessly in development without interfering with produciton, and keeps new features and fixes in development decoupled from one another, allowing for efficient development and simple collaboration with other developers.</p>
+]]></content>
+  </entry>
+  
+</feed>
