@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | Glenn Stovall]]></title>
   <link href="http://gsto.github.com/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2013-03-15T08:10:34-04:00</updated>
+  <updated>2013-03-19T15:02:46-04:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -34,7 +34,7 @@ git commit -am 'initial commit'
 git tag -a '0.0'
 </code></pre>
 
-<p>Simple enough, right? I usually do this once I've installed whatever framework I am using for a project and done whatever configurations are nessecary. At this point I'll go ahead and set up the <code>.gitignore</code> file based on whatever kind of project I am working on. You'll notice I also use tags for keeping track of the version number of the project.</p>
+<p>Simple enough, right? I usually do this once I've installed whatever framework I am using for a project and done whatever configurations are necessary. At this point I'll go ahead and set up the <code>.gitignore</code> file based on whatever kind of project I am working on. You'll notice I also use tags for keeping track of the version number of the project.</p>
 
 <h4>Create a dev branch</h4>
 
@@ -45,14 +45,14 @@ git tag -a '0.0'
 
 <h4>Set up Bitbucket and Heroku Staging Environment</h4>
 
-<pre><code>git remote add origin [bitbucket repo url]
+<pre><code>git remote add origin [Bitbucket repository URL]
 git push origin master
 git push origin dev
-git remote add staging [heroku repo url]
+git remote add staging [Heroku repository URL]
 git push staging dev:master
 </code></pre>
 
-<p>I use <a href="http://www.bitbucket.org">Bitbucket</a> for most private projects. <a href="http://www.github.com">Github</a> has a lot of nice features, and could work just as well here but it's hard to compete with the free cost of private repositories over at bitbucket. Regardless of which service you prefer, the important reason for doing this is that now you have a remote backup of your work if anything happens to your computer. Now I have a backup of my code online that it easily manageable, that comes along with a wiki for documentation and simplistic bug tracking. If I am working with other people, we now have a central point of communication as well. I usually set up a <a href="http://www.heroku.com">Heroku</a> project for a staging server as well. This way I have a way of demoing functionality before it is ready to be shipped. If Heokru doesn't work for you (i.e. a PHP project) this can be any server you would like to use to host your code for staging / testing.</p>
+<p>I use <a href="http://www.bitbucket.org">Bitbucket</a> for most private projects. <a href="http://www.github.com">Github</a> has a lot of nice features, and could work just as well here but it's hard to compete with the free cost of private repositories over at Bitbucket. Regardless of which service you prefer, the important reason for doing this is that now you have a remote backup of your work if anything happens to your computer. Now I have a backup of my code online that it easily manageable, that comes along with a wiki for documentation and simplistic bug tracking. If I am working with other people, we now have a central point of communication as well. I usually set up a <a href="http://www.heroku.com">Heroku</a> project for a staging server as well. This way I have a way of demoing functionality before it is ready to be shipped. If Heroku doesn't work for you (i.e. a PHP project) this can be any server you would like to use to host your code for staging / testing.</p>
 
 <p>At this point, we should have everything we need to get started on a project.</p>
 
@@ -66,7 +66,7 @@ git checkout -b feature_branch
 
 <p>_Note: <code>git checkout -b feature_branch</code> is shorthand for <code>git branch feature_branch; git checkout feature_branch</code></p>
 
-<p>How you define a feature is completly up to you and your development practicies. It could be a user story, or an issue ticket for example. When possible, I like to keep feature branches small. The reason for feature branches is that this way no feature is dependant on another when merging and deploying code. If you are working on two seperate features, and another developer is working on two more, and you were all on the development branch, you would be unable to push parts of it to staging or master without pushing all of it. In git, branching is cheap, and merging is easy. This is one situation where using a lot of smaller branches can be very advantageous.</p>
+<p>How you define a feature is completely up to you and your development practices. It could be a user story, or an issue ticket for example. When possible, I like to keep feature branches small. The reason for feature branches is that this way no feature is dependent on another when merging and deploying code. If you are working on two separate features, and another developer is working on two more, and you were all on the development branch, you would be unable to push parts of it to staging or master without pushing all of it. In git, branching is cheap, and merging is easy. This is one situation where using a lot of smaller branches can be very advantageous.</p>
 
 <p>If you are using a staging server, you can also use it to demo one particular feature:</p>
 
@@ -88,13 +88,13 @@ git branch -d feature_branch
 
 <p>I treat bug fixes just like a feature branch. Any bug gets its on branch, and once it is fixed, it is merged back into dev. However. sometimes you may have a bug that is an emergency, and it needs to be fixed on production instantly without going through all the code in the dev branch. What then?</p>
 
-<h4>Hotfixes</h4>
+<h4>Hot Fixes</h4>
 
 <pre><code>git checkout master
 git checkout -b hotfix_branch
 </code></pre>
 
-<p>This is the only time I'll branch off of master besides dev, and this should only be reserved for emergencies.  Once the fix is put it, the hotfix is merged into both the master and dev branches. This way dev will have the fix and not accidently introduce it later, and the live code can be fixed quickly.</p>
+<p>This is the only time I'll branch off of master besides dev, and this should only be reserved for emergencies.  Once the fix is put in, the hot fix is merged into both the master and dev branches. This way dev will have the fix and not accidentally introduce it later, and the live code can be fixed quickly.</p>
 
 <pre><code>git checkout master
 git merge hotfix_branch
@@ -117,9 +117,11 @@ git tag -a '1.1'
 git push production master
 </code></pre>
 
-<p>Once you are satisfied with the state of dev and are ready to push it live, dev gets merged into master. Everytime code is merged into master, it gets tagged with a version number. I prefer to follow the <a href="http://semver.org">semantic versioning guidelines</a> If a production remote is not added, usually one gets added here, and code is pushed there.</p>
+<p>Once you are satisfied with the state of dev and are ready to push it live, dev gets merged into master. Every time code is merged into master, it gets tagged with a version number. I prefer to follow the <a href="http://semver.org">semantic versioning guidelines</a> If a production remote is not added, usually one gets added here, and code is pushed there.</p>
 
-<p>This setup allows you to keep you to work effortlessly in development without interfering with produciton, and keeps new features and fixes in development decoupled from one another, allowing for efficient development and simple collaboration with other developers.</p>
+<p>This setup allows you to keep you to work effortlessly in development without interfering with production, and keeps new features and fixes in development decoupled from one another, allowing for efficient development and simple collaboration with other developers.</p>
+
+<p>How do you use git in your work flow? <a href="http://www.reddit.com/r/programming/comments/1alhsf/how_i_use_git/">Discuss on Reddit</a></p>
 ]]></content>
   </entry>
   
