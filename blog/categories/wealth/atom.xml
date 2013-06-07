@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: wealth | Glenn Stovall]]></title>
+  <link href="http://gsto.github.com/blog/categories/wealth/atom.xml" rel="self"/>
+  <link href="http://gsto.github.com/"/>
+  <updated>2013-06-07T09:06:02-04:00</updated>
+  <id>http://gsto.github.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[reading on wealth and programming]]></title>
+    <link href="http://gsto.github.com/blog/2013/06/07/reading-on-wealth-and-programming/"/>
+    <updated>2013-06-07T08:10:00-04:00</updated>
+    <id>http://gsto.github.com/blog/2013/06/07/reading-on-wealth-and-programming</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/wealth.jpg" width="260"></p>
+
+<p>The world of software development is one that runs on abstractions. Developers are used to working in this world when it comes to software, but when these abstractions start to <a href="http://www.joelonsoftware.com/articles/LeakyAbstractions.html">Leak Out</a> into the real world it can become harder to manage. One of the trickier abstractions is the one between software development and wealth. It is clear that programming provides some sort of value, or else people would not be so eagar to pay for it. It is a complex subject, and one I am not equipped to get into in the depth it needs, but instead I wanted to share a couple articles and a book I have read recently that shed some light on the subject.</p>
+
+<!-- more -->
+
+
+<h3>How To Make Wealth -- Paul Graham</h3>
+
+<p><a href="http://www.url.com">How To Make  Wealth</a></p>
+
+<p>This is an older essay by <a href="http://paulgraham.com/">Paul Graham</a> , a programmer and venture capitalist who co-founded <a href="http://ycombinator.com/">Y Combinator</a>. Paul is an excellent writer, and in this article he does a great job at explaining how programmers are able to create wealth. He also makes an important distinction: That wealth does not nessecarily equal money. Money is the medium of exchange in which wealth is transferred. to paraphrase one of his examples, Linus Torvalds helped create Linux and Git. These tools are free and open-source, and even if Linus didn't make a dime off of these, he still created wealth. He compares and contrasts the three major ways a programmer can convert the wealth they generate into money. Programmers can be employees for a company, where as an employee you are getting a share of the wealth you and all your co-workers generate in the form of a salary. They can also be contractors and freelancers, where they can sell their welath directly. There is also working for a start-up, which has the highest returns, but also the biggest risk. As he puts it, a programmer who can generate $1 million in wealth for a start-up will not get $1 million in return, but they could get a 20% chance at getting $10 million for it. There is more risk, but it is a proposition that does offer a lot of expected value.</p>
+
+<h3>Are Coders Worth It? -- James Somers</h3>
+
+<p><a href="http://www.aeonmagazine.com/living-together/james-somers-web-developer-money/">Are Coders Worth It?</a></p>
+
+<p>This article from Aeon Magazine sheds some light on what working as a web developer is like these days. And he is right, times right now are good for skilled programmers. Building a tech start-up is cheaper than ever before. Before when some value may have been created by the infrastructure your company builds, now all of that is a commodity that can easily be bought for cheap and scaled up as nessecary. Instead of having to worry about hiring a system administrator to maintain a large server, you can simply spin up an instance of Heroku. Need to manage payment processing or project management? There is a bevy of tools that can be subscribed to for just tens of dollars a month to solve this problem. Developers are the people that can put all of this together and make something valuable. As James puts it, In this gold rush, developers are the shovel.</p>
+
+<h3>Double Your Freelancing Rate -- Brennan Dunn</h3>
+
+<p><a href="http://doubleyourfreelancingrate.com/">Double Your Freelancing Rate</a></p>
+
+<p>Brennan Dunn is a freelancer who has written an excellent book about increasing the amount of money you can make as a freelancer. He brings up two good points that can help freelancers understand their value. One is that freelancers should focus on the value they provide a company.  It is easy to get caught in the trap of beliving that the rate you charge should be based on the amount of work you do, or on the skills you have. However, both of these are just means to an end; It is possible to be skilled, work hard, and create something that is of no value to anyone. By focusing instead on the benefit you provide, it can break down this wall of abstraction between you and the client in regards to wealth, and as a freelancer you can make sure that you are getting paid what you are worth.  The second point he makes is that the value we provide is not just in the products that we produce, but in expierience we can provide when working with people. To many people, programming is a black box. Many business owners may not understand what is possible, and what kind of resources are involved in certain types of programming. I once spent 3 days writing something for a company that was later sold for $30,000 to a client.  I've also spent months writing code that probably ended up have a real world value of near zero. Part of being a developer is solving problems, and working with clients to understand what you can do for them that provides the best value. I'd rather write more code for clients like that first example, and less like the second, and I am sure they would prefer that as well.</p>
+
+<h3>Summary</h3>
+
+<p>Having a greater understanding of how programming creates wealth is a win for everybody. Programmers who understand this can focus their abilities on activities that generate the most wealth, and can find themselves in more favorable positions by understanding how their work relates to this. Business owners who understand this can also look to work with developers who can provide them with the best value. This is why many freelancers charge a higher rate; There is more to being a developer than just cranking out code, it comes with this ability to solve problems and find ways to create value. Many people who look for very cheap development options aren't aware of this, and usually end up paying the price in the future.</p>
+]]></content>
+  </entry>
+  
+</feed>
