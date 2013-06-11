@@ -149,7 +149,7 @@ They can look like any of the following:
 123456789
 </code></pre>
 
-<p>so, now that we have the set of patterns we want to match, we can start building up smaller words to match each part of the pattern. Writing regular expressions is similar to writing functions or classes: you start by breaking down the problem, figuring out smaller parts of it, and then start working on combining these smaller solutions into a large one. So let&#8217;s start by writing out our pattern in plain english:</p>
+<p>so, now that we have the set of patterns we want to match, we can start building up smaller words to match each part of the pattern. Writing regular expressions is similar to writing functions or classes: you start by breaking down the problem, figuring out smaller parts of it, and then start working on combining these smaller solutions into a large one. So let&#8217;s start by writing out our pattern in plain English:</p>
 
 <ul>
 <li>We have the start of the string,</li>
@@ -166,8 +166,8 @@ They can look like any of the following:
 
 <ul>
 <li><strong>We have the start of the string</strong> : this is where we start with one of the anchors we mentioned earlier, <code>^</code>.</li>
-<li><strong>Three Digits</strong> : We discussed the range of digits earlier (<code>[0-9]</code>), but that only matches a single digit. To match exactly 3, we will need a quantifier as well. So this word can be writen as <code>[0-9]{3}</code>.</li>
-<li><strong>Either a hyphen, forward slash, or neither</strong> : this is going to take another quantifier, but which one? It helps if we rephrase this statement a bit, and think of it as this: &#8220;exactly 0 or 1 hyphen or forward slash&#8221;. Now we can see that we need the <code>?</code> quantifier. We also see that we&#8217;ll need to use an &#8216;or&#8217; for this statement. For statements like this, you can wrap this part of the expression in parenthesis so that its clear whats going on. The answer here is <code>(-|/)?</code>. Declaring parts of a regular expression inside of parenthesis like this is called defining a <em>subpattern</em></li>
+<li><strong>Three Digits</strong> : We discussed the range of digits earlier (<code>[0-9]</code>), but that only matches a single digit. To match exactly 3, we will need a quantifier as well. So this word can be written as <code>[0-9]{3}</code>.</li>
+<li><strong>Either a hyphen, forward slash, or neither</strong> : this is going to take another quantifier, but which one? It helps if we rephrase this statement a bit, and think of it as this: &#8220;exactly 0 or 1 hyphen or forward slash&#8221;. Now we can see that we need the <code>?</code> quantifier. We also see that we&#8217;ll need to use an &#8216;or&#8217; for this statement. For statements like this, you can wrap this part of the expression in parenthesis so that its clear whats going on. The answer here is <code>(-|/)?</code>. Declaring parts of a regular expression inside of parenthesis like this is called defining a <em>sub-pattern</em></li>
 <li><strong>Two Digits</strong> : similar to above: <code>[0-9]{2}</code>.</li>
 <li><strong>Either a hyphen, forward slash, or neither</strong> : same as above: <code>(-|/)?</code>.</li>
 <li><strong>Four Digits</strong> : similar to above: <code>[0-9]{4}</code>.</li>
@@ -181,11 +181,11 @@ They can look like any of the following:
 
 <p>Tada! Now that you can see how the regular expressions is really just a bunch of small parts that fit together, hopefully you can figure out how to both write your own regular expressions, and read other ones you come across.</p>
 
-<p>This is just the tip of the regex iceberg though. There is a whole lot more you can do with it that is much more than the span of this article. Play around with them, refer back to the cheatsheet, and see what you can come up with.</p>
+<p>This is just the tip of the regex iceberg though. There is a whole lot more you can do with it that is much more than the span of this article. Play around with them, refer back to the cheat sheet, and see what you can come up with.</p>
 
 <p><strong>Edit</strong></p>
 
-<p>I realized there was a small problem with the regular expression above. While this work for most of our cases, there is the scenario of getting a number formatted like so: <code>123-45/6789</code> which the pattern would match, even though it is not in a valid format. I asked about this on <a href="http://stackoverflow.com/questions/9624081/matching-delimiters-with-regular-expressions/9624128">Stack Overflow</a> And learned about using <em>backreferences</em> for situations like this. you can use the syntax <code>\1</code> where 1 is the number of the subpattern you want to reference. By doing so, you can make sure that the second delimiter matches the first. So our regular expression would now look like this:</p>
+<p>I realized there was a small problem with the regular expression above. While this work for most of our cases, there is the scenario of getting a number formatted like so: <code>123-45/6789</code> which the pattern would match, even though it is not in a valid format. I asked about this on <a href="http://stackoverflow.com/questions/9624081/matching-delimiters-with-regular-expressions/9624128">Stack Overflow</a> And learned about using <em>back references</em> for situations like this. you can use the syntax <code>\1</code> where 1 is the number of the sub pattern you want to reference. By doing so, you can make sure that the second delimiter matches the first. So our regular expression would now look like this:</p>
 
 <p><code>^[0-9]{3}(-|/)?[0-9]{2}\1?[0-9]{4}$</code></p>
 </div>

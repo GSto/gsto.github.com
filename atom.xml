@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2013-06-07T09:06:02-04:00</updated>
+  <updated>2013-06-11T10:29:42-04:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -20,28 +20,28 @@
     <id>http://gsto.github.com/blog/2013/06/07/reading-on-wealth-and-programming</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/wealth.jpg" width="260"></p>
 
-<p>The world of software development is one that runs on abstractions. Developers are used to working in this world when it comes to software, but when these abstractions start to <a href="http://www.joelonsoftware.com/articles/LeakyAbstractions.html">Leak Out</a> into the real world it can become harder to manage. One of the trickier abstractions is the one between software development and wealth. It is clear that programming provides some sort of value, or else people would not be so eagar to pay for it. It is a complex subject, and one I am not equipped to get into in the depth it needs, but instead I wanted to share a couple articles and a book I have read recently that shed some light on the subject.</p>
+<p>The world of software development is one that runs on abstractions. Developers are used to working in this world when it comes to software, but when these abstractions start to <a href="http://www.joelonsoftware.com/articles/LeakyAbstractions.html">Leak Out</a> into the real world it can become harder to manage. One of the trickier abstractions is the one between software development and wealth. It is clear that programming provides some sort of value, or else people would not be so eager to pay for it. It is a complex subject, and one I am not equipped to get into in the depth it needs, but instead I wanted to share a couple articles and a book I have read recently that shed some light on the subject.</p>
 
 <!-- more -->
 
 
 <h3>How To Make Wealth &#8211; Paul Graham</h3>
 
-<p><a href="http://www.url.com">How To Make  Wealth</a></p>
+<p><a href="http://www.paulgraham.com/wealth.html">How To Make  Wealth</a></p>
 
-<p>This is an older essay by <a href="http://paulgraham.com/">Paul Graham</a> , a programmer and venture capitalist who co-founded <a href="http://ycombinator.com/">Y Combinator</a>. Paul is an excellent writer, and in this article he does a great job at explaining how programmers are able to create wealth. He also makes an important distinction: That wealth does not nessecarily equal money. Money is the medium of exchange in which wealth is transferred. to paraphrase one of his examples, Linus Torvalds helped create Linux and Git. These tools are free and open-source, and even if Linus didn&#8217;t make a dime off of these, he still created wealth. He compares and contrasts the three major ways a programmer can convert the wealth they generate into money. Programmers can be employees for a company, where as an employee you are getting a share of the wealth you and all your co-workers generate in the form of a salary. They can also be contractors and freelancers, where they can sell their welath directly. There is also working for a start-up, which has the highest returns, but also the biggest risk. As he puts it, a programmer who can generate $1 million in wealth for a start-up will not get $1 million in return, but they could get a 20% chance at getting $10 million for it. There is more risk, but it is a proposition that does offer a lot of expected value.</p>
+<p>This is an older essay by <a href="http://paulgraham.com/">Paul Graham</a> , a programmer and venture capitalist who co-founded <a href="http://ycombinator.com/">Y Combinator</a>. Paul is an excellent writer, and in this article he does a great job at explaining how programmers are able to create wealth. He also makes an important distinction: That wealth does not necessarily equal money. Money is the medium of exchange in which wealth is transferred. to paraphrase one of his examples, Linus Torvalds helped create Linux and Git. These tools are free and open-source, and even if Linus didn&#8217;t make a dime off of these, he still created wealth. He compares and contrasts the three major ways a programmer can convert the wealth they generate into money. Programmers can be employees for a company, where as an employee you are getting a share of the wealth you and all your co-workers generate in the form of a salary. They can also be contractors and freelancers, where they can sell their wealth directly. There is also working for a start-up, which has the highest returns, but also the biggest risk. As he puts it, a programmer who can generate $1 million in wealth for a start-up will not get $1 million in return, but they could get a 20% chance at getting $10 million for it. There is more risk, but it is a proposition that does offer a lot of expected value.</p>
 
 <h3>Are Coders Worth It? &#8211; James Somers</h3>
 
 <p><a href="http://www.aeonmagazine.com/living-together/james-somers-web-developer-money/">Are Coders Worth It?</a></p>
 
-<p>This article from Aeon Magazine sheds some light on what working as a web developer is like these days. And he is right, times right now are good for skilled programmers. Building a tech start-up is cheaper than ever before. Before when some value may have been created by the infrastructure your company builds, now all of that is a commodity that can easily be bought for cheap and scaled up as nessecary. Instead of having to worry about hiring a system administrator to maintain a large server, you can simply spin up an instance of Heroku. Need to manage payment processing or project management? There is a bevy of tools that can be subscribed to for just tens of dollars a month to solve this problem. Developers are the people that can put all of this together and make something valuable. As James puts it, In this gold rush, developers are the shovel.</p>
+<p>This article from Aeon Magazine sheds some light on what working as a web developer is like these days. And he is right, times right now are good for skilled programmers. Building a tech start-up is cheaper than ever before. Before when some value may have been created by the infrastructure your company builds, now all of that is a commodity that can easily be bought for cheap and scaled up as necessary. Instead of having to worry about hiring a system administrator to maintain a large server, you can simply spin up an instance of Heroku. Need to manage payment processing or project management? There is a bevy of tools that can be subscribed to for just tens of dollars a month to solve this problem. Developers are the people that can put all of this together and make something valuable. As James puts it, In this gold rush, developers are the shovel.</p>
 
 <h3>Double Your Freelancing Rate &#8211; Brennan Dunn</h3>
 
 <p><a href="http://doubleyourfreelancingrate.com/">Double Your Freelancing Rate</a></p>
 
-<p>Brennan Dunn is a freelancer who has written an excellent book about increasing the amount of money you can make as a freelancer. He brings up two good points that can help freelancers understand their value. One is that freelancers should focus on the value they provide a company.  It is easy to get caught in the trap of beliving that the rate you charge should be based on the amount of work you do, or on the skills you have. However, both of these are just means to an end; It is possible to be skilled, work hard, and create something that is of no value to anyone. By focusing instead on the benefit you provide, it can break down this wall of abstraction between you and the client in regards to wealth, and as a freelancer you can make sure that you are getting paid what you are worth.  The second point he makes is that the value we provide is not just in the products that we produce, but in expierience we can provide when working with people. To many people, programming is a black box. Many business owners may not understand what is possible, and what kind of resources are involved in certain types of programming. I once spent 3 days writing something for a company that was later sold for $30,000 to a client.  I&#8217;ve also spent months writing code that probably ended up have a real world value of near zero. Part of being a developer is solving problems, and working with clients to understand what you can do for them that provides the best value. I&#8217;d rather write more code for clients like that first example, and less like the second, and I am sure they would prefer that as well.</p>
+<p>Brennan Dunn is a freelancer who has written an excellent book about increasing the amount of money you can make as a freelancer. He brings up two good points that can help freelancers understand their value. One is that freelancers should focus on the value they provide a company.  It is easy to get caught in the trap of believing that the rate you charge should be based on the amount of work you do, or on the skills you have. However, both of these are just means to an end; It is possible to be skilled, work hard, and create something that is of no value to anyone. By focusing instead on the benefit you provide, it can break down this wall of abstraction between you and the client in regards to wealth, and as a freelancer you can make sure that you are getting paid what you are worth.  The second point he makes is that the value we provide is not just in the products that we produce, but in experience we can provide when working with people. To many people, programming is a black box. Many business owners may not understand what is possible, and what kind of resources are involved in certain types of programming. I once spent 3 days writing something for a company that was later sold for $30,000 to a client.  I&#8217;ve also spent months writing code that probably ended up have a real world value of near zero. Part of being a developer is solving problems, and working with clients to understand what you can do for them that provides the best value. I&#8217;d rather write more code for clients like that first example, and less like the second, and I am sure they would prefer that as well.</p>
 
 <h3>Summary</h3>
 
@@ -917,7 +917,7 @@ They can look like any of the following:
 123456789
 </code></pre>
 
-<p>so, now that we have the set of patterns we want to match, we can start building up smaller words to match each part of the pattern. Writing regular expressions is similar to writing functions or classes: you start by breaking down the problem, figuring out smaller parts of it, and then start working on combining these smaller solutions into a large one. So let&#8217;s start by writing out our pattern in plain english:</p>
+<p>so, now that we have the set of patterns we want to match, we can start building up smaller words to match each part of the pattern. Writing regular expressions is similar to writing functions or classes: you start by breaking down the problem, figuring out smaller parts of it, and then start working on combining these smaller solutions into a large one. So let&#8217;s start by writing out our pattern in plain English:</p>
 
 <ul>
 <li>We have the start of the string,</li>
@@ -934,8 +934,8 @@ They can look like any of the following:
 
 <ul>
 <li><strong>We have the start of the string</strong> : this is where we start with one of the anchors we mentioned earlier, <code>^</code>.</li>
-<li><strong>Three Digits</strong> : We discussed the range of digits earlier (<code>[0-9]</code>), but that only matches a single digit. To match exactly 3, we will need a quantifier as well. So this word can be writen as <code>[0-9]{3}</code>.</li>
-<li><strong>Either a hyphen, forward slash, or neither</strong> : this is going to take another quantifier, but which one? It helps if we rephrase this statement a bit, and think of it as this: &#8220;exactly 0 or 1 hyphen or forward slash&#8221;. Now we can see that we need the <code>?</code> quantifier. We also see that we&#8217;ll need to use an &#8216;or&#8217; for this statement. For statements like this, you can wrap this part of the expression in parenthesis so that its clear whats going on. The answer here is <code>(-|/)?</code>. Declaring parts of a regular expression inside of parenthesis like this is called defining a <em>subpattern</em></li>
+<li><strong>Three Digits</strong> : We discussed the range of digits earlier (<code>[0-9]</code>), but that only matches a single digit. To match exactly 3, we will need a quantifier as well. So this word can be written as <code>[0-9]{3}</code>.</li>
+<li><strong>Either a hyphen, forward slash, or neither</strong> : this is going to take another quantifier, but which one? It helps if we rephrase this statement a bit, and think of it as this: &#8220;exactly 0 or 1 hyphen or forward slash&#8221;. Now we can see that we need the <code>?</code> quantifier. We also see that we&#8217;ll need to use an &#8216;or&#8217; for this statement. For statements like this, you can wrap this part of the expression in parenthesis so that its clear whats going on. The answer here is <code>(-|/)?</code>. Declaring parts of a regular expression inside of parenthesis like this is called defining a <em>sub-pattern</em></li>
 <li><strong>Two Digits</strong> : similar to above: <code>[0-9]{2}</code>.</li>
 <li><strong>Either a hyphen, forward slash, or neither</strong> : same as above: <code>(-|/)?</code>.</li>
 <li><strong>Four Digits</strong> : similar to above: <code>[0-9]{4}</code>.</li>
@@ -949,11 +949,11 @@ They can look like any of the following:
 
 <p>Tada! Now that you can see how the regular expressions is really just a bunch of small parts that fit together, hopefully you can figure out how to both write your own regular expressions, and read other ones you come across.</p>
 
-<p>This is just the tip of the regex iceberg though. There is a whole lot more you can do with it that is much more than the span of this article. Play around with them, refer back to the cheatsheet, and see what you can come up with.</p>
+<p>This is just the tip of the regex iceberg though. There is a whole lot more you can do with it that is much more than the span of this article. Play around with them, refer back to the cheat sheet, and see what you can come up with.</p>
 
 <p><strong>Edit</strong></p>
 
-<p>I realized there was a small problem with the regular expression above. While this work for most of our cases, there is the scenario of getting a number formatted like so: <code>123-45/6789</code> which the pattern would match, even though it is not in a valid format. I asked about this on <a href="http://stackoverflow.com/questions/9624081/matching-delimiters-with-regular-expressions/9624128">Stack Overflow</a> And learned about using <em>backreferences</em> for situations like this. you can use the syntax <code>\1</code> where 1 is the number of the subpattern you want to reference. By doing so, you can make sure that the second delimiter matches the first. So our regular expression would now look like this:</p>
+<p>I realized there was a small problem with the regular expression above. While this work for most of our cases, there is the scenario of getting a number formatted like so: <code>123-45/6789</code> which the pattern would match, even though it is not in a valid format. I asked about this on <a href="http://stackoverflow.com/questions/9624081/matching-delimiters-with-regular-expressions/9624128">Stack Overflow</a> And learned about using <em>back references</em> for situations like this. you can use the syntax <code>\1</code> where 1 is the number of the sub pattern you want to reference. By doing so, you can make sure that the second delimiter matches the first. So our regular expression would now look like this:</p>
 
 <p><code>^[0-9]{3}(-|/)?[0-9]{2}\1?[0-9]{4}$</code></p>
 ]]></content>
@@ -1316,20 +1316,20 @@ drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Videos
 
 <h3>Commands And Options</h3>
 
-<p><code>ls</code> and <code>pwd</code> are both <em>commands</em>. <code>pwd</code> is short for <strong>P</strong>rint <strong>W</strong>orking <strong>D</strong>irectory and well, prints your current working directory. <code>ls</code> is shorthand for list and lists the contents of the current working directory. These are the first of many commands we&#8217;ll  be going over. You can pass options to commands to change how they work. These are almost always formatted in the form of a single hyphen and a single letter, or two hypens and a complete word.  You can combine single letter options with one hyphen, which is what we did when we typed <code>ls -la</code>. You could also write <code>ls -l</code> and <code>ls -a</code> and both would be valid commands. the <code>-l</code> argument tells the <code>ls</code> command to list the files on a single line with additional details. The <code>-a</code> command tells <code>ls</code> to show all files, including hidden ones. All directories contain at least two hidden directories, one called <code>.</code> and one called <code>..</code>, but we&#8217;ll get to those in a moment.</p>
+<p><code>ls</code> and <code>pwd</code> are both <em>commands</em>. <code>pwd</code> is short for <strong>P</strong>rint <strong>W</strong>orking <strong>D</strong>irectory and well, prints your current working directory. <code>ls</code> is shorthand for list and lists the contents of the current working directory. These are the first of many commands we&#8217;ll  be going over. You can pass options to commands to change how they work. These are almost always formatted in the form of a single hyphen and a single letter, or two hyphens and a complete word.  You can combine single letter options with one hyphen, which is what we did when we typed <code>ls -la</code>. You could also write <code>ls -l</code> and <code>ls -a</code> and both would be valid commands. the <code>-l</code> argument tells the <code>ls</code> command to list the files on a single line with additional details. The <code>-a</code> command tells <code>ls</code> to show all files, including hidden ones. All directories contain at least two hidden directories, one called <code>.</code> and one called <code>..</code>, but we&#8217;ll get to those in a moment.</p>
 
 <p>Many commands have similar options, where the same arguments have similar effects with similar commands. There is one option that works with almost every command on the terminal, and its the most important one you&#8217;ll ever learn. Are you ready? Got a pen?</p>
 
 <pre><code>--help
 </code></pre>
 
-<p>This will print out an explination of the commands function, and a list of options it can take and what they do. Go try running the following commands and checkout the output:</p>
+<p>This will print out an explanation of the commands function, and a list of options it can take and what they do. Go try running the following commands and checkout the output:</p>
 
 <pre><code>whoami --help
 ls --help
 </code></pre>
 
-<p>You&#8217;ll see that <code>whoami</code> is a relatively simple command with very few arguments, where <code>ls</code> has a lot more options availble. I could just replace a lot of text in this and upcoming articles with &#8220;just run <code>--help</code>&#8221;, but I&#8217;m not going to. Feel free to explore some of the other commands and options that are available to them, and see what you can do with them.</p>
+<p>You&#8217;ll see that <code>whoami</code> is a relatively simple command with very few arguments, where <code>ls</code> has a lot more options available. I could just replace a lot of text in this and upcoming articles with &#8220;just run <code>--help</code>&#8221;, but I&#8217;m not going to. Feel free to explore some of the other commands and options that are available to them, and see what you can do with them.</p>
 
 <h3>Traversing Directories</h3>
 
