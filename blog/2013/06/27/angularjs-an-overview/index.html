@@ -147,8 +147,8 @@
 <span class='line-number'>6</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app</span><span class="nt">&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;div&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#39;text ng-model=&#39;</span><span class="na">name</span> <span class="nt">/&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;h2&gt;&lt;/h2&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#39;text&#39;</span> <span class="na">ng-model=</span><span class="s">&#39;name&#39;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;h2&gt;</span>{{name}}<span class="nt">&lt;/h2&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
 </span><span class='line'><span class="nt">&lt;/body&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -159,13 +159,13 @@
 <ul>
 <li><code>&lt;body ng-app&gt;</code> : all Angular code must be wrapper in this directive. This declares that everything within this tag will be treated as an angular application.</li>
 <li><code>&lt;input type='text' ng-model='name' /&gt;</code> : This is one part of the data binding. Here we are using another directive, ng-model, to bind the input to a string. Note that in this example we also see that attribute directives can have arguments.</li>
-<li><code>&lt;h2&gt;&lt;/h2&gt;</code> : Whenever you type into the input box, this h2 tag updates automatically. This is the automatic DOM manipulation I mentioned earlier. We were able to do this without writing a single line of JavaScript.</li>
+<li><code>&lt;h2&gt;{{name}}&lt;/h2&gt;</code> : Whenever you type into the input box, this h2 tag updates automatically. This is the automatic DOM manipulation I mentioned earlier. We were able to do this without writing a single line of JavaScript.</li>
 </ul>
 
 
 <h3>Modules</h3>
 
-<p><strong>Modules</strong> are used to organize the objects in an Angular.js application. Modules can either be used as as the &#8216;core&#8217; of an application, and contain all of the classes used for it, or they can be used to group several objects that have similar functionality. Let&#8217;s create a module for our application:</p>
+<p><strong>Modules</strong> are used to organize the objects in an AngularJS application. Modules can either be used as as the &#8216;core&#8217; of an application, and contain all of the classes used for it, or they can be used to group several objects that have similar functionality. Let&#8217;s create a module for our application:</p>
 
 <figure class='code'><figcaption><span>app.js  </span></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -210,8 +210,8 @@
 <span class='line-number'>6</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app=</span><span class="s">&#39;myApp&#39;</span><span class="nt">&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&#39;mainCtrl&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#39;text ng-model=&#39;</span><span class="na">name</span> <span class="nt">/&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;h2&gt;&lt;/h2&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#39;text&#39;</span> <span class="na">ng-model=</span><span class="s">&#39;name&#39;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;h2&gt;</span>{{name}}<span class="nt">&lt;/h2&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
 </span><span class='line'><span class="nt">&lt;/body&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -251,11 +251,11 @@
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="err">=&#39;</span><span class="na">myApp</span><span class="err">&#39;</span><span class="nt">&gt;</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app=</span><span class="s">&#39;myApp&#39;</span><span class="nt">&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&#39;mainCtrl&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#39;text ng-model=&#39;</span><span class="na">name</span> <span class="nt">/&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#39;text&#39;</span> <span class="na">ng-model=</span><span class="s">&#39;name&#39;</span> <span class="nt">/&gt;</span>
 </span><span class='line'>    <span class="nt">&lt;button</span> <span class="na">ng-click=</span><span class="s">&#39;savePerson()&#39;</span><span class="nt">&gt;</span>Save Person<span class="nt">&lt;/button&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;h2&gt;&lt;/h2&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;h2&gt;</span>{{name}}<span class="nt">&lt;/h2&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
 </span><span class='line'><span class="nt">&lt;/body&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -268,7 +268,7 @@
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;ul&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&#39;person in people&#39;</span><span class="nt">&gt;&lt;/li&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&#39;person in people&#39;</span><span class="nt">&gt;</span>{{person}}<span class="nt">&lt;/li&gt;</span>
 </span><span class='line'><span class="nt">&lt;/ul&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -310,7 +310,7 @@
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&#39;person in people&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">alertable=</span><span class="s">&#39;&#39;</span><span class="nt">&gt;&lt;/span&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">alertable=</span><span class="s">&#39;{{person}}&#39;</span><span class="nt">&gt;</span>{{person}}<span class="nt">&lt;/span&gt;</span>
 </span><span class='line'><span class="nt">&lt;/li&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -420,7 +420,7 @@
 <p>We can apply a couple filters to this to make it look different, by using the <code>|</code> operator:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;span>Price:&lt;/span> 300</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;span>{{ "Price:" | uppercase }}&lt;/span> {{ "300" | currency }}</span></code></pre></td></tr></table></div></figure>
 
 
 <p>And our output will now look like this:</p>
@@ -467,7 +467,7 @@
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/angularjs/'>angularJS</a>, <a class='category' href='/blog/categories/javascript-/'>javascript,</a>
+    <a class='category' href='/blog/categories/angularjs/'>AngularJS</a>, <a class='category' href='/blog/categories/javascript-/'>JavaScript,</a>
   
 </span>
 
