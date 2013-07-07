@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2013-07-07T16:31:47-04:00</updated>
+  <updated>2013-07-07T16:39:46-04:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -139,7 +139,7 @@
 </span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Default Name&#39;</span><span class="p">;</span>
 </span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">people</span> <span class="o">=</span> <span class="p">[];</span>
 </span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">savePerson</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">$scope</span><span class="p">.</span><span class="nx">people</span><span class="p">.</span><span class="nx">push</span><span class="p">[</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span><span class="p">];</span>
+</span><span class='line'>    <span class="nx">$scope</span><span class="p">.</span><span class="nx">people</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
 </span><span class='line'>    <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
 </span><span class='line'>  <span class="p">};</span>
 </span><span class='line'><span class="p">});</span>
@@ -198,9 +198,9 @@
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">directive</span><span class="p">(</span><span class="s1">&#39;alertable&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
 </span><span class='line'>  <span class="k">return</span> <span class="p">{</span>
 </span><span class='line'>    <span class="nx">restrict</span> <span class="o">:</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span>
-</span><span class='line'>    <span class="nx">link</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">scope</span><span class="p">,</span> <span class="nx">element</span><span class="p">,</span> <span class="nx">attars</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">link</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">scope</span><span class="p">,</span> <span class="nx">element</span><span class="p">,</span> <span class="nx">attrs</span><span class="p">)</span> <span class="p">{</span>
 </span><span class='line'>      <span class="nx">element</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">alert</span><span class="p">(</span><span class="nx">attrs</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+</span><span class='line'>        <span class="nx">alert</span><span class="p">(</span><span class="nx">attrs</span><span class="p">.</span><span class="nx">alertable</span><span class="p">);</span>
 </span><span class='line'>      <span class="p">});</span>
 </span><span class='line'>     <span class="p">}</span>
 </span><span class='line'>  <span class="p">};</span>
