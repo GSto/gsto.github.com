@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | Glenn Stovall]]></title>
   <link href="http://gsto.github.com/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2013-07-07T16:39:46-04:00</updated>
+  <updated>2013-07-17T15:44:14-04:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -124,7 +124,7 @@ drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Videos
 
 <p> <!-- more --></p>
 
-<p> ###Creating and Deleting Directories</p>
+<h3>Creating and Deleting Directories</h3>
 
 <p> Wherever you left off in the last lesson, let's start by going back to home directory, and working from there. Remember that we can do this by running the command <code>cd ~</code>. Now, since we will be manipulating the file system in this tutortial, let's create a new directory that we can work in. You can do this by using the <code>mkdir</code> command. mkdir is short for "make directory". just type mkdir and the name of the folder you would like to create. For this example, we'll call it 'terminal-tutorial'</p>
 

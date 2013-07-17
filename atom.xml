@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2013-07-07T16:39:46-04:00</updated>
+  <updated>2013-07-17T15:44:14-04:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -1115,7 +1115,7 @@ Node.js and CoffeeScript have been all the rage in the web development community
 
 <p> <!-- more --></p>
 
-<p> ###Creating and Deleting Directories</p>
+<h3>Creating and Deleting Directories</h3>
 
 <p> Wherever you left off in the last lesson, let&#8217;s start by going back to home directory, and working from there. Remember that we can do this by running the command <code>cd ~</code>. Now, since we will be manipulating the file system in this tutortial, let&#8217;s create a new directory that we can work in. You can do this by using the <code>mkdir</code> command. mkdir is short for &#8220;make directory&#8221;. just type mkdir and the name of the folder you would like to create. For this example, we&#8217;ll call it &#8216;terminal-tutorial&#8217;</p>
 
