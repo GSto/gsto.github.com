@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2013-07-28T11:57:13-04:00</updated>
+  <updated>2013-12-10T11:15:38-05:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Announcing Concordant Solutions]]></title>
+    <link href="http://gsto.github.com/blog/2013/12/10/announcing-concordant-solutions/"/>
+    <updated>2013-12-10T11:09:00-05:00</updated>
+    <id>http://gsto.github.com/blog/2013/12/10/announcing-concordant-solutions</id>
+    <content type="html"><![CDATA[<p>As a consultant, it&#8217;s important to think of what you are doing as a business, and not just as you as a person. Having said that, I&#8217;ve set up a new company name for my services, <strong>Concordant Solutions</strong>.</p>
+
+<p>The name comes from a Concordant, or agreement. It signifies how by working together with clients I am able to provide value for them that neither one of us could do individually. When people with domain knowledge in an industry come together with people with tech knowledge and the skills to put their ideas into practice, great things happen.</p>
+
+<p>The company also gives me an avenue for market segmentation when it comes to content. I will still have this personal blog, which will be centered around technical content. Concordant Solutions will focus on content aimed at business owners.</p>
+
+<p>If you are interested in supporting me, or learning more about ways you can help your business, Please check out my new company below.</p>
+
+<p><a href="https://www.facebook.com/concordantsolutions">Concordant Solutions on Facebook</a></p>
+
+<p><a href="https://www.twitter.com/_Concordant">Concordant Solutions on Twitter</a></p>
+
+<p><a href="http://www.concordantsolutions.com">ConcordantSolutions.com</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[AngularJS: an Overview]]></title>
