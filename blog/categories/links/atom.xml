@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: links | Glenn Stovall]]></title>
+  <link href="http://gsto.github.com/blog/categories/links/atom.xml" rel="self"/>
+  <link href="http://gsto.github.com/"/>
+  <updated>2014-02-21T16:22:29-05:00</updated>
+  <id>http://gsto.github.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Other Writing Around the Web]]></title>
+    <link href="http://gsto.github.com/blog/2014/02/21/other-writing-around-the-web/"/>
+    <updated>2014-02-21T16:11:00-05:00</updated>
+    <id>http://gsto.github.com/blog/2014/02/21/other-writing-around-the-web</id>
+    <content type="html"><![CDATA[<p>I haven't spent much time writing content for this blog, but I have been doing some writing on other sites. Here are some of my posts from other sites:</p>
+
+<!-- more -->
+
+
+<ul>
+<li><a href="http://concordantsolutions.com/4-techniques-developing-ios-android/">4 Techniques for Developing for both iOS and Android</a> Discusses the pros and cons of web apps vs. native apps vs. cross compiling tools such as Titanium</li>
+<li><a href="http://concordantsolutions.com/the-value-in-launching-early/">The Value in Launching Early</a> Why pushing your launch date up by cutting features is only going to make you more money.</li>
+<li><a href="http://concordantsolutions.com/dont-bill-hourly/">Why We Don't Bill Hourly</a> An explination of my logic behind changing my billing techniques in 2014. Protip: Start billing weekly.</li>
+<li><a href="http://concordantsolutions.com/aarrr-pirate-metrics-5-numbers-you-need-to-know-about-your-business/">Pirate Metrics, 5 Numbers you Need to Know About Your Business</a>. Writing about the main metrics companies should be looking at.</li>
+<li><a href="https://medium.com/p/6c9c9f08b552">How Letting Go of Money Made me More of It</a> One of my personal favorites. Discussing how life lessons from being a profressional online poker player translate into being a consultant.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
