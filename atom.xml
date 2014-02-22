@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2014-02-21T16:49:26-05:00</updated>
+  <updated>2014-02-22T08:41:02-05:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -66,7 +66,9 @@
     <link href="http://gsto.github.com/blog/2014/02/21/other-writing-around-the-web/"/>
     <updated>2014-02-21T16:11:00-05:00</updated>
     <id>http://gsto.github.com/blog/2014/02/21/other-writing-around-the-web</id>
-    <content type="html"><![CDATA[<p>I haven&#8217;t spent much time writing content for this blog, but I have been doing some writing on other sites. Here are some of my posts from other sites:</p>
+    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/writing.jpg" width="260"></p>
+
+<p>I haven&#8217;t spent much time writing content for this blog, but I have been doing some writing on other sites. Here are some of my posts from other sites:</p>
 
 <!-- more -->
 
@@ -87,7 +89,9 @@
     <link href="http://gsto.github.com/blog/2013/12/10/announcing-concordant-solutions/"/>
     <updated>2013-12-10T11:09:00-05:00</updated>
     <id>http://gsto.github.com/blog/2013/12/10/announcing-concordant-solutions</id>
-    <content type="html"><![CDATA[<p>As a consultant, it&#8217;s important to think of what you are doing as a business, and not just as you as a person. Having said that, I&#8217;ve set up a new company name for my services, <strong>Concordant Solutions</strong>.</p>
+    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/santamegaphone.png" width="260"></p>
+
+<p>As a consultant, it&#8217;s important to think of what you are doing as a business, and not just as you as a person. Having said that, I&#8217;ve set up a new company name for my services, <strong>Concordant Solutions</strong>.</p>
 
 <p>The name comes from a Concordant, or agreement. It signifies how by working together with clients I am able to provide value for them that neither one of us could do individually. When people with domain knowledge in an industry come together with people with tech knowledge and the skills to put their ideas into practice, great things happen.</p>
 
