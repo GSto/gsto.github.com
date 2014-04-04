@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>how to add a contact form to octopress - Glenn Stovall</title>
+  <title>Glenn Stovall</title>
   <meta name="author" content="Glenn Stovall">
 
   
-  <meta name="description" content="While Octopress is a nice blogging platform, using static generated pages can lead to being unable to have some of the features of other blogging &hellip;">
+  <meta name="description" content="
+If you&#8217;re reading this, then I&#8217;ve successfully got my octopress blog up and running on Github pages. Why the switch to octopress? ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gsto.github.com/blog/2012/07/04/how-to-add-a-contact-form-to-octopress/">
+  <link rel="canonical" href="http://gsto.github.com/blog/page/3/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -84,12 +85,15 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div>
-<article class="hentry" role="article">
+      <div class="blog-index">
   
+  
+  
+    <article>
+      
   <header>
     
-      <h1 class="entry-title">How to Add a Contact Form to Octopress</h1>
+      <h1 class="entry-title"><a href="/blog/2012/02/11/blogging-with-octopress/">Blogging With Octopress</a></h1>
     
     
       <p class="meta">
@@ -105,101 +109,35 @@
   
 
 
-<time datetime="2012-07-04T11:43:00-04:00" pubdate data-updated="true">Jul 4<span>th</span>, 2012</time>
+<time datetime="2012-02-11T10:00:00-05:00" pubdate data-updated="true">Feb 11<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><img class="left" src="/images/articles/wufoo.png">
-While Octopress is a nice blogging platform, using static generated pages can lead to being unable to have some of the features of other blogging platforms. One of the most common missed features is being able to have a contact us page.  In this tutorial I&#8217;ll show you how to add a contact form to octopress by using <a href="http://www.wufoo.com">Wufoo</a>.</p>
+  <div class="entry-content"><p><img class="left" src="/images/articles/blog_with_octopress.png" width="260">
+If you&#8217;re reading this, then I&#8217;ve successfully got my octopress blog up and running on Github pages. Why the switch to octopress?</p>
 
-<!-- more -->
-
-
-<p><a href="http://www.wufoo.com">Wufoo</a> Is an online form generator that allows you to create and manage forms, and then include them on your pages via JavaScript. Once you&#8217;ve logged in, start a new form, and add the fields you want. For a free account, you can have up to 10 fields, and 3 forms, this should be plenty for a simple contact form. There are also theming options so that the look of the form will better match your site. Once the form is set up, you can also set up notification to an email account and / or SMS, so that you will recieve the messages.</p>
-
-<p>Now that you&#8217;ve created your form, it&#8217;s time to create our new contact page. Go to the root directory of your Octopress checkout and run the following command:</p>
-
-<pre><code>rake new_page['contact']
-</code></pre>
-
-<p>This should create a new page file located at <code>/source/contact/index.markdown</code> . Now in Wufoo, click the &#8216;code&#8217; button on your newly created form, then, &#8216;embed form code&#8217; and get the JavaScript version. Go to your newly created page and paste the code. I&#8217;d also recommend removing the date from the page file and settings comments and sharing both to false.</p>
-
-<p>Once that is done, you&#8217;ll also probably want to add it to the navigation. You can add pages to the navigation by editing the file located in <code>source/_includes/custom/navigation.html</code> and adding the following line inside of the <code>&lt;ul&gt;</code> tag:</p>
-
-<pre><code>  &lt;li&gt;&lt;a href="/contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-</code></pre>
-
-<p>once this is done, all you have to do is regenrate your page files and deploy:</p>
-
-<pre><code>rake generate
-rake deploy
-</code></pre>
-
-<p>and you&#8217;re done! You can see an exmaple of this turns out on <a href="http://www.glennstovall.com/contact">My Contact Page</a></p>
 </div>
-
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Glenn Stovall</span></span>
-
-      
-
-
-
-
-
-
-
-
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/02/11/blogging-with-octopress/">Read on &rarr;</a>
+    </footer>
   
 
 
-<time datetime="2012-07-04T11:43:00-04:00" pubdate data-updated="true">Jul 4<span>th</span>, 2012</time>
-      
-
-<span class="categories">
+    </article>
   
-    <a class='category' href='/blog/categories/octopress/'>octopress</a>
-  
-</span>
-
-
-    </p>
+  <div class="pagination">
     
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gsto.github.com/blog/2012/07/04/how-to-add-a-contact-form-to-octopress/" data-via="GSto" data-counturl="http://gsto.github.com/blog/2012/07/04/how-to-add-a-contact-form-to-octopress/" >Tweet</a>
-  
-  
-  <div class="g-plusone" data-size="medium"></div>
-  
-  
-    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
-  
-</div>
-
+    <a href="/blog/archives">Blog Archives</a>
     
-
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/" title="Previous Post: Rapid Development with Node.js and CoffeeScript">&laquo; Rapid Development with Node.js and CoffeeScript</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2012/10/30/terminals-for-absolute-beginners-part-3/" title="Next Post: Terminals for Absolute Beginners: Part 3">Terminals for Absolute Beginners: Part 3 &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
+    <a class="next" href="/blog/page/2/">Newer &rarr;</a>
+    
+  </div>
 </div>
-
 <aside class="sidebar">
   
     <section>
@@ -232,7 +170,7 @@ rake deploy
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
+    <li class="loading">Status updating&#8230;</li>
   </ul>
   
   <a href="https://github.com/gsto">@gsto</a> on GitHub
@@ -263,7 +201,7 @@ rake deploy
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating...</li>
+    <li class="loading">Status updating&#8230;</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -276,7 +214,7 @@ rake deploy
   
 </section>
 
---->
+&#8212;>
 
 
 <section class="googleplus googleplus-hidden">
@@ -292,7 +230,6 @@ rake deploy
 
   
 </aside>
-
 
     </div>
   </div>
