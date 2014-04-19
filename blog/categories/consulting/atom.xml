@@ -4,7 +4,7 @@
   <title><![CDATA[Category: consulting | Glenn Stovall]]></title>
   <link href="http://gsto.github.com/blog/categories/consulting/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2014-04-03T21:08:58-04:00</updated>
+  <updated>2014-04-19T08:25:34-04:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,71 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Presenting Value]]></title>
+    <link href="http://gsto.github.com/blog/2014/04/19/presenting-value-to-clients/"/>
+    <updated>2014-04-19T16:11:00-04:00</updated>
+    <id>http://gsto.github.com/blog/2014/04/19/presenting-value-to-clients</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/wealth.jpg" width="260"></p>
+
+<p>When selling clients on your services, how you position yourself is important. You want clients to see you as an investment, not an expense. In order to accomplish this, you need to make sure you are able to clearly state and justify the value you can bring to a client.</p>
+
+<!-- more -->
+
+
+<h3>The Three Types of Value</h3>
+
+<p>There are three primary types of value you can provide to clients, and all of your sales pitches should anchor to one or more of these points:</p>
+
+<ul>
+<li>You make your client money.</li>
+<li>You save your client time.</li>
+<li>You reduce the client's risk.</li>
+</ul>
+
+
+<p>What value <strong>isn't</strong> is things like "writing code" or "designing web pages". These are just tools you are using to accomplish a goal. When you are talking to potential clients you need to be talking about the goal, not the way you are planning on getting there. A client's primary concern is the end result of your work.</p>
+
+<p>You may also notice that saving the client money is absent from this list, even though it sounds like it should be on there. While it's good if you find a way to save a client money, products and services that save money are a much more difficult sale, as people who are focused on reducing cost are looking for ways to <em>not</em> spend money, which makes them a pretty tough sell.</p>
+
+<h2>Making Money</h2>
+
+<p>Presenting value here is the easiest of the three. If you can find a way to peg your work to numbers that affect the bottom line, then focus on that. Let's say you do A/B testing, and you think that your testing could increase conversions by 10%. If you go to a store that makes $100,000 dollars in sales a year, then your services are easily worth $10,000 to them.</p>
+
+<h2>Saving Time</h2>
+
+<p>This is the one I find myself talking about often, since I work in software development, and love finding ways to automate processes. I've called myself a "Job Destroyer" before. Saving a client (or a client's employees) time can easily be tied to money as well. I doubt a client would willingly share an employee's salary with you, but you can make an educated guess as to the cost of an employee:</p>
+
+<ul>
+<li>First, get an estimated salary. You can just guess, or use a service like <a href="http://www.glassdoor.com">glassdoor</a> to approximate the number. In this example, let's say that an employee has a salary of $50,000.</li>
+<li>Secondly, we are going <a href="http://web.mit.edu/e-club/hadzima/how-much-does-an-employee-cost.html">multiply that number by 2.7</a>. This is to factor in all of the other costs of that employee. Now we have an employee that costs $135,000 a year.</li>
+<li>Now, let's break that down into an hourly rate. The easiest calculation would be to say salary / 2000, or 50 weeks at 40 hours per week. However, I feel like 1500 may be a better estimate if we want to go by <strong>productive</strong> time, since I don't believe anyone is truly and consistently productive for eight hours a day. between those two numbers, we have an hourly range of value of $67.50 - $90.</li>
+</ul>
+
+
+<p>Going by this formula, if you are able to make a 2 hour job take little or no time, then over the course of a year software that could do that would provide up to $9,000 a year in value. If you can scale that to 10 employees, then it's $90,000. This is why being able to save time is so valuable to clients.</p>
+
+<h2>Reducing Risk</h2>
+
+<p>Reducing risk is the most abstract of the three, and can be harder to pin an exact number on. Software projects are inherently risky, and anything you can do to reduce that risk is valuable to the client. You see this in consumer sales all the time money back guarantees. By making that guarantee, the product is more valuable since you know that if you are not satisfied you can get your money back.</p>
+
+<p>As a consultant, there are several ways I show that I can reduce risk to clients:</p>
+
+<ul>
+<li>Sending clients weekly reports and/or having weekly meetings, So they are always aware of where the project stands. Freelance web developers and designers have a reputation for being flaky, so this helps address that.</li>
+<li>Having a set development process in place. This way clients know that I have a more predictable process with more predictable results.</li>
+<li>Having a network of other talented people, and letting the client know that if there is something outside of my scope of skills I can bring someone on to help out with the task.</li>
+</ul>
+
+
+<p>Things like having a portfolio and client testimonials are other ways of reducing risk in the eyes of clients. These send the message that other people have worked with before, gotten results, and are satisfied.</p>
+
+<p>However, these all address the reduction of risk in the process, not in the end result. There are several ways this can be accomplished as well. A couple of examples are doing market and competitor research, to see what the project is facing and making sure it is framed appropriately. Another that I am a big fan of is getting to market earlier and iterating quickly. This allows you to work with real people and gather real data. Any decisions made before launch are in many ways an educated guess, and solutions and plans built on objective data instead of guesses will always have a higher chance of succeeding.</p>
+
+<p>Framing your work in this fashion can help both yourself and your clients. It can help you by not only seeing how to present value, but help you find new ways to provide more value to clients when you work as well. This can also help you land more sales and stand out from the competition.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Take Out The Tech]]></title>

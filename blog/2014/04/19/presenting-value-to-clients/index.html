@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>How I Use Git - Glenn Stovall</title>
+  <title>Presenting Value - Glenn Stovall</title>
   <meta name="author" content="Glenn Stovall">
 
   
-  <meta name="description" content="git is a very powerful and flexible tool. With this power and flexibility comes a daunting amount of choices to make in how to manage your code with &hellip;">
+  <meta name="description" content="When selling clients on your services, how you position yourself is important. You want clients to see you as an investment, not an expense. In &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gsto.github.com/blog/2013/03/15/how-i-use-git/">
+  <link rel="canonical" href="http://gsto.github.com/blog/2014/04/19/presenting-value-to-clients/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -89,7 +89,7 @@
   
   <header>
     
-      <h1 class="entry-title">How I Use Git</h1>
+      <h1 class="entry-title">Presenting Value</h1>
     
     
       <p class="meta">
@@ -105,117 +105,70 @@
   
 
 
-<time datetime="2013-03-15T09:35:00-04:00" pubdate data-updated="true">Mar 15<span>th</span>, 2013</time>
+<time datetime="2014-04-19T16:11:00-04:00" pubdate data-updated="true">Apr 19<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><img class="left" src="/images/articles/git.png" width="260"></p>
+<div class="entry-content"><p><img class="left" src="/images/articles/wealth.jpg" width="260"></p>
 
-<p><a href="http://git-scm.com/">git</a> is a very powerful and flexible tool.  With this power and flexibility comes a daunting amount of choices to make in how to manage your code with it. Here is the current setup I&#8217;ve used on both personal solo projects and professional jobs with other developers that has worked for me and saved me a lot of headaches.</p>
+<p>When selling clients on your services, how you position yourself is important. You want clients to see you as an investment, not an expense. In order to accomplish this, you need to make sure you are able to clearly state and justify the value you can bring to a client.</p>
 
 <!-- more -->
 
 
-<h3>Setting Up</h3>
+<h3>The Three Types of Value</h3>
 
-<h4>Set up the Initial Repository</h4>
+<p>There are three primary types of value you can provide to clients, and all of your sales pitches should anchor to one or more of these points:</p>
 
-<pre><code>git init
-git commit -am 'initial commit'
-git tag -a '0.0'
-</code></pre>
+<ul>
+<li>You make your client money.</li>
+<li>You save your client time.</li>
+<li>You reduce the client&#8217;s risk.</li>
+</ul>
 
-<p>Simple enough, right? I usually do this once I&#8217;ve installed whatever framework I am using for a project and done whatever configurations are necessary. At this point I&#8217;ll go ahead and set up the <code>.gitignore</code> file based on whatever kind of project I am working on. You&#8217;ll notice I also use tags for keeping track of the version number of the project.</p>
 
-<h4>Create a dev branch</h4>
+<p>What value <strong>isn&#8217;t</strong> is things like &#8220;writing code&#8221; or &#8220;designing web pages&#8221;. These are just tools you are using to accomplish a goal. When you are talking to potential clients you need to be talking about the goal, not the way you are planning on getting there. A client&#8217;s primary concern is the end result of your work.</p>
 
-<pre><code>git checkout -b dev
-</code></pre>
+<p>You may also notice that saving the client money is absent from this list, even though it sounds like it should be on there. While it&#8217;s good if you find a way to save a client money, products and services that save money are a much more difficult sale, as people who are focused on reducing cost are looking for ways to <em>not</em> spend money, which makes them a pretty tough sell.</p>
 
-<p>Next, I will create the &#8216;dev&#8217; branch. I will treat master as the &#8216;production&#8217; branch. All code will be tested integrated in the dev branch, and only merged with master when the code is ready to be shipped. If you are following and agile development pattern, this will usually be at the end of each sprint. Otherwise, it could once a predetermined set of features has been completed.</p>
+<h2>Making Money</h2>
 
-<h4>Set up Bitbucket and Heroku Staging Environment</h4>
+<p>Presenting value here is the easiest of the three. If you can find a way to peg your work to numbers that affect the bottom line, then focus on that. Let&#8217;s say you do A/B testing, and you think that your testing could increase conversions by 10%. If you go to a store that makes $100,000 dollars in sales a year, then your services are easily worth $10,000 to them.</p>
 
-<pre><code>git remote add origin [Bitbucket repository URL]
-git push origin master
-git push origin dev
-git remote add staging [Heroku repository URL]
-git push staging dev:master
-</code></pre>
+<h2>Saving Time</h2>
 
-<p>I use <a href="http://www.bitbucket.org">Bitbucket</a> for most private projects. <a href="http://www.github.com">Github</a> has a lot of nice features, and could work just as well here but it&#8217;s hard to compete with the free cost of private repositories over at Bitbucket. Regardless of which service you prefer, the important reason for doing this is that now you have a remote backup of your work if anything happens to your computer. Now I have a backup of my code online that it easily manageable, that comes along with a wiki for documentation and simplistic bug tracking. If I am working with other people, we now have a central point of communication as well. I usually set up a <a href="http://www.heroku.com">Heroku</a> project for a staging server as well. This way I have a way of demoing functionality before it is ready to be shipped. If Heroku doesn&#8217;t work for you (i.e. a PHP project) this can be any server you would like to use to host your code for staging / testing.</p>
+<p>This is the one I find myself talking about often, since I work in software development, and love finding ways to automate processes. I&#8217;ve called myself a &#8220;Job Destroyer&#8221; before. Saving a client (or a client&#8217;s employees) time can easily be tied to money as well. I doubt a client would willingly share an employee&#8217;s salary with you, but you can make an educated guess as to the cost of an employee:</p>
 
-<p>At this point, we should have everything we need to get started on a project.</p>
+<ul>
+<li>First, get an estimated salary. You can just guess, or use a service like <a href="http://www.glassdoor.com">glassdoor</a> to approximate the number. In this example, let&#8217;s say that an employee has a salary of $50,000.</li>
+<li>Secondly, we are going <a href="http://web.mit.edu/e-club/hadzima/how-much-does-an-employee-cost.html">multiply that number by 2.7</a>. This is to factor in all of the other costs of that employee. Now we have an employee that costs $135,000 a year.</li>
+<li>Now, let&#8217;s break that down into an hourly rate. The easiest calculation would be to say salary / 2000, or 50 weeks at 40 hours per week. However, I feel like 1500 may be a better estimate if we want to go by <strong>productive</strong> time, since I don&#8217;t believe anyone is truly and consistently productive for eight hours a day. between those two numbers, we have an hourly range of value of $67.50 - $90.</li>
+</ul>
 
-<h3>Developing</h3>
 
-<h4>New Features</h4>
+<p>Going by this formula, if you are able to make a 2 hour job take little or no time, then over the course of a year software that could do that would provide up to $9,000 a year in value. If you can scale that to 10 employees, then it&#8217;s $90,000. This is why being able to save time is so valuable to clients.</p>
 
-<pre><code>git checkout dev
-git checkout -b feature_branch
-</code></pre>
+<h2>Reducing Risk</h2>
 
-<p>_Note: <code>git checkout -b feature_branch</code> is shorthand for <code>git branch feature_branch; git checkout feature_branch</code></p>
+<p>Reducing risk is the most abstract of the three, and can be harder to pin an exact number on. Software projects are inherently risky, and anything you can do to reduce that risk is valuable to the client. You see this in consumer sales all the time money back guarantees. By making that guarantee, the product is more valuable since you know that if you are not satisfied you can get your money back.</p>
 
-<p>How you define a feature is completely up to you and your development practices. It could be a user story, or an issue ticket for example. When possible, I like to keep feature branches small. The reason for feature branches is that this way no feature is dependent on another when merging and deploying code. If you are working on two separate features, and another developer is working on two more, and you were all on the development branch, you would be unable to push parts of it to staging or master without pushing all of it. In git, branching is cheap, and merging is easy. This is one situation where using a lot of smaller branches can be very advantageous.</p>
+<p>As a consultant, there are several ways I show that I can reduce risk to clients:</p>
 
-<p>If you are using a staging server, you can also use it to demo one particular feature:</p>
+<ul>
+<li>Sending clients weekly reports and/or having weekly meetings, So they are always aware of where the project stands. Freelance web developers and designers have a reputation for being flaky, so this helps address that.</li>
+<li>Having a set development process in place. This way clients know that I have a more predictable process with more predictable results.</li>
+<li>Having a network of other talented people, and letting the client know that if there is something outside of my scope of skills I can bring someone on to help out with the task.</li>
+</ul>
 
-<pre><code>git push staging feature_branch:master
-</code></pre>
 
-<h4>Integrating Features</h4>
+<p>Things like having a portfolio and client testimonials are other ways of reducing risk in the eyes of clients. These send the message that other people have worked with before, gotten results, and are satisfied.</p>
 
-<pre><code>git checkout dev
-git merge feature_branch 
-git branch -d feature_branch
-</code></pre>
+<p>However, these all address the reduction of risk in the process, not in the end result. There are several ways this can be accomplished as well. A couple of examples are doing market and competitor research, to see what the project is facing and making sure it is framed appropriately. Another that I am a big fan of is getting to market earlier and iterating quickly. This allows you to work with real people and gather real data. Any decisions made before launch are in many ways an educated guess, and solutions and plans built on objective data instead of guesses will always have a higher chance of succeeding.</p>
 
-<p>Once the feature is completed and tested, it is ready to be merged back into the dev branch. At this point, you fix any conflicts that arise, and run any tests you have to make sure that the integration was successful.</p>
-
-<h3>Maintaining</h3>
-
-<h4>Regular Bug Fixes</h4>
-
-<p>I treat bug fixes just like a feature branch. Any bug gets its own branch, and once it is fixed, it is merged back into dev. However. sometimes you may have a bug that is an emergency, and it needs to be fixed on production instantly without going through all the code in the dev branch. What then?</p>
-
-<h4>Hot Fixes</h4>
-
-<pre><code>git checkout master
-git checkout -b hotfix_branch
-</code></pre>
-
-<p>This is the only time I&#8217;ll branch off of master besides dev, and this should only be reserved for emergencies.  Once the fix is put in, the hot fix is merged into both the master and dev branches. This way dev will have the fix and not accidentally introduce it later, and the live code can be fixed quickly.</p>
-
-<pre><code>git checkout master
-git merge hotfix_branch
-git tag -a '1.0.1'
-git checkout dev
-git merge hotfix_branch 
-git branch -d hotfix_branch
-git push origin dev
-git push origin master
-</code></pre>
-
-<h3>Shipping</h3>
-
-<h4>Releasing and Update</h4>
-
-<pre><code>git remote add production [production_url]
-git checkout master
-git merge dev
-git tag -a '1.1'
-git push production master
-</code></pre>
-
-<p>Once you are satisfied with the state of dev and are ready to push it live, dev gets merged into master. Every time code is merged into master, it gets tagged with a version number. I prefer to follow the <a href="http://semver.org">semantic versioning guidelines</a> If a production remote is not added, usually one gets added here, and code is pushed there.</p>
-
-<p>This setup allows you to keep you to work effortlessly in development without interfering with production, and keeps new features and fixes in development decoupled from one another, allowing for efficient development and simple collaboration with other developers.</p>
-
-<p>How do you use git in your work flow? <a href="http://www.reddit.com/r/programming/comments/1alhsf/how_i_use_git/">Discuss on Reddit</a></p>
+<p>Framing your work in this fashion can help both yourself and your clients. It can help you by not only seeing how to present value, but help you find new ways to provide more value to clients when you work as well. This can also help you land more sales and stand out from the competition.</p>
 </div>
 
 
@@ -238,12 +191,12 @@ git push production master
   
 
 
-<time datetime="2013-03-15T09:35:00-04:00" pubdate data-updated="true">Mar 15<span>th</span>, 2013</time>
+<time datetime="2014-04-19T16:11:00-04:00" pubdate data-updated="true">Apr 19<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/project-management/'>project management</a>
+    <a class='category' href='/blog/categories/consulting/'>consulting</a>, <a class='category' href='/blog/categories/pricing/'>pricing</a>
   
 </span>
 
@@ -252,7 +205,7 @@ git push production master
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gsto.github.com/blog/2013/03/15/how-i-use-git/" data-via="GSto" data-counturl="http://gsto.github.com/blog/2013/03/15/how-i-use-git/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gsto.github.com/blog/2014/04/19/presenting-value-to-clients/" data-via="GSto" data-counturl="http://gsto.github.com/blog/2014/04/19/presenting-value-to-clients/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -266,10 +219,8 @@ git push production master
 
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/03/04/terminals-for-aboslute-beginners-part-4-searching/" title="Previous Post: Terminals for Aboslute Beginners Part 4">&laquo; Terminals for Aboslute Beginners Part 4</a>
+        <a class="basic-alignment left" href="/blog/2014/04/03/10-resources-that-shaped-my-career/" title="Previous Post: 10 Resources that shaped my career">&laquo; 10 Resources that shaped my career</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/06/07/reading-on-wealth-and-programming/" title="Next Post: reading on wealth and programming">reading on wealth and programming &raquo;</a>
       
     </p>
   </footer>
