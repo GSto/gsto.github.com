@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2014-04-29T08:01:49-04:00</updated>
+  <updated>2014-04-29T08:53:58-04:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Announcing The Freelance Pricing Handbook]]></title>
+    <link href="http://gsto.github.com/blog/2014/04/29/announcing-the-freelance-pricing-handbook/"/>
+    <updated>2014-04-29T08:47:00-04:00</updated>
+    <id>http://gsto.github.com/blog/2014/04/29/announcing-the-freelance-pricing-handbook</id>
+    <content type="html"><![CDATA[<p> <img class="left" src="http://gsto.github.com/images/freelance_pricing_handbook.png" width="260"></p>
+
+<p> Today I&#8217;m proud to announce a new free eBook guide. The book is called the <em>Freelance Pricing Handbook</em>, and it&#8217;s designed to help freelancers find their perfect rate. The most common question I hear from current and aspiring freelancers is &#8220;How much should I charge?&#8221; This book sets out to answer this question.</p>
+
+<p> <!-- more --></p>
+
+<p> This book is designed to be a short and easy read to help you understand how to find your perfect price. In addition to help you find your rate, it also includes different ways to package and bill for your services. How you price and position your services has a bigger impact on your bottom line than the amount of skill you have. This book is designed to make sure you aren&#8217;t undervaluing yourself and are getting paid the rates you deserve.
+If you&#8217;d like a copy of the book, enter your email address below and I&#8217;ll email you a copy.</p>
+
+<p>Be sure to let me know what you think!</p>
+
+<script src="https://app.convertkit.com/landing_pages/531.js"></script>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Presenting Value]]></title>
@@ -1635,299 +1656,6 @@ They can look like any of the following:
 <p>I realized there was a small problem with the regular expression above. While this work for most of our cases, there is the scenario of getting a number formatted like so: <code>123-45/6789</code> which the pattern would match, even though it is not in a valid format. I asked about this on <a href="http://stackoverflow.com/questions/9624081/matching-delimiters-with-regular-expressions/9624128">Stack Overflow</a> And learned about using <em>back references</em> for situations like this. you can use the syntax <code>\1</code> where 1 is the number of the sub pattern you want to reference. By doing so, you can make sure that the second delimiter matches the first. So our regular expression would now look like this:</p>
 
 <p><code>^[0-9]{3}(-|/)?[0-9]{2}\1?[0-9]{4}$</code></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Setting Up a Template and Assets in CodeIgniter]]></title>
-    <link href="http://gsto.github.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter/"/>
-    <updated>2012-02-28T09:06:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter</id>
-    <content type="html"><![CDATA[<p><img class="left" src="images/articles/codeigniter.jpg" width="260">
-In this article, I&#8217;d like to walk you though my first few steps when setting up a new CodeIgniter Project:
- - Setting up a way to render pages in a layout
- - Setting up a way to easily handle assets (CSS &amp; JavaScript files)</p>
-
-<!-- more -->
-
-
-<h3>Step 1: Creating A Template</h3>
-
-<p>To start, we are going to make two new files, a layout view, and a localized controller. Let&#8217;s start by creating a <code>layout.php</code> file in <code>views</code>, and add the following:</p>
-
-<figure class='code'><figcaption><span>application/views/layout.php  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!doctype html&gt;</span>
-</span><span class='line'><span class="c">&lt;!--[if lt IE 7]&gt; &lt;html class=&quot;no-js lt-ie9 lt-ie8 lt-ie7&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;</span>
-</span><span class='line'><span class="c">&lt;!--[if IE 7]&gt;    &lt;html class=&quot;no-js lt-ie9 lt-ie8&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;</span>
-</span><span class='line'><span class="c">&lt;!--[if IE 8]&gt;    &lt;html class=&quot;no-js lt-ie9&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;</span>
-</span><span class='line'><span class="c">&lt;!--[if gt IE 8]&gt;&lt;!--&gt;</span> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!--&lt;![endif]--&gt;</span>
-</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&#39;UTF-8&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&#39;X-UA-Compatible&#39;</span> <span class="na">content=</span><span class="s">&#39;IE=edge,chrome=1&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width&quot;</span> <span class="nt">/&gt;</span>
-</span><span class='line'><span class="nt">&lt;title&gt;</span>Title Goes Here<span class="nt">&lt;/title&gt;</span>
-</span><span class='line'><span class="c">&lt;!--[if IE 9]&gt;</span>
-</span><span class='line'><span class="c">  &lt;style type=&quot;text/css&quot;&gt; .gradient { filter: none;} &lt;/style&gt;</span>
-</span><span class='line'><span class="c">&lt;![endif]--&gt;</span>
-</span><span class='line'><span class="c">&lt;!--[if lt IE 9]&gt;</span>
-</span><span class='line'><span class="c">&lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;</span>
-</span><span class='line'><span class="c">&lt;![endif]--&gt;</span>
-</span><span class='line'><span class="nt">&lt;/head&gt;</span>
-</span><span class='line'><span class="nt">&lt;body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This is based on the <a href="paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/">HTML5 set up from Paul Irish</a>. We&#8217;ll use this as the basis for all of our pages. Now, to use this, we are going to create a <code>MY_Controller</code> inside of <code>appliction/core/MY_Controller.php</code>, and create a new function that we&#8217;ll call <code>render</code></p>
-
-<figure class='code'><figcaption><span>application/core/MY_Controller.php  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span> <span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;BASEPATH&#39;</span><span class="p">))</span> <span class="k">exit</span><span class="p">(</span><span class="s1">&#39;No direct script access allowed&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">class</span> <span class="nc">MY_Controller</span> <span class="k">extends</span> <span class="nx">CI_Controller</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">protected</span> <span class="nv">$layout</span> <span class="o">=</span> <span class="s1">&#39;layout&#39;</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">protected</span> <span class="k">function</span> <span class="nf">render</span><span class="p">(</span><span class="nv">$content</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nv">$view_data</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
-</span><span class='line'>      <span class="s1">&#39;content&#39;</span> <span class="o">=&gt;</span> <span class="nv">$content</span>
-</span><span class='line'>    <span class="p">);</span>
-</span><span class='line'>    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">layout</span><span class="p">,</span><span class="nv">$view_data</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This will allow us to use the layout file to wrap all of our content. We&#8217;ve also stored the layout file as a protected variable of the MY_Controller, so that we can use different layouts for different controllers if we so choose. Now, let&#8217;s modify the template file to be able to render the content. Change the body tag so that it looks like this:</p>
-
-<figure class='code'><figcaption><span>application/views/layout.php  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body&gt;</span>
-</span><span class='line'>  <span class="cp">&lt;?= $content; ?&gt;</span>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now, let&#8217;s set up an example view and an example controller to see how it works.</p>
-
-<figure class='code'><figcaption><span>application/views/example/index.php  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>  <span class="nt">&lt;h1&gt;</span>Hello, World!<span class="nt">&lt;/h1&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;p&gt;</span> Example page using layouts <span class="nt">&lt;/p&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span>application/controllers/example.php  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span> <span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;BASEPATH&#39;</span><span class="p">))</span> <span class="k">exit</span><span class="p">(</span><span class="s1">&#39;No direct script access allowed&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">class</span> <span class="nc">Example</span> <span class="k">extends</span> <span class="nx">MY_Controller</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nv">$content</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="s1">&#39;example/index&#39;</span><span class="p">,</span><span class="k">null</span><span class="p">,</span><span class="k">true</span><span class="p">);</span>
-</span><span class='line'>    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">render</span><span class="p">(</span><span class="nv">$content</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Step 2: Adding the Asset Helper</h3>
-
-<p>To help us manage our CSS, JavaScript, and image files, we are going to add some tools for asset manage. First, let&#8217;s include this <a href="http://codeigniter.com/wiki/Asset_Helper">Asset Helper</a> In our project, and update our <code>autoload.php</code> file so that it is automatically included. Now we are going to set up the directory structure for this. Here is how to do it from the base of your CodeIgniter project (assuming you are using the standard naming conventions):</p>
-
-<pre><code>mkdir assets
-mkdir assets/css
-touch assets/css/app.css
-mkdir assets/js
-touch assets/js/app.js
-mkdir assets/images
-</code></pre>
-
-<p>Now, we are going to keep a list of all of the standard CSS and JavaScript files inside of our MY_Controller, and pass them along to the layout:</p>
-
-<figure class='code'><figcaption><span>application/core/MY_Controller.php  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span> <span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;BASEPATH&#39;</span><span class="p">))</span> <span class="k">exit</span><span class="p">(</span><span class="s1">&#39;No direct script access allowed&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">class</span> <span class="nc">MY_Controller</span> <span class="k">extends</span> <span class="nx">CI_Controller</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">protected</span> <span class="nv">$layout</span> <span class="o">=</span> <span class="s1">&#39;layout&#39;</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">protected</span> <span class="nv">$stylesheets</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
-</span><span class='line'>    <span class="s1">&#39;app.css&#39;</span>
-</span><span class='line'>  <span class="p">);</span>
-</span><span class='line'>  <span class="k">protected</span> <span class="nv">$javascripts</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
-</span><span class='line'>  <span class="s1">&#39;app.js&#39;</span>
-</span><span class='line'>  <span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">protected</span> <span class="k">function</span> <span class="nf">render</span><span class="p">(</span><span class="nv">$content</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nv">$view_data</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
-</span><span class='line'>      <span class="s1">&#39;content&#39;</span> <span class="o">=&gt;</span> <span class="nv">$content</span><span class="p">,</span>
-</span><span class='line'>      <span class="s1">&#39;stylesheets&#39;</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_stylesheets</span><span class="p">(),</span>
-</span><span class='line'>      <span class="s1">&#39;javascripts&#39;</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_javascripts</span><span class="p">()</span>
-</span><span class='line'>    <span class="p">);</span>
-</span><span class='line'>    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">layout</span><span class="p">,</span><span class="nv">$view_data</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">protected</span> <span class="k">function</span> <span class="nf">get_stylesheets</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">stylesheets</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">protected</span> <span class="k">function</span> <span class="nf">get_javascripts</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">javascripts</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And now we&#8217;ll update our template using the <code>css_asset()</code> and <code>js_asset()</code> functions from the helper we included earlier:</p>
-
-<figure class='code'><figcaption><span>application/views/layout.php  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;!-- in the &lt;head&gt; .. --&gt;</span>
-</span><span class='line'><span class="cp">&lt;?</span> <span class="k">foreach</span><span class="p">(</span><span class="nv">$stylesheets</span> <span class="k">as</span> <span class="nv">$stylesheet</span><span class="p">)</span><span class="o">:</span> <span class="cp">?&gt;</span><span class="x"></span>
-</span><span class='line'><span class="x">  </span><span class="cp">&lt;?</span><span class="o">=</span> <span class="nx">css_asset</span><span class="p">(</span><span class="nv">$stylesheet</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">    </span>
-</span><span class='line'><span class="cp">&lt;?</span> <span class="k">endforeach</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"></span>
-</span><span class='line'>
-</span><span class='line'><span class="x">&lt;!-- right before &lt;body&gt; --&gt;</span>
-</span><span class='line'><span class="cp">&lt;?</span> <span class="k">foreach</span><span class="p">(</span><span class="nv">$javascripts</span> <span class="k">as</span> <span class="nv">$javascript</span><span class="p">)</span><span class="o">:</span> <span class="cp">?&gt;</span><span class="x"></span>
-</span><span class='line'><span class="x">  </span><span class="cp">&lt;?</span><span class="o">=</span> <span class="nx">js_asset</span><span class="p">(</span><span class="nv">$javascript</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x"></span>
-</span><span class='line'><span class="cp">&lt;?</span> <span class="k">endforeach</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"></span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>If you view the source, you should see that your <code>app.css</code> and <code>app.js</code> files are now included.</p>
-
-<h3>Step 3: Adding Local Assets</h3>
-
-<p>One of the better ideas Rails 3.0 brought to the table was the idea of the &#8216;asset pipeline&#8217;, which includes being able to define JavaScript and CSS files that are specific to a particular controller. Now let&#8217;s set up our CodeIgniter project to be able to behave in a similar manner.</p>
-
-<p>This was my motivation for writing the <code>get_stylesheets()</code> and <code>get_javascripts()</code> functions in the <code>MY_Controller</code> class earlier. since we are going to be changing how we get the arrays, we can now do so without touching the <code>render()</code> function since we have abstracted out the interface in which we get our files.</p>
-
-<p>So let&#8217;s update those two functions, and add two more protected variables to our <code>MY_Controller</code> file:</p>
-
-<figure class='code'><figcaption><span>application/core/MY_Controller.php  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span> <span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;BASEPATH&#39;</span><span class="p">))</span> <span class="k">exit</span><span class="p">(</span><span class="s1">&#39;No direct script access allowed&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="k">class</span> <span class="nc">MY_Controller</span> <span class="k">extends</span> <span class="nx">CI_Controller</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">protected</span> <span class="nv">$layout</span> <span class="o">=</span> <span class="s1">&#39;layout&#39;</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">protected</span> <span class="nv">$stylesheets</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
-</span><span class='line'>    <span class="s1">&#39;app.css&#39;</span>
-</span><span class='line'>  <span class="p">);</span>
-</span><span class='line'>  <span class="k">protected</span> <span class="nv">$javascripts</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
-</span><span class='line'>  <span class="s1">&#39;app.js&#39;</span>
-</span><span class='line'>  <span class="p">);</span>
-</span><span class='line'>  <span class="k">protected</span> <span class="nv">$local_stylesheets</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
-</span><span class='line'>  <span class="k">protected</span> <span class="nv">$local_javascripts</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="c1">//other parts of the class..</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">protected</span> <span class="k">function</span> <span class="nf">get_stylesheets</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nb">array_merge</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">stylesheets</span><span class="p">,</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">local_stylesheets</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">protected</span> <span class="k">function</span> <span class="nf">get_javascripts</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nb">array_merge</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">javascripts</span><span class="p">,</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">local_javascripts</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now we are able to add additional asset files to the <code>local_stylesheets</code> and <code>local_javascripts</code> variables in classes that extend <code>MY_Controller</code>, allowing us to keep our code seperated and more organized. With this and templates, we now have a good system in place to manage the visual aspects of our web application.</p>
 ]]></content>
   </entry>
   
