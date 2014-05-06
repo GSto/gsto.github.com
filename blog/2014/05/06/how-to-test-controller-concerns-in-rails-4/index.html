@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Terminals for Absolute Beginners: Part 3 - Glenn Stovall</title>
+  <title>How to Test Controller Concerns in Rails 4 - Glenn Stovall</title>
   <meta name="author" content="Glenn Stovall">
 
   
-  <meta name="description" content="File Permissions In this article, we&#8217;ll take a look at how file permissions works. We&#8217;ll cover how users, groups, and file permissions &hellip;">
+  <meta name="description" content="Concerns are a new feature that was added in Rails 4. They allow to clean up code in your models and controllers. They also allow you to share &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/">
+  <link rel="canonical" href="http://gsto.github.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -90,7 +90,7 @@
   
   <header>
     
-      <h1 class="entry-title">Terminals for Absolute Beginners: Part 3</h1>
+      <h1 class="entry-title">How to Test Controller Concerns in Rails 4</h1>
     
     
       <p class="meta">
@@ -106,98 +106,87 @@
   
 
 
-<time datetime="2012-10-30T15:03:00-04:00" pubdate data-updated="true">Oct 30<span>th</span>, 2012</time>
+<time datetime="2014-05-06T15:06:00-04:00" pubdate data-updated="true">May 6<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h3>File Permissions</h3>
+<div class="entry-content"><p><img class="left" src="/images/articles/ruby_on_rails.jpg" width="260"></p>
 
-<p><img class="left" src="/images/articles/terminal.jpg" width="260"></p>
+<p><a href="http://api.rubyonrails.org/classes/ActiveSupport/Concern.html">Concerns</a> are a new feature that was added in Rails 4. They allow to clean up code in your models and controllers. They also allow you to share functionality between models or controllers. However, they can be a bit tricky to test in isolation. In this article I want to show how you can test your controller concerns in isolation.</p>
 
-<p> In this article, we&#8217;ll take a look at how file permissions works. We&#8217;ll cover how users, groups, and file permissions work in a UNIX-based system, and how they can be used to make using the terminal more secure.</p>
-
-<p> <!-- more --></p>
-
-<ul>
-<li>Read Part 1 <a href="/blog/2012/02/15/terminals-for-absolute-beginners/">Directories and Commands</a></li>
-<li>Read Part 2 <a href="/blog/2012/03/07/terminals-for-absolute-beginners-part-2/">Manipulating Files</a></li>
-</ul>
+<!-- more -->
 
 
-<h4>Users and Groups</h4>
+<h2>The Over Simplified Scenario</h2>
 
-<h4>Understanding Permissions</h4>
+<p>We have a project with several different types of objects that can be sold. Each item is unique and is marked as &#8216;out of stock&#8217; once it is purchased. However, we have several different controllers and different types of purchases that need this functionality. In order to reduce code duplication, we are going to put these in a concern.</p>
 
-<p> Let&#8217;s begin by taking a second look at an example from lesson 1, the output on the command line when we ran the command <code>ls -la</code>:</p>
+<figure class='code'><figcaption><span>/app/controllers/concerns/transaction_processing.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">module</span> <span class="nn">TransactionProcessing</span>
+</span><span class='line'>  <span class="kp">extend</span> <span class="ss">ActiveSupport</span><span class="p">:</span><span class="ss">:Concern</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">included</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">helper_method</span> <span class="ss">:process_sale</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">process_sale</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">item</span><span class="o">.</span><span class="n">is_in_stock</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'>    <span class="n">item</span><span class="o">.</span><span class="n">save!</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<pre><code>drwxr-xr-x 70 grp   glenn    4096 2012-02-15 09:35 .
-drwxr-xr-x  3 root  root     4096 2011-03-15 16:55 ..
-drwxr-xr-x  2 grp   glenn    4096 2012-02-07 09:21 Pictures
-drwxr-xr-x  2 grp   glenn    4096 2011-08-23 15:29 Public
-drwxr-xr-x  5 grp   glenn    4096 2011-09-28 13:30 Rails
-drwxr-xr-x  6 grp   glenn    4096 2011-11-08 16:35 Repositories
-drwxr-xr-x 12 grp   glenn    4096 2012-01-15 17:09 Server
-drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Templates
-drwxrwxr-x  2 grp   glenn    4096 2011-08-11 08:46 Ubuntu One
-drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Videos
-</code></pre>
 
-<p>Now, what is of interest to us here is the first column. this is the list of <em>permissions</em> on a file or directory. if the permission is present, the letter is shown. if it is not, then there is a hyphen. so a directory with all permissions (anyone can do anything to it) would look like this:</p>
+<p>If we want to test this concern, we need a controller to include it in. However, it would not be accurately unit testing to do this as there could be code in that controller that could affect the output of our test. Inside of our test, we can create a fake controller with no methods or logic of it&#8217;s own, and then write tests for that. If you are using <a href="http://rspec.info/">RSpec</a>, you can call methods directly using the <code>subject</code> object. Here is my example test using RSpec and <a href="https://github.com/thoughtbot/factory_girl">FactoryGirl</a></p>
 
-<pre><code>drwxrwxrwx
-</code></pre>
+<figure class='code'><figcaption><span>/spec/controllers/concerns/transaction_processing_spec.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;spec_helper&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">FakesController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="kp">include</span> <span class="no">TransactionProcessing</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">describe</span> <span class="no">FakesController</span> <span class="k">do</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">it</span> <span class="s2">&quot;should mark an item out of stock&quot;</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">item</span> <span class="o">=</span> <span class="n">create</span><span class="p">(</span><span class="ss">:item</span><span class="p">,</span> <span class="n">is_in_stock</span><span class="p">:</span> <span class="kp">true</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">subject</span><span class="o">.</span><span class="n">process_sale</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">expect</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">is_in_stock</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">be</span> <span class="kp">false</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<p>the first letter is actually not a permission, but a flag telling us what kind of file it is, most commonly <code>d</code> for a directory and <code>-</code> for a regular file. Next you will notice that there is a repeating series of 3 letters: r, w, and x. these are short for <strong>R</strong>ead, <strong>W</strong>rite, and e<strong>X</strong>ecute. The first three letters refer to the permissions of the user that owns the file. The second three letters refer to the permissions of any users in the group that owns the file. The third set of letters repesent the permissions of all other users (these are commonly called <em>world permissions</em> or <em>other permissions</em>). So let&#8217;s look at a couple of examples and see what they mean:</p>
 
-<p><code>drwxr-xr-x</code> : The owner may read, write or execute this directory; everyone else may only read or execute it.</p>
-
-<p><code>-rw-r-----</code> : The owner may read or write to the file; people in the group have read-only access; no one else can do anything with it, and no one may execute it.</p>
-
-<p><code>-rwxrwxrwx</code> : Anyone can do anything to this file.</p>
-
-<h4>Octal Permissions</h4>
-
-<p>Permissions can also be represented numerically. These are called <em>Octal Permissions</em>, as they are represented in base 8. In octal permissions, a 1 represents permissions to execute, 2 represents permissions to write, and 4 represent permissions to read. Since all sums of these numbers are unique, we can now represent the rights of any user or group with one digit between 0 and 7:</p>
-
-<pre><code>| Number | Permissions |
-------------------------
-| 0      | ---         |
-| 1      | --x         |
-| 2      | -w-         |
-| 3      | -wx         |
-| 4      | r--         |
-| 5      | r-x         |
-| 6      | rw-         |
-| 7      | rwx         |
-------------------------
-</code></pre>
-
-<p>Now, we can use three digits to represent the permissions of a file. In a similar manner to above, the first number represents the user&#8217;s rights, the second number the groups, and the third represents the world permissions. Our previous examples can be written as such:</p>
-
-<pre><code>drwxr-xr-x  :   755
--rw-r-----  :   640
--rwxrwxrwx  :   777
-</code></pre>
-
-<h4>Manipulating Permissions</h4>
-
-<p>If we want to change the permissions of a file, there are three commands we can use. The first is called <code>chmod</code> and is used for manipulating the file permissions. The arguments for chmod are an octal number to set the new file permissions, and the name of a file. you can also use the <code>-R</code> flag if you want to recursively change all the permissions of files in a directory. Example:</p>
-
-<pre><code>chmod 777 file_name.txt
-</code></pre>
-
-<p>The second is <code>chown</code> , which is short for &#8220;change owner&#8221;. It is used to change ownership of a file. It takes arguments in a similar fashion to chmod, but instead of an octal number, it takes a username as an argument. Example:</p>
-
-<pre><code>chown glenn file_name.txt
-</code></pre>
-
-<p>The third is <code>chgrp</code>, which is short for &#8220;change group&#8221;. Again, this command works in a similar fashion to chown, except that this command changes the group ownership of a file instead of the user. Example:</p>
-
-<pre><code>chgrp psacln file_name.txt
-</code></pre>
+<p>And there you go! Easy, isolated tests for your controller concerns.</p>
 </div>
 
 
@@ -220,12 +209,12 @@ drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Videos
   
 
 
-<time datetime="2012-10-30T15:03:00-04:00" pubdate data-updated="true">Oct 30<span>th</span>, 2012</time>
+<time datetime="2014-05-06T15:06:00-04:00" pubdate data-updated="true">May 6<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/terminal/'>terminal</a>
+    <a class='category' href='/blog/categories/programming/'>programming</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
   
 </span>
 
@@ -234,7 +223,7 @@ drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Videos
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/" data-via="GSto" data-counturl="http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gsto.github.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/" data-via="GSto" data-counturl="http://gsto.github.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -248,10 +237,8 @@ drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Videos
 
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/04/how-to-add-a-contact-form-to-octopress/" title="Previous Post: how to add a contact form to octopress">&laquo; how to add a contact form to octopress</a>
+        <a class="basic-alignment left" href="/blog/2014/04/29/announcing-the-freelance-pricing-handbook/" title="Previous Post: Announcing The Freelance Pricing Handbook">&laquo; Announcing The Freelance Pricing Handbook</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/" title="Next Post: Writing Cron Jobs and Command Line Scripts in CodeIgniter">Writing Cron Jobs and Command Line Scripts in CodeIgniter &raquo;</a>
       
     </p>
   </footer>

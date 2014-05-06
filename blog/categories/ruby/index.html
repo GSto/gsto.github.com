@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Terminals for Absolute Beginners: Part 3 - Glenn Stovall</title>
+  <title>Category: ruby - Glenn Stovall</title>
   <meta name="author" content="Glenn Stovall">
 
   
-  <meta name="description" content="File Permissions In this article, we&#8217;ll take a look at how file permissions works. We&#8217;ll cover how users, groups, and file permissions &hellip;">
+  <meta name="description" content="Category: ruby">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/">
+  <link rel="canonical" href="http://gsto.github.com/blog/categories/ruby/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -86,175 +86,35 @@
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">Terminals for Absolute Beginners: Part 3</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-30T15:03:00-04:00" pubdate data-updated="true">Oct 30<span>th</span>, 2012</time>
-        
-      </p>
+    <h1 class="entry-title">Category: Ruby</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-<div class="entry-content"><h3>File Permissions</h3>
 
-<p><img class="left" src="/images/articles/terminal.jpg" width="260"></p>
+  
+  <h2>2014</h2>
 
-<p> In this article, we&#8217;ll take a look at how file permissions works. We&#8217;ll cover how users, groups, and file permissions work in a UNIX-based system, and how they can be used to make using the terminal more secure.</p>
+<article>
+  
+<h1><a href="/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/">How to Test Controller Concerns in Rails 4</a></h1>
+<time datetime="2014-05-06T15:06:00-04:00" pubdate><span class='month'>May</span> <span class='day'>06</span> <span class='year'>2014</span></time>
 
-<p> <!-- more --></p>
-
-<ul>
-<li>Read Part 1 <a href="/blog/2012/02/15/terminals-for-absolute-beginners/">Directories and Commands</a></li>
-<li>Read Part 2 <a href="/blog/2012/03/07/terminals-for-absolute-beginners-part-2/">Manipulating Files</a></li>
-</ul>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/programming/'>programming</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
+</footer>
 
 
-<h4>Users and Groups</h4>
+</article>
 
-<h4>Understanding Permissions</h4>
-
-<p> Let&#8217;s begin by taking a second look at an example from lesson 1, the output on the command line when we ran the command <code>ls -la</code>:</p>
-
-<pre><code>drwxr-xr-x 70 grp   glenn    4096 2012-02-15 09:35 .
-drwxr-xr-x  3 root  root     4096 2011-03-15 16:55 ..
-drwxr-xr-x  2 grp   glenn    4096 2012-02-07 09:21 Pictures
-drwxr-xr-x  2 grp   glenn    4096 2011-08-23 15:29 Public
-drwxr-xr-x  5 grp   glenn    4096 2011-09-28 13:30 Rails
-drwxr-xr-x  6 grp   glenn    4096 2011-11-08 16:35 Repositories
-drwxr-xr-x 12 grp   glenn    4096 2012-01-15 17:09 Server
-drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Templates
-drwxrwxr-x  2 grp   glenn    4096 2011-08-11 08:46 Ubuntu One
-drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Videos
-</code></pre>
-
-<p>Now, what is of interest to us here is the first column. this is the list of <em>permissions</em> on a file or directory. if the permission is present, the letter is shown. if it is not, then there is a hyphen. so a directory with all permissions (anyone can do anything to it) would look like this:</p>
-
-<pre><code>drwxrwxrwx
-</code></pre>
-
-<p>the first letter is actually not a permission, but a flag telling us what kind of file it is, most commonly <code>d</code> for a directory and <code>-</code> for a regular file. Next you will notice that there is a repeating series of 3 letters: r, w, and x. these are short for <strong>R</strong>ead, <strong>W</strong>rite, and e<strong>X</strong>ecute. The first three letters refer to the permissions of the user that owns the file. The second three letters refer to the permissions of any users in the group that owns the file. The third set of letters repesent the permissions of all other users (these are commonly called <em>world permissions</em> or <em>other permissions</em>). So let&#8217;s look at a couple of examples and see what they mean:</p>
-
-<p><code>drwxr-xr-x</code> : The owner may read, write or execute this directory; everyone else may only read or execute it.</p>
-
-<p><code>-rw-r-----</code> : The owner may read or write to the file; people in the group have read-only access; no one else can do anything with it, and no one may execute it.</p>
-
-<p><code>-rwxrwxrwx</code> : Anyone can do anything to this file.</p>
-
-<h4>Octal Permissions</h4>
-
-<p>Permissions can also be represented numerically. These are called <em>Octal Permissions</em>, as they are represented in base 8. In octal permissions, a 1 represents permissions to execute, 2 represents permissions to write, and 4 represent permissions to read. Since all sums of these numbers are unique, we can now represent the rights of any user or group with one digit between 0 and 7:</p>
-
-<pre><code>| Number | Permissions |
-------------------------
-| 0      | ---         |
-| 1      | --x         |
-| 2      | -w-         |
-| 3      | -wx         |
-| 4      | r--         |
-| 5      | r-x         |
-| 6      | rw-         |
-| 7      | rwx         |
-------------------------
-</code></pre>
-
-<p>Now, we can use three digits to represent the permissions of a file. In a similar manner to above, the first number represents the user&#8217;s rights, the second number the groups, and the third represents the world permissions. Our previous examples can be written as such:</p>
-
-<pre><code>drwxr-xr-x  :   755
--rw-r-----  :   640
--rwxrwxrwx  :   777
-</code></pre>
-
-<h4>Manipulating Permissions</h4>
-
-<p>If we want to change the permissions of a file, there are three commands we can use. The first is called <code>chmod</code> and is used for manipulating the file permissions. The arguments for chmod are an octal number to set the new file permissions, and the name of a file. you can also use the <code>-R</code> flag if you want to recursively change all the permissions of files in a directory. Example:</p>
-
-<pre><code>chmod 777 file_name.txt
-</code></pre>
-
-<p>The second is <code>chown</code> , which is short for &#8220;change owner&#8221;. It is used to change ownership of a file. It takes arguments in a similar fashion to chmod, but instead of an octal number, it takes a username as an argument. Example:</p>
-
-<pre><code>chown glenn file_name.txt
-</code></pre>
-
-<p>The third is <code>chgrp</code>, which is short for &#8220;change group&#8221;. Again, this command works in a similar fashion to chown, except that this command changes the group ownership of a file instead of the user. Example:</p>
-
-<pre><code>chgrp psacln file_name.txt
-</code></pre>
 </div>
 
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Glenn Stovall</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-30T15:03:00-04:00" pubdate data-updated="true">Oct 30<span>th</span>, 2012</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/terminal/'>terminal</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/" data-via="GSto" data-counturl="http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/" >Tweet</a>
-  
-  
-  <div class="g-plusone" data-size="medium"></div>
-  
-  
-    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
-  
-</div>
-
-    
-
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2012/07/04/how-to-add-a-contact-form-to-octopress/" title="Previous Post: how to add a contact form to octopress">&laquo; how to add a contact form to octopress</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/" title="Next Post: Writing Cron Jobs and Command Line Scripts in CodeIgniter">Writing Cron Jobs and Command Line Scripts in CodeIgniter &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
 </div>
