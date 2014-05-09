@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2014-05-06T15:27:06-04:00</updated>
+  <updated>2014-05-09T10:43:57-04:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,79 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Freelance Pricing Handbook Launch Post-mortem]]></title>
+    <link href="http://gsto.github.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem/"/>
+    <updated>2014-05-09T10:31:00-04:00</updated>
+    <id>http://gsto.github.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/freelance_pricing_handbook.png" width="260"></p>
+
+<p>Whenever I finish a product, I like to write a post-mortem. A post-mortem answers a few important questions: What w went well? What went wrong? What could be done better next time? I usually keep these to myself, but this time I wanted to share. Building an email list is something every business should be doing, and I wanted to share the specific techniques I used in order to increase the size of a list 500% in 2 days.</p>
+
+<!-- more -->
+
+
+<h3>The Goal</h3>
+
+<p>Start building a mailing list, and learn more about effective email marketing in the process. I plan on releasing a book targeted at freelancers hopefully in July, so I would like to start building a list now in order to build trust and have a targeted audience when I am ready to sell.</p>
+
+<h3>The Process</h3>
+
+<p> I signed up for Nathan Barry&#8217;s <a href="http://www.convertkit.com">ConvertKit</a> Email list software. This includes enrolling in his &#8220;ConvertKit Academy&#8221; Which is an email course along with a few Google Hangout sessions with Nathan where you get a chance to talk about your personal goals.</p>
+
+<p> Nathan heavily suggested that you have some form on incentive to get people to sign up for your list. He mentioned that you could do a free book, and it could just be a compilation of old writings. He also mentioned setting up a drip marketing course, and ConvertKit comes with a template for that. I looked over some past blog posts and decided to go that route.</p>
+
+<h3>Writing The Book</h3>
+
+<p> Writing the book, and I use the term writing loosely, took about a day. It&#8217;s a compilation of a few different blog articles I had written, along with some content from a chapter I already had completed for my larger book profit. I drafted up a table of contents, and edited the content together, and wrote about 4 - 5 pages of new content to fill in gaps.  I made the PDF in Pages on the mac.</p>
+
+<p> Then it came to the editing stage. I sent my current list of about 15 people an email announcing the book and asking if anyone wanted a copy. I also did the same of Twitter. I got a lot of amazing responses of people willing to read my book and offer feedback.</p>
+
+<p> After I took a couple hours to edit the content together, I was ready to launch.</p>
+
+<h3>Launching the book</h3>
+
+<p>  Here were the steps I took in order to launch the book</p>
+
+<ul>
+<li>I added the ConvertKit form to several blog posts that I thought were relevant to the audience.</li>
+<li>Created a <a href="http://glennstovall.com/books/freelance-pricing-handbook/">new landing page</a></li>
+<li>Wrote two announcement posts, one on <a href="http://glennstovall.com/blog/2014/04/29/announcing-the-freelance-pricing-handbook/">My personal domain</a> and on my <a href="http://concordantsolutions.com/announcing-freelance-pricing-handbook/">company domain</a></li>
+<li>Posted links on Facebook, Twitter, Reddit, and LinkedIn</li>
+<li>Sent an email out to my original list about the book being released. Also included a P.S. asking them to share on Facebook &amp; Twitter if they felt so inclined</li>
+<li>Asked my <a href="http://www.fourathens.com/">local tech community</a> to take a look and help out on social media if they wanted to.</li>
+</ul>
+
+
+<h3>Results</h3>
+
+<p>  By the end of the week I had 84 new subscribers to my list. This was with 323 visitors and a conversion rate of 25.8%</p>
+
+<p>  According to Google Analytics, My site had ~600 visits this week, mostly coming from direct traffic (which is odd, I feel like there are some referrals that don&#8217;t get tracked properly), then Reddit, then Facebook, in that order.</p>
+
+<h3>What went well</h3>
+
+<p>  Having friends help out on social media seemed like a huge boost. I don&#8217;t think I&#8217;ve gotten that much traffic from Facebook before. I also had a few people say nice things on Twitter, which I quickly embedded on the landing page as testimonials. The best way to expand your audience is to find ways you can leverage the audience of others.</p>
+
+<p>  Also, writing a book, even when that book is just a PDF &#8220;best-of&#8221; of your blog, seems really cool to a lot of people. Content in PDF form is just seen as more valuable, and I think having this product out there gives me more credibility.</p>
+
+<h3>What went wrong</h3>
+
+<p>  I found out after the fact the form didn&#8217;t render correctly on mobile devices, and made it impossible to sign up if you landed on the landing page via a phone. :( That definitely costs me a few conversions. I added a link below that links to a form directly, though perhaps I should find a better way to set up the form so that it renders in a more responsive friendly way.</p>
+
+<h3>What I learned</h3>
+
+<p>  Using incentives to build email lists really does work! My list went from 15 to 100 in a few days. It is also nice to always have something free to offer users in order to provide value for them.</p>
+
+<p>  My next goal is to take these principles and find a way to apply them in a way I can use to target potential clients for my consulting services. I&#8217;m not sure what that is going to look like, but I&#8217;m sure if I keep writing it&#8217;ll make sense eventually.</p>
+
+<p>  If you&#8217;d like the read the book (and join my mailing list for freelancers), you can get the book below:</p>
+
+<p>  <script src="https://app.convertkit.com/landing_pages/531.js"></script>
+If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/landing_pages/531">here</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Test Controller Concerns in Rails 4]]></title>
@@ -1559,120 +1632,6 @@ Node.js and CoffeeScript have been all the rage in the web development community
 </code></pre>
 
 <p>Nodemon will listen to changes to all of your non-CoffeeScript files, and automatically restart the server whenever it detects a change. And now you are able to write your node apps in CoffeeScript, and not have to worry about compiling or server restarts, enabling you to write and develop more quickly.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Terminals for Absolute Beginners: Part 2]]></title>
-    <link href="http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/"/>
-    <updated>2012-03-07T08:14:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2</id>
-    <content type="html"><![CDATA[<h3>Manipulating Files</h3>
-
-<p><img class="left" src="http://gsto.github.com/images/articles/terminal.jpg" width="260"></p>
-
-<ul>
-<li>Read Part 1 <a href="blog/2012/02/15/terminals-for-absolute-beginners/">Here</a></li>
-</ul>
-
-
-<p>Now that we have learned the basics of navigating the terminal, lets start looking at how to we affect the file system we&#8217;re working in. In this tutorial, we&#8217;ll cover the following: creating and deleting directories, copying and moving files and directories, and creating and deleting files.</p>
-
-<p> <!-- more --></p>
-
-<h3>Creating and Deleting Directories</h3>
-
-<p> Wherever you left off in the last lesson, let&#8217;s start by going back to home directory, and working from there. Remember that we can do this by running the command <code>cd ~</code>. Now, since we will be manipulating the file system in this tutortial, let&#8217;s create a new directory that we can work in. You can do this by using the <code>mkdir</code> command. mkdir is short for &#8220;make directory&#8221;. just type mkdir and the name of the folder you would like to create. For this example, we&#8217;ll call it &#8216;terminal-tutorial&#8217;</p>
-
-<pre><code>mkdir terminal-tutorial
-ls
-</code></pre>
-
-<p>When you run <code>ls</code>, you&#8217;ll see that a new directory has been created. <code>mkdir</code> defaults to creating the directory inside the directory you are currently located. if you define a path, it will created the directory there. For example, lets make a directory inside of our terminal-tutorial directory, and then navigate there.</p>
-
-<pre><code>mkdir terminal-tutorial/to-delete
-cd terminal-tutorial
-ls
-</code></pre>
-
-<p>You should see just the to-delete directory. If you tried to create a directory in a directory that did not exist, you would get an error. You can create nested directories at once by using the <code>-p</code> option, Like so:</p>
-
-<pre><code>mkdir -p multiple/subdirectory/example
-</code></pre>
-
-<p>creates 3 new directories with those paths. Now lets says you need to get rid of a directory. For this we can use the <code>rmdir</code> command, which is short for &#8216;remove directory&#8217;. Lets get rid of that pesky <code>to-delete</code> folder we made earlier, and the multiple directory example</p>
-
-<pre><code>rmdir to-delete
-rmdir multiple
-rmdir: failed to remove `multiple': Directory not empty
-</code></pre>
-
-<p>You&#8217;ll see that you get the following error message since <code>multiple</code> is not empty. <code>rmdir</code> can only remove empty directories.  Later in this artice we will discuss how can remove entire directories of files</p>
-
-<h3>Creating and Deleting Files</h3>
-
-<p>Now we can start creating and deleting files as well as directories. Let&#8217;s start with the <code>touch</code> command. <code>touch</code> is to files what <code>mkdir</code> is to directories. so let&#8217;s create a file:</p>
-
-<pre><code>touch to-delete
-ls
-</code></pre>
-
-<p>This creates an empty file named <code>to-delete</code>. To actually delete this file, we use the <code>rm</code> command, which is short for remove:</p>
-
-<pre><code>rm to-delete
-</code></pre>
-
-<p>rm can also be used on directories, by using the <code>-r</code> option, which is short for recursive. This will also remove all the contents inside of a directory.  Occasionally you may get a prompt asking if you are sure you want to delete something. You can get rid of this with the <code>-f</code> option. You can use this to get rid of the <code>multiple</code> directory you created earlier</p>
-
-<pre><code>rm -rf multiple
-</code></pre>
-
-<p>If you want to open and edit text files, you will need to get accquainted with a good text editor. <a href="http://www.vim.org/">Vim</a> and <a href="http://www.gnu.org/software/emacs/">Emacs</a> Are the two most popular, but both are very complex and a whole series of tutorials could be written on either one.</p>
-
-<p><strong>WARNING</strong></p>
-
-<p>It is a common joke on the internet to try to get people to run the command <code>rm -rf /</code> in the terminal. <code>/</code> refers to the base directory of your entire filesystem, so <code>rm -rf /</code> basically translates into &#8220;delete my everything forever, and don&#8217;t ask for my permission&#8221;. It is a <em>seriously</em> dangerous command to run, and now you know why.</p>
-
-<h3>Copying And Moving Files and Directories</h3>
-
-<p>Let&#8217;s start by creating a couple more directories for this section:</p>
-
-<pre><code>mkdir cars
-mkdir vechicles
-</code></pre>
-
-<p>You may have decided that you made a mistake, and the <code>cars</code> directory should be inside of the <code>vehicles</code> directory. For situations like these, we have the <code>mv</code> command, which is short for move:</p>
-
-<pre><code>mv cars vechicles/cars
-</code></pre>
-
-<p>The first option of the <code>mv</code> command is the directory you would like to move, the second argument being where you would like it to go. Since the names do not nessicarily have to match, <code>mv</code> also acts as a &#8216;rename&#8217; operation for files and directories. If you want to <em>guarantee</em> the names match (and save you some typing), you can replace the final name of the file/directory with a <code>.</code> character, so these two commands are equivalent:</p>
-
-<pre><code>mv cars vehicles/cars
-mv cars vehicles/.
-</code></pre>
-
-<p>If you wanted to maintain the original <code>cars</code> directory and just put a copy of it in the <code>vehicles</code> directory, then you can do that wih the <code>cp</code> command, which is short for &#8220;copy&#8221;.  Much like <code>rm</code>, <code>cp</code> works with both files and directories, but requires a <code>-r</code> for directories. The structure of the arguments is the same as <code>mv</code> though. So copying <code>cars</code> would have looked like this:</p>
-
-<pre><code>cp -r cars vehicles/.
-</code></pre>
-
-<p>Note that the <code>.</code> syntax to keep the same name still works here as well.</p>
-
-<h3>Protip: Tab Completion</h3>
-
-<p>All of this typing on the command line can get tiresome. One of the best tricks to learn to cut down on the amount of keystrokes it takes to type commands is to learn about and get used to frequently using tab completion. If you type the first few letters of a directory or file name and hit tab, the shell will complete it for you! You must type enough characters for it to be unique. If not, pressing tab twice on most shells will show you all the directories and files that match the start of the name you typed. so for example, if you typed this:</p>
-
-<pre><code>mkdir terminal-tutorial
-cd te   
-</code></pre>
-
-<p>and this pressed the tab button, the terminal should automatically fill out:</p>
-
-<pre><code>cd terminal-tutorial
-</code></pre>
-
-<p>Now we have a good set of tools for working with and manipulating the file system. Next time we&#8217;ll take a look at users, groups, and the permissions system that UNIX is based on.</p>
 ]]></content>
   </entry>
   
