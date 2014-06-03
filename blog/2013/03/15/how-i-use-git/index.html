@@ -40,6 +40,18 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
+
+   //Custom Event Tracking
+
+   //ConvertKit Form Signup
+   console.log("pre-event JavaScript Test");
+   $("#ck_subscribe_form").on('submit', function(e) {
+     console.log('testing google anayltics custom event');
+     _gaq.push(['_trackEvent', 'Newsletter', 'Subscribe', 'Freelance Pricing Handbook']);
+   });
+
+   //TODO: Contact Form Submissions
+   
   </script>
 
 
@@ -285,6 +297,10 @@ git push production master
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/06/02/learning-to-say-no/">Learning To Say No</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/05/30/the-building-blocks-of-business/">The Building Blocks of Business</a>
       </li>
     
@@ -298,10 +314,6 @@ git push production master
     
       <li class="post">
         <a href="/blog/2014/04/29/announcing-the-freelance-pricing-handbook/">Announcing The Freelance Pricing Handbook</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/19/presenting-value-to-clients/">Presenting Value</a>
       </li>
     
   </ul>

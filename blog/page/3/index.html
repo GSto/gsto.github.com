@@ -9,7 +9,7 @@
   <meta name="author" content="Glenn Stovall">
 
   
-  <meta name="description" content="Node.js and CoffeeScript have been all the rage in the web development community as of late. In this tutorial, I&#8217;ll be walking though how to &hellip;">
+  <meta name="description" content="While Octopress is a nice blogging platform, using static generated pages can lead to being unable to have some of the features of other blogging &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -40,6 +40,18 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
+
+   //Custom Event Tracking
+
+   //ConvertKit Form Signup
+   console.log("pre-event JavaScript Test");
+   $("#ck_subscribe_form").on('submit', function(e) {
+     console.log('testing google anayltics custom event');
+     _gaq.push(['_trackEvent', 'Newsletter', 'Subscribe', 'Freelance Pricing Handbook']);
+   });
+
+   //TODO: Contact Form Submissions
+   
   </script>
 
 
@@ -87,6 +99,48 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/04/how-to-add-a-contact-form-to-octopress/">How to Add a Contact Form to Octopress</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-04T11:43:00-04:00" pubdate data-updated="true">Jul 4<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img class="left" src="/images/articles/wufoo.png">
+While Octopress is a nice blogging platform, using static generated pages can lead to being unable to have some of the features of other blogging platforms. One of the most common missed features is being able to have a contact us page.  In this tutorial I&#8217;ll show you how to add a contact form to octopress by using <a href="http://www.wufoo.com">Wufoo</a>.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/07/04/how-to-add-a-contact-form-to-octopress/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -368,6 +422,10 @@ If you&#8217;re reading this, then I&#8217;ve successfully got my octopress blog
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/06/02/learning-to-say-no/">Learning To Say No</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/05/30/the-building-blocks-of-business/">The Building Blocks of Business</a>
       </li>
     
@@ -381,10 +439,6 @@ If you&#8217;re reading this, then I&#8217;ve successfully got my octopress blog
     
       <li class="post">
         <a href="/blog/2014/04/29/announcing-the-freelance-pricing-handbook/">Announcing The Freelance Pricing Handbook</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/19/presenting-value-to-clients/">Presenting Value</a>
       </li>
     
   </ul>
