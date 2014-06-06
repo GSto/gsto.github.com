@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Eureka Moment With Regular Expressions - Glenn Stovall</title>
+  <title>The Self Publisher's Journey - Glenn Stovall</title>
   <meta name="author" content="Glenn Stovall">
 
   
-  <meta name="description" content="Regular expressions are a tough cookie for most programmers to figure out. They are terrifying to look at with their daunting syntax. There is also &hellip;">
+  <meta name="description" content="I&#8217;m working on self publishing and eBook in the coming months, and I wanted to document my journey and share it with you. I have enjoyed and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gsto.github.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions/">
+  <link rel="canonical" href="http://gsto.github.com/blog/2014/06/06/the-self-publishers-journey/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -102,7 +102,7 @@
   
   <header>
     
-      <h1 class="entry-title">My Eureka Moment With Regular Expressions</h1>
+      <h1 class="entry-title">The Self Publisher's Journey</h1>
     
     
       <p class="meta">
@@ -118,88 +118,52 @@
   
 
 
-<time datetime="2012-03-06T13:49:00-05:00" pubdate data-updated="true">Mar 6<span>th</span>, 2012</time>
+<time datetime="2014-06-06T14:34:00-04:00" pubdate data-updated="true">Jun 6<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><img class="left" src="/images/articles/my_eureka_moment.jpg">
-Regular expressions are a tough cookie for most programmers to figure out. They are <em>terrifying</em> to look at with their daunting syntax. There is also nothing quite like regular expressions anywhere in programming. programmers may learn to hack together basic regex expressions, or how to cut and paste some they find online for their needs, but it can be tricky to get a real grasp of the concept. Here I&#8217;d like to explain the line of thinking that finally led to me grokking regex.</p>
+<div class="entry-content"><p><img class="left" src="/images/cover.jpg" width="260"></p>
+
+<p>I&#8217;m working on self publishing and eBook in the coming months, and I wanted to document my journey and share it with you. I have enjoyed and been inspired by other writings such as <a href="http://groovehq.com/blog">Alex Turnbull documenting his ongoing journey to get to $100,000 recurring revenue</a>, and Nathan Barry&#8217;s <a href="http://nathanbarry.com/category/the-web-app-challenge/">&#8220;Web App in Six Months Challenge&#8221;</a>. There is nothing like publicly sharing your techniques and struggles in order to both share useful information with other people, and to keep myself accountable.</p>
 
 <!-- more -->
 
 
-<p>For reference, I&#8217;ll be using the PERL-style regular expression syntax used by languages like PHP. Here&#8217;s a <a href="http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/">Regular Expressions Cheat Sheet</a> That I&#8217;ll be referencing throughout this article, and it is a great resource to keep around.</p>
+<h3>The Story So Far</h3>
 
-<h2>Regular Expressions: A Language Unto Itself</h2>
+<p>I think a lot of freelancers dream of finding ways to make money besides charging for their time. It could be by setting up recurring revenue, productizing their consulting services, or building a product they can sell individually. I decided to try what many before me have, and build a product. Heck, there is an <a href="http://chasingproduct.com">entire podcast</a> dedicated to the subject (which is really good, by the way).</p>
 
-<p>The tricky thing about regular expressions is that it is its own language within a programming language. It has its own collection of symbols and syntax. Those long, scary strings that regexes are made up of are collections of these <em>symbols</em> and are used to make the <em>pattern</em> you want to match. Think of a regular expression as a <em>sentence</em>, and each one of the symbols as a <em>word</em>.</p>
+<p>Being a web developer, of course my first thought was to build some form of SaaS application. Enough reading on the internet scared me off of that idea (for now): SaaS applications on average take two years before they bring in enough income to stand on their own, and I know from experience they can take months to develop. I had started a couple of ideas, but could never find the time to finish them. Then I found an article by Amy Hoy called <a href="http://unicornfree.com/2013/why-you-should-do-a-tiny-product-first">&#8220;Why you should build a tiny product first&#8221;</a> and it really resonated with me. It got me thinking about products that I could complete in 90 days or less. I liked writing, and based on several freelance sites I had read before, I knew that there was a lot of interest in starting to freelance, but a lot of people didn&#8217;t know where to begin.</p>
 
-<h2>Writing &#8220;Words&#8221; in Regular Expressions</h2>
+<p>The tiny idea was also appealing because it would be a straight up easier way to launch a product. I have worked with enough small businesses and start-ups to know that launching a new business or product is <strong>hard</strong>. Really, REALLY hard. There is no reason to tackle new business ventures on hard mode, and I feel that if there is anything you can do to make things easier on yourself, you should do it. And it is much easier to write a book than build a piece of software, and it is a lot easier to convince someone to pay you $29 once instead of $29/month indefinitely.</p>
 
-<p>Most of the words of your regular expression are going to be made of a few different language constructs:</p>
+<h3>The Freelance Start-up Guide</h3>
 
-<ul>
-<li><strong>Ranges</strong> : defining a set of characters that can match. Common examples are <code>[A-Z]</code>, which means all capital letters, <code>[0-9]</code> or which means all digits. These can be combined as well. A common on is <code>[A-Za-z0-9-_]</code> which would match all letters, numbers, hyphens, and underscores.</li>
-<li><strong>Character Classes</strong> : similar to ranges. <code>\s</code> means &#8216;any white space character&#8217;, where <code>\S</code> means &#8216;any non-white space character&#8217;.</li>
-<li><strong>Metacharacters</strong> : characters that have thier own special meaning, the most common being the pipe <code>|</code> character, which means &#8216;or&#8217; similar to <code>||</code> in most programming languages. A subset of metacharacters is <em>anchors</em>, where can denote the beginning of a string (<code>^</code>) or the end of a string (<code>$</code>).</li>
-<li><strong>Quantifiers</strong> : quantifiers are a kind of &#8216;modifier&#8217; to the above patterns. These let you tell the pattern how many of the previous pattern to look for. The common ones are: <code>*</code> for 0 or more, <code>+</code> for 1 or more, and <code>?</code> for 0 or 1. You can also explicity state an amount with something like <code>{5}</code> for 5 characters, or a range, such as <code>{3-6}</code>, which matches anywhere between three and six characters.</li>
-</ul>
+<p>It was at this point, around the start of this year,  I decided to work on a book, then titled <strong>The Freelance Start-up Guide</strong>. It was going to be aimed at aspiring freelancers, and help them build a product from scratch. I started writing the book, and set up a mailing list. Initial response was a bit tepid on the mailing list, but there was some interest in the idea.</p>
 
+<h3>The First Big Hurdle</h3>
 
-<h2>Building Patterns with Words</h2>
+<p>Around the start of February, I had a huge rush of client work, admittedly, more than I could handle. I knew something had to give, and I informed my tiny mailing list that I had shelved the project indefinitely. I knew at that time that I did not have any extra bandwidth, and had to cut work where ever I could.</p>
 
-<p>Let&#8217;s look at the following example problem:</p>
+<h3>The Real Tiniest Product</h3>
 
-<pre><code>we have a system that has to match social security numbers. 
-They can look like any of the following:
+<p>About a month ago, I decided to give building a mailing list a second try. I figured that I could build an audience before I built the product. Even if I didn&#8217;t finish that book, I would still have an audience, and that had value. I signed up for Nathan Barry&#8217;s <a href="http://www.convertkit.com">ConvertKit</a>, and during his ConvertKit academy, he gave me a valuable piece of advice: You can get a lot more email list subscriptions if you give users an incentive for signing up. I compiled some of my past blog articles, wrote some new content, and released <em><a href="http://glennstovall.com/books/freelance-pricing-handbook/">The Freelance Pricing Handbook</a></em>. This is a small, 32 page eBook that I gave away for free. I was able to grow my list from 15 to 100 subscribers overnight. You can read my case study on it&#8217;s release here.</p>
 
-123-45-6789
-123/45/6789
-123456789
-</code></pre>
+<p>This so far has been the best move I&#8217;ve made. I always liked blogging, but it had been directionless before. Now instead of people reading my article, and that bringing me no value, I could capture readers and have a way to continue engaging with them. This meant that every post I had written in the past and every post I would write in the future was more valuable. Now they weren&#8217;t just articles, they were sales tools.</p>
 
-<p>so, now that we have the set of patterns we want to match, we can start building up smaller words to match each part of the pattern. Writing regular expressions is similar to writing functions or classes: you start by breaking down the problem, figuring out smaller parts of it, and then start working on combining these smaller solutions into a large one. So let&#8217;s start by writing out our pattern in plain English:</p>
+<h3>Version 2.0: Bootstrap Freelance</h3>
 
-<ul>
-<li>We have the start of the string,</li>
-<li>then three digits,</li>
-<li>then either a hyphen, forward slash, or neither,</li>
-<li>then two digits,</li>
-<li>then either a hyphen, forward slash, or neither,</li>
-<li>then four digits,</li>
-<li>and that is the end of the string.</li>
-</ul>
+<p>Now it&#8217;s June, and my client work has returned to levels where I don&#8217;t feel completely underwater. I decided that I wanted to pick up the project and continue working on it. At this point, I had almost 65 pages written, and an email list with a couple of hundred people on it, and I didn&#8217;t want to throw all of this away. I renamed the product <em>Bootstrap Freelance</em> and decided to pick the project back up. I decided that instead of just telling people how to get their first client, I wanted to add more content based on lessons I had learned on how to build up their business after that. I&#8217;m nervous about announcing a launch date based on what happened last time, but I am shooting for a release date sometime in August.</p>
 
+<h3>&#8230;And Here We Are</h3>
 
-<p>So, let&#8217;s look at this step by step:</p>
+<p>Now I have roughly 80 pages of a first draft, which is about 2/3rds of what I want it to be. I am working on spending more time working not only on the book, but on marketing before that. For example, setting up a landing page for the product, and starting to public write about the progress of the book. I plan on updating this blog with information about the process, along with helpful information from the book. I am also going to send updates every single Friday to anyone who wants to help me accountable. If you&#8217;d like to keep up with the progress on the book, enter your email address below:</p>
 
-<ul>
-<li><strong>We have the start of the string</strong> : this is where we start with one of the anchors we mentioned earlier, <code>^</code>.</li>
-<li><strong>Three Digits</strong> : We discussed the range of digits earlier (<code>[0-9]</code>), but that only matches a single digit. To match exactly 3, we will need a quantifier as well. So this word can be written as <code>[0-9]{3}</code>.</li>
-<li><strong>Either a hyphen, forward slash, or neither</strong> : this is going to take another quantifier, but which one? It helps if we rephrase this statement a bit, and think of it as this: &#8220;exactly 0 or 1 hyphen or forward slash&#8221;. Now we can see that we need the <code>?</code> quantifier. We also see that we&#8217;ll need to use an &#8216;or&#8217; for this statement. For statements like this, you can wrap this part of the expression in parenthesis so that its clear whats going on. The answer here is <code>(-|/)?</code>. Declaring parts of a regular expression inside of parenthesis like this is called defining a <em>sub-pattern</em></li>
-<li><strong>Two Digits</strong> : similar to above: <code>[0-9]{2}</code>.</li>
-<li><strong>Either a hyphen, forward slash, or neither</strong> : same as above: <code>(-|/)?</code>.</li>
-<li><strong>Four Digits</strong> : similar to above: <code>[0-9]{4}</code>.</li>
-<li><strong>End of the String</strong> : another anchor, the <code>$</code> one this time.</li>
-</ul>
+<script src="https://app.convertkit.com/landing_pages/588.js?orient=vert"></script>
 
-
-<p>So, now let&#8217;s put that all together, and we have a full regular expression:</p>
-
-<p><code>^[0-9]{3}(-|/)?[0-9]{2}(-|/)?[0-9]{4}$</code></p>
-
-<p>Tada! Now that you can see how the regular expressions is really just a bunch of small parts that fit together, hopefully you can figure out how to both write your own regular expressions, and read other ones you come across.</p>
-
-<p>This is just the tip of the regex iceberg though. There is a whole lot more you can do with it that is much more than the span of this article. Play around with them, refer back to the cheat sheet, and see what you can come up with.</p>
-
-<p><strong>Edit</strong></p>
-
-<p>I realized there was a small problem with the regular expression above. While this work for most of our cases, there is the scenario of getting a number formatted like so: <code>123-45/6789</code> which the pattern would match, even though it is not in a valid format. I asked about this on <a href="http://stackoverflow.com/questions/9624081/matching-delimiters-with-regular-expressions/9624128">Stack Overflow</a> And learned about using <em>back references</em> for situations like this. you can use the syntax <code>\1</code> where 1 is the number of the sub pattern you want to reference. By doing so, you can make sure that the second delimiter matches the first. So our regular expression would now look like this:</p>
-
-<p><code>^[0-9]{3}(-|/)?[0-9]{2}\1?[0-9]{4}$</code></p>
 </div>
 
 
@@ -222,12 +186,12 @@ They can look like any of the following:
   
 
 
-<time datetime="2012-03-06T13:49:00-05:00" pubdate data-updated="true">Mar 6<span>th</span>, 2012</time>
+<time datetime="2014-06-06T14:34:00-04:00" pubdate data-updated="true">Jun 6<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/regular-expressions/'>regular expressions</a>
+    <a class='category' href='/blog/categories/self-publishers-journey/'>self publishers journey</a>, <a class='category' href='/blog/categories/writing/'>writing</a>
   
 </span>
 
@@ -236,7 +200,7 @@ They can look like any of the following:
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gsto.github.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions/" data-via="GSto" data-counturl="http://gsto.github.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gsto.github.com/blog/2014/06/06/the-self-publishers-journey/" data-via="GSto" data-counturl="http://gsto.github.com/blog/2014/06/06/the-self-publishers-journey/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -250,10 +214,8 @@ They can look like any of the following:
 
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter/" title="Previous Post: Setting Up a Template and Assets in CodeIgniter">&laquo; Setting Up a Template and Assets in CodeIgniter</a>
+        <a class="basic-alignment left" href="/blog/2014/06/02/learning-to-say-no/" title="Previous Post: Learning To Say No">&laquo; Learning To Say No</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/03/07/terminals-for-absolute-beginners-part-2/" title="Next Post: Terminals for Absolute Beginners: Part 2">Terminals for Absolute Beginners: Part 2 &raquo;</a>
       
     </p>
   </footer>

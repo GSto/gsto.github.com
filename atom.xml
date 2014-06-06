@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://gsto.github.com/atom.xml" rel="self"/>
   <link href="http://gsto.github.com/"/>
-  <updated>2014-06-03T09:50:04-04:00</updated>
+  <updated>2014-06-06T14:52:54-04:00</updated>
   <id>http://gsto.github.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,53 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Self Publisher's Journey]]></title>
+    <link href="http://gsto.github.com/blog/2014/06/06/the-self-publishers-journey/"/>
+    <updated>2014-06-06T14:34:00-04:00</updated>
+    <id>http://gsto.github.com/blog/2014/06/06/the-self-publishers-journey</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/cover.jpg" width="260"></p>
+
+<p>I&#8217;m working on self publishing and eBook in the coming months, and I wanted to document my journey and share it with you. I have enjoyed and been inspired by other writings such as <a href="http://groovehq.com/blog">Alex Turnbull documenting his ongoing journey to get to $100,000 recurring revenue</a>, and Nathan Barry&#8217;s <a href="http://nathanbarry.com/category/the-web-app-challenge/">&#8220;Web App in Six Months Challenge&#8221;</a>. There is nothing like publicly sharing your techniques and struggles in order to both share useful information with other people, and to keep myself accountable.</p>
+
+<!-- more -->
+
+
+<h3>The Story So Far</h3>
+
+<p>I think a lot of freelancers dream of finding ways to make money besides charging for their time. It could be by setting up recurring revenue, productizing their consulting services, or building a product they can sell individually. I decided to try what many before me have, and build a product. Heck, there is an <a href="http://chasingproduct.com">entire podcast</a> dedicated to the subject (which is really good, by the way).</p>
+
+<p>Being a web developer, of course my first thought was to build some form of SaaS application. Enough reading on the internet scared me off of that idea (for now): SaaS applications on average take two years before they bring in enough income to stand on their own, and I know from experience they can take months to develop. I had started a couple of ideas, but could never find the time to finish them. Then I found an article by Amy Hoy called <a href="http://unicornfree.com/2013/why-you-should-do-a-tiny-product-first">&#8220;Why you should build a tiny product first&#8221;</a> and it really resonated with me. It got me thinking about products that I could complete in 90 days or less. I liked writing, and based on several freelance sites I had read before, I knew that there was a lot of interest in starting to freelance, but a lot of people didn&#8217;t know where to begin.</p>
+
+<p>The tiny idea was also appealing because it would be a straight up easier way to launch a product. I have worked with enough small businesses and start-ups to know that launching a new business or product is <strong>hard</strong>. Really, REALLY hard. There is no reason to tackle new business ventures on hard mode, and I feel that if there is anything you can do to make things easier on yourself, you should do it. And it is much easier to write a book than build a piece of software, and it is a lot easier to convince someone to pay you $29 once instead of $29/month indefinitely.</p>
+
+<h3>The Freelance Start-up Guide</h3>
+
+<p>It was at this point, around the start of this year,  I decided to work on a book, then titled <strong>The Freelance Start-up Guide</strong>. It was going to be aimed at aspiring freelancers, and help them build a product from scratch. I started writing the book, and set up a mailing list. Initial response was a bit tepid on the mailing list, but there was some interest in the idea.</p>
+
+<h3>The First Big Hurdle</h3>
+
+<p>Around the start of February, I had a huge rush of client work, admittedly, more than I could handle. I knew something had to give, and I informed my tiny mailing list that I had shelved the project indefinitely. I knew at that time that I did not have any extra bandwidth, and had to cut work where ever I could.</p>
+
+<h3>The Real Tiniest Product</h3>
+
+<p>About a month ago, I decided to give building a mailing list a second try. I figured that I could build an audience before I built the product. Even if I didn&#8217;t finish that book, I would still have an audience, and that had value. I signed up for Nathan Barry&#8217;s <a href="http://www.convertkit.com">ConvertKit</a>, and during his ConvertKit academy, he gave me a valuable piece of advice: You can get a lot more email list subscriptions if you give users an incentive for signing up. I compiled some of my past blog articles, wrote some new content, and released <em><a href="http://glennstovall.com/books/freelance-pricing-handbook/">The Freelance Pricing Handbook</a></em>. This is a small, 32 page eBook that I gave away for free. I was able to grow my list from 15 to 100 subscribers overnight. You can read my case study on it&#8217;s release here.</p>
+
+<p>This so far has been the best move I&#8217;ve made. I always liked blogging, but it had been directionless before. Now instead of people reading my article, and that bringing me no value, I could capture readers and have a way to continue engaging with them. This meant that every post I had written in the past and every post I would write in the future was more valuable. Now they weren&#8217;t just articles, they were sales tools.</p>
+
+<h3>Version 2.0: Bootstrap Freelance</h3>
+
+<p>Now it&#8217;s June, and my client work has returned to levels where I don&#8217;t feel completely underwater. I decided that I wanted to pick up the project and continue working on it. At this point, I had almost 65 pages written, and an email list with a couple of hundred people on it, and I didn&#8217;t want to throw all of this away. I renamed the product <em>Bootstrap Freelance</em> and decided to pick the project back up. I decided that instead of just telling people how to get their first client, I wanted to add more content based on lessons I had learned on how to build up their business after that. I&#8217;m nervous about announcing a launch date based on what happened last time, but I am shooting for a release date sometime in August.</p>
+
+<h3>&#8230;And Here We Are</h3>
+
+<p>Now I have roughly 80 pages of a first draft, which is about 2/3rds of what I want it to be. I am working on spending more time working not only on the book, but on marketing before that. For example, setting up a landing page for the product, and starting to public write about the progress of the book. I plan on updating this blog with information about the process, along with helpful information from the book. I am also going to send updates every single Friday to anyone who wants to help me accountable. If you&#8217;d like to keep up with the progress on the book, enter your email address below:</p>
+
+<script src="https://app.convertkit.com/landing_pages/588.js?orient=vert"></script>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning To Say No]]></title>
@@ -1465,99 +1512,6 @@ Let&#8217;s set up our appointment reminder files. First let&#8217;s start by bu
 <p>I also have a small helper file I use in CodeIgniter to make formatting output easier. You can check it out over on Github.</p>
 
 <p><a href="https://github.com/GSto/cli_helper">cli_helper on Github</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Terminals for Absolute Beginners: Part 3]]></title>
-    <link href="http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/"/>
-    <updated>2012-10-30T15:03:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3</id>
-    <content type="html"><![CDATA[<h3>File Permissions</h3>
-
-<p><img class="left" src="http://gsto.github.com/images/articles/terminal.jpg" width="260"></p>
-
-<p> In this article, we&#8217;ll take a look at how file permissions works. We&#8217;ll cover how users, groups, and file permissions work in a UNIX-based system, and how they can be used to make using the terminal more secure.</p>
-
-<p> <!-- more --></p>
-
-<ul>
-<li>Read Part 1 <a href="http://gsto.github.com/blog/2012/02/15/terminals-for-absolute-beginners/">Directories and Commands</a></li>
-<li>Read Part 2 <a href="http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/">Manipulating Files</a></li>
-</ul>
-
-
-<h4>Users and Groups</h4>
-
-<h4>Understanding Permissions</h4>
-
-<p> Let&#8217;s begin by taking a second look at an example from lesson 1, the output on the command line when we ran the command <code>ls -la</code>:</p>
-
-<pre><code>drwxr-xr-x 70 grp   glenn    4096 2012-02-15 09:35 .
-drwxr-xr-x  3 root  root     4096 2011-03-15 16:55 ..
-drwxr-xr-x  2 grp   glenn    4096 2012-02-07 09:21 Pictures
-drwxr-xr-x  2 grp   glenn    4096 2011-08-23 15:29 Public
-drwxr-xr-x  5 grp   glenn    4096 2011-09-28 13:30 Rails
-drwxr-xr-x  6 grp   glenn    4096 2011-11-08 16:35 Repositories
-drwxr-xr-x 12 grp   glenn    4096 2012-01-15 17:09 Server
-drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Templates
-drwxrwxr-x  2 grp   glenn    4096 2011-08-11 08:46 Ubuntu One
-drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Videos
-</code></pre>
-
-<p>Now, what is of interest to us here is the first column. this is the list of <em>permissions</em> on a file or directory. if the permission is present, the letter is shown. if it is not, then there is a hyphen. so a directory with all permissions (anyone can do anything to it) would look like this:</p>
-
-<pre><code>drwxrwxrwx
-</code></pre>
-
-<p>the first letter is actually not a permission, but a flag telling us what kind of file it is, most commonly <code>d</code> for a directory and <code>-</code> for a regular file. Next you will notice that there is a repeating series of 3 letters: r, w, and x. these are short for <strong>R</strong>ead, <strong>W</strong>rite, and e<strong>X</strong>ecute. The first three letters refer to the permissions of the user that owns the file. The second three letters refer to the permissions of any users in the group that owns the file. The third set of letters repesent the permissions of all other users (these are commonly called <em>world permissions</em> or <em>other permissions</em>). So let&#8217;s look at a couple of examples and see what they mean:</p>
-
-<p><code>drwxr-xr-x</code> : The owner may read, write or execute this directory; everyone else may only read or execute it.</p>
-
-<p><code>-rw-r-----</code> : The owner may read or write to the file; people in the group have read-only access; no one else can do anything with it, and no one may execute it.</p>
-
-<p><code>-rwxrwxrwx</code> : Anyone can do anything to this file.</p>
-
-<h4>Octal Permissions</h4>
-
-<p>Permissions can also be represented numerically. These are called <em>Octal Permissions</em>, as they are represented in base 8. In octal permissions, a 1 represents permissions to execute, 2 represents permissions to write, and 4 represent permissions to read. Since all sums of these numbers are unique, we can now represent the rights of any user or group with one digit between 0 and 7:</p>
-
-<pre><code>| Number | Permissions |
-------------------------
-| 0      | ---         |
-| 1      | --x         |
-| 2      | -w-         |
-| 3      | -wx         |
-| 4      | r--         |
-| 5      | r-x         |
-| 6      | rw-         |
-| 7      | rwx         |
-------------------------
-</code></pre>
-
-<p>Now, we can use three digits to represent the permissions of a file. In a similar manner to above, the first number represents the user&#8217;s rights, the second number the groups, and the third represents the world permissions. Our previous examples can be written as such:</p>
-
-<pre><code>drwxr-xr-x  :   755
--rw-r-----  :   640
--rwxrwxrwx  :   777
-</code></pre>
-
-<h4>Manipulating Permissions</h4>
-
-<p>If we want to change the permissions of a file, there are three commands we can use. The first is called <code>chmod</code> and is used for manipulating the file permissions. The arguments for chmod are an octal number to set the new file permissions, and the name of a file. you can also use the <code>-R</code> flag if you want to recursively change all the permissions of files in a directory. Example:</p>
-
-<pre><code>chmod 777 file_name.txt
-</code></pre>
-
-<p>The second is <code>chown</code> , which is short for &#8220;change owner&#8221;. It is used to change ownership of a file. It takes arguments in a similar fashion to chmod, but instead of an octal number, it takes a username as an argument. Example:</p>
-
-<pre><code>chown glenn file_name.txt
-</code></pre>
-
-<p>The third is <code>chgrp</code>, which is short for &#8220;change group&#8221;. Again, this command works in a similar fashion to chown, except that this command changes the group ownership of a file instead of the user. Example:</p>
-
-<pre><code>chgrp psacln file_name.txt
-</code></pre>
 ]]></content>
   </entry>
   
