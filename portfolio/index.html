@@ -42,14 +42,19 @@ Wagglez is a mobile application available for the iPhone That promotes local dea
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 
+
+$(document).ready(function() {
    //Custom Event Tracking
 
    //ConvertKit Form Signup
    console.log("pre-event JavaScript Test");
-   $("#ck_subscribe_form").on('submit', function(e) {
+   
+   $('body').on('submit',".ck_subscribe_form", function(e) {
      console.log('testing google anayltics custom event');
      _gaq.push(['_trackEvent', 'Newsletter', 'Subscribe', 'Freelance Pricing Handbook']);
    });
+
+});
 
    //TODO: Contact Form Submissions
    
