@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: writing | Glenn Stovall]]></title>
-  <link href="http://gsto.github.com/blog/categories/writing/atom.xml" rel="self"/>
-  <link href="http://gsto.github.com/"/>
-  <updated>2014-06-12T14:19:02-04:00</updated>
-  <id>http://gsto.github.com/</id>
+  <link href="http://glennstovall.com/blog/categories/writing/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-06-12T14:24:12-04:00</updated>
+  <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Self Publisher's Journey]]></title>
-    <link href="http://gsto.github.com/blog/2014/06/06/the-self-publishers-journey/"/>
+    <link href="http://glennstovall.com/blog/2014/06/06/the-self-publishers-journey/"/>
     <updated>2014-06-06T14:34:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2014/06/06/the-self-publishers-journey</id>
+    <id>http://glennstovall.com/blog/2014/06/06/the-self-publishers-journey</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/cover.jpg" width="260"></p>
 
 <p>I'm working on self publishing and eBook in the coming months, and I wanted to document my journey and share it with you. I have enjoyed and been inspired by other writings such as <a href="http://groovehq.com/blog">Alex Turnbull documenting his ongoing journey to get to $100,000 recurring revenue</a>, and Nathan Barry's <a href="http://nathanbarry.com/category/the-web-app-challenge/">"Web App in Six Months Challenge"</a>. There is nothing like publicly sharing your techniques and struggles in order to both share useful information with other people, and to keep myself accountable.</p>
@@ -62,9 +62,9 @@
   
   <entry>
     <title type="html"><![CDATA[Personal vs. Professional Blogging]]></title>
-    <link href="http://gsto.github.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/"/>
+    <link href="http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/"/>
     <updated>2014-03-05T14:42:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2014/03/05/personal-blogging-vs-professional-blogging</id>
+    <id>http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/articles/saddington.jpeg" width="260"></p>
 
 <p>I had the pleasure of seeing <a href="http://john.do">John Saddington</a> give a talk about the benefits of blogging at a <a href="http://www.meetup.com/transform-athens/">Transform Athens</a> Athens event. The talk was about the benefits of blogging, and while it reinvigorated my interest in writing and publishing. It brought up a tricky question. I have a blog under my personal name, <a href="http://www.glennstovall.com">Glenn Stovall</a> and a company blog, <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Where should I publish? Why should I publish there? What are the pros and cons of blogging under a personal brand vs. a professional brand?</p>
@@ -99,9 +99,9 @@
   
   <entry>
     <title type="html"><![CDATA[Blogging With Octopress]]></title>
-    <link href="http://gsto.github.com/blog/2012/02/11/blogging-with-octopress/"/>
+    <link href="http://glennstovall.com/blog/2012/02/11/blogging-with-octopress/"/>
     <updated>2012-02-11T10:00:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2012/02/11/blogging-with-octopress</id>
+    <id>http://glennstovall.com/blog/2012/02/11/blogging-with-octopress</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/articles/blog_with_octopress.png" width="260">
 If you're reading this, then I've successfully got my octopress blog up and running on Github pages. Why the switch to octopress?</p>
 

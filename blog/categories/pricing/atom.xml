@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: pricing | Glenn Stovall]]></title>
-  <link href="http://gsto.github.com/blog/categories/pricing/atom.xml" rel="self"/>
-  <link href="http://gsto.github.com/"/>
-  <updated>2014-06-12T14:19:02-04:00</updated>
-  <id>http://gsto.github.com/</id>
+  <link href="http://glennstovall.com/blog/categories/pricing/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-06-12T14:24:12-04:00</updated>
+  <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Presenting Value]]></title>
-    <link href="http://gsto.github.com/blog/2014/04/19/presenting-value-to-clients/"/>
+    <link href="http://glennstovall.com/blog/2014/04/19/presenting-value-to-clients/"/>
     <updated>2014-04-19T16:11:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2014/04/19/presenting-value-to-clients</id>
+    <id>http://glennstovall.com/blog/2014/04/19/presenting-value-to-clients</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/articles/wealth.jpg" width="260"></p>
 
 <p>When selling clients on your services, how you position yourself is important. You want clients to see you as an investment, not an expense. In order to accomplish this, you need to make sure you are able to clearly state and justify the value you can bring to a client.</p>
@@ -85,9 +85,9 @@
   
   <entry>
     <title type="html"><![CDATA[How to bill Daily or Weekly]]></title>
-    <link href="http://gsto.github.com/blog/2014/02/21/how-to-bill-daily-or-weekly/"/>
+    <link href="http://glennstovall.com/blog/2014/02/21/how-to-bill-daily-or-weekly/"/>
     <updated>2014-02-21T16:26:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2014/02/21/how-to-bill-daily-or-weekly</id>
+    <id>http://glennstovall.com/blog/2014/02/21/how-to-bill-daily-or-weekly</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/articles/calendar.jpg" width="260"></p>
 
 <p>When it comes to freelancing, you may think you only have two options when it comes to how you bill your clients: You can bill by the hour, or you can bill by the project. But these aren't your only options, and in many cases they are not your best ones.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: regular expressions | Glenn Stovall]]></title>
-  <link href="http://gsto.github.com/blog/categories/regular-expressions/atom.xml" rel="self"/>
-  <link href="http://gsto.github.com/"/>
-  <updated>2014-06-12T14:19:02-04:00</updated>
-  <id>http://gsto.github.com/</id>
+  <link href="http://glennstovall.com/blog/categories/regular-expressions/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-06-12T14:24:12-04:00</updated>
+  <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[My Eureka Moment With Regular Expressions]]></title>
-    <link href="http://gsto.github.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions/"/>
+    <link href="http://glennstovall.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions/"/>
     <updated>2012-03-06T13:49:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions</id>
+    <id>http://glennstovall.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/articles/my_eureka_moment.jpg">
 Regular expressions are a tough cookie for most programmers to figure out. They are <em>terrifying</em> to look at with their daunting syntax. There is also nothing quite like regular expressions anywhere in programming. programmers may learn to hack together basic regex expressions, or how to cut and paste some they find online for their needs, but it can be tricky to get a real grasp of the concept. Here I'd like to explain the line of thinking that finally led to me grokking regex.</p>
 

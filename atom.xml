@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Glenn Stovall]]></title>
-  <link href="http://gsto.github.com/atom.xml" rel="self"/>
-  <link href="http://gsto.github.com/"/>
-  <updated>2014-06-12T14:19:02-04:00</updated>
-  <id>http://gsto.github.com/</id>
+  <link href="http://glennstovall.com/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-06-12T14:24:12-04:00</updated>
+  <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
     
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[The Self Publisher's Journey]]></title>
-    <link href="http://gsto.github.com/blog/2014/06/06/the-self-publishers-journey/"/>
+    <link href="http://glennstovall.com/blog/2014/06/06/the-self-publishers-journey/"/>
     <updated>2014-06-06T14:34:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2014/06/06/the-self-publishers-journey</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/cover.jpg" width="260"></p>
+    <id>http://glennstovall.com/blog/2014/06/06/the-self-publishers-journey</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/cover.jpg" width="260"></p>
 
 <p>I&#8217;m working on self publishing and eBook in the coming months, and I wanted to document my journey and share it with you. I have enjoyed and been inspired by other writings such as <a href="http://groovehq.com/blog">Alex Turnbull documenting his ongoing journey to get to $100,000 recurring revenue</a>, and Nathan Barry&#8217;s <a href="http://nathanbarry.com/category/the-web-app-challenge/">&#8220;Web App in Six Months Challenge&#8221;</a>. There is nothing like publicly sharing your techniques and struggles in order to both share useful information with other people, and to keep myself accountable.</p>
 
@@ -62,10 +62,10 @@
   
   <entry>
     <title type="html"><![CDATA[Learning To Say No]]></title>
-    <link href="http://gsto.github.com/blog/2014/06/02/learning-to-say-no/"/>
+    <link href="http://glennstovall.com/blog/2014/06/02/learning-to-say-no/"/>
     <updated>2014-06-02T16:27:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2014/06/02/learning-to-say-no</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/no.jpeg" width="260"></p>
+    <id>http://glennstovall.com/blog/2014/06/02/learning-to-say-no</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/no.jpeg" width="260"></p>
 
 <p>I just looked in the mirror. I had several more gray hairs in my beard than I had before. I had taken on more client work than I could handle, and had been working long nights and weekends. I knew I was tired and stressed, but it was a real wake up call to see the physical effects of burnout, in addition to the mental. It was at that moment I realized something had to change with how I was managing my business. If you are a freelancer, You have to learn how to say no. Your business, just like a product, is going to be designed. If you don&#8217;t carefully, mindfully design your own business, then other people will do it for you. And they won&#8217;t have your best interest at heart.</p>
 
@@ -98,7 +98,7 @@
 
 <p>But by saying no to these things, we are enabling ourselves to say &#8220;Yes&#8221; to things we <strong>really</strong> love. Here is a chart from a new book called <a href="http://gregmckeown.com/essentialism-the-disciplined-pursuit-of-less/">&#8220;Essentialism: The Disciplined Pursuit of Less&#8221;</a> That sums this philosophy up perfectly. Instead of sending our energy out in a hundred directions, and feeling like we aren&#8217;t making any progress, By eliminating the nonessential we can focus our energy in a direction that really matters.</p>
 
-<p><img src="http://gsto.github.com/images/essentialism.jpg"></p>
+<p><img src="http://glennstovall.com/images/essentialism.jpg"></p>
 
 <p>It can be scary, but once you get used to it, the feeling of saying no is incredibly freeing.</p>
 
@@ -111,9 +111,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Building Blocks of Business]]></title>
-    <link href="http://gsto.github.com/blog/2014/05/30/the-building-blocks-of-business/"/>
+    <link href="http://glennstovall.com/blog/2014/05/30/the-building-blocks-of-business/"/>
     <updated>2014-05-30T13:01:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2014/05/30/the-building-blocks-of-business</id>
+    <id>http://glennstovall.com/blog/2014/05/30/the-building-blocks-of-business</id>
     <content type="html"><![CDATA[<blockquote><p>It’s easy to look at successful tech companies — ones that have dozens of products like Google, tens of thousands of subscribers like Basecamp, or millions of subscribers such as Facebook. But these kinds of successes didn’t happen overnight. They happened one small step at a time.</p></blockquote>
 
 <p>I was recently published in my local paper, The Athens Banner Herald. You can read the full article <a href="http://onlineathens.com/business/2014-05-16/stovall-building-blocks-business">here</a>.</p>
@@ -122,10 +122,10 @@
   
   <entry>
     <title type="html"><![CDATA[Freelance Pricing Handbook Launch Post-mortem]]></title>
-    <link href="http://gsto.github.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem/"/>
+    <link href="http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem/"/>
     <updated>2014-05-09T10:31:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/freelance_pricing_handbook.png" width="260"></p>
+    <id>http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/freelance_pricing_handbook.png" width="260"></p>
 
 <p>Whenever I finish a product, I like to write a post-mortem. A post-mortem answers a few important questions: What w went well? What went wrong? What could be done better next time? I usually keep these to myself, but this time I wanted to share. Building an email list is something every business should be doing, and I wanted to share the specific techniques I used in order to increase the size of a list 500% in 2 days.</p>
 
@@ -195,10 +195,10 @@ If the form above doesn&#8217;t work, you can get it <a href="https://app.conver
   
   <entry>
     <title type="html"><![CDATA[How to Test Controller Concerns in Rails 4]]></title>
-    <link href="http://gsto.github.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/"/>
+    <link href="http://glennstovall.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/"/>
     <updated>2014-05-06T15:06:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/ruby_on_rails.jpg" width="260"></p>
+    <id>http://glennstovall.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/ruby_on_rails.jpg" width="260"></p>
 
 <p><a href="http://api.rubyonrails.org/classes/ActiveSupport/Concern.html">Concerns</a> are a new feature that was added in Rails 4. They allow to clean up code in your models and controllers. They also allow you to share functionality between models or controllers. However, they can be a bit tricky to test in isolation. In this article I want to show how you can test your controller concerns in isolation.</p>
 
@@ -277,10 +277,10 @@ If the form above doesn&#8217;t work, you can get it <a href="https://app.conver
   
   <entry>
     <title type="html"><![CDATA[Announcing The Freelance Pricing Handbook]]></title>
-    <link href="http://gsto.github.com/blog/2014/04/29/announcing-the-freelance-pricing-handbook/"/>
+    <link href="http://glennstovall.com/blog/2014/04/29/announcing-the-freelance-pricing-handbook/"/>
     <updated>2014-04-29T08:47:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2014/04/29/announcing-the-freelance-pricing-handbook</id>
-    <content type="html"><![CDATA[<p> <img class="left" src="http://gsto.github.com/images/freelance_pricing_handbook.png" width="260"></p>
+    <id>http://glennstovall.com/blog/2014/04/29/announcing-the-freelance-pricing-handbook</id>
+    <content type="html"><![CDATA[<p> <img class="left" src="http://glennstovall.com/images/freelance_pricing_handbook.png" width="260"></p>
 
 <p> Today I&#8217;m proud to announce a new free eBook guide. The book is called the <em>Freelance Pricing Handbook</em>, and it&#8217;s designed to help freelancers find their perfect rate. The most common question I hear from current and aspiring freelancers is &#8220;How much should I charge?&#8221; This book sets out to answer this question.</p>
 
@@ -300,10 +300,10 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
   
   <entry>
     <title type="html"><![CDATA[Presenting Value]]></title>
-    <link href="http://gsto.github.com/blog/2014/04/19/presenting-value-to-clients/"/>
+    <link href="http://glennstovall.com/blog/2014/04/19/presenting-value-to-clients/"/>
     <updated>2014-04-19T16:11:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2014/04/19/presenting-value-to-clients</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/wealth.jpg" width="260"></p>
+    <id>http://glennstovall.com/blog/2014/04/19/presenting-value-to-clients</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/wealth.jpg" width="260"></p>
 
 <p>When selling clients on your services, how you position yourself is important. You want clients to see you as an investment, not an expense. In order to accomplish this, you need to make sure you are able to clearly state and justify the value you can bring to a client.</p>
 
@@ -370,10 +370,10 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
   
   <entry>
     <title type="html"><![CDATA[10 Resources that shaped my career]]></title>
-    <link href="http://gsto.github.com/blog/2014/04/03/10-resources-that-shaped-my-career/"/>
+    <link href="http://glennstovall.com/blog/2014/04/03/10-resources-that-shaped-my-career/"/>
     <updated>2014-04-03T20:50:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2014/04/03/10-resources-that-shaped-my-career</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/library.jpg" width="260"></p>
+    <id>http://glennstovall.com/blog/2014/04/03/10-resources-that-shaped-my-career</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/library.jpg" width="260"></p>
 
 <p>There is amazing amount of resource available on the internet if you know where to look. I&#8217;ve realized that over the past year, there are some articles, pod casts, books, or videos that have had a huge impact on my view and approach to my business. I&#8217;ve had several people ask me how I came to conclusions I have about how I run my business, and how I execute on them. I wanted to share 10 links that are all free, and have all provided me with exceptional value.</p>
 
@@ -443,9 +443,9 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
   
   <entry>
     <title type="html"><![CDATA[How Letting Go Of Money Made me More of It]]></title>
-    <link href="http://gsto.github.com/blog/2014/03/14/how-letting-go-of-money-made-me-more-of-it/"/>
+    <link href="http://glennstovall.com/blog/2014/03/14/how-letting-go-of-money-made-me-more-of-it/"/>
     <updated>2014-03-14T18:34:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2014/03/14/how-letting-go-of-money-made-me-more-of-it</id>
+    <id>http://glennstovall.com/blog/2014/03/14/how-letting-go-of-money-made-me-more-of-it</id>
     <content type="html"><![CDATA[<p><em><strong>Note:</strong> This Story was originally <a href="https://medium.com/p/6c9c9f08b552/">posted on Medium on October 21, 2013</a>. But since Medium just added a new tool for <a href="https://medium.com/help-center/3eaed64aed8a">Embedding Posts on your own site</a>, I wanted to try it out.</em></p>
 
 <script async src="https://static.medium.com/embed.js"></script>
@@ -457,10 +457,10 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
   
   <entry>
     <title type="html"><![CDATA[Take Out The Tech]]></title>
-    <link href="http://gsto.github.com/blog/2014/03/05/take-out-the-tech/"/>
+    <link href="http://glennstovall.com/blog/2014/03/05/take-out-the-tech/"/>
     <updated>2014-03-05T15:25:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2014/03/05/take-out-the-tech</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/make_fire.jpg" width="260"></p>
+    <id>http://glennstovall.com/blog/2014/03/05/take-out-the-tech</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/make_fire.jpg" width="260"></p>
 
 <p>If you are a freelance developer, designer, photographer, or even a freelance sheep sheerer, it&#8217;s easy to get caught up in what it is you do, versus why it is we actually do it. More important than why we do it, is why people are willing to pay us good money for what we do. In this article I&#8217;d like to take a look at why I decided to re-position my services, and most important of all, get you to stop talking like a nerd because it&#8217;s costing you money and sales.</p>
 
@@ -507,10 +507,10 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
   
   <entry>
     <title type="html"><![CDATA[Personal vs. Professional Blogging]]></title>
-    <link href="http://gsto.github.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/"/>
+    <link href="http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/"/>
     <updated>2014-03-05T14:42:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2014/03/05/personal-blogging-vs-professional-blogging</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/saddington.jpeg" width="260"></p>
+    <id>http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/saddington.jpeg" width="260"></p>
 
 <p>I had the pleasure of seeing <a href="http://john.do">John Saddington</a> give a talk about the benefits of blogging at a <a href="http://www.meetup.com/transform-athens/">Transform Athens</a> Athens event. The talk was about the benefits of blogging, and while it reinvigorated my interest in writing and publishing. It brought up a tricky question. I have a blog under my personal name, <a href="http://www.glennstovall.com">Glenn Stovall</a> and a company blog, <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Where should I publish? Why should I publish there? What are the pros and cons of blogging under a personal brand vs. a professional brand?</p>
 
@@ -544,10 +544,10 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
   
   <entry>
     <title type="html"><![CDATA[How to bill Daily or Weekly]]></title>
-    <link href="http://gsto.github.com/blog/2014/02/21/how-to-bill-daily-or-weekly/"/>
+    <link href="http://glennstovall.com/blog/2014/02/21/how-to-bill-daily-or-weekly/"/>
     <updated>2014-02-21T16:26:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2014/02/21/how-to-bill-daily-or-weekly</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/calendar.jpg" width="260"></p>
+    <id>http://glennstovall.com/blog/2014/02/21/how-to-bill-daily-or-weekly</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/calendar.jpg" width="260"></p>
 
 <p>When it comes to freelancing, you may think you only have two options when it comes to how you bill your clients: You can bill by the hour, or you can bill by the project. But these aren&#8217;t your only options, and in many cases they are not your best ones.</p>
 
@@ -599,10 +599,10 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
   
   <entry>
     <title type="html"><![CDATA[Other Writing Around the Web]]></title>
-    <link href="http://gsto.github.com/blog/2014/02/21/other-writing-around-the-web/"/>
+    <link href="http://glennstovall.com/blog/2014/02/21/other-writing-around-the-web/"/>
     <updated>2014-02-21T16:11:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2014/02/21/other-writing-around-the-web</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/writing.jpg" width="260"></p>
+    <id>http://glennstovall.com/blog/2014/02/21/other-writing-around-the-web</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/writing.jpg" width="260"></p>
 
 <p>I haven&#8217;t spent much time writing content for this blog, but I have been doing some writing on other sites. Here are some of my posts from other sites:</p>
 
@@ -622,10 +622,10 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
   
   <entry>
     <title type="html"><![CDATA[Announcing Concordant Solutions]]></title>
-    <link href="http://gsto.github.com/blog/2013/12/10/announcing-concordant-solutions/"/>
+    <link href="http://glennstovall.com/blog/2013/12/10/announcing-concordant-solutions/"/>
     <updated>2013-12-10T11:09:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2013/12/10/announcing-concordant-solutions</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/santamegaphone.png" width="260"></p>
+    <id>http://glennstovall.com/blog/2013/12/10/announcing-concordant-solutions</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/santamegaphone.png" width="260"></p>
 
 <p>As a consultant, it&#8217;s important to think of what you are doing as a business, and not just as you as a person. Having said that, I&#8217;ve set up a new company name for my services, <strong>Concordant Solutions</strong>.</p>
 
@@ -645,10 +645,10 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
   
   <entry>
     <title type="html"><![CDATA[AngularJS: an Overview]]></title>
-    <link href="http://gsto.github.com/blog/2013/06/27/angularjs-an-overview/"/>
+    <link href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/"/>
     <updated>2013-06-27T12:33:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2013/06/27/angularjs-an-overview</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/angular.png" width="260"></p>
+    <id>http://glennstovall.com/blog/2013/06/27/angularjs-an-overview</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/angular.png" width="260"></p>
 
 <p>AngularJS is a JavaScript framework made by Google for building complex client-side applications. Angular&#8217;s killer feature is &#8216;directives&#8217; which allow you to extend HTML by creating your own tags and attributes. Angular projects have a somewhat different structure than other JavaScript MVC frameworks, but it can be highly modular and easy to maintain once you understand the structure. Let&#8217;s take a look at the main components of AngularJS and how they work, and why you should strongly consider Angular for your next project.</p>
 
@@ -985,10 +985,10 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
   
   <entry>
     <title type="html"><![CDATA[reading on wealth and programming]]></title>
-    <link href="http://gsto.github.com/blog/2013/06/07/reading-on-wealth-and-programming/"/>
+    <link href="http://glennstovall.com/blog/2013/06/07/reading-on-wealth-and-programming/"/>
     <updated>2013-06-07T08:10:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2013/06/07/reading-on-wealth-and-programming</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/wealth.jpg" width="260"></p>
+    <id>http://glennstovall.com/blog/2013/06/07/reading-on-wealth-and-programming</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/wealth.jpg" width="260"></p>
 
 <p>The world of software development is one that runs on abstractions. Developers are used to working in this world when it comes to software, but when these abstractions start to <a href="http://www.joelonsoftware.com/articles/LeakyAbstractions.html">Leak Out</a> into the real world it can become harder to manage. One of the trickier abstractions is the one between software development and wealth. It is clear that programming provides some sort of value, or else people would not be so eager to pay for it. It is a complex subject, and one I am not equipped to get into in the depth it needs, but instead I wanted to share a couple articles and a book I have read recently that shed some light on the subject.</p>
 
@@ -1026,10 +1026,10 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
   
   <entry>
     <title type="html"><![CDATA[How I Use Git]]></title>
-    <link href="http://gsto.github.com/blog/2013/03/15/how-i-use-git/"/>
+    <link href="http://glennstovall.com/blog/2013/03/15/how-i-use-git/"/>
     <updated>2013-03-15T09:35:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2013/03/15/how-i-use-git</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/git.png" width="260"></p>
+    <id>http://glennstovall.com/blog/2013/03/15/how-i-use-git</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/git.png" width="260"></p>
 
 <p><a href="http://git-scm.com/">git</a> is a very powerful and flexible tool.  With this power and flexibility comes a daunting amount of choices to make in how to manage your code with it. Here is the current setup I&#8217;ve used on both personal solo projects and professional jobs with other developers that has worked for me and saved me a lot of headaches.</p>
 
@@ -1138,10 +1138,10 @@ git push production master
   
   <entry>
     <title type="html"><![CDATA[Terminals for Aboslute Beginners Part 4]]></title>
-    <link href="http://gsto.github.com/blog/2013/03/04/terminals-for-aboslute-beginners-part-4-searching/"/>
+    <link href="http://glennstovall.com/blog/2013/03/04/terminals-for-aboslute-beginners-part-4-searching/"/>
     <updated>2013-03-04T06:51:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2013/03/04/terminals-for-aboslute-beginners-part-4-searching</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/terminal.jpg" width="260"></p>
+    <id>http://glennstovall.com/blog/2013/03/04/terminals-for-aboslute-beginners-part-4-searching</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/terminal.jpg" width="260"></p>
 
 <h3>Searching</h3>
 
@@ -1151,9 +1151,9 @@ git push production master
 
 
 <ul>
-<li>Read Part 1 <a href="http://gsto.github.com/blog/2012/02/15/terminals-for-absolute-beginners/">Directories and Commands</a></li>
-<li>Read Part 2 <a href="http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/">Manipulating Files</a></li>
-<li>Read Part 3 <a href="http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/">File Permissions</a></li>
+<li>Read Part 1 <a href="http://glennstovall.com/blog/2012/02/15/terminals-for-absolute-beginners/">Directories and Commands</a></li>
+<li>Read Part 2 <a href="http://glennstovall.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/">Manipulating Files</a></li>
+<li>Read Part 3 <a href="http://glennstovall.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/">File Permissions</a></li>
 </ul>
 
 
@@ -1188,7 +1188,7 @@ git push production master
 
 <p>This is probably the most common search you will have to use, which can search the contents of files. This tool is called <code>grep</code>. It is an acronym for &#8216;General Regular Expression Parser&#8217;. I could write an entire article on grep. In fact, <a href="http://www.amazon.com/Grep-Pocket-Reference-OReilly/dp/0596153600/ref=sr_1_1?ie=UTF8&amp;qid=1362369051&amp;sr=8-1&amp;keywords=grep">entire books</a> have been written on the subject  but here I will just try to give you a brief overview of what grep can do.</p>
 
-<p> The command <code>grep</code> takes two arguments: the query string we are searching for, and the file pattern we will be searching through. The query string is a <a href="http://gsto.github.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions/">regular expression</a>, and the file pattern is the name of a file or directory, or a string with wildcards and other special characters. In a simple example, let&#8217;s say we have a file named <code>hello.rb</code> and we want to find where the line that says &#8220;puts &#8216;hello, world&#8217; is.</p>
+<p> The command <code>grep</code> takes two arguments: the query string we are searching for, and the file pattern we will be searching through. The query string is a <a href="http://glennstovall.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions/">regular expression</a>, and the file pattern is the name of a file or directory, or a string with wildcards and other special characters. In a simple example, let&#8217;s say we have a file named <code>hello.rb</code> and we want to find where the line that says &#8220;puts &#8216;hello, world&#8217; is.</p>
 
 <pre><code>grep "puts 'hello, world'" hello.rb
 </code></pre>
@@ -1216,9 +1216,9 @@ git push production master
   
   <entry>
     <title type="html"><![CDATA[5 Tips for More Accurate Estimates]]></title>
-    <link href="http://gsto.github.com/blog/2013/02/18/5-tips-for-more-accurate-estimates/"/>
+    <link href="http://glennstovall.com/blog/2013/02/18/5-tips-for-more-accurate-estimates/"/>
     <updated>2013-02-18T15:11:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2013/02/18/5-tips-for-more-accurate-estimates</id>
+    <id>http://glennstovall.com/blog/2013/02/18/5-tips-for-more-accurate-estimates</id>
     <content type="html"><![CDATA[<p>Time estimation is one of the most difficult tasks for developers to do accurately. Programming constantly involves solving never before seen problems and dealing with incomplete information. It can often feel as if someone is asking you &#8216;how long is a piece of string?&#8217; with no further information or tools. And since estimating is often necessary for project planning and billing, it&#8217;s something that programmers cannot avoid,  and can be disastrous if gotten wrong. Here are five tips to help you improve your ability to estimate.</p>
 
 <!--more-->
@@ -1256,10 +1256,10 @@ git push production master
   
   <entry>
     <title type="html"><![CDATA[Writing Cron Jobs and Command Line Scripts in CodeIgniter]]></title>
-    <link href="http://gsto.github.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/"/>
+    <link href="http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/"/>
     <updated>2013-01-07T23:58:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://gsto.github.com/images/articles/codeigniter.jpg" width="260">
+    <id>http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/codeigniter.jpg" width="260">
 Building a command line interface into your application can be a way to add extra utility to you application. Adding cron jobs (a.k.a. scheduled tasks) to your CodeIgniter application can provide extra utility. In this article we&#8217;ll show you how to set up both in a CodeIgniter application by writing a simple appointment reminder, which will remind people if they have an appointment scheduled a day in advance.</p>
 
 <!-- more -->

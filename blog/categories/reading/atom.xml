@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: reading | Glenn Stovall]]></title>
-  <link href="http://gsto.github.com/blog/categories/reading/atom.xml" rel="self"/>
-  <link href="http://gsto.github.com/"/>
-  <updated>2014-06-12T14:19:02-04:00</updated>
-  <id>http://gsto.github.com/</id>
+  <link href="http://glennstovall.com/blog/categories/reading/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-06-12T14:24:12-04:00</updated>
+  <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[reading on wealth and programming]]></title>
-    <link href="http://gsto.github.com/blog/2013/06/07/reading-on-wealth-and-programming/"/>
+    <link href="http://glennstovall.com/blog/2013/06/07/reading-on-wealth-and-programming/"/>
     <updated>2013-06-07T08:10:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2013/06/07/reading-on-wealth-and-programming</id>
+    <id>http://glennstovall.com/blog/2013/06/07/reading-on-wealth-and-programming</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/articles/wealth.jpg" width="260"></p>
 
 <p>The world of software development is one that runs on abstractions. Developers are used to working in this world when it comes to software, but when these abstractions start to <a href="http://www.joelonsoftware.com/articles/LeakyAbstractions.html">Leak Out</a> into the real world it can become harder to manage. One of the trickier abstractions is the one between software development and wealth. It is clear that programming provides some sort of value, or else people would not be so eager to pay for it. It is a complex subject, and one I am not equipped to get into in the depth it needs, but instead I wanted to share a couple articles and a book I have read recently that shed some light on the subject.</p>

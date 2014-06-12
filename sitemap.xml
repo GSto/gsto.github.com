@@ -1,175 +1,179 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://gsto.github.com/blog/2012/02/11/blogging-with-octopress/</loc>
+        <loc>http://glennstovall.com/blog/2012/02/11/blogging-with-octopress/</loc>
         <lastmod>2014-02-02T10:14:43-05:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2012/02/15/terminals-for-absolute-beginners/</loc>
+        <loc>http://glennstovall.com/blog/2012/02/15/terminals-for-absolute-beginners/</loc>
         <lastmod>2014-02-02T10:14:43-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://gsto.github.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter/
+            http://glennstovall.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter/
         </loc>
         <lastmod>2014-02-02T10:14:43-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://gsto.github.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions/
+            http://glennstovall.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions/
         </loc>
-        <lastmod>2014-02-02T10:14:43-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://gsto.github.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/</loc>
         <lastmod>2014-02-02T10:14:43-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://gsto.github.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/
+            http://glennstovall.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/
         </loc>
-        <lastmod>2014-02-02T10:14:43-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://gsto.github.com/blog/2012/07/04/how-to-add-a-contact-form-to-octopress/</loc>
-        <lastmod>2014-02-02T10:14:43-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://gsto.github.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/</loc>
         <lastmod>2014-02-02T10:14:43-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://gsto.github.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/
+            http://glennstovall.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/
         </loc>
         <lastmod>2014-02-02T10:14:43-05:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2013/02/18/5-tips-for-more-accurate-estimates/</loc>
+        <loc>http://glennstovall.com/blog/2012/07/04/how-to-add-a-contact-form-to-octopress/</loc>
+        <lastmod>2014-02-02T10:14:43-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://glennstovall.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/
+        </loc>
+        <lastmod>2014-02-02T10:14:43-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/
+        </loc>
+        <lastmod>2014-02-02T10:14:43-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://glennstovall.com/blog/2013/02/18/5-tips-for-more-accurate-estimates/</loc>
         <lastmod>2014-05-04T12:41:51-04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://gsto.github.com/blog/2013/03/04/terminals-for-aboslute-beginners-part-4-searching/
+            http://glennstovall.com/blog/2013/03/04/terminals-for-aboslute-beginners-part-4-searching/
         </loc>
         <lastmod>2014-02-02T10:14:43-05:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2013/03/15/how-i-use-git/</loc>
+        <loc>http://glennstovall.com/blog/2013/03/15/how-i-use-git/</loc>
         <lastmod>2014-02-02T10:14:43-05:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2013/06/07/reading-on-wealth-and-programming/</loc>
+        <loc>http://glennstovall.com/blog/2013/06/07/reading-on-wealth-and-programming/</loc>
         <lastmod>2014-05-04T12:42:40-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2013/06/27/angularjs-an-overview/</loc>
+        <loc>http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/</loc>
         <lastmod>2014-05-04T12:42:47-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2013/12/10/announcing-concordant-solutions/</loc>
+        <loc>http://glennstovall.com/blog/2013/12/10/announcing-concordant-solutions/</loc>
         <lastmod>2014-02-22T08:41:02-05:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2014/02/21/other-writing-around-the-web/</loc>
+        <loc>http://glennstovall.com/blog/2014/02/21/other-writing-around-the-web/</loc>
         <lastmod>2014-02-22T08:37:35-05:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2014/02/21/how-to-bill-daily-or-weekly/</loc>
+        <loc>http://glennstovall.com/blog/2014/02/21/how-to-bill-daily-or-weekly/</loc>
         <lastmod>2014-05-04T12:42:53-04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://gsto.github.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/
+            http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/
         </loc>
         <lastmod>2014-05-04T12:42:59-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2014/03/05/take-out-the-tech/</loc>
+        <loc>http://glennstovall.com/blog/2014/03/05/take-out-the-tech/</loc>
         <lastmod>2014-05-04T12:43:07-04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://gsto.github.com/blog/2014/03/14/how-letting-go-of-money-made-me-more-of-it/
+            http://glennstovall.com/blog/2014/03/14/how-letting-go-of-money-made-me-more-of-it/
         </loc>
         <lastmod>2014-03-14T18:36:13-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2014/04/03/10-resources-that-shaped-my-career/</loc>
+        <loc>http://glennstovall.com/blog/2014/04/03/10-resources-that-shaped-my-career/</loc>
         <lastmod>2014-05-04T12:43:14-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2014/04/19/presenting-value-to-clients/</loc>
+        <loc>http://glennstovall.com/blog/2014/04/19/presenting-value-to-clients/</loc>
         <lastmod>2014-05-04T12:43:20-04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://gsto.github.com/blog/2014/04/29/announcing-the-freelance-pricing-handbook/
+            http://glennstovall.com/blog/2014/04/29/announcing-the-freelance-pricing-handbook/
         </loc>
         <lastmod>2014-05-04T12:43:26-04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://gsto.github.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/
+            http://glennstovall.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/
         </loc>
         <lastmod>2014-05-06T15:26:18-04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://gsto.github.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem/
+            http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem/
         </loc>
         <lastmod>2014-05-09T10:42:39-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2014/05/30/the-building-blocks-of-business/</loc>
+        <loc>http://glennstovall.com/blog/2014/05/30/the-building-blocks-of-business/</loc>
         <lastmod>2014-05-30T13:02:34-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2014/06/02/learning-to-say-no/</loc>
+        <loc>http://glennstovall.com/blog/2014/06/02/learning-to-say-no/</loc>
         <lastmod>2014-06-03T09:49:40-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/2014/06/06/the-self-publishers-journey/</loc>
+        <loc>http://glennstovall.com/blog/2014/06/06/the-self-publishers-journey/</loc>
         <lastmod>2014-06-06T14:50:49-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/about/</loc>
+        <loc>http://glennstovall.com/about/</loc>
         <lastmod>2013-07-07T16:30:56-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/archives/</loc>
+        <loc>http://glennstovall.com/blog/archives/</loc>
         <lastmod>2014-06-06T14:50:49-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/blog/</loc>
+        <loc>http://glennstovall.com/blog/</loc>
         <lastmod>2014-06-06T14:50:49-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/books/freelance-pricing-handbook/</loc>
+        <loc>http://glennstovall.com/books/freelance-pricing-handbook/</loc>
         <lastmod>2014-05-04T12:39:32-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/books/</loc>
+        <loc>http://glennstovall.com/books/</loc>
         <lastmod>2014-04-28T20:34:13-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/contact/</loc>
+        <loc>http://glennstovall.com/contact/</loc>
         <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/</loc>
+        <loc>http://glennstovall.com/</loc>
         <lastmod>2014-06-06T14:50:49-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/portfolio/</loc>
+        <loc>http://glennstovall.com/portfolio/</loc>
         <lastmod>2013-07-07T16:35:56-04:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/resume/</loc>
+        <loc>http://glennstovall.com/resume/</loc>
         <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
-        <loc>http://gsto.github.com/robots.txt</loc>
+        <loc>http://glennstovall.com/robots.txt</loc>
         <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
 </urlset>

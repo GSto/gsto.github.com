@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: JavaScript, | Glenn Stovall]]></title>
-  <link href="http://gsto.github.com/blog/categories/javascript-/atom.xml" rel="self"/>
-  <link href="http://gsto.github.com/"/>
-  <updated>2014-06-12T14:19:02-04:00</updated>
-  <id>http://gsto.github.com/</id>
+  <link href="http://glennstovall.com/blog/categories/javascript-/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-06-12T14:24:12-04:00</updated>
+  <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[AngularJS: an Overview]]></title>
-    <link href="http://gsto.github.com/blog/2013/06/27/angularjs-an-overview/"/>
+    <link href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/"/>
     <updated>2013-06-27T12:33:00-04:00</updated>
-    <id>http://gsto.github.com/blog/2013/06/27/angularjs-an-overview</id>
+    <id>http://glennstovall.com/blog/2013/06/27/angularjs-an-overview</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/angular.png" width="260"></p>
 
 <p>AngularJS is a JavaScript framework made by Google for building complex client-side applications. Angular's killer feature is 'directives' which allow you to extend HTML by creating your own tags and attributes. Angular projects have a somewhat different structure than other JavaScript MVC frameworks, but it can be highly modular and easy to maintain once you understand the structure. Let's take a look at the main components of AngularJS and how they work, and why you should strongly consider Angular for your next project.</p>

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://gsto.github.com/sitemap.xml 
+Sitemap: http://glennstovall.com/sitemap.xml 

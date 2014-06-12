@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: PHP | Glenn Stovall]]></title>
-  <link href="http://gsto.github.com/blog/categories/php/atom.xml" rel="self"/>
-  <link href="http://gsto.github.com/"/>
-  <updated>2014-06-12T14:19:02-04:00</updated>
-  <id>http://gsto.github.com/</id>
+  <link href="http://glennstovall.com/blog/categories/php/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-06-12T14:24:12-04:00</updated>
+  <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Writing Cron Jobs and Command Line Scripts in CodeIgniter]]></title>
-    <link href="http://gsto.github.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/"/>
+    <link href="http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/"/>
     <updated>2013-01-07T23:58:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter</id>
+    <id>http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/articles/codeigniter.jpg" width="260">
 Building a command line interface into your application can be a way to add extra utility to you application. Adding cron jobs (a.k.a. scheduled tasks) to your CodeIgniter application can provide extra utility. In this article we'll show you how to set up both in a CodeIgniter application by writing a simple appointment reminder, which will remind people if they have an appointment scheduled a day in advance.</p>
 
@@ -321,9 +321,9 @@ Let's set up our appointment reminder files. First let's start by building the t
   
   <entry>
     <title type="html"><![CDATA[Setting Up a Template and Assets in CodeIgniter]]></title>
-    <link href="http://gsto.github.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter/"/>
+    <link href="http://glennstovall.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter/"/>
     <updated>2012-02-28T09:06:00-05:00</updated>
-    <id>http://gsto.github.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter</id>
+    <id>http://glennstovall.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter</id>
     <content type="html"><![CDATA[<p><img class="left" src="images/articles/codeigniter.jpg" width="260">
 In this article, I'd like to walk you though my first few steps when setting up a new CodeIgniter Project:
  - Setting up a way to render pages in a layout
