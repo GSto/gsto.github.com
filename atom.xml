@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-06-28T10:36:51-04:00</updated>
+  <updated>2014-07-14T12:22:58-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Turn Your Services into Products]]></title>
+    <link href="http://glennstovall.com/blog/2014/07/14/how-to-turn-your-services-into-products/"/>
+    <updated>2014-07-14T12:18:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/07/14/how-to-turn-your-services-into-products</id>
+    <content type="html"><![CDATA[<p>Today I wanted to talk to you about the idea of &#8220;productized consulting&#8221;. Productized can give you a way to package your services in a way that is easier to sell and can be scalable. Here&#8217;s a quick run down of how it works:</p>
+
+<ul>
+<li>Take a service you have provided to clients in the past.</li>
+<li>Define a fixed scope and price for that service.</li>
+<li>Sell that service like you would a physical product or monthly subscription.</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p><a href="http://wptheory.net">WPTheory</a> is a good example. Adam Clark  chooses a WordPress theme, install it, customize it, and put up content, in one day. He sells this package for $999. It could be difficult to convince clients to pay you a $1,000 day rate, but by positioning it this way,  Adam is able to do this frequently.</p>
+
+<p>While $1,000/day would be nice, what if you could charge $1,000 <strong>an hour</strong>? That&#8217;s what Joanna Weibe did with their consulting product, <a href="http://copyhackers.com/product/formal-website-copy-review-with-joanna-wiebe/">The no fluff website review</a>. Joanna sends over a 60 minute video about your website, and charges you $997 for the privilege.</p>
+
+<p>Something else that makes Joanna&#8217;s example is that while she is still providing a service, she has turned that service into a more tangible deliverable. Instead of just telling the client the changes or writing them a list, she gives them a meeting, a video, and several usable copy writing samples they can use. You can make a lot of services and meetings more valuable to the client by attaching some form of report or usable item as part of it.</p>
+
+<p>I hope this gets the gears turning for you for some new ways to position your services. I thought about writing up a list of more examples of freelancing as a service, but it turns out the guys at Workshop already did it, and they <a href="http://letsworkshop.com/freelance-as-a-service/">knocked it out of the park</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Self Publisher's Journey]]></title>
@@ -1251,267 +1278,6 @@ git push production master
 
 
 <p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/landing_pages/531">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Writing Cron Jobs and Command Line Scripts in CodeIgniter]]></title>
-    <link href="http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/"/>
-    <updated>2013-01-07T23:58:00-05:00</updated>
-    <id>http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/codeigniter.jpg" width="260">
-Building a command line interface into your application can be a way to add extra utility to you application. Adding cron jobs (a.k.a. scheduled tasks) to your CodeIgniter application can provide extra utility. In this article we&#8217;ll show you how to set up both in a CodeIgniter application by writing a simple appointment reminder, which will remind people if they have an appointment scheduled a day in advance.</p>
-
-<!-- more -->
-
-
-<h3>Running Code Via The Command Line</h3>
-
-<p>All CodeIgniter controller methods can be accessed via the command line. Let&#8217;s start with a simple controller:</p>
-
-<figure class='code'><figcaption><span>application/controllers/hello.php  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
-</span><span class='line'><span class="k">class</span> <span class="nc">Hello</span> <span class="k">extends</span> <span class="nx">CI_Controller</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>  <span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">()</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>    <span class="k">echo</span> <span class="s2">&quot;Hello, World&quot;</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">public</span> <span class="k">function</span> <span class="nf">greet</span><span class="p">(</span><span class="nv">$name</span><span class="p">)</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>   <span class="k">echo</span> <span class="s2">&quot;Hello, </span><span class="si">$name</span><span class="s2">&quot;</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>From the root application forlder, to call the index function we can do the following:</p>
-
-<pre><code>php index.php hello
-</code></pre>
-
-<p>By passing the name of the controller to <code>index.php</code> , we are able to invoke the index method of the controller. If we want to invoke other methods, we can pass them as the next aguments. any arguments proceeding those will be passed as arguments to the method we are calling. So, to get the output of &#8220;Hello, Glenn&#8221; from this controller, we would run the following:</p>
-
-<pre><code>php index.php hello greet Glenn
-</code></pre>
-
-<h3>Detecting command line requests</h3>
-
-<p>You may want to write controller methods that behave differently based on wether or not they are accessed via the command line. you can do this by using the <a href="http://ellislab.com/codeigniter/user-guide/libraries/input.html">input library</a>, which has a function called <code>is_cli_request()</code> to detect if a request to a controller is from the command line or not. Here is an example if you want to make a method only accesible via command line:</p>
-
-<figure class='code'><figcaption><span>application/controllers/hello.php  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">  </span><span class="cp">&lt;?php</span>
-</span><span class='line'>  <span class="k">public</span> <span class="k">function</span> <span class="nf">greet</span><span class="p">(</span><span class="nv">$name</span><span class="p">)</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>      <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">input</span><span class="o">-&gt;</span><span class="na">is_cli_request</span><span class="p">())</span>
-</span><span class='line'>      <span class="p">{</span>
-</span><span class='line'>          <span class="k">echo</span> <span class="s2">&quot;greet my only be accessed from the command line&quot;</span><span class="p">;</span>
-</span><span class='line'>          <span class="k">return</span><span class="p">;</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>      <span class="k">echo</span> <span class="s2">&quot;Hello, </span><span class="si">$name</span><span class="s2">&quot;</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Setting up the Appointment Reminder</h3>
-
-<p>Let&#8217;s say we have a system where people can book appointments. We would like to send them a reminder a day in advance that they have an appointment coming up. In this tutorial we will set up a command line script
-Let&#8217;s set up our appointment reminder files. First let&#8217;s start by building the table.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='mysql'><span class='line'><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="nf">appointments</span> <span class="p">(</span>
-</span><span class='line'>  <span class="n">id</span> <span class="kt">int</span> <span class="kp">auto_increment</span> <span class="k">primary</span> <span class="k">key</span><span class="p">,</span>
-</span><span class='line'>  <span class="n">email</span> <span class="kt">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="k">not</span> <span class="no">null</span> <span class="k">default</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
-</span><span class='line'>  <span class="n">start_time</span> <span class="kt">datetime</span>
-</span><span class='line'>  <span class="n">is_reminded</span> <span class="kt">tinyint</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">not</span> <span class="no">null</span> <span class="k">default</span> <span class="mi">0</span>
-</span><span class='line'><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now, we&#8217;ll write a model that will perform the two primary data functions we need for this appointment reminder: a way to fetch all appointments on a particular day, and a way to mark them as appointments that have recieved reminders, so that we do not send multiple reminder emails:</p>
-
-<figure class='code'><figcaption><span>application/models/appointment_model.php  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
-</span><span class='line'><span class="k">class</span> <span class="nc">Appointment_model</span> <span class="k">extends</span> <span class="nx">CI_Model</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>  <span class="k">public</span> <span class="k">function</span> <span class="nf">get_days_appointments</span><span class="p">(</span><span class="nv">$day</span><span class="p">)</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>    <span class="nv">$day_start</span> <span class="o">=</span> <span class="nb">date</span><span class="p">(</span><span class="s1">&#39;Y-m-d 00:00:00&#39;</span><span class="p">,</span> <span class="nv">$day</span><span class="p">);</span>
-</span><span class='line'>    <span class="nv">$day_end</span> <span class="o">=</span> <span class="nb">date</span><span class="p">(</span><span class="s1">&#39;Y-m-d 23:59:59&#39;</span><span class="p">,</span> <span class="nv">$day</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">select</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
-</span><span class='line'>      <span class="o">-&gt;</span><span class="na">from</span><span class="p">(</span><span class="s1">&#39;appointments&#39;</span><span class="p">)</span>
-</span><span class='line'>      <span class="o">-&gt;</span><span class="na">where</span><span class="p">(</span><span class="s1">&#39;start_time &lt;&#39;</span><span class="p">,</span> <span class="nv">$day_start</span><span class="p">)</span>
-</span><span class='line'>      <span class="o">-&gt;</span><span class="na">where</span><span class="p">(</span><span class="s1">&#39;start_time &gt;&#39;</span><span class="p">,</span> <span class="nv">$day_end</span><span class="p">)</span>
-</span><span class='line'>      <span class="o">-&gt;</span><span class="na">get</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">result</span><span class="p">();</span>
-</span><span class='line'>      
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">public</span> <span class="k">function</span> <span class="nf">mark_reminded</span><span class="p">(</span><span class="nv">$appointment_id</span><span class="p">)</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">where</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="nv">$appointment_id</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">update</span><span class="p">(</span><span class="s1">&#39;appointments&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;is_reminded&#39;</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">));</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now that we can handle all the data transactions through the model. Let&#8217;s write a controller so we can access this through the command line. In this example, we will put the logic in the <code>index()</code> function, since that is all this controller does. Personally, I like to put all of my command line scripts inside a folder named &#8216;cli&#8217; inside of the controllers folder.</p>
-
-<figure class='code'><figcaption><span>application/controllers/cli/reminders.php  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
-</span><span class='line'><span class="k">class</span> <span class="nc">Reminders</span> <span class="k">extends</span> <span class="nx">CI_Controller</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>    <span class="k">parent</span><span class="o">::</span><span class="na">__construct</span><span class="p">();</span>
-</span><span class='line'>      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;input&#39;</span><span class="p">);</span>
-</span><span class='line'>    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">);</span>
-</span><span class='line'>    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">model</span><span class="p">(</span><span class="s1">&#39;Appointment_model&#39;</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">()</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">input</span><span class="o">-&gt;</span><span class="na">is_cli_request</span><span class="p">())</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>      <span class="k">echo</span> <span class="s2">&quot;This script can only be accessed via the command line&quot;</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
-</span><span class='line'>      <span class="k">return</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="nv">$timestamp</span> <span class="o">=</span> <span class="nb">strtotime</span><span class="p">(</span><span class="s2">&quot;+1 days&quot;</span><span class="p">);</span>
-</span><span class='line'>  <span class="nv">$appointments</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">Appointment_model</span><span class="o">-&gt;</span><span class="na">get_days_appointments</span><span class="p">(</span><span class="nv">$timestamp</span><span class="p">);</span>
-</span><span class='line'>  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$appointments</span><span class="p">))</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>      <span class="k">foreach</span><span class="p">(</span><span class="nv">$appointments</span> <span class="k">as</span> <span class="nv">$appointment</span><span class="p">)</span>
-</span><span class='line'>      <span class="p">{</span>
-</span><span class='line'>          <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">set_newline</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">&quot;</span><span class="p">);</span>
-</span><span class='line'>          <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">to</span><span class="p">(</span><span class="nv">$appointment</span><span class="o">-&gt;</span><span class="na">email</span><span class="p">);</span>
-</span><span class='line'>          <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">from</span><span class="p">(</span><span class="s2">&quot;youremail@example.com&quot;</span><span class="p">);</span>
-</span><span class='line'>          <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">subject</span><span class="p">(</span><span class="s2">&quot;Appointment Reminder&quot;</span><span class="p">);</span>
-</span><span class='line'>          <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">message</span><span class="p">(</span><span class="s2">&quot;You have an appointment tomorrow&quot;</span><span class="p">);</span>
-</span><span class='line'>          <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">send</span><span class="p">();</span>
-</span><span class='line'>          <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">Appointment_model</span><span class="o">-&gt;</span><span class="na">mark_reminded</span><span class="p">(</span><span class="nv">$appointment</span><span class="o">-&gt;</span><span class="na">id</span><span class="p">);</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>whenever this command line script is called, it will set an email to all people who have an appointment the next day. It will also mark there appointments as reminded to insure that we do not send multiple emails to the same person for the same appointment.</p>
-
-<h3>Setting up a Cron Job (Scheduled Task)</h3>
-
-<p>We would like to call this command line script once a day, at 1pm. You can edit the cron jobs your server runs with the following command:</p>
-
-<pre><code>crontab -e
-</code></pre>
-
-<p>each line of the crontab file takes 6 arguments, which are, in order:</p>
-
-<ul>
-<li>minutes (0 to 59)</li>
-<li>hours (0 to 23)</li>
-<li>day of month (1 to 31)</li>
-<li>month (1 to 12)</li>
-<li>day of week (0 - 6)</li>
-<li>command (command to be executed)</li>
-</ul>
-
-
-<p>you can use commas to seperate multiple values <em>(so <code>1,3,5</code> in the day of week field will be every Monday, Wednesday, and Friday)</em> , dashes to represent ranges <em>(so <code>09-17</code> in the hour field means every hour on the hour from 9am to 5pm)</em> and * for wildcards. <em>(so * in the hours fields means every hour on the hour)</em></p>
-
-<p>Since we would like this script to run once a day at 1pm, our new entry into the crontab file would look like this:</p>
-
-<pre><code>0 13 * * * php [application_path]/index.php cli/reminders
-</code></pre>
-
-<p>And now we can send out appointment reminders once a day. <a href="http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/">This Article</a> Has a lot of good examples for other ways to set up your scheduled tasks.</p>
-
-<p>I also have a small helper file I use in CodeIgniter to make formatting output easier. You can check it out over on Github.</p>
-
-<p><a href="https://github.com/GSto/cli_helper">cli_helper on Github</a></p>
 ]]></content>
   </entry>
   

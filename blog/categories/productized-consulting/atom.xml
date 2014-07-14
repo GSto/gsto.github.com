@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: productized consulting | Glenn Stovall]]></title>
+  <link href="http://glennstovall.com/blog/categories/productized-consulting/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-07-14T12:22:58-04:00</updated>
+  <id>http://glennstovall.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to Turn Your Services into Products]]></title>
+    <link href="http://glennstovall.com/blog/2014/07/14/how-to-turn-your-services-into-products/"/>
+    <updated>2014-07-14T12:18:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/07/14/how-to-turn-your-services-into-products</id>
+    <content type="html"><![CDATA[<p>Today I wanted to talk to you about the idea of "productized consulting". Productized can give you a way to package your services in a way that is easier to sell and can be scalable. Here's a quick run down of how it works:</p>
+
+<ul>
+<li>Take a service you have provided to clients in the past.</li>
+<li>Define a fixed scope and price for that service.</li>
+<li>Sell that service like you would a physical product or monthly subscription.</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p><a href="http://wptheory.net">WPTheory</a> is a good example. Adam Clark  chooses a WordPress theme, install it, customize it, and put up content, in one day. He sells this package for $999. It could be difficult to convince clients to pay you a $1,000 day rate, but by positioning it this way,  Adam is able to do this frequently.</p>
+
+<p>While $1,000/day would be nice, what if you could charge $1,000 <strong>an hour</strong>? That's what Joanna Weibe did with their consulting product, <a href="http://copyhackers.com/product/formal-website-copy-review-with-joanna-wiebe/">The no fluff website review</a>. Joanna sends over a 60 minute video about your website, and charges you $997 for the privilege.</p>
+
+<p>Something else that makes Joanna's example is that while she is still providing a service, she has turned that service into a more tangible deliverable. Instead of just telling the client the changes or writing them a list, she gives them a meeting, a video, and several usable copy writing samples they can use. You can make a lot of services and meetings more valuable to the client by attaching some form of report or usable item as part of it.</p>
+
+<p>I hope this gets the gears turning for you for some new ways to position your services. I thought about writing up a list of more examples of freelancing as a service, but it turns out the guys at Workshop already did it, and they <a href="http://letsworkshop.com/freelance-as-a-service/">knocked it out of the park</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
