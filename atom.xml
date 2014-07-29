@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-07-14T19:51:15-04:00</updated>
+  <updated>2014-07-29T12:28:53-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Why I am Killing My Company Blog]]></title>
+    <link href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/"/>
+    <updated>2014-07-29T11:44:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog</id>
+    <content type="html"><![CDATA[<h3>Personal vs. Professional Blogging, Part II</h3>
+
+<p><img class="left" src="http://glennstovall.com/images/articles/concordant-articles.png"></p>
+
+<p>Back in March, I wrote and article, <a href="http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/">Personal vs. Professional Blogging</a>. In that article I explained why I decided to publish my writing on  two blogs: <a href="http://www.glennstovall.com">glennstovall.com</a>, Where I planned on writing content aimed at fellow developers and freelancers. The other site was <a href="http://www.concordantsolutions.com/articles">Concordant Solutions</a> My &#8220;company brand&#8221; (<em>ugh</em>, I will never be comfortable with that phrase) where I aimed to write content I thought clients would enjoy. That hasn&#8217;t worked. Here is why, and how I plan to fix.</p>
+
+<!-- more -->
+
+
+<div style='clear:both;'></div>
+
+
+<div style='clear:both;'></div>
+
+
+<h3>No One Connects With a Company</h3>
+
+<p>Unless you are a large company with a lot of authority, Most people aren&#8217;t going to be interested in your company blog. <a href="http://blog.kissmetrics.com/">KISSMetrics</a> is an exception to this rule. People would rather read an article by &#8220;Glenn&#8221;, than by &#8220;Concordant Solutions&#8221;. The second comes across as less authentic.</p>
+
+<h3>It&#8217;s Easier to Manage One Thing Instead of Two</h3>
+
+<p>It&#8217;s better to update blogs regularly. By having two blogs maintaining consistency is twice as hard. It also added mental overhead to every article that I wanted to write, since I had to decide where it would go, and what audience I would try to appeal to. Instead, now I can have one content management system, and one stream of content that is more steady. There were even a couple of situations where I tried to spin content so I could post it twice, which was a waste of time.</p>
+
+<h3>It Helps SEO (At Least I&#8217;m Pretty Sure)</h3>
+
+<p>I&#8217;m not an SEO Guru. Beyond &#8220;Content is king&#8221;, &#8220;Have a good title tag&#8221;, &#8220;No one uses the <code>&lt;meta name='keywords'&gt;</code> tag anymore, I know nothing. This is just from anecdotal observation. This domain has been around longer, gotten more traffic, and had more back links. <em>Anything</em> I publish here does better than anything I have published on my company domain. Viral traffic seems to work like high tide coming in: There is a wave of traffic that comes in quickly, and leaves just as fast. But once it is gone, It leaves the average daily visitors mark a little higher than it found it. Google must think this domain has <em>some</em> value. Why squander it?</p>
+
+<h3>There is More Crossover Appeal Than I Originally Thought</h3>
+
+<p>Most of my clients are small businesses or tech companies, which is not as different of an audience as I thought. Freelancers are by definition also small business owners (even if they don&#8217;t see themselves that way). And people at tech companies in a position to hire me often have a technical background. I said that they might not know what <a href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/">AngularJS</a> is, but that is not always the case. I can still write content aimed at a subset of my audience, but there is no reason to have two locations to do so.</p>
+
+<h3>At The End of The Day, The Company Blog Was a Failure</h3>
+
+<p>I&#8217;ve maintained <a href="http://www.concordantsolutions.com">Concordant Solutions</a> for a year, and I am not afraid to admit that as a marketing tool, it has been a failure. I will say that as a <em>sales</em> tool, It has done some good work. The difference is that while that domain and the content on it has not brought me any new leads, it has been a great tool to help turn leads into clients. Potential clients are usually not going to find your portfolio by googling for it; They are going to see your portfolio because they said &#8220;can I see your portfolio?&#8221; and you mailed them a link.</p>
+
+<p>My company site will still exist for that reason. Any content on there I still deem worthwhile is going to be ported over to this domain over the next couple weeks. The company site  will be a resource for past, present, and future clients. I still intend on it being a valuable sales tool. It just won&#8217;t have an articles section any longer.</p>
+
+<script src="https://app.convertkit.com/landing_pages/531.js"></script>
+
+
+<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Turn Your Services into Products]]></title>
@@ -1243,46 +1292,6 @@ git push production master
 <p>All of these can be useful when trying to find a particular piece of text, for example when you need to find patterns or try to find the root of a bug. grep is much more powerful with a good knowledge of regular expressions, however that is beyond the scope of this article and hardly a beginner topic.</p>
 
 <p>By now you&#8217;ve learned the basics of how unix named systems work, and many of the useful programs that are standard. Next time we will look at how to combine some of these with pipes.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[5 Tips for More Accurate Estimates]]></title>
-    <link href="http://glennstovall.com/blog/2013/02/18/5-tips-for-more-accurate-estimates/"/>
-    <updated>2013-02-18T15:11:00-05:00</updated>
-    <id>http://glennstovall.com/blog/2013/02/18/5-tips-for-more-accurate-estimates</id>
-    <content type="html"><![CDATA[<p>Time estimation is one of the most difficult tasks for developers to do accurately. Programming constantly involves solving never before seen problems and dealing with incomplete information. It can often feel as if someone is asking you &#8216;how long is a piece of string?&#8217; with no further information or tools. And since estimating is often necessary for project planning and billing, it&#8217;s something that programmers cannot avoid,  and can be disastrous if gotten wrong. Here are five tips to help you improve your ability to estimate.</p>
-
-<!--more-->
-
-
-<h2>1. Make sure you have considered all factors.</h2>
-
-<p>This is probably the most common &#8216;gotcha&#8217; when it comes to estimating times for tasks. Developers will often have a myopic view of the task at hand. If you need to write a WordPress plugin that adds a widget to the sidebar, people will only think about the time it takes to implement that. What they often don&#8217;t consider is time to test and debug their work, time to communicate with the client about specifics, time to document their work, and time that run into a roadblock that can get you stuck for minutes or even hours. Make sure to take these into account when making estimates. My personal rule of thumb is that tasks tend to take ~30% longer than you initially think they will.</p>
-
-<blockquote><p>&#8220;The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.&#8221;[1]
-—Tom Cargill, Bell Labs</p></blockquote>
-
-<h2>2. Break Tasks Down.</h2>
-
-<p>personally, I try to never estimate on a task for more than 6 hours. If I think I am facing a large task that is going to take more than that, I am probably facing several smaller tasks in disguise. Breaking down tasks also forces you to further define the task at hand. This could lead to you discovering tasks that you hadn&#8217;t considered, or even possibly realizing that something that seemed daunting isn&#8217;t as time consuming as it first seemed.</p>
-
-<h2>3. Get Clarification.</h2>
-
-<p>Communication is paramount here. Make sure you have   a clear idea of what it is you are estimating on. Ask lots of questions. Try to think of edge cases. This is the one step on this list that requires experience more than anything else. Every developer gets screwed on this more than a few times early in their career. After each project, ask yourself what you wish you knew when you started, and do your best to get that kind of information at the start of your next project. This is a situation where an ounce of prevention is worth pounds of cure.</p>
-
-<h2>4.If you&#8217;re Unsure, Guess High:</h2>
-
-<p>Even when you communicate well with everyone involved in the project and gather as much information as you can, sometimes you still cannot have the clearest picture of what exactly it is that you are estimating. Maybe you are using a new technology, or are working in a new field that you know is going to require hours of studying up on HIPAA rules to make sure your software is compliant. In these cases, it is usually best to be a pessimist, and make larger estimates. You will have to take time to do research, and since you are in uncharted waters, you won&#8217;t be as productive as you are in areas where you have experience.</p>
-
-<h2>5. Track your Time.</h2>
-
-<p>The secret to improving your performance at any skill is to track your progress, take a hard look in the mirror, and see where you do well and where you can improve. Estimating is no different. Make sure you are tracking your time against what you said and how you performed. Once you have data you will start to see trends: maybe you always over estimate, maybe you are always under. Maybe it depends on what kind of work you do. Once you&#8217;ve done this, you can start to adjust your estimates until you are more accurate.</p>
-
-<script src="https://app.convertkit.com/landing_pages/531.js?orient=horz"></script>
-
-
-<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/landing_pages/531">here</a>.</p>
 ]]></content>
   </entry>
   
