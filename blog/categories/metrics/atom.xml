@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: metrics | Glenn Stovall]]></title>
+  <link href="http://glennstovall.com/blog/categories/metrics/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-07-30T12:17:21-04:00</updated>
+  <id>http://glennstovall.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[AARRR! Pirate Metrics]]></title>
+    <link href="http://glennstovall.com/blog/2014/07/30/aarrr-pirate-metrics/"/>
+    <updated>2014-07-30T12:00:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/07/30/aarrr-pirate-metrics</id>
+    <content type="html"><![CDATA[<h2>How to Track the 5 Numbers That Define Your Company's Success</h2>
+
+<p><img class="left" src="/images/articles/pirate.png" width="260"></p>
+
+<p>Pirate Metrics refers to an the acronym ‘AARRR’, which stands for five metrics used to track the performance of your business online. The five metrics are Acquisition, Activation, Retention, Referrals, and Revenue. By tracking these metrics, you can get a clearer picture of the health of your business, and figure out where you should focus your efforts. The idea was popularized by <a href="http://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-long-version">Dave McClure</a>. These ideas are a framework for how to approach your online business and all of them won’t apply to everyone. Today I’d like to give you an overview of what they are, how to track them, and some ideas on how to improve your performance in each. I hope this will get the gears turning on how to apply them to your business.</p>
+
+<!-- more -->
+
+
+
+
+<div style='clear:both'></div>
+
+
+<h3>Acquisition</h3>
+
+<p>Acquisition is how many visits you are getting to your site. This is getting people to be aware of your existence, and giving you a chance to sell them on your product.</p>
+
+<p><strong>How to Track It:</strong> Website visits are the easiest thing to track when it comes to your website. Tools like <a href="http://www.google.com/analytics">Google Analytics</a> make this simple.</p>
+
+<p><strong>How to Improve It:</strong> How to increase your traffic could vary greatly depending on the type of site you have. Online advertising like Google Adwords, or on networks like Facebook or Reddit, are a direct way to get traffic. You can also try longer term strategies such as SEO and content marketing.</p>
+
+<h3>Activation</h3>
+
+<p>Activation is getting people to complete a call-to-action. This could mean making a sale, or getting users to sign up for a subscription services. It could even be just collecting an email address. In our case, we consider an activation someone using the contact form to get in touch with us and start a conversation. Sometimes it’s as simple as collecting an email address.</p>
+
+<p><strong>How to Track It:</strong> Depends. most e-commerce services have ways of tracking sales, as do most CMSes. For collecting emails for newsletters, tools like Mailchimp have this built in as well.</p>
+
+<p><strong>How to Improve It:</strong> Split testing is a good strategy here. On whatever pages you are trying to get people to sign up, test the copy, the style, your call to action, everything.</p>
+
+<h3>Retention</h3>
+
+<p>Retention refers to tracking that people who have become your customer stay your customer. If you have a subscription service, you don’t want people to cancel. If you are making sales, you want people to be repeat customers.</p>
+
+<p><strong>How to Track It:</strong> If you working with customers monthly, you can track how many stay for a certain amount of time, such as 6 months. For sales, you could track how many customers are repeat customers and how often they return. Another approach would be to track the frequency in which people use your service, such as monitoring how often people log in.</p>
+
+<p><strong>How to Improve It:</strong> The two biggest factors are the ease of use of your application and customer service. Retention relies on you keeping existing customers happy. Being responsive, testing your interface, and listening to feedback are all good ways to increase retention.</p>
+
+<h3>Referrals</h3>
+
+<p>Word of mouth is the most valuable form of marketing you have. Tracking referrals can give you insight into customer happiness.</p>
+
+<p><strong>How To Track It:</strong> Social Media has made this easier. You can track how many people are mentioning you or your domain on Twitter. Be sure to interact back as well.</p>
+
+<p><strong>How To Improve It:</strong> Make it easy for your clients to talk about you. Give them a clear message, and be sure to make sure to provide links to easily share your content.</p>
+
+<h3>Revenue</h3>
+
+<p>The one everyone cares about and the most explicit one. How much money you are pulling in.</p>
+
+<p><strong>How to Track It:</strong> With your bank account.</p>
+
+<p><strong>How to Improve It:</strong> This one is harder to improve on it’s own. It’s usually a result of working on the four above. You can try things like experimenting with your pricing model and service offerings.</p>
+
+<p>All of these metrics will help one another, and usually aren’t in a vacuum. For example, Most things that increase retention will tend to increase referrals. Increasing referrals will increase acquisition. Increasing acquisition can increase activation, which can increase revenue, and so on. If you’d like to talk more about this and want some help with getting these numbers up for your business, or even just finding better ways to track them, <a href="http://glennstovall.com/contact">Let’s talk about it</a>.</p>
+
+<script src="https://app.convertkit.com/landing_pages/531.js"></script>
+
+
+<p>If the form above doesn't work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

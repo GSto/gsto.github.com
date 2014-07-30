@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-07-29T12:28:53-04:00</updated>
+  <updated>2014-07-30T12:17:21-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -14,13 +14,81 @@
 
   
   <entry>
+    <title type="html"><![CDATA[AARRR! Pirate Metrics]]></title>
+    <link href="http://glennstovall.com/blog/2014/07/30/aarrr-pirate-metrics/"/>
+    <updated>2014-07-30T12:00:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/07/30/aarrr-pirate-metrics</id>
+    <content type="html"><![CDATA[<h2>How to Track the 5 Numbers That Define Your Company&#8217;s Success</h2>
+
+<p><img class="left" src="http://glennstovall.com/images/articles/pirate.png" width="260"></p>
+
+<p>Pirate Metrics refers to an the acronym ‘AARRR’, which stands for five metrics used to track the performance of your business online. The five metrics are Acquisition, Activation, Retention, Referrals, and Revenue. By tracking these metrics, you can get a clearer picture of the health of your business, and figure out where you should focus your efforts. The idea was popularized by <a href="http://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-long-version">Dave McClure</a>. These ideas are a framework for how to approach your online business and all of them won’t apply to everyone. Today I’d like to give you an overview of what they are, how to track them, and some ideas on how to improve your performance in each. I hope this will get the gears turning on how to apply them to your business.</p>
+
+<!-- more -->
+
+
+
+
+<div style='clear:both'></div>
+
+
+<h3>Acquisition</h3>
+
+<p>Acquisition is how many visits you are getting to your site. This is getting people to be aware of your existence, and giving you a chance to sell them on your product.</p>
+
+<p><strong>How to Track It:</strong> Website visits are the easiest thing to track when it comes to your website. Tools like <a href="http://www.google.com/analytics">Google Analytics</a> make this simple.</p>
+
+<p><strong>How to Improve It:</strong> How to increase your traffic could vary greatly depending on the type of site you have. Online advertising like Google Adwords, or on networks like Facebook or Reddit, are a direct way to get traffic. You can also try longer term strategies such as SEO and content marketing.</p>
+
+<h3>Activation</h3>
+
+<p>Activation is getting people to complete a call-to-action. This could mean making a sale, or getting users to sign up for a subscription services. It could even be just collecting an email address. In our case, we consider an activation someone using the contact form to get in touch with us and start a conversation. Sometimes it’s as simple as collecting an email address.</p>
+
+<p><strong>How to Track It:</strong> Depends. most e-commerce services have ways of tracking sales, as do most CMSes. For collecting emails for newsletters, tools like Mailchimp have this built in as well.</p>
+
+<p><strong>How to Improve It:</strong> Split testing is a good strategy here. On whatever pages you are trying to get people to sign up, test the copy, the style, your call to action, everything.</p>
+
+<h3>Retention</h3>
+
+<p>Retention refers to tracking that people who have become your customer stay your customer. If you have a subscription service, you don’t want people to cancel. If you are making sales, you want people to be repeat customers.</p>
+
+<p><strong>How to Track It:</strong> If you working with customers monthly, you can track how many stay for a certain amount of time, such as 6 months. For sales, you could track how many customers are repeat customers and how often they return. Another approach would be to track the frequency in which people use your service, such as monitoring how often people log in.</p>
+
+<p><strong>How to Improve It:</strong> The two biggest factors are the ease of use of your application and customer service. Retention relies on you keeping existing customers happy. Being responsive, testing your interface, and listening to feedback are all good ways to increase retention.</p>
+
+<h3>Referrals</h3>
+
+<p>Word of mouth is the most valuable form of marketing you have. Tracking referrals can give you insight into customer happiness.</p>
+
+<p><strong>How To Track It:</strong> Social Media has made this easier. You can track how many people are mentioning you or your domain on Twitter. Be sure to interact back as well.</p>
+
+<p><strong>How To Improve It:</strong> Make it easy for your clients to talk about you. Give them a clear message, and be sure to make sure to provide links to easily share your content.</p>
+
+<h3>Revenue</h3>
+
+<p>The one everyone cares about and the most explicit one. How much money you are pulling in.</p>
+
+<p><strong>How to Track It:</strong> With your bank account.</p>
+
+<p><strong>How to Improve It:</strong> This one is harder to improve on it’s own. It’s usually a result of working on the four above. You can try things like experimenting with your pricing model and service offerings.</p>
+
+<p>All of these metrics will help one another, and usually aren’t in a vacuum. For example, Most things that increase retention will tend to increase referrals. Increasing referrals will increase acquisition. Increasing acquisition can increase activation, which can increase revenue, and so on. If you’d like to talk more about this and want some help with getting these numbers up for your business, or even just finding better ways to track them, <a href="http://glennstovall.com/contact">Let’s talk about it</a>.</p>
+
+<script src="https://app.convertkit.com/landing_pages/531.js"></script>
+
+
+<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Why I am Killing My Company Blog]]></title>
     <link href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/"/>
     <updated>2014-07-29T11:44:00-04:00</updated>
     <id>http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog</id>
     <content type="html"><![CDATA[<h3>Personal vs. Professional Blogging, Part II</h3>
 
-<p><img class="left" src="http://glennstovall.com/images/articles/concordant-articles.png"></p>
+<p><img class="left" src="http://glennstovall.com/images/articles/concordant-articles.png" width="260"></p>
 
 <p>Back in March, I wrote and article, <a href="http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/">Personal vs. Professional Blogging</a>. In that article I explained why I decided to publish my writing on  two blogs: <a href="http://www.glennstovall.com">glennstovall.com</a>, Where I planned on writing content aimed at fellow developers and freelancers. The other site was <a href="http://www.concordantsolutions.com/articles">Concordant Solutions</a> My &#8220;company brand&#8221; (<em>ugh</em>, I will never be comfortable with that phrase) where I aimed to write content I thought clients would enjoy. That hasn&#8217;t worked. Here is why, and how I plan to fix.</p>
 
@@ -1214,84 +1282,6 @@ git push production master
 <p>This setup allows you to keep you to work effortlessly in development without interfering with production, and keeps new features and fixes in development decoupled from one another, allowing for efficient development and simple collaboration with other developers.</p>
 
 <p>How do you use git in your work flow? <a href="http://www.reddit.com/r/programming/comments/1alhsf/how_i_use_git/">Discuss on Reddit</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Terminals for Aboslute Beginners Part 4]]></title>
-    <link href="http://glennstovall.com/blog/2013/03/04/terminals-for-aboslute-beginners-part-4-searching/"/>
-    <updated>2013-03-04T06:51:00-05:00</updated>
-    <id>http://glennstovall.com/blog/2013/03/04/terminals-for-aboslute-beginners-part-4-searching</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/terminal.jpg" width="260"></p>
-
-<h3>Searching</h3>
-
-<p>Searching is one of the most important tools in a developers tool belt. In this tutorial we will go over two commands that will make navigating the file structure of your machine easier, find and grep. One will be used to search for files by name, and the other will be used to search the contents of those files.</p>
-
-<!-- more -->
-
-
-<ul>
-<li>Read Part 1 <a href="http://glennstovall.com/blog/2012/02/15/terminals-for-absolute-beginners/">Directories and Commands</a></li>
-<li>Read Part 2 <a href="http://glennstovall.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2/">Manipulating Files</a></li>
-<li>Read Part 3 <a href="http://glennstovall.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3/">File Permissions</a></li>
-</ul>
-
-
-<h4>How to find certain files</h4>
-
-<p>Finding files with a certain name is an easy enough command. It&#8217;s <code>find</code>. The first argument in find is the directory you want to search, and then there are many other flags you can pass afterwards. The most common is <code>-name</code> , followed by the name of a file. for example, let&#8217;s say you need to find a file named <code>lost.dog</code> and you want to search the entire file system. you would type:</p>
-
-<pre><code>find / -name 'lost.dog'
-</code></pre>
-
-<p>You could also use <code>./</code> instead of <code>/</code> if you wanted to limit the search to just your current working directory. These queries (not only in find, but in all of theaw examples and many other linux tools) accept wildcards. if you wanted to search for all files with the <code>.dog</code> extension, you could run the command like so:</p>
-
-<pre><code>find / -name *.dog
-</code></pre>
-
-<p><code>*</code> means &#8216;anything&#8217; when searching. Besides <code>-name</code>, there are many other useful flags you can use:</p>
-
-<ul>
-<li><code>-iname</code> Works the same as -name, but is not case sensitive</li>
-<li><code>-type</code>  Search by type. usually &#8216;f&#8217; for file, or &#8216;d&#8217; for directory</li>
-<li><code>-perm</code> Search by permissions</li>
-<li><code>-size</code> Search by file size.</li>
-</ul>
-
-
-<p>You can combine all of these. Let&#8217;s say for example you want to find all hidden files in the current directory, but exclude hidden directories:</p>
-
-<pre><code>find ./ -type f -name .*
-</code></pre>
-
-<h4>How to search text within files</h4>
-
-<p>This is probably the most common search you will have to use, which can search the contents of files. This tool is called <code>grep</code>. It is an acronym for &#8216;General Regular Expression Parser&#8217;. I could write an entire article on grep. In fact, <a href="http://www.amazon.com/Grep-Pocket-Reference-OReilly/dp/0596153600/ref=sr_1_1?ie=UTF8&amp;qid=1362369051&amp;sr=8-1&amp;keywords=grep">entire books</a> have been written on the subject  but here I will just try to give you a brief overview of what grep can do.</p>
-
-<p> The command <code>grep</code> takes two arguments: the query string we are searching for, and the file pattern we will be searching through. The query string is a <a href="http://glennstovall.com/blog/2012/03/06/my-eureka-moment-with-regular-expressions/">regular expression</a>, and the file pattern is the name of a file or directory, or a string with wildcards and other special characters. In a simple example, let&#8217;s say we have a file named <code>hello.rb</code> and we want to find where the line that says &#8220;puts &#8216;hello, world&#8217; is.</p>
-
-<pre><code>grep "puts 'hello, world'" hello.rb
-</code></pre>
-
-<p>Now, this search won&#8217;t find anything if the line is slightly different. Let&#8217;s say the line may have , Hello, World! instead. There are two things we can do to make this search less strict: pass the <code>-i</code> flag to make the search case insensitive, and not search for the entire string, only a part of it. We may also not be sure if the string is in <code>hello.rb</code> or some other ruby file, so let&#8217;s search all ruby files in our current working directory:</p>
-
-<pre><code>grep -i "hello, world" *.rb
-</code></pre>
-
-<p>This should return more results. In addition to -i, there are several other useful flags with grep:</p>
-
-<ul>
-<li><code>-v</code> Inverted match. this will only return files that don&#8217;t match the query provided.</li>
-<li><code>-r</code> Recursive. If a directory is specified, will also search all subdirectories</li>
-<li><code>-n</code> Print out the line number of where the match was found.</li>
-<li><code>-l</code> Print out the filename of where the match was found.</li>
-</ul>
-
-
-<p>All of these can be useful when trying to find a particular piece of text, for example when you need to find patterns or try to find the root of a bug. grep is much more powerful with a good knowledge of regular expressions, however that is beyond the scope of this article and hardly a beginner topic.</p>
-
-<p>By now you&#8217;ve learned the basics of how unix named systems work, and many of the useful programs that are standard. Next time we will look at how to combine some of these with pipes.</p>
 ]]></content>
   </entry>
   
