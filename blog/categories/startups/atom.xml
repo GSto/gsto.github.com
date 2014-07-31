@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: startups | Glenn Stovall]]></title>
+  <link href="http://glennstovall.com/blog/categories/startups/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-07-31T14:10:48-04:00</updated>
+  <id>http://glennstovall.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Value in Launching Early]]></title>
+    <link href="http://glennstovall.com/blog/2014/07/31/the-value-in-launching-early/"/>
+    <updated>2014-07-31T13:44:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/07/31/the-value-in-launching-early</id>
+    <content type="html"><![CDATA[<h3>Launch Day is the Day you Switch from Guessing to Learning</h3>
+
+<p><img class="left" src="/images/articles/done_is_better.png" width="260"></p>
+
+<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
+
+<p>In the startup community, a term that is thrown around a lot is “minimum viable product” or MVP for short. It means digging down to the smallest thing that you can launch with. Sometimes an MVP isn’t even a piece of software. It could be using an existing tool such as a spreadsheet or tool like <a href="http://www.trello.com">Trello</a> to try a process and see if it even works.</p>
+
+<!-- more -->
+
+
+<h3>An Example Scenario</h3>
+
+<p>Let’s say you are working on a software as a service product. It has features A, B, C, and D, and you plan on charging $50 a month. You have two options: you can launch with all of the features, which let’s say in our example will take 6 months; Or you can launch with a smaller set and update later. In this example, let’s say that takes 2 months to launch, and then 4 more months of work on the other features.</p>
+
+<p>So one scenario is that you spend 6 months developing your software, launch it, and you get 20 customers in your first month. That’s still something I would consider a success.</p>
+
+<p>But let’s say you launch in 2 months with just feature A. If A was your big selling point, if it is the feature that solves problems, you would probably get the same number of initial sign ups. That already means <strong>$4,000</strong> more this strategy has made you.</p>
+
+<p>The money isn’t even the biggest advantage. You are getting feedback from customers. They like it and start referring people. Or they hate and you figure out ways to improve. You start figuring out what features they really need. Maybe it turns out they wouldn’t like your other features at all. If that’s the case you just saved months of spending time building something that people do not want.</p>
+
+<p>Hypothetically, let’s say they still seem like they want what you had designed. in six months, in both scenarios you have an identical product, but one of them has <strong>more customers</strong>, and is <strong>more profitable</strong> in addition to the fact it has been generating revenue for four months.</p>
+
+<h3>How To Launch Earlier</h3>
+
+<p>Most people don’t want to launch until something is “done”. They are scared of making a bad first impression, which is a myth. You will have several opportunities to make an impression on customers, and it is the <strong><a href="http://www.softwarepromotions.com/news/the-myth-of-the-first-impression/">impact of each that matters, not the timing</a></strong>.</p>
+
+<p><span class='pullquote-right' data-pullquote='build a half product, not a half-ass product.'>
+However, this doesn’t mean skimping on quality. As DHH of 37Signals said build a half product, not a half-ass product.(<a href="http://gettingreal.37signals.com/ch05_Half_Not_Half_Assed.php">Source</a>) When trying to get things out the door earlier, cut back on the scale of the project, not the quality. Getting things shipped is good, but getting things shipped that are high quality is excellent.</p>
+
+<p>When starting a new software project, (or any project for that matter) it’s always good to think “How Can I make this smaller?” “How can I launch this faster?” This kind of thinking will lead you to more plentiful and profitable launches. Be one of us. <a href="http://www.brepettis.com/blog/2009/3/3/the-cult-of-done-manifesto.html">Join The Cult of Done</a>.
+</span></p>
+
+<p><script src="https://app.convertkit.com/landing_pages/531.js"></script>
+If the form above doesn't work, you can get it [here](https://app.convertkit.com/concordant/freelance-pricing-handbook).
+</p>
+]]></content>
+  </entry>
+  
+</feed>
