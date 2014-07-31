@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-07-30T12:19:46-04:00</updated>
+  <updated>2014-07-31T09:43:08-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -14,6 +14,52 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Why I Don't bill hourly]]></title>
+    <link href="http://glennstovall.com/blog/2014/07/31/why-i-dont-bill-hourly/"/>
+    <updated>2014-07-31T09:29:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/07/31/why-i-dont-bill-hourly</id>
+    <content type="html"><![CDATA[<h3>How pricing models affect project outcomes</h3>
+
+<p><img class="left" src="http://glennstovall.com/images/articles/wealth.jpg" width="260"></p>
+
+<p>Many web developers and designers charge their clients by the hour. We have done that ourselves in the past. But as of 2014 I’ve decided to completely do away with hourly billing. What’s wrong with billing by the hour?</p>
+
+<!-- more -->
+
+
+<h3>The Distracting Overhead</h3>
+
+<p>When billing by the hour, in which I was really billing in 15 minute increments, that meant that time had to be tracked. It also meant that time had to be included on invoices. The problem with this is two fold; Firstly, all the time spent tracking time is time spent not providing value to clients. The second is that it leads to invoicing based on time, which makes the discussion about how long things take instead of how valuable they are. If we build you a web application that saves your company $10,000 a month, I doubt you care if it took an hour, ten hours, or 100 hours to build. All that matters to you is that you made a profitable investment. Hourly billing distracts from focuses on quality and results.</p>
+
+<h3>The Sporadic Schedule</h3>
+
+<p>Scheduling work based on hours can often lead to sporadic schedules. When I billed hourly, I may work for 2 hours in the morning for Client A, then maybe had planned on working for 4 hours for Client B after lunch, but then Client C calls and has an emergency that ends up taking 2 hours. All of this <a href="http://www.fastcompany.com/944128/worker-interrupted-cost-task-switching">task switching isn’t free</a>, it’s another issue that harms productivity. Starting in 2014 the smallest unit of time that we bill for is a day.</p>
+
+<h3>The Perverse Incentives</h3>
+
+<p>The biggest reason I have decided to get rid of hourly billing is the perverse incentives that it gives to both clients and developers. As a developer, billing by the hour encourages me to not be efficient, or even worse, punishes me when I am. If I had estimated that a new feature would take 20 hours to implement, and I get it done in 10, does it make sense that I make less?</p>
+
+<p>For clients, I have found that billing hourly leads to clients asking for cut corners and a lower quality of work. For clients, any time spent making a product better now seems worse since it comes with an additional expense.</p>
+
+<h3>My Solution: Flat Rates and Larger Chunks of Time</h3>
+
+<p>I don’t believe there is any one size fits all solution to pricing in the software industry. When it comes to your project, we’ll work with you to find a pricing structure that works for you. Here are some of the options that we offer:</p>
+
+<ul>
+<li><p><strong>Flat Rate:</strong> This is reserved for small or well defined projects, which tend to be a rare case. We agree on a deliverable, and that deliverable costs $x. I have services that are available to all clients in this manner, such as <a href="http://concordantsolutions.com/rome">Rome</a>, my speedy website creation, and <a href="http://concordantsolutions.com/flourish/">Flourish</a>, which helps web applications be sustainable and grow post-launch.</p></li>
+<li><p><strong>Weekly &amp; Monthly Billing:</strong> Weekly &amp; Monthly Billing is the cousin of flat rate billing. Weekly &amp; Monthly billing means that at the end of the agreed upon week or month, we will have a deliverable complete that costs $x. Weekly &amp; Monthly billing is great for projects that need some flexibility in pricing and have a more agile process.
+I believe that this new approach will lead to me operating in a more efficient matter, and enable us to provide a higher quality of product to my clients.</p></li>
+</ul>
+
+
+<script src="https://app.convertkit.com/landing_pages/531.js"></script>
+
+
+<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[AARRR! Pirate Metrics]]></title>
     <link href="http://glennstovall.com/blog/2014/07/30/aarrr-pirate-metrics/"/>
     <updated>2014-07-30T12:00:00-04:00</updated>
@@ -21,6 +67,8 @@
     <content type="html"><![CDATA[<h3>How to Track the 5 Numbers That Define Your Company&#8217;s Success</h3>
 
 <p><img class="left" src="http://glennstovall.com/images/articles/pirate.png" width="260"></p>
+
+<p><small class='notice'><em>This post orignally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
 
 <p>Pirate Metrics refers to an the acronym ‘AARRR’, which stands for five metrics used to track the performance of your business online. The five metrics are Acquisition, Activation, Retention, Referrals, and Revenue. By tracking these metrics, you can get a clearer picture of the health of your business, and figure out where you should focus your efforts. The idea was popularized by <a href="http://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-long-version">Dave McClure</a>. These ideas are a framework for how to approach your online business and all of them won’t apply to everyone. Today I’d like to give you an overview of what they are, how to track them, and some ideas on how to improve your performance in each. I hope this will get the gears turning on how to apply them to your business.</p>
 
@@ -1170,118 +1218,6 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
 
 
 <p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/landing_pages/531">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How I Use Git]]></title>
-    <link href="http://glennstovall.com/blog/2013/03/15/how-i-use-git/"/>
-    <updated>2013-03-15T09:35:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2013/03/15/how-i-use-git</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/git.png" width="260"></p>
-
-<p><a href="http://git-scm.com/">git</a> is a very powerful and flexible tool.  With this power and flexibility comes a daunting amount of choices to make in how to manage your code with it. Here is the current setup I&#8217;ve used on both personal solo projects and professional jobs with other developers that has worked for me and saved me a lot of headaches.</p>
-
-<!-- more -->
-
-
-<h3>Setting Up</h3>
-
-<h4>Set up the Initial Repository</h4>
-
-<pre><code>git init
-git commit -am 'initial commit'
-git tag -a '0.0'
-</code></pre>
-
-<p>Simple enough, right? I usually do this once I&#8217;ve installed whatever framework I am using for a project and done whatever configurations are necessary. At this point I&#8217;ll go ahead and set up the <code>.gitignore</code> file based on whatever kind of project I am working on. You&#8217;ll notice I also use tags for keeping track of the version number of the project.</p>
-
-<h4>Create a dev branch</h4>
-
-<pre><code>git checkout -b dev
-</code></pre>
-
-<p>Next, I will create the &#8216;dev&#8217; branch. I will treat master as the &#8216;production&#8217; branch. All code will be tested integrated in the dev branch, and only merged with master when the code is ready to be shipped. If you are following and agile development pattern, this will usually be at the end of each sprint. Otherwise, it could once a predetermined set of features has been completed.</p>
-
-<h4>Set up Bitbucket and Heroku Staging Environment</h4>
-
-<pre><code>git remote add origin [Bitbucket repository URL]
-git push origin master
-git push origin dev
-git remote add staging [Heroku repository URL]
-git push staging dev:master
-</code></pre>
-
-<p>I use <a href="http://www.bitbucket.org">Bitbucket</a> for most private projects. <a href="http://www.github.com">Github</a> has a lot of nice features, and could work just as well here but it&#8217;s hard to compete with the free cost of private repositories over at Bitbucket. Regardless of which service you prefer, the important reason for doing this is that now you have a remote backup of your work if anything happens to your computer. Now I have a backup of my code online that it easily manageable, that comes along with a wiki for documentation and simplistic bug tracking. If I am working with other people, we now have a central point of communication as well. I usually set up a <a href="http://www.heroku.com">Heroku</a> project for a staging server as well. This way I have a way of demoing functionality before it is ready to be shipped. If Heroku doesn&#8217;t work for you (i.e. a PHP project) this can be any server you would like to use to host your code for staging / testing.</p>
-
-<p>At this point, we should have everything we need to get started on a project.</p>
-
-<h3>Developing</h3>
-
-<h4>New Features</h4>
-
-<pre><code>git checkout dev
-git checkout -b feature_branch
-</code></pre>
-
-<p>_Note: <code>git checkout -b feature_branch</code> is shorthand for <code>git branch feature_branch; git checkout feature_branch</code></p>
-
-<p>How you define a feature is completely up to you and your development practices. It could be a user story, or an issue ticket for example. When possible, I like to keep feature branches small. The reason for feature branches is that this way no feature is dependent on another when merging and deploying code. If you are working on two separate features, and another developer is working on two more, and you were all on the development branch, you would be unable to push parts of it to staging or master without pushing all of it. In git, branching is cheap, and merging is easy. This is one situation where using a lot of smaller branches can be very advantageous.</p>
-
-<p>If you are using a staging server, you can also use it to demo one particular feature:</p>
-
-<pre><code>git push staging feature_branch:master
-</code></pre>
-
-<h4>Integrating Features</h4>
-
-<pre><code>git checkout dev
-git merge feature_branch 
-git branch -d feature_branch
-</code></pre>
-
-<p>Once the feature is completed and tested, it is ready to be merged back into the dev branch. At this point, you fix any conflicts that arise, and run any tests you have to make sure that the integration was successful.</p>
-
-<h3>Maintaining</h3>
-
-<h4>Regular Bug Fixes</h4>
-
-<p>I treat bug fixes just like a feature branch. Any bug gets its own branch, and once it is fixed, it is merged back into dev. However. sometimes you may have a bug that is an emergency, and it needs to be fixed on production instantly without going through all the code in the dev branch. What then?</p>
-
-<h4>Hot Fixes</h4>
-
-<pre><code>git checkout master
-git checkout -b hotfix_branch
-</code></pre>
-
-<p>This is the only time I&#8217;ll branch off of master besides dev, and this should only be reserved for emergencies.  Once the fix is put in, the hot fix is merged into both the master and dev branches. This way dev will have the fix and not accidentally introduce it later, and the live code can be fixed quickly.</p>
-
-<pre><code>git checkout master
-git merge hotfix_branch
-git tag -a '1.0.1'
-git checkout dev
-git merge hotfix_branch 
-git branch -d hotfix_branch
-git push origin dev
-git push origin master
-</code></pre>
-
-<h3>Shipping</h3>
-
-<h4>Releasing and Update</h4>
-
-<pre><code>git remote add production [production_url]
-git checkout master
-git merge dev
-git tag -a '1.1'
-git push production master
-</code></pre>
-
-<p>Once you are satisfied with the state of dev and are ready to push it live, dev gets merged into master. Every time code is merged into master, it gets tagged with a version number. I prefer to follow the <a href="http://semver.org">semantic versioning guidelines</a> If a production remote is not added, usually one gets added here, and code is pushed there.</p>
-
-<p>This setup allows you to keep you to work effortlessly in development without interfering with production, and keeps new features and fixes in development decoupled from one another, allowing for efficient development and simple collaboration with other developers.</p>
-
-<p>How do you use git in your work flow? <a href="http://www.reddit.com/r/programming/comments/1alhsf/how_i_use_git/">Discuss on Reddit</a></p>
 ]]></content>
   </entry>
   
