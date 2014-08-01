@@ -42,22 +42,6 @@ var s = d.createElement(t), options = {
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-
-
-$(document).ready(function() {
-   //Custom Event Tracking
-
-   //ConvertKit Form Signup
-   console.log("pre-event JavaScript Test");
-   
-   $('body').on('submit',".ck_subscribe_form", function(e) {
-     console.log('testing google anayltics custom event');
-     _gaq.push(['_trackEvent', 'Newsletter', 'Subscribe', 'Freelance Pricing Handbook']);
-   });
-
-});
-
-   //TODO: Contact Form Submissions
    
   </script>
 

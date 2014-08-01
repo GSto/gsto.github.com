@@ -4,7 +4,7 @@
   <title><![CDATA[Category: PHP | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-08-01T08:10:37-04:00</updated>
+  <updated>2014-08-01T11:56:39-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -316,6 +316,43 @@ Let's set up our appointment reminder files. First let's start by building the t
 <p>I also have a small helper file I use in CodeIgniter to make formatting output easier. You can check it out over on Github.</p>
 
 <p><a href="https://github.com/GSto/cli_helper">cli_helper on Github</a></p>
+
+<p><div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Pricing For Freelance Developers</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/100/standard/Book-Portrait.png?1406907742" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/705/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+      <input type="hidden" name="id" value="705" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+</p>
 ]]></content>
   </entry>
   
@@ -324,8 +361,7 @@ Let's set up our appointment reminder files. First let's start by building the t
     <link href="http://glennstovall.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter/"/>
     <updated>2012-02-28T09:06:00-05:00</updated>
     <id>http://glennstovall.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter</id>
-    <content type="html"><![CDATA[<p><img class="left" src="images/articles/codeigniter.jpg" width="260">
-In this article, I'd like to walk you though my first few steps when setting up a new CodeIgniter Project:
+    <content type="html"><![CDATA[<p>In this article, I'd like to walk you though my first few steps when setting up a new CodeIgniter Project:
  - Setting up a way to render pages in a layout
  - Setting up a way to easily handle assets (CSS &amp; JavaScript files)</p>
 
@@ -335,6 +371,9 @@ In this article, I'd like to walk you though my first few steps when setting up 
 <h3>Step 1: Creating A Template</h3>
 
 <p>To start, we are going to make two new files, a layout view, and a localized controller. Let's start by creating a <code>layout.php</code> file in <code>views</code>, and add the following:</p>
+
+<div style='clear:both;'></div>
+
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/views/layout.php  </span></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -711,6 +750,43 @@ mkdir assets/images
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Now we are able to add additional asset files to the <code>local_stylesheets</code> and <code>local_javascripts</code> variables in classes that extend <code>MY_Controller</code>, allowing us to keep our code seperated and more organized. With this and templates, we now have a good system in place to manage the visual aspects of our web application.</p>
+
+<p><div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Pricing For Freelance Developers</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/100/standard/Book-Portrait.png?1406907742" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/705/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+      <input type="hidden" name="id" value="705" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+</p>
 ]]></content>
   </entry>
   
