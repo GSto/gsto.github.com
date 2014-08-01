@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-07-31T14:10:48-04:00</updated>
+  <updated>2014-08-01T08:10:37-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,63 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[From Blogging to Content Strategy]]></title>
+    <link href="http://glennstovall.com/blog/2014/08/01/from-blogging-to-content-strategy/"/>
+    <updated>2014-08-01T07:57:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/08/01/from-blogging-to-content-strategy</id>
+    <content type="html"><![CDATA[<h3>There is whole wide world of content publishing outside of blogging</h3>
+
+<p><img class="left" src="http://glennstovall.com/images/articles/writing.jpg" width="260"></p>
+
+<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
+
+<p>Writing is a powerful tool you can use in your business. Maybe you realize that you should be writing more and using content to help build your business, but you aren’t sure how to start.</p>
+
+<p>People tend to default to ‘blogging’, which isn’t exactly wrong. Blogging is one of the simplest ways to get your content out there. However, blogging is only one tool that is available to you. The issue with focusing on only blogging is that when you only have a hammer, everything starts to look like a nail.</p>
+
+<p>The idea is that you should find alternative channels for your content, and decide which is best for each piece of content you write. Now when I write, I don’t sit down with the intent to write a blog post, I sit down with the intent to create content, and then decide how that content should best be used.</p>
+
+<!-- more -->
+
+
+<h3>Email</h3>
+
+<p>Despite all the new ways we have found to communicate online, email is still one of the most effective forms of marketing. Delivering valuable content straight to someone’s inbox is more powerful than sending it to them via an RSS reader or through social media. Patrick McKenzie, a developer who has over 7,000 email subscribers, doesn’t have a blog at all anymore, he sends all of his writing out via email.</p>
+
+<p>If you have a piece of content that has a strong call to action, and you have a good list, then an email may be a better option.</p>
+
+<h3>White papers &amp; Ebooks</h3>
+
+<p>Sometimes content that is longer and deeper and be put into a more finalized, published form. One option is to release a white paper. A white paper is generally a 5 to 10 page PDF about a particular subject.</p>
+
+<p>White papers can be a powerful marketing tool, especially when combined with email lists. You could offer to give users a white paper in exchange for their email address, and then send it to them automatically when they join your mailing list. eBooks can serve he same purpose. The founder of Freshbooks recently wrote and released an eBook completely free called “Breaking The Time Barrier“. Breaking The Time Barrier is an interesting example since in the book, he advocates against freelancer’s billing by the hour, which is one of the main features of his software.</p>
+
+<p>However, what the book does accomplish is providing value to his main client base by explaining to freelancers how changing their billing structure can make them more money. By doing this he built trust among his current and potential customers, and was able to generate a lot of traffic by offering something so valuable for free.</p>
+
+<p>eBooks can also become a profitable product. People like Nathan Barry Have built successful businesses mainly based on selling three books he has written.</p>
+
+<h3>Audio &amp; Video</h3>
+
+<p>Content doesn’t always have to be just written. More and more people are moving to using audio and video as a way to deliver content. Audio and video are strong tools, mainly because they are more rare than plain written content. It also gives you alternatives way to promote your message. Just writing text will not get you on YouTube. Different people like to consume content in different ways, so having multiple options lets you reach out to the maximum audience. If you have educational content, you could also use this as a path to monetization by using a service such as SkillShare.</p>
+
+<h3>Reworking Content</h3>
+
+<p>Content doesn’t always have to take a single form. You can take content from any of these and transfer it to a different medium. This can give you the opportunity to expand on your message, and reach a wider audience. For example, maybe you write a blog article, and you realize you have a lot more to say on the subject, so you create a 5 part email course on the subject. Maybe you take that course and record a video of it and put it on youtube.</p>
+
+<p>By increasing the fidelity of the message, you can also increase the value. Video is a better teaching tool than audio, which is a better tool that just plain text.</p>
+
+<p>We are all capable of creating great content to share with the world, and there are many more ways to share than by just blogging. Find the channel that let’s your voice shine through the clearest.</p>
+
+<script src="https://app.convertkit.com/landing_pages/531.js"></script>
+
+
+<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
+
+<p>P.S. Above is an example of putting more content to work. I have put together a free book about pricing, which then subscribes you to my newsletter, where I write additional content to build relationships with people.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Value in Launching Early]]></title>
@@ -884,346 +941,6 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
 <p><a href="https://www.twitter.com/_Concordant">Concordant Solutions on Twitter</a></p>
 
 <p><a href="http://www.concordantsolutions.com">ConcordantSolutions.com</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[AngularJS: an Overview]]></title>
-    <link href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/"/>
-    <updated>2013-06-27T12:33:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2013/06/27/angularjs-an-overview</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/angular.png" width="260"></p>
-
-<p>AngularJS is a JavaScript framework made by Google for building complex client-side applications. Angular&#8217;s killer feature is &#8216;directives&#8217; which allow you to extend HTML by creating your own tags and attributes. Angular projects have a somewhat different structure than other JavaScript MVC frameworks, but it can be highly modular and easy to maintain once you understand the structure. Let&#8217;s take a look at the main components of AngularJS and how they work, and why you should strongly consider Angular for your next project.</p>
-
-<!-- more -->
-
-
-<h3>The Philosophy of AngularJS</h3>
-
-<h4>Data First</h4>
-
-<p>If you are familiar with JavaScript libraries like jQuery, using AngularJS will require a bit of a paradigm shift. AngularJS is like jQuery, but backwards. what I mean by that, is that jQuery is mainly focused on DOM manipulation, and then you update data based on that. When writing Angular, you will mostly be updating data, and the DOM will be updated for you, with very little work on your end.</p>
-
-<h4>Highly Testable</h4>
-
-<p>AngularJS was designed to be testable end-to-end. It uses <strong>Dependency Injection</strong> In many of objects so that parts of it can easily be mocked. It is also designed to encourage you to break the functionality of your application into several smaller, more testable parts.</p>
-
-<h4>Declarative HTML</h4>
-
-<p>Angular is designed to extend HTML to make it the language you need for building complex web applications. Adding your own tags and attributes allows you to write simple HTML tags that do very complex things.</p>
-
-<h3>Data Binding</h3>
-
-<p>Let&#8217;s take a look at a very simple AngularJS app, that uses <strong>two-way data binding</strong>.</p>
-
-<figure class='code'><figcaption><span>index.html  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;div&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#39;text&#39;</span> <span class="na">ng-model=</span><span class="s">&#39;name&#39;</span> <span class="nt">/&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;h2&gt;</span>{{name}}<span class="nt">&lt;/h2&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Let&#8217;s break this down line by line to explain what is happening:</p>
-
-<ul>
-<li><code>&lt;body ng-app&gt;</code> : all Angular code must be wrapper in this directive. This declares that everything within this tag will be treated as an angular application.</li>
-<li><code>&lt;input type='text' ng-model='name' /&gt;</code> : This is one part of the data binding. Here we are using another directive, ng-model, to bind the input to a string. Note that in this example we also see that attribute directives can have arguments.</li>
-<li><code>&lt;h2&gt;{{name}}&lt;/h2&gt;</code> : Whenever you type into the input box, this h2 tag updates automatically. This is the automatic DOM manipulation I mentioned earlier. We were able to do this without writing a single line of JavaScript.</li>
-</ul>
-
-
-<h3>Modules</h3>
-
-<p><strong>Modules</strong> are used to organize the objects in an AngularJS application. Modules can either be used as as the &#8216;core&#8217; of an application, and contain all of the classes used for it, or they can be used to group several objects that have similar functionality. Let&#8217;s create a module for our application:</p>
-
-<figure class='code'><figcaption><span>app.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;myApp&#39;</span><span class="p">,</span> <span class="p">[]);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span>index.html  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app=</span><span class="s">&#39;myApp&#39;</span><span class="nt">&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The first argument passed to <code>angular.module</code> is the name of the module. We have passed that name to the <code>ng-app</code> to bind everything contained in that directive to our module. The second argument is an array of other modules your module depends on. This is empty since we currently don&#8217;t have any. Much like directives, AngularJS contains several modules already built that you can include in your projects.</p>
-
-<p>Now that we have a module, we will write our first type of AngularJS object, a <strong>controller</strong>.</p>
-
-<h3>Controllers</h3>
-
-<p>Controllers are tied to particular html elements. They contain data and functions that the html can interact with, and can interact with other service objects, which can handle things such as communicating with the server. Let&#8217;s create a controller and bind it to a div in our application.</p>
-
-<figure class='code'><figcaption><span>app.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;mainCtrl&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">){</span>
-</span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Default Name&#39;</span><span class="p">;</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span>index.html  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app=</span><span class="s">&#39;myApp&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&#39;mainCtrl&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#39;text&#39;</span> <span class="na">ng-model=</span><span class="s">&#39;name&#39;</span> <span class="nt">/&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;h2&gt;</span>{{name}}<span class="nt">&lt;/h2&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Here we&#8217;ve used the <code>ng-controller</code> directive to bind our controller function to a div. Controllers get one argument by default which is called <code>$scope</code>. <code>$scope</code> contains all of the data that the html can interact with. When you reload the page, you will notice that the input now starts with the field filled in with &#8216;Default Name&#8217;. This is because we set that variable in the controller, which is called when the page is loaded.</p>
-
-<p>Functions can also applied to scope and then called inside the HTML. Angular contains several directives for handling various events. Let&#8217;s change our example to include a function that we will call with an <code>ng-click</code> directive. We will add a button to save the name we create and later display the list.</p>
-
-<figure class='code'><figcaption><span>app.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;mainCtrl&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">){</span>
-</span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Default Name&#39;</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">people</span> <span class="o">=</span> <span class="p">[];</span>
-</span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">savePerson</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">$scope</span><span class="p">.</span><span class="nx">people</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">};</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span>index.html  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app=</span><span class="s">&#39;myApp&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&#39;mainCtrl&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#39;text&#39;</span> <span class="na">ng-model=</span><span class="s">&#39;name&#39;</span> <span class="nt">/&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;button</span> <span class="na">ng-click=</span><span class="s">&#39;savePerson()&#39;</span><span class="nt">&gt;</span>Save Person<span class="nt">&lt;/button&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;h2&gt;</span>{{name}}<span class="nt">&lt;/h2&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now we can save a list of these people. We can use another directive called <code>ng-repeat</code> To output a list of the people we have saved:</p>
-
-<figure class='code'><figcaption><span>index.html  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;ul&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&#39;person in people&#39;</span><span class="nt">&gt;</span>{{person}}<span class="nt">&lt;/li&gt;</span>
-</span><span class='line'><span class="nt">&lt;/ul&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now that we have seen how we can manipulate data inside the JavaScript, let&#8217;s look at how we can manipulate the DOM, by creating our own <strong>directives</strong></p>
-
-<h3>Directives</h3>
-
-<p>You have already seen directives in use in several places inside the application. You can also define your own directives as part of your application. Let&#8217;s create an alertable directive that will allow you to set a message to be alerted whenever you click on the element.</p>
-
-<figure class='code'><figcaption><span>app.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">directive</span><span class="p">(</span><span class="s1">&#39;alertable&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>  <span class="k">return</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">restrict</span> <span class="o">:</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span>
-</span><span class='line'>    <span class="nx">link</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">scope</span><span class="p">,</span> <span class="nx">element</span><span class="p">,</span> <span class="nx">attrs</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">element</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">alert</span><span class="p">(</span><span class="nx">attrs</span><span class="p">.</span><span class="nx">alertable</span><span class="p">);</span>
-</span><span class='line'>      <span class="p">});</span>
-</span><span class='line'>     <span class="p">}</span>
-</span><span class='line'>  <span class="p">};</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And now we an add this to our person list:</p>
-
-<figure class='code'><figcaption><span>index.html  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&#39;person in people&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">alertable=</span><span class="s">&#39;{{person}}&#39;</span><span class="nt">&gt;</span>{{person}}<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;/li&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>As you can see, directives return an object that will define the directive. There are several optional arguments that can be passed here, but let&#8217;s look at the two we used here:</p>
-
-<ul>
-<li><p><strong>restrict</strong> : This tells your directive what kind of directive it will be. restrict is required and there are four possible arguments that can be passed to it:</p></li>
-<li><p><strong>E</strong> : Element. example usage: <code>&lt;my-directive&gt;&lt;/my-directive&gt;</code></p></li>
-<li><strong>A</strong> : Attribute. example usage: <code>&lt;div my-directive&gt;&lt;/div&gt;</code></li>
-<li><strong>C</strong> : Class. example usage: <code>&lt;div class='my-directive'&gt;&lt;/div&gt;</code></li>
-<li><p><strong>M</strong> : Comment. example usage: <code>&lt;!-- directive:my-directive --&gt;</code></p></li>
-<li><p><strong>link</strong> : The link function is responsible for adding event listeners and updating the dom.</p></li>
-</ul>
-
-
-<p>You can read about some of the other possible options in the <a href="http://docs.angularjs.org/guide/directive">Angular directive documentation</a>.</p>
-
-<h3>Services</h3>
-
-<p>Services are classes that can either contain business logic or handle data. Now we are going to refactor  our previous example and create a service that can handle the data in our list of people.</p>
-
-<figure class='code'><figcaption><span>app.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">factory</span><span class="p">(</span><span class="s1">&#39;PersonService&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">PersonService</span> <span class="o">=</span> <span class="p">{};</span>
-</span><span class='line'>  <span class="nx">PersonService</span><span class="p">.</span><span class="nx">people</span> <span class="o">=</span> <span class="p">[];</span>
-</span><span class='line'>  <span class="nx">PersonService</span><span class="p">.</span><span class="nx">addPerson</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">person</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">PersonService</span><span class="p">.</span><span class="nx">people</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">person</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">};</span>
-</span><span class='line'>  <span class="k">return</span> <span class="nx">PersonService</span><span class="p">;</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>You&#8217;ll notice that services are created slightly differently than controllers. Controllers are just a function, where services are a function that returns an object. This allows you to add private methods to your service if you would like.</p>
-
-<p>Now we need a way for our controller to have access to the service we just created. Since they are in the same module, this is very easy to do. This also involves one of the more &#8220;magical&#8221; features of Angular. To give the controller access to our service, we just have to add it as an argument to our controller, like so:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>app.controller('mainCtrl', function($scope, PersonService){});</span></code></pre></td></tr></table></div></figure>
-
-
-<p>What&#8217;s really surprising is that if you change the order of the arguments to the controller function, <em>it will not change how the controller function operates</em>. So, if we did this instead:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>app.controller('mainCtrl', function(PersonService, $scope){});</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Our function would behave in exactly the same way. This is because AngularJS looks at the names of the arguments of a function to decide what to pass to them. Now, you may be concerned that this could break if you were to minify your JavaScript, and you would be right. Luckily, Angular provides an alternate way of declaring functions to prevent issues when minifying your code. It involves passing an array of strings to tell angular what the arguments should be, with the actual function as the last element in the array. So now your controller would look like this:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>app.controller('mainCtrl', ['$scope', 'PersonService', function($scope, PersonService){}]);</span></code></pre></td></tr></table></div></figure>
-
-
-<p>When writing services, Angular provides some helpful modules for communicating with the server. Some of the most useful are <a href="">ngHttp</a> and <a href="">ngResource</a>. ngHttp is used to make HTTP requests. ngResource is an extension of ngHttp designed to work exclusively with REST APIs. This is another reason why when you are declaring a service, you are asked for a function that returns an object; We are able to use this function to extend an existing object like ngResource and return it.</p>
-
-<h3>Routing</h3>
-
-<p>Angular also provides support for routing with URLs. Routing is performed by using the <code>config</code> function of the module. Let&#8217;s use this to structure separate pages for our main page, and give each person in our person list a profile page. Here is what the route provider will look like:</p>
-
-<figure class='code'><figcaption><span>app.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">config</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$routeProvider</span><span class="p">){</span>
-</span><span class='line'>  <span class="nx">$routeProvider</span><span class="p">.</span><span class="nx">when</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">templateUrl</span><span class="o">:</span> <span class="s1">&#39;templates/home.html&#39;</span><span class="p">,</span>
-</span><span class='line'>    <span class="nx">controller</span><span class="o">:</span> <span class="s1">&#39;homePageCtrl&#39;</span>
-</span><span class='line'>  <span class="p">});</span>
-</span><span class='line'>  <span class="nx">$routeProvider</span><span class="p">.</span><span class="nx">when</span><span class="p">(</span><span class="s1">&#39;/person/:id&#39;</span><span class="p">,</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">templateUrl</span><span class="o">:</span> <span class="s1">&#39;templates/profile.html&#39;</span><span class="p">,</span>
-</span><span class='line'>    <span class="nx">controller</span><span class="o">:</span> <span class="s1">&#39;profileCtrl&#39;</span>
-</span><span class='line'>  <span class="p">});</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Filters</h3>
-
-<p>Filters are a smaller, but often useful part of AngularJS. Filters are used to transform data when it is displayed to the user. Like directives, you can build them yourself, and Angular also includes several useful ones built-in. Let&#8217;s look at the following HTML:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;span>Price:&lt;/span> 300</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Which will look like this in the browser:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Price: 300</span></code></pre></td></tr></table></div></figure>
-
-
-<p>We can apply a couple filters to this to make it look different, by using the <code>|</code> operator:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;span>{{ "Price:" | uppercase }}&lt;/span> {{ "300" | currency }}</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And our output will now look like this:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>PRICE: $300.00</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Additional Reading</h3>
-
-<p>I hope you found this helpful, but this is just scratching the surface of what Angular.js is capable of. If you would like to learn more about Angular, here are some resources for further reading:</p>
-
-<ul>
-<li><a href="http://docs.angularjs.org/">AngularJS Documentation</a> - official documentation, lots of good examples</li>
-<li><a href="http://egghead.io">EggHead.io</a> - several short (usually 4 or 5 minute) videos explaining several particular parts of angular.</li>
-<li><a href="http://builtwith.angularjs.org/">BuiltWith AngularJS</a> - examples of applications built with Angular</li>
-<li><a href="http://sporto.github.io/blog/2013/04/12/comparison-angular-backbone-can-ember/">A Comparison of Angular, Backbone, CanJS and Ember</a> - a great article comparing AngularJS to some</li>
-</ul>
-
-
-<script src="https://app.convertkit.com/landing_pages/531.js?orient=horz"></script>
-
-
-<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/landing_pages/531">here</a>.</p>
 ]]></content>
   </entry>
   
