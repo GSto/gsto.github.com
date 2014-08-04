@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-08-04T16:02:38-04:00</updated>
+  <updated>2014-08-04T17:10:53-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,148 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[John Saddington: Blogging and Your Future]]></title>
+    <link href="http://glennstovall.com/blog/2014/08/04/john-saddington-blogging-and-your-future/"/>
+    <updated>2014-08-04T16:53:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/08/04/john-saddington-blogging-and-your-future</id>
+    <content type="html"><![CDATA[<h3>Video: John Saddington Talks About How Blogging Changed His Life</h3>
+
+<p><img class="left" src="http://glennstovall.com/images/articles/saddington.jpeg" width="260"></p>
+
+<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
+
+<p><a href="http://john.do/">John Saddington</a> gave a talk in February for <a href="http://www.meetup.com/transform-athens/">Transform Athens</a> called “Blogging and your Future”. It was an inspiring talk. I don’t think any talk has gotten me to move to action more so than this one. It was published on Youtube and had a view count way lower than it deserved, so I wanted to share it here:</p>
+
+<!-- more -->
+
+
+<div style='clear:both;'></div>
+
+
+<h3>&#8220;Blogging And Your Future&#8221; by John Saddington</h3>
+
+<iframe width="853" height="480" src="http://glennstovall.com//www.youtube.com/embed/ELJMXr7RWF8" frameborder="0" allowfullscreen></iframe>
+
+
+<p>I’m a big proponent of writing as a tool for not only marketing, but for education and communication as well. I’ve written some more on writing in a couple of other places. I’ve talked on my personal blog about <a href="http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/">why I share some things on my personal site and some here on my company site</a>. I’ve also written on here on how you shouldn’t stop at blogging, but how you should form an entire <a href="http://glennstovall.com/blog/2014/08/01/from-blogging-to-content-strategy/">content strategy</a>.</p>
+
+<p><strong>Update:</strong> Since posting this article, I&#8217;ve since changed my mind on the opinions shared above. All my blogging content is available here on glennstovall.com Read the follow up here: <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">Why I am killing my company blog</a>.</p>
+
+<div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+
+
+
+
+
+
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+
+
+<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Do Product Iteration in 1 Image]]></title>
+    <link href="http://glennstovall.com/blog/2014/08/04/how-to-do-product-iteration-in-1-image/"/>
+    <updated>2014-08-04T16:47:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/08/04/how-to-do-product-iteration-in-1-image</id>
+    <content type="html"><![CDATA[<h3>How Spotify apporaches feature development</h3>
+
+<p><img class="center" src="http://glennstovall.com/images/articles/spotify-iteration.jpg"></p>
+
+<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
+
+<p>This picture from Spotify is a great example of how to look at product iteration. Notice that in the image, Spotify focuses on the core features of the product and delivers on that. What is the core feature of a car? To transport people. It’s not an engine, or a chassis, or anything like that. All of these are features that deal with the form of the car, not it’s purpose. A car solves the problem of getting you where you want to go. So does a skateboard.</p>
+
+<p>What problem is your product trying to solve, and how can you get to a workable prototype as quickly as possible?</p>
+
+<!-- more -->
+
+
+
+
+<div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+
+
+
+
+
+
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+
+
+<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[From Blogging to Content Strategy]]></title>
@@ -699,6 +841,11 @@ I believe that this new approach will lead to me operating in a more efficient m
 
 <p>I was recently published in my local paper, The Athens Banner Herald. You can read the full article <a href="http://onlineathens.com/business/2014-05-16/stovall-building-blocks-business">here</a>.</p>
 
+<!-- more -->
+
+
+
+
 <div class="ck_embed_form ck_horizontal_subscription_form">
   <div class="ck_embed_form_content">
       <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
@@ -1282,6 +1429,11 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
 
 <p><a class="m-story" data-collapsed="false" href="https://medium.com/p/6c9c9f08b552">How Letting Go of Money Made me More of It</a></p>
 
+<!-- more -->
+
+
+
+
 <div class="ck_embed_form ck_horizontal_subscription_form">
   <div class="ck_embed_form_content">
       <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
@@ -1543,142 +1695,6 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
 <p>By thinking about how you price and position your services, you can come up with plans that can make your scheduling better, and help you price your services more aggressively.</p>
 
 <p><strong>EDIT:</strong> Just found this episode of The Freelancer&#8217;s Show where they discuss <a href="http://www.freelancersshow.com/the-freelancers-show-097-weekly-billing/">weekly billing</a>, Worth a listen if you want to hear more about this subject.</p>
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-
-
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Other Writing Around the Web]]></title>
-    <link href="http://glennstovall.com/blog/2014/02/21/other-writing-around-the-web/"/>
-    <updated>2014-02-21T16:11:00-05:00</updated>
-    <id>http://glennstovall.com/blog/2014/02/21/other-writing-around-the-web</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/writing.jpg" width="260"></p>
-
-<p>I haven&#8217;t spent much time writing content for this blog, but I have been doing some writing on other sites. Here are some of my posts from other sites:</p>
-
-<!-- more -->
-
-
-<ul>
-<li><a href="http://concordantsolutions.com/4-techniques-developing-ios-android/">4 Techniques for Developing for both iOS and Android</a> Discusses the pros and cons of web apps vs. native apps vs. cross compiling tools such as Titanium</li>
-<li><a href="http://concordantsolutions.com/the-value-in-launching-early/">The Value in Launching Early</a> Why pushing your launch date up by cutting features is only going to make you more money.</li>
-<li><a href="http://concordantsolutions.com/dont-bill-hourly/">Why We Don&#8217;t Bill Hourly</a> An explination of my logic behind changing my billing techniques in 2014. Protip: Start billing weekly.</li>
-<li><a href="http://concordantsolutions.com/aarrr-pirate-metrics-5-numbers-you-need-to-know-about-your-business/">Pirate Metrics, 5 Numbers you Need to Know About Your Business</a>. Writing about the main metrics companies should be looking at.</li>
-<li><a href="https://medium.com/p/6c9c9f08b552">How Letting Go of Money Made me More of It</a> One of my personal favorites. Discussing how life lessons from being a profressional online poker player translate into being a consultant.</li>
-</ul>
-
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-
-
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Announcing Concordant Solutions]]></title>
-    <link href="http://glennstovall.com/blog/2013/12/10/announcing-concordant-solutions/"/>
-    <updated>2013-12-10T11:09:00-05:00</updated>
-    <id>http://glennstovall.com/blog/2013/12/10/announcing-concordant-solutions</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/santamegaphone.png" width="260"></p>
-
-<p>As a consultant, it&#8217;s important to think of what you are doing as a business, and not just as you as a person. Having said that, I&#8217;ve set up a new company name for my services, <strong>Concordant Solutions</strong>.</p>
-
-<p>The name comes from a Concordant, or agreement. It signifies how by working together with clients I am able to provide value for them that neither one of us could do individually. When people with domain knowledge in an industry come together with people with tech knowledge and the skills to put their ideas into practice, great things happen.</p>
-
-<p>The company also gives me an avenue for market segmentation when it comes to content. I will still have this personal blog, which will be centered around technical content. Concordant Solutions will focus on content aimed at business owners.</p>
-
-<p>If you are interested in supporting me, or learning more about ways you can help your business, Please check out my new company below.</p>
-
-<p><a href="https://www.facebook.com/concordantsolutions">Concordant Solutions on Facebook</a></p>
-
-<p><a href="https://www.twitter.com/_Concordant">Concordant Solutions on Twitter</a></p>
-
-<p><a href="http://www.concordantsolutions.com">ConcordantSolutions.com</a></p>
 
 <div class="ck_embed_form ck_horizontal_subscription_form">
   <div class="ck_embed_form_content">

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: videos | Glenn Stovall]]></title>
+  <link href="http://glennstovall.com/blog/categories/videos/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-08-04T17:10:53-04:00</updated>
+  <id>http://glennstovall.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[John Saddington: Blogging and Your Future]]></title>
+    <link href="http://glennstovall.com/blog/2014/08/04/john-saddington-blogging-and-your-future/"/>
+    <updated>2014-08-04T16:53:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/08/04/john-saddington-blogging-and-your-future</id>
+    <content type="html"><![CDATA[<h3>Video: John Saddington Talks About How Blogging Changed His Life</h3>
+
+<p><img class="left" src="/images/articles/saddington.jpeg" width="260"></p>
+
+<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
+
+<p><a href="http://john.do/">John Saddington</a> gave a talk in February for <a href="http://www.meetup.com/transform-athens/">Transform Athens</a> called “Blogging and your Future”. It was an inspiring talk. I don’t think any talk has gotten me to move to action more so than this one. It was published on Youtube and had a view count way lower than it deserved, so I wanted to share it here:</p>
+
+<!-- more -->
+
+
+<div style='clear:both;'></div>
+
+
+<h3>"Blogging And Your Future" by John Saddington</h3>
+
+<iframe width="853" height="480" src="http://glennstovall.com//www.youtube.com/embed/ELJMXr7RWF8" frameborder="0" allowfullscreen></iframe>
+
+
+<p>I’m a big proponent of writing as a tool for not only marketing, but for education and communication as well. I’ve written some more on writing in a couple of other places. I’ve talked on my personal blog about <a href="http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/">why I share some things on my personal site and some here on my company site</a>. I’ve also written on here on how you shouldn’t stop at blogging, but how you should form an entire <a href="http://glennstovall.com/blog/2014/08/01/from-blogging-to-content-strategy/">content strategy</a>.</p>
+
+<p><strong>Update:</strong> Since posting this article, I've since changed my mind on the opinions shared above. All my blogging content is available here on glennstovall.com Read the follow up here: <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">Why I am killing my company blog</a>.</p>
+
+<p><div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+  
+<style type="text/css">
+</style>
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+If the form above doesn't work, you can get it [here](https://app.convertkit.com/concordant/freelance-pricing-handbook).
+</p>
+]]></content>
+  </entry>
+  
+</feed>
