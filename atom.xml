@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-08-04T17:10:53-04:00</updated>
+  <updated>2014-08-04T20:31:07-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,515 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Breakdown of a Pricing Grid]]></title>
+    <link href="http://glennstovall.com/blog/2014/08/04/breakdown-of-a-pricing-grid/"/>
+    <updated>2014-08-04T20:17:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/08/04/breakdown-of-a-pricing-grid</id>
+    <content type="html"><![CDATA[<h3>Learn Why is The Middle Plan Always Called The &#8220;Best Value&#8221;</h3>
+
+<p><img class="left" src="http://glennstovall.com/images/articles/bidsketch_pricing_full.png" width="260"></p>
+
+<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
+
+<p>You may have noticed that on many software as a service pricing pages, they tend to look the same. There are always a few plans, usually 3, and they middle is <strong>always</strong> the most popular. This isn’t an accident. This is all designed to get the maximum value out of a customer. Let’s take a look at one company’s pricing model and why it is effective.</p>
+
+<!-- more -->
+
+
+<p><img class="center" src="http://glennstovall.com/images/articles/bidsketch_pricing_full.png"></p>
+
+<p>I got this table from <a href="http://www.bidsketch.com/pricing/">BidSketch’s pricing page</a>. BidSketch is a tool that helps freelancers and agencies write and send winning proposals. This table is important to BidSketch. Literally every single customer, and therefore every single dollar, comes from this page. Nothing in this table is an accident. Let’s take a look at the plan names:</p>
+
+<h3>Customer Segmentation</h3>
+
+<p><img class="center" src="http://glennstovall.com/images/articles/bidsketch-segmentation.png"></p>
+
+<p>you’ll notice that BidSketch doesn’t call it’s plans “small/medium/large”, or “bronze/silver/gold” or anything generic like that. Instead, they know that they have different kinds of customers, and that those customers are willing to pay different rates. They aim at three of their types of clients: individual freelancers, small studios, and large agencies.</p>
+
+<p>Why do they charge agencies more money? Because agencies get more value out of BidSketch than freelancers. The proposals that large agencies are sending out are an order of magnitude larger than the one a freelancer is sending out.</p>
+
+<p>This is the most important part of pricing any service or product: <strong>when the customer gets more value out of your product or service, you need to be getting more value from that customer.</strong> Doing this aligns your incentives with the customer’s. This means that now you and the customer are a team. Since you make money off of your customer being successful, you will do everything you can to help your customer. Since BidSketch knows that if they help their customers make more money by helping them write better proposals, they are going to do everything they can to make the best proposal tool out there? It’s a win-win for everybody.</p>
+
+<h3>Pricing Ratio</h3>
+
+<p><img class="center" src="http://glennstovall.com/images/articles/bidsketch-pricing.png"></p>
+
+<p>Firstly, you’ll notice that BidSketch put their highest price package first. This is an old-school marketing trick. By looking at the initial plan first, the $79 and $29 plans will feel much cheaper in comparison. The highest selling price plan is almost never the highest selling one, it is mostly their for comparison. This is called <em>price anchoring.</em></p>
+
+<p>You also want to have a decent ratio between your prices. If their prices were $29 / $39 / $49, they aren’t getting much extra value out of the plans. In fact, <a href="http://www.slideshare.net/ryandelk/micro-conf-final">Ryan Delk at Gumroad</a> has looked at all the sales of digital products, and has found the optimal ratios for tiered pricing:</p>
+
+<h4><em>1x 2.2x 5x</em></h4>
+
+<p>Where ‘X’ is the base cost of your service. You’ll see that BidSketch follows this ratio closely: $79 = 2.7x , $149 = 5.1x . Note that ratio is just an approximation, and you don’t have to follow it exactly.  <em>(I don’t think BidSketch would get the same revenue with a $29 /  $63.80  / $145 model)</em></p>
+
+<h3>Approximating Value</h3>
+
+<p><img class="center" src="http://glennstovall.com/images/articles/bidsketch-features.png"></p>
+
+<p>I said before that the best way to split up your pricing is to align your values with the customer’s. BidSketch could do this directly if they wanted too, and base their pricing on how the total dollar value of proposals that you close each month (payment processors such as <a href="https://stripe.com/">Stripe</a> and <a href="https://www.braintreepayments.com/">Briaintree</a> have the easiest alignment ever. They just get 2.7% of the revenue you bring in). In other cases, you may not have a way of directly knowing how valuable your service is to a client. In that case, you want to approximate the value. You do this by tying your pricing to something that is correlated to value. BidSketch does this in two ways: the number of users, and the amount of storage. Instead of looking a dollar value, they are looking at three things with these features:</p>
+
+<ul>
+<li>Number of employees / contractors you have working for you.</li>
+<li>The number of proposals you are sending out.</li>
+<li>The quality of proposals you are sending out. (i.e. using more photos &amp; videos, hence more storage)</li>
+</ul>
+
+
+<p>A company that has multiple people (agencies, studios) have to be making payroll, which means they are almost always making more money. That’s why you see a lot of software as a service products segment on number of users. One of the things that has held me back from hiring an assistant is I know the minute I have one employee my monthly software bill would shoot up a few hundred dollars a month.</p>
+
+<p>There are two version control services that software developers use: <a href="https://github.com/">GitHub</a> and <a href="https://bitbucket.org/">BitBucket</a>. A version control service is a place where developers can store and collaborate on code. BitBucket increases prices based number of users, but GitHub prices based on number of projects. I feel like GitHub missed the mark on this pricing. Number of projects is a false approximation of value. For example, BidSketch may only have one project file, for their software service product. I, as a consultant, would have a large number of projects since I work with a number of different clients. Why should I, a self employed consultant, be charged more than a company that pulls in millions of revenue every year?</p>
+
+<h3>Good Artists Borrow, Great Artists Steal</h3>
+
+<p>When it comes to pricing, there is no need to get creative.  There is a reason so many software as a service pricing pages look the same. <strong>Because it works.</strong> Every one would not do it if it wasn’t effective. If I was going to create a product aimed ad freelancers and agencies, I would look at competing and complementary products, and set up a very similar model. I may even use BidSketch’s exact same three tiers. The reason is that if I want to get into this space, BidSketch has done me a <strong>huge</strong> favor:</p>
+
+<h4><em>They have found and validated a price that the market will bear.</em></h4>
+
+<p>Usually finding a working pricing model requires lots of research and experimentation. However, to every one who wants to build a proposal tool, BidSketch has done them a huge favor. Thanks BidSketch! Some times people have a product idea, and get discouraged because it’s “been done”. Competition is not always a bad thing. Competition can be a sign that something works. On the other side of that coin, if you come up with a seemingly obvious idea that no one has done yet, it’s worth pausing for a moment and considering why you are the only person to show up to that particular party.</p>
+
+<p>Pricing models don’t need to be original. They need to be effective at converting sales and maximizing customer value. Save your creativity for your actual product.</p>
+
+<div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+
+
+
+
+
+
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+
+
+<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Say No To Entreporn]]></title>
+    <link href="http://glennstovall.com/blog/2014/08/04/say-no-to-entreporn/"/>
+    <updated>2014-08-04T20:10:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/08/04/say-no-to-entreporn</id>
+    <content type="html"><![CDATA[<h3>Reading HackerNews is More Harmful Than You Think</h3>
+
+<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
+
+<p>There is an insidious type of content out there on the internet, that is easy to waste time on. It’s what I call “entreporn”, and it isn’t only a waste of time to people, it is actively <strong>harmful</strong> to aspiring entrepreneurs.</p>
+
+<!-- more -->
+
+
+<h3>What is Entreporn?</h3>
+
+<p>I define entrepornography as any article that focuses on start-ups that have had some kind of crazy, fluke amount of success. Reading about snapchat was offered $3 billion dollars by Facebook but had the guts to say no. Some college kid built a web app and made $20,000 in sales while he was passed out from a bender. At least 60% of whatever is on the front page of Hacker News whenever you read this post. These pieces are salacious and exciting. They get us to imagine a world where we can take an idea all the way to top and create a hugely successful venture. It’s truely the american dream!</p>
+
+<h3>What&#8217;s the Problem</h3>
+
+<p>The problem is that the stories they like to tell are flukes. It inspires people who want to be “The next Facebook”. The problem is that no one is going to be the next Facebook. No one is going to have the same conditions that Mark Zuckerburg did. Even if they did, any company requires a lot of luck, especially to get to the place Facebook is at today. And besides, I never understood why Twitter didn’t get to take “The next Facebook”  crown and keep it.</p>
+
+<p>These articles can’t teach you anything, because they tell stories of companies that aren’t repeatable. I’m not asking that you stop reading articles on the internet, because it would make me quite the hypocritical writer. But also because there is a ton of good, valuable advice out there you could be reading instead.</p>
+
+<h3>Why It&#8217;s Harmful</h3>
+
+<p>However, the time wasting is not the worst part about this. As I said, I consider entreporn <strong>harmful</strong>. It’s toxic. It, much like regular pornography, gives inexperienced people a skewed view of what reality is like. Entreporn gives people the idea that they can pursue any idea, and hit it big. It gives people the impressions that start ups are like the lottery, except that they are willing to buy a single ticket with thousands of dollars and years of their life.</p>
+
+<p>I don’t want to discourage anyone from being an entrepreneur, in fact I would encourage anyone interested to learn more about it. However, I would encourage these people to learn how to be an entrepreneur in <em>the real world</em>, not the fantasy land that TechCrunch likes to paint. Very few people can build “The next Facebook”, but a <strong>whole lot</strong> of people can build a sustainable, profitable business. and reading these vain articles is actively preventing people from doing so.</p>
+
+<p>I don’t want to read about the guy who got 10,000 subscribers in a weekend. I’ll never be that guy. I want to read about the guy that got 100 and how he did it. That’s educational. That’s actionable. That’s <strong>real</strong>. Startups are not exempt from the being businesses, and the rules of business that have existed for hundreds of years still apply. By learning about how to build your business realistically, you have a much lower risk and higher chance of success.</p>
+
+<div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+
+
+
+
+
+
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+
+
+<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[start using drip email campaigns today]]></title>
+    <link href="http://glennstovall.com/blog/2014/08/04/start-using-drip-email-campaigns-today/"/>
+    <updated>2014-08-04T19:30:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/08/04/start-using-drip-email-campaigns-today</id>
+    <content type="html"><![CDATA[<h3>Increase Engagement And Conversions When People Sign Up For Your Email List</h3>
+
+<p><img class="left" src="http://glennstovall.com/images/articles/drip.jpg" width="260"></p>
+
+<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
+
+<p>When building a mailing list, engagement is highest within the first two to three weeks of the person joining the list. However, these people usually get the same content that everyone else on your list getting. Wouldn’t it be great if you could send them content that was optimized for this situation. That’s what <strong>drip email campaigns</strong> are for.</p>
+
+<!-- more -->
+
+
+<h3>What are Drip Email Campaigns?</h3>
+
+<p>Drip email campaigns are email campaigns that are sent out based on when a subscriber has performed an action instead of being scheduled on a calendar date. While a regular email list campaign may be scheduled to go out on June 1st, 2014 at 1pm, A drip email campaign will be scheduled to be sent out 3 days after a sign up.</p>
+
+<p>Drip marketing campaigns are usually several emails in length. We want to reach out to a person multiple times (but too much, don’t be obnoxious) when they have first joined our list.</p>
+
+<h3>Playing the Long Game</h3>
+
+<p>No matter what you are selling, you are always selling people trust to some degree. People need to believe in your product and believe that you are capable of solving their problem before they will be willing to pay you money to do so. You can’t really build a whole lot of trust on social media or on a landing page. However, it takes much less trust to get someone’s email address, and from there you will have several opportunities to reach out to this person and build trust.</p>
+
+<h3>How to Structure Your Campaign</h3>
+
+<p>The most important thing about your campaign is that you need it to be helpful and valuable to your new subscriber. Your posts need to be mostly selfless. If you run a mailing list and all you do is sell to them, then you are doing it wrong, and it will drive people away. By selling directly less, you will build more trust, and make more sales in the end.</p>
+
+<p>My personal rule is that your helpful content should have a minimum 2:1 ratio of being helpful, and being a sales email. Also, you should mix up between “hard sells” and “soft sells”. A hard sell is an email where the entire point is to get the user to complete a transaction. A soft sell is a message that is still valuable, but contains a subtle message.  For example, I may write an email about how to use lifecycle emails to increase conversions, and follow it up with “And by the way, this is something I love helping clients with. hit ‘reply’ if you would like to talk about us working together.”</p>
+
+<p>Following those rules, here is what a drip campaign might look like:</p>
+
+<ol>
+<li>An introductory email.</li>
+<li>An educational email.</li>
+<li>An education email with a soft sell.</li>
+<li>1 -2 more educational emails.</li>
+<li>A hard sell.</li>
+</ol>
+
+
+<p>You can change this as you see fit, just stick to the 2:1 ratio.</p>
+
+<h3>Your First Campaign</h3>
+
+<p>If you have done any writing before, you can set your first campaign set up  quickly. Go find 4 – 5 of your best email campaigns or blog posts, and spread them out over 2 -4 weeks. You now have a campaign! This way you are giving your new subscribers your best content at a point when they are most engaged, making this some of the most effective email marketing you can do.</p>
+
+<h3>Using Drip Campaigns as an Incentive</h3>
+
+<p>Which do you think is a better call to action to get people to join a mailing list?</p>
+
+<ul>
+<li>Sign up for my newsletter.</li>
+<li>Enter your email address and I will give you something for free.</li>
+</ul>
+
+
+<p>I recently wrote a <a href="http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem/">case study</a> about how I used a free eBook in order to jump start one of my lists. You can use your drip campaign as the incentive by framing it as a service. For example, you may have a 30-day course that can teach your potential clients how to do something. ConvertKit is a drip marketing tool that does this on their first page. Since the service revolves around building forms to get people to sign up, they have a <a href="https://convertkit.com/">30 day course on creating forms that convert</a>.</p>
+
+<h3>Tools for Drip Campaigns</h3>
+
+<ul>
+<li><strong>Mailchimp Autoresponders</strong> : Mailchimp doesn’t have any tools built specifically for drip marketing campaigns, but they do have autoresponders, which you can use to set one up. You can set an autoresponder to be sent out X days after someone joins a list, so you can create a drip campaign by creating several autoresponders.</li>
+<li><strong>Drip</strong>: As you can tell my the name, Drip is designed specifically for creating drip campaigns. It also integrates well with other email list providers, so if you want to use Drip for your campaigns and Mailchimp or AWeber for your list management, you can do that.</li>
+<li><strong>ConvertKit</strong>: ConvertKit is what I have been using lately. It has support for list management, drip campaigns, and offering sign-up incentives.</li>
+</ul>
+
+
+<p>By using drip campaigns, you can have a long form message that you can deliver to every single person that expresses interest in whatever it is your offering. If you have ever done sales where you had to have several emails or phone calls back and forth with a potential client, then you how time consuming that can be. Drip campaigns allow you to automate this process with the people that are in a situation where they are most likely to convert.</p>
+
+<div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+
+
+
+
+
+
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+
+
+<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[better business metrics]]></title>
+    <link href="http://glennstovall.com/blog/2014/08/04/better-business-metrics/"/>
+    <updated>2014-08-04T19:17:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/08/04/better-business-metrics</id>
+    <content type="html"><![CDATA[<h3>Get Better Information From The Same Data</h3>
+
+<p><img class="left" src="http://glennstovall.com/images/articles/analytics.jpg" width="260"></p>
+
+<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
+
+<p>It’s important to track metrics in your business. Tracking metrics means that you can make decisions based on numbers and cold hard facts instead of guessing and gut feelings. But not all metrics are created equal, and not all ways of tracking metrics are creating equal. If you are looking at the wrong numbers, then you could end up making disastrous decisions. Let’s take a look at the best ways to track metrics, and the most important numbers you need to be keeping an eye on.</p>
+
+<!-- more -->
+
+
+
+
+<div style='clear:both;'></div>
+
+
+<h3>Metrics by Time</h3>
+
+<p>You want to look at metrics in units of time. “Grand total” type metrics, such as total number of Facebook followers, doesn’t tell you anything about the current standing of your business. In this example, you would want to look at “new Facebook followers per month” instead. This way you can see how you are doing at your key performance indicators <em>right now</em>.</p>
+
+<h3>Metrics by Change</h3>
+
+<p>What’s even better than looking at metrics is weekly or monthly units, is looking at the comparison of those units. Even better than “new Facebook followers per month” would to compare this month’s number to last month’s number, and come up with a new metric, “% change in new Facebook followers”. This is the number where you want to move the meter. This shows the rate of growth inside your company.</p>
+
+<p>This is one of those times in life where calculus is actually useful. By looking at these numbers, you are looking at the velocity and acceleration of your business. If you are driving a car and want to reach your destination faster, you don’t look at how many miles you have traveled, you look at your miles per hour (a metric over time), and put the pedal in the medal in order to increase your miles per hour over time (a metric by change).</p>
+
+<h3>Three Primary Metrics</h3>
+
+<p>There are three primary metrics that every business, no matter how large or small, no matter how tech-savvy or old-school, should be looking at:</p>
+
+<ul>
+<li>Leads: The number of potential customers you are making contact with each month.</li>
+<li>Conversions: What percentage of those leads are you able to convert into paying customers?</li>
+<li>Profit: Is your business making enough money to be viable. Profit is just the child of two other important metrics, Revenue and Expenses, which are both important in their own right.</li>
+</ul>
+
+
+<p>I’m not saying these are the only things worth tracking, but if you don’t know these numbers then this would be a good place to start. It’s better to focus on a few important metrics than many unimportant ones. While keeping up with numbers is a good thing, you don’t want to drown out the signal with a lot of noise.</p>
+
+<h3>Vanity Metrics</h3>
+
+<p>There are a number of metrics that you probably actively avoid tracking in order to prevent you from making bad decisions. If you tracked number of sales of a certain type of product, but the cost of a sale of that product caused you to lose money on it, then you would end up trying to increase the units sold, and eventually end up in the poor house
+. Here are some examples of numbers that are not worth wasting your time on:</p>
+
+<ul>
+<li><strong>Registered Users</strong>: Getting users to try a new service once is easy. Getting users to stay is something else altogether.</li>
+<li><strong>Pageviews</strong>: Pageviews can be easily manipulated, and are worth very little. It also doesn’t tell you about the quality of the traffic. I would rather have 10 visits from potential clients than 1,000 visits from people from Hacker News who happened to like a blog article.</li>
+<li><strong>Likes</strong> Unless your business is heavily focused in the social media space, I wouldn’t put a lot of weight on how many likes, shares, retweets, and so on your company gets. These are like pageviews but another step removed and that much more worthless.</li>
+</ul>
+
+
+<p>These are called vanity metrics because they make you feel good. However, none of these are actionable and don’t have any impact on the bottom line of your business. Don’t get caught up in trying to move these numbers much.</p>
+
+<h3>Further Watching</h3>
+
+<p>If you’d like to learn more about metrics, what to watch and how to watch them, Ben Yoskovitz gave a talk called “Lean Analytics: How to Focus on What Matters” Which is available for free online. I highly recommend it:</p>
+
+<p><a href="http://vimeo.com/70981922">Ben Yoskovitz – Lean Analytics: How to Focus on What Matters</a> from <a href="http://vimeo.com/user12790628">MicroConf</a> on <a href="https://vimeo.com/">Vimeo</a>.</p>
+
+<div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+
+
+
+
+
+
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+
+
+<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Great Customer Service Example]]></title>
+    <link href="http://glennstovall.com/blog/2014/08/04/a-great-customer-service-example/"/>
+    <updated>2014-08-04T19:08:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/08/04/a-great-customer-service-example</id>
+    <content type="html"><![CDATA[<h3>How One Blog Post Made Me A Loyal Customer</h3>
+
+<p><img class="left" src="http://glennstovall.com/images/articles/convertkit.png" width="260"></p>
+
+<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
+
+<p>I have recently been working on using Nathan Barry’s app <a href="http://www.convertkit.com">ConvertKit</a> to set up some new email marketing tools, and It wasn’t immediately clear to me how to  import users, so I sent him an email asking how to do this. In 15 minutes, I get a response that he had just put this up:</p>
+
+<!-- more -->
+
+
+
+
+<div style='clear:both;'></div>
+
+
+<p><img class="center" src="http://glennstovall.com/images/articles/convertkit.png"></p>
+
+<p>A <a href="https://convertkit.com/2014/import-email-subscribers/">whole blog post</a>, written just for me! I thought it was an impressive effort, and a very quick turnaround. But this is also a good example of another good customer service strategy:  Using your blog as your manual / help desk.</p>
+
+<p>Not only did Nathan reach out to me personally, he has a piece of content that accomplishes several other goals:</p>
+
+<ul>
+<li>It highlights a feature of his application: ConvertKit can import subscribers from your other applications.</li>
+<li>It gives him a public piece of content with good keywords, which is good for SEO.</li>
+<li>If anyone else has the same issue, they may either find this article, or Nathan can just send them a link. Either way, it automates a part of the customer support process, which saves time.</li>
+<li>It impressed one person so much they decided to blog about it :)</li>
+</ul>
+
+
+<p> If you are looking for ways to make your customer support more effective and efficient, you could do a lot worse than doing something like this.</p>
+
+<div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+
+
+
+
+
+
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+
+
+<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[John Saddington: Blogging and Your Future]]></title>
@@ -1256,445 +1765,6 @@ If you&#8217;d like a copy of the book, enter your email address below and I&#82
 <p>However, these all address the reduction of risk in the process, not in the end result. There are several ways this can be accomplished as well. A couple of examples are doing market and competitor research, to see what the project is facing and making sure it is framed appropriately. Another that I am a big fan of is getting to market earlier and iterating quickly. This allows you to work with real people and gather real data. Any decisions made before launch are in many ways an educated guess, and solutions and plans built on objective data instead of guesses will always have a higher chance of succeeding.</p>
 
 <p>Framing your work in this fashion can help both yourself and your clients. It can help you by not only seeing how to present value, but help you find new ways to provide more value to clients when you work as well. This can also help you land more sales and stand out from the competition.</p>
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-
-
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[10 Resources that shaped my career]]></title>
-    <link href="http://glennstovall.com/blog/2014/04/03/10-resources-that-shaped-my-career/"/>
-    <updated>2014-04-03T20:50:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/04/03/10-resources-that-shaped-my-career</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/library.jpg" width="260"></p>
-
-<p>There is amazing amount of resource available on the internet if you know where to look. I&#8217;ve realized that over the past year, there are some articles, pod casts, books, or videos that have had a huge impact on my view and approach to my business. I&#8217;ve had several people ask me how I came to conclusions I have about how I run my business, and how I execute on them. I wanted to share 10 links that are all free, and have all provided me with exceptional value.</p>
-
-<!-- more -->
-
-
-<h2>Finance</h2>
-
-<h3><a href="https://training.kalzumeus.com/newsletters/archive/consulting_1">How I Went from $100/hr Programming to $XX,000/week consulting &#8211; Patrick McKenzie</a></h3>
-
-<p>If you only read one of the articles on this list, make it this one. In this article Patrick McKenzie lays out how to go from being a programmer to a consultant. I touched on some of these points in my article <a href="http://glennstovall.com/blog/2014/03/05/take-out-the-tech/">Take out the Tech</a>, about how you aren&#8217;t hiring to program, but instead you are hired to solve problems.</p>
-
-<h3><a href="http://vimeo.com/22053820">Fuck You, Pay Me &#8211; Mike Monteiro(Video)</a></h3>
-
-<p>I tell everyone who wants to get into the freelance business they need to watch this video. While some people are put off my Mike&#8217;s brash style of speaking, the information him and his legal counsel give in this talk is indispensable. In this talk, they talk about how to structure contracts that protect both yourself and your client. Spend 45 minutes watching this video, go touch up your contracts, and never deal with late or non paying clients again.</p>
-
-<h3><a href="http://planscope.io/blog/the-definitive-guide-to-project-billing/">The Definitive Guide to Project Billing &#8211; Brennan Dunn</a></h3>
-
-<p>Most people default to two ways to bill projects: hourly and at a flat rate. This article lays out several other options, such as billing daily and weekly.  Billing clients in daily and weekly increments changes the entire conversation, and has been the main thing I have done to  improve my own bottom line. This article does a great job of laying out your options and how they work. I&#8217;ve also talked about <a href="http://concordantsolutions.com/dont-bill-hourly/">Why I don&#8217;t bill hourly</a> and <a href="http://glennstovall.com/blog/2014/02/21/how-to-bill-daily-or-weekly/">How to bill Daily and Weekly</a> in other articles.</p>
-
-<h2>Sales</h2>
-
-<h3><a href="http://42insights.com/lead-generation-strategies/">The 5 Types of Lead Generation Strategies, and The Order You Should Implement Them &#8211; Nick Karrasch</a></h3>
-
-<p>to Summarize, Referrals, Outbound, Content Marketing, Advertising, and Partnerships, in that order. The number one question I get from aspiring freelancers is &#8220;How do you find clients?&#8221;. This article gives you 5 actionable, prioritized strategies for finding new leads. Starting with referrals, which are always the most effective. Many freelancers get 100% of their work from referrals, even if they don&#8217;t realize it. Because of this, it can be easy to become complacent, and not do a lot of active marketing, which leads to the feast or famine cycle that many freelancers find themselves in. That&#8217;s what steps 2 - 5 are for. If you are ever worried about finding clients, start working down the list. Actually, due to the average length of a sales pipeline (at least in my experience), start doing these when you are comfortable, and you&#8217;ll find that those moments when you are worried about finding clients will <strong>stop existing</strong>.</p>
-
-<h3><a href="http://paulgraham.com/ds.html">Do Things That Don&#8217;t Scale &#8211; Paul Graham</a></h3>
-
-<p>Another great article by Paul Graham. I have so many clients ask about &#8220;scalability&#8221; long before they have that problem. This article points out that the most effective strategies when you are starting out are ones that you eventually have to drop later on. I had a start-up founder working on a content network ask me &#8220;How can I find authors?&#8221;. I told him that was the wrong question. The right question to ask is &#8220;How do I find <em>one</em> author?&#8221;. It could be going to events, talking to people individually, and then following up via phone and email. Of course this can&#8217;t be done a lot, but it can be done once. And if it can be done once, then it can be done twice, and thrice, and so on.</p>
-
-<h2>Writing</h2>
-
-<h3><a href="http://nathanbarry.com/commitment-changed-career/">The Commitment That Changed My Career &#8211; Nathan Barry</a></h3>
-
-<p>In this article, Nathan Barry talks about how he made a commitment to write 1,000 words every day, and how it reshaped his career. This article showed me both the power and value of writing, and how much progress you can make by making a small commitment every day. Most first drafts of books are 25,000 - 50,000 words, which means you could write one in just one to two months. I&#8217;ve also seen first hand how writing can be a value tool for marketing, communication, and learning. Spending time writing has also been one of the most transforming decisions I&#8217;ve made for my career.</p>
-
-<h3><a href="http://paulgraham.com/essay.html">The Age of The Essay &#8211; Paul Graham</a></h3>
-
-<p>I probably could have filled up all 10 of these with essays by Paul Graham, but I think this the most important one. In this essay, Paul Graham talks about how  the art of writing essays has changed and became perverted over time by being confined to English departments. Our education system has taught us that essays has to structured a certain way, cite sources a certain way, and be about boring literary or historical topics (unless those subjects are your jam). In reality, essays were originally designed not to be a way for you to share information you already have, but to be an educational experience for yourself. This essay showed me that there is value in writing, even if no one reads it. This article is also meta-inspiring because I love how Paul Graham writes.</p>
-
-<h2>Building Products</h2>
-
-<h3><a href="http://brennandunn.com/episode-009-4-ways-to-productize-your-consulting-business/">4 Ways to Productize Your Consulting Business &#8211; Brennan Dunn (Podcast)</a></h3>
-
-<p>Summary: Retainers, Seminars, Paid Newsletters, Coaching. Many freelancers or consultants want to move from selling their time to selling some form of product. In fact, <a href="http://www.chasingproduct.com/">there is a podcast dedicated to the subject</a>. This podcast lays out some ways to make a small shift towards productizing things. Many developers / designers seem to think that product = SaaS application, but it doesn&#8217;t have to be this way. For example, selling scoped monthly retainers is an easy step that most freelancers can do to get into the habit of selling products, and create some recurring revenue for themselves.</p>
-
-<h3><a href="http://unicornfree.com/2013/why-you-should-do-a-tiny-product-first">Why You Should Do a Tiny Product First &#8211; Amy Hoy</a></h3>
-
-<p>When people decide that want to try to build a product to sell, it&#8217;s easy to jump into a grandiose idea, that will take a lot of time and resources. I tell clients there is <a href="http://concordantsolutions.com/the-value-in-launching-early/">value in launching early</a> because the bigger a project is, the more likely it is to fail. In this article Amy Hoy talks about picking a project that you can complete in 90 days. While I was wrong in my estimate for my project, It still gave me an idea for a smaller product, my book <em>Bootstrap Freelance</em> , Which I&#8217;ll be releasing later this year.</p>
-
-<h2>Productivity</h2>
-
-<h3><a href="http://unicornfree.com/2012/why-blacksmiths-are-better-at-startups-than-you">Why Blacksmiths are Better at Start-ups than You &#8211;Amy Hoy</a></h3>
-
-<p>This article is a swift kick-in-the-rear that a lot of freelancers and start up founders alike need. It is easy to get caught up in the idea of building something great and unique that we ignore what it takes to get there: lots of time and energy spent learning basic skills. Many people these days want to be craftsmen without putting in the hours to truly hone their craft. Many people are looking for the &#8220;growth hack&#8221; that is going to get their start up 10,000 sign ups overnight or the one pricing trick that clients hate so they can quadruple their freelancing rate. They don&#8217;t want to hammer out the basics and get good at them.</p>
-
-<p>All of this information on how to improve your business, your skills, and your life, is readily available on the internet. This is just the tip of the iceberg.  If you liked these I&#8217;d recommend digging deeper into some more of the content put out by some of the people I&#8217;ve mentioned here: <a href="http://planscope.io/blog/">Brennan Dunn</a>, <a href="http://unicornfree.com/">Amy Hoy</a>, <a href="http://nathanbarry.com/">Nathan Barry</a> , <a href="http://www.kalzumeus.com/greatest-hits/">Patrick McKenzie</a> , and <a href="http://www.paulgraham.com/">Paul Graham</a> , are all great authors who have put out a ton of great content for free.</p>
-
-<p>Some people may wonder why people would be willing to divulge so much of the secret of their success online. I think it goes back to the point Amy Hoy made in her blacksmith&#8217;s article: You can be given all of the tools and knowledge in the world, but if you aren&#8217;t willing to put in the work to put them to use and truly learn to hone your craft they won&#8217;t make any difference. Well, this is some of the best tools I have, and I&#8217;m giving them to you. So get out there and make a difference.</p>
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-
-
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How Letting Go Of Money Made me More of It]]></title>
-    <link href="http://glennstovall.com/blog/2014/03/14/how-letting-go-of-money-made-me-more-of-it/"/>
-    <updated>2014-03-14T18:34:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/03/14/how-letting-go-of-money-made-me-more-of-it</id>
-    <content type="html"><![CDATA[<p><em><strong>Note:</strong> This Story was originally <a href="https://medium.com/p/6c9c9f08b552/">posted on Medium on October 21, 2013</a>. But since Medium just added a new tool for <a href="https://medium.com/help-center/3eaed64aed8a">Embedding Posts on your own site</a>, I wanted to try it out.</em></p>
-
-<script async src="https://static.medium.com/embed.js"></script>
-
-
-<p><a class="m-story" data-collapsed="false" href="https://medium.com/p/6c9c9f08b552">How Letting Go of Money Made me More of It</a></p>
-
-<!-- more -->
-
-
-
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-
-
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Take Out The Tech]]></title>
-    <link href="http://glennstovall.com/blog/2014/03/05/take-out-the-tech/"/>
-    <updated>2014-03-05T15:25:00-05:00</updated>
-    <id>http://glennstovall.com/blog/2014/03/05/take-out-the-tech</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/make_fire.jpg" width="260"></p>
-
-<p>If you are a freelance developer, designer, photographer, or even a freelance sheep sheerer, it&#8217;s easy to get caught up in what it is you do, versus why it is we actually do it. More important than why we do it, is why people are willing to pay us good money for what we do. In this article I&#8217;d like to take a look at why I decided to re-position my services, and most important of all, get you to stop talking like a nerd because it&#8217;s costing you money and sales.</p>
-
-<!-- more -->
-
-
-<h2>No More Nerd Speak</h2>
-
-<p>When I decided to focus more on being a consultant, and not just a &#8220;freelance web developer&#8221;, one of my qualifiers for the kinds of clients I wanted to attract was that a client should not care about the tech stack I was working on. words like  &#8220;WordPress&#8221; and &#8220;Ruby on Rails&#8221; were dirty curse words as far as proposals were concerned. I had several reasons for this:</p>
-
-<ul>
-<li><strong>Client Filtering:</strong> Clients that use words like &#8216;PHP Developer&#8217;, are usually looking for contractors, not consultants. There is nothing wrong with being a contractor, I&#8217;ve done it many times, but it isn&#8217;t in line with my future business goals.</li>
-<li><strong>Focusing on Solutions &amp; Value:</strong> There is no problem that has to be solved by a certain language or framework. Some are better suited than others. A client that wants a &#8220;Rails app that does X&#8221; may be better served by a &#8220;Node.js app that does X&#8221; or a Mobile Application that does X&#8221;. They may even be better served by a nice spreadsheet or an actionable plan they can stick to. By taking technical terms out of the conversations, it allows for more focus on the problem, and the solution to be discovered.</li>
-<li><strong>Autonomy:</strong> Similar to the point above, I want the autonomy to decide what tool would be the best fit for the jobs I take on, and be able to use them. If a client does not know what tools are used, which they shouldn&#8217;t, then they have no say in the matter.</li>
-<li><strong>Client Interest:</strong> Clients don&#8217;t care about this kind of stuff nearly as much we do. Clients are usually very busy people in their businesses and our lives. By leaving out talk of weird, complicated things that they don&#8217;t understand and have no interest in, you are doing your clients a great kindness.</li>
-</ul>
-
-
-<h2>Closing the Text Editor</h2>
-
-<p>One day at work I decided to do a mental exercise. If I close my text editor, how could I still provide value to clients? I wanted to step away from just thinking that &#8220;code = value&#8221; and take a more holistic approach at what I provide to clients.</p>
-
-<ul>
-<li><strong>Communication:</strong> Web developers and designers have a reputation for being unreliable and hard to reach. Being proactive with clients on phone, email, and in person makes them feel more secure about their project, reduces their stress, and prevents misunderstanding that can waste time on both ends of the table.</li>
-<li><strong>Planning:</strong> Having a solid plan in place and communicating that plan has a lot of benefits. It maintains accountability and expectations on both sides. Providing a clear plan to a client on how you are going to perform work and when they can expect it to be delivered. It shows that you aren&#8217;t just another unreliable, uncommunicative developer like they have probably encountered in the past.</li>
-<li><strong>Research:</strong> Who is their target market? What is a good pricing strategy for their new product? How can your client reach their target demographic? Do they like the new feature implemented? Being able to provide answers to questions like this can help guide a client in the right direction, and help your work produce even more value.</li>
-</ul>
-
-
-<p>I&#8217;ve realized to think about deliverable products in a broader sense. A road map for a project is every bit as much of a deliverable as a new feature that has been coded, and should be treated and presented as such. (<strong>Pro-tip:</strong> clients like nicely formatted PDFs that they can share with other people in their company.)</p>
-
-<h2>Don&#8217;t Sell Yourself Short</h2>
-
-<p>Designers, developers, copywriters, etc. are costing themselves money by thinking that only producing their core competency. I&#8217;ve had aspiring freelancers ask me &#8220;Should I bill for phone calls/meetings/emails?&#8221;. I say yes. Some people will say because they are taking up your time, and that since being a freelancer usually equates to selling your time for money, client communication counts. They&#8217;re right, but for the wrong reasons. The reason you bill for those times is <em>because you providing the client with value</em>. Your communications that help you gather information to deliver the exact solution, and ease the clients concern are just as valuable as the core product you produce, <strong>if not more so.</strong></p>
-
-<p>So to other freelancers out there: <strong>Don&#8217;t sell yourself short.</strong> And stop talking so much about how you swing your hammer, and instead about what you can build and why it&#8217;s so valuable.</p>
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-
-
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Personal vs. Professional Blogging]]></title>
-    <link href="http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/"/>
-    <updated>2014-03-05T14:42:00-05:00</updated>
-    <id>http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/saddington.jpeg" width="260"></p>
-
-<p>I had the pleasure of seeing <a href="http://john.do">John Saddington</a> give a talk about the benefits of blogging at a <a href="http://www.meetup.com/transform-athens/">Transform Athens</a> Athens event. The talk was about the benefits of blogging, and while it reinvigorated my interest in writing and publishing. It brought up a tricky question. I have a blog under my personal name, <a href="http://www.glennstovall.com">Glenn Stovall</a> and a company blog, <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Where should I publish? Why should I publish there? What are the pros and cons of blogging under a personal brand vs. a professional brand?</p>
-
-<!-- more -->
-
-
-<h3>Whatever it Takes to Hit &#8216;Publish&#8217;</h3>
-
-<p>I posed this question to John, and john shares my belief that publishing and shipping should always be the paramount goal. His feelings as to whether you should blog under your name or a company name comes down to doing &#8220;what ever makes you hit the publish button quicker&#8221;. It&#8217;s true that it is a largely personal choice that comes down to personal preferences. While his advice was helpful, it was still a question I had to answer for myself.</p>
-
-<h3>The Tone of the Blogs</h3>
-
-<p>In my post when I announced <a href="http://glennstovall.com/blog/2013/12/10/announcing-concordant-solutions/">Concordant Solutions</a>, I mentioned my original plan for managing two different blogs. I wanted to cater to two different audiences, and each blog would be focused on one of them. My personal blog would be focused on technical, usually long form articles. It was were I would write to &#8216;fellow nerds&#8217;. My company blog would be aimed at clients. I wouldn&#8217;t write what I wanted to read, I would write what I felt would be interesting to my clients.</p>
-
-<p>Here is the issue I ran into with that approach: my &#8220;company brand&#8221; writing was usually dry and boring. Writing is hard. Writing under a squeaky clean corporate persona is even harder. While I felt I did write things of some value on my company blog, I often felt my writing fell flat.</p>
-
-<p>I wasn&#8217;t happy with my writing, and it wasn&#8217;t getting nearly as many readers. Life is too short to spend it doing things that produce a mediocre result.</p>
-
-<h2>Defining Subject Matter</h2>
-
-<p>My approach to the Concordant Solutions blog was completely wrong. I bought too hard into the belief that <em>you are not your customer</em>, and it skewed my writing. It&#8217;s true, I am not my customer. I don&#8217;t have employees (yet). My customers are not always tech savvy. However, I <strong>am</strong> a business owner. I am not just another freelancer. I am determined on creating a focused, sustainable, growing business. I am a business owner, just like my clients.</p>
-
-<p>I made a fatal mistake of thinking that me and my clients do not have a common interest.  While a lot of my clients have no idea what &#8220;AngularJS&#8221; means, they know what cash flow, ROI, and LTV means. Being honest about your business can help it grow. Regardless of where I publish content, it&#8217;s all still in some form about being honest and transparent with my business, and doing so in a way that help other people accomplish their goals, whether they are technical or financial.</p>
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-
-
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to bill Daily or Weekly]]></title>
-    <link href="http://glennstovall.com/blog/2014/02/21/how-to-bill-daily-or-weekly/"/>
-    <updated>2014-02-21T16:26:00-05:00</updated>
-    <id>http://glennstovall.com/blog/2014/02/21/how-to-bill-daily-or-weekly</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/calendar.jpg" width="260"></p>
-
-<p>When it comes to freelancing, you may think you only have two options when it comes to how you bill your clients: You can bill by the hour, or you can bill by the project. But these aren&#8217;t your only options, and in many cases they are not your best ones.</p>
-
-<p>Two alternatives to this is billing by the day, or billing by the week. These billing structures are a little more uncommon, but in my experience as a consultant, they have been the most effective and productive. Since these structures are a little bit different, they often require a little bit of explanation.</p>
-
-<!-- more -->
-
-
-<h3>What&#8217;s In A Day?</h3>
-
-<p>An hour is a definite measure of time. it&#8217;s 60 minutes. When you bill a client for a hour, they expect to be providing value during those 60 minutes. A day is also a definite measure of time, but if you bill a client for a day they don&#8217;t expect 24 hours of productivity from you.</p>
-
-<p>You make think that a work day of 8 hours is a more reasonable assumption, but that also isn&#8217;t the case. Many studies have shown that creative workers are only productive for <a href="http://qz.com/157092/the-case-for-a-six-hour-workday/">5 to 6 hours a day</a>, and that increased hours can in fact lead to decreased productivity. So when it comes to billing by the day, it just means whatever you think a good day&#8217;s work means to you. It doesn&#8217;t mean that it has to be all of your time, or that if you bill for a day you can&#8217;t do any other productive work for another client.</p>
-
-<p>If you have been working in freelancing or consulting and have been keeping track of your hours, you can use that data to determine your day rate.</p>
-
-<h3>Weekly Billing and Deadlines</h3>
-
-<p>Weekly billing tends to work a little bit differently. When you bill by the week, you do so with a goal and a deliverable for the week. Weekly billing is in a way like billing a flat project rate, but you are delivering smaller projects in a smaller time frame.</p>
-
-<p>Weekly billing may seem strange at first, but if you think about it, this is how salaried employees basically work.</p>
-
-<p>With my clients, I set milestones every two weeks, and tell them that I will deliver on those milestones in the time frame. It doesn&#8217;t matter if I am working 30 hours a week, or 40, or 60, or 5. As long as the results and value are delivered, that is what counts.</p>
-
-<p>The other thing I like about weekly billing is that it makes scheduling my availability much simpler. I can look at my calendar, see that I have worked booked for the next 6 weeks, and have a clear date for when I am available for more work.</p>
-
-<h3>How to Decide on a Pricing Model</h3>
-
-<p>I don&#8217;t think that any consultant should stick to just one pricing structure, unless you work on a narrow type of project. Different projects and different clients will work better with different billing structures. Here is when I would consider each one:</p>
-
-<ul>
-<li><strong>Hourly Billing:</strong> For jobs where the scope is unknown and flexibility is needed.</li>
-<li><strong>Flat Rate Billing:</strong> When the scope of a project can be well defined and the project is small.</li>
-<li><strong>Daily Billing:</strong> Works well for one day consulting arrangements, and also for projects that you want to commit to part time (such as 2 - 3 days per week)</li>
-<li><strong>Weekly Billing:</strong> My personal favorite. Tends to work well on larger projects, and projects that need flexibility and aren&#8217;t committed to a hard scope.</li>
-</ul>
-
-
-<p>By thinking about how you price and position your services, you can come up with plans that can make your scheduling better, and help you price your services more aggressively.</p>
-
-<p><strong>EDIT:</strong> Just found this episode of The Freelancer&#8217;s Show where they discuss <a href="http://www.freelancersshow.com/the-freelancers-show-097-weekly-billing/">weekly billing</a>, Worth a listen if you want to hear more about this subject.</p>
 
 <div class="ck_embed_form ck_horizontal_subscription_form">
   <div class="ck_embed_form_content">

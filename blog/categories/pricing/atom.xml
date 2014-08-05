@@ -4,7 +4,7 @@
   <title><![CDATA[Category: pricing | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/pricing/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-08-04T17:10:53-04:00</updated>
+  <updated>2014-08-04T20:31:07-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,118 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Breakdown of a Pricing Grid]]></title>
+    <link href="http://glennstovall.com/blog/2014/08/04/breakdown-of-a-pricing-grid/"/>
+    <updated>2014-08-04T20:17:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/08/04/breakdown-of-a-pricing-grid</id>
+    <content type="html"><![CDATA[<h3>Learn Why is The Middle Plan Always Called The "Best Value"</h3>
+
+<p><img class="left" src="/images/articles/bidsketch_pricing_full.png" width="260"></p>
+
+<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
+
+<p>You may have noticed that on many software as a service pricing pages, they tend to look the same. There are always a few plans, usually 3, and they middle is <strong>always</strong> the most popular. This isn’t an accident. This is all designed to get the maximum value out of a customer. Let’s take a look at one company’s pricing model and why it is effective.</p>
+
+<!-- more -->
+
+
+<p><img class="center" src="/images/articles/bidsketch_pricing_full.png"></p>
+
+<p>I got this table from <a href="http://www.bidsketch.com/pricing/">BidSketch’s pricing page</a>. BidSketch is a tool that helps freelancers and agencies write and send winning proposals. This table is important to BidSketch. Literally every single customer, and therefore every single dollar, comes from this page. Nothing in this table is an accident. Let’s take a look at the plan names:</p>
+
+<h3>Customer Segmentation</h3>
+
+<p><img class="center" src="/images/articles/bidsketch-segmentation.png"></p>
+
+<p>you’ll notice that BidSketch doesn’t call it’s plans “small/medium/large”, or “bronze/silver/gold” or anything generic like that. Instead, they know that they have different kinds of customers, and that those customers are willing to pay different rates. They aim at three of their types of clients: individual freelancers, small studios, and large agencies.</p>
+
+<p>Why do they charge agencies more money? Because agencies get more value out of BidSketch than freelancers. The proposals that large agencies are sending out are an order of magnitude larger than the one a freelancer is sending out.</p>
+
+<p>This is the most important part of pricing any service or product: <strong>when the customer gets more value out of your product or service, you need to be getting more value from that customer.</strong> Doing this aligns your incentives with the customer’s. This means that now you and the customer are a team. Since you make money off of your customer being successful, you will do everything you can to help your customer. Since BidSketch knows that if they help their customers make more money by helping them write better proposals, they are going to do everything they can to make the best proposal tool out there? It’s a win-win for everybody.</p>
+
+<h3>Pricing Ratio</h3>
+
+<p><img class="center" src="/images/articles/bidsketch-pricing.png"></p>
+
+<p>Firstly, you’ll notice that BidSketch put their highest price package first. This is an old-school marketing trick. By looking at the initial plan first, the $79 and $29 plans will feel much cheaper in comparison. The highest selling price plan is almost never the highest selling one, it is mostly their for comparison. This is called <em>price anchoring.</em></p>
+
+<p>You also want to have a decent ratio between your prices. If their prices were $29 / $39 / $49, they aren’t getting much extra value out of the plans. In fact, <a href="http://www.slideshare.net/ryandelk/micro-conf-final">Ryan Delk at Gumroad</a> has looked at all the sales of digital products, and has found the optimal ratios for tiered pricing:</p>
+
+<h4><em>1x 2.2x 5x</em></h4>
+
+<p>Where ‘X’ is the base cost of your service. You’ll see that BidSketch follows this ratio closely: $79 = 2.7x , $149 = 5.1x . Note that ratio is just an approximation, and you don’t have to follow it exactly.  <em>(I don’t think BidSketch would get the same revenue with a $29 /  $63.80  / $145 model)</em></p>
+
+<h3>Approximating Value</h3>
+
+<p><img class="center" src="/images/articles/bidsketch-features.png"></p>
+
+<p>I said before that the best way to split up your pricing is to align your values with the customer’s. BidSketch could do this directly if they wanted too, and base their pricing on how the total dollar value of proposals that you close each month (payment processors such as <a href="https://stripe.com/">Stripe</a> and <a href="https://www.braintreepayments.com/">Briaintree</a> have the easiest alignment ever. They just get 2.7% of the revenue you bring in). In other cases, you may not have a way of directly knowing how valuable your service is to a client. In that case, you want to approximate the value. You do this by tying your pricing to something that is correlated to value. BidSketch does this in two ways: the number of users, and the amount of storage. Instead of looking a dollar value, they are looking at three things with these features:</p>
+
+<ul>
+<li>Number of employees / contractors you have working for you.</li>
+<li>The number of proposals you are sending out.</li>
+<li>The quality of proposals you are sending out. (i.e. using more photos &amp; videos, hence more storage)</li>
+</ul>
+
+
+<p>A company that has multiple people (agencies, studios) have to be making payroll, which means they are almost always making more money. That’s why you see a lot of software as a service products segment on number of users. One of the things that has held me back from hiring an assistant is I know the minute I have one employee my monthly software bill would shoot up a few hundred dollars a month.</p>
+
+<p>There are two version control services that software developers use: <a href="https://github.com/">GitHub</a> and <a href="https://bitbucket.org/">BitBucket</a>. A version control service is a place where developers can store and collaborate on code. BitBucket increases prices based number of users, but GitHub prices based on number of projects. I feel like GitHub missed the mark on this pricing. Number of projects is a false approximation of value. For example, BidSketch may only have one project file, for their software service product. I, as a consultant, would have a large number of projects since I work with a number of different clients. Why should I, a self employed consultant, be charged more than a company that pulls in millions of revenue every year?</p>
+
+<h3>Good Artists Borrow, Great Artists Steal</h3>
+
+<p>When it comes to pricing, there is no need to get creative.  There is a reason so many software as a service pricing pages look the same. <strong>Because it works.</strong> Every one would not do it if it wasn’t effective. If I was going to create a product aimed ad freelancers and agencies, I would look at competing and complementary products, and set up a very similar model. I may even use BidSketch’s exact same three tiers. The reason is that if I want to get into this space, BidSketch has done me a <strong>huge</strong> favor:</p>
+
+<h4><em>They have found and validated a price that the market will bear.</em></h4>
+
+<p>Usually finding a working pricing model requires lots of research and experimentation. However, to every one who wants to build a proposal tool, BidSketch has done them a huge favor. Thanks BidSketch! Some times people have a product idea, and get discouraged because it’s “been done”. Competition is not always a bad thing. Competition can be a sign that something works. On the other side of that coin, if you come up with a seemingly obvious idea that no one has done yet, it’s worth pausing for a moment and considering why you are the only person to show up to that particular party.</p>
+
+<p>Pricing models don’t need to be original. They need to be effective at converting sales and maximizing customer value. Save your creativity for your actual product.</p>
+
+<p><div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+  
+<style type="text/css">
+</style>
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+If the form above doesn't work, you can get it [here](https://app.convertkit.com/concordant/freelance-pricing-handbook).
+</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Why I Don't bill hourly]]></title>
