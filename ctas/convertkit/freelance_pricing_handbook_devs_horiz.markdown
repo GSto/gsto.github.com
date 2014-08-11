@@ -5,7 +5,7 @@
         <span class="ck_image">
           <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/100/standard/Book-Portrait.png?1406907742" />
         </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
       </div>
   </div>   
    
