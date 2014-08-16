@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-08-11T15:54:54-04:00</updated>
+  <updated>2014-08-16T12:00:04-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,68 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How I Used Writing to Double My Freelancing Rate As A Programmer]]></title>
+    <link href="http://glennstovall.com/blog/2014/08/16/how-i-used-writing-to-double-my-freelancing-rate-as-a-programmer/"/>
+    <updated>2014-08-16T11:57:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/08/16/how-i-used-writing-to-double-my-freelancing-rate-as-a-programmer</id>
+    <content type="html"><![CDATA[<script async src="https://static.medium.com/embed.js"></script>
+
+
+<p><a class="m-story" data-collapsed="true" href="https://medium.com/@gsto/7b321bedecdc">How I Used Writing to Double My Freelancing Rate As A Programmer</a></p>
+
+<!-- more -->
+
+
+
+
+<div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+
+
+
+
+
+
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+
+
+<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Breakdown of a Pricing Grid]]></title>
@@ -1655,116 +1717,6 @@ I believe that this new approach will lead to me operating in a more efficient m
 If you&#8217;d like a copy of the book, enter your email address below and I&#8217;ll email you a copy.</p>
 
 <p>Be sure to let me know what you think!</p>
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-
-
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-<p>If the form above doesn&#8217;t work, you can get it <a href="https://app.convertkit.com/concordant/freelance-pricing-handbook">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Presenting Value]]></title>
-    <link href="http://glennstovall.com/blog/2014/04/19/presenting-value-to-clients/"/>
-    <updated>2014-04-19T16:11:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/04/19/presenting-value-to-clients</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/wealth.jpg" width="260"></p>
-
-<p>When selling clients on your services, how you position yourself is important. You want clients to see you as an investment, not an expense. In order to accomplish this, you need to make sure you are able to clearly state and justify the value you can bring to a client.</p>
-
-<!-- more -->
-
-
-<h3>The Three Types of Value</h3>
-
-<p>There are three primary types of value you can provide to clients, and all of your sales pitches should anchor to one or more of these points:</p>
-
-<ul>
-<li>You make your client money.</li>
-<li>You save your client time.</li>
-<li>You reduce the client&#8217;s risk.</li>
-</ul>
-
-
-<p>What value <strong>isn&#8217;t</strong> is things like &#8220;writing code&#8221; or &#8220;designing web pages&#8221;. These are just tools you are using to accomplish a goal. When you are talking to potential clients you need to be talking about the goal, not the way you are planning on getting there. A client&#8217;s primary concern is the end result of your work.</p>
-
-<p>You may also notice that saving the client money is absent from this list, even though it sounds like it should be on there. While it&#8217;s good if you find a way to save a client money, products and services that save money are a much more difficult sale, as people who are focused on reducing cost are looking for ways to <em>not</em> spend money, which makes them a pretty tough sell.</p>
-
-<h2>Making Money</h2>
-
-<p>Presenting value here is the easiest of the three. If you can find a way to peg your work to numbers that affect the bottom line, then focus on that. Let&#8217;s say you do A/B testing, and you think that your testing could increase conversions by 10%. If you go to a store that makes $100,000 dollars in sales a year, then your services are easily worth $10,000 to them.</p>
-
-<h2>Saving Time</h2>
-
-<p>This is the one I find myself talking about often, since I work in software development, and love finding ways to automate processes. I&#8217;ve called myself a &#8220;Job Destroyer&#8221; before. Saving a client (or a client&#8217;s employees) time can easily be tied to money as well. I doubt a client would willingly share an employee&#8217;s salary with you, but you can make an educated guess as to the cost of an employee:</p>
-
-<ul>
-<li>First, get an estimated salary. You can just guess, or use a service like <a href="http://www.glassdoor.com">glassdoor</a> to approximate the number. In this example, let&#8217;s say that an employee has a salary of $50,000.</li>
-<li>Secondly, we are going <a href="http://web.mit.edu/e-club/hadzima/how-much-does-an-employee-cost.html">multiply that number by 2.7</a>. This is to factor in all of the other costs of that employee. Now we have an employee that costs $135,000 a year.</li>
-<li>Now, let&#8217;s break that down into an hourly rate. The easiest calculation would be to say salary / 2000, or 50 weeks at 40 hours per week. However, I feel like 1500 may be a better estimate if we want to go by <strong>productive</strong> time, since I don&#8217;t believe anyone is truly and consistently productive for eight hours a day. between those two numbers, we have an hourly range of value of $67.50 - $90.</li>
-</ul>
-
-
-<p>Going by this formula, if you are able to make a 2 hour job take little or no time, then over the course of a year software that could do that would provide up to $9,000 a year in value. If you can scale that to 10 employees, then it&#8217;s $90,000. This is why being able to save time is so valuable to clients.</p>
-
-<h2>Reducing Risk</h2>
-
-<p>Reducing risk is the most abstract of the three, and can be harder to pin an exact number on. Software projects are inherently risky, and anything you can do to reduce that risk is valuable to the client. You see this in consumer sales all the time money back guarantees. By making that guarantee, the product is more valuable since you know that if you are not satisfied you can get your money back.</p>
-
-<p>As a consultant, there are several ways I show that I can reduce risk to clients:</p>
-
-<ul>
-<li>Sending clients weekly reports and/or having weekly meetings, So they are always aware of where the project stands. Freelance web developers and designers have a reputation for being flaky, so this helps address that.</li>
-<li>Having a set development process in place. This way clients know that I have a more predictable process with more predictable results.</li>
-<li>Having a network of other talented people, and letting the client know that if there is something outside of my scope of skills I can bring someone on to help out with the task.</li>
-</ul>
-
-
-<p>Things like having a portfolio and client testimonials are other ways of reducing risk in the eyes of clients. These send the message that other people have worked with before, gotten results, and are satisfied.</p>
-
-<p>However, these all address the reduction of risk in the process, not in the end result. There are several ways this can be accomplished as well. A couple of examples are doing market and competitor research, to see what the project is facing and making sure it is framed appropriately. Another that I am a big fan of is getting to market earlier and iterating quickly. This allows you to work with real people and gather real data. Any decisions made before launch are in many ways an educated guess, and solutions and plans built on objective data instead of guesses will always have a higher chance of succeeding.</p>
-
-<p>Framing your work in this fashion can help both yourself and your clients. It can help you by not only seeing how to present value, but help you find new ways to provide more value to clients when you work as well. This can also help you land more sales and stand out from the competition.</p>
 
 <div class="ck_embed_form ck_horizontal_subscription_form">
   <div class="ck_embed_form_content">
