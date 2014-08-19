@@ -36,4 +36,3 @@
 <style type="text/css">
 </style>
 <script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-If the form above doesn't work, you can get it [here](https://app.convertkit.com/concordant/freelance-pricing-handbook).
