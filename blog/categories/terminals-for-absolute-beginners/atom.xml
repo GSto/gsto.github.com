@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Terminals for Absolute Beginners | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/terminals-for-absolute-beginners/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-08-18T22:51:27-04:00</updated>
+  <updated>2014-08-19T09:30:25-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -106,6 +106,11 @@
   
     <!--  Form starts here  -->
     <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/705/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+        <div class="ck_image mobile-only">
+    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+    </div>
+      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
+      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
       <input type="hidden" name="id" value="705" id="landing_page_id"></input>
       <p class="ck_errorArea"></p>
       <div class="ck_control_group">
