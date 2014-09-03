@@ -4,7 +4,7 @@
   <title><![CDATA[Category: writing | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/writing/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-09-03T14:05:07-04:00</updated>
+  <updated>2014-09-03T14:20:04-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,90 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Will You Take The 30 day Publishing Challenge]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/03/30-day-blogging-challenge/"/>
+    <updated>2014-09-03T14:15:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/03/30-day-blogging-challenge</id>
+    <content type="html"><![CDATA[<h3>Come Ship More Content in September With Me</h3>
+
+<p>I heard about this challenge that a friend of a friend is doing: blog every weekday for 30 days. Here's <a href="http://cdevroe.com/blog/9527/blogging-every-weekday-for-30-days">the original post</a>. Here's the post where I <a href="http://mattdsmith.com/30-day-blog-challenge/">heard about it</a>. I know writing is a valuable skill. Blogging can help you build your reach, prove your authority, and give you an way to provide value to your potential clients and customers by providing them with educational content.</p>
+
+<!-- more -->
+
+
+<p>However, I want to modify this challenge a bit, just because I kind of hate the term "blogging". Blogging is just one way to deliver content, there are several others. Instead, I want to take on the "30-day publishing challenge". Under my rules, any of the following will count as my writing for the day:</p>
+
+<h3>What Counts</h3>
+
+<ul>
+<li>Publishing a new blog post. This includes my personal site or sites such as Medium.</li>
+<li>Publishing a new letter to people on my mailing list (yep, this is my Day 1)</li>
+<li>Publishing a new page or re-writing an existing page on my personal or company site.</li>
+<li>Publishing another form of long-form content, such as an email course, eBook, or PDF.
+Here are things that don't count:</li>
+</ul>
+
+
+<h3>What Doesn't Count</h3>
+
+<ul>
+<li>Republishing existing content in a new form (I've been looking into using Quora's and LinkedIn's publishing platforms to get more reach)</li>
+<li>Super short-form content (tweets, tumbles, facebook posts, etc.)</li>
+</ul>
+
+
+<p>Since I'm bending the rules a bit, I'm going to publish something every 30 days instead of just on weekdays. This also means that for the weekends I'll probably write three things on Friday and space them out over the weekend.</p>
+
+<p>So you up to taking the challenge? If  <a href="http://www.glennstovall.com/contact">drop me a line</a>. I'd love to follow along with what you are doing.</p>
+
+<p><div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+    <div class="ck_image mobile-only">
+    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+    </div>
+      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
+      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+  
+<style type="text/css">
+</style>
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[John Saddington: Blogging and Your Future]]></title>
@@ -318,83 +402,6 @@
 
 <script src="https://app.convertkit.com/landing_pages/588.js?orient=vert"></script>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Personal vs. Professional Blogging]]></title>
-    <link href="http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/"/>
-    <updated>2014-03-05T14:42:00-05:00</updated>
-    <id>http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/saddington.jpeg" width="260"></p>
-
-<p>I had the pleasure of seeing <a href="http://john.do">John Saddington</a> give a talk about the benefits of blogging at a <a href="http://www.meetup.com/transform-athens/">Transform Athens</a> Athens event. The talk was about the benefits of blogging, and while it reinvigorated my interest in writing and publishing. It brought up a tricky question. I have a blog under my personal name, <a href="http://www.glennstovall.com">Glenn Stovall</a> and a company blog, <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Where should I publish? Why should I publish there? What are the pros and cons of blogging under a personal brand vs. a professional brand?</p>
-
-<!-- more -->
-
-
-<h3>Whatever it Takes to Hit 'Publish'</h3>
-
-<p>I posed this question to John, and john shares my belief that publishing and shipping should always be the paramount goal. His feelings as to whether you should blog under your name or a company name comes down to doing "what ever makes you hit the publish button quicker". It's true that it is a largely personal choice that comes down to personal preferences. While his advice was helpful, it was still a question I had to answer for myself.</p>
-
-<h3>The Tone of the Blogs</h3>
-
-<p>In my post when I announced <a href="http://glennstovall.com/blog/2013/12/10/announcing-concordant-solutions/">Concordant Solutions</a>, I mentioned my original plan for managing two different blogs. I wanted to cater to two different audiences, and each blog would be focused on one of them. My personal blog would be focused on technical, usually long form articles. It was were I would write to 'fellow nerds'. My company blog would be aimed at clients. I wouldn't write what I wanted to read, I would write what I felt would be interesting to my clients.</p>
-
-<p>Here is the issue I ran into with that approach: my "company brand" writing was usually dry and boring. Writing is hard. Writing under a squeaky clean corporate persona is even harder. While I felt I did write things of some value on my company blog, I often felt my writing fell flat.</p>
-
-<p>I wasn't happy with my writing, and it wasn't getting nearly as many readers. Life is too short to spend it doing things that produce a mediocre result.</p>
-
-<h2>Defining Subject Matter</h2>
-
-<p>My approach to the Concordant Solutions blog was completely wrong. I bought too hard into the belief that <em>you are not your customer</em>, and it skewed my writing. It's true, I am not my customer. I don't have employees (yet). My customers are not always tech savvy. However, I <strong>am</strong> a business owner. I am not just another freelancer. I am determined on creating a focused, sustainable, growing business. I am a business owner, just like my clients.</p>
-
-<p>I made a fatal mistake of thinking that me and my clients do not have a common interest.  While a lot of my clients have no idea what "AngularJS" means, they know what cash flow, ROI, and LTV means. Being honest about your business can help it grow. Regardless of where I publish content, it's all still in some form about being honest and transparent with my business, and doing so in a way that help other people accomplish their goals, whether they are technical or financial.</p>
-
-<p><div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-    <div class="ck_image mobile-only">
-    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-    </div>
-      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
-      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-  
-<style type="text/css">
-</style>
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-</p>
 ]]></content>
   </entry>
   
