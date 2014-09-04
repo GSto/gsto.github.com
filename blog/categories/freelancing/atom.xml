@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: freelancing | Glenn Stovall]]></title>
+  <link href="http://glennstovall.com/blog/categories/freelancing/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-09-04T17:48:46-04:00</updated>
+  <id>http://glennstovall.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My Freelancing Stack]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/04/my-freelancing-stack/"/>
+    <updated>2014-09-04T16:23:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/04/my-freelancing-stack</id>
+    <content type="html"><![CDATA[<h3>10 Tools I Use to Manage and Automate My Business</h3>
+
+<p>In web development, the group of software, frameworks, and tools is called our "stack". In businesses, you have a similar "stack", which is made up of the tools and systems that you use to run your business. Today I wanted to list out my personal stack that I use.</p>
+
+<!-- more -->
+
+
+<h2>Sales and Lead Management: PipeDrive</h2>
+
+<p><a href="http://www.pipedrive.com">Pipedrive</a> has the best visualization of the sales pipeline I have seen, and it can be completely customized. But the most valuable feature is that every time you finish a task that is related to a deal, it will automatically prompt you to create another. This way you never forget to follow up with a potential client, and deals don't fall through the cracks.</p>
+
+<h2>Contracts: Docracy</h2>
+
+<p><a href="http://www.docracy.com">Docracy</a> is a free resource for open source contract templates. It also has e-signatures, so you can use it to get contracts signed with remote clients. Here a couple of templates that I either use, or have my own modified version of:</p>
+
+<ul>
+<li><a href="http://www.docracy.com/649dkpe7g9/contract-killer-3">General Work Contract</a></li>
+<li><a href="http://www.docracy.com/0i2fahvpv5t/statement-of-work-digital-advertising-services">Statement of Work</a></li>
+<li><a href="http://www.docracy.com/27/generic-shortform-nda">Generic Short Form NDA</a></li>
+</ul>
+
+
+<h2>Invoicing: FreshBooks</h2>
+
+<p><a href="http://www.freshbooks.com">Freshbooks</a> is one of the largest invoicing tools out there. It makes generating invoices simple. Freshbooks is great if you bill by the hour, however since I moving away from that billing structure I have found Freshbooks to be a bit lacking. It doesn't really have support for daily and weekly billing. But it does have simple time tracking, expense tracking, online payments, and really good reporting. I do appreciate that when tax time rolls around, I can print out a couple reports, hand them to my CPA, and boom. Done.</p>
+
+<h2>Customer Support: ZenDesk</h2>
+
+<p>When I was looking for a customer support tool, my one requirement was that it had to work 100% via email for clients. Clients are busy and don't want to have to learn a new tool just because they found a bug. <a href="http://zendesk.com">Zendesk</a> met this requirement. My clients can send all inquiries to a support email address, and I can keep track of conversations and tickets via the application. When working with clients on monthly retainers, this is a great tool to keep things organized.</p>
+
+<h2>Scheduling: Calendly + Google Calendar</h2>
+
+<p>I hate having to go back and forth via email to schedule an appointment with someone. With <a href="http://www.calendly.com">Calendly</a>, I can send people a calendar of my availability, and they can select the time that works best for them. The real "killer feature" for me is the Google calendar integration: Not only does it add events to my calendar, it will automatically remove my availability if I schedule something else in that time slot, even if it wasn't through Calendly.</p>
+
+<h2>Writing Articles: Draft</h2>
+
+<p><a href="https://draftin.com/">Draft</a> is a new tool I've started using recently. I love the clean interface and how easy it is to share drafts with people. I've been using to send some beta versions of chapters for my book project <em>Professional Freelance</em>. It also has a 'Hemingway mode', which disables the backspace and delete buttons for you. This makes the writing experience similar to writing on a typewriter, which is helpful when writing first drafts, and keeps you out of slipping into editing mode.</p>
+
+<h2>Writing Books &amp; Courses: Scrivener</h2>
+
+<p><a href="http://www.literatureandlatte.com/scrivener.php">Scrivener</a> is like Photoshop for words. It allows you to break your writing project in nested sections, and move them around freely. This way, moving chapters and sections around are easy. When I first began to attempt to write a book, I figured I would write an outline, and then fill it out. As the project went on, I've completely rearranged the books three times. Sometimes entire chapters are deleted, and whole new ones are added. Scrivener makes this process a breeze.</p>
+
+<h2>Publishing: OctoPress + WordPress + Medium</h2>
+
+<p>I have a few different tools that I use to publish content online:</p>
+
+<ul>
+<li><p><a href="http://octopress.org/">Octopress</a> Octopress is the site you are reading right now. It's a static site generator. That means that instead of having software like WordPress installed on a server, I generate the pages on my local machine, and put the result online. This way, there are no load times, and no worry of hacking because there is nothing to hack.</p></li>
+<li><p><a href="https://wordpress.org/">WordPress</a> WordPress is the granddaddy of online publishing, and I use it for my company site <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. WordPress can be a bit unwieldy at times, but it does make publishing simple, and it's impossible to beat the ecosystem around it. All of the plugins and themes available make it easy to get something set up quickly.</p></li>
+<li><p><a href="http://medium.com">Medium</a> is a very slick looking online publishing platform. It was created by Ev Williams, one of the founders of Twitter. Medium is focused on longer form content and providing the best reading and writing experience for its users. The benefit of Medium is that it helps you reach out to new audiences. When I'm not writing here, I'm writing there. In fact, I am considering moving more of my writing over to Medium in the future.</p></li>
+</ul>
+
+
+<h2>Email Marketing: ConvertKit</h2>
+
+<p><a href="http://www.convertkit.com">ConvertKit</a> is responsible for all those little calls to action at the bottom of each post. ConvertKit has a different approach from other mailing list providers. Instead of just putting everyone onto one list, you create different forms. These forms usually come with an incentive, such as a download or a course. Then, you can segment users based on which form they signed up for. This allows you to send more targeted emails.</p>
+
+<p>In addition to forms that you can embed, ConvertKit also allows you to build landing pages which can then be embedded on your site. I also like the simple look of the emails. I hate the idea of "newsletters". I view my list as communication at scale. ConvertKit is just an easy way to email a few hundred people and start some conversations. All the emails come from my email address so that you can hit "reply" to get in touch with me. And I always write back. If you want to see what one of their landing pages looks like and/or sign up for my list, <a href="https://app.convertkit.com/concordant/letters">Here is the link</a></p>
+
+<p>Do you have any tools that make your life as a freelancer easier? If so, <a href="http://glennstovall.com/contact">Drop me a line</a> and let me know!</p>
+
+<p><div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+    <div class="ck_image mobile-only">
+    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+    </div>
+      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
+      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+  
+<style type="text/css">
+</style>
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+</p>
+]]></content>
+  </entry>
+  
+</feed>

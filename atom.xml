@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-09-03T16:20:34-04:00</updated>
+  <updated>2014-09-04T17:48:46-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,124 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My Freelancing Stack]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/04/my-freelancing-stack/"/>
+    <updated>2014-09-04T16:23:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/04/my-freelancing-stack</id>
+    <content type="html"><![CDATA[<h3>10 Tools I Use to Manage and Automate My Business</h3>
+
+<p>In web development, the group of software, frameworks, and tools is called our &#8220;stack&#8221;. In businesses, you have a similar &#8220;stack&#8221;, which is made up of the tools and systems that you use to run your business. Today I wanted to list out my personal stack that I use.</p>
+
+<!-- more -->
+
+
+<h2>Sales and Lead Management: PipeDrive</h2>
+
+<p><a href="http://www.pipedrive.com">Pipedrive</a> has the best visualization of the sales pipeline I have seen, and it can be completely customized. But the most valuable feature is that every time you finish a task that is related to a deal, it will automatically prompt you to create another. This way you never forget to follow up with a potential client, and deals don&#8217;t fall through the cracks.</p>
+
+<h2>Contracts: Docracy</h2>
+
+<p><a href="http://www.docracy.com">Docracy</a> is a free resource for open source contract templates. It also has e-signatures, so you can use it to get contracts signed with remote clients. Here a couple of templates that I either use, or have my own modified version of:</p>
+
+<ul>
+<li><a href="http://www.docracy.com/649dkpe7g9/contract-killer-3">General Work Contract</a></li>
+<li><a href="http://www.docracy.com/0i2fahvpv5t/statement-of-work-digital-advertising-services">Statement of Work</a></li>
+<li><a href="http://www.docracy.com/27/generic-shortform-nda">Generic Short Form NDA</a></li>
+</ul>
+
+
+<h2>Invoicing: FreshBooks</h2>
+
+<p><a href="http://www.freshbooks.com">Freshbooks</a> is one of the largest invoicing tools out there. It makes generating invoices simple. Freshbooks is great if you bill by the hour, however since I moving away from that billing structure I have found Freshbooks to be a bit lacking. It doesn&#8217;t really have support for daily and weekly billing. But it does have simple time tracking, expense tracking, online payments, and really good reporting. I do appreciate that when tax time rolls around, I can print out a couple reports, hand them to my CPA, and boom. Done.</p>
+
+<h2>Customer Support: ZenDesk</h2>
+
+<p>When I was looking for a customer support tool, my one requirement was that it had to work 100% via email for clients. Clients are busy and don&#8217;t want to have to learn a new tool just because they found a bug. <a href="http://zendesk.com">Zendesk</a> met this requirement. My clients can send all inquiries to a support email address, and I can keep track of conversations and tickets via the application. When working with clients on monthly retainers, this is a great tool to keep things organized.</p>
+
+<h2>Scheduling: Calendly + Google Calendar</h2>
+
+<p>I hate having to go back and forth via email to schedule an appointment with someone. With <a href="http://www.calendly.com">Calendly</a>, I can send people a calendar of my availability, and they can select the time that works best for them. The real &#8220;killer feature&#8221; for me is the Google calendar integration: Not only does it add events to my calendar, it will automatically remove my availability if I schedule something else in that time slot, even if it wasn&#8217;t through Calendly.</p>
+
+<h2>Writing Articles: Draft</h2>
+
+<p><a href="https://draftin.com/">Draft</a> is a new tool I&#8217;ve started using recently. I love the clean interface and how easy it is to share drafts with people. I&#8217;ve been using to send some beta versions of chapters for my book project <em>Professional Freelance</em>. It also has a &#8216;Hemingway mode&#8217;, which disables the backspace and delete buttons for you. This makes the writing experience similar to writing on a typewriter, which is helpful when writing first drafts, and keeps you out of slipping into editing mode.</p>
+
+<h2>Writing Books &amp; Courses: Scrivener</h2>
+
+<p><a href="http://www.literatureandlatte.com/scrivener.php">Scrivener</a> is like Photoshop for words. It allows you to break your writing project in nested sections, and move them around freely. This way, moving chapters and sections around are easy. When I first began to attempt to write a book, I figured I would write an outline, and then fill it out. As the project went on, I&#8217;ve completely rearranged the books three times. Sometimes entire chapters are deleted, and whole new ones are added. Scrivener makes this process a breeze.</p>
+
+<h2>Publishing: OctoPress + WordPress + Medium</h2>
+
+<p>I have a few different tools that I use to publish content online:</p>
+
+<ul>
+<li><p><a href="http://octopress.org/">Octopress</a> Octopress is the site you are reading right now. It&#8217;s a static site generator. That means that instead of having software like WordPress installed on a server, I generate the pages on my local machine, and put the result online. This way, there are no load times, and no worry of hacking because there is nothing to hack.</p></li>
+<li><p><a href="https://wordpress.org/">WordPress</a> WordPress is the granddaddy of online publishing, and I use it for my company site <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. WordPress can be a bit unwieldy at times, but it does make publishing simple, and it&#8217;s impossible to beat the ecosystem around it. All of the plugins and themes available make it easy to get something set up quickly.</p></li>
+<li><p><a href="http://medium.com">Medium</a> is a very slick looking online publishing platform. It was created by Ev Williams, one of the founders of Twitter. Medium is focused on longer form content and providing the best reading and writing experience for its users. The benefit of Medium is that it helps you reach out to new audiences. When I&#8217;m not writing here, I&#8217;m writing there. In fact, I am considering moving more of my writing over to Medium in the future.</p></li>
+</ul>
+
+
+<h2>Email Marketing: ConvertKit</h2>
+
+<p><a href="http://www.convertkit.com">ConvertKit</a> is responsible for all those little calls to action at the bottom of each post. ConvertKit has a different approach from other mailing list providers. Instead of just putting everyone onto one list, you create different forms. These forms usually come with an incentive, such as a download or a course. Then, you can segment users based on which form they signed up for. This allows you to send more targeted emails.</p>
+
+<p>In addition to forms that you can embed, ConvertKit also allows you to build landing pages which can then be embedded on your site. I also like the simple look of the emails. I hate the idea of &#8220;newsletters&#8221;. I view my list as communication at scale. ConvertKit is just an easy way to email a few hundred people and start some conversations. All the emails come from my email address so that you can hit &#8220;reply&#8221; to get in touch with me. And I always write back. If you want to see what one of their landing pages looks like and/or sign up for my list, <a href="https://app.convertkit.com/concordant/letters">Here is the link</a></p>
+
+<p>Do you have any tools that make your life as a freelancer easier? If so, <a href="http://glennstovall.com/contact">Drop me a line</a> and let me know!</p>
+
+<div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+    <div class="ck_image mobile-only">
+    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+    </div>
+      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
+      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+
+
+
+
+
+
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Will You Take The 30 day Publishing Challenge?]]></title>
@@ -1742,134 +1860,6 @@ I believe that this new approach will lead to me operating in a more efficient m
 
 
 
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to Test Controller Concerns in Rails 4]]></title>
-    <link href="http://glennstovall.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/"/>
-    <updated>2014-05-06T15:06:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/ruby_on_rails.jpg" width="260"></p>
-
-<p><a href="http://api.rubyonrails.org/classes/ActiveSupport/Concern.html">Concerns</a> are a new feature that was added in Rails 4. They allow to clean up code in your models and controllers. They also allow you to share functionality between models or controllers. However, they can be a bit tricky to test in isolation. In this article I want to show how you can test your controller concerns in isolation.</p>
-
-<!-- more -->
-
-
-<h2>The Over Simplified Scenario</h2>
-
-<p>We have a project with several different types of objects that can be sold. Each item is unique and is marked as &#8216;out of stock&#8217; once it is purchased. However, we have several different controllers and different types of purchases that need this functionality. In order to reduce code duplication, we are going to put these in a concern.</p>
-
-<figure class='code'><figcaption><span>/app/controllers/concerns/transaction_processing.rb </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">module</span> <span class="nn">TransactionProcessing</span>
-</span><span class='line'>  <span class="kp">extend</span> <span class="ss">ActiveSupport</span><span class="p">:</span><span class="ss">:Concern</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="n">included</span> <span class="k">do</span>
-</span><span class='line'>    <span class="n">helper_method</span> <span class="ss">:process_sale</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">process_sale</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">item</span><span class="o">.</span><span class="n">is_in_stock</span> <span class="o">=</span> <span class="kp">false</span>
-</span><span class='line'>    <span class="n">item</span><span class="o">.</span><span class="n">save!</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>If we want to test this concern, we need a controller to include it in. However, it would not be accurately unit testing to do this as there could be code in that controller that could affect the output of our test. Inside of our test, we can create a fake controller with no methods or logic of it&#8217;s own, and then write tests for that. If you are using <a href="http://rspec.info/">RSpec</a>, you can call methods directly using the <code>subject</code> object. Here is my example test using RSpec and <a href="https://github.com/thoughtbot/factory_girl">FactoryGirl</a></p>
-
-<figure class='code'><figcaption><span>/spec/controllers/concerns/transaction_processing_spec.rb </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;spec_helper&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">class</span> <span class="nc">FakesController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
-</span><span class='line'>  <span class="kp">include</span> <span class="no">TransactionProcessing</span>
-</span><span class='line'><span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">describe</span> <span class="no">FakesController</span> <span class="k">do</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="n">it</span> <span class="s2">&quot;should mark an item out of stock&quot;</span> <span class="k">do</span>
-</span><span class='line'>    <span class="n">item</span> <span class="o">=</span> <span class="n">create</span><span class="p">(</span><span class="ss">:item</span><span class="p">,</span> <span class="n">is_in_stock</span><span class="p">:</span> <span class="kp">true</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">subject</span><span class="o">.</span><span class="n">process_sale</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">expect</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">is_in_stock</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">be</span> <span class="kp">false</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And there you go! Easy, isolated tests for your controller concerns.</p>
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Pricing For Freelance Developers</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/100/standard/Book-Portrait.png?1406907742" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/705/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-        <div class="ck_image mobile-only">
-    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-    </div>
-      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
-      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      <input type="hidden" name="id" value="705" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
 
 
 <script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
