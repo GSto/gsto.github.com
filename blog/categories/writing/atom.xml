@@ -4,7 +4,7 @@
   <title><![CDATA[Category: writing | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/writing/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-09-04T17:48:46-04:00</updated>
+  <updated>2014-09-05T14:16:33-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,83 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Niche Blogging]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/05/niche-blogging/"/>
+    <updated>2014-09-05T14:11:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/05/niche-blogging</id>
+    <content type="html"><![CDATA[<h3>Personal vs. Professional Blogging part III</h3>
+
+<p>Should you write under your personal name, or under a company brand? I've addressed this question in other articles. At first, I planned on starting two blogs (<a href="http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/">part I</a>). I tried that for a while and realized that I was spending a lot of time trying to build two audiences when I could just be building one. The time invested was not paying off. So, I decided to combine my two blogs, and write everything under my personal name (<a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">part II</a>). Today I'm covering a third option: Instead of writing under your name or your company, you write about a particular subject on a niche blog.</p>
+
+<!-- more -->
+
+
+<h3>Niche Blogging</h3>
+
+<p>A niche blog is a blog that is centered around a certain  topic, instead of around you or your company. The goal of a niche blog is to educate and inform its audience. For example, if your potential customers ran a SaaS business, you would have a site that was dedicated to writing articles to help SaaS owners.</p>
+
+<h3>Using Niches to Sell Products</h3>
+
+<p>Brennan Dunn recently made a shift to writing a subject focused site instead of a personal or company one. Over the past couple years, Brennan had a podcast which lived on his personal domain <a href="http://brennandunn.com">brennandunn.com</a>. Whenever he wrote an article, he would publish it on the blog of his software product, <a href="http://www.planscope.io">Planscope</a>.</p>
+
+<p>Brennan recently decided to change how he was publishing content. He created a new site <a href="http://doubleyourfreelancing.com">doubleyourfreelancing.com</a>, and moved all of his content over to that site. His content is based around selling to freelancers, and this site is all about growing your freelancing business. He got the name from one of his most popular products, <em>Double Your Freelancing Rate</em>.</p>
+
+<h3>Using Niche Writing to Get Clients</h3>
+
+<p>By building a site around a certain subject, you position yourself as an authority in that subject. A friend of mine, Denny Cave, works exclusively on the LightCMS platform. He has a site called <a href="http://www.lightignite.com">LightIgnite</a> , which is all about developing on the LightCMS platform. By doing this, he puts himself in the position of being <strong>THE</strong> LightCMS guy, and this brings him a lot of client work.</p>
+
+<h3>Are You Changing Your Blogging Strategy Again?</h3>
+
+<p>No. This time, I'm not changing how I am doing anything, But I think that this is a strategy worth talking about, and worth considering if you are looking for a new way to publish your content, grow an audience, and make more sales.</p>
+
+<p><div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+    <div class="ck_image mobile-only">
+    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+    </div>
+      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
+      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+  
+<style type="text/css">
+</style>
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Will You Take The 30 day Publishing Challenge?]]></title>
@@ -355,53 +432,6 @@ Here are things that don't count:</li>
 </style>
 <script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
 </p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Self Publisher's Journey]]></title>
-    <link href="http://glennstovall.com/blog/2014/06/06/the-self-publishers-journey/"/>
-    <updated>2014-06-06T14:34:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/06/06/the-self-publishers-journey</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/cover.jpg" width="260"></p>
-
-<p>I'm working on self publishing and eBook in the coming months, and I wanted to document my journey and share it with you. I have enjoyed and been inspired by other writings such as <a href="http://groovehq.com/blog">Alex Turnbull documenting his ongoing journey to get to $100,000 recurring revenue</a>, and Nathan Barry's <a href="http://nathanbarry.com/category/the-web-app-challenge/">"Web App in Six Months Challenge"</a>. There is nothing like publicly sharing your techniques and struggles in order to both share useful information with other people, and to keep myself accountable.</p>
-
-<!-- more -->
-
-
-<h3>The Story So Far</h3>
-
-<p>I think a lot of freelancers dream of finding ways to make money besides charging for their time. It could be by setting up recurring revenue, productizing their consulting services, or building a product they can sell individually. I decided to try what many before me have, and build a product. Heck, there is an <a href="http://chasingproduct.com">entire podcast</a> dedicated to the subject (which is really good, by the way).</p>
-
-<p>Being a web developer, of course my first thought was to build some form of SaaS application. Enough reading on the internet scared me off of that idea (for now): SaaS applications on average take two years before they bring in enough income to stand on their own, and I know from experience they can take months to develop. I had started a couple of ideas, but could never find the time to finish them. Then I found an article by Amy Hoy called <a href="http://unicornfree.com/2013/why-you-should-do-a-tiny-product-first">"Why you should build a tiny product first"</a> and it really resonated with me. It got me thinking about products that I could complete in 90 days or less. I liked writing, and based on several freelance sites I had read before, I knew that there was a lot of interest in starting to freelance, but a lot of people didn't know where to begin.</p>
-
-<p>The tiny idea was also appealing because it would be a straight up easier way to launch a product. I have worked with enough small businesses and start-ups to know that launching a new business or product is <strong>hard</strong>. Really, REALLY hard. There is no reason to tackle new business ventures on hard mode, and I feel that if there is anything you can do to make things easier on yourself, you should do it. And it is much easier to write a book than build a piece of software, and it is a lot easier to convince someone to pay you $29 once instead of $29/month indefinitely.</p>
-
-<h3>The Freelance Start-up Guide</h3>
-
-<p>It was at this point, around the start of this year,  I decided to work on a book, then titled <strong>The Freelance Start-up Guide</strong>. It was going to be aimed at aspiring freelancers, and help them build a product from scratch. I started writing the book, and set up a mailing list. Initial response was a bit tepid on the mailing list, but there was some interest in the idea.</p>
-
-<h3>The First Big Hurdle</h3>
-
-<p>Around the start of February, I had a huge rush of client work, admittedly, more than I could handle. I knew something had to give, and I informed my tiny mailing list that I had shelved the project indefinitely. I knew at that time that I did not have any extra bandwidth, and had to cut work where ever I could.</p>
-
-<h3>The Real Tiniest Product</h3>
-
-<p>About a month ago, I decided to give building a mailing list a second try. I figured that I could build an audience before I built the product. Even if I didn't finish that book, I would still have an audience, and that had value. I signed up for Nathan Barry's <a href="http://www.convertkit.com">ConvertKit</a>, and during his ConvertKit academy, he gave me a valuable piece of advice: You can get a lot more email list subscriptions if you give users an incentive for signing up. I compiled some of my past blog articles, wrote some new content, and released <em><a href="http://glennstovall.com/books/freelance-pricing-handbook/">The Freelance Pricing Handbook</a></em>. This is a small, 32 page eBook that I gave away for free. I was able to grow my list from 15 to 100 subscribers overnight. You can read my case study on it's release here.</p>
-
-<p>This so far has been the best move I've made. I always liked blogging, but it had been directionless before. Now instead of people reading my article, and that bringing me no value, I could capture readers and have a way to continue engaging with them. This meant that every post I had written in the past and every post I would write in the future was more valuable. Now they weren't just articles, they were sales tools.</p>
-
-<h3>Version 2.0: Bootstrap Freelance</h3>
-
-<p>Now it's June, and my client work has returned to levels where I don't feel completely underwater. I decided that I wanted to pick up the project and continue working on it. At this point, I had almost 65 pages written, and an email list with a couple of hundred people on it, and I didn't want to throw all of this away. I renamed the product <em>Bootstrap Freelance</em> and decided to pick the project back up. I decided that instead of just telling people how to get their first client, I wanted to add more content based on lessons I had learned on how to build up their business after that. I'm nervous about announcing a launch date based on what happened last time, but I am shooting for a release date sometime in August.</p>
-
-<h3>...And Here We Are</h3>
-
-<p>Now I have roughly 80 pages of a first draft, which is about 2/3rds of what I want it to be. I am working on spending more time working not only on the book, but on marketing before that. For example, setting up a landing page for the product, and starting to public write about the progress of the book. I plan on updating this blog with information about the process, along with helpful information from the book. I am also going to send updates every single Friday to anyone who wants to help me accountable. If you'd like to keep up with the progress on the book, enter your email address below:</p>
-
-<script src="https://app.convertkit.com/landing_pages/588.js?orient=vert"></script>
-
 ]]></content>
   </entry>
   

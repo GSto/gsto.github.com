@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-09-04T17:48:46-04:00</updated>
+  <updated>2014-09-05T14:16:33-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,88 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Niche Blogging]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/05/niche-blogging/"/>
+    <updated>2014-09-05T14:11:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/05/niche-blogging</id>
+    <content type="html"><![CDATA[<h3>Personal vs. Professional Blogging part III</h3>
+
+<p>Should you write under your personal name, or under a company brand? I&#8217;ve addressed this question in other articles. At first, I planned on starting two blogs (<a href="http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/">part I</a>). I tried that for a while and realized that I was spending a lot of time trying to build two audiences when I could just be building one. The time invested was not paying off. So, I decided to combine my two blogs, and write everything under my personal name (<a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">part II</a>). Today I&#8217;m covering a third option: Instead of writing under your name or your company, you write about a particular subject on a niche blog.</p>
+
+<!-- more -->
+
+
+<h3>Niche Blogging</h3>
+
+<p>A niche blog is a blog that is centered around a certain  topic, instead of around you or your company. The goal of a niche blog is to educate and inform its audience. For example, if your potential customers ran a SaaS business, you would have a site that was dedicated to writing articles to help SaaS owners.</p>
+
+<h3>Using Niches to Sell Products</h3>
+
+<p>Brennan Dunn recently made a shift to writing a subject focused site instead of a personal or company one. Over the past couple years, Brennan had a podcast which lived on his personal domain <a href="http://brennandunn.com">brennandunn.com</a>. Whenever he wrote an article, he would publish it on the blog of his software product, <a href="http://www.planscope.io">Planscope</a>.</p>
+
+<p>Brennan recently decided to change how he was publishing content. He created a new site <a href="http://doubleyourfreelancing.com">doubleyourfreelancing.com</a>, and moved all of his content over to that site. His content is based around selling to freelancers, and this site is all about growing your freelancing business. He got the name from one of his most popular products, <em>Double Your Freelancing Rate</em>.</p>
+
+<h3>Using Niche Writing to Get Clients</h3>
+
+<p>By building a site around a certain subject, you position yourself as an authority in that subject. A friend of mine, Denny Cave, works exclusively on the LightCMS platform. He has a site called <a href="http://www.lightignite.com">LightIgnite</a> , which is all about developing on the LightCMS platform. By doing this, he puts himself in the position of being <strong>THE</strong> LightCMS guy, and this brings him a lot of client work.</p>
+
+<h3>Are You Changing Your Blogging Strategy Again?</h3>
+
+<p>No. This time, I&#8217;m not changing how I am doing anything, But I think that this is a strategy worth talking about, and worth considering if you are looking for a new way to publish your content, grow an audience, and make more sales.</p>
+
+<div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+    <div class="ck_image mobile-only">
+    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+    </div>
+      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
+      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+
+
+
+
+
+
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My Freelancing Stack]]></title>
@@ -1696,126 +1778,6 @@ I believe that this new approach will lead to me operating in a more efficient m
 
 
 
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-    <div class="ck_image mobile-only">
-    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-    </div>
-      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
-      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-
-
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Freelance Pricing Handbook Launch Post-mortem]]></title>
-    <link href="http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem/"/>
-    <updated>2014-05-09T10:31:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/freelance_pricing_handbook.png" width="260"></p>
-
-<p>Whenever I finish a product, I like to write a post-mortem. A post-mortem answers a few important questions: What w went well? What went wrong? What could be done better next time? I usually keep these to myself, but this time I wanted to share. Building an email list is something every business should be doing, and I wanted to share the specific techniques I used in order to increase the size of a list 500% in 2 days.</p>
-
-<!-- more -->
-
-
-<h3>The Goal</h3>
-
-<p>Start building a mailing list, and learn more about effective email marketing in the process. I plan on releasing a book targeted at freelancers hopefully in July, so I would like to start building a list now in order to build trust and have a targeted audience when I am ready to sell.</p>
-
-<h3>The Process</h3>
-
-<p> I signed up for Nathan Barry&#8217;s <a href="http://www.convertkit.com">ConvertKit</a> Email list software. This includes enrolling in his &#8220;ConvertKit Academy&#8221; Which is an email course along with a few Google Hangout sessions with Nathan where you get a chance to talk about your personal goals.</p>
-
-<p> Nathan heavily suggested that you have some form on incentive to get people to sign up for your list. He mentioned that you could do a free book, and it could just be a compilation of old writings. He also mentioned setting up a drip marketing course, and ConvertKit comes with a template for that. I looked over some past blog posts and decided to go that route.</p>
-
-<h3>Writing The Book</h3>
-
-<p> Writing the book, and I use the term writing loosely, took about a day. It&#8217;s a compilation of a few different blog articles I had written, along with some content from a chapter I already had completed for my larger book profit. I drafted up a table of contents, and edited the content together, and wrote about 4 - 5 pages of new content to fill in gaps.  I made the PDF in Pages on the mac.</p>
-
-<p> Then it came to the editing stage. I sent my current list of about 15 people an email announcing the book and asking if anyone wanted a copy. I also did the same of Twitter. I got a lot of amazing responses of people willing to read my book and offer feedback.</p>
-
-<p> After I took a couple hours to edit the content together, I was ready to launch.</p>
-
-<h3>Launching the book</h3>
-
-<p>  Here were the steps I took in order to launch the book</p>
-
-<ul>
-<li>I added the ConvertKit form to several blog posts that I thought were relevant to the audience.</li>
-<li>Created a <a href="http://glennstovall.com/books/freelance-pricing-handbook/">new landing page</a></li>
-<li>Wrote two announcement posts, one on <a href="http://glennstovall.com/blog/2014/04/29/announcing-the-freelance-pricing-handbook/">My personal domain</a> and on my <a href="http://concordantsolutions.com/announcing-freelance-pricing-handbook/">company domain</a></li>
-<li>Posted links on Facebook, Twitter, Reddit, and LinkedIn</li>
-<li>Sent an email out to my original list about the book being released. Also included a P.S. asking them to share on Facebook &amp; Twitter if they felt so inclined</li>
-<li>Asked my <a href="http://www.fourathens.com/">local tech community</a> to take a look and help out on social media if they wanted to.</li>
-</ul>
-
-
-<h3>Results</h3>
-
-<p>  By the end of the week I had 84 new subscribers to my list. This was with 323 visitors and a conversion rate of 25.8%</p>
-
-<p>  According to Google Analytics, My site had ~600 visits this week, mostly coming from direct traffic (which is odd, I feel like there are some referrals that don&#8217;t get tracked properly), then Reddit, then Facebook, in that order.</p>
-
-<h3>What went well</h3>
-
-<p>  Having friends help out on social media seemed like a huge boost. I don&#8217;t think I&#8217;ve gotten that much traffic from Facebook before. I also had a few people say nice things on Twitter, which I quickly embedded on the landing page as testimonials. The best way to expand your audience is to find ways you can leverage the audience of others.</p>
-
-<p>  Also, writing a book, even when that book is just a PDF &#8220;best-of&#8221; of your blog, seems really cool to a lot of people. Content in PDF form is just seen as more valuable, and I think having this product out there gives me more credibility.</p>
-
-<h3>What went wrong</h3>
-
-<p>  I found out after the fact the form didn&#8217;t render correctly on mobile devices, and made it impossible to sign up if you landed on the landing page via a phone. :( That definitely costs me a few conversions. I added a link below that links to a form directly, though perhaps I should find a better way to set up the form so that it renders in a more responsive friendly way.</p>
-
-<h3>What I learned</h3>
-
-<p>  Using incentives to build email lists really does work! My list went from 15 to 100 in a few days. It is also nice to always have something free to offer users in order to provide value for them.</p>
-
-<p>  My next goal is to take these principles and find a way to apply them in a way I can use to target potential clients for my consulting services. I&#8217;m not sure what that is going to look like, but I&#8217;m sure if I keep writing it&#8217;ll make sense eventually.</p>
-
-<p>  If you&#8217;d like the read the book (and join my mailing list for freelancers), you can get the book below:</p>
 
 <div class="ck_embed_form ck_horizontal_subscription_form">
   <div class="ck_embed_form_content">
