@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-09-11T08:29:37-04:00</updated>
+  <updated>2014-09-12T11:29:26-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Emacs One Shortcut At A Time]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/12/learning-emacs-one-shortcut-at-a-time/"/>
+    <updated>2014-09-12T11:16:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/12/learning-emacs-one-shortcut-at-a-time</id>
+    <content type="html"><![CDATA[<h3>How I Turned A Dredging Task Into a Learning Opportunity</h3>
+
+<p>Despite all of the advances in technology over the past 30 years, in my opinion the best text editor for coding was created during the 1970s. <a href="http://www.gnu.org/software/emacs/">Emacs</a> is a text editor that was developed at the MIT lab, created to aid engineers that were doing research on artificial intelligence.</p>
+
+<p>Emacs is a powerful tool, one that I use everyday, but it is difficult to master. There are dozens of shortcuts and commands that you need to know in order to use if effectively. How did I learn them all? One at a time.</p>
+
+<!-- more -->
+
+
+<h3>I Learned Something New Because I Had No Choice</h3>
+
+<p>I haven&#8217;t always used emacs. I started writing in more graphical text editors, such as <a href="http://www.crimsoneditor.com/">Crimson Editor</a> and <a href="http://notepad-plus-plus.org/">Notepad++</a>. Occasionally I would use larger IDE systems, such as <a href="http://www.jetbrains.com/phpstorm/">PHPStorm</a>.</p>
+
+<p>Then, I accepted a position at a software company in Washington DC. At this job coding was done on development servers, which means I had to log into the server via a terminal and work from there. I had zero experience with terminal based editors (kind of weird to think I made it <em>years</em> into my job before having to learn these skills). I was told that I two options: learn emacs or learn <a href="http://www.vim.org/">vim</a>. None of the tools I had used before were applicable here.</p>
+
+<h3>The Age Old Question</h3>
+
+<p><a href="http://en.wikipedia.org/wiki/Editor_war">Emacs vs Vim</a> is an age old question that developers love to debate about. I don&#8217;t want to open that can of worms here. At this job you were assigned a mentor for your first few weeks to help show you the ropes. My mentor used emacs, and would be available to help teach me there.</p>
+
+<p>The primary difference in the two editors is how commands are structured. Both are 100% keyboard based. In Vim, you edit by having different &#8216;modes&#8217; that the editor can be set to. With emacs, you instead have a long list of shortcuts. Shortcuts either start with Ctrl, Esc, or Pressing Esc THEN another button. That actually isn&#8217;t enough to cover all of the commands needed, so then there are subsets of commands that are reached by pressing Esc+X or Ctrl+C, and then <em>another</em> command.</p>
+
+<h3>How Could You Learn All This?</h3>
+
+<p>Once I had completed the training at my new job, I was assigned to a job we all called &#8220;the pit&#8221;. The company had a large application with a huge customer base. It was the standard &#8220;legacy&#8221; application, meaning that it was old, complicated, and full of bugs. There were hundreds of support tickets and bug reports that had piled up, with new ones coming in every day. Keeping the bug queue in check was a Sisyphean task.</p>
+
+<p>It was the job of the developers in the pit to work through that bug queue.</p>
+
+<p>It wasn&#8217;t the most exciting job at the time, and often times I got bored. If I only I had heard the story of <a href="http://glennstovall.com/blog/2014/09/11/lessons-learned-from-thomas-edisons-factory-fire/">Thomas Edison&#8217;s fire</a> back then, I may have considered this an opportunity to learn a lesson about discipline.</p>
+
+<p>Instead, I made it an opportunity to learn about emacs.</p>
+
+<p>I found a <a href="http://www.ic.unicamp.br/~helio/disciplinas/MC102/Emacs_Reference_Card.pdf">cheat sheet of emacs commands</a>. Every day I would pick one single command, and make it a point to use it as much as it was applicable. I would pick a new one the next day, but I would still be using the command from the previous day.</p>
+
+<p>I did this for a month, and I had a much better working knowledge of emacs, and could write code and fix those bugs at a quicker rate.</p>
+
+<h3>Incremental Gains Make Huge Differences</h3>
+
+<p>The 30-day publishing challenge has given me yet another chance to apply this daily style of learning. Every day I am choosing another stylistic point from <em>The Elements of Style</em> and applying to my writing. These small, incremental gains add up to huge gains in productivity.</p>
+
+<p>James Clear wrote an article about a <a href="http://jamesclear.com/marginal-gains">coach who worked in marginal gains</a>. Marginal gains has a compounding effect. If you are making small gains over time, they will pile on top of each other until to have made a mountain of progress. Conversely, if you slip over time you will end up digging a pit of failure.</p>
+
+<p><img class="center" src="http://glennstovall.com/images/articles/slight_edge.jpg">
+<small>The Slight Edge By Jeff Olson</small></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Lessons Learned From Thomas Edison's Factory Fire]]></title>
@@ -1760,83 +1811,6 @@ I believe that this new approach will lead to me operating in a more efficient m
 <p>I&#8217;ve maintained <a href="http://www.concordantsolutions.com">Concordant Solutions</a> for a year, and I am not afraid to admit that as a marketing tool, it has been a failure. I will say that as a <em>sales</em> tool, It has done some good work. The difference is that while that domain and the content on it has not brought me any new leads, it has been a great tool to help turn leads into clients. Potential clients are usually not going to find your portfolio by googling for it; They are going to see your portfolio because they said &#8220;can I see your portfolio?&#8221; and you mailed them a link.</p>
 
 <p>My company site will still exist for that reason. Any content on there I still deem worthwhile is going to be ported over to this domain over the next couple weeks. The company site  will be a resource for past, present, and future clients. I still intend on it being a valuable sales tool. It just won&#8217;t have an articles section any longer.</p>
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-    <div class="ck_image mobile-only">
-    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-    </div>
-      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
-      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-
-
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to Turn Your Services into Products]]></title>
-    <link href="http://glennstovall.com/blog/2014/07/14/how-to-turn-your-services-into-products/"/>
-    <updated>2014-07-14T12:18:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/07/14/how-to-turn-your-services-into-products</id>
-    <content type="html"><![CDATA[<p>Today I wanted to talk to you about the idea of &#8220;productized consulting&#8221;. Productized can give you a way to package your services in a way that is easier to sell and can be scalable. Here&#8217;s a quick run down of how it works:</p>
-
-<ul>
-<li>Take a service you have provided to clients in the past.</li>
-<li>Define a fixed scope and price for that service.</li>
-<li>Sell that service like you would a physical product or monthly subscription.</li>
-</ul>
-
-
-<!-- more -->
-
-
-<p><a href="http://wptheory.net">WPTheory</a> is a good example. Adam Clark  chooses a WordPress theme, install it, customize it, and put up content, in one day. He sells this package for $999. It could be difficult to convince clients to pay you a $1,000 day rate, but by positioning it this way,  Adam is able to do this frequently.</p>
-
-<p>While $1,000/day would be nice, what if you could charge $1,000 <strong>an hour</strong>? That&#8217;s what Joanna Weibe did with their consulting product, <a href="http://copyhackers.com/product/formal-website-copy-review-with-joanna-wiebe/">The no fluff website review</a>. Joanna sends over a 60 minute video about your website, and charges you $997 for the privilege.</p>
-
-<p>Something else that makes Joanna&#8217;s example is that while she is still providing a service, she has turned that service into a more tangible deliverable. Instead of just telling the client the changes or writing them a list, she gives them a meeting, a video, and several usable copy writing samples they can use. You can make a lot of services and meetings more valuable to the client by attaching some form of report or usable item as part of it.</p>
-
-<p>I hope this gets the gears turning for you for some new ways to position your services. I thought about writing up a list of more examples of freelancing as a service, but it turns out the guys at Workshop already did it, and they <a href="http://letsworkshop.com/freelance-as-a-service/">knocked it out of the park</a>.</p>
 
 <div class="ck_embed_form ck_horizontal_subscription_form">
   <div class="ck_embed_form_content">

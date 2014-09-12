@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: emacs | Glenn Stovall]]></title>
+  <link href="http://glennstovall.com/blog/categories/emacs/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-09-12T11:29:26-04:00</updated>
+  <id>http://glennstovall.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Emacs One Shortcut At A Time]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/12/learning-emacs-one-shortcut-at-a-time/"/>
+    <updated>2014-09-12T11:16:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/12/learning-emacs-one-shortcut-at-a-time</id>
+    <content type="html"><![CDATA[<h3>How I Turned A Dredging Task Into a Learning Opportunity</h3>
+
+<p>Despite all of the advances in technology over the past 30 years, in my opinion the best text editor for coding was created during the 1970s. <a href="http://www.gnu.org/software/emacs/">Emacs</a> is a text editor that was developed at the MIT lab, created to aid engineers that were doing research on artificial intelligence.</p>
+
+<p>Emacs is a powerful tool, one that I use everyday, but it is difficult to master. There are dozens of shortcuts and commands that you need to know in order to use if effectively. How did I learn them all? One at a time.</p>
+
+<!-- more -->
+
+
+<h3>I Learned Something New Because I Had No Choice</h3>
+
+<p>I haven't always used emacs. I started writing in more graphical text editors, such as <a href="http://www.crimsoneditor.com/">Crimson Editor</a> and <a href="http://notepad-plus-plus.org/">Notepad++</a>. Occasionally I would use larger IDE systems, such as <a href="http://www.jetbrains.com/phpstorm/">PHPStorm</a>.</p>
+
+<p>Then, I accepted a position at a software company in Washington DC. At this job coding was done on development servers, which means I had to log into the server via a terminal and work from there. I had zero experience with terminal based editors (kind of weird to think I made it <em>years</em> into my job before having to learn these skills). I was told that I two options: learn emacs or learn <a href="http://www.vim.org/">vim</a>. None of the tools I had used before were applicable here.</p>
+
+<h3>The Age Old Question</h3>
+
+<p><a href="http://en.wikipedia.org/wiki/Editor_war">Emacs vs Vim</a> is an age old question that developers love to debate about. I don't want to open that can of worms here. At this job you were assigned a mentor for your first few weeks to help show you the ropes. My mentor used emacs, and would be available to help teach me there.</p>
+
+<p>The primary difference in the two editors is how commands are structured. Both are 100% keyboard based. In Vim, you edit by having different 'modes' that the editor can be set to. With emacs, you instead have a long list of shortcuts. Shortcuts either start with Ctrl, Esc, or Pressing Esc THEN another button. That actually isn't enough to cover all of the commands needed, so then there are subsets of commands that are reached by pressing Esc+X or Ctrl+C, and then <em>another</em> command.</p>
+
+<h3>How Could You Learn All This?</h3>
+
+<p>Once I had completed the training at my new job, I was assigned to a job we all called "the pit". The company had a large application with a huge customer base. It was the standard "legacy" application, meaning that it was old, complicated, and full of bugs. There were hundreds of support tickets and bug reports that had piled up, with new ones coming in every day. Keeping the bug queue in check was a Sisyphean task.</p>
+
+<p>It was the job of the developers in the pit to work through that bug queue.</p>
+
+<p>It wasn't the most exciting job at the time, and often times I got bored. If I only I had heard the story of <a href="http://glennstovall.com/blog/2014/09/11/lessons-learned-from-thomas-edisons-factory-fire/">Thomas Edison's fire</a> back then, I may have considered this an opportunity to learn a lesson about discipline.</p>
+
+<p>Instead, I made it an opportunity to learn about emacs.</p>
+
+<p>I found a <a href="http://www.ic.unicamp.br/~helio/disciplinas/MC102/Emacs_Reference_Card.pdf">cheat sheet of emacs commands</a>. Every day I would pick one single command, and make it a point to use it as much as it was applicable. I would pick a new one the next day, but I would still be using the command from the previous day.</p>
+
+<p>I did this for a month, and I had a much better working knowledge of emacs, and could write code and fix those bugs at a quicker rate.</p>
+
+<h3>Incremental Gains Make Huge Differences</h3>
+
+<p>The 30-day publishing challenge has given me yet another chance to apply this daily style of learning. Every day I am choosing another stylistic point from <em>The Elements of Style</em> and applying to my writing. These small, incremental gains add up to huge gains in productivity.</p>
+
+<p>James Clear wrote an article about a <a href="http://jamesclear.com/marginal-gains">coach who worked in marginal gains</a>. Marginal gains has a compounding effect. If you are making small gains over time, they will pile on top of each other until to have made a mountain of progress. Conversely, if you slip over time you will end up digging a pit of failure.</p>
+
+<p><img class="center" src="/images/articles/slight_edge.jpg">
+<small>The Slight Edge By Jeff Olson</small></p>
+]]></content>
+  </entry>
+  
+</feed>
