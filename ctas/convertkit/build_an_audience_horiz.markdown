@@ -5,7 +5,7 @@
         <span class="ck_image">
           <img alt="Audience_building_cover" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/227/standard/audience_building_cover.png?1410464730" />
         </span>
-          <p>I built an audience of over 500 people from nothing. This 60-page case study teaches you all the techniques I used.</p>
+          <p>I built an audience of over 500 people from nothing. This 60-page case study teaches you all the techniques I used.<a href='http://glennstovall.com/products/building-audiences/'>Learn More...</a></p>
       </div>
   </div>   
    
