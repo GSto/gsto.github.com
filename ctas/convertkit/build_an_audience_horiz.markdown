@@ -44,3 +44,4 @@
       <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
     </form>
   </div>
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
