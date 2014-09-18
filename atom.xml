@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-09-17T14:55:09-04:00</updated>
+  <updated>2014-09-18T10:37:27-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,84 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Start A Consultancy In 16 Hours From Kai Davis]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/18/how-to-start-a-consultantcy-in-16-hours-from-kai-davis/"/>
+    <updated>2014-09-18T07:17:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/18/how-to-start-a-consultantcy-in-16-hours-from-kai-davis</id>
+    <content type="html"><![CDATA[<h3>An Actionable Plan From The Side Hustle Nation</h3>
+
+<p><img class="left" src="http://glennstovall.com/images/articles/kai-davis.jpg" width="260"></p>
+
+<p>My friend <a href="http://kaidavis.com/">Kai Davis</a> was recently on the side hustle nation podcast. The episode is <a href="http://www.sidehustlenation.com/start-side-hustle-consulting-business-gets-paid/">How to Start a Side Hustle Consulting Business that Gets Paid</a>. One particular nugget of gold from this podcast: When asked what he would do if he had to start all over, Kai responds with how he would start a new consultancy in 16 hours.</p>
+
+<!-- more -->
+
+
+<h3>Hours 1-3: Identify A Target Audience</h3>
+
+<p>Decide which market you want to focus on. This could be segmented geographically, or by industry type. If you aren&#8217;t sure where to begin, try looking at local business directories. Your local chamber of commerce is a good place to start. You could even look in a phone book if you manage to find one.</p>
+
+<h3>Hours 4 - 8: Book Four Calls (But Not Sales Calls)</h3>
+
+<p>Start reaching out to people who you think might be potential clients. Ask them to sit down with you over lunch or coffee, or just hop on the phone with you to discuss their business. People love talking about themselves, and even strangers will be more receptive to this than you would believe. Your goal here isn&#8217;t to sell them anything, this meeting is research. You want to find the <em>pain points</em> that your potential clients have.</p>
+
+<h3>Hours 9 - 12: Begin Crafting A Service</h3>
+
+<p>Now that you know what problems people in your target audience are having, how can you solve them? Look for ways you can apply your current skills and knowledge to these problems, or how to apply new skills that you could pick up in a reasonable amount of time. If you don&#8217;t find a good fit, that&#8217;s OK, you may just have to try again. You don&#8217;t marry the first person you date, and you don&#8217;t want to pursue the first job idea that comes to mind.</p>
+
+<h3>Hours 13 - 16: Offer Your Solution</h3>
+
+<p>Now you have connections to your market, and understanding of their problems, and a solution to those problems. Go back to your original contacts and offer your solution. Now you&#8217;re in business!</p>
+
+<div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);">
+    <div class="ck_image mobile-only">
+    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+    </div>
+      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
+      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+
+
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Exactly How I Got My First 500 Subscribers: Announcing a New Case Study And Seminar]]></title>
@@ -1779,95 +1857,6 @@ However, this doesn’t mean skimping on quality. As DHH of 37Signals said build
 
       <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
         Start Building Your Audience
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Why I Don't bill hourly]]></title>
-    <link href="http://glennstovall.com/blog/2014/07/31/why-i-dont-bill-hourly/"/>
-    <updated>2014-07-31T09:29:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/07/31/why-i-dont-bill-hourly</id>
-    <content type="html"><![CDATA[<h3>How pricing models affect project outcomes</h3>
-
-<p><img class="left" src="http://glennstovall.com/images/articles/wealth.jpg" width="260"></p>
-
-<p><small class='notice'><em>This post orignally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
-
-<p>Many web developers and designers charge their clients by the hour. We have done that ourselves in the past. But as of 2014 I’ve decided to completely do away with hourly billing. What’s wrong with billing by the hour?</p>
-
-<!-- more -->
-
-
-<h3>The Distracting Overhead</h3>
-
-<p>When billing by the hour, in which I was really billing in 15 minute increments, that meant that time had to be tracked. It also meant that time had to be included on invoices. The problem with this is two fold; Firstly, all the time spent tracking time is time spent not providing value to clients. The second is that it leads to invoicing based on time, which makes the discussion about how long things take instead of how valuable they are. If we build you a web application that saves your company $10,000 a month, I doubt you care if it took an hour, ten hours, or 100 hours to build. All that matters to you is that you made a profitable investment. Hourly billing distracts from focuses on quality and results.</p>
-
-<h3>The Sporadic Schedule</h3>
-
-<p>Scheduling work based on hours can often lead to sporadic schedules. When I billed hourly, I may work for 2 hours in the morning for Client A, then maybe had planned on working for 4 hours for Client B after lunch, but then Client C calls and has an emergency that ends up taking 2 hours. All of this <a href="http://www.fastcompany.com/944128/worker-interrupted-cost-task-switching">task switching isn’t free</a>, it’s another issue that harms productivity. Starting in 2014 the smallest unit of time that we bill for is a day.</p>
-
-<h3>The Perverse Incentives</h3>
-
-<p>The biggest reason I have decided to get rid of hourly billing is the perverse incentives that it gives to both clients and developers. As a developer, billing by the hour encourages me to not be efficient, or even worse, punishes me when I am. If I had estimated that a new feature would take 20 hours to implement, and I get it done in 10, does it make sense that I make less?</p>
-
-<p>For clients, I have found that billing hourly leads to clients asking for cut corners and a lower quality of work. For clients, any time spent making a product better now seems worse since it comes with an additional expense.</p>
-
-<h3>My Solution: Flat Rates and Larger Chunks of Time</h3>
-
-<p>I don’t believe there is any one size fits all solution to pricing in the software industry. When it comes to your project, we’ll work with you to find a pricing structure that works for you. Here are some of the options that we offer:</p>
-
-<ul>
-<li><p><strong>Flat Rate:</strong> This is reserved for small or well defined projects, which tend to be a rare case. We agree on a deliverable, and that deliverable costs $x. I have services that are available to all clients in this manner, such as <a href="http://concordantsolutions.com/rome">Rome</a>, my speedy website creation, and <a href="http://concordantsolutions.com/flourish/">Flourish</a>, which helps web applications be sustainable and grow post-launch.</p></li>
-<li><p><strong>Weekly &amp; Monthly Billing:</strong> Weekly &amp; Monthly Billing is the cousin of flat rate billing. Weekly &amp; Monthly billing means that at the end of the agreed upon week or month, we will have a deliverable complete that costs $x. Weekly &amp; Monthly billing is great for projects that need some flexibility in pricing and have a more agile process.
-I believe that this new approach will lead to me operating in a more efficient matter, and enable us to provide a higher quality of product to my clients.</p></li>
-</ul>
-
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);">
-    <div class="ck_image mobile-only">
-    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-    </div>
-      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
-      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
       </button>
       <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
     </form>

@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>How to Test Controller Concerns in Rails 4 - Glenn Stovall</title>
+  <title>How to Start A Consultancy In 16 Hours From Kai Davis - Glenn Stovall</title>
   <meta name="author" content="Glenn Stovall">
 
   
-  <meta name="description" content="Concerns are a new feature that was added in Rails 4. They allow to clean up code in your models and controllers. They also allow you to share &hellip;">
+  <meta name="description" content="An Actionable Plan From The Side Hustle Nation My friend Kai Davis was recently on the side hustle nation podcast. The episode is How to Start a Side &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://glennstovall.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/">
+  <link rel="canonical" href="http://glennstovall.com/blog/2014/09/18/how-to-start-a-consultantcy-in-16-hours-from-kai-davis/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -92,7 +92,7 @@
   
   <header>
     
-      <h1 class="entry-title">How to Test Controller Concerns in Rails 4</h1>
+      <h1 class="entry-title">How to Start a Consultancy in 16 Hours From Kai Davis</h1>
     
     
       <p class="meta">
@@ -108,94 +108,44 @@
   
 
 
-<time datetime="2014-05-06T15:06:00-04:00" pubdate data-updated="true">May 6<span>th</span>, 2014</time>
+<time datetime="2014-09-18T07:17:00-04:00" pubdate data-updated="true">Sep 18<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><img class="left" src="/images/articles/ruby_on_rails.jpg" width="260"></p>
+<div class="entry-content"><h3>An Actionable Plan From The Side Hustle Nation</h3>
 
-<p><a href="http://api.rubyonrails.org/classes/ActiveSupport/Concern.html">Concerns</a> are a new feature that was added in Rails 4. They allow to clean up code in your models and controllers. They also allow you to share functionality between models or controllers. However, they can be a bit tricky to test in isolation. In this article I want to show how you can test your controller concerns in isolation.</p>
+<p><img class="left" src="/images/articles/kai-davis.jpg" width="260"></p>
+
+<p>My friend <a href="http://kaidavis.com/">Kai Davis</a> was recently on the side hustle nation podcast. The episode is <a href="http://www.sidehustlenation.com/start-side-hustle-consulting-business-gets-paid/">How to Start a Side Hustle Consulting Business that Gets Paid</a>. One particular nugget of gold from this podcast: When asked what he would do if he had to start all over, Kai responds with how he would start a new consultancy in 16 hours.</p>
 
 <!-- more -->
 
 
-<h2>The Over Simplified Scenario</h2>
+<h3>Hours 1-3: Identify A Target Audience</h3>
 
-<p>We have a project with several different types of objects that can be sold. Each item is unique and is marked as &#8216;out of stock&#8217; once it is purchased. However, we have several different controllers and different types of purchases that need this functionality. In order to reduce code duplication, we are going to put these in a concern.</p>
+<p>Decide which market you want to focus on. This could be segmented geographically, or by industry type. If you aren&#8217;t sure where to begin, try looking at local business directories. Your local chamber of commerce is a good place to start. You could even look in a phone book if you manage to find one.</p>
 
-<figure class='code'><figcaption><span>/app/controllers/concerns/transaction_processing.rb </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">module</span> <span class="nn">TransactionProcessing</span>
-</span><span class='line'>  <span class="kp">extend</span> <span class="ss">ActiveSupport</span><span class="p">:</span><span class="ss">:Concern</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="n">included</span> <span class="k">do</span>
-</span><span class='line'>    <span class="n">helper_method</span> <span class="ss">:process_sale</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">process_sale</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">item</span><span class="o">.</span><span class="n">is_in_stock</span> <span class="o">=</span> <span class="kp">false</span>
-</span><span class='line'>    <span class="n">item</span><span class="o">.</span><span class="n">save!</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
+<h3>Hours 4 - 8: Book Four Calls (But Not Sales Calls)</h3>
 
+<p>Start reaching out to people who you think might be potential clients. Ask them to sit down with you over lunch or coffee, or just hop on the phone with you to discuss their business. People love talking about themselves, and even strangers will be more receptive to this than you would believe. Your goal here isn&#8217;t to sell them anything, this meeting is research. You want to find the <em>pain points</em> that your potential clients have.</p>
 
-<p>If we want to test this concern, we need a controller to include it in. However, it would not be accurately unit testing to do this as there could be code in that controller that could affect the output of our test. Inside of our test, we can create a fake controller with no methods or logic of it&#8217;s own, and then write tests for that. If you are using <a href="http://rspec.info/">RSpec</a>, you can call methods directly using the <code>subject</code> object. Here is my example test using RSpec and <a href="https://github.com/thoughtbot/factory_girl">FactoryGirl</a></p>
+<h3>Hours 9 - 12: Begin Crafting A Service</h3>
 
-<figure class='code'><figcaption><span>/spec/controllers/concerns/transaction_processing_spec.rb </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;spec_helper&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">class</span> <span class="nc">FakesController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
-</span><span class='line'>  <span class="kp">include</span> <span class="no">TransactionProcessing</span>
-</span><span class='line'><span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">describe</span> <span class="no">FakesController</span> <span class="k">do</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="n">it</span> <span class="s2">&quot;should mark an item out of stock&quot;</span> <span class="k">do</span>
-</span><span class='line'>    <span class="n">item</span> <span class="o">=</span> <span class="n">create</span><span class="p">(</span><span class="ss">:item</span><span class="p">,</span> <span class="n">is_in_stock</span><span class="p">:</span> <span class="kp">true</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">subject</span><span class="o">.</span><span class="n">process_sale</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">expect</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">is_in_stock</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">be</span> <span class="kp">false</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
+<p>Now that you know what problems people in your target audience are having, how can you solve them? Look for ways you can apply your current skills and knowledge to these problems, or how to apply new skills that you could pick up in a reasonable amount of time. If you don&#8217;t find a good fit, that&#8217;s OK, you may just have to try again. You don&#8217;t marry the first person you date, and you don&#8217;t want to pursue the first job idea that comes to mind.</p>
 
+<h3>Hours 13 - 16: Offer Your Solution</h3>
 
-<p>And there you go! Easy, isolated tests for your controller concerns.</p>
+<p>Now you have connections to your market, and understanding of their problems, and a solution to those problems. Go back to your original contacts and offer your solution. Now you&#8217;re in business!</p>
 
 <div class="ck_embed_form ck_horizontal_subscription_form">
   <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Pricing For Freelance Developers</h3>
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
       <div class="ck_embed_description">
         <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/100/standard/Book-Portrait.png?1406907742" />
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
         </span>
           <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
       </div>
@@ -206,13 +156,13 @@
   </div>
   
     <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/705/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-        <div class="ck_image mobile-only">
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);">
+    <div class="ck_image mobile-only">
     <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
     </div>
       <h3 class="mobile-only">Freelance Pricing Handbook</h3>
       <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      <input type="hidden" name="id" value="705" id="landing_page_id"></input>
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
       <p class="ck_errorArea"></p>
       <div class="ck_control_group">
         <label class="ck_label" for="ck_firstNameField">First Name</label>
@@ -257,12 +207,12 @@
   
 
 
-<time datetime="2014-05-06T15:06:00-04:00" pubdate data-updated="true">May 6<span>th</span>, 2014</time>
+<time datetime="2014-09-18T07:17:00-04:00" pubdate data-updated="true">Sep 18<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/programming/'>programming</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
+    <a class='category' href='/blog/categories/freelance/'>freelance</a>
   
 </span>
 
@@ -271,7 +221,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://glennstovall.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/" data-via="GSto" data-counturl="http://glennstovall.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://glennstovall.com/blog/2014/09/18/how-to-start-a-consultantcy-in-16-hours-from-kai-davis/" data-via="GSto" data-counturl="http://glennstovall.com/blog/2014/09/18/how-to-start-a-consultantcy-in-16-hours-from-kai-davis/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -285,10 +235,8 @@
 
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/04/29/announcing-the-freelance-pricing-handbook/" title="Previous Post: Announcing The Freelance Pricing Handbook">&laquo; Announcing The Freelance Pricing Handbook</a>
+        <a class="basic-alignment left" href="/blog/2014/09/16/exactly-how-i-got-my-first-500-subscribers-annoucing-a-new-case-study-and-seminar/" title="Previous Post: Exactly How I Got My First 500 Subscribers: Announcing a New Case Study And Seminar">&laquo; Exactly How I Got My First 500 Subscribers: Announcing a New Case Study And Seminar</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem/" title="Next Post: Freelance Pricing Handbook Launch Post-mortem">Freelance Pricing Handbook Launch Post-mortem &raquo;</a>
       
     </p>
   </footer>
