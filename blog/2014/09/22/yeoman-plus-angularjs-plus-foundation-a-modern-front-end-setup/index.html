@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Yeoman + AngularJS + Foundation: A Modern Front End Setup - Glenn Stovall</title>
+  <meta name="author" content="Glenn Stovall">
+
+  
+  <meta name="description" content="With the combination of modern browsers and mobile devices having support for HTML5, CSS3, and new JavaScript APIs, front end development has become &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Glenn Stovall" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2427296-13']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+   
+  </script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+
+  <header role="banner"><hgroup>
+	<!--<div style='float:left;display:inline-block;'>-->
+	<div class='header-image'>
+	  <img src="/images/mugshot.jpg" width="128">
+  </div>
+<!--  <div style='float:left;display:inline-block;'>-->
+  <div class='header-wrapper'>
+		<h1><a href="/">Glenn Stovall</a></h1>
+		
+		  <br/>
+      <h2 style='display:inline-block;'>Developer, Technical Consultant, Writer</h2>
+		
+  </div>
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:glennstovall.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+	<li><a href="/books">Books</a></li>
+  <li><a href="/on/programming">Programming</a></li>
+  <li><a href="/on/writing">Writing</a></li>
+  <li><a href="/on/freelancing">Freelancing</a></li>
+  <li><a href="/on/business">Business</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Yeoman + AngularJS + Foundation: A Modern Front End Setup</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-22T14:18:00-04:00" pubdate data-updated="true">Sep 22<span>nd</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><img class="left" src="/images/angular.png" width="260"></p>
+
+<p>With the combination of modern browsers and mobile devices having support for HTML5, CSS3, and new JavaScript APIs, front end development has become a lot more complex and exciting. There has been an explosion of tools as of late, and it can be daunting to know where to get started. Here are the tools and process I use in order to build a new front end application from scratch.</p>
+
+<!-- more -->
+
+
+<h3>The Tools</h3>
+
+<ul>
+<li><strong>Yeoman</strong> : For scaffolding our web application.</li>
+<li><strong>Bower</strong> : For front-end dependency management.</li>
+<li><strong>Grunt</strong> : Command line tool for development.</li>
+<li><strong>AngularJS</strong> : JavaScript framework based on the principals of dependency injection.</li>
+<li><strong>Foundation</strong>: Responsive SCSS Framework to speed up design.</li>
+</ul>
+
+
+<h3>Step 1: Install Yeoman and a Generator</h3>
+
+<p>We&#8217;ll be using <a href="http://yeoman.io/">Yeoman</a> to handle all of our scaffolding. Yeoman will create the initial files and folder structure for you, so that you don&#8217;t have too. Yeoman uses generators, which are different templates it will use when creating your initial app. Yeoman is managed via npm. If you don&#8217;t have node and npm installed, you can get the <a href="http://nodejs.org/download/">NodeJS installer here</a>. I prefer building web applications with <a href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/">AngularJS</a>, so we&#8217;ll be installing a generator for an Angular application.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm install -g yo
+</span><span class='line'>npm install -g generator-angular</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Step 2: Create The Scaffolding</h3>
+
+<p>Now that we have our tools installed, it&#8217;s time to create our initial application. We&#8217;ll create a new directory and run the generator:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir example-app
+</span><span class='line'>cd example-app
+</span><span class='line'>yo angular</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you have everything installed correctly, Yeomen should start building your application. Select &#8216;yes&#8217; when it asks you if you want to install compass, then select no when it asks if you if you want to install Bootstrap. After a couple of minutes, you folder structure should look like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Gruntfile.js
+</span><span class='line'>/app
+</span><span class='line'>bower.json
+</span><span class='line'>bower_components
+</span><span class='line'>node_modules
+</span><span class='line'>package.json
+</span><span class='line'>/test</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Step 3: Install Dependencies</h3>
+
+<p>Now we need to run our package managers to install dependencies. First, we will run NPM in order to install development dependencies, then <a href="http://bower.io/">Bower</a> to install front end dependencies:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm install
+</span><span class='line'>bower install</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Step 4: Test The Servers</h3>
+
+<p>Run the server and make sure everything is working OK:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>grunt serve</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Once this runs, navigate to <code>localhost:9000</code>. You should see the yeoman placeholder page.</p>
+
+<h3>Step 5: Clean out the Crud.</h3>
+
+<p>Yeoman adds a lot of content that is not needed. For example, it has multiple routes, controllers, and views already created for you. You can leave this in or comment it out if you want to keep an example, but I like to clear all of this out before I start working. Here is a quick checklist, so you don&#8217;t miss anything.</p>
+
+<ul>
+<li><code>app/index.html</code> - Remove most of the code in the body, but be sure to leave the div with the <code>ng-view</code> property.</li>
+<li><code>app/views/main.html</code> - Remove the excess HTML.</li>
+<li><code>app/scripts/app.js</code> - Remove the routes that you aren&#8217;t using. I get rid of the extra &#8216;about&#8217; route, and delete all the related files.</li>
+<li>remove <code>app/controllers/about.js</code></li>
+<li>remove <code>app/views/about.html</code></li>
+<li>remove <code>spec/controllers/about.js</code></li>
+<li><code>app/styles/main.scss</code> - Remove all of the unused styles.</li>
+</ul>
+
+
+<h3>Step 6: Install Foundation</h3>
+
+<p>I prefer <a href="http://foundation.zurb.com/">Zurb&#8217;s Foundation</a> to <a href="http://getbootstrap.com/2.3.2/">Twitter&#8217;s Bootstrap</a>. In my opinion, it&#8217;s easier to use and has cleaner markup. Since we are using Bower, this process is very simple. Open the <code>bower.json</code> file, and add this to the dependencies object:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>foundation: '~5.4.4'</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Note: If you are reading this and it isn&#8217;t September 2014, then you may want to double check the version.</em></p>
+
+<p>Then, we run <code>bower install</code> again. Done!</p>
+
+<p>Now you have a front end application ready for development, with a whole suite of tools and frameworks installed.</p>
+
+<div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Pricing For Freelance Developers</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/100/standard/Book-Portrait.png?1406907742" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/705/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+        <div class="ck_image mobile-only">
+    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+    </div>
+      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
+      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
+      <input type="hidden" name="id" value="705" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+
+
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+
+
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Glenn Stovall</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-22T14:18:00-04:00" pubdate data-updated="true">Sep 22<span>nd</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/angularjs/'>angularjs</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/programming/'>programming</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup/" data-via="GSto" data-counturl="http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/09/18/how-to-start-a-consultantcy-in-16-hours-from-kai-davis/" title="Previous Post: How to Start A Consultancy In 16 Hours From Kai Davis">&laquo; How to Start A Consultancy In 16 Hours From Kai Davis</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Get Started Here</h1>
+  <ul>
+    <li class="post"><strong>Freelancing & Business</strong></li>
+      <li>
+        <a href='https://medium.com/@gsto/how-i-used-writing-to-double-my-freelancing-rate-as-a-programmer-7b321bedecdc'>How I Used Writing to Double My Freelancing Rate as a Programmer</a>
+      </li>
+      <li class="post">
+        <a href="http://glennstovall.com/blog/2014/04/03/10-resources-that-shaped-my-career/">10 Resources That Shaped My Career</a>
+      </li>
+      <li><a href="http://glennstovall.com/blog/2014/07/31/why-i-dont-bill-hourly/">Why I Don't Bill Hourly</a></li>
+      <li class="post">
+        <a href="https://api.medium.com/@gsto/how-letting-go-of-money-made-me-more-of-it-6c9c9f08b552">How Letting Go of Money Made Me More of It</a>
+      </li>
+
+</ul>
+
+<ul>
+  <li class="post"><strong>Shipping Products</strong></li>
+      <li class="post">
+        <a href="http://glennstovall.com/blog/2014/07/31/the-value-in-launching-early/">The Value in Launching Early</a>
+      </li>
+      <li class="post">
+        <a href="http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem/">Freelance Pricing Handbook Post-mortem</a>
+      </li>
+</ul>
+<ul>
+      <li class="post">
+        <strong>Programming</strong>
+      </li>
+
+      <li class="post">
+        <a href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/">AngularJS: An Overview</a>
+      </li>
+
+      <li class="post">
+        <a href="http://glennstovall.com/blog/2013/03/15/how-i-use-git/">How I Use Git</a>
+      </li>
+
+      <li class="post">
+        <a href="http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/">Writing Cron Jobs and Command Line Scripts in CodeIgniter</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup/">Yeoman + AngularJS + Foundation: A Modern Front End Setup</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/18/how-to-start-a-consultantcy-in-16-hours-from-kai-davis/">How to Start A Consultancy In 16 Hours From Kai Davis</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/16/exactly-how-i-got-my-first-500-subscribers-annoucing-a-new-case-study-and-seminar/">Exactly How I Got My First 500 Subscribers: Announcing a New Case Study And Seminar</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/15/why-multiple-packages-in-your-proposals-instantly-increase-conversions/">Why Multiple Packages In Your Proposals Instantly Increase Conversions</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/12/learning-emacs-one-shortcut-at-a-time/">Learning Emacs One Shortcut At A Time</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/11/lessons-learned-from-thomas-edisons-factory-fire/">Lessons Learned From Thomas Edison's Factory Fire</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/10/essentialism-through-the-ages/">Essentialism Through The Ages</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/09/how-to-write-more-personal-emails-to-your-list-that-get-open-and-convert/">How to Write More Personal Emails to Your List That Get Open and Convert</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/05/niche-blogging/">Niche Blogging</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/04/my-freelancing-stack/">My Freelancing Stack</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/03/30-day-blogging-challenge/">Will You Take The 30 day Publishing Challenge?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/16/how-i-used-writing-to-double-my-freelancing-rate-as-a-programmer/">How I Used Writing to Double My Freelancing Rate As A Programmer</a>
+      </li>
+    
+  </ul>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p class='credit'>
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+  <br />
+  &copy; 2014 - Glenn Stovall
+</p>
+<p class='social-links'>
+  <a href='http://www.facebook.com/glenns' target='_blank'>
+    <img src='/images/Facebook.png' alt='Glenn Stovall on Facebook'>
+  </a>
+  <a href='http://www.twitter.com/gsto' target='_blank'>
+    <img src='/images/Twitter.png' alt='Glenn Stovall on Twitter'>
+  </a>
+  <a href='http://linkedin.com/in/glennstovall' target='_blank'>
+    <img src='/images/LinkedIn.png' alt='Glenn Stovall on LinkedIn'>
+  </a>
+  <a href='http://github.com/gsto' target='_blank'>
+    <img src='/images/Github.png' alt='Glenn Stovall on Github'>
+  </a>
+</p>
+ 
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

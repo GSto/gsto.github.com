@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-09-18T12:20:00-04:00</updated>
+  <updated>2014-09-22T15:51:56-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,156 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Yeoman + AngularJS + Foundation: A Modern Front End Setup]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup/"/>
+    <updated>2014-09-22T14:18:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/angular.png" width="260"></p>
+
+<p>With the combination of modern browsers and mobile devices having support for HTML5, CSS3, and new JavaScript APIs, front end development has become a lot more complex and exciting. There has been an explosion of tools as of late, and it can be daunting to know where to get started. Here are the tools and process I use in order to build a new front end application from scratch.</p>
+
+<!-- more -->
+
+
+<h3>The Tools</h3>
+
+<ul>
+<li><strong>Yeoman</strong> : For scaffolding our web application.</li>
+<li><strong>Bower</strong> : For front-end dependency management.</li>
+<li><strong>Grunt</strong> : Command line tool for development.</li>
+<li><strong>AngularJS</strong> : JavaScript framework based on the principals of dependency injection.</li>
+<li><strong>Foundation</strong>: Responsive SCSS Framework to speed up design.</li>
+</ul>
+
+
+<h3>Step 1: Install Yeoman and a Generator</h3>
+
+<p>We'll be using <a href="http://yeoman.io/">Yeoman</a> to handle all of our scaffolding. Yeoman will create the initial files and folder structure for you, so that you don't have too. Yeoman uses generators, which are different templates it will use when creating your initial app. Yeoman is managed via npm. If you don't have node and npm installed, you can get the <a href="http://nodejs.org/download/">NodeJS installer here</a>. I prefer building web applications with <a href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/">AngularJS</a>, so we'll be installing a generator for an Angular application.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm install -g yo
+</span><span class='line'>npm install -g generator-angular</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>Step 2: Create The Scaffolding</h3>
+
+<p>Now that we have our tools installed, it's time to create our initial application. We'll create a new directory and run the generator:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir example-app
+</span><span class='line'>cd example-app
+</span><span class='line'>yo angular</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>If you have everything installed correctly, Yeomen should start building your application. Select 'yes' when it asks you if you want to install compass, then select no when it asks if you if you want to install Bootstrap. After a couple of minutes, you folder structure should look like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Gruntfile.js
+</span><span class='line'>/app
+</span><span class='line'>bower.json
+</span><span class='line'>bower_components
+</span><span class='line'>node_modules
+</span><span class='line'>package.json
+</span><span class='line'>/test</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>Step 3: Install Dependencies</h3>
+
+<p>Now we need to run our package managers to install dependencies. First, we will run NPM in order to install development dependencies, then <a href="http://bower.io/">Bower</a> to install front end dependencies:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm install
+</span><span class='line'>bower install</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>Step 4: Test The Servers</h3>
+
+<p>Run the server and make sure everything is working OK:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>grunt serve</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Once this runs, navigate to <code>localhost:9000</code>. You should see the yeoman placeholder page.</p>
+
+<h3>Step 5: Clean out the Crud.</h3>
+
+<p>Yeoman adds a lot of content that is not needed. For example, it has multiple routes, controllers, and views already created for you. You can leave this in or comment it out if you want to keep an example, but I like to clear all of this out before I start working. Here is a quick checklist, so you don't miss anything.</p>
+
+<ul>
+<li><code>app/index.html</code> - Remove most of the code in the body, but be sure to leave the div with the <code>ng-view</code> property.</li>
+<li><code>app/views/main.html</code> - Remove the excess HTML.</li>
+<li><code>app/scripts/app.js</code> - Remove the routes that you aren't using. I get rid of the extra 'about' route, and delete all the related files.</li>
+<li>remove <code>app/controllers/about.js</code></li>
+<li>remove <code>app/views/about.html</code></li>
+<li>remove <code>spec/controllers/about.js</code></li>
+<li><code>app/styles/main.scss</code> - Remove all of the unused styles.</li>
+</ul>
+
+
+<h3>Step 6: Install Foundation</h3>
+
+<p>I prefer <a href="http://foundation.zurb.com/">Zurb's Foundation</a> to <a href="http://getbootstrap.com/2.3.2/">Twitter's Bootstrap</a>. In my opinion, it's easier to use and has cleaner markup. Since we are using Bower, this process is very simple. Open the <code>bower.json</code> file, and add this to the dependencies object:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>foundation: '~5.4.4'</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><em>Note: If you are reading this and it isn't September 2014, then you may want to double check the version.</em></p>
+
+<p>Then, we run <code>bower install</code> again. Done!</p>
+
+<p>Now you have a front end application ready for development, with a whole suite of tools and frameworks installed.</p>
+
+<p><div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Pricing For Freelance Developers</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/100/standard/Book-Portrait.png?1406907742" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/705/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+        <div class="ck_image mobile-only">
+    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+    </div>
+      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
+      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
+      <input type="hidden" name="id" value="705" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Test Controller Concerns in Rails 4]]></title>
@@ -108,6 +258,416 @@
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>And there you go! Easy, isolated tests for your controller concerns.</p>
+
+<p><div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Pricing For Freelance Developers</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/100/standard/Book-Portrait.png?1406907742" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/705/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+        <div class="ck_image mobile-only">
+    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+    </div>
+      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
+      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
+      <input type="hidden" name="id" value="705" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[AngularJS: an Overview]]></title>
+    <link href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/"/>
+    <updated>2013-06-27T12:33:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2013/06/27/angularjs-an-overview</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/angular.png" width="260"></p>
+
+<p>AngularJS is a JavaScript framework made by Google for building complex client-side applications. Angular's killer feature is 'directives' which allow you to extend HTML by creating your own tags and attributes. Angular projects have a somewhat different structure than other JavaScript MVC frameworks, but it can be highly modular and easy to maintain once you understand the structure. Let's take a look at the main components of AngularJS and how they work, and why you should strongly consider Angular for your next project.</p>
+
+<!-- more -->
+
+
+<h3>The Philosophy of AngularJS</h3>
+
+<h4>Data First</h4>
+
+<p>If you are familiar with JavaScript libraries like jQuery, using AngularJS will require a bit of a paradigm shift. AngularJS is like jQuery, but backwards. what I mean by that, is that jQuery is mainly focused on DOM manipulation, and then you update data based on that. When writing Angular, you will mostly be updating data, and the DOM will be updated for you, with very little work on your end.</p>
+
+<h4>Highly Testable</h4>
+
+<p>AngularJS was designed to be testable end-to-end. It uses <strong>Dependency Injection</strong> In many of objects so that parts of it can easily be mocked. It is also designed to encourage you to break the functionality of your application into several smaller, more testable parts.</p>
+
+<h4>Declarative HTML</h4>
+
+<p>Angular is designed to extend HTML to make it the language you need for building complex web applications. Adding your own tags and attributes allows you to write simple HTML tags that do very complex things.</p>
+
+<h3>Data Binding</h3>
+
+<p>Let's take a look at a very simple AngularJS app, that uses <strong>two-way data binding</strong>.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;pre&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>input type=&#39;text&#39; ng-model=&#39;name&#39; /<span class="ni">&amp;gt;</span>
+</span><span class='line'><span class="ni">&amp;lt;</span>h2<span class="ni">&amp;gt;</span>{{name}}<span class="ni">&amp;lt;</span>/h2<span class="ni">&amp;gt;</span>
+</span><span class='line'><span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;</span>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Let's break this down line by line to explain what is happening:</p>
+
+<ul>
+<li><code>&lt;body ng-app&gt;</code> : all Angular code must be wrapper in this directive. This declares that everything within this tag will be treated as an angular application.</li>
+<li><code>&lt;input type='text' ng-model='name' /&gt;</code> : This is one part of the data binding. Here we are using another directive, ng-model, to bind the input to a string. Note that in this example we also see that attribute directives can have arguments.</li>
+<li><code>&lt;h2&gt;{{name}}&lt;/h2&gt;</code> : Whenever you type into the input box, this h2 tag updates automatically. This is the automatic DOM manipulation I mentioned earlier. We were able to do this without writing a single line of JavaScript.</li>
+</ul>
+
+
+<h3>Modules</h3>
+
+<p><strong>Modules</strong> are used to organize the objects in an AngularJS application. Modules can either be used as as the 'core' of an application, and contain all of the classes used for it, or they can be used to group several objects that have similar functionality. Let's create a module for our application:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>app.js  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;myApp&#39;</span><span class="p">,</span> <span class="p">[]);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app=</span><span class="s">&#39;myApp&#39;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>The first argument passed to <code>angular.module</code> is the name of the module. We have passed that name to the <code>ng-app</code> to bind everything contained in that directive to our module. The second argument is an array of other modules your module depends on. This is empty since we currently don't have any. Much like directives, AngularJS contains several modules already built that you can include in your projects.</p>
+
+<p>Now that we have a module, we will write our first type of AngularJS object, a <strong>controller</strong>.</p>
+
+<h3>Controllers</h3>
+
+<p>Controllers are tied to particular html elements. They contain data and functions that the html can interact with, and can interact with other service objects, which can handle things such as communicating with the server. Let's create a controller and bind it to a div in our application.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>app.js  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;mainCtrl&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">){</span>
+</span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Default Name&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app=</span><span class="s">&#39;myApp&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&#39;mainCtrl&#39;</span><span class="nt">&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;pre&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>input type=&#39;text&#39; ng-model=&#39;name&#39; /<span class="ni">&amp;gt;</span>
+</span><span class='line'><span class="ni">&amp;lt;</span>h2<span class="ni">&amp;gt;</span>{{name}}<span class="ni">&amp;lt;</span>/h2<span class="ni">&amp;gt;</span>
+</span><span class='line'><span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;</span>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Here we've used the <code>ng-controller</code> directive to bind our controller function to a div. Controllers get one argument by default which is called <code>$scope</code>. <code>$scope</code> contains all of the data that the html can interact with. When you reload the page, you will notice that the input now starts with the field filled in with 'Default Name'. This is because we set that variable in the controller, which is called when the page is loaded.</p>
+
+<p>Functions can also applied to scope and then called inside the HTML. Angular contains several directives for handling various events. Let's change our example to include a function that we will call with an <code>ng-click</code> directive. We will add a button to save the name we create and later display the list.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>app.js  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;mainCtrl&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">){</span>
+</span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Default Name&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">people</span> <span class="o">=</span> <span class="p">[];</span>
+</span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">savePerson</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">people</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+</span><span class='line'><span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">};</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app=</span><span class="s">&#39;myApp&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&#39;mainCtrl&#39;</span><span class="nt">&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;pre&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>input type=&#39;text&#39; ng-model=&#39;name&#39; /<span class="ni">&amp;gt;</span>
+</span><span class='line'><span class="ni">&amp;lt;</span>button ng-click=&#39;savePerson()&#39;<span class="ni">&amp;gt;</span>Save Person<span class="ni">&amp;lt;</span>/button<span class="ni">&amp;gt;</span>
+</span><span class='line'><span class="ni">&amp;lt;</span>h2<span class="ni">&amp;gt;</span>{{name}}<span class="ni">&amp;lt;</span>/h2<span class="ni">&amp;gt;</span>
+</span><span class='line'><span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;</span>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Now we can save a list of these people. We can use another directive called <code>ng-repeat</code> To output a list of the people we have saved:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;ul&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&#39;person in people&#39;</span><span class="nt">&gt;</span>{{person}}<span class="nt">&lt;/li&gt;</span>
+</span><span class='line'><span class="nt">&lt;/ul&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Now that we have seen how we can manipulate data inside the JavaScript, let's look at how we can manipulate the DOM, by creating our own <strong>directives</strong></p>
+
+<h3>Directives</h3>
+
+<p>You have already seen directives in use in several places inside the application. You can also define your own directives as part of your application. Let's create an alertable directive that will allow you to set a message to be alerted whenever you click on the element.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>app.js  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">directive</span><span class="p">(</span><span class="s1">&#39;alertable&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>  <span class="k">return</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">restrict</span> <span class="o">:</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span>
+</span><span class='line'><span class="nx">link</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">scope</span><span class="p">,</span> <span class="nx">element</span><span class="p">,</span> <span class="nx">attrs</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">element</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">alert</span><span class="p">(</span><span class="nx">attrs</span><span class="p">.</span><span class="nx">alertable</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">});</span>
+</span><span class='line'> <span class="p">}</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">};</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>And now we an add this to our person list:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&#39;person in people&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">alertable=</span><span class="s">&#39;{{person}}&#39;</span><span class="nt">&gt;</span>{{person}}<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;/li&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>As you can see, directives return an object that will define the directive. There are several optional arguments that can be passed here, but let's look at the two we used here:</p>
+
+<ul>
+<li><p><strong>restrict</strong> : This tells your directive what kind of directive it will be. restrict is required and there are four possible arguments that can be passed to it:</p></li>
+<li><p><strong>E</strong> : Element. example usage: <code>&lt;my-directive&gt;&lt;/my-directive&gt;</code></p></li>
+<li><strong>A</strong> : Attribute. example usage: <code>&lt;div my-directive&gt;&lt;/div&gt;</code></li>
+<li><strong>C</strong> : Class. example usage: <code>&lt;div class='my-directive'&gt;&lt;/div&gt;</code></li>
+<li><p><strong>M</strong> : Comment. example usage: <code>&lt;!-- directive:my-directive --&gt;</code></p></li>
+<li><p><strong>link</strong> : The link function is responsible for adding event listeners and updating the dom.</p></li>
+</ul>
+
+
+<p>You can read about some of the other possible options in the <a href="http://docs.angularjs.org/guide/directive">Angular directive documentation</a>.</p>
+
+<h3>Services</h3>
+
+<p>Services are classes that can either contain business logic or handle data. Now we are going to refactor  our previous example and create a service that can handle the data in our list of people.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>app.js  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">factory</span><span class="p">(</span><span class="s1">&#39;PersonService&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">PersonService</span> <span class="o">=</span> <span class="p">{};</span>
+</span><span class='line'>  <span class="nx">PersonService</span><span class="p">.</span><span class="nx">people</span> <span class="o">=</span> <span class="p">[];</span>
+</span><span class='line'>  <span class="nx">PersonService</span><span class="p">.</span><span class="nx">addPerson</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">person</span><span class="p">)</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">PersonService</span><span class="p">.</span><span class="nx">people</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">person</span><span class="p">);</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">};</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">PersonService</span><span class="p">;</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>You'll notice that services are created slightly differently than controllers. Controllers are just a function, where services are a function that returns an object. This allows you to add private methods to your service if you would like.</p>
+
+<p>Now we need a way for our controller to have access to the service we just created. Since they are in the same module, this is very easy to do. This also involves one of the more "magical" features of Angular. To give the controller access to our service, we just have to add it as an argument to our controller, like so:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>app.controller('mainCtrl', function($scope, PersonService){});</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>What's really surprising is that if you change the order of the arguments to the controller function, <em>it will not change how the controller function operates</em>. So, if we did this instead:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>app.controller('mainCtrl', function(PersonService, $scope){});</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Our function would behave in exactly the same way. This is because AngularJS looks at the names of the arguments of a function to decide what to pass to them. Now, you may be concerned that this could break if you were to minify your JavaScript, and you would be right. Luckily, Angular provides an alternate way of declaring functions to prevent issues when minifying your code. It involves passing an array of strings to tell angular what the arguments should be, with the actual function as the last element in the array. So now your controller would look like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>app.controller('mainCtrl', ['$scope', 'PersonService', function($scope, PersonService){}]);</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>When writing services, Angular provides some helpful modules for communicating with the server. Some of the most useful are <a href="">ngHttp</a> and <a href="">ngResource</a>. ngHttp is used to make HTTP requests. ngResource is an extension of ngHttp designed to work exclusively with REST APIs. This is another reason why when you are declaring a service, you are asked for a function that returns an object; We are able to use this function to extend an existing object like ngResource and return it.</p>
+
+<h3>Routing</h3>
+
+<p>Angular also provides support for routing with URLs. Routing is performed by using the <code>config</code> function of the module. Let's use this to structure separate pages for our main page, and give each person in our person list a profile page. Here is what the route provider will look like:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>app.js  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">config</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$routeProvider</span><span class="p">){</span>
+</span><span class='line'>  <span class="nx">$routeProvider</span><span class="p">.</span><span class="nx">when</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">templateUrl</span><span class="o">:</span> <span class="s1">&#39;templates/home.html&#39;</span><span class="p">,</span>
+</span><span class='line'><span class="nx">controller</span><span class="o">:</span> <span class="s1">&#39;homePageCtrl&#39;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">});</span>
+</span><span class='line'>  <span class="nx">$routeProvider</span><span class="p">.</span><span class="nx">when</span><span class="p">(</span><span class="s1">&#39;/person/:id&#39;</span><span class="p">,</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">templateUrl</span><span class="o">:</span> <span class="s1">&#39;templates/profile.html&#39;</span><span class="p">,</span>
+</span><span class='line'><span class="nx">controller</span><span class="o">:</span> <span class="s1">&#39;profileCtrl&#39;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">});</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>Filters</h3>
+
+<p>Filters are a smaller, but often useful part of AngularJS. Filters are used to transform data when it is displayed to the user. Like directives, you can build them yourself, and Angular also includes several useful ones built-in. Let's look at the following HTML:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;span>Price:&lt;/span> 300</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Which will look like this in the browser:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Price: 300</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>We can apply a couple filters to this to make it look different, by using the <code>|</code> operator:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;span>{{ "Price:" | uppercase }}&lt;/span> {{ "300" | currency }}</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>And our output will now look like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>PRICE: $300.00</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>Additional Reading</h3>
+
+<p>I hope you found this helpful, but this is just scratching the surface of what Angular.js is capable of. If you would like to learn more about Angular, here are some resources for further reading:</p>
+
+<ul>
+<li><a href="http://docs.angularjs.org/">AngularJS Documentation</a> - official documentation, lots of good examples</li>
+<li><a href="http://egghead.io">EggHead.io</a> - several short (usually 4 or 5 minute) videos explaining several particular parts of angular.</li>
+<li><a href="http://builtwith.angularjs.org/">BuiltWith AngularJS</a> - examples of applications built with Angular</li>
+<li><a href="http://sporto.github.io/blog/2013/04/12/comparison-angular-backbone-can-ember/">A Comparison of Angular, Backbone, CanJS and Ember</a> - a great article comparing AngularJS to some</li>
+</ul>
+
 
 <p><div class="ck_embed_form ck_horizontal_subscription_form">
   <div class="ck_embed_form_content">

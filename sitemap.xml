@@ -68,7 +68,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/</loc>
-        <lastmod>2014-09-11T09:34:44-04:00</lastmod>
+        <lastmod>2014-09-22T14:20:25-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/2013/12/10/announcing-concordant-solutions/</loc>
@@ -249,16 +249,22 @@
         <lastmod>2014-09-18T10:37:26-04:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup/
+        </loc>
+        <lastmod>2014-09-22T15:51:55-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://glennstovall.com/about/</loc>
         <lastmod>2014-09-11T09:34:44-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/archives/</loc>
-        <lastmod>2014-09-18T10:37:26-04:00</lastmod>
+        <lastmod>2014-09-22T15:51:55-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/</loc>
-        <lastmod>2014-09-18T10:37:26-04:00</lastmod>
+        <lastmod>2014-09-22T15:51:55-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/books/freelance-pricing-handbook/download.html</loc>
@@ -278,11 +284,27 @@
     </url>
     <url>
         <loc>http://glennstovall.com/</loc>
-        <lastmod>2014-09-18T10:37:26-04:00</lastmod>
+        <lastmod>2014-09-22T15:51:55-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/my-latest-thing/</loc>
         <lastmod>2014-09-03T14:05:07-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://glennstovall.com/on/business/</loc>
+        <lastmod>2014-09-22T15:51:55-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://glennstovall.com/on/freelancing/</loc>
+        <lastmod>2014-09-22T15:51:55-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://glennstovall.com/on/programming/</loc>
+        <lastmod>2014-09-22T15:51:55-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://glennstovall.com/on/writing/</loc>
+        <lastmod>2014-09-22T15:51:55-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/portfolio/</loc>

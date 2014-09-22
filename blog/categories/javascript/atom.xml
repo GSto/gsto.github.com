@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javascript | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-09-18T12:20:00-04:00</updated>
+  <updated>2014-09-22T15:51:56-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,156 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Yeoman + AngularJS + Foundation: A Modern Front End Setup]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup/"/>
+    <updated>2014-09-22T14:18:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/angular.png" width="260"></p>
+
+<p>With the combination of modern browsers and mobile devices having support for HTML5, CSS3, and new JavaScript APIs, front end development has become a lot more complex and exciting. There has been an explosion of tools as of late, and it can be daunting to know where to get started. Here are the tools and process I use in order to build a new front end application from scratch.</p>
+
+<!-- more -->
+
+
+<h3>The Tools</h3>
+
+<ul>
+<li><strong>Yeoman</strong> : For scaffolding our web application.</li>
+<li><strong>Bower</strong> : For front-end dependency management.</li>
+<li><strong>Grunt</strong> : Command line tool for development.</li>
+<li><strong>AngularJS</strong> : JavaScript framework based on the principals of dependency injection.</li>
+<li><strong>Foundation</strong>: Responsive SCSS Framework to speed up design.</li>
+</ul>
+
+
+<h3>Step 1: Install Yeoman and a Generator</h3>
+
+<p>We'll be using <a href="http://yeoman.io/">Yeoman</a> to handle all of our scaffolding. Yeoman will create the initial files and folder structure for you, so that you don't have too. Yeoman uses generators, which are different templates it will use when creating your initial app. Yeoman is managed via npm. If you don't have node and npm installed, you can get the <a href="http://nodejs.org/download/">NodeJS installer here</a>. I prefer building web applications with <a href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/">AngularJS</a>, so we'll be installing a generator for an Angular application.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm install -g yo
+</span><span class='line'>npm install -g generator-angular</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>Step 2: Create The Scaffolding</h3>
+
+<p>Now that we have our tools installed, it's time to create our initial application. We'll create a new directory and run the generator:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir example-app
+</span><span class='line'>cd example-app
+</span><span class='line'>yo angular</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>If you have everything installed correctly, Yeomen should start building your application. Select 'yes' when it asks you if you want to install compass, then select no when it asks if you if you want to install Bootstrap. After a couple of minutes, you folder structure should look like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Gruntfile.js
+</span><span class='line'>/app
+</span><span class='line'>bower.json
+</span><span class='line'>bower_components
+</span><span class='line'>node_modules
+</span><span class='line'>package.json
+</span><span class='line'>/test</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>Step 3: Install Dependencies</h3>
+
+<p>Now we need to run our package managers to install dependencies. First, we will run NPM in order to install development dependencies, then <a href="http://bower.io/">Bower</a> to install front end dependencies:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm install
+</span><span class='line'>bower install</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>Step 4: Test The Servers</h3>
+
+<p>Run the server and make sure everything is working OK:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>grunt serve</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Once this runs, navigate to <code>localhost:9000</code>. You should see the yeoman placeholder page.</p>
+
+<h3>Step 5: Clean out the Crud.</h3>
+
+<p>Yeoman adds a lot of content that is not needed. For example, it has multiple routes, controllers, and views already created for you. You can leave this in or comment it out if you want to keep an example, but I like to clear all of this out before I start working. Here is a quick checklist, so you don't miss anything.</p>
+
+<ul>
+<li><code>app/index.html</code> - Remove most of the code in the body, but be sure to leave the div with the <code>ng-view</code> property.</li>
+<li><code>app/views/main.html</code> - Remove the excess HTML.</li>
+<li><code>app/scripts/app.js</code> - Remove the routes that you aren't using. I get rid of the extra 'about' route, and delete all the related files.</li>
+<li>remove <code>app/controllers/about.js</code></li>
+<li>remove <code>app/views/about.html</code></li>
+<li>remove <code>spec/controllers/about.js</code></li>
+<li><code>app/styles/main.scss</code> - Remove all of the unused styles.</li>
+</ul>
+
+
+<h3>Step 6: Install Foundation</h3>
+
+<p>I prefer <a href="http://foundation.zurb.com/">Zurb's Foundation</a> to <a href="http://getbootstrap.com/2.3.2/">Twitter's Bootstrap</a>. In my opinion, it's easier to use and has cleaner markup. Since we are using Bower, this process is very simple. Open the <code>bower.json</code> file, and add this to the dependencies object:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>foundation: '~5.4.4'</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><em>Note: If you are reading this and it isn't September 2014, then you may want to double check the version.</em></p>
+
+<p>Then, we run <code>bower install</code> again. Done!</p>
+
+<p>Now you have a front end application ready for development, with a whole suite of tools and frameworks installed.</p>
+
+<p><div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Pricing For Freelance Developers</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/100/standard/Book-Portrait.png?1406907742" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/705/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
+        <div class="ck_image mobile-only">
+    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+    </div>
+      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
+      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
+      <input type="hidden" name="id" value="705" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Rapid Development with Node.js and CoffeeScript]]></title>
