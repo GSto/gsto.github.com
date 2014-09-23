@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-09-22T15:51:56-04:00</updated>
+  <updated>2014-09-23T05:09:11-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,87 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Talking Productized Consulting with Nick Disabato[Video]]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/23/talking-productized-consulting-with-nick-disabato-video/"/>
+    <updated>2014-09-23T04:21:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/23/talking-productized-consulting-with-nick-disabato-video</id>
+    <content type="html"><![CDATA[<h3>The Origin Story of Draft Revise</h3>
+
+<p><img class="left" src="http://glennstovall.com/images/articles/nickd.jpeg" width="260"></p>
+
+<p>In this interview I am talking with Nick Disabato, Owner of <a href="https://draft.nu/">Draft</a>, Author of <a href="http://cadence.cc/">Cadence &amp; Slang</a>,, and <a href="https://draft.nu/revise/">Draft Revise</a>, a recurring split testing service that Nick offers to clients. In this interview, Nick talks about creating a new service offering from scratch, How he got his first customers, and how Draft Revise has changed his business.</p>
+
+<!-- more -->
+
+
+
+
+<div style='clear:both;'></div>
+
+
+
+
+<iframe width="560" height="315" src="http://glennstovall.com//www.youtube.com/embed/Lib91re3onM" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>Show Notes</h3>
+
+<ul>
+<li><a href="https://draft.nu/">Draft, a small interaction design consultancy</a></li>
+<li><a href="https://twitter.com/nickd">Nick Disabato on Twitter</a></li>
+<li><a href="http://nickd.org">Nickd.org</a></li>
+</ul>
+
+
+<div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
+      <div class="ck_embed_description">
+        <span class="ck_image">
+          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+        </span>
+          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
+      </div>
+  </div>   
+   
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);">
+    <div class="ck_image mobile-only">
+    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+    </div>
+      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
+      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+
+
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Yeoman + AngularJS + Foundation: A Modern Front End Setup]]></title>
@@ -1838,102 +1919,6 @@ Here are things that don&#8217;t count:</li>
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[From Blogging to Content Strategy]]></title>
-    <link href="http://glennstovall.com/blog/2014/08/01/from-blogging-to-content-strategy/"/>
-    <updated>2014-08-01T07:57:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/08/01/from-blogging-to-content-strategy</id>
-    <content type="html"><![CDATA[<h3>There is whole wide world of content publishing outside of blogging</h3>
-
-<p><img class="left" src="http://glennstovall.com/images/articles/writing.jpg" width="260"></p>
-
-<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
-
-<p>Writing is a powerful tool you can use in your business. Maybe you realize that you should be writing more and using content to help build your business, but you aren’t sure how to start.</p>
-
-<p>People tend to default to ‘blogging’, which isn’t exactly wrong. Blogging is one of the simplest ways to get your content out there. However, blogging is only one tool that is available to you. The issue with focusing on only blogging is that when you only have a hammer, everything starts to look like a nail.</p>
-
-<p>The idea is that you should find alternative channels for your content, and decide which is best for each piece of content you write. Now when I write, I don’t sit down with the intent to write a blog post, I sit down with the intent to create content, and then decide how that content should best be used.</p>
-
-<!-- more -->
-
-
-<h3>Email</h3>
-
-<p>Despite all the new ways we have found to communicate online, email is still one of the most effective forms of marketing. Delivering valuable content straight to someone’s inbox is more powerful than sending it to them via an RSS reader or through social media. Patrick McKenzie, a developer who has over 7,000 email subscribers, doesn’t have a blog at all anymore, he sends all of his writing out via email.</p>
-
-<p>If you have a piece of content that has a strong call to action, and you have a good list, then an email may be a better option.</p>
-
-<h3>White papers &amp; Ebooks</h3>
-
-<p>Sometimes content that is longer and deeper and be put into a more finalized, published form. One option is to release a white paper. A white paper is generally a 5 to 10 page PDF about a particular subject.</p>
-
-<p>White papers can be a powerful marketing tool, especially when combined with email lists. You could offer to give users a white paper in exchange for their email address, and then send it to them automatically when they join your mailing list. eBooks can serve he same purpose. The founder of Freshbooks recently wrote and released an eBook completely free called “Breaking The Time Barrier“. Breaking The Time Barrier is an interesting example since in the book, he advocates against freelancer’s billing by the hour, which is one of the main features of his software.</p>
-
-<p>However, what the book does accomplish is providing value to his main client base by explaining to freelancers how changing their billing structure can make them more money. By doing this he built trust among his current and potential customers, and was able to generate a lot of traffic by offering something so valuable for free.</p>
-
-<p>eBooks can also become a profitable product. People like Nathan Barry Have built successful businesses mainly based on selling three books he has written.</p>
-
-<h3>Audio &amp; Video</h3>
-
-<p>Content doesn’t always have to be just written. More and more people are moving to using audio and video as a way to deliver content. Audio and video are strong tools, mainly because they are more rare than plain written content. It also gives you alternatives way to promote your message. Just writing text will not get you on YouTube. Different people like to consume content in different ways, so having multiple options lets you reach out to the maximum audience. If you have educational content, you could also use this as a path to monetization by using a service such as SkillShare.</p>
-
-<h3>Reworking Content</h3>
-
-<p>Content doesn’t always have to take a single form. You can take content from any of these and transfer it to a different medium. This can give you the opportunity to expand on your message, and reach a wider audience. For example, maybe you write a blog article, and you realize you have a lot more to say on the subject, so you create a 5 part email course on the subject. Maybe you take that course and record a video of it and put it on youtube.</p>
-
-<p>By increasing the fidelity of the message, you can also increase the value. Video is a better teaching tool than audio, which is a better tool that just plain text.</p>
-
-<p>We are all capable of creating great content to share with the world, and there are many more ways to share than by just blogging. Find the channel that let’s your voice shine through the clearest.</p>
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);">
-    <div class="ck_image mobile-only">
-    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-    </div>
-      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
-      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-<p>P.S. Above is an example of putting more content to work. I have put together a free book about pricing, which then subscribes you to my newsletter, where I write additional content to build relationships with people.</p>
 ]]></content>
   </entry>
   
