@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-09-24T16:07:05-04:00</updated>
+  <updated>2014-09-26T15:57:52-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,194 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Testing AngularJS With Karma + Jasmine]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/26/testing-angularjs-with-karma-plus-jasmine/"/>
+    <updated>2014-09-26T15:34:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/26/testing-angularjs-with-karma-plus-jasmine</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/angular.png" width="260"></p>
+
+<p>In a previous article about <a href="http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup/">Yeoman, AngularJS, and Foundation</a>, I talked about setting up a complete front end application scaffold with Yeoman, AngularJS, and Foundation. Now I want to look at how to test the AngularJS part of your application.</p>
+
+<!-- more -->
+
+
+<div style='clear:both;'></div>
+
+
+<h2>The Tools</h2>
+
+<h3>Karma</h3>
+
+<p><a href="http://karma-runner.github.io/0.12/index.html">Karma</a> is a test runner for NodeJS. You can use it to simulate multiple devices. What Karma isn't is a testing framework itself. It is designed to work with multiple testing frameworks, such as <a href="http://jasmine.github.io/">Jasmine</a>, <a href="http://qunitjs.com/">QUnit</a>, or <a href="http://visionmedia.github.io/mocha/">Mocha</a>.</p>
+
+<h3>Jasmine</h3>
+
+<p>I'm using Jasmine for a couple of reasons:</p>
+
+<ul>
+<li>I looked into Jasmine and QUnit before, and I have never seen two tools as similar. Their syntax is different, but how they function is <em>identical</em> last time I checked. Months ago I flipped a coin, it was 'tails', and I implemented Jasmine on a client project. No real reason to change.</li>
+<li>I haven't looked into Mocha. It might be better, or worse, or also identical. I don't know. If <strong>you</strong> have an opinion, <a href="http://www.glennstovall.com/contact">let me know</a>.</li>
+<li>It's installed by default by Yeoman ... sort of.</li>
+</ul>
+
+
+<h2>Step 1: Fix The Missing Dependencies</h2>
+
+<p>For some reason, the <code>generator-angular</code> generator comes with some, but not all of the tools we'll need for running tests with Karma and Jasmine, so we need to fix that before we get started. Run the following lines on the command line:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm install grunt-karma --save-dev
+</span><span class='line'>npm install karma-phantomjs-launcher --save-dev
+</span><span class='line'>npm install karma-jasmine --save-dev</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Step 2: Test the Tests</h2>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>grunt test</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>This should ensure that everything is installed correctly. If you running a clean install from Yeoman, then it should run that test. You can look at the file /test/spec/controllers/MainCtrl.js for an example of what a test looks like.</p>
+
+<h2>Step 3: Create A Simple Test</h2>
+
+<p>Here is an example test, just to get you comfortable with the Jasmine testing Syntax. Create a file at <code>test/spec/app.js</code>, and write the following code:</p>
+
+<p>``` javascript
+'use strict'</p>
+
+<p>describe('javascript', function() {
+  it('should know 2 + 2 is 4', function() {</p>
+
+<pre><code>expect(2 + 2).toEqual(4);
+</code></pre>
+
+<p>  });
+});</p>
+
+<p>```</p>
+
+<p>I enjoy jasmine's matchers and syntax because it reads like english.</p>
+
+<p><code>describe()</code> is how you group your tests into suites. You can nest <code>describe()</code> calls as many levels deep as youwish, though any more than two and it gets really difficult to read and manage. <code>it()</code> is how you run tests. The first argument is the description, the second is the test itself. <code>expect()</code> is where you test your assumptions in the test, and <code>toEqual()</code> is your matcher. you can also add <code>not()</code> before any more matcher to test the opposite:</p>
+
+<p>``` javascript</p>
+
+<p>//it's 2014, not 1984 ... I think
+it('should know 2 + 2 is not 5', function() {
+  expect(2 + 2).not().toEqual(5);
+});</p>
+
+<p>```</p>
+
+<p>If you want to know what other matchers are available to you with Jasmine, here is a handy <a href="http://www.cheatography.com/citguy/cheat-sheets/jasmine-js-testing/">Jasmine Cheat Sheet</a></p>
+
+<h2>Step 4: Now For a Real Test</h2>
+
+<p>By default, Yeoman comes with a controller test, you can see how it works there:</p>
+
+<p>``` javascript</p>
+
+<p>describe('Controller: MainCtrl', function () {</p>
+
+<p>  // load the controller's module
+  beforeEach(module('ngFoundationApp'));</p>
+
+<p>  var MainCtrl,
+  scope;</p>
+
+<p>  // Initialize the controller and a mock scope
+  beforeEach(inject(function ($controller, $rootScope) {</p>
+
+<pre><code>    scope = $rootScope.$new();
+    MainCtrl = $controller('MainCtrl', {
+      $scope: scope
+    });
+}));
+</code></pre>
+
+<p>  it('should attach a list of awesomeThings to the scope', function () {</p>
+
+<pre><code>    expect(scope.awesomeThings.length).toBe(3);
+</code></pre>
+
+<p>  });
+});</p>
+
+<p>```</p>
+
+<p>Here you see some of the other handy features, such as <code>beforeEach()</code>. <code>beforeEach()</code> takes a function as an argument, and calls it before each test.</p>
+
+<h2>Dependency Injection and Testing</h2>
+
+<p>When you start writing tests you will begin to see why <a href="http://en.wikipedia.org/wiki/Dependency_injection">Dependency Injection</a> is so valuable. When you create services in Angular, you want to pass them as arguments instead of creating them directly. This way, you can create mock versions of anything for testing.</p>
+
+<p>Here is an example test from a client project:</p>
+
+<p>``` javascript</p>
+
+<p>it('should use tasks to set price if that is the invoice_method selected', function() {
+  $injector.invoke(function(Project, Feature) {
+  var mock = new Project(mock_project()).prepare();
+  mock.invoice_method = 'task';
+  mock.estimate.tasks = [</p>
+
+<pre><code>mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
+mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
+</code></pre>
+
+<p>  ];</p>
+
+<p>  mock.updatePrice();
+  expect(mock.estimate.price).toEqual(1000);
+});</p>
+
+<p>```</p>
+
+<p>I created functions that would return mock objects such as <code>mock_project()</code> and <code>mock_task()</code>. This way, I can test the <code>Project</code> object without the <code>Task</code> object. This way, all of my tests are completely self-contained, the waygood unit tests should be.</p>
+
+<p><div class="ck_embed_form ck_horizontal_subscription_form">
+  <div class="ck_embed_form_content">
+    <h3 class="ck_embed_form_title">5 Tools For Building Front End Apps Fast</h3>
+    <div class="ck_embed_description">
+      <span class="ck_image">
+        
+      </span>
+      <p>How I build responsive, scalable, flexible front end applications in less than half an hour.</p>
+    </div>
+  </div>   
+  
+  <div id='ck_success_msg'  style='display:none;'>
+    <p>Thanks! Now check your email.</p>
+  </div>
+  
+  <!--  Form starts here  -->
+  <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/823/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','5 Front End Tools','standard']);">
+    <h3 class='mobile-only'>5 Tools For Building Front End Apps Fast</h3>
+    <p class='mobile-only'>How I build responsive, scalable, flexible front end applications in less than half an hour.</p>
+    <input type="hidden" name="id" value="823" id="landing_page_id"></input>
+    <p class="ck_errorArea"></p>
+    <div class="ck_control_group">
+      <label class="ck_label" for="ck_firstNameField">First Name</label>
+      <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+    </div>  
+    <div class="ck_control_group">
+      <label class="ck_label" for="ck_emailField">Email Address</label>
+      <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+    </div>
+
+    <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+      Download The Report
+    </button>
+    <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
+  </form>
+</div>
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
+</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Yeoman + AngularJS + Foundation: A Modern Front End Setup]]></title>
@@ -119,45 +307,44 @@
 
 <p>Now you have a front end application ready for development, with a whole suite of tools and frameworks installed.</p>
 
+<p>If you would like a PDF version of this article, you can get it below:</p>
+
 <p><div class="ck_embed_form ck_horizontal_subscription_form">
   <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Pricing For Freelance Developers</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/100/standard/Book-Portrait.png?1406907742" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
-      </div>
+    <h3 class="ck_embed_form_title">5 Tools For Building Front End Apps Fast</h3>
+    <div class="ck_embed_description">
+      <span class="ck_image">
+        
+      </span>
+      <p>How I build responsive, scalable, flexible front end applications in less than half an hour.</p>
+    </div>
   </div>   
-   
+  
   <div id='ck_success_msg'  style='display:none;'>
     <p>Thanks! Now check your email.</p>
   </div>
   
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/705/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);console.log('event fired')">
-        <div class="ck_image mobile-only">
-    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+  <!--  Form starts here  -->
+  <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/823/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','5 Front End Tools','standard']);">
+    <h3 class='mobile-only'>5 Tools For Building Front End Apps Fast</h3>
+    <p class='mobile-only'>How I build responsive, scalable, flexible front end applications in less than half an hour.</p>
+    <input type="hidden" name="id" value="823" id="landing_page_id"></input>
+    <p class="ck_errorArea"></p>
+    <div class="ck_control_group">
+      <label class="ck_label" for="ck_firstNameField">First Name</label>
+      <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+    </div>  
+    <div class="ck_control_group">
+      <label class="ck_label" for="ck_emailField">Email Address</label>
+      <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
     </div>
-      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
-      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
-      <input type="hidden" name="id" value="705" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
 
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
+    <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+      Download The Report
+    </button>
+    <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
+  </form>
+</div>
 <script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
 </p>
 ]]></content>
@@ -789,84 +976,6 @@
     <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
   </form>
 </div>
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Reading on Wealth and Programming]]></title>
-    <link href="http://glennstovall.com/blog/2013/06/07/reading-on-wealth-and-programming/"/>
-    <updated>2013-06-07T08:10:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2013/06/07/reading-on-wealth-and-programming</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/wealth.jpg" width="260"></p>
-
-<p>The world of software development is one that runs on abstractions. Developers are used to working in this world when it comes to software, but when these abstractions start to <a href="http://www.joelonsoftware.com/articles/LeakyAbstractions.html">Leak Out</a> into the real world it can become harder to manage. One of the trickier abstractions is the one between software development and wealth. It is clear that programming provides some sort of value, or else people would not be so eager to pay for it. It is a complex subject, and one I am not equipped to get into in the depth it needs, but instead I wanted to share a couple articles and a book I have read recently that shed some light on the subject.</p>
-
-<!-- more -->
-
-
-<h3>How To Make Wealth -- Paul Graham</h3>
-
-<p><a href="http://www.paulgraham.com/wealth.html">How To Make  Wealth</a></p>
-
-<p>This is an older essay by <a href="http://paulgraham.com/">Paul Graham</a> , a programmer and venture capitalist who co-founded <a href="http://ycombinator.com/">Y Combinator</a>. Paul is an excellent writer, and in this article he does a great job at explaining how programmers are able to create wealth. He also makes an important distinction: That wealth does not necessarily equal money. Money is the medium of exchange in which wealth is transferred. to paraphrase one of his examples, Linus Torvalds helped create Linux and Git. These tools are free and open-source, and even if Linus didn't make a dime off of these, he still created wealth. He compares and contrasts the three major ways a programmer can convert the wealth they generate into money. Programmers can be employees for a company, where as an employee you are getting a share of the wealth you and all your co-workers generate in the form of a salary. They can also be contractors and freelancers, where they can sell their wealth directly. There is also working for a start-up, which has the highest returns, but also the biggest risk. As he puts it, a programmer who can generate $1 million in wealth for a start-up will not get $1 million in return, but they could get a 20% chance at getting $10 million for it. There is more risk, but it is a proposition that does offer a lot of expected value.</p>
-
-<h3>Are Coders Worth It? -- James Somers</h3>
-
-<p><a href="http://www.aeonmagazine.com/living-together/james-somers-web-developer-money/">Are Coders Worth It?</a></p>
-
-<p>This article from Aeon Magazine sheds some light on what working as a web developer is like these days. And he is right, times right now are good for skilled programmers. Building a tech start-up is cheaper than ever before. Before when some value may have been created by the infrastructure your company builds, now all of that is a commodity that can easily be bought for cheap and scaled up as necessary. Instead of having to worry about hiring a system administrator to maintain a large server, you can simply spin up an instance of Heroku. Need to manage payment processing or project management? There is a bevy of tools that can be subscribed to for just tens of dollars a month to solve this problem. Developers are the people that can put all of this together and make something valuable. As James puts it, In this gold rush, developers are the shovel.</p>
-
-<h3>Double Your Freelancing Rate -- Brennan Dunn</h3>
-
-<p><a href="http://doubleyourfreelancingrate.com/">Double Your Freelancing Rate</a></p>
-
-<p>Brennan Dunn is a freelancer who has written an excellent book about increasing the amount of money you can make as a freelancer. He brings up two good points that can help freelancers understand their value. One is that freelancers should focus on the value they provide a company.  It is easy to get caught in the trap of believing that the rate you charge should be based on the amount of work you do, or on the skills you have. However, both of these are just means to an end; It is possible to be skilled, work hard, and create something that is of no value to anyone. By focusing instead on the benefit you provide, it can break down this wall of abstraction between you and the client in regards to wealth, and as a freelancer you can make sure that you are getting paid what you are worth.  The second point he makes is that the value we provide is not just in the products that we produce, but in experience we can provide when working with people. To many people, programming is a black box. Many business owners may not understand what is possible, and what kind of resources are involved in certain types of programming. I once spent 3 days writing something for a company that was later sold for $30,000 to a client.  I've also spent months writing code that probably ended up have a real world value of near zero. Part of being a developer is solving problems, and working with clients to understand what you can do for them that provides the best value. I'd rather write more code for clients like that first example, and less like the second, and I am sure they would prefer that as well.</p>
-
-<h3>Summary</h3>
-
-<p>Having a greater understanding of how programming creates wealth is a win for everybody. Programmers who understand this can focus their abilities on activities that generate the most wealth, and can find themselves in more favorable positions by understanding how their work relates to this. Business owners who understand this can also look to work with developers who can provide them with the best value. This is why many freelancers charge a higher rate; There is more to being a developer than just cranking out code, it comes with this ability to solve problems and find ways to create value. Many people who look for very cheap development options aren't aware of this, and usually end up paying the price in the future.</p>
-
-<p><div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);">
-    <div class="ck_image mobile-only">
-    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-    </div>
-      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
-      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More...</a></p>
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
 <script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
 </p>
 ]]></content>
