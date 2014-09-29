@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-09-29T15:07:13-04:00</updated>
+  <updated>2014-09-29T15:18:20-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Good Copywriters Borrow, Great Copywriters Steal]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/29/good-copywriters-borrow/"/>
+    <updated>2014-09-29T15:11:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/29/good-copywriters-borrow</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/articles/thief.jpg" width="260"></p>
+
+<p>I&#8217;ve spent a lot of time writing this year, and especially this month with the <a href="http://glennstovall.com/blog/2014/09/03/30-day-blogging-challenge/">30 day publishing challenge</a>. Something I have discovered is that writing is not as hard as it looks. You may think that you have to write for inspiration to strike, and if doesn&#8217;t, you can complain about &#8220;writer&#8217;s block&#8221;.</p>
+
+<p>Writer&#8217;s block just means you aren&#8217;t looking heard enough. There is inspiration for copy everywhere. Pablo Picasso always said &#8220;Good artists borrow, great artists steal&#8221;. When you don&#8217;t know what to say about your company or your product, then it&#8217;s time to go on a caper and find some messages you can use in your copy.</p>
+
+<!-- more -->
+
+
+<h3>Steal From Your Customers</h3>
+
+<p>Keep notes on interactions you have with past, present, and future customers. Your copy writing needs to be in your customer&#8217;s language, not your own. If you have collected testimonials, that can be a great place to start. Sales meetings, request for proposals, and job board postings are all also good places.</p>
+
+<p>This will also help you create higher converting copy. People like when they read something and think &#8220;wow, they really get me!&#8221; By speaking your customers language, and addressing points you got straight from the horse&#8217;s mouth, you will be more in tune with your customer&#8217;s needs.</p>
+
+<h3>Steal From Your Competitors</h3>
+
+<p>Look at the sites of a few of your competitors, there are three things you want to pay attention to:</p>
+
+<ul>
+<li>Their headings and subheadings.</li>
+<li>Their calls-to-action.</li>
+<li>Anything else that makes you stop and go &#8220;Hmm!&#8221;.</li>
+</ul>
+
+
+<p>You don&#8217;t want to take these lines verbatim, but instead get an overall feel for how other people are approaching the market. You can make a spreadsheet of these three things to keep track.</p>
+
+<p>This will also help you make sure that you are saying something unique. You don&#8217;t have to be the best in your market, just different. You could even make your headline the opposite of your competitors. If they focus on being the biggest, you can focus on being a smaller, more personal brand, for example.</p>
+
+<h3>Steal From Other People&#8217;s Feedback</h3>
+
+<p>Amazon reviews are another great source for ideas. Search for books related to your services, and see what people are talking about. Look at 5-star reviews to get an idea of what people like, and 1-star reviews to see what problems people have and what you should avoid.</p>
+
+<h3>Further Reading</h3>
+
+<p>The idea of this approach is to turn writing from a creative practice into a scientific one; From a passive way of writing to an <strong>active</strong> way. Joanna Weibe of CopyHackers has a great article on this idea: <a href="http://copyhackers.com/2012/09/headline-formulas-and-the-science-of-high-converting-copywriting/">Headline Formulas and the Science of CRO Copy writing</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Testing AngularJS With Karma + Jasmine]]></title>
@@ -1944,82 +1989,6 @@ Here are things that don&#8217;t count:</li>
 
 
 <p> If you are looking for ways to make your customer support more effective and efficient, you could do a lot worse than doing something like this.</p>
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">Freelance Pricing Handbook</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-        </span>
-          <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);">
-    <div class="ck_image mobile-only">
-    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
-    </div>
-      <h3 class="mobile-only">Freelance Pricing Handbook</h3>
-      <p class="mobile-only">Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.<a href='http://glennstovall.com/books/freelance-pricing-handbook'>Learn More&#8230;</a></p>
-      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Download the Free Book
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[John Saddington: Blogging and Your Future]]></title>
-    <link href="http://glennstovall.com/blog/2014/08/04/john-saddington-blogging-and-your-future/"/>
-    <updated>2014-08-04T16:53:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/08/04/john-saddington-blogging-and-your-future</id>
-    <content type="html"><![CDATA[<h3>Video: John Saddington Talks About How Blogging Changed His Life</h3>
-
-<p><img class="left" src="http://glennstovall.com/images/articles/saddington.jpeg" width="260"></p>
-
-<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
-
-<p><a href="http://john.do/">John Saddington</a> gave a talk in February for <a href="http://www.meetup.com/transform-athens/">Transform Athens</a> called “Blogging and your Future”. It was an inspiring talk. I don’t think any talk has gotten me to move to action more so than this one. It was published on Youtube and had a view count way lower than it deserved, so I wanted to share it here:</p>
-
-<!-- more -->
-
-
-<div style='clear:both;'></div>
-
-
-<h3>&#8220;Blogging And Your Future&#8221; by John Saddington</h3>
-
-<iframe width="853" height="480" src="http://glennstovall.com//www.youtube.com/embed/ELJMXr7RWF8" frameborder="0" allowfullscreen></iframe>
-
-
-<p>I’m a big proponent of writing as a tool for not only marketing, but for education and communication as well. I’ve written some more on writing in a couple of other places. I’ve talked on my personal blog about <a href="http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/">why I share some things on my personal site and some here on my company site</a>. I’ve also written on here on how you shouldn’t stop at blogging, but how you should form an entire <a href="http://glennstovall.com/blog/2014/08/01/from-blogging-to-content-strategy/">content strategy</a>.</p>
-
-<p><strong>Update:</strong> Since posting this article, I&#8217;ve since changed my mind on the opinions shared above. All my blogging content is available here on glennstovall.com Read the follow up here: <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">Why I am killing my company blog</a>.</p>
 
 <div class="ck_embed_form ck_horizontal_subscription_form">
   <div class="ck_embed_form_content">

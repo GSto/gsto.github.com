@@ -4,7 +4,7 @@
   <title><![CDATA[Category: writing | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/writing/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-09-29T15:07:13-04:00</updated>
+  <updated>2014-09-29T15:18:20-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Good Copywriters Borrow, Great Copywriters Steal]]></title>
+    <link href="http://glennstovall.com/blog/2014/09/29/good-copywriters-borrow/"/>
+    <updated>2014-09-29T15:11:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/09/29/good-copywriters-borrow</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/thief.jpg" width="260"></p>
+
+<p>I've spent a lot of time writing this year, and especially this month with the <a href="http://glennstovall.com/blog/2014/09/03/30-day-blogging-challenge/">30 day publishing challenge</a>. Something I have discovered is that writing is not as hard as it looks. You may think that you have to write for inspiration to strike, and if doesn't, you can complain about "writer's block".</p>
+
+<p>Writer's block just means you aren't looking heard enough. There is inspiration for copy everywhere. Pablo Picasso always said "Good artists borrow, great artists steal". When you don't know what to say about your company or your product, then it's time to go on a caper and find some messages you can use in your copy.</p>
+
+<!-- more -->
+
+
+<h3>Steal From Your Customers</h3>
+
+<p>Keep notes on interactions you have with past, present, and future customers. Your copy writing needs to be in your customer's language, not your own. If you have collected testimonials, that can be a great place to start. Sales meetings, request for proposals, and job board postings are all also good places.</p>
+
+<p>This will also help you create higher converting copy. People like when they read something and think "wow, they really get me!" By speaking your customers language, and addressing points you got straight from the horse's mouth, you will be more in tune with your customer's needs.</p>
+
+<h3>Steal From Your Competitors</h3>
+
+<p>Look at the sites of a few of your competitors, there are three things you want to pay attention to:</p>
+
+<ul>
+<li>Their headings and subheadings.</li>
+<li>Their calls-to-action.</li>
+<li>Anything else that makes you stop and go "Hmm!".</li>
+</ul>
+
+
+<p>You don't want to take these lines verbatim, but instead get an overall feel for how other people are approaching the market. You can make a spreadsheet of these three things to keep track.</p>
+
+<p>This will also help you make sure that you are saying something unique. You don't have to be the best in your market, just different. You could even make your headline the opposite of your competitors. If they focus on being the biggest, you can focus on being a smaller, more personal brand, for example.</p>
+
+<h3>Steal From Other People's Feedback</h3>
+
+<p>Amazon reviews are another great source for ideas. Search for books related to your services, and see what people are talking about. Look at 5-star reviews to get an idea of what people like, and 1-star reviews to see what problems people have and what you should avoid.</p>
+
+<h3>Further Reading</h3>
+
+<p>The idea of this approach is to turn writing from a creative practice into a scientific one; From a passive way of writing to an <strong>active</strong> way. Joanna Weibe of CopyHackers has a great article on this idea: <a href="http://copyhackers.com/2012/09/headline-formulas-and-the-science-of-high-converting-copywriting/">Headline Formulas and the Science of CRO Copy writing</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Niche Blogging]]></title>
@@ -338,99 +383,6 @@ Here are things that don't count:</li>
 </p>
 
 <p>P.S. Above is an example of putting more content to work. I have put together a free book about pricing, which then subscribes you to my newsletter, where I write additional content to build relationships with people.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Why I am Killing My Company Blog]]></title>
-    <link href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/"/>
-    <updated>2014-07-29T11:44:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog</id>
-    <content type="html"><![CDATA[<h3>Personal vs. Professional Blogging, Part II</h3>
-
-<p><img class="left" src="/images/articles/concordant-articles.png" width="260"></p>
-
-<p>Back in March, I wrote and article, <a href="http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/">Personal vs. Professional Blogging</a>. In that article I explained why I decided to publish my writing on  two blogs: <a href="http://www.glennstovall.com">glennstovall.com</a>, Where I planned on writing content aimed at fellow developers and freelancers. The other site was <a href="http://www.concordantsolutions.com/articles">Concordant Solutions</a> My "company brand" (<em>ugh</em>, I will never be comfortable with that phrase) where I aimed to write content I thought clients would enjoy. That hasn't worked. Here is why, and how I plan to fix.</p>
-
-<!-- more -->
-
-
-<div style='clear:both;'></div>
-
-
-<div style='clear:both;'></div>
-
-
-<h3>No One Connects With a Company</h3>
-
-<p>Unless you are a large company with a lot of authority, Most people aren't going to be interested in your company blog. <a href="http://blog.kissmetrics.com/">KISSMetrics</a> is an exception to this rule. People would rather read an article by "Glenn", than by "Concordant Solutions". The second comes across as less authentic.</p>
-
-<h3>It's Easier to Manage One Thing Instead of Two</h3>
-
-<p>It's better to update blogs regularly. By having two blogs maintaining consistency is twice as hard. It also added mental overhead to every article that I wanted to write, since I had to decide where it would go, and what audience I would try to appeal to. Instead, now I can have one content management system, and one stream of content that is more steady. There were even a couple of situations where I tried to spin content so I could post it twice, which was a waste of time.</p>
-
-<h3>It Helps SEO (At Least I'm Pretty Sure)</h3>
-
-<p>I'm not an SEO Guru. Beyond "Content is king", "Have a good title tag", "No one uses the <code>&lt;meta name='keywords'&gt;</code> tag anymore, I know nothing. This is just from anecdotal observation. This domain has been around longer, gotten more traffic, and had more back links. <em>Anything</em> I publish here does better than anything I have published on my company domain. Viral traffic seems to work like high tide coming in: There is a wave of traffic that comes in quickly, and leaves just as fast. But once it is gone, It leaves the average daily visitors mark a little higher than it found it. Google must think this domain has <em>some</em> value. Why squander it?</p>
-
-<h3>There is More Crossover Appeal Than I Originally Thought</h3>
-
-<p>Most of my clients are small businesses or tech companies, which is not as different of an audience as I thought. Freelancers are by definition also small business owners (even if they don't see themselves that way). And people at tech companies in a position to hire me often have a technical background. I said that they might not know what <a href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/">AngularJS</a> is, but that is not always the case. I can still write content aimed at a subset of my audience, but there is no reason to have two locations to do so.</p>
-
-<h3>At The End of The Day, The Company Blog Was a Failure</h3>
-
-<p>I've maintained <a href="http://www.concordantsolutions.com">Concordant Solutions</a> for a year, and I am not afraid to admit that as a marketing tool, it has been a failure. I will say that as a <em>sales</em> tool, It has done some good work. The difference is that while that domain and the content on it has not brought me any new leads, it has been a great tool to help turn leads into clients. Potential clients are usually not going to find your portfolio by googling for it; They are going to see your portfolio because they said "can I see your portfolio?" and you mailed them a link.</p>
-
-<p>My company site will still exist for that reason. Any content on there I still deem worthwhile is going to be ported over to this domain over the next couple weeks. The company site  will be a resource for past, present, and future clients. I still intend on it being a valuable sales tool. It just won't have an articles section any longer.</p>
-
-<p><div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">How to Build an Audience From Scratch</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Audience_building_cover" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/227/standard/building-audience-cover.png?1411055942" />
-        </span>
-          <p>This 60-page case study teaches you everything you need to know to start building an online following.<a href='http://glennstovall.com/products/building-audiences/'>Learn More...</a></p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/803/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','Build an Audience Case Study','standard']);">
-
-    <div class="ck_image mobile-only">
-    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/227/standard/building-audience-cover.png?1411055942" />
-    </div>
-      <h3 class="mobile-only">How to Build an Audience From Scratch</h3>
-      <p class="mobile-only">This 60-page case study teaches you everything you need to know to start building an online following.<a href='http://glennstovall.com/products/building-audiences/'>Learn More...</a></p>
-
-
-      <input type="hidden" name="id" value="803" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-      <label class='ck_checkbox' style='display:none;'>
-        <input class="optIn ck_course_opted" name='course_opted' type="checkbox" id="optIn" checked />
-        I'd like to receive a free 30 day course by email.
-      </label>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Start Building Your Audience
-      </button>
-      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-</p>
 ]]></content>
   </entry>
   
