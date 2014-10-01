@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-09-30T09:47:38-04:00</updated>
+  <updated>2014-10-01T12:45:51-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -462,15 +462,20 @@
 
 <h3>Step 6: Install Foundation</h3>
 
-<p>I prefer <a href="http://foundation.zurb.com/">Zurb&#8217;s Foundation</a> to <a href="http://getbootstrap.com/2.3.2/">Twitter&#8217;s Bootstrap</a>. In my opinion, it&#8217;s easier to use and has cleaner markup. Since we are using Bower, this process is very simple. Open the <code>bower.json</code> file, and add this to the dependencies object:</p>
+<p>I prefer <a href="http://foundation.zurb.com/">Zurb&#8217;s Foundation</a> to <a href="http://getbootstrap.com/2.3.2/">Twitter&#8217;s Bootstrap</a>. In my opinion, it&#8217;s easier to use and has cleaner markup. Since we are using Bower, this process is simple. Run the following command from the root directory of your project:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>foundation: '~5.4.4'</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bower install foundation --save</span></code></pre></td></tr></table></div></figure>
 
 
-<p><em>Note: If you are reading this and it isn&#8217;t September 2014, then you may want to double check the version.</em></p>
+<p>The <code>save</code> flag will update your <code>bower.json</code> file. If you want to use any of the JavaScript functionality of Foundation, add the following to your app.js file after <code>use strict</code>:</p>
 
-<p>Then, we run <code>bower install</code> again. Done!</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>  <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">foundation</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And Done!</p>
 
 <p>Now you have a front end application ready for development, with a whole suite of tools and frameworks installed.</p>
 
