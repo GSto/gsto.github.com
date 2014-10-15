@@ -4,7 +4,7 @@
   <title><![CDATA[Category: freelance | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/freelance/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-10-02T14:26:16-04:00</updated>
+  <updated>2014-10-15T05:57:24-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,92 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[5 Ways To Build A $200,000 Consultancy]]></title>
+    <link href="http://glennstovall.com/blog/2014/10/15/5-ways-to-build-a-200000-consultancy/"/>
+    <updated>2014-10-15T05:00:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2014/10/15/5-ways-to-build-a-200000-consultancy</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/5waysto_key.png" width="260"></p>
+
+<p>I recently read an article entitled <a href="http://christophjanz.blogspot.com/2014/10/five-ways-to-build-100-million-business.html">5 ways to build a $100 million dollar business</a>. It discusses different business models that vary on the number and size of your customer base. Some businesses work with a few enterprise scale clients, while others work with a larger number of smaller customers. Patrick Mackenzie mentioned on Twitter that <a href="https://twitter.com/patio11/status/521878305151000577">"The math here is equally applicable if you are trying to build, say, a $200k a year business"</a>.A $200k/yr consultancy is a goal that seems both attractive and attainable, so I decided try and answer the question "How can you build a $200,000 consultancy?"</p>
+
+<!-- more -->
+
+
+<div style='clear:both;'></div>
+
+
+<h3>Find 1 Client That Pays You $200,000 (The Elephant)</h3>
+
+<p>I've been a part of projects where a single engagement has had a price tag of $200,000 or more. I think this scenario is a little unlikely. If you can find one of these clients, then you can find more, and you are on your way to becoming a $1mm+ consultancy. It would also be very risky for a company to put all of it's eggs in one basket like this.</p>
+
+<h3>Find 10 Clients That Pay You $20,000 (The Deer)</h3>
+
+<p>There are a few examples of consultancies that make this kind of money. One is custom application development services that can handle ten projects in a year. Most of the client work I find is in this range. Another example is high end consulting engagements. People like <a href="http://www.kalzumeus.com/">Patrick Mackenzie</a> and <a href="http://doubleyourfreelancing.com/">Brennan Dunn</a> charge anywhere from $10,000 - $30,000 for a week of their services. They could work 10 engagements a year and hit this $200,000 benchmark.</p>
+
+<h3>Find 100 Clients That Pay You $2,000 (The Rabbits)</h3>
+
+<p>With this setup, your consultancy would have to have a service that scales very well. One way to accomplish this would be to find a way to service multiple clients at one time. Hosting courses or seminars is a way you could accomplish this. For example, Big Nerd Ranch offers <a href="https://training.bignerdranch.com/classes/advanced-ios-bootcamp">programming courses that cost $4,200</a>. At this point, the focus of the work changes. This is less of a consulting model and more of an information product model. There are plenty of gigs out there that pay $2,000 for smaller jobs, which are fine but those are hard to scale.</p>
+
+<h3>Find 1,000 Customers That Pay You $200 (The Mice)</h3>
+
+<p>At this level, you need a product that you can resell. It could be a course that requires little to no interaction for $200 (For example, a <a href="https://www.udemy.com/comprehensive-ruby-on-rails/?dtcode=Q73iZAp1GbIa">UDemy</a> course), or it could be some form of subscription product, which would cost just shy of $20/month. For software developers, you may be able to build a premium software framework or plugin that can sell for this amount. The <a href="http://www.magentocommerce.com/magento-connect/">Magento Connect marketplace</a> is a good example of people going this model. I can't think of any kind of repeatable service model that works at this scale.</p>
+
+<h3>Find 10,000 Customers That Pay You $20 (The Files)</h3>
+
+<p>You are a product business at this point. You could sell ebooks, themes, plugins, or something of that nature. You really can't call it a consultancy at this point. For this kind of business, it looks like the math doesn't scale don't quite so well at this point.</p>
+
+<h3>Applying This To Your Business</h3>
+
+<p>Do you want to work on $2,000 or $200,000 projects? Before you say "$200,000, duh." Think about the pros and cons of fewer clients vs. more, and smaller clients vs. large. Fewer larger clients means a more rigorous, in-depth sales process, and a higher risk if you lose a client.</p>
+
+<p>What kind of consultancy do you want to run, and how are you going to scale it? You can scale not only by getting more clients, but by getting bigger ones as well. If you think about the kind of business you <strong>want</strong> to be running, then you can start making deliberate steps to get there.</p>
+
+<p><div class="ck_form">
+  <div class="ck_form_content">
+    <h3 class="ck_form_title">Freelance Pricing Handbook</h3>
+    <div class="ck_description">
+      <span class="ck_image">
+        <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
+      </span>
+      <p>Figure out how much to charge for your services. Learn when to bill hourly, when to bill a flat rate, and when to do something completely different.</p>
+    </div>
+  </div>   
+  
+  
+  <div class="ck_form_fields">
+    
+    <div id='ck_success_msg'  style='display:none;'>
+      <p>Thanks! Now check your email.</p>
+    </div>
+    
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);">
+      <input type="hidden" name="id" value="531" id="landing_page_id"></input>
+      <p class="ck_errorArea"></p>
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_firstNameField">First Name</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+      </div>  
+      <div class="ck_control_group">
+        <label class="ck_label" for="ck_emailField">Email Address</label>
+        <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+      </div>
+      
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Download the Free Book
+      </button>
+      <span class="ck_guarantee">We won't send you spam. Unsubscribe at any time.</span>
+    </form>
+  </div>
+</div> 
+<script src="https://app.convertkit.com/assets/CKJS4.js?v=15"></script>
+</p>
+
+<p><small>Image by <a href="http://christophjanz.blogspot.com/2014/10/five-ways-to-build-100-million-business.html">Christoph Janz</a></small></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning To Say No]]></title>
