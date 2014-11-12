@@ -280,11 +280,11 @@
     </url>
     <url>
         <loc>http://glennstovall.com/about/</loc>
-        <lastmod>2014-10-01T12:41:29-04:00</lastmod>
+        <lastmod>2014-11-12T10:57:44-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/archives/</loc>
-        <lastmod>2014-10-15T05:47:07-04:00</lastmod>
+        <lastmod>2014-11-12T10:57:44-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/</loc>
@@ -292,7 +292,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/books/freelance-pricing-handbook/download.html</loc>
-        <lastmod>2014-09-11T09:34:44-04:00</lastmod>
+        <lastmod>2014-11-12T10:57:44-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/books/freelance-pricing-handbook/</loc>
@@ -300,11 +300,11 @@
     </url>
     <url>
         <loc>http://glennstovall.com/books/</loc>
-        <lastmod>2014-09-18T12:19:59-04:00</lastmod>
+        <lastmod>2014-11-12T10:57:44-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/contact/</loc>
-        <lastmod>2014-09-11T09:34:44-04:00</lastmod>
+        <lastmod>2014-11-12T10:57:44-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/</loc>
@@ -315,16 +315,24 @@
         <lastmod>2014-09-03T14:05:07-04:00</lastmod>
     </url>
     <url>
+        <loc>http://glennstovall.com/offerings/overnight-site/</loc>
+        <lastmod>2014-11-12T12:29:10-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://glennstovall.com/offerings/overnight-site/request/</loc>
+        <lastmod>2014-11-12T12:39:57-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://glennstovall.com/portfolio/</loc>
-        <lastmod>2014-09-11T09:34:44-04:00</lastmod>
+        <lastmod>2014-11-12T10:57:44-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/portfolio/old.html</loc>
-        <lastmod>2014-09-11T09:34:44-04:00</lastmod>
+        <lastmod>2014-11-12T10:57:44-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/privacy-policy/</loc>
-        <lastmod>2014-09-11T09:34:44-04:00</lastmod>
+        <lastmod>2014-11-12T10:57:44-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/products/building-audiences/</loc>
@@ -332,7 +340,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/products/</loc>
-        <lastmod>2014-09-11T09:34:44-04:00</lastmod>
+        <lastmod>2014-11-12T10:57:44-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/products/proposal-review/</loc>
@@ -340,7 +348,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/resume/</loc>
-        <lastmod>2014-09-11T09:34:44-04:00</lastmod>
+        <lastmod>2014-11-12T10:57:44-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/robots.txt</loc>
@@ -348,6 +356,6 @@
     </url>
     <url>
         <loc>http://glennstovall.com/wedding-photos/</loc>
-        <lastmod>2014-09-11T09:34:44-04:00</lastmod>
+        <lastmod>2014-11-12T10:57:44-05:00</lastmod>
     </url>
 </urlset>
