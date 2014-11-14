@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-11-13T23:29:24-05:00</updated>
+  <updated>2014-11-14T00:15:26-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,63 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Decide Between Squarespace and a Web Designer]]></title>
+    <link href="http://glennstovall.com/blog/2014/11/14/how-to-decide-between-squarespace-and-a-web-designer/"/>
+    <updated>2014-11-14T00:05:00-05:00</updated>
+    <id>http://glennstovall.com/blog/2014/11/14/how-to-decide-between-squarespace-and-a-web-designer</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/squarespace_vs_designer.jpg" width="260"></p>
+
+<p>You have a new idea you want to explore. Or maybe you are about to open the doors on your new brick and mortar business. Either way, you need a new website. I used to advise clients against &#8220;do it yourself website builders&#8221;,
+such as <a href="http://www.squarespace.com/">Squarespace</a>, <a href="http://www.weebly.com/">Weebly</a>, and <a href="http://www.wix.com/">Wix</a>. But in the past few years, the tools have evolved into a solution that is a good fit for a lot of people.So, when should you use a tool like SquareSpace, and when is a professional web designer worth the investment?</p>
+
+<!-- more -->
+
+
+<h2>Our Two Options</h2>
+
+<p>There are a lot of options out there for hosting your own site, and for building your own site. To keep this article simple, I am going to compare two particular approaches: using <a href="http://www.squarespace.com/">Squarespace</a> to build your site, and hiring a designer to build a custom hosted site using <a href="https://wordpress.com/">WordPress</a></p>
+
+<h1>When To Use Squarespace</h1>
+
+<h3>When you just need something simple.</h3>
+
+<p>If all you need is a homepage, a couple images, and a contact form, then using SquaresSpace will suit your needs just fine. Squarespace has limited functionality, but it isn&#8217;t much of a limitation if you don&#8217;t need to go beyond it.</p>
+
+<h3>When the site you are building is temporary.</h3>
+
+<p> If you are making a site for an event, or for a limited time offering, then I wouldn&#8217;t invest too much time or money into it. In those cases, a quick page on SquareSpace, or possibly a landing page service such as <a href="http://leadpages.net">LeadPages</a> would suit your needs better.</p>
+
+<h3>When you need your site up TODAY.</h3>
+
+<p> If you hire a designer to build your site for you, there is the process of getting a contract signed, figuring out money, defining the design and scope, etc. With Squarespace, you can have a site up and running in just a couple of hours.</p>
+
+<h3>When the ROI doesn&#8217;t make sense.</h3>
+
+<p> How much money is your website going to make you this year? This is an important consideration when building your site. Web designers can be expensive. If you don&#8217;t think your website will bring in at least $5,000 in revenue to your business, I would go for squarespace.</p>
+
+<h1>When to Hire a Designer</h1>
+
+<h3>When you need the consulting and expertise.</h3>
+
+<p> The most important part of hiring a professional is not the final product they deliver, it&#8217;s the expertise that goes into it. Any web developer or designer should have the experience to help guide you along the way, and make sure you know how to best wield the tool they are building for you.</p>
+
+<h3>You need complex functionality (or you might one day).</h3>
+
+<p> While Squarespace is good for simple sites, if you have more complex needs, then you may want to consider hosting your own solution. The power of WordPress is that it is almost infinitely customizable and extendable. Even if you don&#8217;t need much right out of the gate, if you plan on adding functionality down the line, you should consider starting with a hosted solution, in order to prevent the additional cost of migrating from one platform to another.</p>
+
+<h3>You need user rights management.</h3>
+
+<p> Who is going to be writing the content for your website? If it is just you, then Squarespace will work fine. However, if you have employees or interns that will be working on the site, and you want them to be able to contribute without giving them the keys to everything, you will need a more robust solution such as WordPress. WordPress allows you to give users different levels of rights, so you can invite people to contribute without giving them ability to change things such as design.</p>
+
+<h3>When you find a worthwhile investment.</h3>
+
+<p> Hiring a designer, and building custom functionality are more costly, but is it an investment that will pay off for your business? If you find a designer or have functionality that you believe will generate more revenue for your business, then it is one of the best investments you can make in your company. Your website is like a marketer that never sleeps. If you build the right one it can be an investment that keeps on giving.</p>
+
+<p> That&#8217;s why I offer my <a href="http://glennstovall.com/offerings/overnight-site">overnight site</a>  service. I&#8217;ve streamlined the process as much as I could, so that can deliver results to clients at a price that makes it an investment, and not an expense. I&#8217;m always game to hear about your idea, and I have no problem telling you to not hire me and use Squarespace if it makes more sense for your business. But if does make sense to bring in some professional guidance, or you would rather spend time doing more valuable things for your business and let me worry about it, then I hope we can <a href="http://glennstovall.com/offerings/overnight-site">work together</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[5 Ways To Build A $200,000 Consultancy]]></title>
@@ -1813,133 +1870,6 @@ Here are things that don&#8217;t count:</li>
 <p>I don’t want to discourage anyone from being an entrepreneur, in fact I would encourage anyone interested to learn more about it. However, I would encourage these people to learn how to be an entrepreneur in <em>the real world</em>, not the fantasy land that TechCrunch likes to paint. Very few people can build “The next Facebook”, but a <strong>whole lot</strong> of people can build a sustainable, profitable business. and reading these vain articles is actively preventing people from doing so.</p>
 
 <p>I don’t want to read about the guy who got 10,000 subscribers in a weekend. I’ll never be that guy. I want to read about the guy that got 100 and how he did it. That’s educational. That’s actionable. That’s <strong>real</strong>. Startups are not exempt from the being businesses, and the rules of business that have existed for hundreds of years still apply. By learning about how to build your business realistically, you have a much lower risk and higher chance of success.</p>
-
-<div class="ck_embed_form ck_horizontal_subscription_form">
-  <div class="ck_embed_form_content">
-      <h3 class="ck_embed_form_title">How to Build an Audience From Scratch</h3>
-      <div class="ck_embed_description">
-        <span class="ck_image">
-          <img alt="Audience_building_cover" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/227/standard/building-audience-cover.png?1411055942" />
-        </span>
-          <p>This 60-page case study teaches you everything you need to know to start building an online following.<a href='http://glennstovall.com/products/building-audiences/'>Learn More&#8230;</a></p>
-      </div>
-  </div>   
-   
-  <div id='ck_success_msg'  style='display:none;'>
-    <p>Thanks! Now check your email.</p>
-  </div>
-  
-    <!--  Form starts here  -->
-    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/803/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','Build an Audience Case Study','standard']);">
-
-    <div class="ck_image mobile-only">
-    <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/227/standard/building-audience-cover.png?1411055942" />
-    </div>
-      <h3 class="mobile-only">How to Build an Audience From Scratch</h3>
-      <p class="mobile-only">This 60-page case study teaches you everything you need to know to start building an online following.<a href='http://glennstovall.com/products/building-audiences/'>Learn More&#8230;</a></p>
-
-
-      <input type="hidden" name="id" value="803" id="landing_page_id"></input>
-      <p class="ck_errorArea"></p>
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
-      </div>  
-      <div class="ck_control_group">
-        <label class="ck_label" for="ck_emailField">Email Address</label>
-          <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
-      </div>
-      <label class='ck_checkbox' style='display:none;'>
-        <input class="optIn ck_course_opted" name='course_opted' type="checkbox" id="optIn" checked />
-        I&#8217;d like to receive a free 30 day course by email.
-      </label>
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
-        Start Building Your Audience
-      </button>
-      <span class="ck_guarantee">We won&#8217;t send you spam. Unsubscribe at any time.</span>
-    </form>
-  </div>
-
-
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=12"></script>
-
-
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Start Using Drip Email Campaigns Today]]></title>
-    <link href="http://glennstovall.com/blog/2014/08/04/start-using-drip-email-campaigns-today/"/>
-    <updated>2014-08-04T19:30:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/08/04/start-using-drip-email-campaigns-today</id>
-    <content type="html"><![CDATA[<h3>Increase Engagement And Conversions When People Sign Up For Your Email List</h3>
-
-<p><img class="left" src="http://glennstovall.com/images/articles/drip.jpg" width="260"></p>
-
-<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
-
-<p>When building a mailing list, engagement is highest within the first two to three weeks of the person joining the list. However, these people usually get the same content that everyone else on your list getting. Wouldn’t it be great if you could send them content that was optimized for this situation. That’s what <strong>drip email campaigns</strong> are for.</p>
-
-<!-- more -->
-
-
-<h3>What are Drip Email Campaigns?</h3>
-
-<p>Drip email campaigns are email campaigns that are sent out based on when a subscriber has performed an action instead of being scheduled on a calendar date. While a regular email list campaign may be scheduled to go out on June 1st, 2014 at 1pm, A drip email campaign will be scheduled to be sent out 3 days after a sign up.</p>
-
-<p>Drip marketing campaigns are usually several emails in length. We want to reach out to a person multiple times (but too much, don’t be obnoxious) when they have first joined our list.</p>
-
-<h3>Playing the Long Game</h3>
-
-<p>No matter what you are selling, you are always selling people trust to some degree. People need to believe in your product and believe that you are capable of solving their problem before they will be willing to pay you money to do so. You can’t really build a whole lot of trust on social media or on a landing page. However, it takes much less trust to get someone’s email address, and from there you will have several opportunities to reach out to this person and build trust.</p>
-
-<h3>How to Structure Your Campaign</h3>
-
-<p>The most important thing about your campaign is that you need it to be helpful and valuable to your new subscriber. Your posts need to be mostly selfless. If you run a mailing list and all you do is sell to them, then you are doing it wrong, and it will drive people away. By selling directly less, you will build more trust, and make more sales in the end.</p>
-
-<p>My personal rule is that your helpful content should have a minimum 2:1 ratio of being helpful, and being a sales email. Also, you should mix up between “hard sells” and “soft sells”. A hard sell is an email where the entire point is to get the user to complete a transaction. A soft sell is a message that is still valuable, but contains a subtle message.  For example, I may write an email about how to use lifecycle emails to increase conversions, and follow it up with “And by the way, this is something I love helping clients with. hit ‘reply’ if you would like to talk about us working together.”</p>
-
-<p>Following those rules, here is what a drip campaign might look like:</p>
-
-<ol>
-<li>An introductory email.</li>
-<li>An educational email.</li>
-<li>An education email with a soft sell.</li>
-<li>1 -2 more educational emails.</li>
-<li>A hard sell.</li>
-</ol>
-
-
-<p>You can change this as you see fit, just stick to the 2:1 ratio.</p>
-
-<h3>Your First Campaign</h3>
-
-<p>If you have done any writing before, you can set your first campaign set up  quickly. Go find 4 – 5 of your best email campaigns or blog posts, and spread them out over 2 -4 weeks. You now have a campaign! This way you are giving your new subscribers your best content at a point when they are most engaged, making this some of the most effective email marketing you can do.</p>
-
-<h3>Using Drip Campaigns as an Incentive</h3>
-
-<p>Which do you think is a better call to action to get people to join a mailing list?</p>
-
-<ul>
-<li>Sign up for my newsletter.</li>
-<li>Enter your email address and I will give you something for free.</li>
-</ul>
-
-
-<p>I recently wrote a <a href="http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem/">case study</a> about how I used a free eBook in order to jump start one of my lists. You can use your drip campaign as the incentive by framing it as a service. For example, you may have a 30-day course that can teach your potential clients how to do something. ConvertKit is a drip marketing tool that does this on their first page. Since the service revolves around building forms to get people to sign up, they have a <a href="https://convertkit.com/">30 day course on creating forms that convert</a>.</p>
-
-<h3>Tools for Drip Campaigns</h3>
-
-<ul>
-<li><strong>Mailchimp Autoresponders</strong> : Mailchimp doesn’t have any tools built specifically for drip marketing campaigns, but they do have autoresponders, which you can use to set one up. You can set an autoresponder to be sent out X days after someone joins a list, so you can create a drip campaign by creating several autoresponders.</li>
-<li><strong>Drip</strong>: As you can tell my the name, Drip is designed specifically for creating drip campaigns. It also integrates well with other email list providers, so if you want to use Drip for your campaigns and Mailchimp or AWeber for your list management, you can do that.</li>
-<li><strong>ConvertKit</strong>: ConvertKit is what I have been using lately. It has support for list management, drip campaigns, and offering sign-up incentives.</li>
-</ul>
-
-
-<p>By using drip campaigns, you can have a long form message that you can deliver to every single person that expresses interest in whatever it is your offering. If you have ever done sales where you had to have several emails or phone calls back and forth with a potential client, then you how time consuming that can be. Drip campaigns allow you to automate this process with the people that are in a situation where they are most likely to convert.</p>
 
 <div class="ck_embed_form ck_horizontal_subscription_form">
   <div class="ck_embed_form_content">

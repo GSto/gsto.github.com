@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: offerings | Glenn Stovall]]></title>
+  <link href="http://glennstovall.com/blog/categories/offerings/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2014-11-14T00:15:26-05:00</updated>
+  <id>http://glennstovall.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to Decide Between Squarespace and a Web Designer]]></title>
+    <link href="http://glennstovall.com/blog/2014/11/14/how-to-decide-between-squarespace-and-a-web-designer/"/>
+    <updated>2014-11-14T00:05:00-05:00</updated>
+    <id>http://glennstovall.com/blog/2014/11/14/how-to-decide-between-squarespace-and-a-web-designer</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/squarespace_vs_designer.jpg" width="260"></p>
+
+<p>You have a new idea you want to explore. Or maybe you are about to open the doors on your new brick and mortar business. Either way, you need a new website. I used to advise clients against "do it yourself website builders",
+such as <a href="http://www.squarespace.com/">Squarespace</a>, <a href="http://www.weebly.com/">Weebly</a>, and <a href="http://www.wix.com/">Wix</a>. But in the past few years, the tools have evolved into a solution that is a good fit for a lot of people.So, when should you use a tool like SquareSpace, and when is a professional web designer worth the investment?</p>
+
+<!-- more -->
+
+
+<h2>Our Two Options</h2>
+
+<p>There are a lot of options out there for hosting your own site, and for building your own site. To keep this article simple, I am going to compare two particular approaches: using <a href="http://www.squarespace.com/">Squarespace</a> to build your site, and hiring a designer to build a custom hosted site using <a href="https://wordpress.com/">WordPress</a></p>
+
+<h1>When To Use Squarespace</h1>
+
+<h3>When you just need something simple.</h3>
+
+<p>If all you need is a homepage, a couple images, and a contact form, then using SquaresSpace will suit your needs just fine. Squarespace has limited functionality, but it isn't much of a limitation if you don't need to go beyond it.</p>
+
+<h3>When the site you are building is temporary.</h3>
+
+<p> If you are making a site for an event, or for a limited time offering, then I wouldn't invest too much time or money into it. In those cases, a quick page on SquareSpace, or possibly a landing page service such as <a href="http://leadpages.net">LeadPages</a> would suit your needs better.</p>
+
+<h3>When you need your site up TODAY.</h3>
+
+<p> If you hire a designer to build your site for you, there is the process of getting a contract signed, figuring out money, defining the design and scope, etc. With Squarespace, you can have a site up and running in just a couple of hours.</p>
+
+<h3>When the ROI doesn't make sense.</h3>
+
+<p> How much money is your website going to make you this year? This is an important consideration when building your site. Web designers can be expensive. If you don't think your website will bring in at least $5,000 in revenue to your business, I would go for squarespace.</p>
+
+<h1>When to Hire a Designer</h1>
+
+<h3>When you need the consulting and expertise.</h3>
+
+<p> The most important part of hiring a professional is not the final product they deliver, it's the expertise that goes into it. Any web developer or designer should have the experience to help guide you along the way, and make sure you know how to best wield the tool they are building for you.</p>
+
+<h3>You need complex functionality (or you might one day).</h3>
+
+<p> While Squarespace is good for simple sites, if you have more complex needs, then you may want to consider hosting your own solution. The power of WordPress is that it is almost infinitely customizable and extendable. Even if you don't need much right out of the gate, if you plan on adding functionality down the line, you should consider starting with a hosted solution, in order to prevent the additional cost of migrating from one platform to another.</p>
+
+<h3>You need user rights management.</h3>
+
+<p> Who is going to be writing the content for your website? If it is just you, then Squarespace will work fine. However, if you have employees or interns that will be working on the site, and you want them to be able to contribute without giving them the keys to everything, you will need a more robust solution such as WordPress. WordPress allows you to give users different levels of rights, so you can invite people to contribute without giving them ability to change things such as design.</p>
+
+<h3>When you find a worthwhile investment.</h3>
+
+<p> Hiring a designer, and building custom functionality are more costly, but is it an investment that will pay off for your business? If you find a designer or have functionality that you believe will generate more revenue for your business, then it is one of the best investments you can make in your company. Your website is like a marketer that never sleeps. If you build the right one it can be an investment that keeps on giving.</p>
+
+<p> That's why I offer my <a href="/offerings/overnight-site">overnight site</a>  service. I've streamlined the process as much as I could, so that can deliver results to clients at a price that makes it an investment, and not an expense. I'm always game to hear about your idea, and I have no problem telling you to not hire me and use Squarespace if it makes more sense for your business. But if does make sense to bring in some professional guidance, or you would rather spend time doing more valuable things for your business and let me worry about it, then I hope we can <a href="/offerings/overnight-site">work together</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
