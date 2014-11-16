@@ -1,7 +1,7 @@
 <div class="ck_form">
   <div class="ck_form_content">
-    <h3 class="ck_form_title">Freelance Pricing Handbook</h3>
-    <div class="ck_description">
+    <h3 class="ck_form_title" data-drip-attribute="headline">Freelance Pricing Handbook</h3>
+    <div class="ck_description" data-drip-attribute="description">
       <span class="ck_image">
         <img alt="Book-portrait" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/811/858/standard/Book-Portrait.png?1398265358" />
       </span>
@@ -17,16 +17,16 @@
     </div>
     
     <!--  Form starts here  -->
-    <form id="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/531/subscribe" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);">
+    <form id="ck_subscribe_form" action="https://www.getdrip.com/forms/5825490/submissions" data-remote="true" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','standard']);" data-drip-embedded-form="2911" method="post">
       <input type="hidden" name="id" value="531" id="landing_page_id"></input>
       <p class="ck_errorArea"></p>
       <div class="ck_control_group">
         <label class="ck_label" for="ck_firstNameField">First Name</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+        <input type="text" name="fields[first_name]" class="ck_first_name" id="ck_firstNameField" required></input>
       </div>  
       <div class="ck_control_group">
         <label class="ck_label" for="ck_emailField">Email Address</label>
-        <input type="email" name="email" class="ck_email_address" id="ck_emailField" required></input>
+        <input type="email" name="fields[email]" class="ck_email_address" id="ck_emailField" required></input>
       </div>
       
       <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
@@ -36,4 +36,3 @@
     </form>
   </div>
 </div> 
-<script src="https://app.convertkit.com/assets/CKJS4.js?v=15"></script>
