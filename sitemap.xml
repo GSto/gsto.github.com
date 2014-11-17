@@ -12,7 +12,7 @@
         <loc>
             http://glennstovall.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter/
         </loc>
-        <lastmod>2014-11-16T10:13:48-05:00</lastmod>
+        <lastmod>2014-11-17T15:45:04-05:00</lastmod>
     </url>
     <url>
         <loc>
@@ -30,7 +30,7 @@
         <loc>
             http://glennstovall.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/
         </loc>
-        <lastmod>2014-11-16T10:13:48-05:00</lastmod>
+        <lastmod>2014-11-17T15:45:10-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/2012/07/04/how-to-add-a-contact-form-to-octopress/</loc>
@@ -46,7 +46,7 @@
         <loc>
             http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/
         </loc>
-        <lastmod>2014-11-16T10:13:48-05:00</lastmod>
+        <lastmod>2014-11-17T15:45:15-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/2013/02/18/5-tips-for-more-accurate-estimates/</loc>
@@ -60,7 +60,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/blog/2013/03/15/how-i-use-git/</loc>
-        <lastmod>2014-11-16T10:13:48-05:00</lastmod>
+        <lastmod>2014-11-17T15:45:22-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/2013/06/07/reading-on-wealth-and-programming/</loc>
@@ -68,7 +68,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/</loc>
-        <lastmod>2014-11-16T10:13:48-05:00</lastmod>
+        <lastmod>2014-11-17T15:45:40-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/2013/12/10/announcing-concordant-solutions/</loc>
@@ -116,7 +116,7 @@
         <loc>
             http://glennstovall.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/
         </loc>
-        <lastmod>2014-11-16T10:13:48-05:00</lastmod>
+        <lastmod>2014-11-17T15:45:44-05:00</lastmod>
     </url>
     <url>
         <loc>
@@ -252,7 +252,7 @@
         <loc>
             http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup/
         </loc>
-        <lastmod>2014-11-16T10:13:48-05:00</lastmod>
+        <lastmod>2014-11-17T15:45:47-05:00</lastmod>
     </url>
     <url>
         <loc>
@@ -264,7 +264,7 @@
         <loc>
             http://glennstovall.com/blog/2014/09/26/testing-angularjs-with-karma-plus-jasmine/
         </loc>
-        <lastmod>2014-11-16T10:13:48-05:00</lastmod>
+        <lastmod>2014-11-17T15:45:51-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/2014/09/29/good-copywriters-borrow/</loc>
@@ -290,11 +290,11 @@
     </url>
     <url>
         <loc>http://glennstovall.com/blog/archives/</loc>
-        <lastmod>2014-11-16T22:24:19-05:00</lastmod>
+        <lastmod>2014-11-17T15:45:51-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/</loc>
-        <lastmod>2014-11-16T22:24:19-05:00</lastmod>
+        <lastmod>2014-11-17T15:45:51-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/books/freelance-pricing-handbook/download.html</loc>
@@ -334,7 +334,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/</loc>
-        <lastmod>2014-11-16T22:24:19-05:00</lastmod>
+        <lastmod>2014-11-17T15:45:51-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/my-latest-thing/</loc>
