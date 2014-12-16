@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-08T14:57:50-05:00</updated>
+  <updated>2014-12-16T12:58:12-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,92 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Only 3 Numbers That Matter To A Freelancer's Bottom Line]]></title>
+    <link href="http://glennstovall.com/blog/2014/12/16/the-only-3-numbers-that-matter-to-a-freelancers-bottom-line/"/>
+    <updated>2014-12-16T12:23:00-05:00</updated>
+    <id>http://glennstovall.com/blog/2014/12/16/the-only-3-numbers-that-matter-to-a-freelancers-bottom-line</id>
+    <content type="html"><![CDATA[<h3>And 5 Tips to Improve Each One</h3>
+
+<p>The end of the year will be here soon. It&#8217;s a time to reflect on how the past year went, and plan for the next year. There are three numbers that are the determining factors for your bottom line. By understanding these numbers, you will know what metrics you need to move in order to get the business results you want. By doubling just one of three numbers, you&#8217;ll double you revenue, without doubling your workload. So instead of saying &#8220;I want to make more money next year&#8221;, by the end of this email I want you to say <strong>how</strong> you plan to make more money next year.</p>
+
+<!--more-->
+
+
+<h2>Metric #1: Number of Leads</h2>
+
+<p>You want to measure this as number of leads per month or per quarter. A <strong>lead</strong> is defined as any person who has expressed interest and capability in purchasing your services. If you respond to a listing on a job board, that is not a lead. However, if the person you contacted responds to you and wants to continue the conversation, that is a lead. If you are consistently turning some of leads into customers, then more leads will always equal more customers, which equals more revenue.</p>
+
+<h2>Metric #2: Conversion Rate</h2>
+
+<p>Your <strong>conversion rate</strong> is the percentage of leads that you convert into customers. Don&#8217;t get discouraged if this number is low. I consider 10% to be a good conversion rate, and anything above that to be excellent. By increasing your conversion rate, you can increase the number of customers that you bring in, without increasing the amount of time you spend on sales. If you need 3 customers a month to make enough money, and your conversion rate is 5%, then you need to start conversations with 60 potential leads a month. If your conversion rate is 10%, then you only need 30.</p>
+
+<p> <em>(If you don&#8217;t use a CRM to track your leads and conversion, I would highly recommend getting one. There are hundreds to choose from, but I like <a href="http://bit.ly/1itwiuw">PipeDrive</a>)</em></p>
+
+<h2>Metric #3: Customer Lifetime Value</h2>
+
+<p><strong>Customer lifetime value</strong> (often shortened to &#8216;LTV&#8217;) is the average amount that a customer pays you as long as you two do business together. If you don&#8217;t know what this number is, you can calculate it by adding up the total amount each client has payed you for all invoices, and then find the average. For example, let&#8217;s say you bill weekly at $2,000 per week. Your last quarter looks like this:</p>
+
+<ul>
+<li>Client A: 3 weeks of work:   $6,000</li>
+<li>Client B: 5 weeks of work:  $10,000</li>
+<li>Client C: 2 week of work:    $4,000</li>
+<li>Your customer LTV:       $6,667</li>
+</ul>
+
+
+<p>The more you make per customer, then the less customers you need to make revenue.Once you know these numbers, you can project your income for 2015. The formula looks like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$leads_per_month * $conversion_rate * $customer_ltv * 12 = $annual_revenue. </span></code></pre></td></tr></table></div></figure>
+
+
+<p>So, let&#8217;s say you made around $50,000. Your year might look like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>8 leads per month * 10% conversion rate * $5000 LTV * 12 = $48,000</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>So, what if next year you want to make closer to $100,000? Instead of setting an arbitrary goal, now you can focus on moving the needle on a particular metric. If you wanted to double you revenue, you either need to figure out how to get more leads, increase your conversion rate, or increase the average amount a customer pays you.</p>
+
+<h3>Tips for Increasing Leads</h3>
+
+<ul>
+<li>Adding an email capture to your website, start building a newsletter, and bring in clients that way.</li>
+<li>Send more emails out on job boards that you frequent.</li>
+<li>Give a seminar or a talk to prospective customers.</li>
+<li>Double down on whatever is currently working for you. If you meet people in person, go to even more events.</li>
+<li>Get more referrals, by asking for them. Reach out to past clients and current colleagues.</li>
+</ul>
+
+
+<h3>Tips for Increasing Your Conversion Rate</h3>
+
+<ul>
+<li><a href="http://glennstovall.com/blog/2014/09/15/why-multiple-packages-in-your-proposals-instantly-increase-conversions/">Add packaging to your proposals</a>, in order to give clients more ways to say yes.</li>
+<li>What have clients said before about why they decided to hire you? Work that into your emails and conversations.</li>
+<li>Do clients trust you? Add some convincing work to your portfolio, or get testimonials from past clients.</li>
+<li>Add calls to action to all of your client emails. Always make it clear how a client should proceed to move towards working with you.</li>
+<li>Get comfortable saying this sentence to prospects: &#8220;So, what is going to take to get you to become a client of mine?&#8221;</li>
+</ul>
+
+
+<h3>Tips for Increasing Customer Lifetime Value</h3>
+
+<ul>
+<li>Raising your rate. Easy-peasy.</li>
+<li>Find ways to provide more value for your clients. For example, if you are a developer, providing documentation for other developers or an &#8221;instruction manual&#8217; to your client can be a value add that you should price for accordingly.- Offer auxilery services. If you design sites, you could also learn to handle some of the copy writing or data entry for the client.</li>
+<li>Sell retainers. Find a way you can provide value to your clients on a monthly basis, and sell clients on those services.</li>
+<li>Up-sell. The best time to add someone to the beginning of your sales pipeline is right after a completed project. If you can think of another project that would be beneficial to the client, or a retainer mentioned above, that would be the perfect time to sell them on it.</li>
+</ul>
+
+
+<p>What are your goals for 2015? And <a href="http://glennstovall.com/contact">what could I do to help you achieve them?</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Decide Between Squarespace and a Web Designer]]></title>
@@ -30,7 +116,7 @@ such as <a href="http://www.squarespace.com/">Squarespace</a>, <a href="http://w
 
 <p>There are a lot of options out there for hosting your own site, and for building your own site. To keep this article simple, I am going to compare two particular approaches: using <a href="http://www.squarespace.com/">Squarespace</a> to build your site, and hiring a designer to build a custom hosted site using <a href="https://wordpress.com/">WordPress</a></p>
 
-<h1>When To Use Squarespace</h1>
+<h2>When To Use Squarespace</h2>
 
 <h3>When you just need something simple.</h3>
 
@@ -1162,40 +1248,6 @@ Here are things that don&#8217;t count:</li>
 <p>Usually finding a working pricing model requires lots of research and experimentation. However, to every one who wants to build a proposal tool, BidSketch has done them a huge favor. Thanks BidSketch! Some times people have a product idea, and get discouraged because it’s “been done”. Competition is not always a bad thing. Competition can be a sign that something works. On the other side of that coin, if you come up with a seemingly obvious idea that no one has done yet, it’s worth pausing for a moment and considering why you are the only person to show up to that particular party.</p>
 
 <p>Pricing models don’t need to be original. They need to be effective at converting sales and maximizing customer value. Save your creativity for your actual product.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Say No To Entreporn]]></title>
-    <link href="http://glennstovall.com/blog/2014/08/04/say-no-to-entreporn/"/>
-    <updated>2014-08-04T20:10:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/08/04/say-no-to-entreporn</id>
-    <content type="html"><![CDATA[<h3>Reading HackerNews is More Harmful Than You Think</h3>
-
-<p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
-
-<p>There is an insidious type of content out there on the internet, that is easy to waste time on. It’s what I call “entreporn”, and it isn’t only a waste of time to people, it is actively <strong>harmful</strong> to aspiring entrepreneurs.</p>
-
-<!-- more -->
-
-
-<h3>What is Entreporn?</h3>
-
-<p>I define entrepornography as any article that focuses on start-ups that have had some kind of crazy, fluke amount of success. Reading about snapchat was offered $3 billion dollars by Facebook but had the guts to say no. Some college kid built a web app and made $20,000 in sales while he was passed out from a bender. At least 60% of whatever is on the front page of Hacker News whenever you read this post. These pieces are salacious and exciting. They get us to imagine a world where we can take an idea all the way to top and create a hugely successful venture. It’s truely the american dream!</p>
-
-<h3>What&#8217;s the Problem</h3>
-
-<p>The problem is that the stories they like to tell are flukes. It inspires people who want to be “The next Facebook”. The problem is that no one is going to be the next Facebook. No one is going to have the same conditions that Mark Zuckerburg did. Even if they did, any company requires a lot of luck, especially to get to the place Facebook is at today. And besides, I never understood why Twitter didn’t get to take “The next Facebook”  crown and keep it.</p>
-
-<p>These articles can’t teach you anything, because they tell stories of companies that aren’t repeatable. I’m not asking that you stop reading articles on the internet, because it would make me quite the hypocritical writer. But also because there is a ton of good, valuable advice out there you could be reading instead.</p>
-
-<h3>Why It&#8217;s Harmful</h3>
-
-<p>However, the time wasting is not the worst part about this. As I said, I consider entreporn <strong>harmful</strong>. It’s toxic. It, much like regular pornography, gives inexperienced people a skewed view of what reality is like. Entreporn gives people the idea that they can pursue any idea, and hit it big. It gives people the impressions that start ups are like the lottery, except that they are willing to buy a single ticket with thousands of dollars and years of their life.</p>
-
-<p>I don’t want to discourage anyone from being an entrepreneur, in fact I would encourage anyone interested to learn more about it. However, I would encourage these people to learn how to be an entrepreneur in <em>the real world</em>, not the fantasy land that TechCrunch likes to paint. Very few people can build “The next Facebook”, but a <strong>whole lot</strong> of people can build a sustainable, profitable business. and reading these vain articles is actively preventing people from doing so.</p>
-
-<p>I don’t want to read about the guy who got 10,000 subscribers in a weekend. I’ll never be that guy. I want to read about the guy that got 100 and how he did it. That’s educational. That’s actionable. That’s <strong>real</strong>. Startups are not exempt from the being businesses, and the rules of business that have existed for hundreds of years still apply. By learning about how to build your business realistically, you have a much lower risk and higher chance of success.</p>
 ]]></content>
   </entry>
   
