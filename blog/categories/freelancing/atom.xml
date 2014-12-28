@@ -4,7 +4,7 @@
   <title><![CDATA[Category: freelancing | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/freelancing/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-17T13:27:19-05:00</updated>
+  <updated>2014-12-28T15:04:29-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,177 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[2014 Postmortem]]></title>
+    <link href="http://glennstovall.com/blog/2014/12/28/2014-postmortem/"/>
+    <updated>2014-12-28T14:53:00-05:00</updated>
+    <id>http://glennstovall.com/blog/2014/12/28/2014-postmortem</id>
+    <content type="html"><![CDATA[<h1>2014 Post Mortem</h1>
+
+<p>Every Year I take a look back at my business, and do the same exercise I do with every client project: a <a href="http://en.wikipedia.org/wiki/Postmortem_documentation#Elements_of_a_project_post-mortem">postmortem</a>. I ask myself 3 questions:</p>
+
+<ul>
+<li>What went well?</li>
+<li>What went wrong?</li>
+<li>What steps should I take in the future?</li>
+</ul>
+
+
+<p>This is a valuable writing exercise, and I’d strongly encourage you to do the same. This is my postmortem of 2014, as well as a review of how I did on my goals I set for myself at the beginning of the year.</p>
+
+<h2>Did I Hit My 2013 Goals?</h2>
+
+<p>I was listening to <a href="http://www.startupsfortherestofus.com/episodes/episode-214-our-goals-for-2015">Episode 214 of Startups For The Rest Of Us</a>, where the hosts Rob Walling and Mike Taber look back at their goals they set for the year, and give themselves between 0 and 1 points based on wether or not they felt they achieved that goal. Before I get into my postmortem, I wanted to go through the exact same exercise.</p>
+
+<h3>Goal: Generate a Stream of Product Based Income</h3>
+
+<h4>Verdict: 0 points</h4>
+
+<p>It seems like every year I have a vague goal of launching a product, and I tend not to do it. While I did launch a <a href="http://glennstovall.com/offerings/overnight-site/">Productized Service</a>, I didn’t create any kind of profitable project this year.</p>
+
+<h3>Goal: Better Time Management</h3>
+
+<h4>Verdict: 0.5 points</h4>
+
+<p>I’ll give myself half a point here. While I made some improvements in managing my time, I still feel like there is a lot of room for improvement. Some good steps forward I have made has been more diligent about scheduling my time, and eliminating tasks that kept me busy, but weren’t productive.</p>
+
+<h3>Goal: Keeping an Eye on Business Metrics</h3>
+
+<h4>Verdict: 1 point</h4>
+
+<p>This was mostly in regards to sales and marketing. I started using <a href="http://bit.ly/1itwiuw">PipeDrive</a> to both systemize and keep track of the numbers on my sales funnel. PipeDrive also allows you to add custom fields to your leads, so I have started tracking 4 data points on each lead that I come into contact with:</p>
+
+<ul>
+<li>Size of the company</li>
+<li>Company vertical</li>
+<li>Project type</li>
+<li>Source of lead</li>
+</ul>
+
+
+<p>This way I don’t only see how many leads I am getting, but I can drill down on which leads are the most profitable, which convert the best, and what are the best sources of leads that convert.</p>
+
+<h3>Goal: A More Defined Sales and Marketing Process</h3>
+
+<h4>Verdict: 1 point</h4>
+
+<p>See PipeDrive above. Now I have a defined sales process, email templates that I use for communicating to leads and prospects at various points in the conversation. This has allowed me to spend less time selling and more time creating value. I also feel that I have a strong framework for writing proposals.</p>
+
+<p>Since I’ve implemented these practices, the number of leads I get have increased, and my conversion rate as more than doubled.</p>
+
+<h3>Goal: Have a Better Pricing Structure</h3>
+
+<h4>Verdict: 1 point</h4>
+
+<p>In addition to raising my rates last year, I have eliminated work billed by the hour with the exception of some legacy clients. I finally implemented this towards the end of the year, and so far the results have been tremendous. I feel happier working not having to punch a time clock, client relationships are better, and I feel I am providing more valuable work.</p>
+
+<p>I did experiment with daily and weekly billing, and that for the most part was a bust in my experience. Some people swear by weekly billing, however I found that many prospects didn’t “get” it, and it was just causing more friction in the sales process.</p>
+
+<h3>Total Score: 3.5 / 5</h3>
+
+<h2>What Went Well in 2014</h2>
+
+<h3>Putting Myself on a Salary to Eliminate Feast and Famine</h3>
+
+<p>In 2013, I would divide up the bounty of each paid invoice into a few different buckets: a percentage for the company coffers, a percentage for Uncle Sam, and a percentage in my pocket. Now, I pay myself a monthly stipend regardless of income. This makes personal budgeting and financial planning easier, reduces stress during the lean months. This also means that I have more cash on hand in my company account that I can invest back into the business.</p>
+
+<h3>Diligent Practice of Inbox Zero &amp; GTD</h3>
+
+<p>Email used to be one of those tasks that was a large time sink for me. Then I started practicing <a href="https://www.youtube.com/watch?v=z9UjeTMb3Yk">inbox zero</a>.  Now I check email twice a day, and each time I am able to get though my inbox quickly. <a href="http://www.mailboxapp.com/">Mailbox</a> is a great app if you’d like to start practicing it.</p>
+
+<p>On that same note, I started implementing the principles of <a href="http://gettingthingsdone.com/">Getting Things Done</a>, which is essentially the principles of inbox zero applied to your to do list. I now have one task management system, and everything I need to do goes into an inbox. The inbox is processed daily, and then tasks are knocked off. Since doing this I’ve had almost nothing fall through the cracks, and I feel less stressed and more on top of things. I use the Mac/iOS app <a href="https://culturedcode.com/things/">Things</a> to manage my to do lists.</p>
+
+<h3>An Online Presence I’m Happy About</h3>
+
+<p>I’ve gone through multiple redesigns of this site, and my company site, Concordant Solutions. I finally <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">decided to only manage one site</a>, and give it a facelift. It’s an ongoing process, but right now I feel like my site is the best it has ever been.</p>
+
+<h3>Writing and Publishing More Content</h3>
+
+<p>I invested a lot more in writing content this year. I’ve had some articles gain some traction, including making the Medium.com top 100 one month. I also published a free eBook that has been downloaded over 1,000 times. Both of them have helped me reach more people, and have started many a great conversation. Here are my most popular posts in 2014:</p>
+
+<ul>
+<li><a href="https://medium.com/@gsto/how-i-used-writing-to-double-my-freelancing-rate-as-a-programmer-7b321bedecdc">How I Used Writing to Double my Rate as a Freelancer</a></li>
+<li><a href="http://glennstovall.com/books/freelance-pricing-handbook/">The Freelance Pricing Handbook</a></li>
+<li><a href="http://glennstovall.com/blog/2014/10/15/5-ways-to-build-a-200000-consultancy/">5 Ways to Build a $200,000 Consultancy</a></li>
+<li><a href="http://glennstovall.com/blog/2014/09/15/why-multiple-packages-in-your-proposals-instantly-increase-conversions/">Why Multiple Packages in Your Proposals Instantly Increase Conversions</a></li>
+<li><a href="https://www.linkedin.com/pulse/20140917184430-36107098-how-to-write-more-personal-emails-to-your-list-that-get-opened-and-convert?trk=prof-post">How to Write More Personal Emails to Your List That Get Opened And Convert</a></li>
+</ul>
+
+
+<h3>Building an Audience</h3>
+
+<p>While I had good intentions as far as releasing products went, I wanted to start building an audience of people beforehand. While the product idea never came to fruition, I’m glad that I started this. I have had some <em>fantastic</em> conversations, Got invites to be a speaker on a webinar, and get to keep in touch and build relationships with people at scale.</p>
+
+<p>Building an audience also gives everything else I do more purpose. Now writing articles isn’t just about sharing content, it’s an entryway to building relationships.</p>
+
+<h3>Joining a Mastermind</h3>
+
+<p>Being self employed is lonely work. If there is one thing I miss from the employed world (in fact, I think this is the <strong>only</strong> thing), It is having people to relate to what you are doing, and  being able to reach out for help.</p>
+
+<p>This year I joined a mastermind with three other freelancers. Each week we hop on a Google Hangout, and discuss what is going on in our business. It gives each of a chance to get a few extra pairs of eyes on anything we’re working on, and a forum to even about frustrations we wouldn’t otherwise. I’ve learned just as much, if not more from the conversations I’ve had in these mastermind meetings than I have all the books and podcasts I’ve consumed this year.</p>
+
+<h2>What Went Wrong in 2014</h2>
+
+<h3>A Sabbatical That Went Unintentionally Long</h3>
+
+<p>After a couple of large projects and heavy workload, I became burned out towards the middle of the year. I had some money in the bank, and decided to schedule some time off to rest and invest some time in my business. This turned out to be the worst decision I made all year.</p>
+
+<p>Firstly, trying to take time off and invest in my business was a poor plan. It really should have been one or the other. Secondly, It just enough small jobs rolled in that I didn’t really get to relax or make very money, leaving me dealing with the worst of both worlds. Finally, it’s hard to build up momentum after stopping. What was going to be a break of a few weeks ended up being more like a break of a few <em>months</em>, which really put pressure on both my cash flow and sanity.</p>
+
+<p>On the bright side, this was also the moment that led me to do a lot of introspection and make some decisions about what my business was going to look like in the future.</p>
+
+<h3>A Company Brand That Was Dead In The Water</h3>
+
+<p>Last year I formed an LLC and formed a company site called “Concordant Solutions”. Both the site and the brand was a failure in every metric I can think to measure it in. Managing two sites was more time consuming than managing one. Any content I wrote for my company site tended to fall flat, and did not generate leads of any sort. Explaining to people in person that I was “company” that was just one person, and what the hell “Concordant” means became exhausting and distracting.</p>
+
+<p>For now, I’m back to being plain old me. The name Concordant Solutions now only exists in the world of contracts and invoices.</p>
+
+<h3>The 30 Day Publishing Challenge</h3>
+
+<p>In September, I decided to join Colin Devroe in taking a <a href="http://cdevroe.com/blog/9527/blogging-every-weekday-for-30-days">challenge to publish something every weekday for 30 days.</a> While I did finish the challenge, (and wrote a <a href="http://glennstovall.com/blog/2014/10/02/30-day-publishing-challenge-postmortem/">postmortem</a> about that too), I don’t think it was that valuable of an exercise. It led me to publishing a lot of content that wasn’t all that good, and took up a lot of my time.</p>
+
+<p>I think that if you were tempted to do something similar, writing every 30 days would be a much better goal.</p>
+
+<h3>I Didn’t Launch a Product</h3>
+
+<p>This is something that has been on my goal list for a few years, and one I haven’t been able to capitalize on. I started work on a few, but I was usually stopped by the fear that I was launching a product for product’s sake, and not because I was unsure that It would be valuable. This is a fear I need to get over, so I can at least try to launch something to generate a more passive revenue stream.</p>
+
+<h3>Problems With Client Communication and Expectations</h3>
+
+<p>I had some client relationships this year that didn’t go as well as either one of us would have liked.I did a poor job of managing the client relationship and their expectations. Since these experiences I’ve worked hard at streamlining my communication and pricing structure to support a better relationship.</p>
+
+<p>At the end of the day, the relationship between a consultant and their client should be a partnership. However, I think we all do things that tend to frame it instead as an adversarial relationship.</p>
+
+<p>My shift away from hourly billing was based on these principles. When billing based on time, the client has a financial incentive to decrease your contribution to a product, while it gives you a financial incentive to increase it. Right off the bat, this is the kind of adversarial relationship I was unknowingly fostering.</p>
+
+<h2>Steps Moving Forward</h2>
+
+<h3>A More Systemized Business</h3>
+
+<p>This is my primary goal for 2015. This year I learned about <a href="http://en.wikipedia.org/wiki/Standard_operating_procedure">standard operating procedures</a>, and <a href="http://www.amazon.com/E-Myth-Revisited-Michael-E-Gerber-ebook/dp/B000RO9VJK/ref=tmm_kin_swatch_0?_encoding=UTF8&amp;sr=&amp;qid=">how to separate yourself from your business.</a> While I have written some procedures, My coverage is far from complete. The ones I have written have been valuable, and I really want to double down on this.</p>
+
+<p>Standard operating procedures are just step one in building a more scalable, effective business. Even just by themselves, they reduce the mental overhead of making decisions, much like <a href="http://www.theguardian.com/commentisfree/2014/nov/10/obama-zuckerberg-us-president-facebook-founder">wearing the same clothes everyday</a>. But beyond that, they enable you to hand work off or automate. Once you have a defined process, you can hand that work off to a virtual assistant, a subcontractor, or a python script. (Standard operating procedures are basically Python scripts for human beings).</p>
+
+<h3>Strategic Outsourcing</h3>
+
+<p>When I started this business two years ago, if you asked me which parts of my job would be the first to be outsourced, I would not have guessed the actual production work. After all, writing code is <em>what I do</em>. Or at least that is how I used to look at it.</p>
+
+<p>Now, I see that I have much more interest and provide more value in dealing with the “big picture” issues of both my own company and of my clients. Neither one of those requires me to write code.</p>
+
+<p>I don’t plan on removing myself from writing code completely, nor do I plan to be a middle man that farms out work to the lowest bidder on the other side of the world. What I <strong>do</strong> plan on doing is sending well defined parts of projects off to other implementers, and relying more on people that have stronger skills than I do, such as graphic design.</p>
+
+<p>I fully expect this to enable to provide more value to every one of my clients than I have in the past two years.</p>
+
+<h3>Better Positioning</h3>
+
+<p>This year, I made some good steps moving from “guy who writes code” to “guy who solves problems”. This year, I want to hammer out exactly what kinds of problems those are. There is more than enough work available in the world, and being a generalist does more harm than good. In the coming year I hope to have a more clear positioning statement and brand. That might a new job title, it might mean a new company brand. What it definitely means is a marketing strategy that is laser focused on a particular set of problems that a particular set of people have.</p>
+
+<h3>Investing In My Business</h3>
+
+<p>I invested significantly more in my education and in networking than I did last year, and both paid off in spades. Many books I’ve read, groups I’ve joined, and services I’ve used have paid for themselves many times over. This year I’m excited to find more opportunities where I believe I can make my money work for me.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Only 3 Numbers That Matter To A Freelancer's Bottom Line]]></title>
@@ -206,56 +377,6 @@ $leads_per_month * $conversion_rate * $customer_ltv * 12 = $annual_revenue.
 <h3>Hours 13 - 16: Offer Your Solution</h3>
 
 <p>Now you have connections to your market, and understanding of their problems, and a solution to those problems. Go back to your original contacts and offer your solution. Now you're in business!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Why Multiple Packages In Your Proposals Instantly Increase Conversions]]></title>
-    <link href="http://glennstovall.com/blog/2014/09/15/why-multiple-packages-in-your-proposals-instantly-increase-conversions/"/>
-    <updated>2014-09-15T09:44:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/09/15/why-multiple-packages-in-your-proposals-instantly-increase-conversions</id>
-    <content type="html"><![CDATA[<h3>The 3 Tiered Approach That Closes More Sales</h3>
-
-<p><img class="left" src="/images/articles/baseball.png" width="260"></p>
-
-<p>When a freelancer submits a proposal, they will often only include one offer. They will set the deliverable, and the price, and throw their proposal over the wall. When you do this, you give the client a binary option: Hire you or don't.</p>
-
-<p>By giving the client a few different options, you are changing the conversation into one that is more likely to end with the client hiring you.</p>
-
-<!-- more -->
-
-
-<h3>Selling Services is More like Selling Products Than You Might Think</h3>
-
-<p>Many of the selling principles that I mention in this article are going to be identical to the once I addressed in <a href="http://glennstovall.com/blog/2014/08/04/breakdown-of-a-pricing-grid/">Breakdown of a Pricing Grid</a>. There is more common ground in selling products and selling service than most people realize. When you submit a proposal, you are selling a product to a very specific customer, and you are only selling it once.</p>
-
-<h3>Offers And Solutions</h3>
-
-<p>All proposals that you write follow a simple narrative. "How are you going to get the client from point A to point B?". Point A is why they starting talking to you in the first place. This is a pain point they are having, or a moment they decided that they needed to change something in their business. A <strong>solution</strong> is "point B". The solution is tomorrow. The solution is the inverse of the problem. The <strong>offer</strong> is how you are proposing to get the client from point A to point B. There are multiple ways you can get a client from point A to point B, and these are going to be the basis of the packages you offer.</p>
-
-<h3>The 3 Packages You Should Include In Your Proposal</h3>
-
-<p>Let's say you are at bat in a baseball game. The problem is that you are not on base. The solution is that you want to get on base. There are several ways you can get there. The following is the 3 package template I use in my proposals: The bunt, The line drive, and the home run (now the image at the top of this post makes sense!). Approaching the proposal this way gets me thinking about multiple ways I can solve a client's problem, and helps me and my clients find the offer that fits their needs and wants the best.</p>
-
-<h3>The Bunt</h3>
-
-<p>The lowest package you should offer should be the absolute minimum you can do to get the client to where they want to be. I also call this the <strong>half-complete package</strong>. Based on previous communications with the client, this offer is usually <strong>less</strong> than what they originally asked for. This package is useful because customers that may not have taken your core offering may take you up on this one, turning non-clients into small clients.</p>
-
-<h3>The Line Drive</h3>
-
-<p>This package will be the most in line with what the client requested. In the middle package, I include everything that the client has asked for or that I no are 100% crucial to a successful project. I call this one the <strong>complete package</strong>.</p>
-
-<h3>The Home Run</h3>
-
-<p>Once I have a handle on what the client is looking for, I ask myself "How can I go above and beyond what they asked for?". There is where I come up with the final, most expensive package. I call this one the <strong>complete plus package</strong>. This package is a place where I can up-sell the client, and show my expertise.</p>
-
-<h3>Multiple Packages Give You Built In Up-sells</h3>
-
-<p>The complete plus package is a straight-up up-sell. You took the clients needs and offered to meet their expectations and then some. No matter which package your client buys, you will still have a chance to up-sell them. If they purchase the smallest package, you can always go back and offer to complete more work for them. You have already presenting the client with several offerings, and these can be valuable tools later on in the client relationship.</p>
-
-<h3>Change The Conversation</h3>
-
-<p>The biggest advantage to this approach is that instead of the client thinking "Do I accept this proposal or not?", They now have options. They think "Which option on this proposal do I choose?".</p>
 ]]></content>
   </entry>
   
