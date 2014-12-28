@@ -4,7 +4,7 @@
   <title><![CDATA[Category: design | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/design/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:28:24-05:00</updated>
+  <updated>2014-12-28T15:53:32-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,7 +18,7 @@
     <link href="http://glennstovall.com/blog/2014/11/14/how-to-decide-between-squarespace-and-a-web-designer/"/>
     <updated>2014-11-14T00:05:00-05:00</updated>
     <id>http://glennstovall.com/blog/2014/11/14/how-to-decide-between-squarespace-and-a-web-designer</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/squarespace_vs_designer.jpg" width="260"></p>
+    <content type="html"><![CDATA[<p>{% img left /images/squarespace_vs_designer.jpg 260 %}</p>
 
 <p>You have a new idea you want to explore. Or maybe you are about to open the doors on your new brick and mortar business. Either way, you need a new website. I used to advise clients against "do it yourself website builders",
 such as <a href="http://www.squarespace.com/">Squarespace</a>, <a href="http://www.weebly.com/">Weebly</a>, and <a href="http://www.wix.com/">Wix</a>. But in the past few years, the tools have evolved into a solution that is a good fit for a lot of people.So, when should you use a tool like SquareSpace, and when is a professional web designer worth the investment?</p>
@@ -66,7 +66,7 @@ such as <a href="http://www.squarespace.com/">Squarespace</a>, <a href="http://w
 
 <p> Hiring a designer, and building custom functionality are more costly, but is it an investment that will pay off for your business? If you find a designer or have functionality that you believe will generate more revenue for your business, then it is one of the best investments you can make in your company. Your website is like a marketer that never sleeps. If you build the right one it can be an investment that keeps on giving.</p>
 
-<p> That's why I offer my <a href="/offerings/overnight-site">overnight site</a>  service. I've streamlined the process as much as I could, so that can deliver results to clients at a price that makes it an investment, and not an expense. I'm always game to hear about your idea, and I have no problem telling you to not hire me and use Squarespace if it makes more sense for your business. But if does make sense to bring in some professional guidance, or you would rather spend time doing more valuable things for your business and let me worry about it, then I hope we can <a href="/offerings/overnight-site">work together</a>.</p>
+<p> That's why I offer my <a href="{{%20root_url%20}}/offerings/overnight-site">overnight site</a>  service. I've streamlined the process as much as I could, so that can deliver results to clients at a price that makes it an investment, and not an expense. I'm always game to hear about your idea, and I have no problem telling you to not hire me and use Squarespace if it makes more sense for your business. But if does make sense to bring in some professional guidance, or you would rather spend time doing more valuable things for your business and let me worry about it, then I hope we can <a href="{{%20root_url%20}}/offerings/overnight-site">work together</a>.</p>
 ]]></content>
   </entry>
   

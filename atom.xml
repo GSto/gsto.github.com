@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:28:24-05:00</updated>
+  <updated>2014-12-28T15:53:05-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,9 +18,7 @@
     <link href="http://glennstovall.com/blog/2014/12/28/2014-postmortem/"/>
     <updated>2014-12-28T14:53:00-05:00</updated>
     <id>http://glennstovall.com/blog/2014/12/28/2014-postmortem</id>
-    <content type="html"><![CDATA[<h1>2014 Post Mortem</h1>
-
-<p>Every Year I take a look back at my business, and do the same exercise I do with every client project: a <a href="http://en.wikipedia.org/wiki/Postmortem_documentation#Elements_of_a_project_post-mortem">postmortem</a>. I ask myself 3 questions:</p>
+    <content type="html"><![CDATA[<p>Every Year I take a look back at my business, and do the same exercise I do with every client project: a <a href="http://en.wikipedia.org/wiki/Postmortem_documentation#Elements_of_a_project_post-mortem">postmortem</a>. I ask myself 3 questions:</p>
 
 <ul>
 <li>What went well?</li>

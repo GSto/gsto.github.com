@@ -4,7 +4,7 @@
   <title><![CDATA[Category: motivation | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/motivation/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:28:24-05:00</updated>
+  <updated>2014-12-28T15:53:32-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -20,20 +20,24 @@
     <id>http://glennstovall.com/blog/2014/09/11/lessons-learned-from-thomas-edisons-factory-fire</id>
     <content type="html"><![CDATA[<h3>Edison Understood Resiliance AND Electricity</h3>
 
-<p><img class="left" src="/images/articles/edison_fire.jpg" width="260"></p>
+<p>{% img left /images/articles/edison_fire.jpg 260 %}</p>
 
 <p>On December 10th, 1914, Thomas Edison was having dinner with his family. A man rushes to his door and tells Edison that his factory had caught fire. Edison grabs his son Charles and they rush our the door. They head to the factory to see what is going on. When they get there the see a  vivid display of red, green, and blue fires, due to the various chemicals stored in his laboratory.</p>
 
 <p>This could be the end of Thomas Edison. He didn't even have insurance on the building, because it was designed to be fireproof. Edison looks at his son and says:</p>
 
-<p><blockquote><p>Go get your mother and all her friends. They'll never see a fire like this again.</p></blockquote></p>
+<p>{% blockquote %}
+Go get your mother and all her friends. They'll never see a fire like this again.
+{% endblockquote %}</p>
 
 <!-- more -->
 
 
 <p>Charles protested, to which Edison responded:</p>
 
-<p><blockquote><p>It's all right. We've just got rid of a lot of old rubbish.</p></blockquote></p>
+<p>{% blockquote %}
+It's all right. We've just got rid of a lot of old rubbish.
+{% endblockquote %}</p>
 
 <p>How was Edison able to look at a career threatening tragedy and take such a light hearted approach to such a catastrophe? Edison understood the philosophy of <a href="http://en.wikipedia.org/wiki/Stoicism">Stoicism</a>. Stoicism tells us that negative and destructive emotions are the result of errors in judgement.</p>
 
@@ -51,7 +55,7 @@
 
 <p>Many freelancer's are familiar with the term "feast or famine". It alludes to the fact that with client work, when it rains, it pours. Sometimes lots of sales come through at once, other times they don't. It can be stressful when work is slow. I had been feeling depressed and unmotivated for days facing a recent sales slump. However, by applying the philosophy of stoicism, I can see this in a very different light:</p>
 
-<p><img class="center" src="/images/articles/time_enough.jpg"></p>
+<p>{% img center /images/articles/time_enough.jpg %}</p>
 
 <h4>Time Enough At Last</h4>
 

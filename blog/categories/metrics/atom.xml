@@ -4,7 +4,7 @@
   <title><![CDATA[Category: metrics | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/metrics/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:28:24-05:00</updated>
+  <updated>2014-12-28T15:53:32-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -20,7 +20,7 @@
     <id>http://glennstovall.com/blog/2014/08/04/better-business-metrics</id>
     <content type="html"><![CDATA[<h3>Get Better Information From The Same Data</h3>
 
-<p><img class="left" src="/images/articles/analytics.jpg" width="260"></p>
+<p>{% img left /images/articles/analytics.jpg 260 %}</p>
 
 <p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
 
@@ -86,7 +86,7 @@
     <id>http://glennstovall.com/blog/2014/07/30/aarrr-pirate-metrics</id>
     <content type="html"><![CDATA[<h3>How to Track the 5 Numbers That Define Your Company's Success</h3>
 
-<p><img class="left" src="/images/articles/pirate.png" width="260"></p>
+<p>{% img left /images/articles/pirate.png 260 %}</p>
 
 <p><small class='notice'><em>This post orignally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
 

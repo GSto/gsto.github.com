@@ -4,7 +4,7 @@
   <title><![CDATA[Category: essentialism | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/essentialism/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:28:24-05:00</updated>
+  <updated>2014-12-28T15:53:32-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -20,22 +20,32 @@
     <id>http://glennstovall.com/blog/2014/09/10/essentialism-through-the-ages</id>
     <content type="html"><![CDATA[<h3>The Single Philosophy That Drives Artists, Designers, and Entrepreneurs</h3>
 
-<p><img src="/images/articles/simple_long.jpg"></p>
+<p>{% img /images/articles/simple_long.jpg %}</p>
 
 <p>In design, I've always been a fan of minimalism. Minimalism is a philosophy about boiling things down to their essential elements. It's about having a philosophy of "less but better". Great thinkers from all walks of life have touted the benefits of this kind of approach:</p>
 
 <!-- more -->
 
 
-<p><blockquote><p>Simplicity is the ultimate sophistication</p><footer><strong>Leonard Da Vinci</strong></footer></blockquote></p>
+<p>{% blockquote Leonard Da Vinci %}
+Simplicity is the ultimate sophistication
+{% endblockquote %}</p>
 
-<p><blockquote><p>Everything should be made as simple as possible, but not simpler.</p><footer><strong>Albert Einstein</strong></footer></blockquote></p>
+<p>{% blockquote Albert Einstein %}
+Everything should be made as simple as possible, but not simpler.
+{% endblockquote %}</p>
 
-<p><blockquote><p>Simplicity is the final achievement. After one has played a vast quantity of notes and more notes, it is simplicity that emerges as the crowning reward of art.</p><footer><strong>Fredric Chopin</strong></footer></blockquote></p>
+<p>{% blockquote Fredric Chopin %}
+Simplicity is the final achievement. After one has played a vast quantity of notes and more notes, it is simplicity that emerges as the crowning reward of art.
+{% endblockquote %}</p>
 
-<p><blockquote><p>Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius – and a lot of courage – to move in the opposite direction.</p><footer><strong>E.F. Schumacher</strong></footer></blockquote></p>
+<p>{% blockquote E.F. Schumacher %}
+Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius – and a lot of courage – to move in the opposite direction.
+{% endblockquote %}</p>
 
-<p><blockquote><p>Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it's worth it in the end because once you get there, you can move mountains.</p><footer><strong>Steve Jobs</strong></footer></blockquote></p>
+<p>{% blockquote Steve Jobs %}
+Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it's worth it in the end because once you get there, you can move mountains.
+{% endblockquote %}</p>
 
 <p>There is a universal truth that drives all of these musicians, artists, and visionaries. They all speak of the beauty and elegance of simplicity in all things. As entrepreneurs, we have the power to design not only our businesses, but our entire lives. However, many people end up working long hours, taking on lots of stress, and doing physical and mental harm to ourselves.</p>
 ]]></content>
@@ -46,7 +56,7 @@
     <link href="http://glennstovall.com/blog/2014/06/02/learning-to-say-no/"/>
     <updated>2014-06-02T16:27:00-04:00</updated>
     <id>http://glennstovall.com/blog/2014/06/02/learning-to-say-no</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/no.jpeg" width="260"></p>
+    <content type="html"><![CDATA[<p>{% img left /images/no.jpeg 260 %}</p>
 
 <p>I just looked in the mirror. I had several more gray hairs in my beard than I had before. I had taken on more client work than I could handle, and had been working long nights and weekends. I knew I was tired and stressed, but it was a real wake up call to see the physical effects of burnout, in addition to the mental. It was at that moment I realized something had to change with how I was managing my business. If you are a freelancer, You have to learn how to say no. Your business, just like a product, is going to be designed. If you don't carefully, mindfully design your own business, then other people will do it for you. And they won't have your best interest at heart.</p>
 
@@ -79,7 +89,7 @@
 
 <p>But by saying no to these things, we are enabling ourselves to say "Yes" to things we <strong>really</strong> love. Here is a chart from a new book called <a href="http://gregmckeown.com/essentialism-the-disciplined-pursuit-of-less/">"Essentialism: The Disciplined Pursuit of Less"</a> That sums this philosophy up perfectly. Instead of sending our energy out in a hundred directions, and feeling like we aren't making any progress, By eliminating the nonessential we can focus our energy in a direction that really matters.</p>
 
-<p><img src="/images/essentialism.jpg"></p>
+<p>{% img /images/essentialism.jpg %}</p>
 
 <p>It can be scary, but once you get used to it, the feeling of saying no is incredibly freeing.</p>
 ]]></content>

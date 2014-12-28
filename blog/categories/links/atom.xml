@@ -4,7 +4,7 @@
   <title><![CDATA[Category: links | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/links/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:28:24-05:00</updated>
+  <updated>2014-12-28T15:53:32-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,7 +18,7 @@
     <link href="http://glennstovall.com/blog/2014/02/21/other-writing-around-the-web/"/>
     <updated>2014-02-21T16:11:00-05:00</updated>
     <id>http://glennstovall.com/blog/2014/02/21/other-writing-around-the-web</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/writing.jpg" width="260"></p>
+    <content type="html"><![CDATA[<p>{% img left /images/articles/writing.jpg 260 %}</p>
 
 <p>I haven't spent much time writing content for this blog, but I have been doing some writing on other sites. Here are some of my posts from other sites:</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: angularjs | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/angularjs/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:28:24-05:00</updated>
+  <updated>2014-12-28T15:53:32-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,7 +18,7 @@
     <link href="http://glennstovall.com/blog/2014/09/26/testing-angularjs-with-karma-plus-jasmine/"/>
     <updated>2014-09-26T15:34:00-04:00</updated>
     <id>http://glennstovall.com/blog/2014/09/26/testing-angularjs-with-karma-plus-jasmine</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/angular.png" width="260"></p>
+    <content type="html"><![CDATA[<p>{% img left /images/angular.png 260 %}</p>
 
 <p>In a previous article about <a href="http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup/">Yeoman, AngularJS, and Foundation</a>, I talked about setting up a complete front end application scaffold with Yeoman, AngularJS, and Foundation. Now I want to look at how to test the AngularJS part of your application.</p>
 
@@ -49,17 +49,17 @@
 
 <p>For some reason, the <code>generator-angular</code> generator comes with some, but not all of the tools we'll need for running tests with Karma and Jasmine, so we need to fix that before we get started. Run the following lines on the command line:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>npm install grunt-karma --save-dev
-</span><span class='line'>npm install karma-phantomjs-launcher --save-dev
-</span><span class='line'>npm install karma-jasmine --save-dev</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+npm install grunt-karma --save-dev
+npm install karma-phantomjs-launcher --save-dev
+npm install karma-jasmine --save-dev
+{% endcodeblock %}</p>
 
 <h2>Step 2: Test the Tests</h2>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>grunt test</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+grunt test
+{% endcodeblock %}</p>
 
 <p>This should ensure that everything is installed correctly. If you running a clean install from Yeoman, then it should run that test. You can look at the file /test/spec/controllers/MainCtrl.js for an example of what a test looks like.</p>
 
@@ -167,7 +167,7 @@ mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
     <link href="http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup/"/>
     <updated>2014-09-22T14:18:00-04:00</updated>
     <id>http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/angular.png" width="260"></p>
+    <content type="html"><![CDATA[<p>{% img left /images/angular.png 260 %}</p>
 
 <p>With the combination of modern browsers and mobile devices having support for HTML5, CSS3, and new JavaScript APIs, front end development has become a lot more complex and exciting. There has been an explosion of tools as of late, and it can be daunting to know where to get started. Here are the tools and process I use in order to build a new front end application from scratch.</p>
 
@@ -189,54 +189,49 @@ mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
 
 <p>We'll be using <a href="http://yeoman.io/">Yeoman</a> to handle all of our scaffolding. Yeoman will create the initial files and folder structure for you, so that you don't have too. Yeoman uses generators, which are different templates it will use when creating your initial app. Yeoman is managed via npm. If you don't have node and npm installed, you can get the <a href="http://nodejs.org/download/">NodeJS installer here</a>. I prefer building web applications with <a href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/">AngularJS</a>, so we'll be installing a generator for an Angular application.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>npm install -g yo
-</span><span class='line'>npm install -g generator-angular</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+npm install -g yo
+npm install -g generator-angular
+{% endcodeblock %}</p>
 
 <h3>Step 2: Create The Scaffolding</h3>
 
 <p>Now that we have our tools installed, it's time to create our initial application. We'll create a new directory and run the generator:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir example-app
-</span><span class='line'>cd example-app
-</span><span class='line'>yo angular</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+mkdir example-app
+cd example-app
+yo angular
+{% endcodeblock %}</p>
 
 <p>If you have everything installed correctly, Yeomen should start building your application. Select 'yes' when it asks you if you want to install compass, then select no when it asks if you if you want to install Bootstrap. After a couple of minutes, you folder structure should look like this:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Gruntfile.js
-</span><span class='line'>/app
-</span><span class='line'>bower.json
-</span><span class='line'>bower_components
-</span><span class='line'>node_modules
-</span><span class='line'>package.json
-</span><span class='line'>/test</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+Gruntfile.js
+/app
+bower.json
+bower_components
+node_modules
+package.json
+/test
+{% endcodeblock %}</p>
 
 <h3>Step 3: Install Dependencies</h3>
 
 <p>Now we need to run our package managers to install dependencies. First, we will run NPM in order to install development dependencies, then <a href="http://bower.io/">Bower</a> to install front end dependencies:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>npm install
-</span><span class='line'>bower install</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+npm install
+bower install
+{% endcodeblock %}</p>
 
 <h3>Step 4: Test The Servers</h3>
 
 <p>Run the server and make sure everything is working OK:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>grunt serve</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+grunt serve
+{% endcodeblock %}</p>
 
 <p>Once this runs, navigate to <code>localhost:9000</code>. You should see the yeoman placeholder page.</p>
 
@@ -259,8 +254,9 @@ mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
 
 <p>I prefer <a href="http://foundation.zurb.com/">Zurb's Foundation</a> to <a href="http://getbootstrap.com/2.3.2/">Twitter's Bootstrap</a>. In my opinion, it's easier to use and has cleaner markup. Since we are using Bower, this process is simple. Run the following command from the root directory of your project:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>bower install foundation --save</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+  bower install foundation --save
+{% endcodeblock %}</p>
 
 <p>The <code>save</code> flag will update your <code>bower.json</code> file. If you want to use any of the JavaScript functionality of Foundation, add the following to your app.js file after <code>use strict</code>:</p>
 
@@ -281,7 +277,7 @@ mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
     <link href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/"/>
     <updated>2013-06-27T12:33:00-04:00</updated>
     <id>http://glennstovall.com/blog/2013/06/27/angularjs-an-overview</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/angular.png" width="260"></p>
+    <content type="html"><![CDATA[<p>{% img left /images/angular.png 260 %}</p>
 
 <p>AngularJS is a JavaScript framework made by Google for building complex client-side applications. Angular's killer feature is 'directives' which allow you to extend HTML by creating your own tags and attributes. Angular projects have a somewhat different structure than other JavaScript MVC frameworks, but it can be highly modular and easy to maintain once you understand the structure. Let's take a look at the main components of AngularJS and how they work, and why you should strongly consider Angular for your next project.</p>
 
@@ -306,33 +302,26 @@ mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
 
 <p>Let's take a look at a very simple AngularJS app, that uses <strong>two-way data binding</strong>.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;div&gt;&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;pre&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>input type=&#39;text&#39; ng-model=&#39;name&#39; /<span class="ni">&amp;gt;</span>
-</span><span class='line'><span class="ni">&amp;lt;</span>h2<span class="ni">&amp;gt;</span>{{name}}<span class="ni">&amp;lt;</span>/h2<span class="ni">&amp;gt;</span>
-</span><span class='line'><span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;p&gt;</span>  <span class="nt">&lt;/div&gt;</span>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{%codeblock index.html lang:html %}
+{% raw %}
+<body ng-app>
+  <div></p>
+
+<pre><code>&lt;input type='text' ng-model='name' /&gt;
+&lt;h2&gt;{{name}}&lt;/h2&gt;
+</code></pre>
+
+<p>  </div>
+</body>
+{% endraw %}
+{% endcodeblock %}</p>
 
 <p>Let's break this down line by line to explain what is happening:</p>
 
 <ul>
 <li><code>&lt;body ng-app&gt;</code> : all Angular code must be wrapper in this directive. This declares that everything within this tag will be treated as an angular application.</li>
 <li><code>&lt;input type='text' ng-model='name' /&gt;</code> : This is one part of the data binding. Here we are using another directive, ng-model, to bind the input to a string. Note that in this example we also see that attribute directives can have arguments.</li>
-<li><code>&lt;h2&gt;{{name}}&lt;/h2&gt;</code> : Whenever you type into the input box, this h2 tag updates automatically. This is the automatic DOM manipulation I mentioned earlier. We were able to do this without writing a single line of JavaScript.</li>
+<li>{% raw %}<code>&lt;h2&gt;{{name}}&lt;/h2&gt;</code>{% endraw %} : Whenever you type into the input box, this h2 tag updates automatically. This is the automatic DOM manipulation I mentioned earlier. We were able to do this without writing a single line of JavaScript.</li>
 </ul>
 
 
@@ -340,15 +329,13 @@ mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
 
 <p><strong>Modules</strong> are used to organize the objects in an AngularJS application. Modules can either be used as as the 'core' of an application, and contain all of the classes used for it, or they can be used to group several objects that have similar functionality. Let's create a module for our application:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>app.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;myApp&#39;</span><span class="p">,</span> <span class="p">[]);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock app.js lang:javascript %}
+app = angular.module('myApp', []);
+{% endcodeblock %}</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app=</span><span class="s">&#39;myApp&#39;</span><span class="nt">&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{%codeblock index.html lang:html %}
+<body ng-app='myApp'>
+{% endcodeblock %}</p>
 
 <p>The first argument passed to <code>angular.module</code> is the name of the module. We have passed that name to the <code>ng-app</code> to bind everything contained in that directive to our module. The second argument is an array of other modules your module depends on. This is empty since we currently don't have any. Much like directives, AngularJS contains several modules already built that you can include in your projects.</p>
 
@@ -358,108 +345,71 @@ mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
 
 <p>Controllers are tied to particular html elements. They contain data and functions that the html can interact with, and can interact with other service objects, which can handle things such as communicating with the server. Let's create a controller and bind it to a div in our application.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>app.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;mainCtrl&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">){</span>
-</span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Default Name&#39;</span><span class="p">;</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock app.js lang:javascript %}
+app.controller('mainCtrl', function($scope){
+  $scope.name = 'Default Name';
+});
+{% endcodeblock %}</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app=</span><span class="s">&#39;myApp&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&#39;mainCtrl&#39;</span><span class="nt">&gt;&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;pre&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>input type=&#39;text&#39; ng-model=&#39;name&#39; /<span class="ni">&amp;gt;</span>
-</span><span class='line'><span class="ni">&amp;lt;</span>h2<span class="ni">&amp;gt;</span>{{name}}<span class="ni">&amp;lt;</span>/h2<span class="ni">&amp;gt;</span>
-</span><span class='line'><span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;p&gt;</span>  <span class="nt">&lt;/div&gt;</span>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock index.html lang:html %}
+{% raw %}
+<body ng-app='myApp'>
+  <div ng-controller='mainCtrl'></p>
+
+<pre><code>&lt;input type='text' ng-model='name' /&gt;
+&lt;h2&gt;{{name}}&lt;/h2&gt;
+</code></pre>
+
+<p>  </div>
+</body>
+{% endraw %}
+{% endcodeblock %}</p>
 
 <p>Here we've used the <code>ng-controller</code> directive to bind our controller function to a div. Controllers get one argument by default which is called <code>$scope</code>. <code>$scope</code> contains all of the data that the html can interact with. When you reload the page, you will notice that the input now starts with the field filled in with 'Default Name'. This is because we set that variable in the controller, which is called when the page is loaded.</p>
 
 <p>Functions can also applied to scope and then called inside the HTML. Angular contains several directives for handling various events. Let's change our example to include a function that we will call with an <code>ng-click</code> directive. We will add a button to save the name we create and later display the list.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>app.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;mainCtrl&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">){</span>
-</span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Default Name&#39;</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">people</span> <span class="o">=</span> <span class="p">[];</span>
-</span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">savePerson</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">people</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
-</span><span class='line'><span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">};</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock app.js lang:javascript %}
+app.controller('mainCtrl', function($scope){
+  $scope.name = 'Default Name';
+  $scope.people = [];
+  $scope.savePerson = function() {</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body</span> <span class="na">ng-app=</span><span class="s">&#39;myApp&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&#39;mainCtrl&#39;</span><span class="nt">&gt;&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;pre&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>input type=&#39;text&#39; ng-model=&#39;name&#39; /<span class="ni">&amp;gt;</span>
-</span><span class='line'><span class="ni">&amp;lt;</span>button ng-click=&#39;savePerson()&#39;<span class="ni">&amp;gt;</span>Save Person<span class="ni">&amp;lt;</span>/button<span class="ni">&amp;gt;</span>
-</span><span class='line'><span class="ni">&amp;lt;</span>h2<span class="ni">&amp;gt;</span>{{name}}<span class="ni">&amp;lt;</span>/h2<span class="ni">&amp;gt;</span>
-</span><span class='line'><span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;p&gt;</span>  <span class="nt">&lt;/div&gt;</span>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<pre><code>$scope.people.push($scope.name);
+$scope.name = '';
+</code></pre>
+
+<p>  };
+});
+{% endcodeblock %}</p>
+
+<p>{% codeblock index.html lang:html %}
+{% raw %}
+<body ng-app='myApp'>
+  <div ng-controller='mainCtrl'></p>
+
+<pre><code>&lt;input type='text' ng-model='name' /&gt;
+&lt;button ng-click='savePerson()'&gt;Save Person&lt;/button&gt;
+&lt;h2&gt;{{name}}&lt;/h2&gt;
+</code></pre>
+
+<p>  </div>
+</body>
+{% endraw %}
+{% endcodeblock %}</p>
 
 <p>Now we can save a list of these people. We can use another directive called <code>ng-repeat</code> To output a list of the people we have saved:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;ul&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&#39;person in people&#39;</span><span class="nt">&gt;</span>{{person}}<span class="nt">&lt;/li&gt;</span>
-</span><span class='line'><span class="nt">&lt;/ul&gt;</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;p&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock index.html lang:html %}
+{% raw %}</p>
+
+<ul>
+  <li ng-repeat='person in people'>{{person}}</li>
+</ul>
+
+
+<p>{% endraw %}
+{% endcodeblock %}</p>
 
 <p>Now that we have seen how we can manipulate data inside the JavaScript, let's look at how we can manipulate the DOM, by creating our own <strong>directives</strong></p>
 
@@ -467,45 +417,31 @@ mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
 
 <p>You have already seen directives in use in several places inside the application. You can also define your own directives as part of your application. Let's create an alertable directive that will allow you to set a message to be alerted whenever you click on the element.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>app.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">directive</span><span class="p">(</span><span class="s1">&#39;alertable&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>  <span class="k">return</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">restrict</span> <span class="o">:</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">link</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">scope</span><span class="p">,</span> <span class="nx">element</span><span class="p">,</span> <span class="nx">attrs</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">element</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">alert</span><span class="p">(</span><span class="nx">attrs</span><span class="p">.</span><span class="nx">alertable</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">});</span>
-</span><span class='line'> <span class="p">}</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">};</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock app.js lang:javascript %}
+app.directive('alertable', function(){
+  return {</p>
+
+<pre><code>restrict : 'A',
+link: function(scope, element, attrs) {
+  element.bind('click', function() {
+    alert(attrs.alertable);
+  });
+ }
+</code></pre>
+
+<p>  };
+});
+{% endcodeblock %}</p>
 
 <p>And now we an add this to our person list:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&#39;person in people&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">alertable=</span><span class="s">&#39;{{person}}&#39;</span><span class="nt">&gt;</span>{{person}}<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;/li&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock index.html lang:html %}
+{% raw %}
+<li ng-repeat='person in people'>
+  <span alertable='{{person}}'>{{person}}</span>
+</li>
+{% endraw %}
+{% endcodeblock %}</p>
 
 <p>As you can see, directives return an object that will define the directive. There are several optional arguments that can be passed here, but let's look at the two we used here:</p>
 
@@ -525,47 +461,39 @@ mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
 
 <p>Services are classes that can either contain business logic or handle data. Now we are going to refactor  our previous example and create a service that can handle the data in our list of people.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>app.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">factory</span><span class="p">(</span><span class="s1">&#39;PersonService&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">PersonService</span> <span class="o">=</span> <span class="p">{};</span>
-</span><span class='line'>  <span class="nx">PersonService</span><span class="p">.</span><span class="nx">people</span> <span class="o">=</span> <span class="p">[];</span>
-</span><span class='line'>  <span class="nx">PersonService</span><span class="p">.</span><span class="nx">addPerson</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">person</span><span class="p">)</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">PersonService</span><span class="p">.</span><span class="nx">people</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">person</span><span class="p">);</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">};</span>
-</span><span class='line'>  <span class="k">return</span> <span class="nx">PersonService</span><span class="p">;</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock app.js lang:javascript %}
+app.factory('PersonService', function() {
+  var PersonService = {};
+  PersonService.people = [];
+  PersonService.addPerson = function(person) {</p>
+
+<pre><code>PersonService.people.push(person);
+</code></pre>
+
+<p>  };
+  return PersonService;
+});
+{% endcodeblock %}</p>
 
 <p>You'll notice that services are created slightly differently than controllers. Controllers are just a function, where services are a function that returns an object. This allows you to add private methods to your service if you would like.</p>
 
 <p>Now we need a way for our controller to have access to the service we just created. Since they are in the same module, this is very easy to do. This also involves one of the more "magical" features of Angular. To give the controller access to our service, we just have to add it as an argument to our controller, like so:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>app.controller('mainCtrl', function($scope, PersonService){});</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+app.controller('mainCtrl', function($scope, PersonService){});
+{% endcodeblock %}</p>
 
 <p>What's really surprising is that if you change the order of the arguments to the controller function, <em>it will not change how the controller function operates</em>. So, if we did this instead:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>app.controller('mainCtrl', function(PersonService, $scope){});</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+app.controller('mainCtrl', function(PersonService, $scope){});
+{% endcodeblock %}</p>
 
 <p>Our function would behave in exactly the same way. This is because AngularJS looks at the names of the arguments of a function to decide what to pass to them. Now, you may be concerned that this could break if you were to minify your JavaScript, and you would be right. Luckily, Angular provides an alternate way of declaring functions to prevent issues when minifying your code. It involves passing an array of strings to tell angular what the arguments should be, with the actual function as the last element in the array. So now your controller would look like this:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>app.controller('mainCtrl', ['$scope', 'PersonService', function($scope, PersonService){}]);</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+app.controller('mainCtrl', ['$scope', 'PersonService', function($scope, PersonService){}]);
+{% endcodeblock %}</p>
 
 <p>When writing services, Angular provides some helpful modules for communicating with the server. Some of the most useful are <a href="">ngHttp</a> and <a href="">ngResource</a>. ngHttp is used to make HTTP requests. ngResource is an extension of ngHttp designed to work exclusively with REST APIs. This is another reason why when you are declaring a service, you are asked for a function that returns an object; We are able to use this function to extend an existing object like ngResource and return it.</p>
 
@@ -573,62 +501,52 @@ mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
 
 <p>Angular also provides support for routing with URLs. Routing is performed by using the <code>config</code> function of the module. Let's use this to structure separate pages for our main page, and give each person in our person list a profile page. Here is what the route provider will look like:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>app.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">app</span><span class="p">.</span><span class="nx">config</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$routeProvider</span><span class="p">){</span>
-</span><span class='line'>  <span class="nx">$routeProvider</span><span class="p">.</span><span class="nx">when</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">templateUrl</span><span class="o">:</span> <span class="s1">&#39;templates/home.html&#39;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">controller</span><span class="o">:</span> <span class="s1">&#39;homePageCtrl&#39;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">});</span>
-</span><span class='line'>  <span class="nx">$routeProvider</span><span class="p">.</span><span class="nx">when</span><span class="p">(</span><span class="s1">&#39;/person/:id&#39;</span><span class="p">,</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">templateUrl</span><span class="o">:</span> <span class="s1">&#39;templates/profile.html&#39;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">controller</span><span class="o">:</span> <span class="s1">&#39;profileCtrl&#39;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">});</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock app.js lang:javascript %}
+app.config(function($routeProvider){
+  $routeProvider.when('/', {</p>
+
+<pre><code>templateUrl: 'templates/home.html',
+controller: 'homePageCtrl'
+</code></pre>
+
+<p>  });
+  $routeProvider.when('/person/:id', {</p>
+
+<pre><code>templateUrl: 'templates/profile.html', 
+controller: 'profileCtrl'
+</code></pre>
+
+<p>  });
+});
+{% endcodeblock %}</p>
 
 <h3>Filters</h3>
 
 <p>Filters are a smaller, but often useful part of AngularJS. Filters are used to transform data when it is displayed to the user. Like directives, you can build them yourself, and Angular also includes several useful ones built-in. Let's look at the following HTML:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;span>Price:&lt;/span> 300</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+<span>Price:</span> 300
+{% endcodeblock %}</p>
 
 <p>Which will look like this in the browser:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Price: 300</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+Price: 300
+{% endcodeblock %}</p>
 
 <p>We can apply a couple filters to this to make it look different, by using the <code>|</code> operator:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;span>{{ "Price:" | uppercase }}&lt;/span> {{ "300" | currency }}</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+{% raw %}
+<span>{{ "Price:" | uppercase }}</span> {{ "300" | currency }}
+{% endraw %}
+{% endcodeblock %}</p>
 
 <p>And our output will now look like this:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>PRICE: $300.00</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+PRICE: $300.00
+{% endcodeblock %}</p>
 
 <h3>Additional Reading</h3>
 

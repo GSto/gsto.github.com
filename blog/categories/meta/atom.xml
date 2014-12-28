@@ -4,7 +4,7 @@
   <title><![CDATA[Category: meta | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/meta/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:28:24-05:00</updated>
+  <updated>2014-12-28T15:53:32-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,9 +18,7 @@
     <link href="http://glennstovall.com/blog/2014/12/28/2014-postmortem/"/>
     <updated>2014-12-28T14:53:00-05:00</updated>
     <id>http://glennstovall.com/blog/2014/12/28/2014-postmortem</id>
-    <content type="html"><![CDATA[<h1>2014 Post Mortem</h1>
-
-<p>Every Year I take a look back at my business, and do the same exercise I do with every client project: a <a href="http://en.wikipedia.org/wiki/Postmortem_documentation#Elements_of_a_project_post-mortem">postmortem</a>. I ask myself 3 questions:</p>
+    <content type="html"><![CDATA[<p>Every Year I take a look back at my business, and do the same exercise I do with every client project: a <a href="http://en.wikipedia.org/wiki/Postmortem_documentation#Elements_of_a_project_post-mortem">postmortem</a>. I ask myself 3 questions:</p>
 
 <ul>
 <li>What went well?</li>
@@ -258,7 +256,7 @@
     <id>http://glennstovall.com/blog/2014/09/16/exactly-how-i-got-my-first-500-subscribers-annoucing-a-new-case-study-and-seminar</id>
     <content type="html"><![CDATA[<h3>Learn The Exact Techniques I Used to Build An Audience From Scratch</h3>
 
-<p><img class="left" src="/images/articles/audience_building_cover.png" width="260"></p>
+<p>{% img left /images/articles/audience_building_cover.png 260 %}</p>
 
 <p>Four months ago, I decided to start building an mailing list. I wanted to build new relationships in my field and expand my network. Overtime I built the list to over 500 subscribers. After some conversations, I saw that other people were interested in how I did it. I sat down to write down a case study. I wanted to be as exact and transparent as possible. It got a little out of hand, but at the end I believe I've crafted a valuable guide for anyone who wants to start growing their audience.</p>
 
@@ -284,7 +282,7 @@
     <id>http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog</id>
     <content type="html"><![CDATA[<h3>Personal vs. Professional Blogging, Part II</h3>
 
-<p><img class="left" src="/images/articles/concordant-articles.png" width="260"></p>
+<p>{% img left /images/articles/concordant-articles.png 260 %}</p>
 
 <p>Back in March, I wrote and article, <a href="http://glennstovall.com/blog/2014/03/05/personal-blogging-vs-professional-blogging/">Personal vs. Professional Blogging</a>. In that article I explained why I decided to publish my writing on  two blogs: <a href="http://www.glennstovall.com">glennstovall.com</a>, Where I planned on writing content aimed at fellow developers and freelancers. The other site was <a href="http://www.concordantsolutions.com/articles">Concordant Solutions</a> My "company brand" (<em>ugh</em>, I will never be comfortable with that phrase) where I aimed to write content I thought clients would enjoy. That hasn't worked. Here is why, and how I plan to fix.</p>
 
@@ -326,7 +324,7 @@
     <link href="http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem/"/>
     <updated>2014-05-09T10:31:00-04:00</updated>
     <id>http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/freelance_pricing_handbook.png" width="260"></p>
+    <content type="html"><![CDATA[<p>{% img left /images/freelance_pricing_handbook.png 260 %}</p>
 
 <p>Whenever I finish a product, I like to write a post-mortem. A post-mortem answers a few important questions: What w went well? What went wrong? What could be done better next time? I usually keep these to myself, but this time I wanted to share. Building an email list is something every business should be doing, and I wanted to share the specific techniques I used in order to increase the size of a list 500% in 2 days.</p>
 

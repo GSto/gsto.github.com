@@ -4,7 +4,7 @@
   <title><![CDATA[Category: iteration | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/iteration/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:28:24-05:00</updated>
+  <updated>2014-12-28T15:53:32-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -20,7 +20,7 @@
     <id>http://glennstovall.com/blog/2014/08/04/how-to-do-product-iteration-in-1-image</id>
     <content type="html"><![CDATA[<h3>How Spotify apporaches feature development</h3>
 
-<p><img class="center" src="/images/articles/spotify-iteration.jpg"></p>
+<p>{% img center /images/articles/spotify-iteration.jpg %}</p>
 
 <p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
 

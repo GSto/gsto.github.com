@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:28:24-05:00</updated>
+  <updated>2014-12-28T15:53:32-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -20,7 +20,7 @@
     <id>http://glennstovall.com/blog/2012/02/15/terminals-for-absolute-beginners</id>
     <content type="html"><![CDATA[<h3>Directories and Commands</h3>
 
-<p><img class="left" src="/images/articles/terminal.jpg" width="260"></p>
+<p>{% img left /images/articles/terminal.jpg 260 %}</p>
 
 <p>You've woken up in a strange place. Maybe you've decided you want to be a power user with your mac. Maybe you've finally decided to check out this strangle 'Linux' thing you've heard so much about.  Maybe its your first day in software engineering class and the teacher is telling you you are going to have to work on the school's server to turn in all of your work. Either way, you find yourself eye-to-eye with a terminal (commonly called the <em>command line</em>) and you don't know what to do.</p>
 
