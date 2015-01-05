@@ -4,7 +4,7 @@
   <title><![CDATA[Category: video | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/video/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -20,7 +20,7 @@
     <id>http://glennstovall.com/blog/2014/09/23/talking-productized-consulting-with-nick-disabato-video</id>
     <content type="html"><![CDATA[<h3>The Origin Story of Draft Revise</h3>
 
-<p>{% img left /images/articles/nickd.jpeg 260 %}</p>
+<p><img class="left" src="/images/articles/nickd.jpeg" width="260"></p>
 
 <p>In this interview I am talking with Nick Disabato, Owner of <a href="https://draft.nu/">Draft</a>, Author of <a href="http://cadence.cc/">Cadence &amp; Slang</a>,, and <a href="https://draft.nu/revise/">Draft Revise</a>, a recurring split testing service that Nick offers to clients. In this interview, Nick talks about creating a new service offering from scratch, How he got his first customers, and how Draft Revise has changed his business.</p>
 

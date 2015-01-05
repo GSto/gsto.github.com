@@ -4,7 +4,7 @@
   <title><![CDATA[Category: emacs | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/emacs/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -59,7 +59,7 @@
 
 <p>James Clear wrote an article about a <a href="http://jamesclear.com/marginal-gains">coach who worked in marginal gains</a>. Marginal gains has a compounding effect. If you are making small gains over time, they will pile on top of each other until to have made a mountain of progress. Conversely, if you slip over time you will end up digging a pit of failure.</p>
 
-<p>{% img center /images/articles/slight_edge.jpg %}
+<p><img class="center" src="/images/articles/slight_edge.jpg">
 <small>The Slight Edge By Jeff Olson</small></p>
 ]]></content>
   </entry>

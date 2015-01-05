@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:05-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Building Reliable Web Apps Show Notes]]></title>
+    <link href="http://glennstovall.com/blog/2015/01/05/building-reliable-web-apps-show-notes/"/>
+    <updated>2015-01-05T09:17:00-05:00</updated>
+    <id>http://glennstovall.com/blog/2015/01/05/building-reliable-web-apps-show-notes</id>
+    <content type="html"><![CDATA[<p>These are notes and links from a presentation I gave to the Developers of Athens on testing client side applications.</p>
+
+<!--more-->
+
+
+<div style='margin-left:auto;margin-right:auto;max-width:25em;'>
+<iframe src="http://glennstovall.com//www.slideshare.net/slideshow/embed_code/43211030" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="display:block"></iframe>
+</div>
+
+
+<h2>Tools</h2>
+
+<ul>
+<li><a href="http://nodejs.org/download/">NodeJS Download</a></li>
+<li><a href="http://gruntjs.com/getting-started">Grunt: JavaScript Task Runner</a></li>
+<li><a href="http://jasmine.github.io/">Jasmine: JavaScript Testing Framework</a></li>
+<li><a href="http://jquery.com/">jQuery</a></li>
+<li><a href="http://phantomjs.org/">PhantomJS</a></li>
+</ul>
+
+
+<h2>Addon Libraribes</h2>
+
+<ul>
+<li><a href="https://github.com/gruntjs/grunt-contrib-jasmine">grunt-contrib-jasmine</a></li>
+<li><a href="https://github.com/jasmine/jasmine/tree/master/dist">jasmine standalone</a></li>
+<li><a href="https://github.com/velesin/jasmine-jquery">jasmine-jquery</a></li>
+<li><a href="http://jasmine.github.io/2.1/ajax.html">jasmine-ajax</a></li>
+</ul>
+
+
+<h2>Source Code</h2>
+
+<p>The source code for an example application can be found on this page:</p>
+
+<p><a href="https://github.com/GSto/reliable-client-side">Example Application</a></p>
+
+<h2>Further Reading</h2>
+
+<ul>
+<li><a href="http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup/">Yeoman + AngularJS + Foundation: A Modern Front End Setup</a></li>
+<li><a href="http://glennstovall.com/blog/2014/09/26/testing-angularjs-with-karma-plus-jasmine/">Testing AngularJS With Karma + Jasmine</a></li>
+<li><a href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/">AngularJS: An Overview</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[2014 Postmortem]]></title>
@@ -28,6 +81,9 @@
 
 
 <p>This is a valuable writing exercise, and I’d strongly encourage you to do the same. This is my postmortem of 2014, as well as a review of how I did on my goals I set for myself at the beginning of the year.</p>
+
+<!--more-->
+
 
 <h2>Did I Hit My 2013 Goals?</h2>
 
@@ -179,6 +235,10 @@
 <h3>Investing In My Business</h3>
 
 <p>I invested significantly more in my education and in networking than I did last year, and both paid off in spades. Many books I’ve read, groups I’ve joined, and services I’ve used have paid for themselves many times over. This year I’m excited to find more opportunities where I believe I can make my money work for me.</p>
+
+<h3>25% Revenue Growth</h3>
+
+<p>Self-explanitory.</p>
 ]]></content>
   </entry>
   
@@ -1331,21 +1391,6 @@ Here are things that don&#8217;t count:</li>
 <p>Since I&#8217;m bending the rules a bit, I&#8217;m going to publish something every 30 days instead of just on weekdays. This also means that for the weekends I&#8217;ll probably write three things on Friday and space them out over the weekend.</p>
 
 <p>So you up to taking the challenge? If  <a href="http://www.glennstovall.com/contact">drop me a line</a>. I&#8217;d love to follow along with what you are doing.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How I Used Writing to Double My Freelancing Rate As A Programmer]]></title>
-    <link href="http://glennstovall.com/blog/2014/08/16/how-i-used-writing-to-double-my-freelancing-rate-as-a-programmer/"/>
-    <updated>2014-08-16T11:57:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/08/16/how-i-used-writing-to-double-my-freelancing-rate-as-a-programmer</id>
-    <content type="html"><![CDATA[<script async src="https://static.medium.com/embed.js"></script>
-
-
-<p><a class="m-story" data-collapsed="true" href="https://medium.com/@gsto/7b321bedecdc">How I Used Writing to Double My Freelancing Rate As A Programmer</a></p>
-
-<!-- more -->
-
 ]]></content>
   </entry>
   

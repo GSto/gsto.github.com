@@ -4,7 +4,7 @@
   <title><![CDATA[Category: self publishers journey | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/self-publishers-journey/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,7 +18,7 @@
     <link href="http://glennstovall.com/blog/2014/06/06/the-self-publishers-journey/"/>
     <updated>2014-06-06T14:34:00-04:00</updated>
     <id>http://glennstovall.com/blog/2014/06/06/the-self-publishers-journey</id>
-    <content type="html"><![CDATA[<p>{% img left /images/cover.jpg 260 %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/cover.jpg" width="260"></p>
 
 <p>I'm working on self publishing and eBook in the coming months, and I wanted to document my journey and share it with you. I have enjoyed and been inspired by other writings such as <a href="http://groovehq.com/blog">Alex Turnbull documenting his ongoing journey to get to $100,000 recurring revenue</a>, and Nathan Barry's <a href="http://nathanbarry.com/category/the-web-app-challenge/">"Web App in Six Months Challenge"</a>. There is nothing like publicly sharing your techniques and struggles in order to both share useful information with other people, and to keep myself accountable.</p>
 

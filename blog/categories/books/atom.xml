@@ -4,7 +4,7 @@
   <title><![CDATA[Category: books | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/books/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,7 +18,7 @@
     <link href="http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem/"/>
     <updated>2014-05-09T10:31:00-04:00</updated>
     <id>http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem</id>
-    <content type="html"><![CDATA[<p>{% img left /images/freelance_pricing_handbook.png 260 %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/freelance_pricing_handbook.png" width="260"></p>
 
 <p>Whenever I finish a product, I like to write a post-mortem. A post-mortem answers a few important questions: What w went well? What went wrong? What could be done better next time? I usually keep these to myself, but this time I wanted to share. Building an email list is something every business should be doing, and I wanted to share the specific techniques I used in order to increase the size of a list 500% in 2 days.</p>
 
@@ -88,7 +88,7 @@
     <link href="http://glennstovall.com/blog/2014/04/29/announcing-the-freelance-pricing-handbook/"/>
     <updated>2014-04-29T08:47:00-04:00</updated>
     <id>http://glennstovall.com/blog/2014/04/29/announcing-the-freelance-pricing-handbook</id>
-    <content type="html"><![CDATA[<p> {% img left /images/freelance_pricing_handbook.png 260 %}</p>
+    <content type="html"><![CDATA[<p> <img class="left" src="/images/freelance_pricing_handbook.png" width="260"></p>
 
 <p> Today I'm proud to announce a new free eBook guide. The book is called the <em>Freelance Pricing Handbook</em>, and it's designed to help freelancers find their perfect rate. The most common question I hear from current and aspiring freelancers is "How much should I charge?" This book sets out to answer this question.</p>
 

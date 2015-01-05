@@ -4,7 +4,7 @@
   <title><![CDATA[Category: freelancing | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/freelancing/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -28,6 +28,9 @@
 
 
 <p>This is a valuable writing exercise, and I’d strongly encourage you to do the same. This is my postmortem of 2014, as well as a review of how I did on my goals I set for myself at the beginning of the year.</p>
+
+<!--more-->
+
 
 <h2>Did I Hit My 2013 Goals?</h2>
 
@@ -179,6 +182,10 @@
 <h3>Investing In My Business</h3>
 
 <p>I invested significantly more in my education and in networking than I did last year, and both paid off in spades. Many books I’ve read, groups I’ve joined, and services I’ve used have paid for themselves many times over. This year I’m excited to find more opportunities where I believe I can make my money work for me.</p>
+
+<h3>25% Revenue Growth</h3>
+
+<p>Self-explanitory.</p>
 ]]></content>
   </entry>
   
@@ -271,7 +278,7 @@ $leads_per_month * $conversion_rate * $customer_ltv * 12 = $annual_revenue.
     <link href="http://glennstovall.com/blog/2014/10/15/5-ways-to-build-a-200000-consultancy/"/>
     <updated>2014-10-15T05:00:00-04:00</updated>
     <id>http://glennstovall.com/blog/2014/10/15/5-ways-to-build-a-200000-consultancy</id>
-    <content type="html"><![CDATA[<p>{% img left /images/articles/5waysto_key.png 260 %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/5waysto_key.png" width="260"></p>
 
 <p>I recently read an article entitled <a href="http://christophjanz.blogspot.com/2014/10/five-ways-to-build-100-million-business.html">5 ways to build a $100 million dollar business</a>. It discusses different business models that vary on the number and size of your customer base. Some businesses work with a few enterprise scale clients, while others work with a larger number of smaller customers. Patrick Mackenzie mentioned on Twitter that <a href="https://twitter.com/patio11/status/521878305151000577">"The math here is equally applicable if you are trying to build, say, a $200k a year business"</a>.A $200k/yr consultancy is a goal that seems both attractive and attainable, so I decided try and answer the question "How can you build a $200,000 consultancy?"</p>
 
@@ -318,7 +325,7 @@ $leads_per_month * $conversion_rate * $customer_ltv * 12 = $annual_revenue.
     <id>http://glennstovall.com/blog/2014/09/23/talking-productized-consulting-with-nick-disabato-video</id>
     <content type="html"><![CDATA[<h3>The Origin Story of Draft Revise</h3>
 
-<p>{% img left /images/articles/nickd.jpeg 260 %}</p>
+<p><img class="left" src="/images/articles/nickd.jpeg" width="260"></p>
 
 <p>In this interview I am talking with Nick Disabato, Owner of <a href="https://draft.nu/">Draft</a>, Author of <a href="http://cadence.cc/">Cadence &amp; Slang</a>,, and <a href="https://draft.nu/revise/">Draft Revise</a>, a recurring split testing service that Nick offers to clients. In this interview, Nick talks about creating a new service offering from scratch, How he got his first customers, and how Draft Revise has changed his business.</p>
 
@@ -353,7 +360,7 @@ $leads_per_month * $conversion_rate * $customer_ltv * 12 = $annual_revenue.
     <id>http://glennstovall.com/blog/2014/09/18/how-to-start-a-consultantcy-in-16-hours-from-kai-davis</id>
     <content type="html"><![CDATA[<h3>An Actionable Plan From The Side Hustle Nation</h3>
 
-<p>{% img left /images/articles/kai-davis.jpg 260 %}</p>
+<p><img class="left" src="/images/articles/kai-davis.jpg" width="260"></p>
 
 <p>My friend <a href="http://kaidavis.com/">Kai Davis</a> was recently on the side hustle nation podcast. The episode is <a href="http://www.sidehustlenation.com/start-side-hustle-consulting-business-gets-paid/">How to Start a Side Hustle Consulting Business that Gets Paid</a>. One particular nugget of gold from this podcast: When asked what he would do if he had to start all over, Kai responds with how he would start a new consultancy in 16 hours.</p>
 

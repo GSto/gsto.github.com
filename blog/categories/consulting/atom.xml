@@ -4,7 +4,7 @@
   <title><![CDATA[Category: consulting | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/consulting/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,7 +18,7 @@
     <link href="http://glennstovall.com/blog/2014/03/05/take-out-the-tech/"/>
     <updated>2014-03-05T15:25:00-05:00</updated>
     <id>http://glennstovall.com/blog/2014/03/05/take-out-the-tech</id>
-    <content type="html"><![CDATA[<p>{% img left /images/articles/make_fire.jpg 260 %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/make_fire.jpg" width="260"></p>
 
 <p>If you are a freelance developer, designer, photographer, or even a freelance sheep sheerer, it's easy to get caught up in what it is you do, versus why it is we actually do it. More important than why we do it, is why people are willing to pay us good money for what we do. In this article I'd like to take a look at why I decided to re-position my services, and most important of all, get you to stop talking like a nerd because it's costing you money and sales.</p>
 

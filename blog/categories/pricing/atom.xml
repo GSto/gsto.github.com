@@ -4,7 +4,7 @@
   <title><![CDATA[Category: pricing | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/pricing/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -35,7 +35,7 @@
     <id>http://glennstovall.com/blog/2014/08/04/breakdown-of-a-pricing-grid</id>
     <content type="html"><![CDATA[<h3>Learn Why is The Middle Plan Always Called The "Best Value"</h3>
 
-<p>{% img left /images/articles/bidsketch_pricing_full.png 260 %}</p>
+<p><img class="left" src="/images/articles/bidsketch_pricing_full.png" width="260"></p>
 
 <p><small class='notice'><em>This post originally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
 
@@ -44,13 +44,13 @@
 <!-- more -->
 
 
-<p>{% img center /images/articles/bidsketch_pricing_full.png %}</p>
+<p><img class="center" src="/images/articles/bidsketch_pricing_full.png"></p>
 
 <p>I got this table from <a href="http://www.bidsketch.com/pricing/">BidSketch’s pricing page</a>. BidSketch is a tool that helps freelancers and agencies write and send winning proposals. This table is important to BidSketch. Literally every single customer, and therefore every single dollar, comes from this page. Nothing in this table is an accident. Let’s take a look at the plan names:</p>
 
 <h3>Customer Segmentation</h3>
 
-<p>{% img center /images/articles/bidsketch-segmentation.png %}</p>
+<p><img class="center" src="/images/articles/bidsketch-segmentation.png"></p>
 
 <p>you’ll notice that BidSketch doesn’t call it’s plans “small/medium/large”, or “bronze/silver/gold” or anything generic like that. Instead, they know that they have different kinds of customers, and that those customers are willing to pay different rates. They aim at three of their types of clients: individual freelancers, small studios, and large agencies.</p>
 
@@ -60,7 +60,7 @@
 
 <h3>Pricing Ratio</h3>
 
-<p>{% img center /images/articles/bidsketch-pricing.png %}</p>
+<p><img class="center" src="/images/articles/bidsketch-pricing.png"></p>
 
 <p>Firstly, you’ll notice that BidSketch put their highest price package first. This is an old-school marketing trick. By looking at the initial plan first, the $79 and $29 plans will feel much cheaper in comparison. The highest selling price plan is almost never the highest selling one, it is mostly their for comparison. This is called <em>price anchoring.</em></p>
 
@@ -72,7 +72,7 @@
 
 <h3>Approximating Value</h3>
 
-<p>{% img center /images/articles/bidsketch-features.png %}</p>
+<p><img class="center" src="/images/articles/bidsketch-features.png"></p>
 
 <p>I said before that the best way to split up your pricing is to align your values with the customer’s. BidSketch could do this directly if they wanted too, and base their pricing on how the total dollar value of proposals that you close each month (payment processors such as <a href="https://stripe.com/">Stripe</a> and <a href="https://www.braintreepayments.com/">Briaintree</a> have the easiest alignment ever. They just get 2.7% of the revenue you bring in). In other cases, you may not have a way of directly knowing how valuable your service is to a client. In that case, you want to approximate the value. You do this by tying your pricing to something that is correlated to value. BidSketch does this in two ways: the number of users, and the amount of storage. Instead of looking a dollar value, they are looking at three things with these features:</p>
 
@@ -106,7 +106,7 @@
     <id>http://glennstovall.com/blog/2014/07/31/why-i-dont-bill-hourly</id>
     <content type="html"><![CDATA[<h3>How pricing models affect project outcomes</h3>
 
-<p>{% img left /images/articles/wealth.jpg 260 %}</p>
+<p><img class="left" src="/images/articles/wealth.jpg" width="260"></p>
 
 <p><small class='notice'><em>This post orignally appeared on <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. Read <a href="http://glennstovall.com/blog/2014/07/29/why-i-am-killing-my-company-blog/">why it moved</a>.</em></small></p>
 
@@ -147,7 +147,7 @@ I believe that this new approach will lead to me operating in a more efficient m
     <link href="http://glennstovall.com/blog/2014/04/19/presenting-value-to-clients/"/>
     <updated>2014-04-19T16:11:00-04:00</updated>
     <id>http://glennstovall.com/blog/2014/04/19/presenting-value-to-clients</id>
-    <content type="html"><![CDATA[<p>{% img left /images/articles/wealth.jpg 260 %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/wealth.jpg" width="260"></p>
 
 <p>When selling clients on your services, how you position yourself is important. You want clients to see you as an investment, not an expense. In order to accomplish this, you need to make sure you are able to clearly state and justify the value you can bring to a client.</p>
 
@@ -212,7 +212,7 @@ I believe that this new approach will lead to me operating in a more efficient m
     <link href="http://glennstovall.com/blog/2014/02/21/how-to-bill-daily-or-weekly/"/>
     <updated>2014-02-21T16:26:00-05:00</updated>
     <id>http://glennstovall.com/blog/2014/02/21/how-to-bill-daily-or-weekly</id>
-    <content type="html"><![CDATA[<p>{% img left /images/articles/calendar.jpg 260 %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/calendar.jpg" width="260"></p>
 
 <p>When it comes to freelancing, you may think you only have two options when it comes to how you bill your clients: You can bill by the hour, or you can bill by the project. But these aren't your only options, and in many cases they are not your best ones.</p>
 

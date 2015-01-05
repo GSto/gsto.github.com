@@ -4,7 +4,7 @@
   <title><![CDATA[Category: terminal | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/terminal/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,7 +18,7 @@
     <link href="http://glennstovall.com/blog/2013/03/04/terminals-for-aboslute-beginners-part-4-searching/"/>
     <updated>2013-03-04T06:51:00-05:00</updated>
     <id>http://glennstovall.com/blog/2013/03/04/terminals-for-aboslute-beginners-part-4-searching</id>
-    <content type="html"><![CDATA[<p>{% img left /images/articles/terminal.jpg 260 %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/terminal.jpg" width="260"></p>
 
 <h3>Searching</h3>
 
@@ -96,7 +96,7 @@
     <link href="http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/"/>
     <updated>2013-01-07T23:58:00-05:00</updated>
     <id>http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter</id>
-    <content type="html"><![CDATA[<p>{% img left /images/articles/codeigniter.jpg 260 %}
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/codeigniter.jpg" width="260">
 Building a command line interface into your application can be a way to add extra utility to you application. Adding cron jobs (a.k.a. scheduled tasks) to your CodeIgniter application can provide extra utility. In this article we'll show you how to set up both in a CodeIgniter application by writing a simple appointment reminder, which will remind people if they have an appointment scheduled a day in advance.</p>
 
 <!-- more -->
@@ -106,25 +106,44 @@ Building a command line interface into your application can be a way to add extr
 
 <p>All CodeIgniter controller methods can be accessed via the command line. Let's start with a simple controller:</p>
 
-<p>{% codeblock application/controllers/hello.php lang:php %}
-&lt;?php
-class Hello extends CI_Controller
-{
-  public function index()
-  {</p>
-
-<pre><code>  echo "Hello, World" . PHP_EOL;
-</code></pre>
-
-<p>  }</p>
-
-<p>  public function greet($name)
-  {
-   echo "Hello, $name" . PHP_EOL;
-  }
-}</p>
-
-<p>{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/controllers/hello.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php</span>
+</span><span class='line'><span class="x">class Hello extends CI_Controller</span>
+</span><span class='line'><span class="x">{</span>
+</span><span class='line'><span class="x">  public function index()</span>
+</span><span class='line'><span class="x">  {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;  echo &quot;Hello, World&quot; . PHP_EOL;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  public function greet($name)</span>
+</span><span class='line'><span class="x">  {</span>
+</span><span class='line'><span class="x">   echo &quot;Hello, $name&quot; . PHP_EOL;</span>
+</span><span class='line'><span class="x">  }</span>
+</span><span class='line'><span class="x">}&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>From the root application forlder, to call the index function we can do the following:</p>
 
@@ -140,113 +159,207 @@ class Hello extends CI_Controller
 
 <p>You may want to write controller methods that behave differently based on wether or not they are accessed via the command line. you can do this by using the <a href="http://ellislab.com/codeigniter/user-guide/libraries/input.html">input library</a>, which has a function called <code>is_cli_request()</code> to detect if a request to a controller is from the command line or not. Here is an example if you want to make a method only accesible via command line:</p>
 
-<p>{% codeblock application/controllers/hello.php lang:php %}</p>
-
-<pre><code>&lt;?php
-public function greet($name)
-{
-    if(!$this-&gt;input-&gt;is_cli_request()) 
-    {
-        echo "greet my only be accessed from the command line";
-        return;
-    }
-    echo "Hello, $name" . PHP_EOL;
-}
-</code></pre>
-
-<p>{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/controllers/hello.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;&amp;lt;?php</span>
+</span><span class='line'><span class="x">public function greet($name)</span>
+</span><span class='line'><span class="x">{</span>
+</span><span class='line'><span class="x">    if(!$this-&amp;gt;input-&amp;gt;is_cli_request()) </span>
+</span><span class='line'><span class="x">    {</span>
+</span><span class='line'><span class="x">        echo &quot;greet my only be accessed from the command line&quot;;</span>
+</span><span class='line'><span class="x">        return;</span>
+</span><span class='line'><span class="x">    }</span>
+</span><span class='line'><span class="x">    echo &quot;Hello, $name&quot; . PHP_EOL;</span>
+</span><span class='line'><span class="x">}</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h3>Setting up the Appointment Reminder</h3>
 
 <p>Let's say we have a system where people can book appointments. We would like to send them a reminder a day in advance that they have an appointment coming up. In this tutorial we will set up a command line script
 Let's set up our appointment reminder files. First let's start by building the table.</p>
 
-<p>{% codeblock lang:mysql %}</p>
-
-<p>CREATE TABLE appointments (
-  id int auto_increment primary key,
-  email varchar(255) not null default '',
-  start_time datetime
-  is_reminded tinyint(1) not null default 0
-);
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='mysql'><span class='line'><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="nf">appointments</span> <span class="p">(</span>
+</span><span class='line'>  <span class="n">id</span> <span class="kt">int</span> <span class="kp">auto_increment</span> <span class="k">primary</span> <span class="k">key</span><span class="p">,</span>
+</span><span class='line'>  <span class="n">email</span> <span class="kt">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="k">not</span> <span class="no">null</span> <span class="k">default</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="n">start_time</span> <span class="kt">datetime</span>
+</span><span class='line'>  <span class="n">is_reminded</span> <span class="kt">tinyint</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">not</span> <span class="no">null</span> <span class="k">default</span> <span class="mi">0</span>
+</span><span class='line'><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Now, we'll write a model that will perform the two primary data functions we need for this appointment reminder: a way to fetch all appointments on a particular day, and a way to mark them as appointments that have recieved reminders, so that we do not send multiple reminder emails:</p>
 
-<p>{% codeblock application/models/appointment_model.php lang:php %}
-&lt;?php
-class Appointment_model extends CI_Model
-{
-  public function get_days_appointments($day)
-  {</p>
-
-<pre><code>$day_start = date('Y-m-d 00:00:00', $day);
-$day_end = date('Y-m-d 23:59:59', $day);
-return $this-&gt;db-&gt;select('*')
-    -&gt;from('appointments')
-    -&gt;where('start_time &lt;', $day_start)
-    -&gt;where('start_time &gt;', $day_end)
-    -&gt;get()-&gt;result();
-</code></pre>
-
-<p>  }</p>
-
-<p>  public function mark_reminded($appointment_id)
-  {</p>
-
-<pre><code>  return $this-&gt;db-&gt;where('id', $appointment_id)-&gt;update('appointments', array('is_reminded' =&gt; 1));
-</code></pre>
-
-<p>  }
-}
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/models/appointment_model.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php</span>
+</span><span class='line'><span class="x">class Appointment_model extends CI_Model</span>
+</span><span class='line'><span class="x">{</span>
+</span><span class='line'><span class="x">  public function get_days_appointments($day)</span>
+</span><span class='line'><span class="x">  {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;$day_start = date(&#39;Y-m-d 00:00:00&#39;, $day);</span>
+</span><span class='line'><span class="x">$day_end = date(&#39;Y-m-d 23:59:59&#39;, $day);</span>
+</span><span class='line'><span class="x">return $this-&amp;gt;db-&amp;gt;select(&#39;*&#39;)</span>
+</span><span class='line'><span class="x">    -&amp;gt;from(&#39;appointments&#39;)</span>
+</span><span class='line'><span class="x">    -&amp;gt;where(&#39;start_time &amp;lt;&#39;, $day_start)</span>
+</span><span class='line'><span class="x">    -&amp;gt;where(&#39;start_time &amp;gt;&#39;, $day_end)</span>
+</span><span class='line'><span class="x">    -&amp;gt;get()-&amp;gt;result();</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  public function mark_reminded($appointment_id)</span>
+</span><span class='line'><span class="x">  {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;  return $this-&amp;gt;db-&amp;gt;where(&#39;id&#39;, $appointment_id)-&amp;gt;update(&#39;appointments&#39;, array(&#39;is_reminded&#39; =&amp;gt; 1));</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }</span>
+</span><span class='line'><span class="x">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Now that we can handle all the data transactions through the model. Let's write a controller so we can access this through the command line. In this example, we will put the logic in the <code>index()</code> function, since that is all this controller does. Personally, I like to put all of my command line scripts inside a folder named 'cli' inside of the controllers folder.</p>
 
-<p>{% codeblock application/controllers/cli/reminders.php lang:php %}
-&lt;?php
-class Reminders extends CI_Controller
-{</p>
-
-<p>  public function __construct()
-  {</p>
-
-<pre><code>  parent::__construct();
-  $this-&gt;load-&gt;library('input');
-  $this-&gt;load-&gt;library('email');
-  $this-&gt;load-&gt;model('Appointment_model');
-</code></pre>
-
-<p>  }
-  public function index()
-  {</p>
-
-<pre><code>if(!$this-&gt;input-&gt;is_cli_request())
-{
-    echo "This script can only be accessed via the command line" . PHP_EOL;
-    return;
-}
-$timestamp = strtotime("+1 days");
-$appointments = $this-&gt;Appointment_model-&gt;get_days_appointments($timestamp);
-if(!empty($appointments))
-{
-    foreach($appointments as $appointment)
-    {
-        $this-&gt;email-&gt;set_newline("\r\n");
-        $this-&gt;email-&gt;to($appointment-&gt;email);
-        $this-&gt;email-&gt;from("youremail@example.com");
-        $this-&gt;email-&gt;subject("Appointment Reminder");
-        $this-&gt;email-&gt;message("You have an appointment tomorrow");
-        $this-&gt;email-&gt;send();
-        $this-&gt;Appointment_model-&gt;mark_reminded($appointment-&gt;id);
-    }
-}
-</code></pre>
-
-<p>  }
-}</p>
-
-<p>{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/controllers/cli/reminders.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php</span>
+</span><span class='line'><span class="x">class Reminders extends CI_Controller</span>
+</span><span class='line'><span class="x">{&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  public function __construct()</span>
+</span><span class='line'><span class="x">  {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;  parent::__construct();</span>
+</span><span class='line'><span class="x">  $this-&amp;gt;load-&amp;gt;library(&#39;input&#39;);</span>
+</span><span class='line'><span class="x">  $this-&amp;gt;load-&amp;gt;library(&#39;email&#39;);</span>
+</span><span class='line'><span class="x">  $this-&amp;gt;load-&amp;gt;model(&#39;Appointment_model&#39;);</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }</span>
+</span><span class='line'><span class="x">  public function index()</span>
+</span><span class='line'><span class="x">  {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;if(!$this-&amp;gt;input-&amp;gt;is_cli_request())</span>
+</span><span class='line'><span class="x">{</span>
+</span><span class='line'><span class="x">    echo &quot;This script can only be accessed via the command line&quot; . PHP_EOL;</span>
+</span><span class='line'><span class="x">    return;</span>
+</span><span class='line'><span class="x">}</span>
+</span><span class='line'><span class="x">$timestamp = strtotime(&quot;+1 days&quot;);</span>
+</span><span class='line'><span class="x">$appointments = $this-&amp;gt;Appointment_model-&amp;gt;get_days_appointments($timestamp);</span>
+</span><span class='line'><span class="x">if(!empty($appointments))</span>
+</span><span class='line'><span class="x">{</span>
+</span><span class='line'><span class="x">    foreach($appointments as $appointment)</span>
+</span><span class='line'><span class="x">    {</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;email-&amp;gt;set_newline(&quot;\r\n&quot;);</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;email-&amp;gt;to($appointment-&amp;gt;email);</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;email-&amp;gt;from(&quot;youremail@example.com&quot;);</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;email-&amp;gt;subject(&quot;Appointment Reminder&quot;);</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;email-&amp;gt;message(&quot;You have an appointment tomorrow&quot;);</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;email-&amp;gt;send();</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;Appointment_model-&amp;gt;mark_reminded($appointment-&amp;gt;id);</span>
+</span><span class='line'><span class="x">    }</span>
+</span><span class='line'><span class="x">}</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }</span>
+</span><span class='line'><span class="x">}&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>whenever this command line script is called, it will set an email to all people who have an appointment the next day. It will also mark there appointments as reminded to insure that we do not send multiple emails to the same person for the same appointment.</p>
 
@@ -291,7 +404,7 @@ if(!empty($appointments))
     <id>http://glennstovall.com/blog/2012/10/30/terminals-for-absolute-beginners-part-3</id>
     <content type="html"><![CDATA[<h3>File Permissions</h3>
 
-<p>{% img left /images/articles/terminal.jpg 260 %}</p>
+<p><img class="left" src="/images/articles/terminal.jpg" width="260"></p>
 
 <p> In this article, we'll take a look at how file permissions works. We'll cover how users, groups, and file permissions work in a UNIX-based system, and how they can be used to make using the terminal more secure.</p>
 
@@ -384,7 +497,7 @@ drwxr-xr-x  2 grp   glenn    4096 2011-03-15 17:03 Videos
     <id>http://glennstovall.com/blog/2012/03/07/terminals-for-absolute-beginners-part-2</id>
     <content type="html"><![CDATA[<h3>Manipulating Files</h3>
 
-<p>{% img left /images/articles/terminal.jpg 260 %}</p>
+<p><img class="left" src="/images/articles/terminal.jpg" width="260"></p>
 
 <ul>
 <li>Read Part 1 <a href="blog/2012/02/15/terminals-for-absolute-beginners/">Here</a></li>
@@ -498,7 +611,7 @@ cd te
     <id>http://glennstovall.com/blog/2012/02/15/terminals-for-absolute-beginners</id>
     <content type="html"><![CDATA[<h3>Directories and Commands</h3>
 
-<p>{% img left /images/articles/terminal.jpg 260 %}</p>
+<p><img class="left" src="/images/articles/terminal.jpg" width="260"></p>
 
 <p>You've woken up in a strange place. Maybe you've decided you want to be a power user with your mac. Maybe you've finally decided to check out this strangle 'Linux' thing you've heard so much about.  Maybe its your first day in software engineering class and the teacher is telling you you are going to have to work on the school's server to turn in all of your work. Either way, you find yourself eye-to-eye with a terminal (commonly called the <em>command line</em>) and you don't know what to do.</p>
 

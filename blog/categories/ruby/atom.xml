@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,7 +18,7 @@
     <link href="http://glennstovall.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/"/>
     <updated>2014-05-06T15:06:00-04:00</updated>
     <id>http://glennstovall.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4</id>
-    <content type="html"><![CDATA[<p>{% img left /images/articles/ruby_on_rails.jpg 260 %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/ruby_on_rails.jpg" width="260"></p>
 
 <p><a href="http://api.rubyonrails.org/classes/ActiveSupport/Concern.html">Concerns</a> are a new feature that was added in Rails 4. They allow to clean up code in your models and controllers. They also allow you to share functionality between models or controllers. However, they can be a bit tricky to test in isolation. In this article I want to show how you can test your controller concerns in isolation.</p>
 
@@ -29,48 +29,83 @@
 
 <p>We have a project with several different types of objects that can be sold. Each item is unique and is marked as 'out of stock' once it is purchased. However, we have several different controllers and different types of purchases that need this functionality. In order to reduce code duplication, we are going to put these in a concern.</p>
 
-<p>{% codeblock lang:ruby /app/controllers/concerns/transaction_processing.rb %}
-module TransactionProcessing
-  extend ActiveSupport::Concern</p>
-
-<p>  included do</p>
-
-<pre><code>helper_method :process_sale
-</code></pre>
-
-<p>  end</p>
-
-<p>  def process_sale(item)</p>
-
-<pre><code>item.is_in_stock = false
-item.save!
-</code></pre>
-
-<p>  end
-end
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>/app/controllers/concerns/transaction_processing.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">module</span> <span class="nn">TransactionProcessing</span>
+</span><span class='line'>  <span class="kp">extend</span> <span class="ss">ActiveSupport</span><span class="p">:</span><span class="ss">:Concern</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;  included do&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">helper_method</span> <span class="ss">:process_sale</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="k">end</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;  def process_sale(item)&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">item</span><span class="o">.</span><span class="n">is_in_stock</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'><span class="n">item</span><span class="o">.</span><span class="n">save!</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>If we want to test this concern, we need a controller to include it in. However, it would not be accurately unit testing to do this as there could be code in that controller that could affect the output of our test. Inside of our test, we can create a fake controller with no methods or logic of it's own, and then write tests for that. If you are using <a href="http://rspec.info/">RSpec</a>, you can call methods directly using the <code>subject</code> object. Here is my example test using RSpec and <a href="https://github.com/thoughtbot/factory_girl">FactoryGirl</a></p>
 
-<p>{% codeblock lang:ruby /spec/controllers/concerns/transaction_processing_spec.rb %}
-require 'spec_helper'</p>
-
-<p>class FakesController &lt; ApplicationController
-  include TransactionProcessing
-end</p>
-
-<p>describe FakesController do</p>
-
-<p>  it "should mark an item out of stock" do</p>
-
-<pre><code>item = create(:item, is_in_stock: true)
-subject.process_sale(item)
-expect(item.is_in_stock).to be false
-</code></pre>
-
-<p>  end
-end
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>/spec/controllers/concerns/transaction_processing_spec.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;spec_helper&#39;</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;class FakesController &amp;lt; ApplicationController</span>
+</span><span class='line'><span class="sr">  include TransactionProcessing</span>
+</span><span class='line'><span class="sr">end&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="n">describe</span> <span class="no">FakesController</span> <span class="k">do</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;  it &quot;should mark an item out of stock&quot; do&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">item</span> <span class="o">=</span> <span class="n">create</span><span class="p">(</span><span class="ss">:item</span><span class="p">,</span> <span class="n">is_in_stock</span><span class="p">:</span> <span class="kp">true</span><span class="p">)</span>
+</span><span class='line'><span class="n">subject</span><span class="o">.</span><span class="n">process_sale</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</span><span class='line'><span class="n">expect</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">is_in_stock</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">be</span> <span class="kp">false</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>And there you go! Easy, isolated tests for your controller concerns.</p>
 ]]></content>

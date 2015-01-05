@@ -4,7 +4,7 @@
   <title><![CDATA[Category: reverie | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/reverie/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -20,24 +20,20 @@
     <id>http://glennstovall.com/blog/2014/09/11/lessons-learned-from-thomas-edisons-factory-fire</id>
     <content type="html"><![CDATA[<h3>Edison Understood Resiliance AND Electricity</h3>
 
-<p>{% img left /images/articles/edison_fire.jpg 260 %}</p>
+<p><img class="left" src="/images/articles/edison_fire.jpg" width="260"></p>
 
 <p>On December 10th, 1914, Thomas Edison was having dinner with his family. A man rushes to his door and tells Edison that his factory had caught fire. Edison grabs his son Charles and they rush our the door. They head to the factory to see what is going on. When they get there the see a  vivid display of red, green, and blue fires, due to the various chemicals stored in his laboratory.</p>
 
 <p>This could be the end of Thomas Edison. He didn't even have insurance on the building, because it was designed to be fireproof. Edison looks at his son and says:</p>
 
-<p>{% blockquote %}
-Go get your mother and all her friends. They'll never see a fire like this again.
-{% endblockquote %}</p>
+<p><blockquote><p>Go get your mother and all her friends. They'll never see a fire like this again.</p></blockquote></p>
 
 <!-- more -->
 
 
 <p>Charles protested, to which Edison responded:</p>
 
-<p>{% blockquote %}
-It's all right. We've just got rid of a lot of old rubbish.
-{% endblockquote %}</p>
+<p><blockquote><p>It's all right. We've just got rid of a lot of old rubbish.</p></blockquote></p>
 
 <p>How was Edison able to look at a career threatening tragedy and take such a light hearted approach to such a catastrophe? Edison understood the philosophy of <a href="http://en.wikipedia.org/wiki/Stoicism">Stoicism</a>. Stoicism tells us that negative and destructive emotions are the result of errors in judgement.</p>
 
@@ -55,7 +51,7 @@ It's all right. We've just got rid of a lot of old rubbish.
 
 <p>Many freelancer's are familiar with the term "feast or famine". It alludes to the fact that with client work, when it rains, it pours. Sometimes lots of sales come through at once, other times they don't. It can be stressful when work is slow. I had been feeling depressed and unmotivated for days facing a recent sales slump. However, by applying the philosophy of stoicism, I can see this in a very different light:</p>
 
-<p>{% img center /images/articles/time_enough.jpg %}</p>
+<p><img class="center" src="/images/articles/time_enough.jpg"></p>
 
 <h4>Time Enough At Last</h4>
 
@@ -95,32 +91,22 @@ It's all right. We've just got rid of a lot of old rubbish.
     <id>http://glennstovall.com/blog/2014/09/10/essentialism-through-the-ages</id>
     <content type="html"><![CDATA[<h3>The Single Philosophy That Drives Artists, Designers, and Entrepreneurs</h3>
 
-<p>{% img /images/articles/simple_long.jpg %}</p>
+<p><img src="/images/articles/simple_long.jpg"></p>
 
 <p>In design, I've always been a fan of minimalism. Minimalism is a philosophy about boiling things down to their essential elements. It's about having a philosophy of "less but better". Great thinkers from all walks of life have touted the benefits of this kind of approach:</p>
 
 <!-- more -->
 
 
-<p>{% blockquote Leonard Da Vinci %}
-Simplicity is the ultimate sophistication
-{% endblockquote %}</p>
+<p><blockquote><p>Simplicity is the ultimate sophistication</p><footer><strong>Leonard Da Vinci</strong></footer></blockquote></p>
 
-<p>{% blockquote Albert Einstein %}
-Everything should be made as simple as possible, but not simpler.
-{% endblockquote %}</p>
+<p><blockquote><p>Everything should be made as simple as possible, but not simpler.</p><footer><strong>Albert Einstein</strong></footer></blockquote></p>
 
-<p>{% blockquote Fredric Chopin %}
-Simplicity is the final achievement. After one has played a vast quantity of notes and more notes, it is simplicity that emerges as the crowning reward of art.
-{% endblockquote %}</p>
+<p><blockquote><p>Simplicity is the final achievement. After one has played a vast quantity of notes and more notes, it is simplicity that emerges as the crowning reward of art.</p><footer><strong>Fredric Chopin</strong></footer></blockquote></p>
 
-<p>{% blockquote E.F. Schumacher %}
-Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius – and a lot of courage – to move in the opposite direction.
-{% endblockquote %}</p>
+<p><blockquote><p>Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius – and a lot of courage – to move in the opposite direction.</p><footer><strong>E.F. Schumacher</strong></footer></blockquote></p>
 
-<p>{% blockquote Steve Jobs %}
-Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it's worth it in the end because once you get there, you can move mountains.
-{% endblockquote %}</p>
+<p><blockquote><p>Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it's worth it in the end because once you get there, you can move mountains.</p><footer><strong>Steve Jobs</strong></footer></blockquote></p>
 
 <p>There is a universal truth that drives all of these musicians, artists, and visionaries. They all speak of the beauty and elegance of simplicity in all things. As entrepreneurs, we have the power to design not only our businesses, but our entire lives. However, many people end up working long hours, taking on lots of stress, and doing physical and mental harm to ourselves.</p>
 ]]></content>

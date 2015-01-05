@@ -4,7 +4,7 @@
   <title><![CDATA[Category: codeigniter | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/codeigniter/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,7 +18,7 @@
     <link href="http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/"/>
     <updated>2013-01-07T23:58:00-05:00</updated>
     <id>http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter</id>
-    <content type="html"><![CDATA[<p>{% img left /images/articles/codeigniter.jpg 260 %}
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/codeigniter.jpg" width="260">
 Building a command line interface into your application can be a way to add extra utility to you application. Adding cron jobs (a.k.a. scheduled tasks) to your CodeIgniter application can provide extra utility. In this article we'll show you how to set up both in a CodeIgniter application by writing a simple appointment reminder, which will remind people if they have an appointment scheduled a day in advance.</p>
 
 <!-- more -->
@@ -28,25 +28,44 @@ Building a command line interface into your application can be a way to add extr
 
 <p>All CodeIgniter controller methods can be accessed via the command line. Let's start with a simple controller:</p>
 
-<p>{% codeblock application/controllers/hello.php lang:php %}
-&lt;?php
-class Hello extends CI_Controller
-{
-  public function index()
-  {</p>
-
-<pre><code>  echo "Hello, World" . PHP_EOL;
-</code></pre>
-
-<p>  }</p>
-
-<p>  public function greet($name)
-  {
-   echo "Hello, $name" . PHP_EOL;
-  }
-}</p>
-
-<p>{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/controllers/hello.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php</span>
+</span><span class='line'><span class="x">class Hello extends CI_Controller</span>
+</span><span class='line'><span class="x">{</span>
+</span><span class='line'><span class="x">  public function index()</span>
+</span><span class='line'><span class="x">  {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;  echo &quot;Hello, World&quot; . PHP_EOL;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  public function greet($name)</span>
+</span><span class='line'><span class="x">  {</span>
+</span><span class='line'><span class="x">   echo &quot;Hello, $name&quot; . PHP_EOL;</span>
+</span><span class='line'><span class="x">  }</span>
+</span><span class='line'><span class="x">}&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>From the root application forlder, to call the index function we can do the following:</p>
 
@@ -62,113 +81,207 @@ class Hello extends CI_Controller
 
 <p>You may want to write controller methods that behave differently based on wether or not they are accessed via the command line. you can do this by using the <a href="http://ellislab.com/codeigniter/user-guide/libraries/input.html">input library</a>, which has a function called <code>is_cli_request()</code> to detect if a request to a controller is from the command line or not. Here is an example if you want to make a method only accesible via command line:</p>
 
-<p>{% codeblock application/controllers/hello.php lang:php %}</p>
-
-<pre><code>&lt;?php
-public function greet($name)
-{
-    if(!$this-&gt;input-&gt;is_cli_request()) 
-    {
-        echo "greet my only be accessed from the command line";
-        return;
-    }
-    echo "Hello, $name" . PHP_EOL;
-}
-</code></pre>
-
-<p>{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/controllers/hello.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;&amp;lt;?php</span>
+</span><span class='line'><span class="x">public function greet($name)</span>
+</span><span class='line'><span class="x">{</span>
+</span><span class='line'><span class="x">    if(!$this-&amp;gt;input-&amp;gt;is_cli_request()) </span>
+</span><span class='line'><span class="x">    {</span>
+</span><span class='line'><span class="x">        echo &quot;greet my only be accessed from the command line&quot;;</span>
+</span><span class='line'><span class="x">        return;</span>
+</span><span class='line'><span class="x">    }</span>
+</span><span class='line'><span class="x">    echo &quot;Hello, $name&quot; . PHP_EOL;</span>
+</span><span class='line'><span class="x">}</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h3>Setting up the Appointment Reminder</h3>
 
 <p>Let's say we have a system where people can book appointments. We would like to send them a reminder a day in advance that they have an appointment coming up. In this tutorial we will set up a command line script
 Let's set up our appointment reminder files. First let's start by building the table.</p>
 
-<p>{% codeblock lang:mysql %}</p>
-
-<p>CREATE TABLE appointments (
-  id int auto_increment primary key,
-  email varchar(255) not null default '',
-  start_time datetime
-  is_reminded tinyint(1) not null default 0
-);
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='mysql'><span class='line'><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="nf">appointments</span> <span class="p">(</span>
+</span><span class='line'>  <span class="n">id</span> <span class="kt">int</span> <span class="kp">auto_increment</span> <span class="k">primary</span> <span class="k">key</span><span class="p">,</span>
+</span><span class='line'>  <span class="n">email</span> <span class="kt">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="k">not</span> <span class="no">null</span> <span class="k">default</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="n">start_time</span> <span class="kt">datetime</span>
+</span><span class='line'>  <span class="n">is_reminded</span> <span class="kt">tinyint</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">not</span> <span class="no">null</span> <span class="k">default</span> <span class="mi">0</span>
+</span><span class='line'><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Now, we'll write a model that will perform the two primary data functions we need for this appointment reminder: a way to fetch all appointments on a particular day, and a way to mark them as appointments that have recieved reminders, so that we do not send multiple reminder emails:</p>
 
-<p>{% codeblock application/models/appointment_model.php lang:php %}
-&lt;?php
-class Appointment_model extends CI_Model
-{
-  public function get_days_appointments($day)
-  {</p>
-
-<pre><code>$day_start = date('Y-m-d 00:00:00', $day);
-$day_end = date('Y-m-d 23:59:59', $day);
-return $this-&gt;db-&gt;select('*')
-    -&gt;from('appointments')
-    -&gt;where('start_time &lt;', $day_start)
-    -&gt;where('start_time &gt;', $day_end)
-    -&gt;get()-&gt;result();
-</code></pre>
-
-<p>  }</p>
-
-<p>  public function mark_reminded($appointment_id)
-  {</p>
-
-<pre><code>  return $this-&gt;db-&gt;where('id', $appointment_id)-&gt;update('appointments', array('is_reminded' =&gt; 1));
-</code></pre>
-
-<p>  }
-}
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/models/appointment_model.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php</span>
+</span><span class='line'><span class="x">class Appointment_model extends CI_Model</span>
+</span><span class='line'><span class="x">{</span>
+</span><span class='line'><span class="x">  public function get_days_appointments($day)</span>
+</span><span class='line'><span class="x">  {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;$day_start = date(&#39;Y-m-d 00:00:00&#39;, $day);</span>
+</span><span class='line'><span class="x">$day_end = date(&#39;Y-m-d 23:59:59&#39;, $day);</span>
+</span><span class='line'><span class="x">return $this-&amp;gt;db-&amp;gt;select(&#39;*&#39;)</span>
+</span><span class='line'><span class="x">    -&amp;gt;from(&#39;appointments&#39;)</span>
+</span><span class='line'><span class="x">    -&amp;gt;where(&#39;start_time &amp;lt;&#39;, $day_start)</span>
+</span><span class='line'><span class="x">    -&amp;gt;where(&#39;start_time &amp;gt;&#39;, $day_end)</span>
+</span><span class='line'><span class="x">    -&amp;gt;get()-&amp;gt;result();</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  public function mark_reminded($appointment_id)</span>
+</span><span class='line'><span class="x">  {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;  return $this-&amp;gt;db-&amp;gt;where(&#39;id&#39;, $appointment_id)-&amp;gt;update(&#39;appointments&#39;, array(&#39;is_reminded&#39; =&amp;gt; 1));</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }</span>
+</span><span class='line'><span class="x">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Now that we can handle all the data transactions through the model. Let's write a controller so we can access this through the command line. In this example, we will put the logic in the <code>index()</code> function, since that is all this controller does. Personally, I like to put all of my command line scripts inside a folder named 'cli' inside of the controllers folder.</p>
 
-<p>{% codeblock application/controllers/cli/reminders.php lang:php %}
-&lt;?php
-class Reminders extends CI_Controller
-{</p>
-
-<p>  public function __construct()
-  {</p>
-
-<pre><code>  parent::__construct();
-  $this-&gt;load-&gt;library('input');
-  $this-&gt;load-&gt;library('email');
-  $this-&gt;load-&gt;model('Appointment_model');
-</code></pre>
-
-<p>  }
-  public function index()
-  {</p>
-
-<pre><code>if(!$this-&gt;input-&gt;is_cli_request())
-{
-    echo "This script can only be accessed via the command line" . PHP_EOL;
-    return;
-}
-$timestamp = strtotime("+1 days");
-$appointments = $this-&gt;Appointment_model-&gt;get_days_appointments($timestamp);
-if(!empty($appointments))
-{
-    foreach($appointments as $appointment)
-    {
-        $this-&gt;email-&gt;set_newline("\r\n");
-        $this-&gt;email-&gt;to($appointment-&gt;email);
-        $this-&gt;email-&gt;from("youremail@example.com");
-        $this-&gt;email-&gt;subject("Appointment Reminder");
-        $this-&gt;email-&gt;message("You have an appointment tomorrow");
-        $this-&gt;email-&gt;send();
-        $this-&gt;Appointment_model-&gt;mark_reminded($appointment-&gt;id);
-    }
-}
-</code></pre>
-
-<p>  }
-}</p>
-
-<p>{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/controllers/cli/reminders.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php</span>
+</span><span class='line'><span class="x">class Reminders extends CI_Controller</span>
+</span><span class='line'><span class="x">{&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  public function __construct()</span>
+</span><span class='line'><span class="x">  {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;  parent::__construct();</span>
+</span><span class='line'><span class="x">  $this-&amp;gt;load-&amp;gt;library(&#39;input&#39;);</span>
+</span><span class='line'><span class="x">  $this-&amp;gt;load-&amp;gt;library(&#39;email&#39;);</span>
+</span><span class='line'><span class="x">  $this-&amp;gt;load-&amp;gt;model(&#39;Appointment_model&#39;);</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }</span>
+</span><span class='line'><span class="x">  public function index()</span>
+</span><span class='line'><span class="x">  {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;if(!$this-&amp;gt;input-&amp;gt;is_cli_request())</span>
+</span><span class='line'><span class="x">{</span>
+</span><span class='line'><span class="x">    echo &quot;This script can only be accessed via the command line&quot; . PHP_EOL;</span>
+</span><span class='line'><span class="x">    return;</span>
+</span><span class='line'><span class="x">}</span>
+</span><span class='line'><span class="x">$timestamp = strtotime(&quot;+1 days&quot;);</span>
+</span><span class='line'><span class="x">$appointments = $this-&amp;gt;Appointment_model-&amp;gt;get_days_appointments($timestamp);</span>
+</span><span class='line'><span class="x">if(!empty($appointments))</span>
+</span><span class='line'><span class="x">{</span>
+</span><span class='line'><span class="x">    foreach($appointments as $appointment)</span>
+</span><span class='line'><span class="x">    {</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;email-&amp;gt;set_newline(&quot;\r\n&quot;);</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;email-&amp;gt;to($appointment-&amp;gt;email);</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;email-&amp;gt;from(&quot;youremail@example.com&quot;);</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;email-&amp;gt;subject(&quot;Appointment Reminder&quot;);</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;email-&amp;gt;message(&quot;You have an appointment tomorrow&quot;);</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;email-&amp;gt;send();</span>
+</span><span class='line'><span class="x">        $this-&amp;gt;Appointment_model-&amp;gt;mark_reminded($appointment-&amp;gt;id);</span>
+</span><span class='line'><span class="x">    }</span>
+</span><span class='line'><span class="x">}</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }</span>
+</span><span class='line'><span class="x">}&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>whenever this command line script is called, it will set an email to all people who have an appointment the next day. It will also mark there appointments as reminded to insure that we do not send multiple emails to the same person for the same appointment.</p>
 
@@ -225,91 +338,158 @@ if(!empty($appointments))
 <div style='clear:both;'></div>
 
 
-<p>{% codeblock application/views/layout.php lang:html %}
-&lt;!doctype html></p>
-
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-
-
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-
-
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-
-
-<!--[if gt IE 8]><!-->
-
-
-<p> <html lang="en"> <!--<![endif]-->
-<meta charset='UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name="viewport" content="width=device-width" />
-<title>Title Goes Here</title></p>
-
-<!--[if IE 9]>
-  <style type="text/css"> .gradient { filter: none;} </style>
-<![endif]-->
-
-
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-
-<p></head>
-<body>
-</body>
-</html>
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/views/layout.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!doctype html&gt;<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!--[if lt IE 7]&gt; &lt;html class=&quot;no-js lt-ie9 lt-ie8 lt-ie7&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!--[if IE 7]&gt;    &lt;html class=&quot;no-js lt-ie9 lt-ie8&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!--[if IE 8]&gt;    &lt;html class=&quot;no-js lt-ie9&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!--[if gt IE 8]&gt;&lt;!--&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;</span> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!--&lt;![endif]--&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&#39;UTF-8&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&#39;X-UA-Compatible&#39;</span> <span class="na">content=</span><span class="s">&#39;IE=edge,chrome=1&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;title&gt;</span>Title Goes Here<span class="nt">&lt;/title&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!--[if IE 9]&gt;</span>
+</span><span class='line'><span class="c">  &lt;style type=&quot;text/css&quot;&gt; .gradient { filter: none;} &lt;/style&gt;</span>
+</span><span class='line'><span class="c">&lt;![endif]--&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!--[if lt IE 9]&gt;</span>
+</span><span class='line'><span class="c">&lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;</span>
+</span><span class='line'><span class="c">&lt;![endif]--&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>This is based on the <a href="paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/">HTML5 set up from Paul Irish</a>. We'll use this as the basis for all of our pages. Now, to use this, we are going to create a <code>MY_Controller</code> inside of <code>appliction/core/MY_Controller.php</code>, and create a new function that we'll call <code>render</code></p>
 
-<p>{% codeblock application/core/MY_Controller.php lang:php %}</p>
-
-<p>&lt;?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');</p>
-
-<p>class MY_Controller extends CI_Controller {<br/>
-  protected $layout = 'layout';
-  protected function render($content) {</p>
-
-<pre><code>$view_data = array(
-    'content' =&gt; $content
-  );
-$this-&gt;load-&gt;view($this-&gt;layout,$view_data);
-</code></pre>
-
-<p>  }
-}
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/core/MY_Controller.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;&amp;lt;?php if ( ! defined(&#39;BASEPATH&#39;)) exit(&#39;No direct script access allowed&#39;);&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;class MY_Controller extends CI_Controller {&lt;br/&gt;</span>
+</span><span class='line'><span class="x">  protected $layout = &#39;layout&#39;;</span>
+</span><span class='line'><span class="x">  protected function render($content) {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;$view_data = array(</span>
+</span><span class='line'><span class="x">    &#39;content&#39; =&amp;gt; $content</span>
+</span><span class='line'><span class="x">  );</span>
+</span><span class='line'><span class="x">$this-&amp;gt;load-&amp;gt;view($this-&amp;gt;layout,$view_data);</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }</span>
+</span><span class='line'><span class="x">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>This will allow us to use the layout file to wrap all of our content. We've also stored the layout file as a protected variable of the MY_Controller, so that we can use different layouts for different controllers if we so choose. Now, let's modify the template file to be able to render the content. Change the body tag so that it looks like this:</p>
 
-<p>{% codeblock application/views/layout.php lang:html %}
-<body>
-  &lt;?= $content; ?>
-</body>
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/views/layout.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>  <span class="ni">&amp;lt;</span>?= $content; ?&gt;
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Now, let's set up an example view and an example controller to see how it works.</p>
 
-<p>{% codeblock application/views/example/index.php lang:html %}
-  <h1>Hello, World!</h1>
-  <p> Example page using layouts </p>
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/views/example/index.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>  <span class="nt">&lt;h1&gt;</span>Hello, World!<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;p&gt;</span> Example page using layouts <span class="nt">&lt;/p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>{% codeblock application/controllers/example.php lang:php %}
-&lt;?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');</p>
-
-<p>class Example extends MY_Controller {<br/>
-  public function index() {</p>
-
-<pre><code>$content = $this-&gt;load-&gt;view('example/index',null,true);
-$this-&gt;render($content);
-</code></pre>
-
-<p>  }
-}
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/controllers/example.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php if ( ! defined(&#39;BASEPATH&#39;)) exit(&#39;No direct script access allowed&#39;);&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;class Example extends MY_Controller {&lt;br/&gt;</span>
+</span><span class='line'><span class="x">  public function index() {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;$content = $this-&amp;gt;load-&amp;gt;view(&#39;example/index&#39;,null,true);</span>
+</span><span class='line'><span class="x">$this-&amp;gt;render($content);</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }</span>
+</span><span class='line'><span class="x">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h3>Step 2: Adding the Asset Helper</h3>
 
@@ -325,70 +505,129 @@ mkdir assets/images
 
 <p>Now, we are going to keep a list of all of the standard CSS and JavaScript files inside of our MY_Controller, and pass them along to the layout:</p>
 
-<p>{% codeblock application/core/MY_Controller.php lang:php %}
-&lt;?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');</p>
-
-<p>class MY_Controller extends CI_Controller {<br/>
-  protected $layout = 'layout';
-  protected $stylesheets = array(</p>
-
-<pre><code>'app.css'
-</code></pre>
-
-<p>  );
-  protected $javascripts = array(</p>
-
-<pre><code>'app.js'
-</code></pre>
-
-<p>  );</p>
-
-<p>  protected function render($content) {</p>
-
-<pre><code>$view_data = array(
-    'content' =&gt; $content,
-    'stylesheets' =&gt; $this-&gt;get_stylesheets(),
-    'javascripts' =&gt; $this-&gt;get_javascripts()
-  );
-$this-&gt;load-&gt;view($this-&gt;layout,$view_data);
-</code></pre>
-
-<p>  }</p>
-
-<p>  protected function get_stylesheets() {</p>
-
-<pre><code>return $this-&gt;stylesheets;
-</code></pre>
-
-<p>  }</p>
-
-<p>  protected function get_javascripts() {</p>
-
-<pre><code>return $this-&gt;javascripts;
-</code></pre>
-
-<p>  }
-}
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/core/MY_Controller.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php if ( ! defined(&#39;BASEPATH&#39;)) exit(&#39;No direct script access allowed&#39;);&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;class MY_Controller extends CI_Controller {&lt;br/&gt;</span>
+</span><span class='line'><span class="x">  protected $layout = &#39;layout&#39;;</span>
+</span><span class='line'><span class="x">  protected $stylesheets = array(&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;&#39;app.css&#39;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  );</span>
+</span><span class='line'><span class="x">  protected $javascripts = array(&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;&#39;app.js&#39;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  );&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  protected function render($content) {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;$view_data = array(</span>
+</span><span class='line'><span class="x">    &#39;content&#39; =&amp;gt; $content,</span>
+</span><span class='line'><span class="x">    &#39;stylesheets&#39; =&amp;gt; $this-&amp;gt;get_stylesheets(),</span>
+</span><span class='line'><span class="x">    &#39;javascripts&#39; =&amp;gt; $this-&amp;gt;get_javascripts()</span>
+</span><span class='line'><span class="x">  );</span>
+</span><span class='line'><span class="x">$this-&amp;gt;load-&amp;gt;view($this-&amp;gt;layout,$view_data);</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  protected function get_stylesheets() {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;return $this-&amp;gt;stylesheets;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  protected function get_javascripts() {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;return $this-&amp;gt;javascripts;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }</span>
+</span><span class='line'><span class="x">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>And now we'll update our template using the <code>css_asset()</code> and <code>js_asset()</code> functions from the helper we included earlier:</p>
 
-<p>{% codeblock application/views/layout.php lang:php %}</p>
-
-<!-- in the <head> .. -->
-
-
-<p>&lt;? foreach($stylesheets as $stylesheet): ?>
-  &lt;?= css_asset($stylesheet); ?>  <br/>
-&lt;? endforeach; ?></p>
-
-<!-- right before <body> -->
-
-
-<p>&lt;? foreach($javascripts as $javascript): ?>
-  &lt;?= js_asset($javascript); ?>
-&lt;? endforeach; ?>
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/views/layout.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;!-- in the &lt;head&gt; .. --&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;&amp;lt;? foreach($stylesheets as $stylesheet): ?&gt;</span>
+</span><span class='line'><span class="x">  &amp;lt;?= css_asset($stylesheet); ?&gt;  &lt;br/&gt;</span>
+</span><span class='line'><span class="x">&amp;lt;? endforeach; ?&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;!-- right before &lt;body&gt; --&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;&amp;lt;? foreach($javascripts as $javascript): ?&gt;</span>
+</span><span class='line'><span class="x">  &amp;lt;?= js_asset($javascript); ?&gt;</span>
+</span><span class='line'><span class="x">&amp;lt;? endforeach; ?&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>If you view the source, you should see that your <code>app.css</code> and <code>app.js</code> files are now included.</p>
 
@@ -400,43 +639,78 @@ $this-&gt;load-&gt;view($this-&gt;layout,$view_data);
 
 <p>So let's update those two functions, and add two more protected variables to our <code>MY_Controller</code> file:</p>
 
-<p>{% codeblock application/core/MY_Controller.php lang:php %}
-&lt;?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');                                              <br/>
-class MY_Controller extends CI_Controller {
-  protected $layout = 'layout';
-  protected $stylesheets = array(</p>
-
-<pre><code>'app.css'
-</code></pre>
-
-<p>  );
-  protected $javascripts = array(</p>
-
-<pre><code>'app.js'
-</code></pre>
-
-<p>  );
-  protected $local_stylesheets = array();
-  protected $local_javascripts = array();</p>
-
-<p>  //other parts of the class..</p>
-
-<p>  protected function get_stylesheets() {</p>
-
-<pre><code>return array_merge($this-&gt;stylesheets,$this-&gt;local_stylesheets);
-</code></pre>
-
-<p>  }</p>
-
-<p>  protected function get_javascripts() {</p>
-
-<pre><code>return array_merge($this-&gt;javascripts,$this-&gt;local_javascripts);
-</code></pre>
-
-<p>  }</p>
-
-<p>}
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>application/core/MY_Controller.php  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&amp;lt;?php if ( ! defined(&#39;BASEPATH&#39;)) exit(&#39;No direct script access allowed&#39;);                                              &lt;br/&gt;</span>
+</span><span class='line'><span class="x">class MY_Controller extends CI_Controller {</span>
+</span><span class='line'><span class="x">  protected $layout = &#39;layout&#39;;</span>
+</span><span class='line'><span class="x">  protected $stylesheets = array(&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;&#39;app.css&#39;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  );</span>
+</span><span class='line'><span class="x">  protected $javascripts = array(&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;&#39;app.js&#39;</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  );</span>
+</span><span class='line'><span class="x">  protected $local_stylesheets = array();</span>
+</span><span class='line'><span class="x">  protected $local_javascripts = array();&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  //other parts of the class..&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  protected function get_stylesheets() {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;return array_merge($this-&amp;gt;stylesheets,$this-&amp;gt;local_stylesheets);</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  protected function get_javascripts() {&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;pre&gt;&lt;code&gt;return array_merge($this-&amp;gt;javascripts,$this-&amp;gt;local_javascripts);</span>
+</span><span class='line'><span class="x">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;  }&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">&lt;p&gt;}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Now we are able to add additional asset files to the <code>local_stylesheets</code> and <code>local_javascripts</code> variables in classes that extend <code>MY_Controller</code>, allowing us to keep our code seperated and more organized. With this and templates, we now have a good system in place to manage the visual aspects of our web application.</p>
 ]]></content>

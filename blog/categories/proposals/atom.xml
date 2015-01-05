@@ -4,7 +4,7 @@
   <title><![CDATA[Category: proposals | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/proposals/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -20,7 +20,7 @@
     <id>http://glennstovall.com/blog/2014/09/15/why-multiple-packages-in-your-proposals-instantly-increase-conversions</id>
     <content type="html"><![CDATA[<h3>The 3 Tiered Approach That Closes More Sales</h3>
 
-<p>{% img left /images/articles/baseball.png 260 %}</p>
+<p><img class="left" src="/images/articles/baseball.png" width="260"></p>
 
 <p>When a freelancer submits a proposal, they will often only include one offer. They will set the deliverable, and the price, and throw their proposal over the wall. When you do this, you give the client a binary option: Hire you or don't.</p>
 

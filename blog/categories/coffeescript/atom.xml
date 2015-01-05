@@ -4,7 +4,7 @@
   <title><![CDATA[Category: coffeescript | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/coffeescript/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,7 +18,7 @@
     <link href="http://glennstovall.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/"/>
     <updated>2012-05-07T21:57:00-04:00</updated>
     <id>http://glennstovall.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript</id>
-    <content type="html"><![CDATA[<p>{% img left /images/articles/coffeescript.jpg %}
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/coffeescript.jpg">
 Node.js and CoffeeScript have been all the rage in the web development community as of late. In this tutorial, I'll be walking though how to set up your development environment to quickly write &amp; test Node.js apps completly in CoffeeScript, and have your development app update automatically without having to compile CoffeeScript <em>or</em> restart your Node.js server.</p>
 
 <!-- more -->

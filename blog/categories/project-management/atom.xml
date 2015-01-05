@@ -4,7 +4,7 @@
   <title><![CDATA[Category: project management | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/project-management/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,7 +18,7 @@
     <link href="http://glennstovall.com/blog/2013/03/15/how-i-use-git/"/>
     <updated>2013-03-15T09:35:00-04:00</updated>
     <id>http://glennstovall.com/blog/2013/03/15/how-i-use-git</id>
-    <content type="html"><![CDATA[<p>{% img left /images/articles/git.png 260 %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/git.png" width="260"></p>
 
 <p><a href="http://git-scm.com/">git</a> is a very powerful and flexible tool.  With this power and flexibility comes a daunting amount of choices to make in how to manage your code with it. Here is the current setup I've used on both personal solo projects and professional jobs with other developers that has worked for me and saved me a lot of headaches.</p>
 

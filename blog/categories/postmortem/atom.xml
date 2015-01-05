@@ -4,7 +4,7 @@
   <title><![CDATA[Category: postmortem | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/postmortem/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -28,6 +28,9 @@
 
 
 <p>This is a valuable writing exercise, and I’d strongly encourage you to do the same. This is my postmortem of 2014, as well as a review of how I did on my goals I set for myself at the beginning of the year.</p>
+
+<!--more-->
+
 
 <h2>Did I Hit My 2013 Goals?</h2>
 
@@ -179,6 +182,10 @@
 <h3>Investing In My Business</h3>
 
 <p>I invested significantly more in my education and in networking than I did last year, and both paid off in spades. Many books I’ve read, groups I’ve joined, and services I’ve used have paid for themselves many times over. This year I’m excited to find more opportunities where I believe I can make my money work for me.</p>
+
+<h3>25% Revenue Growth</h3>
+
+<p>Self-explanitory.</p>
 ]]></content>
   </entry>
   
@@ -254,7 +261,7 @@
     <link href="http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem/"/>
     <updated>2014-05-09T10:31:00-04:00</updated>
     <id>http://glennstovall.com/blog/2014/05/09/freelance-pricing-handbook-launch-post-mortem</id>
-    <content type="html"><![CDATA[<p>{% img left /images/freelance_pricing_handbook.png 260 %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/freelance_pricing_handbook.png" width="260"></p>
 
 <p>Whenever I finish a product, I like to write a post-mortem. A post-mortem answers a few important questions: What w went well? What went wrong? What could be done better next time? I usually keep these to myself, but this time I wanted to share. Building an email list is something every business should be doing, and I wanted to share the specific techniques I used in order to increase the size of a list 500% in 2 days.</p>
 

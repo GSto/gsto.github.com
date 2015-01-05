@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2014-12-28T15:53:32-05:00</updated>
+  <updated>2015-01-05T10:16:51-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -18,7 +18,7 @@
     <link href="http://glennstovall.com/blog/2012/07/04/how-to-add-a-contact-form-to-octopress/"/>
     <updated>2012-07-04T11:43:00-04:00</updated>
     <id>http://glennstovall.com/blog/2012/07/04/how-to-add-a-contact-form-to-octopress</id>
-    <content type="html"><![CDATA[<p>{% img left /images/articles/wufoo.png %}
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/wufoo.png">
 While Octopress is a nice blogging platform, using static generated pages can lead to being unable to have some of the features of other blogging platforms. One of the most common missed features is being able to have a contact us page.  In this tutorial I'll show you how to add a contact form to octopress by using <a href="http://www.wufoo.com">Wufoo</a>.</p>
 
 <!-- more -->
@@ -35,7 +35,7 @@ While Octopress is a nice blogging platform, using static generated pages can le
 
 <p>Once that is done, you'll also probably want to add it to the navigation. You can add pages to the navigation by editing the file located in <code>source/_includes/custom/navigation.html</code> and adding the following line inside of the <code>&lt;ul&gt;</code> tag:</p>
 
-<pre><code>  &lt;li&gt;&lt;a href="{{ root_url }}/contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+<pre><code>  &lt;li&gt;&lt;a href="/contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
 </code></pre>
 
 <p>once this is done, all you have to do is regenrate your page files and deploy:</p>
@@ -53,7 +53,7 @@ rake deploy
     <link href="http://glennstovall.com/blog/2012/02/11/blogging-with-octopress/"/>
     <updated>2012-02-11T10:00:00-05:00</updated>
     <id>http://glennstovall.com/blog/2012/02/11/blogging-with-octopress</id>
-    <content type="html"><![CDATA[<p>{% img left /images/articles/blog_with_octopress.png 260 %}
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/blog_with_octopress.png" width="260">
 If you're reading this, then I've successfully got my octopress blog up and running on Github pages. Why the switch to octopress?</p>
 
 <!-- more -->
