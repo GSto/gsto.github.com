@@ -4,7 +4,7 @@
   <title><![CDATA[Category: terminal | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/terminal/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-01-25T09:12:32-05:00</updated>
+  <updated>2015-01-25T10:02:06-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -394,6 +394,10 @@ Let's set up our appointment reminder files. First let's start by building the t
 <p>I also have a small helper file I use in CodeIgniter to make formatting output easier. You can check it out over on Github.</p>
 
 <p><a href="https://github.com/GSto/cli_helper">cli_helper on Github</a></p>
+
+<h2>Making Complex Apps is Easy. Making them Simple is Hard.</h2>
+
+<p>If you want to learn more about building more reliable, scalable CodeIgniter applications, you can download my free white paper, <a href="/products/reliable-codeigniter">How to Build Maintainable, Scalable Applications With CodeIgniter</a>.</p>
 ]]></content>
   </entry>
   
