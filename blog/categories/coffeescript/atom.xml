@@ -4,7 +4,7 @@
   <title><![CDATA[Category: coffeescript | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/coffeescript/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-01-25T10:02:06-05:00</updated>
+  <updated>2015-02-03T08:49:32-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -34,7 +34,7 @@ Node.js and CoffeeScript have been all the rage in the web development community
 <p>Now that we have CoffeeScript installed, we can write a basic 'hello world' server is CoffeeScript. If you aren't familiar with the CoffeeScript syntax, you can refer to the (CoffeeScript Documentation)[http://coffeescript.org/]. Write the following to a <code>hello.coffee</code> file:</p>
 
 <p>``` coffeescript hello.coffee
-require http = 'http'
+http = require 'http'
 http.createServer (req, res) -></p>
 
 <pre><code>    res.writeHead 200
