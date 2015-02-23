@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: development | Glenn Stovall]]></title>
+  <link href="http://glennstovall.com/blog/categories/development/atom.xml" rel="self"/>
+  <link href="http://glennstovall.com/"/>
+  <updated>2015-02-23T16:43:47-05:00</updated>
+  <id>http://glennstovall.com/</id>
+  <author>
+    <name><![CDATA[Glenn Stovall]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[18 Tools I Would Use to Build a SaaS Product Today]]></title>
+    <link href="http://glennstovall.com/blog/2015/02/23/18-tools-i-would-use-to-build-a-saas-product-today/"/>
+    <updated>2015-02-23T16:21:00-05:00</updated>
+    <id>http://glennstovall.com/blog/2015/02/23/18-tools-i-would-use-to-build-a-saas-product-today</id>
+    <content type="html"><![CDATA[<p>It seems like these days everyone is wanting to build a software as a service app. The siren’s call of monthly recurring revenue is hard to ignore.</p>
+
+<p>SaaS products are a complex undertaking. I’ve worked on them before and seen how all the moving parts have to interact. There are plenty of tools, libraries, frameworks, and even <em>other</em> SaaS products out there to help you along the way. Where do you even get started?</p>
+
+<p>If I were to start building a SaaS application today, and I say today because technology is always moving quickly, here are the tools I would use to build a SaaS application. Most of these are focused on the technical aspect of getting the software built, and not on sales and marketing, which is another listicle entirely.</p>
+
+<!-- more -->
+
+
+<h2>Server Side Development</h2>
+
+<h3>1. Ruby on Rails</h3>
+
+<p>Ruby on Rails is my back end framework of choice. It’s not always the most efficient, and sometimes it gets in your way instead of helping. But the community, suite of tools, and ability to handle common web application problems easily makes it a winner in my book.</p>
+
+<h3>2. PostgreSQL</h3>
+
+<p>PostgreSQL is the default for Ruby on Rails applications, and the best database I’ve ever used. The fact that it has support for JSON objects makes using it over other SQL based solutions like MySQL, and NoSQL solutions like MongoDB a no-brainer decision 99% of the time.</p>
+
+<h2>Client-Side Development</h2>
+
+<h3>3. Bower</h3>
+
+<p>Ruby on Rails has built-in support for package management in the form of bundler and Gemfiles. However, front end packages in the form of gems are often created and maintained by 3rd party developers, which means they are often buggy, out-of-date, incomplete, or non-existant. Bower is more reliable. There are tools, such as the <a href="https://github.com/rharriso/bower-rails"><code>bower-rails</code></a> gem, that help you integrate bower with the Rails asset pipeline.</p>
+
+<h3>4. Foundation by Zurb</h3>
+
+<p>I find <a href="http://foundation.zurb.com/">Foundation</a> by <a href="http://zurb.com/">Zurb</a> to be cleaner and simpler to use than Bootstrap by Twitter. Plus, you get the added in benefit of you unstyled front end looking slightly more unique than other application’s unstyled front ends! They also have a new version of Foundation that is aimed specifically at applications, and not just websites.</p>
+
+<h3>5. AngularJS (maybe)</h3>
+
+<p>Some applications have a structure where the UI is built as a client side web application, and the server is just an API server that handles data operations. This structure is good for some, but not all applications. If the app needs a dedicated client side front end, then <a href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/">AngularJS</a> is my choice.</p>
+
+<h2>Hosting and Systems Administration</h2>
+
+<h3>6. Heroku</h3>
+
+<p>Heroku is pricey, but worth it. While I pay a steep Heroku bill month-to-month, it gives me more time to focus on creative and decisions, and less on system administration. If you or someone that works for you is handy at  maintaining servers, this may not be the best choice for you. Plus, it “scales”. Startups love things that scale.</p>
+
+<h3>7.Amazon Web Services (Specifically S3)</h3>
+
+<p>I use amazon for hosting my assets, such as images, or even entire static sites. The cost is cheap and flexible. However, if you are using Heroku I find it worthwhile to go with your own setup and not pay their fee.</p>
+
+<h3>8. Namecheap</h3>
+
+<p>Namecheap is thebest place I have found to manage domains and SSL certificates. Both are a requirement for a web based SaaS app.</p>
+
+<h2>Payment</h2>
+
+<h3>9.Stripe</h3>
+
+<p>Stripe is an easy to use payment gateway, both for managing payment, and integrating it as a developer. I even use it to manage invoice payments from my clients.</p>
+
+<h3>10.Payola</h3>
+
+<p><a href="https://www.payola.io/">Payola</a> is a gem used to integrate with Stripe, created by the guy that literally wrote <a href="https://www.masteringmodernpayments.com/">the book on the subject</a>.</p>
+
+<h2>Email</h2>
+
+<h3>11. Drip</h3>
+
+<p><a href="http://glennstovall.com/recommends/drip">Drip</a> is a powerful marketing automation platform that doesn’t cost an arm and a leg. I’d use Drip for both marketing emails to bring customers on board, and also to set up campaigns for situations such as user onboarding and feature adoption.</p>
+
+<h3>12. Mandrill</h3>
+
+<p>Mandrill, a spinoff service of Mailchimp, is great for setting up transactional emails. Drip could be used for this purpose as well, and I’ve yet to experiment to see which one works better. If email is a heavy part of your marketing structure, I would rely on Drip exclusively. If you are sending one-off emails, I would use Mandrill.</p>
+
+<h2>Testing</h2>
+
+<h3>13. RSpec</h3>
+
+<p>RSpec is my personal favorite testing tool for Ruby on Rails. It makes writing tests painless and reduced friction means more tests get written.</p>
+
+<h3>14. Capybara</h3>
+
+<p>Once you have used RSpec for unit testing, Capybara makes sure those individual pieces work together nicely.</p>
+
+<h3>15. Jasmine</h3>
+
+<p>What RSpec accomplishes on the server-side, Jasmine accomplishes on the client-side. It also plays nicely with AngularJS, if you decided to go that route.</p>
+
+<h3>16. Teaspoon</h3>
+
+<p>Teaspoon is a gem that allows you to run client side tests in the same manner you run your server side tests.</p>
+
+<h2>Analytics</h2>
+
+<h3>17. Google Analytics</h3>
+
+<p>A good standard, but not enough by itself these days. Anyone who wants to dig a bit deeper into the behavior of their application or shared my hatred of <code>[keyword not provided]</code> knows what I’m talking about.</p>
+
+<h3>18. Mixpanel</h3>
+
+<p>Mixpanel makes event tracking a breeze and is free when you are first getting started. Are people actually using that new feature you built? Do people actually share with those brightly colored share buttons? Which features convince people to renew their accounts and upgrade? Mixpanel will help you answer that question.</p>
+
+<h3>19. Baremetrics (eventually)</h3>
+
+<p>“One click and you get dozens of valuable metrics from your Stripe account”. Whoever does the copywriting for Baremetrics is right on the nose with their description. Baremetrics isn’t valuable until you have enough paying customers that the data matters, but as soon as you do, I would highly recommend implementing their service.</p>
+
+<p>What would you add to your SaaS toolbelt? <a href="http://glennstovall.com/contact">Hit me up and let me know</a>. I love geeking out about this kind of thing.</p>
+]]></content>
+  </entry>
+  
+</feed>

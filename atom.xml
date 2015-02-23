@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-02-03T08:49:32-05:00</updated>
+  <updated>2015-02-23T16:43:47-05:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,114 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[18 Tools I Would Use to Build a SaaS Product Today]]></title>
+    <link href="http://glennstovall.com/blog/2015/02/23/18-tools-i-would-use-to-build-a-saas-product-today/"/>
+    <updated>2015-02-23T16:21:00-05:00</updated>
+    <id>http://glennstovall.com/blog/2015/02/23/18-tools-i-would-use-to-build-a-saas-product-today</id>
+    <content type="html"><![CDATA[<p>It seems like these days everyone is wanting to build a software as a service app. The siren’s call of monthly recurring revenue is hard to ignore.</p>
+
+<p>SaaS products are a complex undertaking. I’ve worked on them before and seen how all the moving parts have to interact. There are plenty of tools, libraries, frameworks, and even <em>other</em> SaaS products out there to help you along the way. Where do you even get started?</p>
+
+<p>If I were to start building a SaaS application today, and I say today because technology is always moving quickly, here are the tools I would use to build a SaaS application. Most of these are focused on the technical aspect of getting the software built, and not on sales and marketing, which is another listicle entirely.</p>
+
+<!-- more -->
+
+
+<h2>Server Side Development</h2>
+
+<h3>1. Ruby on Rails</h3>
+
+<p>Ruby on Rails is my back end framework of choice. It’s not always the most efficient, and sometimes it gets in your way instead of helping. But the community, suite of tools, and ability to handle common web application problems easily makes it a winner in my book.</p>
+
+<h3>2. PostgreSQL</h3>
+
+<p>PostgreSQL is the default for Ruby on Rails applications, and the best database I’ve ever used. The fact that it has support for JSON objects makes using it over other SQL based solutions like MySQL, and NoSQL solutions like MongoDB a no-brainer decision 99% of the time.</p>
+
+<h2>Client-Side Development</h2>
+
+<h3>3. Bower</h3>
+
+<p>Ruby on Rails has built-in support for package management in the form of bundler and Gemfiles. However, front end packages in the form of gems are often created and maintained by 3rd party developers, which means they are often buggy, out-of-date, incomplete, or non-existant. Bower is more reliable. There are tools, such as the <a href="https://github.com/rharriso/bower-rails"><code>bower-rails</code></a> gem, that help you integrate bower with the Rails asset pipeline.</p>
+
+<h3>4. Foundation by Zurb</h3>
+
+<p>I find <a href="http://foundation.zurb.com/">Foundation</a> by <a href="http://zurb.com/">Zurb</a> to be cleaner and simpler to use than Bootstrap by Twitter. Plus, you get the added in benefit of you unstyled front end looking slightly more unique than other application’s unstyled front ends! They also have a new version of Foundation that is aimed specifically at applications, and not just websites.</p>
+
+<h3>5. AngularJS (maybe)</h3>
+
+<p>Some applications have a structure where the UI is built as a client side web application, and the server is just an API server that handles data operations. This structure is good for some, but not all applications. If the app needs a dedicated client side front end, then <a href="http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/">AngularJS</a> is my choice.</p>
+
+<h2>Hosting and Systems Administration</h2>
+
+<h3>6. Heroku</h3>
+
+<p>Heroku is pricey, but worth it. While I pay a steep Heroku bill month-to-month, it gives me more time to focus on creative and decisions, and less on system administration. If you or someone that works for you is handy at  maintaining servers, this may not be the best choice for you. Plus, it “scales”. Startups love things that scale.</p>
+
+<h3>7.Amazon Web Services (Specifically S3)</h3>
+
+<p>I use amazon for hosting my assets, such as images, or even entire static sites. The cost is cheap and flexible. However, if you are using Heroku I find it worthwhile to go with your own setup and not pay their fee.</p>
+
+<h3>8. Namecheap</h3>
+
+<p>Namecheap is thebest place I have found to manage domains and SSL certificates. Both are a requirement for a web based SaaS app.</p>
+
+<h2>Payment</h2>
+
+<h3>9.Stripe</h3>
+
+<p>Stripe is an easy to use payment gateway, both for managing payment, and integrating it as a developer. I even use it to manage invoice payments from my clients.</p>
+
+<h3>10.Payola</h3>
+
+<p><a href="https://www.payola.io/">Payola</a> is a gem used to integrate with Stripe, created by the guy that literally wrote <a href="https://www.masteringmodernpayments.com/">the book on the subject</a>.</p>
+
+<h2>Email</h2>
+
+<h3>11. Drip</h3>
+
+<p><a href="http://glennstovall.com/recommends/drip">Drip</a> is a powerful marketing automation platform that doesn’t cost an arm and a leg. I’d use Drip for both marketing emails to bring customers on board, and also to set up campaigns for situations such as user onboarding and feature adoption.</p>
+
+<h3>12. Mandrill</h3>
+
+<p>Mandrill, a spinoff service of Mailchimp, is great for setting up transactional emails. Drip could be used for this purpose as well, and I’ve yet to experiment to see which one works better. If email is a heavy part of your marketing structure, I would rely on Drip exclusively. If you are sending one-off emails, I would use Mandrill.</p>
+
+<h2>Testing</h2>
+
+<h3>13. RSpec</h3>
+
+<p>RSpec is my personal favorite testing tool for Ruby on Rails. It makes writing tests painless and reduced friction means more tests get written.</p>
+
+<h3>14. Capybara</h3>
+
+<p>Once you have used RSpec for unit testing, Capybara makes sure those individual pieces work together nicely.</p>
+
+<h3>15. Jasmine</h3>
+
+<p>What RSpec accomplishes on the server-side, Jasmine accomplishes on the client-side. It also plays nicely with AngularJS, if you decided to go that route.</p>
+
+<h3>16. Teaspoon</h3>
+
+<p>Teaspoon is a gem that allows you to run client side tests in the same manner you run your server side tests.</p>
+
+<h2>Analytics</h2>
+
+<h3>17. Google Analytics</h3>
+
+<p>A good standard, but not enough by itself these days. Anyone who wants to dig a bit deeper into the behavior of their application or shared my hatred of <code>[keyword not provided]</code> knows what I’m talking about.</p>
+
+<h3>18. Mixpanel</h3>
+
+<p>Mixpanel makes event tracking a breeze and is free when you are first getting started. Are people actually using that new feature you built? Do people actually share with those brightly colored share buttons? Which features convince people to renew their accounts and upgrade? Mixpanel will help you answer that question.</p>
+
+<h3>19. Baremetrics (eventually)</h3>
+
+<p>“One click and you get dozens of valuable metrics from your Stripe account”. Whoever does the copywriting for Baremetrics is right on the nose with their description. Baremetrics isn’t valuable until you have enough paying customers that the data matters, but as soon as you do, I would highly recommend implementing their service.</p>
+
+<p>What would you add to your SaaS toolbelt? <a href="http://glennstovall.com/contact">Hit me up and let me know</a>. I love geeking out about this kind of thing.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building Reliable Web Apps Show Notes]]></title>
@@ -1354,45 +1462,6 @@ such as <a href="http://www.squarespace.com/">Squarespace</a>, <a href="http://w
 <p>In addition to forms that you can embed, ConvertKit also allows you to build landing pages which can then be embedded on your site. I also like the simple look of the emails. I hate the idea of &#8220;newsletters&#8221;. I view my list as communication at scale. ConvertKit is just an easy way to email a few hundred people and start some conversations. All the emails come from my email address so that you can hit &#8220;reply&#8221; to get in touch with me. And I always write back. If you want to see what one of their landing pages looks like and/or sign up for my list, <a href="https://app.convertkit.com/concordant/letters">Here is the link</a></p>
 
 <p>Do you have any tools that make your life as a freelancer easier? If so, <a href="http://glennstovall.com/contact">Drop me a line</a> and let me know!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Will You Take The 30 day Publishing Challenge?]]></title>
-    <link href="http://glennstovall.com/blog/2014/09/03/30-day-blogging-challenge/"/>
-    <updated>2014-09-03T14:15:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/09/03/30-day-blogging-challenge</id>
-    <content type="html"><![CDATA[<h3>Come Ship More Content in September With Me</h3>
-
-<p>I heard about this challenge that a friend of a friend is doing: blog every weekday for 30 days. Here&#8217;s <a href="http://cdevroe.com/blog/9527/blogging-every-weekday-for-30-days">the original post</a>. Here&#8217;s the post where I <a href="http://mattdsmith.com/30-day-blog-challenge/">heard about it</a>. I know writing is a valuable skill. Blogging can help you build your reach, prove your authority, and give you an way to provide value to your potential clients and customers by providing them with educational content.</p>
-
-<!-- more -->
-
-
-<p>However, I want to modify this challenge a bit, just because I kind of hate the term &#8220;blogging&#8221;. Blogging is just one way to deliver content, there are several others. Instead, I want to take on the &#8220;30-day publishing challenge&#8221;. Under my rules, any of the following will count as my writing for the day:</p>
-
-<h3>What Counts</h3>
-
-<ul>
-<li>Publishing a new blog post. This includes my personal site or sites such as Medium.</li>
-<li>Publishing a new letter to people on my mailing list (yep, this is my Day 1)</li>
-<li>Publishing a new page or re-writing an existing page on my personal or company site.</li>
-<li>Publishing another form of long-form content, such as an email course, eBook, or PDF.
-Here are things that don&#8217;t count:</li>
-</ul>
-
-
-<h3>What Doesn&#8217;t Count</h3>
-
-<ul>
-<li>Republishing existing content in a new form (I&#8217;ve been looking into using Quora&#8217;s and LinkedIn&#8217;s publishing platforms to get more reach)</li>
-<li>Super short-form content (tweets, tumbles, facebook posts, etc.)</li>
-</ul>
-
-
-<p>Since I&#8217;m bending the rules a bit, I&#8217;m going to publish something every 30 days instead of just on weekdays. This also means that for the weekends I&#8217;ll probably write three things on Friday and space them out over the weekend.</p>
-
-<p>So you up to taking the challenge? If  <a href="http://www.glennstovall.com/contact">drop me a line</a>. I&#8217;d love to follow along with what you are doing.</p>
 ]]></content>
   </entry>
   
