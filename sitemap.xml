@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://glennstovall.com/blog/2012/02/11/blogging-with-octopress/</loc>
-        <lastmod>2014-11-16T22:22:23-05:00</lastmod>
+        <lastmod>2015-03-16T19:43:07-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/2012/02/15/terminals-for-absolute-beginners/</loc>
@@ -305,16 +305,22 @@
         <lastmod>2015-02-23T16:42:48-05:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://glennstovall.com/blog/2015/03/16/how-to-remove-the-hash-from-angular-routes-in-rails/
+        </loc>
+        <lastmod>2015-03-16T19:20:54-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://glennstovall.com/about/</loc>
         <lastmod>2014-11-16T10:13:48-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/archives/</loc>
-        <lastmod>2015-02-23T16:42:48-05:00</lastmod>
+        <lastmod>2015-03-16T19:43:07-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/</loc>
-        <lastmod>2015-02-23T16:42:48-05:00</lastmod>
+        <lastmod>2015-03-16T19:43:07-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/books/freelance-pricing-handbook/download.html</loc>
@@ -361,8 +367,12 @@
         <lastmod>2014-12-24T10:26:24-05:00</lastmod>
     </url>
     <url>
+        <loc>http://glennstovall.com/how-to-remove-the-hash-from-angular-routes-in-rails/</loc>
+        <lastmod>2015-03-16T19:04:17-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://glennstovall.com/</loc>
-        <lastmod>2015-02-23T16:42:48-05:00</lastmod>
+        <lastmod>2015-03-16T19:43:07-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/my-latest-thing/</loc>
@@ -402,7 +412,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/products/reliable-codeigniter/</loc>
-        <lastmod>2015-02-23T16:42:48-05:00</lastmod>
+        <lastmod>2015-03-16T19:43:07-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/resume/</loc>
@@ -413,15 +423,23 @@
         <lastmod>2013-03-03T21:36:27-05:00</lastmod>
     </url>
     <url>
+        <loc>http://glennstovall.com/services/kickstart-your-saas/</loc>
+        <lastmod>2015-03-13T15:08:30-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://glennstovall.com/services/kickstart-your-saas/signup/</loc>
+        <lastmod>2015-03-13T15:16:48-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://glennstovall.com/wedding-photos/</loc>
         <lastmod>2014-11-16T10:13:48-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/write-a-website/</loc>
-        <lastmod>2015-02-23T16:42:48-05:00</lastmod>
+        <lastmod>2015-03-16T19:43:07-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/write-a-website/thank-you/</loc>
-        <lastmod>2015-02-23T16:42:48-05:00</lastmod>
+        <lastmod>2015-03-16T19:43:07-04:00</lastmod>
     </url>
 </urlset>

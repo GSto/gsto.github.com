@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-02-23T16:43:47-05:00</updated>
+  <updated>2015-03-16T19:43:07-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,112 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Remove the Hash from Angular Routes in Rails]]></title>
+    <link href="http://glennstovall.com/blog/2015/03/16/how-to-remove-the-hash-from-angular-routes-in-rails/"/>
+    <updated>2015-03-16T19:04:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2015/03/16/how-to-remove-the-hash-from-angular-routes-in-rails</id>
+    <content type="html"><![CDATA[<p>When building client side applications, your URLs are prepended with a hash. Removing this can make your routes more user friendly and more easily crawled by search engines. Here is how you can remove the hash from your routes in an Angular app built on Ruby on Rails, and use the standard URL structure.</p>
+
+<!-- more -->
+
+
+<h2>Step 0: Our example Application</h2>
+
+<p>We’ll look at a recipe site for our example application. In our application, we’ll have a homepage, a recipe route that shows us all of the recipes, and a route for single recipes. Here is our application configuration:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'> <span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s2">&quot;recipeapp&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'> <span class="nx">app</span><span class="p">.</span><span class="nx">config</span><span class="p">([</span><span class="s2">&quot;$routeProvider&quot;</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">$routeProvider</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>   <span class="nx">$routeProvider</span>
+</span><span class='line'>     <span class="p">.</span><span class="nx">when</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">,</span> <span class="p">{</span>
+</span><span class='line'>       <span class="nx">templateUrl</span><span class="o">:</span> <span class="s2">&quot;templates/index.html&quot;</span><span class="p">,</span>
+</span><span class='line'>       <span class="nx">controller</span><span class="o">:</span> <span class="s2">&quot;IndexController&quot;</span>
+</span><span class='line'>     <span class="p">})</span>
+</span><span class='line'>     <span class="p">.</span><span class="nx">when</span><span class="p">(</span><span class="s2">&quot;/recipes/, {</span>
+</span><span class='line'><span class="s2">       templateUrl: &quot;</span><span class="nx">templates</span><span class="o">/</span><span class="nx">recipes</span><span class="p">.</span><span class="nx">html</span><span class="s2">&quot;,</span>
+</span><span class='line'><span class="s2">       controller: &quot;</span><span class="nx">RecipesController</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="s2">     })</span>
+</span><span class='line'><span class="s2">     .when(&quot;</span><span class="o">/</span><span class="nx">recipes</span><span class="o">/:</span><span class="nx">id</span><span class="s2">&quot;, {</span>
+</span><span class='line'><span class="s2">       templateUrl: &quot;</span><span class="nx">templates</span><span class="o">/</span><span class="nx">recipe_show</span><span class="p">.</span><span class="nx">html</span><span class="s2">&quot;,</span>
+</span><span class='line'><span class="s2">       controller: &quot;</span><span class="nx">RecipeShowController</span><span class="err">&quot;</span>
+</span><span class='line'>     <span class="p">});</span>
+</span><span class='line'> <span class="p">}]);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step 1: Remove The Hash</h2>
+
+<p>First, we will enable [HTML5 Mode] in our AngularJS application. This will remove the hash from our URLs. Include <code>$locationProvider</code> in your module’s configuration, and set the mode to true.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'> <span class="nx">app</span><span class="p">.</span><span class="nx">config</span><span class="p">([</span><span class="s1">&#39;$routeProvider&#39;</span><span class="p">,</span><span class="s1">&#39;$locationProvider&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$routeProvider</span><span class="p">,</span> <span class="nx">$locationProvider</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>   <span class="nx">$locationProvider</span><span class="p">.</span><span class="nx">html5mode</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+</span><span class='line'>   <span class="c1">// ...</span>
+</span><span class='line'>  <span class="p">}]);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step 2: Configure Rails To Handle Angular Routes</h2>
+
+<p>The above will work for cases when the user navigates from one part of the AngularJS application to another. However, if they try to navigate directly, they will get an error. If the user tries to navigate to <code>/recipes/1</code> directly, or hits refresh on that page, the request is sent to the Ruby on Rails router instead of Angular.</p>
+
+<p>To fix this, we need to capture those requests. In you <code>app/config/routes.rb</code> at the end:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">get</span> <span class="s1">&#39;/\*path&#39;</span> <span class="o">=&gt;</span> <span class="n">redirect</span><span class="p">(</span><span class="s1">&#39;/?goto=%{path}&#39;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will cause any uncaught routes to get redirected as a query string, which will be passed to the Angular router.</p>
+
+<h2>Step 3: Handle Rails Redirects</h2>
+
+<p>Angular needs to know how to handle these routes, so we will add a call to the <code>otherwise()</code> method of <code>$routeProvider</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'> <span class="nx">$routeProvider</span><span class="p">.</span><span class="nx">otherwise</span><span class="p">({</span>
+</span><span class='line'>   <span class="nx">redirectTo</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">current</span><span class="p">,</span> <span class="nx">path</span><span class="p">,</span> <span class="nx">search</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>     <span class="k">if</span><span class="p">(</span><span class="nx">search</span><span class="p">.</span><span class="kr">goto</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>       <span class="k">return</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="nx">search</span><span class="p">.</span><span class="kr">goto</span><span class="p">;</span>
+</span><span class='line'>     <span class="p">}</span>
+</span><span class='line'>       <span class="k">return</span> <span class="s1">&#39;/&#39;</span>
+</span><span class='line'>   <span class="p">}</span>
+</span><span class='line'> <span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now any URL will get redirected to Angular, which will handle the route. This way you don’t have to maintain two lists of routes, and you can use standard URL formats in your application.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[18 Tools I Would Use to Build a SaaS Product Today]]></title>
@@ -1394,74 +1500,6 @@ such as <a href="http://www.squarespace.com/">Squarespace</a>, <a href="http://w
 <h3>Are You Changing Your Blogging Strategy Again?</h3>
 
 <p>No. This time, I&#8217;m not changing how I am doing anything, But I think that this is a strategy worth talking about, and worth considering if you are looking for a new way to publish your content, grow an audience, and make more sales.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[My Freelancing Stack]]></title>
-    <link href="http://glennstovall.com/blog/2014/09/04/my-freelancing-stack/"/>
-    <updated>2014-09-04T16:23:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/09/04/my-freelancing-stack</id>
-    <content type="html"><![CDATA[<h3>10 Tools I Use to Manage and Automate My Business</h3>
-
-<p>In web development, the group of software, frameworks, and tools is called our &#8220;stack&#8221;. In businesses, you have a similar &#8220;stack&#8221;, which is made up of the tools and systems that you use to run your business. Today I wanted to list out my personal stack that I use.</p>
-
-<!-- more -->
-
-
-<h2>Sales and Lead Management: PipeDrive</h2>
-
-<p><a href="https://www.pipedrive.com/en/features/lead-tracking-software">Pipedrive</a> has the best visualization of the sales pipeline I have seen, and it can be completely customized. But the most valuable feature is that every time you finish a task that is related to a deal, it will automatically prompt you to create another. This way you never forget to follow up with a potential client, and deals don&#8217;t fall through the cracks. This is great way to keep track of your leads.</p>
-
-<h2>Contracts: Docracy</h2>
-
-<p><a href="http://www.docracy.com">Docracy</a> is a free resource for open source contract templates. It also has e-signatures, so you can use it to get contracts signed with remote clients. Here a couple of templates that I either use, or have my own modified version of:</p>
-
-<ul>
-<li><a href="http://www.docracy.com/649dkpe7g9/contract-killer-3">General Work Contract</a></li>
-<li><a href="http://www.docracy.com/0i2fahvpv5t/statement-of-work-digital-advertising-services">Statement of Work</a></li>
-<li><a href="http://www.docracy.com/27/generic-shortform-nda">Generic Short Form NDA</a></li>
-</ul>
-
-
-<h2>Invoicing: FreshBooks</h2>
-
-<p><a href="http://www.freshbooks.com">Freshbooks</a> is one of the largest invoicing tools out there. It makes generating invoices simple. Freshbooks is great if you bill by the hour, however since I moving away from that billing structure I have found Freshbooks to be a bit lacking. It doesn&#8217;t really have support for daily and weekly billing. But it does have simple time tracking, expense tracking, online payments, and really good reporting. I do appreciate that when tax time rolls around, I can print out a couple reports, hand them to my CPA, and boom. Done.</p>
-
-<h2>Customer Support: ZenDesk</h2>
-
-<p>When I was looking for a customer support tool, my one requirement was that it had to work 100% via email for clients. Clients are busy and don&#8217;t want to have to learn a new tool just because they found a bug. <a href="http://zendesk.com">Zendesk</a> met this requirement. My clients can send all inquiries to a support email address, and I can keep track of conversations and tickets via the application. When working with clients on monthly retainers, this is a great tool to keep things organized.</p>
-
-<h2>Scheduling: Calendly + Google Calendar</h2>
-
-<p>I hate having to go back and forth via email to schedule an appointment with someone. With <a href="http://www.calendly.com">Calendly</a>, I can send people a calendar of my availability, and they can select the time that works best for them. The real &#8220;killer feature&#8221; for me is the Google calendar integration: Not only does it add events to my calendar, it will automatically remove my availability if I schedule something else in that time slot, even if it wasn&#8217;t through Calendly.</p>
-
-<h2>Writing Articles: Draft</h2>
-
-<p><a href="https://draftin.com/">Draft</a> is a new tool I&#8217;ve started using recently. I love the clean interface and how easy it is to share drafts with people. I&#8217;ve been using to send some beta versions of chapters for my book project <em>Professional Freelance</em>. It also has a &#8216;Hemingway mode&#8217;, which disables the backspace and delete buttons for you. This makes the writing experience similar to writing on a typewriter, which is helpful when writing first drafts, and keeps you out of slipping into editing mode.</p>
-
-<h2>Writing Books &amp; Courses: Scrivener</h2>
-
-<p><a href="http://www.literatureandlatte.com/scrivener.php">Scrivener</a> is like Photoshop for words. It allows you to break your writing project in nested sections, and move them around freely. This way, moving chapters and sections around are easy. When I first began to attempt to write a book, I figured I would write an outline, and then fill it out. As the project went on, I&#8217;ve completely rearranged the books three times. Sometimes entire chapters are deleted, and whole new ones are added. Scrivener makes this process a breeze.</p>
-
-<h2>Publishing: OctoPress + WordPress + Medium</h2>
-
-<p>I have a few different tools that I use to publish content online:</p>
-
-<ul>
-<li><p><a href="http://octopress.org/">Octopress</a> Octopress is the site you are reading right now. It&#8217;s a static site generator. That means that instead of having software like WordPress installed on a server, I generate the pages on my local machine, and put the result online. This way, there are no load times, and no worry of hacking because there is nothing to hack.</p></li>
-<li><p><a href="https://wordpress.org/">WordPress</a> WordPress is the granddaddy of online publishing, and I use it for my company site <a href="http://www.concordantsolutions.com">Concordant Solutions</a>. WordPress can be a bit unwieldy at times, but it does make publishing simple, and it&#8217;s impossible to beat the ecosystem around it. All of the plugins and themes available make it easy to get something set up quickly.</p></li>
-<li><p><a href="http://medium.com">Medium</a> is a very slick looking online publishing platform. It was created by Ev Williams, one of the founders of Twitter. Medium is focused on longer form content and providing the best reading and writing experience for its users. The benefit of Medium is that it helps you reach out to new audiences. When I&#8217;m not writing here, I&#8217;m writing there. In fact, I am considering moving more of my writing over to Medium in the future.</p></li>
-</ul>
-
-
-<h2>Email Marketing: ConvertKit</h2>
-
-<p><a href="http://www.convertkit.com">ConvertKit</a> is responsible for all those little calls to action at the bottom of each post. ConvertKit has a different approach from other mailing list providers. Instead of just putting everyone onto one list, you create different forms. These forms usually come with an incentive, such as a download or a course. Then, you can segment users based on which form they signed up for. This allows you to send more targeted emails.</p>
-
-<p>In addition to forms that you can embed, ConvertKit also allows you to build landing pages which can then be embedded on your site. I also like the simple look of the emails. I hate the idea of &#8220;newsletters&#8221;. I view my list as communication at scale. ConvertKit is just an easy way to email a few hundred people and start some conversations. All the emails come from my email address so that you can hit &#8220;reply&#8221; to get in touch with me. And I always write back. If you want to see what one of their landing pages looks like and/or sign up for my list, <a href="https://app.convertkit.com/concordant/letters">Here is the link</a></p>
-
-<p>Do you have any tools that make your life as a freelancer easier? If so, <a href="http://glennstovall.com/contact">Drop me a line</a> and let me know!</p>
 ]]></content>
   </entry>
   

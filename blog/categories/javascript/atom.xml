@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javascript | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-02-23T16:43:47-05:00</updated>
+  <updated>2015-03-16T19:43:07-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,88 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Remove the Hash from Angular Routes in Rails]]></title>
+    <link href="http://glennstovall.com/blog/2015/03/16/how-to-remove-the-hash-from-angular-routes-in-rails/"/>
+    <updated>2015-03-16T19:04:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2015/03/16/how-to-remove-the-hash-from-angular-routes-in-rails</id>
+    <content type="html"><![CDATA[<p>When building client side applications, your URLs are prepended with a hash. Removing this can make your routes more user friendly and more easily crawled by search engines. Here is how you can remove the hash from your routes in an Angular app built on Ruby on Rails, and use the standard URL structure.</p>
+
+<!-- more -->
+
+
+<h2>Step 0: Our example Application</h2>
+
+<p>We’ll look at a recipe site for our example application. In our application, we’ll have a homepage, a recipe route that shows us all of the recipes, and a route for single recipes. Here is our application configuration:</p>
+
+<p>```javascript
+ var app = angular.module("recipeapp");</p>
+
+<p> app.config(["$routeProvider",function($routeProvider) {
+   $routeProvider</p>
+
+<pre><code> .when("/", {
+   templateUrl: "templates/index.html",
+   controller: "IndexController"
+ })
+ .when("/recipes/, {
+   templateUrl: "templates/recipes.html",
+   controller: "RecipesController"
+ })
+ .when("/recipes/:id", {
+   templateUrl: "templates/recipe_show.html",
+   controller: "RecipeShowController"
+ });
+</code></pre>
+
+<p> }]);
+```</p>
+
+<h2>Step 1: Remove The Hash</h2>
+
+<p>First, we will enable [HTML5 Mode] in our AngularJS application. This will remove the hash from our URLs. Include <code>$locationProvider</code> in your module’s configuration, and set the mode to true.</p>
+
+<p><code>javascript
+ app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
+   $locationProvider.html5mode(true);
+   // ...
+  }]);
+</code></p>
+
+<h2>Step 2: Configure Rails To Handle Angular Routes</h2>
+
+<p>The above will work for cases when the user navigates from one part of the AngularJS application to another. However, if they try to navigate directly, they will get an error. If the user tries to navigate to <code>/recipes/1</code> directly, or hits refresh on that page, the request is sent to the Ruby on Rails router instead of Angular.</p>
+
+<p>To fix this, we need to capture those requests. In you <code>app/config/routes.rb</code> at the end:</p>
+
+<p><code>ruby
+get '/\*path' =&gt; redirect('/?goto=%{path}')
+</code></p>
+
+<p>This will cause any uncaught routes to get redirected as a query string, which will be passed to the Angular router.</p>
+
+<h2>Step 3: Handle Rails Redirects</h2>
+
+<p>Angular needs to know how to handle these routes, so we will add a call to the <code>otherwise()</code> method of <code>$routeProvider</code>:</p>
+
+<p>```javascript
+ $routeProvider.otherwise({
+   redirectTo: function(current, path, search) {</p>
+
+<pre><code> if(search.goto) {
+   return '/' + search.goto;
+ }
+   return '/'
+</code></pre>
+
+<p>   }
+ });
+```</p>
+
+<p>Now any URL will get redirected to Angular, which will handle the route. This way you don’t have to maintain two lists of routes, and you can use standard URL formats in your application.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building Reliable Web Apps Show Notes]]></title>
@@ -696,96 +778,6 @@ mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
 <li><a href="http://sporto.github.io/blog/2013/04/12/comparison-angular-backbone-can-ember/">A Comparison of Angular, Backbone, CanJS and Ember</a> - a great article comparing AngularJS to some</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Rapid Development with Node.js and CoffeeScript]]></title>
-    <link href="http://glennstovall.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript/"/>
-    <updated>2012-05-07T21:57:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2012/05/07/rapid-development-with-node-dot-js-and-coffeescript</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/coffeescript.jpg">
-Node.js and CoffeeScript have been all the rage in the web development community as of late. In this tutorial, I'll be walking though how to set up your development environment to quickly write &amp; test Node.js apps completly in CoffeeScript, and have your development app update automatically without having to compile CoffeeScript <em>or</em> restart your Node.js server.</p>
-
-<!-- more -->
-
-
-<h3>Step 1: Installing CoffeeScript</h3>
-
-<p>like most other Node.js packages, installing coffeescript is easy:</p>
-
-<pre><code>npm install coffee-script
-</code></pre>
-
-<p>Now that we have CoffeeScript installed, we can write a basic 'hello world' server is CoffeeScript. If you aren't familiar with the CoffeeScript syntax, you can refer to the (CoffeeScript Documentation)[http://coffeescript.org/]. Write the following to a <code>hello.coffee</code> file:</p>
-
-<p>``` coffeescript hello.coffee
-http = require 'http'
-http.createServer (req, res) -></p>
-
-<pre><code>    res.writeHead 200
-    res.end 'Hello, World!'
-</code></pre>
-
-<p>.listen 4000
-```</p>
-
-<h3>Step 2: Compilation</h3>
-
-<p>CoffeeScript files can't be executed directly by node, they have to be compiled to JavaScript first. We can run the following command to compile our <code>hello.coffee</code> file:</p>
-
-<pre><code>coffee --compile hello.coffee
-</code></pre>
-
-<p>This will generate a <code>hello.js</code> file. now we can run <code>node hello.js</code> and see our message at localhost:4000. Here is the resulting compiled JavaScript:</p>
-
-<p>``` javascript hello.js
-(function() {
-  var http;</p>
-
-<p>  http = require('http');</p>
-
-<p>  http.createServer(function(req, res) {</p>
-
-<pre><code>res.writeHead(200);
-return res.end('Another Message!');
-</code></pre>
-
-<p>  }).listen(4000);</p>
-
-<p>}).call(this);</p>
-
-<p>```</p>
-
-<p>The resulting JavaScript is more verbose than what we wrote originally, but it is still very easy to see how the CoffeeScript maps to the resulting code. Unfortunately this constant compilation isn't very rapid, now is it? Let's look at how we can streamline this process.</p>
-
-<h3>Step 3: Automation</h3>
-
-<p>The CoffeeScript compiler has a <code>--watch</code> option, which we can use to tell it to automatically compile any <code>.coffee</code> file whenever there is a change. Run the following command, and set it to a background process:</p>
-
-<pre><code>coffee --compile --watch *.coffee
-</code></pre>
-
-<p>That will take care of the compilation issue. However, you will still have to wait until everything compiles, and then restart your server, right? Wrong! Now we are going to install a second package, called (Nodemon)[http://remysharp.com/2010/10/12/nodejs-rapid-development-nodemon/] which will listen for changes to files, and automatically restart the Node.js server whenver one is detected. Start by installing the package:</p>
-
-<pre><code>npm install nodemon
-</code></pre>
-
-<p>Now, you'll want to create a file named <code>nodemon-ignore</code> in your app's main directory, and add an exception for .coffee files:</p>
-
-<p>```text nodemon-ignore</p>
-
-<h1>creates an exception for .coffee files</h1>
-
-<p>*.coffee
-```</p>
-
-<p>This way, you won't have any conflicts with the CoffeeScript compiler.  When the files compile, it will cause the .js files to change, but the server won't restart before those files are ready. When you are ready to begin, run the following command:</p>
-
-<pre><code>nodemon hello.js
-</code></pre>
-
-<p>Nodemon will listen to changes to all of your non-CoffeeScript files, and automatically restart the server whenever it detects a change. And now you are able to write your node apps in CoffeeScript, and not have to worry about compiling or server restarts, enabling you to write and develop more quickly.</p>
 ]]></content>
   </entry>
   

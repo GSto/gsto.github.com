@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-02-23T16:43:47-05:00</updated>
+  <updated>2015-03-16T19:43:07-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,88 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Remove the Hash from Angular Routes in Rails]]></title>
+    <link href="http://glennstovall.com/blog/2015/03/16/how-to-remove-the-hash-from-angular-routes-in-rails/"/>
+    <updated>2015-03-16T19:04:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2015/03/16/how-to-remove-the-hash-from-angular-routes-in-rails</id>
+    <content type="html"><![CDATA[<p>When building client side applications, your URLs are prepended with a hash. Removing this can make your routes more user friendly and more easily crawled by search engines. Here is how you can remove the hash from your routes in an Angular app built on Ruby on Rails, and use the standard URL structure.</p>
+
+<!-- more -->
+
+
+<h2>Step 0: Our example Application</h2>
+
+<p>We’ll look at a recipe site for our example application. In our application, we’ll have a homepage, a recipe route that shows us all of the recipes, and a route for single recipes. Here is our application configuration:</p>
+
+<p>```javascript
+ var app = angular.module("recipeapp");</p>
+
+<p> app.config(["$routeProvider",function($routeProvider) {
+   $routeProvider</p>
+
+<pre><code> .when("/", {
+   templateUrl: "templates/index.html",
+   controller: "IndexController"
+ })
+ .when("/recipes/, {
+   templateUrl: "templates/recipes.html",
+   controller: "RecipesController"
+ })
+ .when("/recipes/:id", {
+   templateUrl: "templates/recipe_show.html",
+   controller: "RecipeShowController"
+ });
+</code></pre>
+
+<p> }]);
+```</p>
+
+<h2>Step 1: Remove The Hash</h2>
+
+<p>First, we will enable [HTML5 Mode] in our AngularJS application. This will remove the hash from our URLs. Include <code>$locationProvider</code> in your module’s configuration, and set the mode to true.</p>
+
+<p><code>javascript
+ app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
+   $locationProvider.html5mode(true);
+   // ...
+  }]);
+</code></p>
+
+<h2>Step 2: Configure Rails To Handle Angular Routes</h2>
+
+<p>The above will work for cases when the user navigates from one part of the AngularJS application to another. However, if they try to navigate directly, they will get an error. If the user tries to navigate to <code>/recipes/1</code> directly, or hits refresh on that page, the request is sent to the Ruby on Rails router instead of Angular.</p>
+
+<p>To fix this, we need to capture those requests. In you <code>app/config/routes.rb</code> at the end:</p>
+
+<p><code>ruby
+get '/\*path' =&gt; redirect('/?goto=%{path}')
+</code></p>
+
+<p>This will cause any uncaught routes to get redirected as a query string, which will be passed to the Angular router.</p>
+
+<h2>Step 3: Handle Rails Redirects</h2>
+
+<p>Angular needs to know how to handle these routes, so we will add a call to the <code>otherwise()</code> method of <code>$routeProvider</code>:</p>
+
+<p>```javascript
+ $routeProvider.otherwise({
+   redirectTo: function(current, path, search) {</p>
+
+<pre><code> if(search.goto) {
+   return '/' + search.goto;
+ }
+   return '/'
+</code></pre>
+
+<p>   }
+ });
+```</p>
+
+<p>Now any URL will get redirected to Angular, which will handle the route. This way you don’t have to maintain two lists of routes, and you can use standard URL formats in your application.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building Reliable Web Apps Show Notes]]></title>
@@ -426,51 +508,6 @@ mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>And there you go! Easy, isolated tests for your controller concerns.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Take Out The Tech]]></title>
-    <link href="http://glennstovall.com/blog/2014/03/05/take-out-the-tech/"/>
-    <updated>2014-03-05T15:25:00-05:00</updated>
-    <id>http://glennstovall.com/blog/2014/03/05/take-out-the-tech</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/make_fire.jpg" width="260"></p>
-
-<p>If you are a freelance developer, designer, photographer, or even a freelance sheep sheerer, it's easy to get caught up in what it is you do, versus why it is we actually do it. More important than why we do it, is why people are willing to pay us good money for what we do. In this article I'd like to take a look at why I decided to re-position my services, and most important of all, get you to stop talking like a nerd because it's costing you money and sales.</p>
-
-<!-- more -->
-
-
-<h2>No More Nerd Speak</h2>
-
-<p>When I decided to focus more on being a consultant, and not just a "freelance web developer", one of my qualifiers for the kinds of clients I wanted to attract was that a client should not care about the tech stack I was working on. words like  "WordPress" and "Ruby on Rails" were dirty curse words as far as proposals were concerned. I had several reasons for this:</p>
-
-<ul>
-<li><strong>Client Filtering:</strong> Clients that use words like 'PHP Developer', are usually looking for contractors, not consultants. There is nothing wrong with being a contractor, I've done it many times, but it isn't in line with my future business goals.</li>
-<li><strong>Focusing on Solutions &amp; Value:</strong> There is no problem that has to be solved by a certain language or framework. Some are better suited than others. A client that wants a "Rails app that does X" may be better served by a "Node.js app that does X" or a Mobile Application that does X". They may even be better served by a nice spreadsheet or an actionable plan they can stick to. By taking technical terms out of the conversations, it allows for more focus on the problem, and the solution to be discovered.</li>
-<li><strong>Autonomy:</strong> Similar to the point above, I want the autonomy to decide what tool would be the best fit for the jobs I take on, and be able to use them. If a client does not know what tools are used, which they shouldn't, then they have no say in the matter.</li>
-<li><strong>Client Interest:</strong> Clients don't care about this kind of stuff nearly as much we do. Clients are usually very busy people in their businesses and our lives. By leaving out talk of weird, complicated things that they don't understand and have no interest in, you are doing your clients a great kindness.</li>
-</ul>
-
-
-<h2>Closing the Text Editor</h2>
-
-<p>One day at work I decided to do a mental exercise. If I close my text editor, how could I still provide value to clients? I wanted to step away from just thinking that "code = value" and take a more holistic approach at what I provide to clients.</p>
-
-<ul>
-<li><strong>Communication:</strong> Web developers and designers have a reputation for being unreliable and hard to reach. Being proactive with clients on phone, email, and in person makes them feel more secure about their project, reduces their stress, and prevents misunderstanding that can waste time on both ends of the table.</li>
-<li><strong>Planning:</strong> Having a solid plan in place and communicating that plan has a lot of benefits. It maintains accountability and expectations on both sides. Providing a clear plan to a client on how you are going to perform work and when they can expect it to be delivered. It shows that you aren't just another unreliable, uncommunicative developer like they have probably encountered in the past.</li>
-<li><strong>Research:</strong> Who is their target market? What is a good pricing strategy for their new product? How can your client reach their target demographic? Do they like the new feature implemented? Being able to provide answers to questions like this can help guide a client in the right direction, and help your work produce even more value.</li>
-</ul>
-
-
-<p>I've realized to think about deliverable products in a broader sense. A road map for a project is every bit as much of a deliverable as a new feature that has been coded, and should be treated and presented as such. (<strong>Pro-tip:</strong> clients like nicely formatted PDFs that they can share with other people in their company.)</p>
-
-<h2>Don't Sell Yourself Short</h2>
-
-<p>Designers, developers, copywriters, etc. are costing themselves money by thinking that only producing their core competency. I've had aspiring freelancers ask me "Should I bill for phone calls/meetings/emails?". I say yes. Some people will say because they are taking up your time, and that since being a freelancer usually equates to selling your time for money, client communication counts. They're right, but for the wrong reasons. The reason you bill for those times is <em>because you providing the client with value</em>. Your communications that help you gather information to deliver the exact solution, and ease the clients concern are just as valuable as the core product you produce, <strong>if not more so.</strong></p>
-
-<p>So to other freelancers out there: <strong>Don't sell yourself short.</strong> And stop talking so much about how you swing your hammer, and instead about what you can build and why it's so valuable.</p>
 ]]></content>
   </entry>
   

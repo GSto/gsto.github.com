@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rails | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/rails/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-02-23T16:43:47-05:00</updated>
+  <updated>2015-03-16T19:43:07-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,88 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Remove the Hash from Angular Routes in Rails]]></title>
+    <link href="http://glennstovall.com/blog/2015/03/16/how-to-remove-the-hash-from-angular-routes-in-rails/"/>
+    <updated>2015-03-16T19:04:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2015/03/16/how-to-remove-the-hash-from-angular-routes-in-rails</id>
+    <content type="html"><![CDATA[<p>When building client side applications, your URLs are prepended with a hash. Removing this can make your routes more user friendly and more easily crawled by search engines. Here is how you can remove the hash from your routes in an Angular app built on Ruby on Rails, and use the standard URL structure.</p>
+
+<!-- more -->
+
+
+<h2>Step 0: Our example Application</h2>
+
+<p>We’ll look at a recipe site for our example application. In our application, we’ll have a homepage, a recipe route that shows us all of the recipes, and a route for single recipes. Here is our application configuration:</p>
+
+<p>```javascript
+ var app = angular.module("recipeapp");</p>
+
+<p> app.config(["$routeProvider",function($routeProvider) {
+   $routeProvider</p>
+
+<pre><code> .when("/", {
+   templateUrl: "templates/index.html",
+   controller: "IndexController"
+ })
+ .when("/recipes/, {
+   templateUrl: "templates/recipes.html",
+   controller: "RecipesController"
+ })
+ .when("/recipes/:id", {
+   templateUrl: "templates/recipe_show.html",
+   controller: "RecipeShowController"
+ });
+</code></pre>
+
+<p> }]);
+```</p>
+
+<h2>Step 1: Remove The Hash</h2>
+
+<p>First, we will enable [HTML5 Mode] in our AngularJS application. This will remove the hash from our URLs. Include <code>$locationProvider</code> in your module’s configuration, and set the mode to true.</p>
+
+<p><code>javascript
+ app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
+   $locationProvider.html5mode(true);
+   // ...
+  }]);
+</code></p>
+
+<h2>Step 2: Configure Rails To Handle Angular Routes</h2>
+
+<p>The above will work for cases when the user navigates from one part of the AngularJS application to another. However, if they try to navigate directly, they will get an error. If the user tries to navigate to <code>/recipes/1</code> directly, or hits refresh on that page, the request is sent to the Ruby on Rails router instead of Angular.</p>
+
+<p>To fix this, we need to capture those requests. In you <code>app/config/routes.rb</code> at the end:</p>
+
+<p><code>ruby
+get '/\*path' =&gt; redirect('/?goto=%{path}')
+</code></p>
+
+<p>This will cause any uncaught routes to get redirected as a query string, which will be passed to the Angular router.</p>
+
+<h2>Step 3: Handle Rails Redirects</h2>
+
+<p>Angular needs to know how to handle these routes, so we will add a call to the <code>otherwise()</code> method of <code>$routeProvider</code>:</p>
+
+<p>```javascript
+ $routeProvider.otherwise({
+   redirectTo: function(current, path, search) {</p>
+
+<pre><code> if(search.goto) {
+   return '/' + search.goto;
+ }
+   return '/'
+</code></pre>
+
+<p>   }
+ });
+```</p>
+
+<p>Now any URL will get redirected to Angular, which will handle the route. This way you don’t have to maintain two lists of routes, and you can use standard URL formats in your application.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Test Controller Concerns in Rails 4]]></title>

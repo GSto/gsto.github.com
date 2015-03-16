@@ -10,7 +10,7 @@
   <meta name="author" content="Glenn Stovall">
 
   
-  <meta name="description" content="Today I&#8217;m proud to announce a new free eBook guide. The book is called the Freelance Pricing Handbook, and it&#8217;s designed to help &hellip;">
+  <meta name="description" content="Concerns are a new feature that was added in Rails 4. They allow to clean up code in your models and controllers. They also allow you to share &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -25,6 +25,12 @@
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script type="text/javascript">
+   function overlay() {
+     el = document.getElementById("overlay");
+     el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+   }
+  </script>
   <link href="/atom.xml" rel="alternate" title="Glenn Stovall" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href='http://fonts.googleapis.com/css?family=Neuton:300,400,700,400italic' rel='stylesheet' type='text/css'>
@@ -91,6 +97,49 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/">How to Test Controller Concerns in Rails 4</a></h1>
+    
+    
+      <p class="meta-timestamp">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-06T15:06:00-04:00" pubdate data-updated="true">May 6<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img class="left" src="/images/articles/ruby_on_rails.jpg" width="260"></p>
+
+<p><a href="http://api.rubyonrails.org/classes/ActiveSupport/Concern.html">Concerns</a> are a new feature that was added in Rails 4. They allow to clean up code in your models and controllers. They also allow you to share functionality between models or controllers. However, they can be a bit tricky to test in isolation. In this article I want to show how you can test your controller concerns in isolation.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -486,49 +535,6 @@
   
     <footer>
       <a rel="full-article" href="/blog/2013/12/10/announcing-concordant-solutions/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/27/angularjs-an-overview/">AngularJS: An Overview</a></h1>
-    
-    
-      <p class="meta-timestamp">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-27T12:33:00-04:00" pubdate data-updated="true">Jun 27<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="left" src="/images/angular.png" width="260"></p>
-
-<p>AngularJS is a JavaScript framework made by Google for building complex client-side applications. Angular&#8217;s killer feature is &#8216;directives&#8217; which allow you to extend HTML by creating your own tags and attributes. Angular projects have a somewhat different structure than other JavaScript MVC frameworks, but it can be highly modular and easy to maintain once you understand the structure. Let&#8217;s take a look at the main components of AngularJS and how they work, and why you should strongly consider Angular for your next project.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/06/27/angularjs-an-overview/">Read on &rarr;</a>
     </footer>
   
 

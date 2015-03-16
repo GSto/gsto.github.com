@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <!-- 7D65FDE2-129B-4399-AB33-1C7786CFDBAB -->
+  <meta charset="utf-8">
+  <title>How to Remove the Hash from Angular Routes in Rails - Glenn Stovall</title>
+  <meta name="author" content="Glenn Stovall">
+
+  
+  <meta name="description" content="When building client side applications, your URLs are prepended with a hash. Removing this can make your routes more user friendly and more easily &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://glennstovall.com/blog/2015/03/16/how-to-remove-the-hash-from-angular-routes-in-rails/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script type="text/javascript">
+   function overlay() {
+     el = document.getElementById("overlay");
+     el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+   }
+  </script>
+  <link href="/atom.xml" rel="alternate" title="Glenn Stovall" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Neuton:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<!-- 7D65FDE2-129B-4399-AB33-1C7786CFDBAB -->
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2427296-13']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+   
+  </script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+
+  <header role="banner"><hgroup>
+	<!--<div style='float:left;display:inline-block;'>-->
+	<div class='header-image'>
+	  <img src="/images/mugshot.jpg" width="128">
+  </div>
+<!--  <div style='float:left;display:inline-block;'>-->
+  <div class='header-wrapper'>
+		<h1><a href="/">Glenn Stovall</a></h1>
+		
+		  <br/>
+      <h2 style='display:inline-block;'>Metrics-Driven Business and Software Design</h2>
+		
+  </div>
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:glennstovall.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/freelancer-knowledge-base">For Freelancers</a></li>
+  <li><a href="/blog/">Articles</a></li>
+  <li><a href="/case-studies">Case Studies</a></li>
+  <li><a href="/consulting">Consulting</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">How to Remove the Hash From Angular Routes in Rails</h1>
+    
+    
+      <p class="meta-timestamp">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-03-16T19:04:00-04:00" pubdate data-updated="true">Mar 16<span>th</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>When building client side applications, your URLs are prepended with a hash. Removing this can make your routes more user friendly and more easily crawled by search engines. Here is how you can remove the hash from your routes in an Angular app built on Ruby on Rails, and use the standard URL structure.</p>
+
+<!-- more -->
+
+
+<h2>Step 0: Our example Application</h2>
+
+<p>We’ll look at a recipe site for our example application. In our application, we’ll have a homepage, a recipe route that shows us all of the recipes, and a route for single recipes. Here is our application configuration:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'> <span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s2">&quot;recipeapp&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'> <span class="nx">app</span><span class="p">.</span><span class="nx">config</span><span class="p">([</span><span class="s2">&quot;$routeProvider&quot;</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">$routeProvider</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>   <span class="nx">$routeProvider</span>
+</span><span class='line'>     <span class="p">.</span><span class="nx">when</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">,</span> <span class="p">{</span>
+</span><span class='line'>       <span class="nx">templateUrl</span><span class="o">:</span> <span class="s2">&quot;templates/index.html&quot;</span><span class="p">,</span>
+</span><span class='line'>       <span class="nx">controller</span><span class="o">:</span> <span class="s2">&quot;IndexController&quot;</span>
+</span><span class='line'>     <span class="p">})</span>
+</span><span class='line'>     <span class="p">.</span><span class="nx">when</span><span class="p">(</span><span class="s2">&quot;/recipes/, {</span>
+</span><span class='line'><span class="s2">       templateUrl: &quot;</span><span class="nx">templates</span><span class="o">/</span><span class="nx">recipes</span><span class="p">.</span><span class="nx">html</span><span class="s2">&quot;,</span>
+</span><span class='line'><span class="s2">       controller: &quot;</span><span class="nx">RecipesController</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="s2">     })</span>
+</span><span class='line'><span class="s2">     .when(&quot;</span><span class="o">/</span><span class="nx">recipes</span><span class="o">/:</span><span class="nx">id</span><span class="s2">&quot;, {</span>
+</span><span class='line'><span class="s2">       templateUrl: &quot;</span><span class="nx">templates</span><span class="o">/</span><span class="nx">recipe_show</span><span class="p">.</span><span class="nx">html</span><span class="s2">&quot;,</span>
+</span><span class='line'><span class="s2">       controller: &quot;</span><span class="nx">RecipeShowController</span><span class="err">&quot;</span>
+</span><span class='line'>     <span class="p">});</span>
+</span><span class='line'> <span class="p">}]);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step 1: Remove The Hash</h2>
+
+<p>First, we will enable [HTML5 Mode] in our AngularJS application. This will remove the hash from our URLs. Include <code>$locationProvider</code> in your module’s configuration, and set the mode to true.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'> <span class="nx">app</span><span class="p">.</span><span class="nx">config</span><span class="p">([</span><span class="s1">&#39;$routeProvider&#39;</span><span class="p">,</span><span class="s1">&#39;$locationProvider&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$routeProvider</span><span class="p">,</span> <span class="nx">$locationProvider</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>   <span class="nx">$locationProvider</span><span class="p">.</span><span class="nx">html5mode</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+</span><span class='line'>   <span class="c1">// ...</span>
+</span><span class='line'>  <span class="p">}]);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step 2: Configure Rails To Handle Angular Routes</h2>
+
+<p>The above will work for cases when the user navigates from one part of the AngularJS application to another. However, if they try to navigate directly, they will get an error. If the user tries to navigate to <code>/recipes/1</code> directly, or hits refresh on that page, the request is sent to the Ruby on Rails router instead of Angular.</p>
+
+<p>To fix this, we need to capture those requests. In you <code>app/config/routes.rb</code> at the end:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">get</span> <span class="s1">&#39;/\*path&#39;</span> <span class="o">=&gt;</span> <span class="n">redirect</span><span class="p">(</span><span class="s1">&#39;/?goto=%{path}&#39;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will cause any uncaught routes to get redirected as a query string, which will be passed to the Angular router.</p>
+
+<h2>Step 3: Handle Rails Redirects</h2>
+
+<p>Angular needs to know how to handle these routes, so we will add a call to the <code>otherwise()</code> method of <code>$routeProvider</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'> <span class="nx">$routeProvider</span><span class="p">.</span><span class="nx">otherwise</span><span class="p">({</span>
+</span><span class='line'>   <span class="nx">redirectTo</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">current</span><span class="p">,</span> <span class="nx">path</span><span class="p">,</span> <span class="nx">search</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>     <span class="k">if</span><span class="p">(</span><span class="nx">search</span><span class="p">.</span><span class="kr">goto</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>       <span class="k">return</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="nx">search</span><span class="p">.</span><span class="kr">goto</span><span class="p">;</span>
+</span><span class='line'>     <span class="p">}</span>
+</span><span class='line'>       <span class="k">return</span> <span class="s1">&#39;/&#39;</span>
+</span><span class='line'>   <span class="p">}</span>
+</span><span class='line'> <span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now any URL will get redirected to Angular, which will handle the route. This way you don’t have to maintain two lists of routes, and you can use standard URL formats in your application.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Glenn Stovall</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-03-16T19:04:00-04:00" pubdate data-updated="true">Mar 16<span>th</span>, 2015</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/programming/'>programming</a>, <a class='category' href='/blog/categories/rails/'>rails</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://glennstovall.com/blog/2015/03/16/how-to-remove-the-hash-from-angular-routes-in-rails/" data-via="GSto" data-counturl="http://glennstovall.com/blog/2015/03/16/how-to-remove-the-hash-from-angular-routes-in-rails/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/02/23/18-tools-i-would-use-to-build-a-saas-product-today/" title="Previous Post: 18 Tools I Would Use to Build a SaaS Product Today">&laquo; 18 Tools I Would Use to Build a SaaS Product Today</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo">
+<p class='credit'>
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+  <br />
+  &copy; 2015 - Glenn Stovall
+</p>
+<p class='social-links'>
+  <!-- courtesy of http://simpleicons.org/ -->
+  <a href='http://www.twitter.com/gsto' target='_blank' class='twitter-link'>
+    <img src='/images/simple_icons/icons/twitter/twitter-64.png' alt='Glenn Stovall on Twitter'> 
+  </a>
+
+  <a href='http://linkedin.com/in/glennstovall' target='_blank' class='linkedin-link'>
+    <img src='/images/simple_icons/icons/linkedin/linkedin-64.png' alt='Glenn Stovall on LinkedIn'>
+  </a>
+  <a href='http://github.com/gsto' target='_blank' class='github-link'>
+    <img src='/images/simple_icons/icons/github/github-64.png' alt='Glenn Stovall on Github'>
+  </a>
+  <a href='http://careers.stackoverflow.com/glennstovall' target='_blank' class='stackoverflow-link'>
+    <img src='/images/simple_icons/icons/stackoverflow/stackoverflow-64.png' alt='Glenn Stovall CV'>
+  </a>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+<script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {}; 
+  _dcs.account = '5248425';
+  
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true; 
+    dc.src = '//tag.getdrip.com/5248425.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>
+
+
+
+</body>
+</html>
