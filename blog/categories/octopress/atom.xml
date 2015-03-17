@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-03-16T19:43:07-04:00</updated>
+  <updated>2015-03-17T04:10:25-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -53,8 +53,9 @@ rake deploy
     <link href="http://glennstovall.com/blog/2012/02/11/blogging-with-octopress/"/>
     <updated>2012-02-11T10:00:00-05:00</updated>
     <id>http://glennstovall.com/blog/2012/02/11/blogging-with-octopress</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/blog_with_octopress.png" width="260">
-If you're reading this, then I've successfully got my octopress blog up and running on Github pages. Why the switch to octopress?</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/blog_with_octopress.png" width="260"></p>
+
+<p>If you're reading this, then I've successfully got my octopress blog up and running on Github pages. Why the switch to octopress?</p>
 
 <!-- more -->
 
