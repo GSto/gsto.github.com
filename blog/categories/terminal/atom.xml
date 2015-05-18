@@ -4,7 +4,7 @@
   <title><![CDATA[Category: terminal | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/terminal/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-03-17T04:10:25-04:00</updated>
+  <updated>2015-05-18T19:00:34-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -101,6 +101,8 @@ Building a command line interface into your application can be a way to add extr
 
 <!-- more -->
 
+
+<blockquote><p>Looking to work testing into your CodeIgniter application? Check out <a href="https://leanpub.com/grumpy-testing?a=1CeAJFBGDDoAm3772UEbtS">The Grumpy Programmer's Guide to Building Testable Applications</a>.</p></blockquote>
 
 <h3>Running Code Via The Command Line</h3>
 
@@ -395,9 +397,9 @@ Let's set up our appointment reminder files. First let's start by building the t
 
 <p><a href="https://github.com/GSto/cli_helper">cli_helper on Github</a></p>
 
-<h2>Making Complex Apps is Easy. Making them Simple is Hard.</h2>
+<h2>If You Aren't Testing Your Application, How Can You Be Confident it Works?</h2>
 
-<p>If you want to learn more about building more reliable, scalable CodeIgniter applications, you can download my free white paper, <a href="/products/reliable-codeigniter">How to Build Maintainable, Scalable Applications With CodeIgniter</a>.</p>
+<p>Sleep better at night by building reliable, testable applications. Check out <a href="https://leanpub.com/grumpy-testing?a=1CeAJFBGDDoAm3772UEbtS">The Grumpy Programmer's Guide to Building Testable Applications</a>.</p>
 ]]></content>
   </entry>
   

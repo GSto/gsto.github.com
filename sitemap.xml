@@ -12,7 +12,7 @@
         <loc>
             http://glennstovall.com/blog/2012/02/28/setting-up-a-template-and-assets-in-codeigniter/
         </loc>
-        <lastmod>2015-01-25T09:59:09-05:00</lastmod>
+        <lastmod>2015-05-18T18:50:36-04:00</lastmod>
     </url>
     <url>
         <loc>
@@ -46,7 +46,7 @@
         <loc>
             http://glennstovall.com/blog/2013/01/07/writing-cron-jobs-and-command-line-scripts-in-codeigniter/
         </loc>
-        <lastmod>2015-01-25T09:58:34-05:00</lastmod>
+        <lastmod>2015-05-18T18:48:27-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/2013/02/18/5-tips-for-more-accurate-estimates/</loc>
@@ -316,11 +316,11 @@
     </url>
     <url>
         <loc>http://glennstovall.com/blog/archives/</loc>
-        <lastmod>2015-03-16T19:43:12-04:00</lastmod>
+        <lastmod>2015-05-18T18:50:36-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/</loc>
-        <lastmod>2015-03-16T19:43:12-04:00</lastmod>
+        <lastmod>2015-05-18T18:50:36-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/books/freelance-pricing-handbook/download.html</loc>
@@ -372,7 +372,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/</loc>
-        <lastmod>2015-03-16T19:43:12-04:00</lastmod>
+        <lastmod>2015-05-18T18:50:36-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/my-latest-thing/</loc>
@@ -412,7 +412,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/products/reliable-codeigniter/</loc>
-        <lastmod>2015-03-16T19:43:12-04:00</lastmod>
+        <lastmod>2015-05-18T18:50:36-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/resume/</loc>
@@ -436,10 +436,10 @@
     </url>
     <url>
         <loc>http://glennstovall.com/write-a-website/</loc>
-        <lastmod>2015-03-16T19:43:12-04:00</lastmod>
+        <lastmod>2015-05-18T18:50:36-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/write-a-website/thank-you/</loc>
-        <lastmod>2015-03-16T19:43:12-04:00</lastmod>
+        <lastmod>2015-05-18T18:50:36-04:00</lastmod>
     </url>
 </urlset>
