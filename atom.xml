@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-05-28T14:27:26-04:00</updated>
+  <updated>2015-05-28T17:39:34-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Drip Quick Tip: How to Change the Confirmation Link Text in Your Welcome Email]]></title>
+    <link href="http://glennstovall.com/blog/2015/05/28/drip-quick-tip-how-to-change-the-confirmation-link-text-in-your-welcome-email/"/>
+    <updated>2015-05-28T17:31:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2015/05/28/drip-quick-tip-how-to-change-the-confirmation-link-text-in-your-welcome-email</id>
+    <content type="html"><![CDATA[<p>If you are using <a href="http://glennstovall.com/recommends/drip">Drip</a> for your marketing automation, you might want to change the copy on the &#8220;Confirm Your Subscription&#8221; Link that gets sent when people fill out a form. This link is an important call-to-action, and this little piece of text can have a big impact on your subscription conversion rate. Drip doesn&#8217;t make it clear how to change this copy, but it is possible.</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<p>When you are creating a form, you will the code for the link. It looks like this:</p>
+
+<p>{{ confirmation_link }}</p>
+
+<p>If you want to change the link text, you can use the replace_inner_html function that is available. For example, if you wanted to change your link text to &#8220;Join the club.&#8221; you would do the following:</p>
+
+<p>{{ confirmation_link | replace_inner_html: &#8220;Join the club.&#8221; }}</p>
+
+<p>By using this technique, you can have more control over the experience your subscribers have when they join your list and create more enticing calls-to-action in your emails.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Get Through Your Inbox in Under 30 Minutes a Day]]></title>
@@ -1494,106 +1518,6 @@ such as <a href="http://www.squarespace.com/">Squarespace</a>, <a href="http://w
 
 
 <p>There is a universal truth that drives all of these musicians, artists, and visionaries. They all speak of the beauty and elegance of simplicity in all things. As entrepreneurs, we have the power to design not only our businesses, but our entire lives. However, many people end up working long hours, taking on lots of stress, and doing physical and mental harm to ourselves.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to Write More Personal Emails to Your List That Get Open and Convert]]></title>
-    <link href="http://glennstovall.com/blog/2014/09/09/how-to-write-more-personal-emails-to-your-list-that-get-open-and-convert/"/>
-    <updated>2014-09-09T16:05:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/09/09/how-to-write-more-personal-emails-to-your-list-that-get-open-and-convert</id>
-    <content type="html"><![CDATA[<h3>My Email Marketing Strategy In a Nutshell</h3>
-
-<p>Email marketing converts better than social media or content marketing. Nathan Barry has a great <a href="http://nathanbarry.com/email-marketing/">write up with the numbers</a>. You can build a list by <a href="http://glennstovall.com/blog/2014/08/04/start-using-drip-email-campaigns-today/">giving people  incentives in exchange for their email address</a>, reaching out to them directly, or offering people updates on as-yet-unreleased new product. But once you have built that list, how do you write emails that people on that list will actually want to read?</p>
-
-<!-- more -->
-
-
-<h3>Drop The Newsletters and start writing emails</h3>
-
-<p>Newsletters are usually ignored and end up right in the trash bin.  Instead of thinking of your emails to your list as newsletters, I want you to approach them like you would writing an email to one person. When I write email drafts, I will usually start with the line &#8216;Hey Bob,&#8217;, where Bob is a real person I know. If I write with a more personal tone in mind, it will show in the final result. Your formatting needs to match this more personal tone, so no more fancy email themes..</p>
-
-<h3>7 Steps to Formatting Your Email</h3>
-
-<h4>1.Remove all formatting.</h4>
-
-<p>Your email should look just like you sent it from your GMail or Mailbox account. This means that you don&#8217;t want any of the formatting that  email list providers offer. However, you don&#8217;t want to send a plain text email either. Plain text takes away some key formatting tools, such as <strong>bolding</strong>, <em>italicizing</em>, and <a href="#">putting in links</a>.</p>
-
-<h4>2. Write your subject line like you would a regular email.</h4>
-
-<p>Don&#8217;t title case your headline. Capitalize the first word, and then write the rest lowercase. Using questions in your subject line is a good way to increase open rates, but can become annoying if over used.</p>
-
-<h4>3.Set the From Address to Your Address, and Encourage Replies.</h4>
-
-<p>Emails are conversations, and conversations are a two-way street. The from address should be from your personal address if possible, and if not, one that you check and respond too frequently. Your subscribers should be able to reply to any of your emails and expect a response (it may not be obvious this is the case since the email is automated).</p>
-
-<h4>4.Start with a salutation.</h4>
-
-<p>If possible, capture the first name of people when they sign up for your list. This will allow you to start with a line like &#8216;Hey [first_name]&#8217;. A person&#8217;s name is their favorite word to hear, and it starts your email off on the right foot.</p>
-
-<h4>5.Write short body copy.</h4>
-
-<p>Some people like to send out entire articles in their email list. Personally, I don&#8217;t like this approach and haven&#8217;t had much success. If I have a lot to say, I will publish a larger article elsewhere, and include a short description in the email. I like to provide something extra to my subscribers, so I will usually provide additional examples or a personal story in the email.</p>
-
-<h4>6.End with a friendly signature.</h4>
-
-<p>I always sign my emails with &#8220;cheers, Glenn&#8221;. Much like the salutation, This gives the letter a more personal feel.</p>
-
-<h4>7.Often, but not always, include a PS.</h4>
-
-<p>The post script is one of the most read part of the email, after the subject line and the first paragraph. Even if people don&#8217;t want to read the rest of your email, they will check out the PS. In old letter writing, the &#8216;PS&#8217; was where people would include something <em>so good</em> that they just couldn&#8217;t leave it out. Your PS should only be a couple sentences long, and get straight to the point.</p>
-
-<h3>The 3 Types of Emails to Send</h3>
-
-<p>When writing emails to your list, there are three formats that I use:</p>
-
-<h4>1.The Value Email.</h4>
-
-<p>This email has no ulterior motive. This is simply an email that provides value to your list. You can provide value by offering something educational, useful, or entertaining to your list. <strong>you do not sell to your list.</strong> If someone was nice enough to sign up for your list, they deserve value from you in return. This is where you give it to them.</p>
-
-<h4>2.The Soft Sell Email.</h4>
-
-<p>The soft sell email is identical to the value email, with one small difference: You mention something you are selling as a secondary point in the email. The PS is a great place to do this. You can write a valuable article, then in the PS include a call to action. Now when I say &#8220;sale&#8221;, I don&#8217;t always mean that you are asking the people on your list to give you money in exchange for goods or services. A &#8220;sale&#8221; is anytime you are asking them to give up something of value in exchange for something of equal or greater value. When people sign up for your list, that was a sale. They exchanged access to their inbox for valuable information. In addition to selling products, you could ask them to sign up for a free trial, ask them a question, or ask them to attend an event such as a webinar.</p>
-
-<h4>3.The Hard Sell Email.</h4>
-
-<p>These emails have one goal: To get your users to buy something you are selling. Like the soft sell email, that sale could be anything from a transaction to a webinar sign-up. Use these <strong>sparingly</strong>.</p>
-
-<h3>The Frequency of Emails</h3>
-
-<p>I send out emails once a week, sometimes every two weeks. If you email your list more frequently than that, they may become fatigued. Some people push their list harder, and this is something that depends on your audience.</p>
-
-<p>The only time I break this rule is when I am launching a new product or have an upcoming event. I will ramp up the emails to build anticipation for the event, and usually send reminders a week before, a day before, and even an hour before.</p>
-
-<p>When it comes to email frequency, you should also be mindful of the frequency you use the three templates above. The hard sell email is OK sometimes, but if that is all you send, you will not keep your subscribers for long. My general rule of thumb is to keep a 2:1 ratio for helpful, valuable emails, and sales emails. Here is a 6-email rotation I tend to use:</p>
-
-<ul>
-<li>Value email</li>
-<li>Value email</li>
-<li>Soft sell email</li>
-<li>Value email</li>
-<li>Value email</li>
-<li>Hard sell email</li>
-</ul>
-
-
-<p>That way, once I have gotten to the point where I am selling someone, I have already provided them a lot of value. This also means that I am only sending out sales emails once every 5 - 6 weeks. It may seem odd to spend a lot of time building a list and then sell to it so infrequently, but by taking this approach those sales emails are much more likely to get responses.</p>
-
-<h3>Segment Your List As Much As Possible</h3>
-
-<p>So far, all of this has been about making your emails more personalized. Doesn&#8217;t it seem strange to be more &#8216;personal&#8217;, and then send the same email to your entire list? It&#8217;s true, and one way to get around this is <em>segmentation.</em> Segmentation means that you break your list up based on past behavior, and sent broadcasts to smaller segments of your list. For example, if you are selling a certain product, it doesn&#8217;t make sense to keep sending emails to those people asking them to buy that product. Instead, you could only send them valuable emails, ask them for feedback on the product, or sell them something else.</p>
-
-<h3>Email Tools that Provide Segmentation</h3>
-
-<ul>
-<li><strong><a href="http://www.convertkit.com">ConvertKit</a>.</strong> I&#8217;ve mentioned ConvertKit before, as it is the email tool I currently use. They recently revamped their segmenting, and allow you to segment on users based on which email capture form they signed up for.</li>
-<li><strong><a href="http://www.getdrip.com">Drip</a>.</strong> Drip has moved from being an email list management tool to a full on marketing automation tool. They provide user tagging, and a lot of triggers that you can use to segment your audience.</li>
-<li><strong><a href="http://www.mailchimp.com">MailChimp</a>.</strong> Mailchimp recently released a whole new <a href="http://mailchimp.com/features/automation/">suite of automation tools</a>. These are new and I haven&#8217;t tried them yet, but it looks promising. MailChimp is what a lot of people use already, so if this is you, you have a whole new set of toys to play with.</li>
-<li><strong><a href="http://www.infusionsoft.com">InfusionSoft</a>.</strong> InfusionSoft is the most powerful and most complex tool ons the market. They have a large start up cost (in the 4 figures), but they have a lot of tools and integration they make them the most in-depth marketing automation system out there.</li>
-</ul>
-
-
-<p>This is my entire email marketing strategy in a nutshell. By following these formulas, you can keep your list more engaged, and build a strong audience that is invested in you and your brand.</p>
 ]]></content>
   </entry>
   

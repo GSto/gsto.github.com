@@ -6,11 +6,11 @@
 <head>
   <!-- 7D65FDE2-129B-4399-AB33-1C7786CFDBAB -->
   <meta charset="utf-8">
-  <title>Category: marketing automation - Glenn Stovall</title>
+  <title>Drip Quick Tip: How to Change the Confirmation Link Text in Your Welcome Email - Glenn Stovall</title>
   <meta name="author" content="Glenn Stovall">
 
   
-  <meta name="description" content="Category: marketing automation">
+  <meta name="description" content="If you are using Drip for your marketing automation, you might want to change the copy on the &#8220;Confirm Your Subscription&#8221; Link that gets &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://glennstovall.com/blog/categories/marketing-automation/">
+  <link rel="canonical" href="http://glennstovall.com/blog/2015/05/28/drip-quick-tip-how-to-change-the-confirmation-link-text-in-your-welcome-email/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -96,53 +96,104 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Marketing Automation</h1>
+    
+      <h1 class="entry-title">Drip Quick Tip: How to Change the Confirmation Link Text in Your Welcome Email</h1>
+    
+    
+      <p class="meta-timestamp">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-28T17:31:00-04:00" pubdate data-updated="true">May 28<span>th</span>, 2015</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>If you are using <a href="http://glennstovall.com/recommends/drip">Drip</a> for your marketing automation, you might want to change the copy on the &#8220;Confirm Your Subscription&#8221; Link that gets sent when people fill out a form. This link is an important call-to-action, and this little piece of text can have a big impact on your subscription conversion rate. Drip doesn&#8217;t make it clear how to change this copy, but it is possible.</p>
+
+<!-- more -->
 
 
-  
-  <h2>2015</h2>
+<p></p>
 
-<article>
-  
-<h1><a href="/blog/2015/05/28/drip-quick-tip-how-to-change-the-confirmation-link-text-in-your-welcome-email/">Drip Quick Tip: How to Change the Confirmation Link Text in Your Welcome Email</a></h1>
-<time datetime="2015-05-28T17:31:00-04:00" pubdate><span class='month'>May</span> <span class='day'>28</span> <span class='year'>2015</span></time>
+<p>When you are creating a form, you will the code for the link. It looks like this:</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/drip/'>drip</a>, <a class='category' href='/blog/categories/marketing-automation/'>marketing automation</a></span>
-</footer>
+<p>{{ confirmation_link }}</p>
 
+<p>If you want to change the link text, you can use the replace_inner_html function that is available. For example, if you wanted to change your link text to &#8220;Join the club.&#8221; you would do the following:</p>
 
-</article>
+<p>{{ confirmation_link | replace_inner_html: &#8220;Join the club.&#8221; }}</p>
 
-
-
-  
-  <h2>2014</h2>
-
-<article>
-  
-<h1><a href="/blog/2014/08/04/start-using-drip-email-campaigns-today/">Start Using Drip Email Campaigns Today</a></h1>
-<time datetime="2014-08-04T19:30:00-04:00" pubdate><span class='month'>Aug</span> <span class='day'>04</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/email/'>email</a>, <a class='category' href='/blog/categories/marketing/'>marketing</a>, <a class='category' href='/blog/categories/marketing-automation/'>marketing automation</a>, <a class='category' href='/blog/categories/strategy/'>strategy</a></span>
-</footer>
-
-
-</article>
-
+<p>By using this technique, you can have more control over the experience your subscribers have when they join your list and create more enticing calls-to-action in your emails.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Glenn Stovall</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-28T17:31:00-04:00" pubdate data-updated="true">May 28<span>th</span>, 2015</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/drip/'>drip</a>, <a class='category' href='/blog/categories/marketing-automation/'>marketing automation</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://glennstovall.com/blog/2015/05/28/drip-quick-tip-how-to-change-the-confirmation-link-text-in-your-welcome-email/" data-via="GSto" data-counturl="http://glennstovall.com/blog/2015/05/28/drip-quick-tip-how-to-change-the-confirmation-link-text-in-your-welcome-email/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/05/19/how-to-get-through-your-inbox-in-under-30-minutes-a-day/" title="Previous Post: How to Get Through Your Inbox in Under 30 Minutes a Day">&laquo; How to Get Through Your Inbox in Under 30 Minutes a Day</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

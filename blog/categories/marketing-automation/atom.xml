@@ -4,7 +4,7 @@
   <title><![CDATA[Category: marketing automation | Glenn Stovall]]></title>
   <link href="http://glennstovall.com/blog/categories/marketing-automation/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-05-28T14:27:26-04:00</updated>
+  <updated>2015-05-28T17:39:34-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Drip Quick Tip: How to Change the Confirmation Link Text in Your Welcome Email]]></title>
+    <link href="http://glennstovall.com/blog/2015/05/28/drip-quick-tip-how-to-change-the-confirmation-link-text-in-your-welcome-email/"/>
+    <updated>2015-05-28T17:31:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2015/05/28/drip-quick-tip-how-to-change-the-confirmation-link-text-in-your-welcome-email</id>
+    <content type="html"><![CDATA[<p>If you are using <a href="http://glennstovall.com/recommends/drip">Drip</a> for your marketing automation, you might want to change the copy on the "Confirm Your Subscription" Link that gets sent when people fill out a form. This link is an important call-to-action, and this little piece of text can have a big impact on your subscription conversion rate. Drip doesn't make it clear how to change this copy, but it is possible.</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<p>When you are creating a form, you will the code for the link. It looks like this:</p>
+
+<p>
+{{ confirmation_link }}
+</p>
+
+<p>If you want to change the link text, you can use the replace_inner_html function that is available. For example, if you wanted to change your link text to "Join the club." you would do the following:</p>
+
+<p>
+{{ confirmation_link | replace_inner_html: "Join the club." }}
+</p>
+
+<p>By using this technique, you can have more control over the experience your subscribers have when they join your list and create more enticing calls-to-action in your emails.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Start Using Drip Email Campaigns Today]]></title>
