@@ -323,16 +323,22 @@
         <lastmod>2015-05-28T17:38:41-04:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://glennstovall.com/blog/2015/06/09/what-entrepreneurs-can-learn-from-apple-about-product-launches/
+        </loc>
+        <lastmod>2015-06-09T08:59:01-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://glennstovall.com/about/</loc>
         <lastmod>2014-11-16T10:13:48-05:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/archives/</loc>
-        <lastmod>2015-05-28T17:38:41-04:00</lastmod>
+        <lastmod>2015-06-09T08:59:01-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/</loc>
-        <lastmod>2015-05-28T17:38:41-04:00</lastmod>
+        <lastmod>2015-06-09T08:59:01-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/books/freelance-pricing-handbook/download.html</loc>
@@ -388,7 +394,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/</loc>
-        <lastmod>2015-06-05T12:08:21-04:00</lastmod>
+        <lastmod>2015-06-09T08:59:01-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/my-latest-thing/</loc>
@@ -428,7 +434,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/products/reliable-codeigniter/</loc>
-        <lastmod>2015-05-28T17:38:41-04:00</lastmod>
+        <lastmod>2015-06-09T08:59:01-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/resume/</loc>
@@ -452,10 +458,10 @@
     </url>
     <url>
         <loc>http://glennstovall.com/write-a-website/</loc>
-        <lastmod>2015-05-28T17:38:41-04:00</lastmod>
+        <lastmod>2015-06-09T08:59:01-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/write-a-website/thank-you/</loc>
-        <lastmod>2015-05-28T17:38:41-04:00</lastmod>
+        <lastmod>2015-06-09T08:59:01-04:00</lastmod>
     </url>
 </urlset>
