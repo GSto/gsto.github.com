@@ -4,7 +4,7 @@
   <title><![CDATA[Glenn Stovall]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-06-09T09:01:31-04:00</updated>
+  <updated>2015-06-17T13:26:40-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,82 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[What Every Entrereneur Needs to Understand About Risk]]></title>
+    <link href="http://glennstovall.com/blog/2015/06/17/what-every-entrereneur-needs-to-understand-about-risk/"/>
+    <updated>2015-06-17T12:51:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2015/06/17/what-every-entrereneur-needs-to-understand-about-risk</id>
+    <content type="html"><![CDATA[<p>All businesses are inherently risky. Human beings are <em>terrible</em>  at understanding and quantifying risk. Since most entrepreneurs tend to be human beings, this causes problems. Without having a clear picture of what risk is, how to identify it, and how to quantify it, making correct decisions about your business can be hard.</p>
+
+<p>The biggest cognitive dissonance is that people confuse variance and risk. For the purposes of this article, I am defining variance as the variety and difference and outcomes of any given probabilistic event. A six-sided die has more variance than a coin since it has six different possible outcomes while a coin has two.</p>
+
+<p>We define risk as the losses incurred based on the outcomes of one of those events. The greater the amount of loss and the greater the chances of that loss occurring increase the amount of risk in any decision.</p>
+
+<!-- more -->
+
+
+<h2>How I Ran a Stable Online Poker Business</h2>
+
+<p>My lessons on risk and variance come from my college years where I paid rent with online poker winnings. This job may seem like a huge risk job, but in fact it was as stable as my ability to play winning poker consistently and put in hours. The difference between poker players with the ability to win who did and the one’s that didn’t were the number of hands they could play in a week. As long as I was playing 10,000 hands a week, and my analytics looked good, I would make rent every single month.</p>
+
+<p>The <a href="http://en.wikipedia.org/wiki/Law_of_large_numbers">law of large numbers</a> comes into play.  If you make winning decisions more than losing decisions enough times in a row, the probability that you will be a winner for that period climbs closer to 100%.</p>
+
+<p>The reason playing poker feels risky is because it has a lot of variance. I could have huge wins or huge losses every day. Back then, it seems insane to put in a 5-hour shift of “work” and have my pay for that be -$300. Professional poker player/game theory professor at UCLA Chris Ferguson has a great analogy for this:</p>
+
+<h2>The Variant Game You Can Always Win</h2>
+
+<p>Imagine that you are a much better chess player than me (this is likely not a huge leap from reality). We agree to play a game every day for a year: First, we will play a game of chess, and wager $1 on it. Afterwards, we will flip a coin and wager $10 on it. Even you can beat me at chess 100% of the time, there will be times you will have losing days and losing weeks. However, at the end of the year, the flips balance out, and the chess games are all that determine your success.</p>
+
+<p>The variance of this game is high, but the risk is low. Understanding the basic math principles behind situations like this allow you to get over our human nature of not understanding the situation and allow you to make correct decisions and increase your chances of success significantly.</p>
+
+<h2>How Can Poker Player’s Reduce Risk?</h2>
+
+<p>I used to be an active poster on <a href="http://www.twoplustwo.com/">online poker forums</a> where people would discuss strategy. Once a question was asked “how can I reduce the risk of my game?” After some discussion, a more experienced player pointed out that the player was looking to reduce <em>variance</em>, not <em>risk</em>. They could play it safe and reduce their average winning amount per 1,000 hands, and that would reduce variance. However, by reducing their average winning rate, they were reducing their long-term success and would, in fact, <em>increase</em> the amount of risk they would face. ‘</p>
+
+<p>In fact, attempting to decrease your variance is <strong>guaranteed</strong> to lower a player’s overall win rate. Why is this? All decisions in poker can be broken down into either making a decision that wins money in the long term or decisions that lose money long-term. Optimal poker strategy is to make as many winning decisions and as few losing decisions as possible. These decisions have different amounts of variance. The only way to reduce variance would be to avoid making winning decisions with a high amount of variance, which means making more losing decisions, which means you make less money over time.</p>
+
+<p><img class="center" src="http://glennstovall.com/images/articles/conservative_variance.png"></p>
+
+<p>In short, the best way to reduce risk is to make decisions that are more correct and make them more often.</p>
+
+<h2>Applying These Lessons To Your Business</h2>
+
+<p>On Twitter, I asked a question to my followers:</p>
+
+<blockquote><p>Assuming all other factors are equal, would you rather take a job that pays you $5,000 every month, or a job that has a 50/50 chance of paying you either $12,000/month or $0/month?</p></blockquote>
+
+<p>This question a simplified, although more accurate than I would like to admit allegory to comparing my time as a salaried employee to my work as an independent consultant. We’ll call these the low variance and high variance jobs.</p>
+
+<p>On average, the highly variant job would have an expected value of $72,000/year while the first would pay out $60,000/year. Most people chose the former option, even though that decision is effectively costing them $12,000/year. Because people were anxious about variance, <strong>they chose the far less profitable option.</strong></p>
+
+<p>To put some fears at ease, let’s look at how this would play out. In the first two months, 75% of people that chose the high variance job will have $2,000 more in the bank than the low variance people. By the end of the year, <strong>80.62%</strong> percent of people who took the higher variance job will have made the same amount or more than the people who took the lower variance job.</p>
+
+<p><img class="center" src="http://glennstovall.com/images/aritlces/12kjob_chart.png"></p>
+
+<h2>Quantifying The Risk of Higher Variance</h2>
+
+<p>Using the $5,000/month job as a baseline, we were able to establish a expected gain from the riskier venture, which is +$12,000 over the course of the year. But can we quantify the risk of having a bad year. What if we are one of the one of roughly five people who underperform?</p>
+
+<p>We will consider any year where we make less than $60,000 a losing scenario. We can figure up the total value of the risk by comparing the amount of money we would miss out on * the likelihood of that event happening. There is a 12.08% chance that we only get paid four times, for a total salary of $48,000 and a loss of $12,000; We’ll quantify that as a risk of $1,405.20. The risk of getting paid zero times is actually <em>less</em> of a risk. Even though that outcome feels scarier, it is so much less likely that it only carries a risk value of $14.65. The results:</p>
+
+<p>Expected value of higher variance job:  <strong>$12,000.00</strong></p>
+
+<p>Expected Risk of higher variance job:    <strong>$3,474.61</strong></p>
+
+<h2>So Why Do People Make The Wrong Decision?</h2>
+
+<p>The reasons I got for this were a mix of fear and personal circumstances. People were afraid of missing a paycheck for a month or two. Someone was even scared of the possibility of missing all twelve. Our brains exaggerate the chance of extremes because they stand out in our minds. For example, in 2001 we had the  <em><a href="http://en.wikipedia.org/wiki/Summer_of_the_Shark">Summer of the Shark</a></em> when there was a whopping <strong>one</strong> fatal shark attack that year.</p>
+
+<p>When you see propositions that could be profitable but risky, that should be a sign to go with your <em>calculator</em>, and not with your <em>gut</em>.</p>
+
+<p>The other reason I heard for taking the less valuable position makes sense. People didn’t have the financial cushion to take even one $0 paycheck. If they didn’t “win” during the first month of the more variant job, they would be in serious trouble. I understand taking a longer term less profitable decision if look at the risk as a 50% chance of serious financial hardship. It also means that the risk is much higher than the $3474 we mentioned earlier, and the risk would outweigh the reward.</p>
+
+<p>This insight leads us to a bit more of a personal finance conclusion:  building a financial cushion that allows you to accept variance will make you more money in the long run. An emergency fund may not seem like an investment, but if it is the difference between you saying “yes” and saying “no” to opportunities, then it will pay off more than most investments.</p>
+
+<p>People talk about “risk tolerance”, but what they typically mean is “variance tolerance”. You can set yourself up to have a greater variance tolerance by being smart about your money, and you can set yourself up mentally by taking a hard look at the numbers.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[What Entrepreneurs Can Learn From Apple About Product Launches]]></title>
@@ -1438,81 +1514,6 @@ such as <a href="http://www.squarespace.com/">Squarespace</a>, <a href="http://w
 
 <p><img class="center" src="http://glennstovall.com/images/articles/slight_edge.jpg">
 <small>The Slight Edge By Jeff Olson</small></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Lessons Learned From Thomas Edison's Factory Fire]]></title>
-    <link href="http://glennstovall.com/blog/2014/09/11/lessons-learned-from-thomas-edisons-factory-fire/"/>
-    <updated>2014-09-11T08:03:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/09/11/lessons-learned-from-thomas-edisons-factory-fire</id>
-    <content type="html"><![CDATA[<h3>Edison Understood Resiliance AND Electricity</h3>
-
-<p><img class="left" src="http://glennstovall.com/images/articles/edison_fire.jpg" width="260"></p>
-
-<p>On December 10th, 1914, Thomas Edison was having dinner with his family. A man rushes to his door and tells Edison that his factory had caught fire. Edison grabs his son Charles and they rush our the door. They head to the factory to see what is going on. When they get there the see a  vivid display of red, green, and blue fires, due to the various chemicals stored in his laboratory.</p>
-
-<p>This could be the end of Thomas Edison. He didn&#8217;t even have insurance on the building, because it was designed to be fireproof. Edison looks at his son and says:</p>
-
-<blockquote><p>Go get your mother and all her friends. They&#8217;ll never see a fire like this again.</p></blockquote>
-
-
-
-
-<!-- more -->
-
-
-<p>Charles protested, to which Edison responded:</p>
-
-<blockquote><p>It&#8217;s all right. We&#8217;ve just got rid of a lot of old rubbish.</p></blockquote>
-
-
-<p>How was Edison able to look at a career threatening tragedy and take such a light hearted approach to such a catastrophe? Edison understood the philosophy of <a href="http://en.wikipedia.org/wiki/Stoicism">Stoicism</a>. Stoicism tells us that negative and destructive emotions are the result of errors in judgement.</p>
-
-<h3>The Obstacle is The Way</h3>
-
-<p>The principal teaching of Stoicism is that we should view challenges and stress as opportunities. Instead of seeing the factory as a catastrophic blow to his business, Edison saw an opportunity to start anew. If you are an entrepreneur, you <strong>need</strong> to get comfortable with failure.</p>
-
-<h3>Facing Failure Head On</h3>
-
-<p>Sometimes there will be failures that are your fault, other times they are not. There may be circumstances that you couldn&#8217;t foresee or plan for. The world is chaotic, and it doesn&#8217;t owe you anything; it was here first.</p>
-
-<p>You can&#8217;t let the control of how you react to these scenarios slip from your grasp. Every time you see crisis, you have to try and see opportunity.</p>
-
-<h3>A Personal Story</h3>
-
-<p>Many freelancer&#8217;s are familiar with the term &#8220;feast or famine&#8221;. It alludes to the fact that with client work, when it rains, it pours. Sometimes lots of sales come through at once, other times they don&#8217;t. It can be stressful when work is slow. I had been feeling depressed and unmotivated for days facing a recent sales slump. However, by applying the philosophy of stoicism, I can see this in a very different light:</p>
-
-<p><img class="center" src="http://glennstovall.com/images/articles/time_enough.jpg"></p>
-
-<h4>Time Enough At Last</h4>
-
-<p>People often complain about not having enough time to accomplish everything they want. I know I have. That&#8217;s no longer an excuse. I have a lot of hours to fill up every day with whatever I so choose.</p>
-
-<h4>Going Completely Remote</h4>
-
-<p>A big goal I have for my consulting business is to build a system that is completely remote. While networking locally tends to be the most effective way to build connections, and will always be a part of my business strategy, it can be limiting. The internet opens up the whole wide world, and I would like to build connections with people that live more than 20 miles away from me.</p>
-
-<p>This will give me the freedom to run my business from anywhere in country. Hell, anywhere in the world. This is <strong>huge</strong> not as a business goal, but as a goal for living a happy life.</p>
-
-<h4>A Through Post Mortem</h4>
-
-<p>What have I done right? What I have done wrong? Having all this time gives me an opportunity to look at every part of my business, from marketing, to sales, to deliverables, and see what has gone well, and what hasn&#8217;t. I&#8217;m taking all this free time I have and applying to finding ways to deliver better service and more value to my clients, while building a more sustainable business for myself.</p>
-
-<h4>A Learning Experience</h4>
-
-<p>I have been working on a book this year entitled <em>Professional Freelance</em>. I planned on including chapters on sales and marketing. By having a challenge that many other freelancers face every day gives me an chance to find ways to approach it, learn and invent new solutions, and gather knowledge that I can share with other people and help other people grow their career.</p>
-
-<h3>The Struggle Isn&#8217;t Real</h3>
-
-<p>When facing hardships, it&#8217;s good to be reminded that they aren&#8217;t as bad as they first seem, if we approach them in the correct fashion. What did Edison do after his watched his plant burn to the ground in a spectacular fashion? He got a loan from his friend Henry Ford, and in three weeks he was up and running again. Edison went on to make $10 million dollars in revenue that year (~$200 million in 2014 dollars).</p>
-
-<p>I&#8217;ll leave you with a video on Stoic Optimism, a TEDx talk by Ryan Holiday:</p>
-
-<iframe width="1280" height="720" src="http://glennstovall.com//www.youtube.com/embed/e2Zq2VWvmW4" frameborder="0" allowfullscreen></iframe>
-
-
-
 ]]></content>
   </entry>
   
