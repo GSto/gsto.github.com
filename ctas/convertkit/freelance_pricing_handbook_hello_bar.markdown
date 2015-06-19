@@ -1,5 +1,5 @@
 <div class="hello-bar">
-  <h2 data-drip-attribue="headline">Get Your Copy of "The Freelance Pricing Handbook"</h2>
+  <h2 data-drip-attribue="headline" style="color:white;">Get Your Copy of "The Freelance Pricing Handbook"</h2>
     <form action="https://www.getdrip.com/forms/5825490/submissions" data-drip-embedded-form="2911" onSubmit="_gaq.push(['_trackEvent','Newsletter','FPH Download','hellobar']);" method="post">
 
       <p class="ck_errorArea"></p>
