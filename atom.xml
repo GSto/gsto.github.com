@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Glenn Stovall]]></title>
+  <title><![CDATA[Better Code, Better Copy, Better Business]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-06-17T13:32:57-04:00</updated>
+  <updated>2015-06-19T11:43:06-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[What Every Entrereneur Needs to Understand About Risk]]></title>
+    <title type="html"><![CDATA[What Every Entrepreneur Needs to Understand About Risk]]></title>
     <link href="http://glennstovall.com/blog/2015/06/17/what-every-entrereneur-needs-to-understand-about-risk/"/>
     <updated>2015-06-17T12:51:00-04:00</updated>
     <id>http://glennstovall.com/blog/2015/06/17/what-every-entrereneur-needs-to-understand-about-risk</id>
