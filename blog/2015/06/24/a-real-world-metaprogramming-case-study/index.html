@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <!-- 7D65FDE2-129B-4399-AB33-1C7786CFDBAB -->
+  <meta charset="utf-8">
+  <title>A Real World Metaprogramming Case Study - Software That Sells</title>
+  <meta name="author" content="Glenn Stovall">
+
+  
+  <meta name="description" content="Metaprogramming is one of the unique features of Ruby. Metaprogramming is an interesting concept, and a tool can save a lot of time. It can also be &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://glennstovall.com/blog/2015/06/24/a-real-world-metaprogramming-case-study/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script type="text/javascript">
+   function overlay() {
+     el = document.getElementById("overlay");
+     el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+   }
+  </script>
+  <link href="" rel="alternate" title="Software That Sells" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Neuton:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<!-- 7D65FDE2-129B-4399-AB33-1C7786CFDBAB -->
+<script src="//use.typekit.net/vyt8ynh.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2427296-13']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+   
+  </script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/">Articles</a></li>
+  <li><a href="/case-studies">Case Studies</a></li>
+  <li><a href="/consulting">Consulting</a></li>
+  <li><a href="/freelancer-knowledge-base">For Freelancers</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/ask">Ask Me Anything</a></li>
+</ul>
+
+</nav>
+  <header role="banner"><hgroup>
+	<!--<div style='float:left;display:inline-block;'>-->
+	<div class='header-image'>
+	  <img src="/images/mugshot.jpg" width="96">
+  </div>
+<!--  <div style='float:left;display:inline-block;'>-->
+  <div class='header-wrapper'>
+		<h1><a href="/">Software That Sells</a></h1>
+		
+		  <br/>
+      <h2 style='display:inline-block;'>Glenn Stovall - Technical Marketing & Web App Consultant</h2>
+		
+  </div>
+</hgroup>
+
+</header>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">A Real World Metaprogramming Case Study</h1>
+    
+    
+      <p class="meta-timestamp">
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+<time class='article-date' datetime="2015-06-24T17:01:00-04:00" pubdate data-updated="true">Jun 24<span>th</span>, 2015</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Metaprogramming is one of the unique features of Ruby. Metaprogramming is an interesting concept, and a tool can save a lot of time. It can also be confusing for developers and difficult to maintain if not used properly. Here is an example of how I used Metaprogramming to solve a real-world problem and save a few hours coding.</p>
+
+<!-- more -->
+
+
+<h2>Serializers With Duplicate Code</h2>
+
+<p>I’m working on an application that used for managing vacation bookings. The application needs an API to integrate with some business partners. As part of the specification, dates should be returned in the API in a “YYYY-MM-DD” format.</p>
+
+<p>To build the API, I’ll be using <a href="https://github.com/rails-api/active_model_serializers">ActiveRecord::Serializer</a> to customize the JSON output.</p>
+
+<p>Here’s a snippet from the reservation serializer class:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'> <span class="k">class</span> <span class="nc">ReservationSerializer</span> <span class="o">&lt;&lt;</span> <span class="ss">ActiveModel</span><span class="p">:</span><span class="ss">:Serializer</span>
+</span><span class='line'>   <span class="n">attributes</span> <span class="ss">:starts_on</span><span class="p">,</span> <span class="ss">:ends_on</span><span class="p">,</span> <span class="ss">:posted_on</span><span class="p">,</span> <span class="ss">:reserved_on</span>
+</span><span class='line'>
+</span><span class='line'>   <span class="k">def</span> <span class="nf">starts_on</span>
+</span><span class='line'>     <span class="n">object</span><span class="o">.</span><span class="n">starts_on</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%F&quot;</span><span class="p">)</span>
+</span><span class='line'>   <span class="k">end</span>
+</span><span class='line'>   <span class="k">def</span> <span class="nf">ends_on</span>
+</span><span class='line'>     <span class="n">object</span><span class="o">.</span><span class="n">ends_on</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%F&quot;</span><span class="p">)</span>
+</span><span class='line'>   <span class="k">end</span>
+</span><span class='line'>   <span class="k">def</span> <span class="nf">posted_on</span>
+</span><span class='line'>     <span class="n">object</span><span class="o">.</span><span class="n">posted_on</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%F&quot;</span><span class="p">)</span>
+</span><span class='line'>   <span class="k">end</span>
+</span><span class='line'>   <span class="k">def</span> <span class="nf">reserved_on</span>
+</span><span class='line'>     <span class="n">object</span><span class="o">.</span><span class="n">reserved_on</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%F&quot;</span><span class="p">)</span>
+</span><span class='line'>   <span class="k">end</span>
+</span><span class='line'> <span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This method works because you can override any attribute in a serializer class. The problem is that this is going to be a lot of duplicate code. There are also several other API endpoints that need to deal with dates.</p>
+
+<p>Wouldn’t be nice if we could format dates without writing a bunch of duplicate methods?</p>
+
+<h2>Creating a Super Class That Can Create Methods</h2>
+
+<p>In Ruby, parent classes have the ability to modify its children. We are going to use this ability to define methods on our serializers <em>without</em> writing them by hand.</p>
+
+<p>We’ll start by creating an <code>ApplicationSerializer</code> from which each of out serializers will inherit.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'> <span class="k">class</span> <span class="nc">ApplicationSerializer</span> <span class="o">&lt;&lt;</span> <span class="ss">ActiveModel</span><span class="p">:</span><span class="ss">:Serializer</span>
+</span><span class='line'> <span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Inside of this superclass, we are going to define a <code>formatted_date</code> class method that we will use in our subclasses.</p>
+
+<p>Here’s what the final result looks like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>   <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">formatted_date</span><span class="p">(</span><span class="n">options</span> <span class="o">=</span> <span class="p">{})</span>
+</span><span class='line'>     <span class="n">attribute</span> <span class="o">=</span> <span class="n">options</span><span class="o">[</span><span class="ss">:attribute</span><span class="o">]</span> <span class="o">||</span> <span class="kp">nil</span>
+</span><span class='line'>     <span class="nb">format</span> <span class="o">=</span> <span class="n">options</span><span class="o">[</span><span class="ss">:format</span><span class="o">]</span> <span class="o">||</span> <span class="s2">&quot;%F&quot;</span>
+</span><span class='line'>
+</span><span class='line'>     <span class="k">if</span> <span class="n">attribute</span><span class="o">.</span><span class="n">present?</span>
+</span><span class='line'>       <span class="n">define_method</span><span class="p">(</span><span class="n">attribute</span><span class="p">)</span> <span class="k">do</span>
+</span><span class='line'>         <span class="n">object</span><span class="o">[</span><span class="n">attribute</span><span class="o">].</span><span class="n">strftime</span><span class="p">(</span><span class="nb">format</span><span class="p">)</span>
+</span><span class='line'>       <span class="k">end</span>
+</span><span class='line'>     <span class="k">end</span>
+</span><span class='line'>   <span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Let’s break this down:</p>
+
+<ul>
+<li>First, we pass an options hash that will take the attribute and the format we will use. We are defaulting to the YYYY-MM-DD format, but this gives other developers the option to override that if needed.</li>
+<li>Then, We check that an attribute is passed, and if so, we call the <code>define_method</code> method. We will use this to create methods in our subclass. Note that the created method’s name will be the same as the attribute.</li>
+<li>Finally, We pass a block to <code>define_method</code>. This block will become the body of the new method. Note that the block uses the <code>object</code> property, which belongs to the subclass and not ApplicationSerializer.</li>
+</ul>
+
+
+<h2>Creating Our Dynamic Methods</h2>
+
+<p>Inside of our <code>ReservationSerializer</code> class, we change the super class to <code>ApplicationSerializer.</code> Changing the parent class gives us the added ability to create new date attribute methods on the fly. Now writing this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'> <span class="n">formatted_date</span> <span class="ss">:attribute</span> <span class="o">=&gt;</span> <span class="ss">:starts_on</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>is <strong>exactly</strong> the same as writing this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'> <span class="k">def</span> <span class="nf">starts_on</span>
+</span><span class='line'>   <span class="n">object</span><span class="o">.</span><span class="n">starts_on</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%F&quot;</span><span class="p">)</span>
+</span><span class='line'> <span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Our Updated Class</h2>
+
+<p> Let’s take a look at our new <code>ReservationSerializer</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'> <span class="k">class</span> <span class="nc">ReservationSerializer</span> <span class="o">&lt;</span> <span class="no">ApplicationSerializer</span>
+</span><span class='line'>   <span class="n">attributes</span> <span class="ss">:starts_on</span><span class="p">,</span> <span class="ss">:ends_on</span><span class="p">,</span> <span class="ss">:posted_on</span><span class="p">,</span> <span class="ss">:reserved_on</span>
+</span><span class='line'>
+</span><span class='line'>   <span class="n">formatted_date</span> <span class="ss">:attribute</span> <span class="o">=&gt;</span> <span class="ss">:starts_on</span>
+</span><span class='line'>   <span class="n">formatted_date</span> <span class="ss">:attribute</span> <span class="o">=&gt;</span> <span class="ss">:ends_on</span>
+</span><span class='line'>   <span class="n">formatted_date</span> <span class="ss">:attribute</span> <span class="o">=&gt;</span> <span class="ss">:posted_on</span>
+</span><span class='line'>   <span class="n">formatted_date</span> <span class="ss">:attribute</span> <span class="o">=&gt;</span> <span class="ss">:reserved_on</span>
+</span><span class='line'> <span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Not only is this cleaner to read and less duplicate code, but we have this functionality available in all of our serializers.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Glenn Stovall</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<time class='article-date' datetime="2015-06-24T17:01:00-04:00" pubdate data-updated="true">Jun 24<span>th</span>, 2015</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/programming/'>programming</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
+  
+</span>
+
+
+    </p>
+    
+
+    <p class="meta" style="display:none;">
+      
+        <a class="basic-alignment left" href="/blog/2015/06/17/what-every-entrereneur-needs-to-understand-about-risk/" title="Previous Post: What Every Entrepreneur Needs to Understand About Risk">&laquo; Previous</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo">
+<p class='credit'>
+  &copy; 2015 - Glenn Stovall
+</p>
+<p class='social-links'>
+  <!-- courtesy of http://simpleicons.org/ -->
+  <a href='http://www.twitter.com/gsto' target='_blank' class='twitter-link'>
+    <img src='/images/simple_icons/icons/twitter/twitter-64.png' alt='Glenn Stovall on Twitter'> 
+  </a>
+
+  <a href='http://linkedin.com/in/glennstovall' target='_blank' class='linkedin-link'>
+    <img src='/images/simple_icons/icons/linkedin/linkedin-64.png' alt='Glenn Stovall on LinkedIn'>
+  </a>
+  <a href='http://github.com/gsto' target='_blank' class='github-link'>
+    <img src='/images/simple_icons/icons/github/github-64.png' alt='Glenn Stovall on Github'>
+  </a>
+  <a href='http://careers.stackoverflow.com/glennstovall' target='_blank' class='stackoverflow-link'>
+    <img src='/images/simple_icons/icons/stackoverflow/stackoverflow-64.png' alt='Glenn Stovall CV'>
+  </a>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'glennstovall';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://glennstovall.com/blog/2015/06/24/a-real-world-metaprogramming-case-study/';
+        var disqus_url = 'http://glennstovall.com/blog/2015/06/24/a-real-world-metaprogramming-case-study/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+<script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {}; 
+  _dcs.account = '5248425';
+  
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true; 
+    dc.src = '//tag.getdrip.com/5248425.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>
+
+
+
+</body>
+</html>

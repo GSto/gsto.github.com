@@ -335,20 +335,26 @@
         <lastmod>2015-06-19T16:31:09-04:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://glennstovall.com/blog/2015/06/24/a-real-world-metaprogramming-case-study/
+        </loc>
+        <lastmod>2015-06-24T17:07:20-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://glennstovall.com/about/</loc>
         <lastmod>2015-06-19T11:15:10-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/ask/</loc>
-        <lastmod>2015-06-19T13:47:35-04:00</lastmod>
+        <lastmod>2015-06-24T17:07:20-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/archives/</loc>
-        <lastmod>2015-06-19T11:15:10-04:00</lastmod>
+        <lastmod>2015-06-24T17:07:20-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/</loc>
-        <lastmod>2015-06-19T11:15:10-04:00</lastmod>
+        <lastmod>2015-06-24T17:07:20-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/books/freelance-pricing-handbook/download.html</loc>
@@ -396,7 +402,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/free-consult/</loc>
-        <lastmod>2015-06-22T11:03:05-04:00</lastmod>
+        <lastmod>2015-06-24T17:07:20-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/freelancer-knowledge-base/</loc>
@@ -408,11 +414,11 @@
     </url>
     <url>
         <loc>http://glennstovall.com/</loc>
-        <lastmod>2015-06-19T13:50:50-04:00</lastmod>
+        <lastmod>2015-06-24T17:07:20-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/letters/</loc>
-        <lastmod>2015-06-22T11:00:43-04:00</lastmod>
+        <lastmod>2015-06-24T17:07:20-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/my-latest-thing/</loc>
@@ -452,7 +458,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/products/reliable-codeigniter/</loc>
-        <lastmod>2015-06-18T12:46:09-04:00</lastmod>
+        <lastmod>2015-06-24T17:07:20-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/resume/</loc>
@@ -476,10 +482,10 @@
     </url>
     <url>
         <loc>http://glennstovall.com/write-a-website/</loc>
-        <lastmod>2015-06-18T12:46:09-04:00</lastmod>
+        <lastmod>2015-06-24T17:07:20-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/write-a-website/thank-you/</loc>
-        <lastmod>2015-06-18T12:46:09-04:00</lastmod>
+        <lastmod>2015-06-24T17:07:20-04:00</lastmod>
     </url>
 </urlset>

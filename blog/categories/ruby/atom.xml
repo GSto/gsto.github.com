@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Software That Sells]]></title>
   <link href="http://glennstovall.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-06-22T11:04:03-04:00</updated>
+  <updated>2015-06-24T17:09:24-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,134 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A Real World Metaprogramming Case Study]]></title>
+    <link href="http://glennstovall.com/blog/2015/06/24/a-real-world-metaprogramming-case-study/"/>
+    <updated>2015-06-24T17:01:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2015/06/24/a-real-world-metaprogramming-case-study</id>
+    <content type="html"><![CDATA[<p>Metaprogramming is one of the unique features of Ruby. Metaprogramming is an interesting concept, and a tool can save a lot of time. It can also be confusing for developers and difficult to maintain if not used properly. Here is an example of how I used Metaprogramming to solve a real-world problem and save a few hours coding.</p>
+
+<!-- more -->
+
+
+<h2>Serializers With Duplicate Code</h2>
+
+<p>I’m working on an application that used for managing vacation bookings. The application needs an API to integrate with some business partners. As part of the specification, dates should be returned in the API in a “YYYY-MM-DD” format.</p>
+
+<p>To build the API, I’ll be using <a href="https://github.com/rails-api/active_model_serializers">ActiveRecord::Serializer</a> to customize the JSON output.</p>
+
+<p>Here’s a snippet from the reservation serializer class:</p>
+
+<p>```ruby
+ class ReservationSerializer &lt;&lt; ActiveModel::Serializer
+   attributes :starts_on, :ends_on, :posted_on, :reserved_on</p>
+
+<p>   def starts_on</p>
+
+<pre><code> object.starts_on.strftime("%F")
+</code></pre>
+
+<p>   end
+   def ends_on</p>
+
+<pre><code> object.ends_on.strftime("%F")
+</code></pre>
+
+<p>   end
+   def posted_on</p>
+
+<pre><code> object.posted_on.strftime("%F")
+</code></pre>
+
+<p>   end
+   def reserved_on</p>
+
+<pre><code> object.reserved_on.strftime("%F")
+</code></pre>
+
+<p>   end
+ end
+```</p>
+
+<p>This method works because you can override any attribute in a serializer class. The problem is that this is going to be a lot of duplicate code. There are also several other API endpoints that need to deal with dates.</p>
+
+<p>Wouldn’t be nice if we could format dates without writing a bunch of duplicate methods?</p>
+
+<h2>Creating a Super Class That Can Create Methods</h2>
+
+<p>In Ruby, parent classes have the ability to modify its children. We are going to use this ability to define methods on our serializers <em>without</em> writing them by hand.</p>
+
+<p>We’ll start by creating an <code>ApplicationSerializer</code> from which each of out serializers will inherit.</p>
+
+<p><code>ruby
+ class ApplicationSerializer &lt;&lt; ActiveModel::Serializer
+ end
+</code></p>
+
+<p>Inside of this superclass, we are going to define a <code>formatted_date</code> class method that we will use in our subclasses.</p>
+
+<p>Here’s what the final result looks like:</p>
+
+<p>```ruby
+   def self.formatted_date(options = {})</p>
+
+<pre><code> attribute = options[:attribute] || nil
+ format = options[:format] || "%F"
+
+ if attribute.present?
+   define_method(attribute) do 
+     object[attribute].strftime(format)
+   end
+ end
+</code></pre>
+
+<p>   end
+```</p>
+
+<p>Let’s break this down:</p>
+
+<ul>
+<li>First, we pass an options hash that will take the attribute and the format we will use. We are defaulting to the YYYY-MM-DD format, but this gives other developers the option to override that if needed.</li>
+<li>Then, We check that an attribute is passed, and if so, we call the <code>define_method</code> method. We will use this to create methods in our subclass. Note that the created method’s name will be the same as the attribute.</li>
+<li>Finally, We pass a block to <code>define_method</code>. This block will become the body of the new method. Note that the block uses the <code>object</code> property, which belongs to the subclass and not ApplicationSerializer.</li>
+</ul>
+
+
+<h2>Creating Our Dynamic Methods</h2>
+
+<p>Inside of our <code>ReservationSerializer</code> class, we change the super class to <code>ApplicationSerializer.</code> Changing the parent class gives us the added ability to create new date attribute methods on the fly. Now writing this:</p>
+
+<p><code>ruby
+ formatted_date :attribute =&gt; :starts_on
+</code></p>
+
+<p>is <strong>exactly</strong> the same as writing this:</p>
+
+<p><code>ruby
+ def starts_on
+   object.starts_on.strftime("%F")
+ end
+</code></p>
+
+<h2>Our Updated Class</h2>
+
+<p> Let’s take a look at our new <code>ReservationSerializer</code>:</p>
+
+<p>```ruby
+ class ReservationSerializer &lt; ApplicationSerializer
+   attributes :starts_on, :ends_on, :posted_on, :reserved_on</p>
+
+<p>   formatted_date :attribute => :starts_on
+   formatted_date :attribute => :ends_on
+   formatted_date :attribute => :posted_on
+   formatted_date :attribute => :reserved_on
+ end
+```</p>
+
+<p>Not only is this cleaner to read and less duplicate code, but we have this functionality available in all of our serializers.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Test Controller Concerns in Rails 4]]></title>

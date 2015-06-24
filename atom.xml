@@ -4,7 +4,7 @@
   <title><![CDATA[Software That Sells]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-06-22T11:04:03-04:00</updated>
+  <updated>2015-06-24T17:09:24-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,159 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A Real World Metaprogramming Case Study]]></title>
+    <link href="http://glennstovall.com/blog/2015/06/24/a-real-world-metaprogramming-case-study/"/>
+    <updated>2015-06-24T17:01:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2015/06/24/a-real-world-metaprogramming-case-study</id>
+    <content type="html"><![CDATA[<p>Metaprogramming is one of the unique features of Ruby. Metaprogramming is an interesting concept, and a tool can save a lot of time. It can also be confusing for developers and difficult to maintain if not used properly. Here is an example of how I used Metaprogramming to solve a real-world problem and save a few hours coding.</p>
+
+<!-- more -->
+
+
+<h2>Serializers With Duplicate Code</h2>
+
+<p>I’m working on an application that used for managing vacation bookings. The application needs an API to integrate with some business partners. As part of the specification, dates should be returned in the API in a “YYYY-MM-DD” format.</p>
+
+<p>To build the API, I’ll be using <a href="https://github.com/rails-api/active_model_serializers">ActiveRecord::Serializer</a> to customize the JSON output.</p>
+
+<p>Here’s a snippet from the reservation serializer class:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'> <span class="k">class</span> <span class="nc">ReservationSerializer</span> <span class="o">&lt;&lt;</span> <span class="ss">ActiveModel</span><span class="p">:</span><span class="ss">:Serializer</span>
+</span><span class='line'>   <span class="n">attributes</span> <span class="ss">:starts_on</span><span class="p">,</span> <span class="ss">:ends_on</span><span class="p">,</span> <span class="ss">:posted_on</span><span class="p">,</span> <span class="ss">:reserved_on</span>
+</span><span class='line'>
+</span><span class='line'>   <span class="k">def</span> <span class="nf">starts_on</span>
+</span><span class='line'>     <span class="n">object</span><span class="o">.</span><span class="n">starts_on</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%F&quot;</span><span class="p">)</span>
+</span><span class='line'>   <span class="k">end</span>
+</span><span class='line'>   <span class="k">def</span> <span class="nf">ends_on</span>
+</span><span class='line'>     <span class="n">object</span><span class="o">.</span><span class="n">ends_on</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%F&quot;</span><span class="p">)</span>
+</span><span class='line'>   <span class="k">end</span>
+</span><span class='line'>   <span class="k">def</span> <span class="nf">posted_on</span>
+</span><span class='line'>     <span class="n">object</span><span class="o">.</span><span class="n">posted_on</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%F&quot;</span><span class="p">)</span>
+</span><span class='line'>   <span class="k">end</span>
+</span><span class='line'>   <span class="k">def</span> <span class="nf">reserved_on</span>
+</span><span class='line'>     <span class="n">object</span><span class="o">.</span><span class="n">reserved_on</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%F&quot;</span><span class="p">)</span>
+</span><span class='line'>   <span class="k">end</span>
+</span><span class='line'> <span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This method works because you can override any attribute in a serializer class. The problem is that this is going to be a lot of duplicate code. There are also several other API endpoints that need to deal with dates.</p>
+
+<p>Wouldn’t be nice if we could format dates without writing a bunch of duplicate methods?</p>
+
+<h2>Creating a Super Class That Can Create Methods</h2>
+
+<p>In Ruby, parent classes have the ability to modify its children. We are going to use this ability to define methods on our serializers <em>without</em> writing them by hand.</p>
+
+<p>We’ll start by creating an <code>ApplicationSerializer</code> from which each of out serializers will inherit.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'> <span class="k">class</span> <span class="nc">ApplicationSerializer</span> <span class="o">&lt;&lt;</span> <span class="ss">ActiveModel</span><span class="p">:</span><span class="ss">:Serializer</span>
+</span><span class='line'> <span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Inside of this superclass, we are going to define a <code>formatted_date</code> class method that we will use in our subclasses.</p>
+
+<p>Here’s what the final result looks like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>   <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">formatted_date</span><span class="p">(</span><span class="n">options</span> <span class="o">=</span> <span class="p">{})</span>
+</span><span class='line'>     <span class="n">attribute</span> <span class="o">=</span> <span class="n">options</span><span class="o">[</span><span class="ss">:attribute</span><span class="o">]</span> <span class="o">||</span> <span class="kp">nil</span>
+</span><span class='line'>     <span class="nb">format</span> <span class="o">=</span> <span class="n">options</span><span class="o">[</span><span class="ss">:format</span><span class="o">]</span> <span class="o">||</span> <span class="s2">&quot;%F&quot;</span>
+</span><span class='line'>
+</span><span class='line'>     <span class="k">if</span> <span class="n">attribute</span><span class="o">.</span><span class="n">present?</span>
+</span><span class='line'>       <span class="n">define_method</span><span class="p">(</span><span class="n">attribute</span><span class="p">)</span> <span class="k">do</span>
+</span><span class='line'>         <span class="n">object</span><span class="o">[</span><span class="n">attribute</span><span class="o">].</span><span class="n">strftime</span><span class="p">(</span><span class="nb">format</span><span class="p">)</span>
+</span><span class='line'>       <span class="k">end</span>
+</span><span class='line'>     <span class="k">end</span>
+</span><span class='line'>   <span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Let’s break this down:</p>
+
+<ul>
+<li>First, we pass an options hash that will take the attribute and the format we will use. We are defaulting to the YYYY-MM-DD format, but this gives other developers the option to override that if needed.</li>
+<li>Then, We check that an attribute is passed, and if so, we call the <code>define_method</code> method. We will use this to create methods in our subclass. Note that the created method’s name will be the same as the attribute.</li>
+<li>Finally, We pass a block to <code>define_method</code>. This block will become the body of the new method. Note that the block uses the <code>object</code> property, which belongs to the subclass and not ApplicationSerializer.</li>
+</ul>
+
+
+<h2>Creating Our Dynamic Methods</h2>
+
+<p>Inside of our <code>ReservationSerializer</code> class, we change the super class to <code>ApplicationSerializer.</code> Changing the parent class gives us the added ability to create new date attribute methods on the fly. Now writing this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'> <span class="n">formatted_date</span> <span class="ss">:attribute</span> <span class="o">=&gt;</span> <span class="ss">:starts_on</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>is <strong>exactly</strong> the same as writing this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'> <span class="k">def</span> <span class="nf">starts_on</span>
+</span><span class='line'>   <span class="n">object</span><span class="o">.</span><span class="n">starts_on</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%F&quot;</span><span class="p">)</span>
+</span><span class='line'> <span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Our Updated Class</h2>
+
+<p> Let’s take a look at our new <code>ReservationSerializer</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'> <span class="k">class</span> <span class="nc">ReservationSerializer</span> <span class="o">&lt;</span> <span class="no">ApplicationSerializer</span>
+</span><span class='line'>   <span class="n">attributes</span> <span class="ss">:starts_on</span><span class="p">,</span> <span class="ss">:ends_on</span><span class="p">,</span> <span class="ss">:posted_on</span><span class="p">,</span> <span class="ss">:reserved_on</span>
+</span><span class='line'>
+</span><span class='line'>   <span class="n">formatted_date</span> <span class="ss">:attribute</span> <span class="o">=&gt;</span> <span class="ss">:starts_on</span>
+</span><span class='line'>   <span class="n">formatted_date</span> <span class="ss">:attribute</span> <span class="o">=&gt;</span> <span class="ss">:ends_on</span>
+</span><span class='line'>   <span class="n">formatted_date</span> <span class="ss">:attribute</span> <span class="o">=&gt;</span> <span class="ss">:posted_on</span>
+</span><span class='line'>   <span class="n">formatted_date</span> <span class="ss">:attribute</span> <span class="o">=&gt;</span> <span class="ss">:reserved_on</span>
+</span><span class='line'> <span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Not only is this cleaner to read and less duplicate code, but we have this functionality available in all of our serializers.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[What Every Entrepreneur Needs to Understand About Risk]]></title>
@@ -1463,57 +1616,6 @@ such as <a href="http://www.squarespace.com/">Squarespace</a>, <a href="http://w
 <h3>Change The Conversation</h3>
 
 <p>The biggest advantage to this approach is that instead of the client thinking &#8220;Do I accept this proposal or not?&#8221;, They now have options. They think &#8220;Which option on this proposal do I choose?&#8221;.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Learning Emacs One Shortcut At A Time]]></title>
-    <link href="http://glennstovall.com/blog/2014/09/12/learning-emacs-one-shortcut-at-a-time/"/>
-    <updated>2014-09-12T11:16:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/09/12/learning-emacs-one-shortcut-at-a-time</id>
-    <content type="html"><![CDATA[<h3>How I Turned A Dredging Task Into a Learning Opportunity</h3>
-
-<p>Despite all of the advances in technology over the past 30 years, in my opinion the best text editor for coding was created during the 1970s. <a href="http://www.gnu.org/software/emacs/">Emacs</a> is a text editor that was developed at the MIT lab, created to aid engineers that were doing research on artificial intelligence.</p>
-
-<p>Emacs is a powerful tool, one that I use everyday, but it is difficult to master. There are dozens of shortcuts and commands that you need to know in order to use if effectively. How did I learn them all? One at a time.</p>
-
-<!-- more -->
-
-
-<h3>I Learned Something New Because I Had No Choice</h3>
-
-<p>I haven&#8217;t always used emacs. I started writing in more graphical text editors, such as <a href="http://www.crimsoneditor.com/">Crimson Editor</a> and <a href="http://notepad-plus-plus.org/">Notepad++</a>. Occasionally I would use larger IDE systems, such as <a href="http://www.jetbrains.com/phpstorm/">PHPStorm</a>.</p>
-
-<p>Then, I accepted a position at a software company in Washington DC. At this job coding was done on development servers, which means I had to log into the server via a terminal and work from there. I had zero experience with terminal based editors (kind of weird to think I made it <em>years</em> into my job before having to learn these skills). I was told that I two options: learn emacs or learn <a href="http://www.vim.org/">vim</a>. None of the tools I had used before were applicable here.</p>
-
-<h3>The Age Old Question</h3>
-
-<p><a href="http://en.wikipedia.org/wiki/Editor_war">Emacs vs Vim</a> is an age old question that developers love to debate about. I don&#8217;t want to open that can of worms here. At this job you were assigned a mentor for your first few weeks to help show you the ropes. My mentor used emacs, and would be available to help teach me there.</p>
-
-<p>The primary difference in the two editors is how commands are structured. Both are 100% keyboard based. In Vim, you edit by having different &#8216;modes&#8217; that the editor can be set to. With emacs, you instead have a long list of shortcuts. Shortcuts either start with Ctrl, Esc, or Pressing Esc THEN another button. That actually isn&#8217;t enough to cover all of the commands needed, so then there are subsets of commands that are reached by pressing Esc+X or Ctrl+C, and then <em>another</em> command.</p>
-
-<h3>How Could You Learn All This?</h3>
-
-<p>Once I had completed the training at my new job, I was assigned to a job we all called &#8220;the pit&#8221;. The company had a large application with a huge customer base. It was the standard &#8220;legacy&#8221; application, meaning that it was old, complicated, and full of bugs. There were hundreds of support tickets and bug reports that had piled up, with new ones coming in every day. Keeping the bug queue in check was a Sisyphean task.</p>
-
-<p>It was the job of the developers in the pit to work through that bug queue.</p>
-
-<p>It wasn&#8217;t the most exciting job at the time, and often times I got bored. If I only I had heard the story of <a href="http://glennstovall.com/blog/2014/09/11/lessons-learned-from-thomas-edisons-factory-fire/">Thomas Edison&#8217;s fire</a> back then, I may have considered this an opportunity to learn a lesson about discipline.</p>
-
-<p>Instead, I made it an opportunity to learn about emacs.</p>
-
-<p>I found a <a href="http://www.ic.unicamp.br/~helio/disciplinas/MC102/Emacs_Reference_Card.pdf">cheat sheet of emacs commands</a>. Every day I would pick one single command, and make it a point to use it as much as it was applicable. I would pick a new one the next day, but I would still be using the command from the previous day.</p>
-
-<p>I did this for a month, and I had a much better working knowledge of emacs, and could write code and fix those bugs at a quicker rate.</p>
-
-<h3>Incremental Gains Make Huge Differences</h3>
-
-<p>The 30-day publishing challenge has given me yet another chance to apply this daily style of learning. Every day I am choosing another stylistic point from <em>The Elements of Style</em> and applying to my writing. These small, incremental gains add up to huge gains in productivity.</p>
-
-<p>James Clear wrote an article about a <a href="http://jamesclear.com/marginal-gains">coach who worked in marginal gains</a>. Marginal gains has a compounding effect. If you are making small gains over time, they will pile on top of each other until to have made a mountain of progress. Conversely, if you slip over time you will end up digging a pit of failure.</p>
-
-<p><img class="center" src="http://glennstovall.com/images/articles/slight_edge.jpg">
-<small>The Slight Edge By Jeff Olson</small></p>
 ]]></content>
   </entry>
   

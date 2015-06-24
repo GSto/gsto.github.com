@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Software That Sells]]></title>
   <link href="http://glennstovall.com/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-06-22T11:04:03-04:00</updated>
+  <updated>2015-06-24T17:09:24-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,134 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A Real World Metaprogramming Case Study]]></title>
+    <link href="http://glennstovall.com/blog/2015/06/24/a-real-world-metaprogramming-case-study/"/>
+    <updated>2015-06-24T17:01:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2015/06/24/a-real-world-metaprogramming-case-study</id>
+    <content type="html"><![CDATA[<p>Metaprogramming is one of the unique features of Ruby. Metaprogramming is an interesting concept, and a tool can save a lot of time. It can also be confusing for developers and difficult to maintain if not used properly. Here is an example of how I used Metaprogramming to solve a real-world problem and save a few hours coding.</p>
+
+<!-- more -->
+
+
+<h2>Serializers With Duplicate Code</h2>
+
+<p>I’m working on an application that used for managing vacation bookings. The application needs an API to integrate with some business partners. As part of the specification, dates should be returned in the API in a “YYYY-MM-DD” format.</p>
+
+<p>To build the API, I’ll be using <a href="https://github.com/rails-api/active_model_serializers">ActiveRecord::Serializer</a> to customize the JSON output.</p>
+
+<p>Here’s a snippet from the reservation serializer class:</p>
+
+<p>```ruby
+ class ReservationSerializer &lt;&lt; ActiveModel::Serializer
+   attributes :starts_on, :ends_on, :posted_on, :reserved_on</p>
+
+<p>   def starts_on</p>
+
+<pre><code> object.starts_on.strftime("%F")
+</code></pre>
+
+<p>   end
+   def ends_on</p>
+
+<pre><code> object.ends_on.strftime("%F")
+</code></pre>
+
+<p>   end
+   def posted_on</p>
+
+<pre><code> object.posted_on.strftime("%F")
+</code></pre>
+
+<p>   end
+   def reserved_on</p>
+
+<pre><code> object.reserved_on.strftime("%F")
+</code></pre>
+
+<p>   end
+ end
+```</p>
+
+<p>This method works because you can override any attribute in a serializer class. The problem is that this is going to be a lot of duplicate code. There are also several other API endpoints that need to deal with dates.</p>
+
+<p>Wouldn’t be nice if we could format dates without writing a bunch of duplicate methods?</p>
+
+<h2>Creating a Super Class That Can Create Methods</h2>
+
+<p>In Ruby, parent classes have the ability to modify its children. We are going to use this ability to define methods on our serializers <em>without</em> writing them by hand.</p>
+
+<p>We’ll start by creating an <code>ApplicationSerializer</code> from which each of out serializers will inherit.</p>
+
+<p><code>ruby
+ class ApplicationSerializer &lt;&lt; ActiveModel::Serializer
+ end
+</code></p>
+
+<p>Inside of this superclass, we are going to define a <code>formatted_date</code> class method that we will use in our subclasses.</p>
+
+<p>Here’s what the final result looks like:</p>
+
+<p>```ruby
+   def self.formatted_date(options = {})</p>
+
+<pre><code> attribute = options[:attribute] || nil
+ format = options[:format] || "%F"
+
+ if attribute.present?
+   define_method(attribute) do 
+     object[attribute].strftime(format)
+   end
+ end
+</code></pre>
+
+<p>   end
+```</p>
+
+<p>Let’s break this down:</p>
+
+<ul>
+<li>First, we pass an options hash that will take the attribute and the format we will use. We are defaulting to the YYYY-MM-DD format, but this gives other developers the option to override that if needed.</li>
+<li>Then, We check that an attribute is passed, and if so, we call the <code>define_method</code> method. We will use this to create methods in our subclass. Note that the created method’s name will be the same as the attribute.</li>
+<li>Finally, We pass a block to <code>define_method</code>. This block will become the body of the new method. Note that the block uses the <code>object</code> property, which belongs to the subclass and not ApplicationSerializer.</li>
+</ul>
+
+
+<h2>Creating Our Dynamic Methods</h2>
+
+<p>Inside of our <code>ReservationSerializer</code> class, we change the super class to <code>ApplicationSerializer.</code> Changing the parent class gives us the added ability to create new date attribute methods on the fly. Now writing this:</p>
+
+<p><code>ruby
+ formatted_date :attribute =&gt; :starts_on
+</code></p>
+
+<p>is <strong>exactly</strong> the same as writing this:</p>
+
+<p><code>ruby
+ def starts_on
+   object.starts_on.strftime("%F")
+ end
+</code></p>
+
+<h2>Our Updated Class</h2>
+
+<p> Let’s take a look at our new <code>ReservationSerializer</code>:</p>
+
+<p>```ruby
+ class ReservationSerializer &lt; ApplicationSerializer
+   attributes :starts_on, :ends_on, :posted_on, :reserved_on</p>
+
+<p>   formatted_date :attribute => :starts_on
+   formatted_date :attribute => :ends_on
+   formatted_date :attribute => :posted_on
+   formatted_date :attribute => :reserved_on
+ end
+```</p>
+
+<p>Not only is this cleaner to read and less duplicate code, but we have this functionality available in all of our serializers.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Remove the Hash from Angular Routes in Rails]]></title>
@@ -410,104 +538,6 @@ mock_task({'tID' : 1, 'time' : 5, 'rate' : 100, 'billable' : true}),
 <p>Now you have a front end application ready for development, with a whole suite of tools and frameworks installed.</p>
 
 <p>If you would like a PDF version of this article, you can get it below:</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to Test Controller Concerns in Rails 4]]></title>
-    <link href="http://glennstovall.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4/"/>
-    <updated>2014-05-06T15:06:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/05/06/how-to-test-controller-concerns-in-rails-4</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/articles/ruby_on_rails.jpg" width="260"></p>
-
-<p><a href="http://api.rubyonrails.org/classes/ActiveSupport/Concern.html">Concerns</a> are a new feature that was added in Rails 4. They allow to clean up code in your models and controllers. They also allow you to share functionality between models or controllers. However, they can be a bit tricky to test in isolation. In this article I want to show how you can test your controller concerns in isolation.</p>
-
-<!-- more -->
-
-
-<h2>The Over Simplified Scenario</h2>
-
-<p>We have a project with several different types of objects that can be sold. Each item is unique and is marked as 'out of stock' once it is purchased. However, we have several different controllers and different types of purchases that need this functionality. In order to reduce code duplication, we are going to put these in a concern.</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>/app/controllers/concerns/transaction_processing.rb </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">module</span> <span class="nn">TransactionProcessing</span>
-</span><span class='line'>  <span class="kp">extend</span> <span class="ss">ActiveSupport</span><span class="p">:</span><span class="ss">:Concern</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="sr">&lt;p&gt;  included do&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">helper_method</span> <span class="ss">:process_sale</span>
-</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="k">end</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="sr">&lt;p&gt;  def process_sale(item)&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">item</span><span class="o">.</span><span class="n">is_in_stock</span> <span class="o">=</span> <span class="kp">false</span>
-</span><span class='line'><span class="n">item</span><span class="o">.</span><span class="n">save!</span>
-</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>If we want to test this concern, we need a controller to include it in. However, it would not be accurately unit testing to do this as there could be code in that controller that could affect the output of our test. Inside of our test, we can create a fake controller with no methods or logic of it's own, and then write tests for that. If you are using <a href="http://rspec.info/">RSpec</a>, you can call methods directly using the <code>subject</code> object. Here is my example test using RSpec and <a href="https://github.com/thoughtbot/factory_girl">FactoryGirl</a></p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>/spec/controllers/concerns/transaction_processing_spec.rb </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;spec_helper&#39;</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="sr">&lt;p&gt;class FakesController &amp;lt; ApplicationController</span>
-</span><span class='line'><span class="sr">  include TransactionProcessing</span>
-</span><span class='line'><span class="sr">end&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="n">describe</span> <span class="no">FakesController</span> <span class="k">do</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="sr">&lt;p&gt;  it &quot;should mark an item out of stock&quot; do&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">item</span> <span class="o">=</span> <span class="n">create</span><span class="p">(</span><span class="ss">:item</span><span class="p">,</span> <span class="n">is_in_stock</span><span class="p">:</span> <span class="kp">true</span><span class="p">)</span>
-</span><span class='line'><span class="n">subject</span><span class="o">.</span><span class="n">process_sale</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-</span><span class='line'><span class="n">expect</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">is_in_stock</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">be</span> <span class="kp">false</span>
-</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>And there you go! Easy, isolated tests for your controller concerns.</p>
 ]]></content>
   </entry>
   
