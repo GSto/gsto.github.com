@@ -4,7 +4,7 @@
   <title><![CDATA[Category: medium | Essentialist Software Design]]></title>
   <link href="http://glennstovall.com/blog/categories/medium/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-07-29T13:30:07-04:00</updated>
+  <updated>2015-08-03T11:18:55-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Developers: Be Less Precise]]></title>
+    <link href="http://glennstovall.com/blog/2015/08/03/developers-be-less-precise/"/>
+    <updated>2015-08-03T11:14:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2015/08/03/developers-be-less-precise</id>
+    <content type="html"><![CDATA[<script async src="https://static.medium.com/embed.js"></script>
+
+
+<p><a class="m-story" data-collapsed="true" href="https://medium.com/freelancers-life/developers-be-less-exact-make-better-estimates-d0377deb393b">Developers: Be Less Exact, Make Better Estimates</a></p>
+
+<!-- more -->
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How I Used Writing to Double My Freelancing Rate As A Programmer]]></title>
