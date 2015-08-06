@@ -4,7 +4,7 @@
   <title><![CDATA[Essentialist Software Design]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-08-05T17:02:44-04:00</updated>
+  <updated>2015-08-06T15:56:34-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Project Estimation Guide: Launch Day]]></title>
+    <link href="http://glennstovall.com/blog/2015/08/06/project-estimation-guide-launch-day/"/>
+    <updated>2015-08-06T15:42:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2015/08/06/project-estimation-guide-launch-day</id>
+    <content type="html"><![CDATA[<p>Today is the launch day of the Product Estimation Guide. I wanted to compile all of the information related to product here. Here are some things you can do.</p>
+
+<ul>
+<li>If you are reading this on or before August 10th, 2015 <a href="https://gumroad.com/l/estimate/launch">Buy the guide for $19</a>.</li>
+<li>If you are reading this after August 10th, or you are in a generous mood,  <a href="https://gumroad.com/l/estimate/">Buy the guide for $29</a>.</li>
+<li>Download a <a href="http://glennstovall.com/books/project-estimation-guide/sample">Sample Chapter</a>.</li>
+<li>Read an excerpt on Medium: <a href="https://medium.com/@gsto/developers-be-less-exact-make-better-estimates-d0377deb393b">Developers: Be Less Precise, Make Better Estimates</a>.</li>
+<li>If you&#8217;d like to help me out, any tweets, shares, or good vibes you can send my way would be much appeciated.</li>
+</ul>
+
+
+<p><strong>Bonus:</strong> I plan on writing a post mortem of writing the book and the Small Product Lab. What questions do you have? What would you like to know about the process? Leave your comments and questions below and I&#8217;ll do my best to answer them.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Developers: Be Less Precise]]></title>
@@ -1663,38 +1683,6 @@ such as <a href="http://www.squarespace.com/">Squarespace</a>, <a href="http://w
 <p>Now you have a front end application ready for development, with a whole suite of tools and frameworks installed.</p>
 
 <p>If you would like a PDF version of this article, you can get it below:</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to Start A Consultancy In 16 Hours From Kai Davis]]></title>
-    <link href="http://glennstovall.com/blog/2014/09/18/how-to-start-a-consultantcy-in-16-hours-from-kai-davis/"/>
-    <updated>2014-09-18T07:17:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/09/18/how-to-start-a-consultantcy-in-16-hours-from-kai-davis</id>
-    <content type="html"><![CDATA[<h3>An Actionable Plan From The Side Hustle Nation</h3>
-
-<p><img class="left" src="http://glennstovall.com/images/articles/kai-davis.jpg" width="260"></p>
-
-<p>My friend <a href="http://kaidavis.com/">Kai Davis</a> was recently on the side hustle nation podcast. The episode is <a href="http://www.sidehustlenation.com/start-side-hustle-consulting-business-gets-paid/">How to Start a Side Hustle Consulting Business that Gets Paid</a>. One particular nugget of gold from this podcast: When asked what he would do if he had to start all over, Kai responds with how he would start a new consultancy in 16 hours.</p>
-
-<!-- more -->
-
-
-<h3>Hours 1-3: Identify A Target Audience</h3>
-
-<p>Decide which market you want to focus on. This could be segmented geographically, or by industry type. If you aren&#8217;t sure where to begin, try looking at local business directories. Your local chamber of commerce is a good place to start. You could even look in a phone book if you manage to find one.</p>
-
-<h3>Hours 4 - 8: Book Four Calls (But Not Sales Calls)</h3>
-
-<p>Start reaching out to people who you think might be potential clients. Ask them to sit down with you over lunch or coffee, or just hop on the phone with you to discuss their business. People love talking about themselves, and even strangers will be more receptive to this than you would believe. Your goal here isn&#8217;t to sell them anything, this meeting is research. You want to find the <em>pain points</em> that your potential clients have.</p>
-
-<h3>Hours 9 - 12: Begin Crafting A Service</h3>
-
-<p>Now that you know what problems people in your target audience are having, how can you solve them? Look for ways you can apply your current skills and knowledge to these problems, or how to apply new skills that you could pick up in a reasonable amount of time. If you don&#8217;t find a good fit, that&#8217;s OK, you may just have to try again. You don&#8217;t marry the first person you date, and you don&#8217;t want to pursue the first job idea that comes to mind.</p>
-
-<h3>Hours 13 - 16: Offer Your Solution</h3>
-
-<p>Now you have connections to your market, and understanding of their problems, and a solution to those problems. Go back to your original contacts and offer your solution. Now you&#8217;re in business!</p>
 ]]></content>
   </entry>
   
