@@ -6,11 +6,11 @@
 <head>
   <!-- 7D65FDE2-129B-4399-AB33-1C7786CFDBAB -->
   <meta charset="utf-8">
-  <title>Category: offerings - Essentialist Software Design</title>
+  <title>Drippets: Useful Drip Snippets - Essentialist Software Design</title>
   <meta name="author" content="Glenn Stovall">
 
   
-  <meta name="description" content="Category: offerings">
+  <meta name="description" content="Drippets: Useful Drip Snippets Code Snippets Change The Confirmation Link Text {{ confirmation_link | replace_inner_html: “Join the club.” }} via &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://glennstovall.com/blog/categories/offerings/">
+  <link rel="canonical" href="http://glennstovall.com/drippets/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -103,34 +103,77 @@
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Category: Offerings</h1>
+    <h1 class="entry-title">Drippets: Useful Drip Snippets</h1>
     
   </header>
   
-  <div id="blog-archives" class="category">
+  <h1>Code Snippets</h1>
+
+<h2>Change The Confirmation Link Text</h2>
+
+<pre><code>{{ confirmation_link | replace_inner_html: “Join the club.” }}
+</code></pre>
+
+<p><em>via this <a href="/blog/2015/05/28/drip-quick-tip-how-to-change-the-confirmation-link-text-in-your-welcome-email/">Drip Quick Tip</a></em></p>
+
+<h2>Conditionally Show Subscriber&#8217;s First Name</h2>
+
+<pre><code>{% unless subscriber.first_name == null %}Hi {{ subscriber.first_name }},{% else %}Heya,{% endunless %}
+</code></pre>
+
+<p> <em>via <a href="https://twitter.com/kaisdavis">@KaiDavis</a></em></p>
+
+<h1>Automation Rules</h1>
+
+<h2>Automatically Prune Inactive Subscribers</h2>
+
+<p><img class="center" src="https://pbs.twimg.com/media/CLlDDnoWgAAE2Z6.png:large"></p>
+
+<p> <em>via <a href="https://twitter.com/kurtinc">@KurtInc</a> and <a href="https://twitter.com/philip_morgan">@Philip_Morgan</a></em></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
 
 
 
 
   
-  <h2>2014</h2>
 
-<article>
+
+
+<time class='article-date' datetime="2015-08-27T13:21:00-04:00" pubdate data-updated="true">Aug 27<span>th</span>, 2015</time>
+        
+      </p>
+      
+        <div class="sharing">
   
-<h1><a href="/blog/2014/11/14/how-to-decide-between-squarespace-and-a-web-designer/">How to Decide Between Squarespace and a Web Designer</a></h1>
-<time datetime="2014-11-14T00:05:00-05:00" pubdate><span class='month'>Nov</span> <span class='day'>14</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/design/'>design</a>, <a class='category' href='/blog/categories/offerings/'>offerings</a></span>
-</footer>
-
-
-</article>
-
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://glennstovall.com/drippets/index.html" data-via="GSto" data-counturl="http://glennstovall.com/drippets/index.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
 </div>
 
+      
+    </footer>
   
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -193,7 +236,10 @@
       var disqus_shortname = 'glennstovall';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://glennstovall.com/drippets/index.html';
+        var disqus_url = 'http://glennstovall.com/drippets/index.html';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
