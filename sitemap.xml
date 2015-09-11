@@ -361,20 +361,26 @@
         <lastmod>2015-08-27T11:07:07-04:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://glennstovall.com/blog/2015/09/11/how-to-survive-feast-or-famine-cash-flow/
+        </loc>
+        <lastmod>2015-09-11T14:35:06-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://glennstovall.com/about/</loc>
         <lastmod>2015-06-19T11:15:10-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/ask/</loc>
-        <lastmod>2015-08-28T10:37:42-04:00</lastmod>
+        <lastmod>2015-09-11T14:35:06-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/archives/</loc>
-        <lastmod>2015-08-27T11:07:07-04:00</lastmod>
+        <lastmod>2015-09-11T14:35:06-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/blog/</loc>
-        <lastmod>2015-08-27T11:07:07-04:00</lastmod>
+        <lastmod>2015-09-11T14:35:06-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/books/freelance-pricing-handbook/download.html</loc>
@@ -382,7 +388,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/books/freelance-pricing-handbook/</loc>
-        <lastmod>2014-10-15T05:51:57-04:00</lastmod>
+        <lastmod>2015-09-11T14:42:43-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/books/</loc>
@@ -414,7 +420,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/consulting/</loc>
-        <lastmod>2015-08-27T13:45:32-04:00</lastmod>
+        <lastmod>2015-09-11T14:35:06-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/contact/</loc>
@@ -426,11 +432,11 @@
     </url>
     <url>
         <loc>http://glennstovall.com/free-consult/</loc>
-        <lastmod>2015-08-27T11:07:07-04:00</lastmod>
+        <lastmod>2015-09-11T14:35:06-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/freelancer-knowledge-base/</loc>
-        <lastmod>2015-08-03T11:18:17-04:00</lastmod>
+        <lastmod>2015-09-11T14:40:48-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/how-to-remove-the-hash-from-angular-routes-in-rails/</loc>
@@ -438,11 +444,11 @@
     </url>
     <url>
         <loc>http://glennstovall.com/</loc>
-        <lastmod>2015-09-04T14:04:25-04:00</lastmod>
+        <lastmod>2015-09-11T14:35:06-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/letters/</loc>
-        <lastmod>2015-08-27T11:07:07-04:00</lastmod>
+        <lastmod>2015-09-11T14:35:06-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/my-latest-thing/</loc>
@@ -482,7 +488,7 @@
     </url>
     <url>
         <loc>http://glennstovall.com/products/reliable-codeigniter/</loc>
-        <lastmod>2015-08-27T11:07:07-04:00</lastmod>
+        <lastmod>2015-09-11T14:35:06-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/resume/</loc>
@@ -510,10 +516,10 @@
     </url>
     <url>
         <loc>http://glennstovall.com/write-a-website/</loc>
-        <lastmod>2015-08-27T11:07:07-04:00</lastmod>
+        <lastmod>2015-09-11T14:35:06-04:00</lastmod>
     </url>
     <url>
         <loc>http://glennstovall.com/write-a-website/thank-you/</loc>
-        <lastmod>2015-08-27T11:07:07-04:00</lastmod>
+        <lastmod>2015-09-11T14:35:06-04:00</lastmod>
     </url>
 </urlset>
