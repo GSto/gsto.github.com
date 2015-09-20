@@ -4,7 +4,7 @@
   <title><![CDATA[Essentialist Software Design]]></title>
   <link href="http://glennstovall.com/atom.xml" rel="self"/>
   <link href="http://glennstovall.com/"/>
-  <updated>2015-09-11T18:00:53-04:00</updated>
+  <updated>2015-09-20T18:04:04-04:00</updated>
   <id>http://glennstovall.com/</id>
   <author>
     <name><![CDATA[Glenn Stovall]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[What I Learned At DYFConf]]></title>
+    <link href="http://glennstovall.com/blog/2015/09/20/what-i-learned-at-dyfconf/"/>
+    <updated>2015-09-20T17:00:00-04:00</updated>
+    <id>http://glennstovall.com/blog/2015/09/20/what-i-learned-at-dyfconf</id>
+    <content type="html"><![CDATA[<p>I just got back from the first annual <a href="http://www.doubleyourfreelancing.com/conf">Double Your Freelancing Conference</a>, and I haven&#8217;t felt this exhausted and excited in some time. I met so many great people and listened to informative talks by some brilliant speakers. Instead of getting into individual tactics and strategies, I thought it&#8217;d be more beneficial to you to share the big picture of how I&#8217;m planning on reshaping my business moving forward.</p>
+
+<p>The keys to creating a successful business are simple, difficult, and patently unsexy:</p>
+
+<ul>
+<li><strong>Set a goal.</strong></li>
+<li><strong>Make a plan.</strong></li>
+<li><strong>Stay focused.</strong></li>
+<li><strong>Show up every day and put in the work.</strong></li>
+</ul>
+
+
+<h2>Setting a Goal</h2>
+
+<p>In the long-term, my goal is to build a business that&#8217;s durable, and an asset that can support myself and my family for the long term. In the short term, that means building a business that&#8217;s more predictable and provides more value to clients. Value is a two-way street, so I can&#8217;t just step up my game in terms of what I deliver.I also have to step up who it is that I serve. As of now, I&#8217;m no longer accepting work from pre-revenue companies. I&#8217;m also no longer accepting hourly billing contracts so that I can focus on outcomes instead of inputs. As a find better ways to improve outcomes for clients, I&#8217;ll find ways to scale and streamline the delivery of said value.</p>
+
+<h2>Making a Plan</h2>
+
+<p>To be able to do this, I know I have to stop flailing around. I&#8217;ve learned the hard way that if you don&#8217;t make a schedule, your clients and customers will. My Monday morning plan is to get serious about my time, set a daily plan, and sticking to it. The boss of my company is about to start cracking the whip on its most unfocused employee. Making this one change can make your output more predictable, and help you see that work time is finite, which will help you to not over-promise.</p>
+
+<h2>Staying Focused</h2>
+
+<p> If something doesn&#8217;t fit into the schedule, then it doesn&#8217;t happen. If there isn&#8217;t room for something after client work, regularly scheduled sales and marketing tasks and business operational tasks, then it&#8217;s cut. And that means that I&#8217;ll be cutting a lot in the coming weeks. There is an infinite amount of possible work for any business, which means as a business owner, you have to be ruthless about saying no.</p>
+
+<h2>Showing Up and Doing The Work</h2>
+
+<p>The schedule needs to be made up repeatable processes. This was a repeating motif throughout the talks:</p>
+
+<ul>
+<li>Mojca Mars talked about spending 60 minutes per day focused on building relationships and authority on social media.</li>
+<li>Kai Davis talked about building a list of propsective partners and sending an outreach email every day.</li>
+<li>Nathan Barry talked about writing every day.</li>
+<li>Ed Gandia talked about having focused blocks of uninteruptable work every day.</li>
+</ul>
+
+
+<p>The message was clear: Show up every day, and put in the work.</p>
+
+<h2>Moving Forward</h2>
+
+<p>So, there&#8217;s a long-term vision, a plan for getting there, and a process for getting through the work on a day-by-day basis.</p>
+
+<p>My last big takeaway is that while this takes a lot of effort, it is doable and attainable. What&#8217;s the difference between Brennan Dunn, Nathan Barry, Jonathan Stark, Allan Branch, You and me?</p>
+
+<p>They set a goal, made a plan, stayed focused, and did the work. I just haven&#8217;t yet.</p>
+
+<h2>What I Learned From Every Talk</h2>
+
+<p>If you would like some more detail, I compiled a list of the one key lesson I got out of each talk. You can get the lessons below.</p>
+
+<p><a href="https://concordant.leadpages.co/leadbox/1466eec73f72a2%3A1512df4d7b46dc/5647648723828736/" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 16px; line-height: 20px; padding: 10px; display: inline-block; max-width: 300px; background: rgb(231, 76, 60); margin-left:auto; margin-right:auto;">Get 14 Key Lessons</a><script data-leadbox="1466eec73f72a2:1512df4d7b46dc" data-url="https://concordant.leadpages.co/leadbox/1466eec73f72a2%3A1512df4d7b46dc/5647648723828736/" data-config="%7B%7D" type="text/javascript" src="https://concordant.leadpages.co/leadbox-900.js"></script></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Survive Feast or Famine Cash Flow]]></title>
@@ -1576,186 +1635,6 @@ such as <a href="http://www.squarespace.com/">Squarespace</a>, <a href="http://w
 <h3>Further Reading</h3>
 
 <p>The idea of this approach is to turn writing from a creative practice into a scientific one; From a passive way of writing to an <strong>active</strong> way. Joanna Weibe of CopyHackers has a great article on this idea: <a href="http://copyhackers.com/2012/09/headline-formulas-and-the-science-of-high-converting-copywriting/">Headline Formulas and the Science of CRO Copy writing</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Testing AngularJS With Karma + Jasmine]]></title>
-    <link href="http://glennstovall.com/blog/2014/09/26/testing-angularjs-with-karma-plus-jasmine/"/>
-    <updated>2014-09-26T15:34:00-04:00</updated>
-    <id>http://glennstovall.com/blog/2014/09/26/testing-angularjs-with-karma-plus-jasmine</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://glennstovall.com/images/angular.png" width="260"></p>
-
-<p>In a previous article about <a href="http://glennstovall.com/blog/2014/09/22/yeoman-plus-angularjs-plus-foundation-a-modern-front-end-setup/">Yeoman, AngularJS, and Foundation</a>, I talked about setting up a complete front end application scaffold with Yeoman, AngularJS, and Foundation. Now I want to look at how to test the AngularJS part of your application.</p>
-
-<!-- more -->
-
-
-<div style='clear:both;'></div>
-
-
-<h2>The Tools</h2>
-
-<h3>Karma</h3>
-
-<p><a href="http://karma-runner.github.io/0.12/index.html">Karma</a> is a test runner for NodeJS. You can use it to simulate multiple devices. What Karma isn&#8217;t is a testing framework itself. It is designed to work with multiple testing frameworks, such as <a href="http://jasmine.github.io/">Jasmine</a>, <a href="http://qunitjs.com/">QUnit</a>, or <a href="http://visionmedia.github.io/mocha/">Mocha</a>.</p>
-
-<h3>Jasmine</h3>
-
-<p>I&#8217;m using Jasmine for a couple of reasons:</p>
-
-<ul>
-<li>I looked into Jasmine and QUnit before, and I have never seen two tools as similar. Their syntax is different, but how they function is <em>identical</em> last time I checked. Months ago I flipped a coin, it was &#8216;tails&#8217;, and I implemented Jasmine on a client project. No real reason to change.</li>
-<li>I haven&#8217;t looked into Mocha. It might be better, or worse, or also identical. I don&#8217;t know. If <strong>you</strong> have an opinion, <a href="http://www.glennstovall.com/contact">let me know</a>.</li>
-<li>It&#8217;s installed by default by Yeoman &#8230; sort of.</li>
-</ul>
-
-
-<h2>Step 1: Fix The Missing Dependencies</h2>
-
-<p>For some reason, the <code>generator-angular</code> generator comes with some, but not all of the tools we&#8217;ll need for running tests with Karma and Jasmine, so we need to fix that before we get started. Run the following lines on the command line:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>npm install grunt-karma --save-dev
-</span><span class='line'>npm install karma-phantomjs-launcher --save-dev
-</span><span class='line'>npm install karma-jasmine --save-dev</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Step 2: Test the Tests</h2>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>grunt test</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This should ensure that everything is installed correctly. If you running a clean install from Yeoman, then it should run that test. You can look at the file /test/spec/controllers/MainCtrl.js for an example of what a test looks like.</p>
-
-<h2>Step 3: Create A Simple Test</h2>
-
-<p>Here is an example test, just to get you comfortable with the Jasmine testing Syntax. Create a file at <code>test/spec/app.js</code>, and write the following code:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="s1">&#39;use strict&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">describe</span><span class="p">(</span><span class="s1">&#39;javascript&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should know 2 + 2 is 4&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">expect</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">});</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>I enjoy jasmine&#8217;s matchers and syntax because it reads like english.</p>
-
-<p><code>describe()</code> is how you group your tests into suites. You can nest <code>describe()</code> calls as many levels deep as youwish, though any more than two and it gets really difficult to read and manage. <code>it()</code> is how you run tests. The first argument is the description, the second is the test itself. <code>expect()</code> is where you test your assumptions in the test, and <code>toEqual()</code> is your matcher. you can also add <code>not()</code> before any more matcher to test the opposite:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c1">//it&#39;s 2014, not 1984 ... I think</span>
-</span><span class='line'><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should know 2 + 2 is not 5&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">expect</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">).</span><span class="nx">not</span><span class="p">().</span><span class="nx">toEqual</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>If you want to know what other matchers are available to you with Jasmine, here is a handy <a href="http://www.cheatography.com/citguy/cheat-sheets/jasmine-js-testing/">Jasmine Cheat Sheet</a></p>
-
-<h2>Step 4: Now For a Real Test</h2>
-
-<p>By default, Yeoman comes with a controller test, you can see how it works there:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'>
-</span><span class='line'><span class="nx">describe</span><span class="p">(</span><span class="s1">&#39;Controller: MainCtrl&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="c1">// load the controller&#39;s module</span>
-</span><span class='line'>  <span class="nx">beforeEach</span><span class="p">(</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;ngFoundationApp&#39;</span><span class="p">));</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">MainCtrl</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">scope</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="c1">// Initialize the controller and a mock scope</span>
-</span><span class='line'>  <span class="nx">beforeEach</span><span class="p">(</span><span class="nx">inject</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">$controller</span><span class="p">,</span> <span class="nx">$rootScope</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">scope</span> <span class="o">=</span> <span class="nx">$rootScope</span><span class="p">.</span><span class="nx">$new</span><span class="p">();</span>
-</span><span class='line'>    <span class="nx">MainCtrl</span> <span class="o">=</span> <span class="nx">$controller</span><span class="p">(</span><span class="s1">&#39;MainCtrl&#39;</span><span class="p">,</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">$scope</span><span class="o">:</span> <span class="nx">scope</span>
-</span><span class='line'>    <span class="p">});</span>
-</span><span class='line'><span class="p">}));</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should attach a list of awesomeThings to the scope&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">expect</span><span class="p">(</span><span class="nx">scope</span><span class="p">.</span><span class="nx">awesomeThings</span><span class="p">.</span><span class="nx">length</span><span class="p">).</span><span class="nx">toBe</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">});</span>
-</span><span class='line'><span class="p">});</span>
-</span><span class='line'>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Here you see some of the other handy features, such as <code>beforeEach()</code>. <code>beforeEach()</code> takes a function as an argument, and calls it before each test.</p>
-
-<h2>Dependency Injection and Testing</h2>
-
-<p>When you start writing tests you will begin to see why <a href="http://en.wikipedia.org/wiki/Dependency_injection">Dependency Injection</a> is so valuable. When you create services in Angular, you want to pass them as arguments instead of creating them directly. This way, you can create mock versions of anything for testing.</p>
-
-<p>Here is an example test from a client project:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should use tasks to set price if that is the invoice_method selected&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">$injector</span><span class="p">.</span><span class="nx">invoke</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">Project</span><span class="p">,</span> <span class="nx">Feature</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">mock</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Project</span><span class="p">(</span><span class="nx">mock_project</span><span class="p">()).</span><span class="nx">prepare</span><span class="p">();</span>
-</span><span class='line'>  <span class="nx">mock</span><span class="p">.</span><span class="nx">invoice_method</span> <span class="o">=</span> <span class="s1">&#39;task&#39;</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">mock</span><span class="p">.</span><span class="nx">estimate</span><span class="p">.</span><span class="nx">tasks</span> <span class="o">=</span> <span class="p">[</span>
-</span><span class='line'>    <span class="nx">mock_task</span><span class="p">({</span><span class="s1">&#39;tID&#39;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span> <span class="o">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;rate&#39;</span> <span class="o">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;billable&#39;</span> <span class="o">:</span> <span class="kc">true</span><span class="p">}),</span>
-</span><span class='line'>    <span class="nx">mock_task</span><span class="p">({</span><span class="s1">&#39;tID&#39;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span> <span class="o">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;rate&#39;</span> <span class="o">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;billable&#39;</span> <span class="o">:</span> <span class="kc">true</span><span class="p">}),</span>
-</span><span class='line'>  <span class="p">];</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="nx">mock</span><span class="p">.</span><span class="nx">updatePrice</span><span class="p">();</span>
-</span><span class='line'>  <span class="nx">expect</span><span class="p">(</span><span class="nx">mock</span><span class="p">.</span><span class="nx">estimate</span><span class="p">.</span><span class="nx">price</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>I created functions that would return mock objects such as <code>mock_project()</code> and <code>mock_task()</code>. This way, I can test the <code>Project</code> object without the <code>Task</code> object. This way, all of my tests are completely self-contained, the waygood unit tests should be.</p>
 ]]></content>
   </entry>
   
